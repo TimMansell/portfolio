@@ -1,0 +1,134 @@
+* {
+    -webkit-apperance: none;
+
+    &:focus {
+        outline: none !important;
+        @include box-shadow(none !important);
+    }
+}
+
+html {
+    font-size: 62.5%;
+
+    @include breakpoint(xxs){
+        font-size: 55%;
+    }
+
+    @include breakpoint(md) {
+        font-size: 60%;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: $font-family-primary;
+    @include rem(font-size, 14px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-style: normal;
+    font-family: $font-family-heading;
+    @include rem(letter-spacing, 1px);
+    text-transform: uppercase;
+}
+
+h1 {
+    color: $colour-06;
+    @include rem(font-size, 32px);
+    @include rem(line-height, 38px);
+
+    @include breakpoint(sm){
+        @include rem(font-size, 36px);
+        @include rem(line-height, 48px);
+    }
+    
+}
+
+h2 {
+    @include rem(font-size, 30px);
+    @include rem(line-height, 34px);
+    color: $colour-06;
+
+    @include breakpoint(sm){
+        @include rem(font-size, 32px);
+        @include rem(line-height, 36px);
+    }
+}
+
+h3 {
+    @include rem(font-size, 24px);
+    @include rem(line-height, 28px);
+    color: $colour-01;
+
+    @include breakpoint(sm){
+        @include rem(font-size, 28px);
+        @include rem(line-height, 32px);
+    }
+}
+
+h4 {
+    @include rem(font-size, 22px);
+    @include rem(line-height, 24px);
+    color: $colour-06;
+
+    @include breakpoint(sm){
+        @include rem(font-size, 24px);
+        @include rem(line-height, 28px);
+    }
+}
+
+h5 {
+    @include rem(font-size, 18px);
+    @include rem(line-height, 22px);
+    color: $colour-06;
+
+    @include breakpoint(sm){
+        @include rem(font-size, 20px);
+        @include rem(line-height, 24px);
+    }
+}
+
+h6 {
+    @include rem(font-size, 16px);
+    @include rem(line-height, 20px);
+    color: $colour-01;
+
+    @include breakpoint(sm){
+        @include rem(font-size, 17px);
+        @include rem(line-height, 21px);
+    }
+}
+
+p {
+    font-family: $font-family-primary;
+    color: $colour-13;
+    @include rem(font-size, 16px);
+    @include rem(line-height, 24px);
+    @include rem(margin-bottom, 25px);
+
+    + ul {
+        @include rem(margin-top, -8px);
+    }
+}
+
+a {
+    color: $colour-08;
+    @include transition(color, 0.3s);
+
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $colour-06;
+    }
+}
+
+strong {
+    color: $colour-12;
+}
+
+hr {
+    border-color: $hr-colour;
+}

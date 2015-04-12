@@ -1,0 +1,185 @@
+/*==========================================================================
+   HELPERS
+ ~ This is a collection of useful mixins and functions available globally
+==========================================================================*/
+
+/*------------------------------------------------------------
+   REM CONVERTER
+ ~ Source: http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ ~ Usage example: @include rem(font-size, 1.6rem); -or- @include rem(padding, 20px 10px);
+------------------------------------------------------------*/
+
+@function parseInt($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+@mixin rem($property, $values, $important:null) {
+  $px : ();
+  $rem: ();
+  $veryImportant: ();
+
+  @if $important == true {
+    $veryImportant: !important;
+  } 
+
+  @each $value in $values {
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+
+    @else { 
+      $unit: unit($value);   
+      $val: parseInt($value);
+
+      @if $unit == "px" { 
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / 10 + rem));
+      }
+
+      @if $unit == "rem" {
+        $px : append($px,  ($val * 10 + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {    
+    #{$property}: $px $veryImportant; 
+  } @else {
+    #{$property}: $px $veryImportant; 
+    #{$property}: $rem $veryImportant;
+  }
+}
+
+// Media queries.
+@mixin breakpoint($width) {  
+  @if $width == lg { // Large desktop.
+    @media(min-width:$screen-lg-min) { @content; }
+  }
+  @else if $width == md { // Medium desktop & up.
+    @media(min-width:$screen-md-min) { @content; }
+  }  
+  @else if $width == md-contain { // Only target medium desktop.
+    @media(min-width:$screen-md-min) and (max-width: $screen-lg-min) { @content; }
+  }
+   @else if $width == md-max { // Medium desktop & down.
+    @media(max-width:$screen-lg-min) { @content; }
+  }
+  @else if $width == sm { // Tablet & up.
+    @media(min-width:$screen-sm-min) { @content; }
+  }
+  @else if $width == sm-contain { // Only target tablets.
+    @media(min-width:$screen-sm-min) and (max-width: $screen-md-min) { @content; }
+  }
+  @else if $width == sm-max { // Tablets & down.
+    @media(max-width:$screen-md-min) { @content; }
+  }
+  @else if $width == xs { // Only target mobile.
+    @media(max-width:$screen-xs-min) { @content; }
+  }
+  @else if $width == xxs {  // New breakpoint for very small screens. ie, <= iphone5.
+    @media(max-width:$screen-xxs-min) { @content; }
+  }
+
+  // Device hacks.
+  @else if $width == s4 {  // S4.
+    @media(min-width: 360px) and (max-width:361px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){ @content; }
+  }
+  @else {
+    @media($width) { @content; }
+  }
+}
+
+// Placeholder
+@mixin placeholder($colour) {
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: $colour !important;
+    }
+
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $colour !important;
+        opacity: 1;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $colour !important;
+        opacity: 1;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $colour !important;
+    }
+}
+
+// Buttons
+@mixin button($bg-col, $col, $bdr-col){
+  background-color: $bg-col;
+  color: $col;
+  border-color: $bdr-col;
+}
+
+@mixin button-hover($bg-col, $col, $bdr-col){
+  // Touch devices.
+  .touch & {
+    &.touched, &.active {
+      background-color: $bg-col;
+      color: $col;
+      border-color: $bdr-col;
+    }
+  }
+  
+  // Only hover for non-touch devices.
+  .no-touch & {
+    &:hover, &.active  {
+      background-color: $bg-col;
+      color: $col;
+      border-color: $bdr-col;
+    }
+  }
+}
+
+// To use when extending icons.
+@mixin cc-icon($icon){
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @extend .#{$icon}:before;
+}
+
+// Remove grid margin.
+@mixin remove-margin($extraAmount:0){
+  margin-left:-($grid-xs-gutter-width/2) - $extraAmount;
+  margin-right: -($grid-xs-gutter-width/2) - $extraAmount;
+
+  @include breakpoint(sm){
+    margin-left:-($grid-sm-gutter-width/2) - $extraAmount;
+    margin-right: -($grid-sm-gutter-width/2) - $extraAmount;
+  }
+
+  @include breakpoint(md){
+    margin-left:-($grid-md-gutter-width/2) - $extraAmount;
+    margin-right: -($grid-md-gutter-width/2) - $extraAmount;
+  }
+
+  @include breakpoint(lg){
+    margin-left:-($grid-lg-gutter-width/2) - $extraAmount;
+    margin-right: -($grid-lg-gutter-width/2) - $extraAmount;
+  }
+}
+
+// Target only firefox.
+@mixin firefox(){
+  @-moz-document url-prefix() { 
+    @content;
+  }
+}
