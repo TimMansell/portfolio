@@ -1,0 +1,13 @@
+.lighter-note {
+	
+}
+
+#hd{
+    display:block;
+    @at-root #{&}--child-1{
+        display:block;
+        @at-root #{&}--something{
+            display:block;
+        }
+    }
+}

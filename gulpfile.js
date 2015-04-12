@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------
-//  gulp watch - normal command. Will watch and compile sass.
-//  gulp connect - load up a webserver. Watch for css and html changes and live reload.
-//  gulp build - use this command to package assets up. ie, concat, minify etc.
+//  gulp watch - Will watch and compile sass.
+//  gulp serve - Load up a webserver. Watch for css and html changes and live reload.
+//  gulp build - Use this command to package assets up. ie, concat, minify etc.
 //-----------------------------------------------------------------
 
 // Include gulp
@@ -11,11 +11,17 @@ var gulp = require('gulp');
 var compass = require('gulp-compass'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
     connect = require('gulp-connect'),
-    minifyCSS = require('gulp-minify-css'),
-    plumber = require('gulp-plumber');
-
+    minifyCss = require('gulp-minify-css'),
+    plumber = require('gulp-plumber'),
+    usemin = require('gulp-usemin'),
+    rev = require('gulp-rev'),
+    jshint = require('gulp-jshint'),
+    notify = require("gulp-notify"),
+    del = require('del'),
+    runSequence = require('run-sequence'),
+    vinylPaths = require('vinyl-paths');
+ 
 // File destinations.
 var paths = {
     cssFrom:'./app/scss',
@@ -25,8 +31,43 @@ var paths = {
     js: './app/js'
 };
 
+//-----------------------------------------------------------------
+//  Shared tasks.
+//-----------------------------------------------------------------
+
+// Compile compass.
+gulp.task('compass', function() {
+  return gulp.src(paths.cssFrom+'/**/*.scss')
+  .pipe(plumber())
+  .pipe(compass({
+    //style:'compact',
+    comments:false,
+    css: paths.cssTo,
+    sass: paths.cssFrom,
+    image: paths.img,
+    font: paths.fonts
+  }))
+  .pipe(gulp.dest(paths.cssTo));
+});
+
+// Lint our JS
+gulp.task('jshint', function() {
+  return gulp.src('./dist/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(jshint.reporter('fail'))
+    .pipe(notify({
+        title: 'JSHint',
+        message: 'JSHint Passed. Let it fly!',
+    }));
+});
+
+//-----------------------------------------------------------------
+//  Development tasks.
+//-----------------------------------------------------------------
+
 // Fire up a web server.
-gulp.task('connect', function() {
+gulp.task('serve', function() {
   connect.server({
     root: './app',
     livereload: true
@@ -45,37 +86,37 @@ gulp.task('reload', function () {
     .pipe(connect.reload());
 });
 
-// Compile compass.
-gulp.task('compass', function() {
-  gulp.src(paths.cssFrom+'/**/*.scss')
-  .pipe(plumber())
-  .pipe(compass({
-    //style:'compact',
-    comments:false,
-    css: paths.cssTo,
-    sass: paths.cssFrom,
-    image: paths.img,
-    font: paths.fonts
-  }))
-  .pipe(gulp.dest(paths.cssTo));
-});
-
-// Watch Files For Changes
+// Watch Files For Changes.
 gulp.task('watch', function() {
        
     // Watch main scss.
     gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
 
     // Watch css or html changes.
-    gulp.watch(['./app/*.html'], ['reload']);
+    gulp.watch(['./app/*.html', './app/css/*.css'], ['reload']);
 });
 
-// Development build.
+
+//-----------------------------------------------------------------
+//  Production build.
+//-----------------------------------------------------------------
+
+gulp.task('build-clean', function () {
+  return gulp.src('dist/*')
+    //.pipe(stripDebug())
+    .pipe(gulp.dest('dist'))
+    .pipe(vinylPaths(del));
+});
+
+gulp.task('build-minify', function () {
+  return gulp.src('./app/index.html')
+    .pipe(usemin({
+      css: [minifyCss(), 'concat'],
+      js: [uglify(), rev()]
+    }))
+    .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('build', function() {
-
-  // TODO.
-
+  runSequence(['build-clean', 'compass'], 'build-minify', 'jshint');
 });
-
-// Default Task
-gulp.task('default', ['compass', 'watch', 'build', 'connect']);
