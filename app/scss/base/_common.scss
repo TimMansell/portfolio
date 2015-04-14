@@ -7,6 +7,8 @@
     }
 }
 
+html, body { height: 100%; }
+
 html {
     font-size: 62.5%;
 
@@ -37,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    color: $colour-06;
+    //color: $colour-06;
     @include rem(font-size, 32px);
     @include rem(line-height, 38px);
 
@@ -51,7 +53,7 @@ h1 {
 h2 {
     @include rem(font-size, 30px);
     @include rem(line-height, 34px);
-    color: $colour-06;
+    //color: $colour-06;
 
     @include breakpoint(sm){
         @include rem(font-size, 32px);
@@ -62,7 +64,7 @@ h2 {
 h3 {
     @include rem(font-size, 24px);
     @include rem(line-height, 28px);
-    color: $colour-01;
+    //color: $colour-01;
 
     @include breakpoint(sm){
         @include rem(font-size, 28px);
@@ -73,7 +75,7 @@ h3 {
 h4 {
     @include rem(font-size, 22px);
     @include rem(line-height, 24px);
-    color: $colour-06;
+    //color: $colour-06;
 
     @include breakpoint(sm){
         @include rem(font-size, 24px);
@@ -84,7 +86,7 @@ h4 {
 h5 {
     @include rem(font-size, 18px);
     @include rem(line-height, 22px);
-    color: $colour-06;
+    //color: $colour-06;
 
     @include breakpoint(sm){
         @include rem(font-size, 20px);
@@ -95,7 +97,7 @@ h5 {
 h6 {
     @include rem(font-size, 16px);
     @include rem(line-height, 20px);
-    color: $colour-01;
+    //color: $colour-01;
 
     @include breakpoint(sm){
         @include rem(font-size, 17px);
@@ -105,8 +107,8 @@ h6 {
 
 p {
     font-family: $font-family-primary;
-    color: $colour-13;
-    @include rem(font-size, 16px);
+    //color: $colour-13;
+    @include rem(font-size, 20px);
     @include rem(line-height, 24px);
     @include rem(margin-bottom, 25px);
 
@@ -116,19 +118,19 @@ p {
 }
 
 a {
-    color: $colour-08;
+    //color: $colour-08;
     @include transition(color, 0.3s);
 
     &:hover, &:focus {
         text-decoration: none;
-        color: $colour-06;
+        //color: $colour-06;
     }
 }
 
-strong {
+/*strong {
     color: $colour-12;
 }
 
 hr {
     border-color: $hr-colour;
-}
+}*/

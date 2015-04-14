@@ -78,14 +78,6 @@
   @else if $width == xs { // Only target mobile.
     @media(max-width:$screen-xs-min) { @content; }
   }
-  @else if $width == xxs {  // New breakpoint for very small screens. ie, <= iphone5.
-    @media(max-width:$screen-xxs-min) { @content; }
-  }
-
-  // Device hacks.
-  @else if $width == s4 {  // S4.
-    @media(min-width: 360px) and (max-width:361px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){ @content; }
-  }
   @else {
     @media($width) { @content; }
   }

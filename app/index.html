@@ -14,13 +14,13 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<link rel="stylesheet" href="assets/css/normalize.css" media="screen">
-		<link rel="stylesheet" href="assets/css/qbkl-grid.css" media="screen">
-		<link rel="stylesheet" href="assets/css/style.css" media="screen">
-
 		<!-- build:css css/main.min.css -->
-		<link rel="stylesheet" href="css/main.css" media="screen">
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" media="screen">
+		<link rel="stylesheet" href="css/main.css" media="screen">
+		<!-- endbuild -->
+
+		<!-- build:js js/head.min.js -->
+		<script src="bower_components/respond/dest/respond.min.js"></script>
 		<!-- endbuild -->
 	</head>
 
@@ -48,11 +48,11 @@
 			<nav id="nav">
 				<!-- The content between <span> </span> tags will be hidden on mobile version -->
 				<ul class="clearfix">
-					<li><a href="#profile">Pro<span>file</span></a></li>
-					<li><a href="#skills">Ski<span>lls</span></a></li>
-					<li><a href="#portfolio">Por<span>tfolio</span></a></li>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contact">Con<span>tact</span></a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -68,15 +68,23 @@
 					</div>
 				</div>
 
-				<div class="row section-content">
-					<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12 text-center">
 						<p>I am an experienced and ambitious Front-end / PHP Web Developer with over 6 years commercial experience in a design agency environment. I excell in both front-end and back-end development.</p>
 
 						<p>I develop with best practices in mind and adhere to W3C standards. Not all browsers are created equal, so I ensure that any website I work on displays pixel-perfect in all of the major players (Chrome, Firefox, IE &amp; Safari).</p>
 
 						<p>I believe that having a functional website is only part of the solution. Being found is just as important. Search Engine Optimisation is an integral part of my development process.</p>
 
-						<p>Please view my portfolio to see some examples of my work.</p>
+						<p>Please view my <a href="#portfolio">portfolio</a> to see some examples of my work.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 text-center social">
+						<a href="http://au.linkedin.com/pub/tim-mansell/4b/1a/88"><i class="fa fa-linkedin social-icon"></i></a>
+						<a href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
+						<a href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
 					</div>
 				</div>
 			</div>
@@ -84,52 +92,57 @@
 		<!-- End: Personal profile -->
 
 		<!-- Start: Technical Skills -->
-		<section id="skills" class="section-alt">
+		<section id="skills" class="bg-primary">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="section-title">Technical Skills</h2>
+						<h2 class="section-title">Skills</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
 
-				<div class="row section-content">
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="90">90%</div>
-						<h4>Photoshop</h4>
+				
+
+				<div class="row skills">
+
+					<div class="col-xs-6 col-sm-offset-1 col-sm-2">
+						<i class="fa fa-html5 skills-icon"></i>
+						<p>Semantic HTML5 &amp; CSS3</p>
+						<p>SCSS / Compass</p>
+						<p>JavaScript</p>
+						<p>PHP</p>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="75">75%</div>
-						<h4>HTML5</h4>
+
+					<div class="col-xs-6 col-sm-2">
+						<i class="fa fa-mobile skills-icon"></i>
+						<p>Responsive</p>
+						<p>Mobile First</p>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="65">65%</div>
-						<h4>CSS3</h4>
+
+					<div class="col-xs-6 col-sm-2">
+						<i class="fa fa-code skills-icon"></i>
+						<p>jQuery</p>
+						<p>AngularJS</p>
+						<p>Backbone</p>
+						<p>Bootstrap</p>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="95">95%</div>
-						<h4>AngularJS</h4>
+
+					<div class="col-xs-6 col-sm-2">
+						<i class="fa fa-terminal skills-icon"></i>
+						<p>Node</p>
+						<p>Gulp</p>
+						<p>Bower</p>
+						<p>Git</p>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="80">80%</div>
-						<h4>Javascript</h4>
+
+					<div class="col-xs-6 col-sm-2">
+						<i class="fa fa-paper-plane skills-icon"></i>
+						<p>Agile</p>
+						<p>Scrum</p>
+						<p>Kanban</p>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="70">70%</div>
-						<h4>PHP / MySQL</h4>
-					</div>
-					<!-- End: Skill -->
+					
+					
 				</div>
 			</div>
 		</section>
@@ -145,48 +158,101 @@
 					</div>
 				</div>
 
-				<div class="row section-content">
+				<!-- <div class="row"> -->
 					
 					<!-- Portfolio items -->
-					<div class="row projects gallery">
-						<div class="col-xs-12 col-sm-4 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-					</div>
-					<div class="row projects gallery">
-						<div class="col-xs-12 col-sm-4 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
+					<div class="row ">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 1">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 2">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 3">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+					
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 4">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 5">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 6">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
 						
 					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 		</section>
 		<!-- End: Portfolio -->
 
-		<section class="section container">
-			<div class="row text-center lighter-note">
-				<div class="col-xs-12 col-sm-3">
-					<i class="fa fa-code"></i>
-					<p>Lines of code</p>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<i class="fa fa-code-fork"></i>
-					<p>Git commits</p>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-				<i class="fa fa-coffee"></i>	
-					<p>Coffees consumed</p>
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					<i class="fa fa-bicycle"></i>
-					<p>Kilometers cycled</p>
+		<section class="section bg-primary">
+			<div class="container">
+				<div class="row text-center lighter-note">
+					<div class="col-xs-12 col-sm-3">
+						<i class="fa fa-code lighter-note-icon"></i>
+						<p class="lighter-note-amount">800</p>
+						<p>Lines of code</p>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<i class="lighter-note-icon fa fa-code-fork"></i>
+						<p class="lighter-note-amount">800</p>
+						<p>Git commits</p>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+					<i class="lighter-note-icon fa fa-coffee"></i>	
+						<p class="lighter-note-amount">800</p>
+						<p>Coffees consumed</p>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<i class="lighter-note-icon fa fa-bicycle"></i>
+						<p class="lighter-note-amount">800</p>
+						<p>Kilometers cycled</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
+		<section id="testimonials" class="section container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="section-title">Testimonials</h2>
+					<div class="centered line"></div>
+				</div>
+			</div>
+
+			<div class="row text-center lighter-note">
+
+				<div>
+					<p>I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.</p>
+					<p>Rusty Brooke</p>
+
+					<p>Tim worked with the Graphic Cafe for over 4 years, in that time Tim lead the web development side to the business, his ability to problem solve was second to none as we often tested the boundaries of web and interactive development.</p>
+					<p>Matt O’Dea</p>
+
+					<p>Tim is really brilliant developer and he has wide knowledge in the IT industry.</p>
+					<p>Randy An</p>
+				</div>
+
+			</div>
+		</section>
+
 		<!-- Start: Contact -->
-		<section id="contact" class="section">
+		<section id="contact" class="section bg-secondary">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -195,29 +261,34 @@
 					</div>
 				</div>
 
-				<div class="row section-content">
-					<div class="col-xs-12 col-wrap centered text-center">
+				<div class="row">
+					<div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
 						<div id="form-message"></div>
 						<form id="form-contact" name="form-contact">
-							<div class="col-xs-12">
-								<label for="name">What's your name?</label>
-								<input type="text" name="name" id="name" value="">
+							<div class="col-xs-12 col-sm-6">
+								<div class="form-group">
+									<label class="sr-only" for="name">What's your name?</label>
+									<input class="form-control" type="text" name="name" id="name" value="" placeholder="What's your name?">
+								</div>
+
+								<div class="form-group">
+									<label class="sr-only" for="name">What's your e-mail?</label>
+									<input class="form-control" type="email" name="email" id="email" value="" placeholder="What's your email?">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="form-group">
+									<label class="sr-only" for="name">What do you have in mind?</label>
+									<textarea class="form-control" name="message" id="message" rows="4" placeholder="Your message?"></textarea>
+								</div>
 							</div>
 							<div class="col-xs-12">
-								<label for="name">What's your e-mail?</label>
-								<input type="text" name="email" id="email" value="">
-							</div>
-							<div class="col-xs-12">
-								<label for="name">What do you have in mind?</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div>
-							<div class="col-xs-12">
-								<a href="#" class="button button-medium button-submit" id="submit-contact">Send the pidgeons!</a>
+								<a href="#" class="btn btn-primary" id="submit-contact">Send the pidgeons!</a>
 							</div>
 						</form>
 					</div>
 
-					<div class="separator"></div>
+					
 
 				</div>
 			</div>
@@ -232,31 +303,12 @@
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<!-- endbuild -->
 
-		<!-- Loading: jQuery Magnific Popup (lightbox) -->
-		<script src="assets/js/magnific/jquery.magnific-popup.min.js"></script>
-
-		<!-- Loading: jQuery Easy Pie Chart -->
-		<script src="assets/js/easy-pie/jquery.easy-pie-chart.js"></script>
-
 		<!-- Loading: jQuery Sticky -->
 		<script src="assets/js/jquery.sticky.js"></script>
-
-
-		<!-- Loading, Setting Up: Form, Form Validation Plugin -->
-		<script src="assets/js/jquery.form.min.js" type="text/javascript"></script>
-		<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
-		<script src="assets/js/jquery.validation.settings.js" type="text/javascript"></script>
 
 		<!-- Loading: jQuery One page nav -->
 		<script src="assets/js/jquery.scrollto.min.js"></script>
 		<script src="assets/js/jquery.nav.js"></script>
-
-		<!-- Loading: Respond.js - Responsive IE8 -->
-		<script src="assets/js/respond.min.js"></script>
-
-		<!--[if lt IE 9]>
-		<script src="assets/js/excanvas.js"></script>
-		<![endif]-->
 
 		<!-- Loading: Curriculum custom scripting -->
 		<script src="assets/js/custom.curriculum.js" type="text/javascript"></script>

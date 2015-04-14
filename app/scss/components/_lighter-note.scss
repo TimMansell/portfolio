@@ -1,13 +1,9 @@
 .lighter-note {
-	
-}
+	@at-root #{&}-amount {
+		@include rem(font-size, 30px);
+	}
 
-#hd{
-    display:block;
-    @at-root #{&}--child-1{
-        display:block;
-        @at-root #{&}--something{
-            display:block;
-        }
-    }
+	@at-root #{&}-icon {
+		@include rem(font-size, 70px);
+	}
 }

@@ -5,10 +5,13 @@
 $font-family-primary: 'Source Sans Pro', sans-serif;
 $font-family-secondary: 'Source Sans Pro', serif;
 $font-family-heading: 'Source Sans Pro', serif;
-$font-family-icon: 'icomoon';
+//$font-family-icon: 'icomoon';
 
-// CC theme colours.
-$colour-01: #A99036;
+// Theme colours.
+$colour-primary: #4ab571;
+$colour-secondary: #2e3037;
+
+/*$colour-01: #A99036;
 $colour-02: #CBBC86;
 $colour-03: #DDD3AF;
 $colour-04: #EEE9D7;
@@ -27,7 +30,7 @@ $colour-16: #E9EAEA;
 $colour-17: #F4F4F4;
 $colour-18: #FFFFFF;
 $colour-19: #eff3f5;
-$colour-20: #e2e2e1;
+$colour-20: #e2e2e1;*/
 
 $mobile-menu-xs-width: 255px;
 $mobile-menu-width: 295px;
@@ -37,169 +40,3 @@ $mobile-nav-mega-menu-bdr-colour: #cbd8de;
 $mobile-nav-mega-menu-bg-colour: #eff3f6;
 $mobile-nav-bdr-colour: #e0e0e0;
 $mobile-menu-dynamic-width: calc(100% - #{$mobile-header-button-width});
-
-//------------------------------------------
-// Bootstrap variables                    
-//------------------------------------------
-
-// Bootstrap Breakpoints
-$screen-xxs-min: 359px !default;
-$screen-xs-min: 767px !default;
-$screen-sm-min: 768px !default;
-$screen-md-min: 992px !default;
-$screen-lg-min: 1281px !default;
-
-$grid-xs-gutter-width: 16px !default;
-$grid-sm-gutter-width: 24px !default;
-$grid-md-gutter-width: 32px !default;
-$grid-lg-gutter-width: 40px !default;
-
-//** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-md-min !default;
-
-//== Container sizes
-//
-//## Define the maximum width of `.container` for different screen sizes.
-
-// Small screen / tablet
-$container-tablet:             ((720px + $grid-sm-gutter-width)) !default;
-//** For `$screen-sm-min` and up.
-$container-sm:                 $container-tablet !default;
-
-// Medium screen / desktop
-$container-desktop:            ((928px + $grid-md-gutter-width)) !default;
-//** For `$screen-md-min` and up.
-$container-md:                 $container-desktop !default;
-
-// Large screen / wide desktop
-$container-large-desktop:      ((1200px + $grid-lg-gutter-width)) !default;
-//** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop !default;
-
-$state-success-text: #43b02a;
-$state-success-bg: #43b02a;
-$state-danger-text: #d22630;
-$state-danger-bg: #d22630;
-
-$alert-warning-bg: $colour-17;
-$alert-warning-border: darken($alert-warning-bg, 10%);
-$alert-warning-text: $colour-13;
-$alert-warning-link: $colour-06;
-
-//------------------------------------------
-// Variables                    
-//------------------------------------------
-
-// Buttons.
-$btn-b1-bg: $colour-18;
-$btn-b1-col: $colour-08;
-$btn-b1-bdr: $colour-09;
-$btn-b1-bg-hover: $colour-06;
-$btn-b1-col-hover: $colour-18;
-$btn-b1-bdr-hover: $colour-06;
-
-$btn-b2-bg: $colour-08;
-$btn-b2-col: $colour-18;
-$btn-b2-bdr: $colour-08 ;
-$btn-b2-bg-hover: $colour-06;
-$btn-b2-col-hover: $colour-18;
-$btn-b2-bdr-hover: $colour-06;
-
-$btn-b3-bg: $colour-06;
-$btn-b3-col: $colour-18;
-$btn-b3-bdr: $colour-18;
-$btn-b3-bg-hover: $colour-08;
-$btn-b3-col-hover: $colour-18;
-$btn-b3-bdr-hover: $colour-08;
-
-$btn-b4-bg: $colour-08;
-$btn-b4-col: $colour-18;
-$btn-b4-bdr: $colour-18;
-$btn-b4-bg-hover: $colour-18;
-$btn-b4-col-hover: $colour-06;
-$btn-b4-bdr-hover: $colour-18;
-
-$btn-b5-bg: $colour-07;
-$btn-b5-col: $colour-18;
-$btn-b5-bdr: $colour-18;
-$btn-b5-bg-hover: $colour-08;
-$btn-b5-col-hover: $colour-18;
-$btn-b5-bdr-hover: $colour-08;
-
-$btn-b6-bg: $colour-18;
-$btn-b6-col: $colour-08;
-$btn-b6-bdr: $colour-09;
-$btn-b6-bg-hover: $colour-08;
-$btn-b6-col-hover: $colour-18;
-$btn-b6-bdr-hover: $colour-08;
-
-$btn-g1-bg: $colour-18;
-$btn-g1-col: $colour-02;
-$btn-g1-bdr: $colour-03;
-$btn-g1-bg-hover: $colour-01;
-$btn-g1-col-hover: $colour-18;
-$btn-g1-bdr-hover: $colour-01;
-
-$btn-g2-bg: #baa65e;
-$btn-g2-col: $colour-18;
-$btn-g2-bdr: #baa65e ;
-$btn-g2-bg-hover: $colour-01;
-$btn-g2-col-hover: $colour-18;
-$btn-g2-bdr-hover: $colour-01;
-
-$btn-k1-bg: transparent;
-$btn-k1-col: $colour-14;
-$btn-k1-bdr: $colour-14;
-$btn-k1-bg-hover: $colour-12;
-$btn-k1-col-hover: $colour-18;
-$btn-k1-bdr-hover: $colour-12;
-
-$btn-k2-bg: $colour-06;
-$btn-k2-col: $colour-18;
-$btn-k2-bdr: $colour-18 ;
-$btn-k2-bg-hover: $colour-18;
-$btn-k2-col-hover: $colour-06;
-$btn-k2-bdr-hover: $colour-18;
-
-$btn-s1-bg: $colour-18;
-$btn-s1-col: $colour-06;
-$btn-s1-bdr: $colour-14 ;
-$btn-s1-bg-hover: $colour-12;
-$btn-s1-col-hover: $colour-18;
-$btn-s1-bdr-hover: $colour-12;
-
-$btn-filter-bg: $colour-06;
-$btn-filter-col: $colour-18;
-$btn-filter-bdr: $colour-08;
-$btn-filter-bg-hover: $colour-08;
-$btn-filter-col-hover: $colour-18;
-$btn-filter-bdr-hover: $colour-08;
-
-//subscription
-$subscription-h4-colour: #A07E1B;
-
-// Poups.
-$popup-bg-colour: $colour-18;
-
-// Rows.
-$row-border-colour-secondary: #cccccc;
-
-// Images.
-$image-title: #6b6b6b;
-
-// HR.
-$hr-colour: #eaeaea;
-
-
-//------------------------------------------
-// Forms              
-//------------------------------------------
-
-// Inputs.
-$input-color: #363636;
-$input-bg: $colour-17;
-$input-border: $colour-15;
-$input-placeholder-colour: #787878;
-
-// Selects.
-$select-height: 53px;
