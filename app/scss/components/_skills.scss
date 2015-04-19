@@ -1,10 +1,10 @@
 .skills {
 	@at-root #{&}-icon {
-		@include rem(font-size, 50px);
+		font-size: 50px;
 	}
 
 	@at-root #{&}-list {
 		list-style-type: none;
-		@include rem(margin-top, 20px);
+		margin-top: 20px;
 	}
 }

@@ -6,7 +6,7 @@
 /*------------------------------------------------------------
    REM CONVERTER
  ~ Source: http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
- ~ Usage example: @include rem(font-size, 1.6rem); -or- @include rem(padding, 20px 10px);
+ ~ Usage example: @include rem(font-size, 1.6rem); -or- @include rem(padding: 20px 10px;
 ------------------------------------------------------------*/
 
 @function parseInt($n) {

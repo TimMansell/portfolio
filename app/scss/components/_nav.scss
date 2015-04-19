@@ -9,7 +9,7 @@
 		background: rgba(0,0,0,0.3);
 		top: auto !important;
 		bottom: 0 !important;
-		@include rem(font-size, 20px);
+		font-size: 20px;
 
 		&.is-sticky {
 			background-color: #0d2c5a;
@@ -21,7 +21,6 @@
 			padding: 0;
 			list-style: none;
 			display: inline-block;
-			*display: inline;
 		}
 
 		li {
@@ -34,8 +33,8 @@
 
 		a {
 			display: block;
-			font-size: 0.938em;
-			letter-spacing: 0.1em;
+			font-size: 18px;
+			letter-spacing: 2px;
 			color: #5b9bbc;
 			text-decoration: none;
 
@@ -44,10 +43,8 @@
 			}
 		}
 
-		.current {
-			a {
-				color: #fff;
-			}
+		.active {
+			color: #fff;
 		}
 	}	
 }

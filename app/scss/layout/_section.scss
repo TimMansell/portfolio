@@ -1,3 +1,12 @@
 .layout-section {
 	padding: 40px 0;
+
+	
+	&:last-of-type {
+		padding-bottom: 140px;
+		
+		@include breakpoint(sm){
+			padding-bottom: 40px;
+		}
+	}
 }

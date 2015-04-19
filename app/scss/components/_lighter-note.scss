@@ -1,9 +1,9 @@
 .lighter-note {
 	@at-root #{&}-amount {
-		@include rem(font-size, 30px);
+		font-size: 30px;
 	}
 
 	@at-root #{&}-icon {
-		@include rem(font-size, 70px);
+		font-size: 70px;
 	}
 }

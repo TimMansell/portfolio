@@ -20,7 +20,9 @@ var compass = require('gulp-compass'),
     notify = require("gulp-notify"),
     del = require('del'),
     runSequence = require('run-sequence'),
-    vinylPaths = require('vinyl-paths');
+    vinylPaths = require('vinyl-paths'),
+    autoprefixer = require('gulp-autoprefixer'),
+    pixrem = require('gulp-pixrem');
  
 // File destinations.
 var paths = {
@@ -40,13 +42,17 @@ gulp.task('compass', function() {
   return gulp.src(paths.cssFrom+'/**/*.scss')
   .pipe(plumber())
   .pipe(compass({
-    //style:'compact',
     comments:false,
     css: paths.cssTo,
     sass: paths.cssFrom,
     image: paths.img,
     font: paths.fonts
   }))
+  .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+  }))
+  .pipe(pixrem())
   .pipe(gulp.dest(paths.cssTo));
 });
 
@@ -118,5 +124,5 @@ gulp.task('build-minify', function () {
 });
 
 gulp.task('build', function() {
-  runSequence(['build-clean', 'compass'], 'build-minify', 'jshint');
+  runSequence(['build-clean', 'compass'], 'build-minify');
 });

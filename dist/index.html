@@ -10,77 +10,102 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-		<meta name="author" content="QBKL, http://themeforest.net/user/QBKL">
-
-		<!-- Loading: Normalize, Grid and Styles -->
-		<link rel="stylesheet" href="assets/css/normalize.css" media="screen">
-		<link rel="stylesheet" href="assets/css/qbkl-grid.css" media="screen">
-		<link rel="stylesheet" href="assets/css/style.css" media="screen">
-
-		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-
-		<!-- Loading: jQuery Magnific Popup Stylesheet -->
-		<link rel="stylesheet" href="assets/js/magnific/jquery.magnific-popup.css" media="screen">
-
-		<!-- Loading: jQuery Easy Pie Chart Stylesheet -->
-		<link rel="stylesheet" href="assets/js/easy-pie/jquery.easy-pie-chart.css" media="screen">
-
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
 		<link rel="stylesheet" href="css/main.min.css" media="screen"/>
+
+		
 	</head>
 
-	<body>
+	<body ng-app="TM">
 		<div class="top-decorations"></div>
 
+		<nav id="nav" class="navigation" tm-navigation>
+				<ul class="clearfix hidden-xs">
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+				<button class="hamburger visible-xs" data-ng-class="{true:'active', false:''}[menu.open]" data-ng-click="menu.open=!menu.open">
+			  		<span class="hamburger-menu">toggle menu</span>
+				</button>
+			</nav>
+
+		<!-- <div id="video" data-vide-bg="video/4318736" data-vide-options="loop: false, muted: false, position: 0% 0%">
+			</div> -->
+
 		<!-- Start: Intro -->
-		<section id="intro" class="fx-backstretch">
-			<div class="info">
+		<section id="intro">
+			<!-- <video autoplay loop class="hero">
+				<source src="video/4318736.mp4" type="video/mp4">
+			</video> -->
+
+			
+
+			<div class="info" tm-center-content>
 				<div class="container">
+					<!-- <div class="row">
+						<div class="col-xs-12"> -->
+							<h4 class="linez">Front-end ninja</h4>
+							<h1>Hi! I'm Tim Mansell</h1>
+						<!-- </div>
+					</div> -->
 					<div class="row">
-						<div class="col-xs-12"><h1>Hi! I'm Tim Mansell</h1></div>
-					</div>
-					<div class="row"><div class="col-1-4 centered line"></div></div>
-					<div class="row">
-						<div class="col-xs-12"><h4>Front-end ninja residing in Melboure, Australia</h4></div>
+						<div class="col-xs-12"><h4>Melboure, Australia</h4></div>
 					</div>
 				</div>
 			</div>
 
-			<nav id="nav">
-				<!-- The content between <span> </span> tags will be hidden on mobile version -->
-				<ul class="clearfix">
-					<li><a href="#profile">Pro<span>file</span></a></li>
-					<li><a href="#skills">Ski<span>lls</span></a></li>
-					<li><a href="#portfolio">Por<span>tfolio</span></a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contact">Con<span>tact</span></a></li>
-				</ul>
-			</nav>
+			
+
+			
+
 		</section>
 		<!-- End: Intro -->
 
 		<!-- Start: Personal profile -->
-		<section id="profile" class="section">
+		<section id="profile" class="layout-section scrollto">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="section-title">Personal Profile</h2>
+						<h2 class="text-center">A little bit about myself</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
 
-				<div class="row section-content">
-					<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12 text-center">
 						<p>I am an experienced and ambitious Front-end / PHP Web Developer with over 6 years commercial experience in a design agency environment. I excell in both front-end and back-end development.</p>
 
 						<p>I develop with best practices in mind and adhere to W3C standards. Not all browsers are created equal, so I ensure that any website I work on displays pixel-perfect in all of the major players (Chrome, Firefox, IE &amp; Safari).</p>
 
 						<p>I believe that having a functional website is only part of the solution. Being found is just as important. Search Engine Optimisation is an integral part of my development process.</p>
 
-						<p>Please view my portfolio to see some examples of my work.</p>
+						<p>Please view my <a href="#portfolio">portfolio</a> to see some examples of my work.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 class="text-center">Find me on the interwebs</h2>
+						<div class="centered line"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-4 col-sm-offset-3 col-sm-2 text-center social">
+						<a href="http://au.linkedin.com/pub/tim-mansell/4b/1a/88"><i class="fa fa-linkedin social-icon"></i></a>
+					</div>
+					<div class="col-xs-4 col-sm-2 text-center social">
+						<a href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
+					</div>
+					<div class="col-xs-4 col-sm-2 text-center social">
+						<a href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
 					</div>
 				</div>
 			</div>
@@ -88,151 +113,234 @@
 		<!-- End: Personal profile -->
 
 		<!-- Start: Technical Skills -->
-		<section id="skills" class="section-alt">
+		<section id="skills" class="scrollto layout-section bg-primary">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="section-title">Technical Skills</h2>
+						<h2 class="text-center">Skills</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
 
-				<div class="row section-content">
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="90">90%</div>
-						<h4>Photoshop</h4>
+				
+
+				<div class="row skills">
+
+					<div class="col-xs-12 col-sm-offset-1 col-sm-2 text-center">
+						<i class="fa fa-html5 skills-icon"></i>
+						<ul class="skills-list">
+							<li>Semantic HTML5 &amp; CSS3</li>
+							<li>SCSS / Compass</li>
+							<li>JavaScript</li>
+							<li>PHP</li>
+						</ul>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="75">75%</div>
-						<h4>HTML5</h4>
+
+					<div class="col-xs-12 col-sm-2 text-center">
+						<i class="fa fa-mobile skills-icon"></i>
+						<ul class="skills-list">
+							<li>Responsive</li>
+							<li>Mobile First</li>
+						</ul>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="65">65%</div>
-						<h4>CSS3</h4>
+
+					<div class="col-xs-12 col-sm-2 text-center">
+						<i class="fa fa-code skills-icon"></i>
+						<ul class="skills-list">
+							<li>jQuery</li>
+							<li>AngularJS</li>
+							<li>Backbone</li>
+							<li>Bootstrap</li>
+						</ul>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="95">95%</div>
-						<h4>AngularJS</h4>
+
+					<div class="col-xs-12 col-sm-2 text-center">
+						<i class="fa fa-terminal skills-icon"></i>
+						<ul class="skills-list">
+							<li>Node</li>
+							<li>Gulp</li>
+							<li>Bower</li>
+							<li>Git</li>
+						</ul>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="80">80%</div>
-						<h4>Javascript</h4>
+
+					<div class="col-xs-12 col-sm-2 text-center">
+						<i class="fa fa-paper-plane skills-icon"></i>
+						<ul class="skills-list">
+							<li>Agile</li>
+							<li>Scrum</li>
+							<li>Kanban</li>
+						</ul>
 					</div>
-					<!-- End: Skill -->
-					<!-- Start: Skill -->
-					<div class="col-xs-12 col-sm-2 skill">
-						<div class="skill-pie" data-percent="70">70%</div>
-						<h4>PHP / MySQL</h4>
-					</div>
-					<!-- End: Skill -->
+					
+					
 				</div>
 			</div>
 		</section>
 		<!-- End: Technical Skills -->
 
 		<!-- Start: Portfolio -->
-		<section id="portfolio" class="section">
+		<section id="portfolio" class="scrollto layout-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="section-title">Portfolio</h2>
+						<h2 class="text-center">Portfolio</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
 
-				<div class="row section-content">
+				<!-- <div class="row"> -->
 					
 					<!-- Portfolio items -->
-					<div class="row projects gallery">
-						<div class="col-xs-12 col-sm-4 project port-objects"><a href="assets/img/big-1.jpg" title="Project 1"><img src="assets/img/thumb-1.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-objects"><a href="assets/img/big-2.jpg" title="Project 2"><img src="assets/img/thumb-2.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-food"><a href="assets/img/big-3.jpg" title="Project 3"><img src="assets/img/thumb-3.png" alt=""></a></div>
-					</div>
-					<div class="row projects gallery">
-						<div class="col-xs-12 col-sm-4 project port-food"><a href="assets/img/big-4.jpg" title="Project 4"><img src="assets/img/thumb-4.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-street"><a href="assets/img/big-5.jpg" title="Project 5"><img src="assets/img/thumb-5.png" alt=""></a></div>
-						<div class="col-xs-12 col-sm-4 project port-street"><a href="assets/img/big-6.jpg" title="Project 6"><img src="assets/img/thumb-6.png" alt=""></a></div>
+					<div class="row ">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 1">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 2">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 3">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+					
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 4">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 5">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="img/portfolio/captains-choice.jpg" title="Project 6">
+								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+							</a>
+						</div>
 						
 					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 		</section>
 		<!-- End: Portfolio -->
 
-		<section id="contact" class="section">
+		<section class="layout-section bg-primary">
+			<div class="container">
+				<div class="row text-center lighter-note">
+					<div class="col-xs-6 col-sm-3">
+						<i class="fa fa-code lighter-note-icon"></i>
+						<p class="lighter-note-amount">800</p>
+						<p>Lines of code</p>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<i class="lighter-note-icon fa fa-code-fork"></i>
+						<p class="lighter-note-amount">800</p>
+						<p>Git commits</p>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+					<i class="lighter-note-icon fa fa-coffee"></i>	
+						<p class="lighter-note-amount">800</p>
+						<p>Coffees consumed</p>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<i class="lighter-note-icon fa fa-bicycle"></i>
+						<p class="lighter-note-amount">800</p>
+						<p>Kilometers cycled</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials" class="scrollto layout-section container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-3">
-					
-				Lines of code
+				<div class="col-xs-12">
+					<h2 class="text-center">Testimonials</h2>
+					<div class="centered line"></div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					
-				Git commits
+			</div>
+
+			<div class="row text-center">
+
+				<div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
+
+					<div class="your-class">
+					  	<div>
+					  		<p>I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.</p>
+							<p>Rusty Brooke</p>
+						</div>
+					  	<div>
+					  		<p>Tim worked with the Graphic Cafe for over 4 years, in that time Tim lead the web development side to the business, his ability to problem solve was second to none as we often tested the boundaries of web and interactive development.</p>
+							<p>Matt O’Dea</p>
+						</div>
+					  	<div>
+					  		<p>Tim is really brilliant developer and he has wide knowledge in the IT industry.</p>
+							<p>Randy An</p>
+					  	</div>
+					</div>
+
 				</div>
-				<div class="col-xs-12 col-sm-3">
-					
-				Coffees consumed
-				</div>
-				<div class="col-xs-12 col-sm-3">
-					
-				Kilometers cycled
-				</div>
+
 			</div>
 		</section>
 
 		<!-- Start: Contact -->
-		<section id="contact" class="section">
+		<section id="contact" class="scrollto layout-section bg-secondary">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="section-title">Let's get in touch</h2>
+						<h2 class="text-center">Let's get in touch</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
 
-				<div class="row section-content">
-					<div class="col-xs-12 col-wrap centered text-center">
+				<div class="row">
+					<div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
 						<div id="form-message"></div>
 						<form id="form-contact" name="form-contact">
-							<div class="col-xs-12">
-								<label for="name">What's your name?</label>
-								<input type="text" name="name" id="name" value="">
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<label class="sr-only" for="name">What's your name?</label>
+									<input class="form-control" type="text" name="name" id="name" value="" placeholder="What's your name?">
+								</div>
+
+								<div class="form-group">
+									<label class="sr-only" for="name">What's your e-mail?</label>
+									<input class="form-control" type="email" name="email" id="email" value="" placeholder="What's your email?">
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group">
+									<label class="sr-only" for="name">What do you have in mind?</label>
+									<textarea class="form-control" name="message" id="message" rows="4" placeholder="Your message?"></textarea>
+								</div>
 							</div>
 							<div class="col-xs-12">
-								<label for="name">What's your e-mail?</label>
-								<input type="text" name="email" id="email" value="">
-							</div>
-							<div class="col-xs-12">
-								<label for="name">What do you have in mind?</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div>
-							<div class="col-xs-12">
-								<a href="#" class="button button-medium button-submit" id="submit-contact">Send the pidgeons!</a>
+								<a href="#" class="btn btn-primary" id="submit-contact">Send the pidgeons!</a>
 							</div>
 						</form>
 					</div>
 
-					<div class="separator"></div>
+					
 
 				</div>
 			</div>
-		</section>
+		</section>	
 
-		
+		<script src="js/lib.min.js"></script>
+
+		<script src="js/plugins.min.js"></script>		
+
+		<script src="js/app.min.js"></script>	
 
 		<!-- Loading: jQuery One page nav -->
-		<script src="assets/js/jquery.scrollto.min.js"></script>
-		<script src="assets/js/jquery.nav.js"></script>
-
-		<script src="js/lib.min-1b216d9b.js"></script>
+		<!--<script src="assets/js/jquery.scrollto.min.js"></script>
+		<script src="assets/js/jquery.nav.js"></script>-->
 	</body>
 </html>
