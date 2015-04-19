@@ -6,14 +6,15 @@
 		text-align: center;
 		position: absolute;
 		margin: 0 auto;
-		background: rgba(0,0,0,0.3);
+		//background: rgba(0,0,0,0.3);
 		top: auto !important;
 		bottom: 0 !important;
 		font-size: 20px;
 
 		&.is-sticky {
-			background-color: #0d2c5a;
-			top: 10px !important;
+			background-color: $colour-primary;
+			top: 0 !important;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 		}
 
 		ul {
@@ -35,7 +36,7 @@
 			display: block;
 			font-size: 18px;
 			letter-spacing: 2px;
-			color: #5b9bbc;
+			color: #fff;
 			text-decoration: none;
 
 			&:hover {

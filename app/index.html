@@ -2,17 +2,17 @@
 <html>
 	<head>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Front-end Developer | Tim Mansell</title>
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
 		<!-- build:css css/main.min.css -->
 		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" media="screen">
@@ -26,7 +26,7 @@
 	</head>
 
 	<body ng-app="TM">
-		<div class="top-decorations"></div>
+		<!-- <div class="top-decorations"></div> -->
 
 		<nav id="nav" class="navigation" tm-navigation>
 				<ul class="clearfix hidden-xs">
@@ -46,24 +46,22 @@
 			</div> -->
 
 		<!-- Start: Intro -->
-		<section id="intro">
+		<section id="intro" class="bg-primary">
 			<!-- <video autoplay loop class="hero">
 				<source src="video/4318736.mp4" type="video/mp4">
 			</video> -->
 
 			
 
-			<div class="info" tm-center-content>
-				<div class="container">
-					<!-- <div class="row">
-						<div class="col-xs-12"> -->
-							<h4 class="linez">Front-end ninja</h4>
-							<h1>Hi! I'm Tim Mansell</h1>
-						<!-- </div>
-					</div> -->
-					<div class="row">
-						<div class="col-xs-12"><h4>Melboure, Australia</h4></div>
+			<div class="info" tm-center-content element=".js-info-content">
+				<div class="js-info-content info-content" tm-scroll-fade>
+					<div class="info-blurb" tm-shuffle-content>
+						<h4 class="info-blurb-item info-sub-title">Front-end ninja</h4>
+						<h4 class="info-blurb-item info-sub-title">Avid Snowboarder</h4>
+						<h4 class="info-blurb-item info-sub-title">Hard worker</h4>
 					</div>
+					<h1 class="info-title">Hi! I'm Tim Mansell</h1>
+					<h4 class="info-sub-title">Melboure, Australia</h4>
 				</div>
 			</div>
 
@@ -75,7 +73,7 @@
 		<!-- End: Intro -->
 
 		<!-- Start: Personal profile -->
-		<section id="profile" class="layout-section scrollto">
+		<section id="profile" class="layout-section bg-tertiary scrollto">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -105,13 +103,13 @@
 
 				<div class="row">
 					<div class="col-xs-4 col-sm-offset-3 col-sm-2 text-center social">
-						<a href="http://au.linkedin.com/pub/tim-mansell/4b/1a/88"><i class="fa fa-linkedin social-icon"></i></a>
+						<a target="_blank" href="http://au.linkedin.com/pub/tim-mansell/4b/1a/88"><i class="fa fa-linkedin social-icon"></i></a>
 					</div>
 					<div class="col-xs-4 col-sm-2 text-center social">
-						<a href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
+						<a target="_blank" href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
 					</div>
 					<div class="col-xs-4 col-sm-2 text-center social">
-						<a href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
+						<a target="_blank" href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
 					</div>
 				</div>
 			</div>
@@ -186,7 +184,7 @@
 		<!-- End: Technical Skills -->
 
 		<!-- Start: Portfolio -->
-		<section id="portfolio" class="scrollto layout-section">
+		<section id="portfolio" class="scrollto layout-section bg-tertiary">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -264,32 +262,26 @@
 			</div>
 		</section>
 
-		<section id="testimonials" class="scrollto layout-section container">
-			<div class="row">
-				<div class="col-xs-12">
-					<h2 class="text-center">Testimonials</h2>
-					<div class="centered line"></div>
-				</div>
-			</div>
+		<section id="testimonials" class="scrollto layout-section container bg-tertiary">
 
 			<div class="row text-center">
 
 				<div class="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
 
-					<div class="your-class">
+					<tm-carousel autoplay="true" speed="6000">
 					  	<div>
 					  		<p>I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.</p>
-							<p>Rusty Brooke</p>
+							<p><em>Rusty Brooke</em></p>
 						</div>
 					  	<div>
 					  		<p>Tim worked with the Graphic Cafe for over 4 years, in that time Tim lead the web development side to the business, his ability to problem solve was second to none as we often tested the boundaries of web and interactive development.</p>
-							<p>Matt O’Dea</p>
+							<p><em>Matt O’Dea</em></p>
 						</div>
 					  	<div>
 					  		<p>Tim is really brilliant developer and he has wide knowledge in the IT industry.</p>
-							<p>Randy An</p>
+							<p><em>Randy An</em></p>
 					  	</div>
-					</div>
+					</tm-carousel>
 
 				</div>
 
@@ -347,6 +339,7 @@
 		<!-- build:jsPlugins js/plugins.min.js -->
 		<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 		<script src="bower_components/stickyNavbar.js/jquery.stickyNavbar.min.js"></script>
+		<script src="js/lib/jquery.shuffleLetters.js"></script>
 		<!-- endbuild -->		
 
 		<!-- build:jsNg js/app.min.js -->
