@@ -1,28 +1,7 @@
-* {
-    -webkit-apperance: none;
-
-    &:focus {
-        outline: none !important;
-        @include box-shadow(none !important);
-    }
-}
-
 html, body { height: 100%; }
 
 html {
     font-size: 62.5%;
-
-    @include breakpoint(xxs){
-        font-size: 55%;
-    }
-
-    @include breakpoint(md) {
-        font-size: 60%;
-    }
-
-    @include breakpoint(lg) {
-        font-size: 62.5%;
-    }
 }
 
 body {
@@ -134,3 +113,7 @@ a {
 hr {
     border-color: $hr-colour;
 }*/
+
+ul {
+    padding: 0;
+}

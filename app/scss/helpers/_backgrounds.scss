@@ -7,3 +7,27 @@
 	background-color: $colour-secondary;
 	//background-color:#0d2c5a;
 }
+
+/*.linez {
+  	position: relative;
+
+	&:before, &:after {
+		background: none repeat scroll 0 0 #FFFFFF;
+		content: "";
+		height: 1px;
+		//left: 0;
+		position: absolute;
+		top: 10px;
+		width: 20%;
+	}
+
+	&:before {
+		left: 0;
+		margin-left: -20px;
+	}
+
+	&:after {
+		right: 0;
+		margin-right: -20px;
+	}
+}*/

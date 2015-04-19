@@ -1,8 +1,3 @@
 .header {
-	// Don't use rem so px always stay the same.
-	min-height: $mobile-header-height;
 
-	@include breakpoint(sm){
-		height: auto;
-	}
 }

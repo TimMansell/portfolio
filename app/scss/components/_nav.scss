@@ -1,38 +1,53 @@
-#nav {
-	width: 100%;
-	height: 60px;
-	text-align: center;
-	position: absolute;
-	margin: 0 auto;
-	background: rgba(0,0,0,0.4);
-}
+.navigation {
 
-#nav-sticky-wrapper.is-sticky #nav {
-	background-color: #0d2c5a;
-}
+	@include breakpoint(sm){
+		width: 100%;
+		height: 60px;
+		text-align: center;
+		position: absolute;
+		margin: 0 auto;
+		background: rgba(0,0,0,0.3);
+		top: auto !important;
+		bottom: 0 !important;
+		@include rem(font-size, 20px);
 
-#nav ul {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-	display: inline-block;
-	*display: inline;
-}
+		&.is-sticky {
+			background-color: #0d2c5a;
+			top: 10px !important;
+		}
 
-#nav ul li {
-	padding: 0 8px;
-	line-height: 60px;
-	display: inline-block;
-	float: left;
-	text-transform: uppercase;
-}
+		ul {
+			margin: 0 auto;
+			padding: 0;
+			list-style: none;
+			display: inline-block;
+			*display: inline;
+		}
 
-#nav ul li a {
-	display: block;
-	font-size: 0.938em;
-	letter-spacing: 0.1em;
-	color: #5b9bbc;
-	text-decoration: none;
-}
+		li {
+			padding: 0 18px;
+			line-height: 60px;
+			display: inline-block;
+			float: left;
+			text-transform: uppercase;
+		}
 
-#nav ul li a:hover, #nav ul li.current a { color: #fff; }
+		a {
+			display: block;
+			font-size: 0.938em;
+			letter-spacing: 0.1em;
+			color: #5b9bbc;
+			text-decoration: none;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		.current {
+			a {
+				color: #fff;
+			}
+		}
+	}	
+}
