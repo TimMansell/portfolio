@@ -1,9 +1,10 @@
 .lighter-note {
-	@at-root #{&}-amount {
+	&-amount {
 		font-size: 30px;
 	}
 
-	@at-root #{&}-icon {
+	&-icon {
 		font-size: 70px;
+		text-shadow: -1px -1px darken($colour-primary, 10%);
 	}
 }

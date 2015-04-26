@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 	<head>
 
 		<meta charset="utf-8">
@@ -29,7 +29,7 @@
 		<!-- <div class="top-decorations"></div> -->
 
 		<nav id="nav" class="navigation" tm-navigation>
-				<ul class="clearfix hidden-xs">
+				<ul class="navigation-menu hidden-xs" ng-class="{true:'', false:''}[menu.open]" ng-click="menu.open=!menu.open">
 					<li><a href="#profile">Profile</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
@@ -96,19 +96,19 @@
 
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center">Find me on the interwebs</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-xs-4 col-sm-offset-3 col-sm-2 text-center social">
+					<div class="text-center">
+					<!-- <div class="col-xs-4 col-sm-offset-3 col-sm-2 text-center"> -->
 						<a target="_blank" href="http://au.linkedin.com/pub/tim-mansell/4b/1a/88"><i class="fa fa-linkedin social-icon"></i></a>
-					</div>
-					<div class="col-xs-4 col-sm-2 text-center social">
+					<!-- </div>
+					<div class="col-xs-4 col-sm-2 text-center"> -->
 						<a target="_blank" href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
-					</div>
-					<div class="col-xs-4 col-sm-2 text-center social">
+					<!-- </div>
+					<div class="col-xs-4 col-sm-2 text-center"> -->
 						<a target="_blank" href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
 					</div>
 				</div>
@@ -198,35 +198,60 @@
 					<!-- Portfolio items -->
 					<div class="row ">
 						<div class="col-xs-12 col-sm-6 col-md-4">
-							<a href="img/portfolio/captains-choice.jpg" title="Project 1">
-								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
-							</a>
+							<div class="portfolio-item">
+								<a href="img/portfolio/captains-choice.jpg" title="Project 1">
+									<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+								</a>
+								<h3>Captain's Choice</h3>
+								<p>Luxury travel brand</p>
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4">
-							<a href="img/portfolio/captains-choice.jpg" title="Project 2">
-								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
-							</a>
+							<div class="portfolio-item">
+								<a class="portfolio-item-link" href="img/portfolio/captains-choice.jpg" title="Project 2">
+									<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+									<i class="fa fa-search portfolio-item-icon"></i>
+								</a>
+								<h3>Captain's Choice</h3>
+								<p>Luxury travel brand</p>
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4">
-							<a href="img/portfolio/captains-choice.jpg" title="Project 3">
-								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
-							</a>
+							<div class="portfolio-item">
+								<a href="img/portfolio/captains-choice.jpg" title="Project 3">
+									<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+								</a>
+								<h3>Captain's Choice</h3>
+								<p>Luxury travel brand</p>
+							</div>
 						</div>
 					
 						<div class="col-xs-12 col-sm-6 col-md-4">
-							<a href="img/portfolio/captains-choice.jpg" title="Project 4">
-								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
-							</a>
+							<div class="portfolio-item">
+								<a href="img/portfolio/captains-choice.jpg" title="Project 4">
+									<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+								</a>
+								<h3>Captain's Choice</h3>
+								<p>Luxury travel brand</p>
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4">
-							<a href="img/portfolio/captains-choice.jpg" title="Project 5">
-								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
-							</a>
+							<div class="portfolio-item">
+								<a href="img/portfolio/captains-choice.jpg" title="Project 5">
+									<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+								</a>
+								<h3>Captain's Choice</h3>
+								<p>Luxury travel brand</p>
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-4">
-							<a href="img/portfolio/captains-choice.jpg" title="Project 6">
-								<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
-							</a>
+							<div class="portfolio-item">
+								<a href="img/portfolio/captains-choice.jpg" title="Project 6">
+									<img class="img-responsive" src="img/portfolio/captains-choice.jpg" alt="">
+								</a>
+								<h3>Captain's Choice</h3>
+								<p>Luxury travel brand</p>
+							</div>
 						</div>
 						
 					</div>

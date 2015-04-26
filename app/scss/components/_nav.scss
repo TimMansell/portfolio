@@ -1,27 +1,47 @@
 .navigation {
 
+	&-menu {
+		@include breakpoint(xs){
+			position: fixed;
+			bottom: 100px;
+			//background: rgba(255,255,255,0.5);
+			text-align: center;
+			left: 20px;
+			right: 20px;
+			list-style: none;
+			z-index: 999999;
+			background-color: #cb0032;
+			//display: none;
+		}
+
+		@include breakpoint(sm){
+			margin: 0 auto;
+			padding: 0;
+			display: inline-block;
+		}
+	}
+
+	a {
+		font-size: 20px;
+		color: #fff;
+	}
+
+
 	@include breakpoint(sm){
 		width: 100%;
 		height: 60px;
 		text-align: center;
 		position: absolute;
 		margin: 0 auto;
-		//background: rgba(0,0,0,0.3);
 		top: auto !important;
 		bottom: 0 !important;
 		font-size: 20px;
+		z-index: 999999;
 
 		&.is-sticky {
-			background-color: $colour-primary;
+			background-color: rgba($colour-primary, 0.95);
 			top: 0 !important;
 			box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-		}
-
-		ul {
-			margin: 0 auto;
-			padding: 0;
-			list-style: none;
-			display: inline-block;
 		}
 
 		li {

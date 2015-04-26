@@ -4572,11 +4572,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
-  font-family: "Source Sans Pro", serif;
   letter-spacing: 1px;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -4711,10 +4709,12 @@ ul {
 }
 .lighter-note-icon {
   font-size: 70px;
+  text-shadow: -1px -1px #3b915a;
 }
 
 .skills-icon {
   font-size: 50px;
+  text-shadow: -1px -1px #3b915a;
 }
 .skills-list {
   list-style-type: none;
@@ -4722,9 +4722,45 @@ ul {
 }
 
 .social-icon {
-  font-size: 50px;
+  font-size: 30px;
+  display: inline-block;
+  background: #4ab571;
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+  text-shadow: -1px -1px #3b915a;
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+.social-icon:hover {
+  background: #3b915a;
+  box-shadow: 0 0 0 5px rgba(74, 181, 113, 0.5);
 }
 
+@media (max-width: 480px) {
+  .navigation-menu {
+    position: fixed;
+    bottom: 100px;
+    text-align: center;
+    left: 20px;
+    right: 20px;
+    list-style: none;
+    z-index: 999999;
+    background-color: #cb0032;
+  }
+}
+@media (min-width: 768px) {
+  .navigation-menu {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+  }
+}
+.navigation a {
+  font-size: 20px;
+  color: #fff;
+}
 @media (min-width: 768px) {
   .navigation {
     width: 100%;
@@ -4735,17 +4771,12 @@ ul {
     top: auto !important;
     bottom: 0 !important;
     font-size: 20px;
+    z-index: 999999;
   }
   .navigation.is-sticky {
-    background-color: #4ab571;
+    background-color: rgba(74, 181, 113, 0.95);
     top: 0 !important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  }
-  .navigation ul {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
   }
   .navigation li {
     padding: 0 18px;
@@ -4895,4 +4926,25 @@ ul {
   bottom: -10px;
   transition-property: bottom, -webkit-transform;
   transition-property: bottom, transform;
+}
+
+.portfolio-item {
+  background: rgba(74, 181, 113, 0.6);
+  padding: 20px;
+}
+.portfolio-item:hover {
+  background: #4ab571;
+}
+.portfolio-item-link {
+  position: relative;
+  display: block;
+}
+.portfolio-item-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
 }

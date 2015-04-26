@@ -1,9 +1,10 @@
 .skills {
-	@at-root #{&}-icon {
+	&-icon {
 		font-size: 50px;
+		text-shadow: -1px -1px darken($colour-primary, 10%);
 	}
 
-	@at-root #{&}-list {
+	&-list {
 		list-style-type: none;
 		margin-top: 20px;
 	}

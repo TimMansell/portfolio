@@ -3,16 +3,16 @@
 	height: 100%;
 	text-align: center;
 
-	@at-root #{&}-content {
+	&-content {
 		position: fixed;
   		width: 100%;
 	}
 
-	@at-root #{&}-blurb {
+	&-blurb {
 
 	}
 
-	@at-root #{&}-blurb-item {
+	&-blurb-item {
 		display: none;
 
 		&:first-of-type {
@@ -20,7 +20,7 @@
 		}
 	}
 
-	@at-root #{&}-title {
+	&-title {
 		margin: 15px 0;
 		padding: 0;
 		font-size: 55px;
@@ -31,7 +31,7 @@
 		text-shadow: 3px 3px darken($colour-primary, 10%);
 	}
 
-	@at-root #{&}-sub-title {
+	&-sub-title {
 		margin: 0;
 		padding: 0;
 		font-size: 26px;

@@ -1,0 +1,23 @@
+.portfolio-item {
+	background: rgba($colour-primary, 0.6);
+	padding: 20px;
+
+	&:hover {
+		background: $colour-primary;
+	}
+
+	&-link {
+		position: relative;
+  		display: block;
+	}
+
+
+	&-icon {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+	  font-size: 30px;
+	  color: #fff;
+	}
+}
