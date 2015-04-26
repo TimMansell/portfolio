@@ -1,11 +1,19 @@
-'use strict';
+(function() {
+    'use strict';
 
-/* Directives */
-angular.module('TM.directives')
-  .directive('tmNavigation', [function () { // Navigation stuff.
-    return {
-      restrict: 'A',
-      link: function (scope, element, attrs) {
+    angular
+        .module('TM')
+        .directive('tmNavigation', tmNavigation);
+
+    function tmNavigation() {
+      var directive = {
+        link: link,
+        //templateUrl: '/template/is/located/here.html',
+        restrict: 'EA'
+      };
+      return directive;
+
+      function link(scope, element, attrs) {
         var $window = angular.element(window);
 
         // Stick Navigation.
@@ -34,5 +42,5 @@ angular.module('TM.directives')
           }
         });*/
       }
-    };
-  }]);
+    }
+})();

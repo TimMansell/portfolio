@@ -10,9 +10,9 @@ var appConfig = {
 };
 
 // Init app with dependencies.
-angular.module('TM', ['TM.directives'])
-  .config(['$locationProvider', function ($locationProvider) {
-  }]);
-
-// Namespacing.
-angular.module('TM.directives', []);
+(function() {
+	angular
+		.module('TM', [])
+  		.config(['$locationProvider', function ($locationProvider) {
+  	}]);
+})();

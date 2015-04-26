@@ -4498,15 +4498,6 @@ button.close {
     display: none !important;
   }
 }
-/*==========================================================================
-   HELPERS
- ~ This is a collection of useful mixins and functions available globally
-==========================================================================*/
-/*------------------------------------------------------------
-   REM CONVERTER
- ~ Source: http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
- ~ Usage example: @include rem(font-size, 1.6rem); -or- @include rem(padding: 20px 10px;
-------------------------------------------------------------*/
 .stuff-to-show {
   transition: all linear .1s;
   bottom: 0;
@@ -4712,13 +4703,35 @@ ul {
   text-shadow: -1px -1px #3b915a;
 }
 
+@media (max-width: 480px) {
+  .skills-section {
+    margin-bottom: 10px;
+  }
+  .skills-section:nth-last-of-type(n+2):after {
+    content: '';
+    border-bottom: 1px solid #3b915a;
+    position: absolute;
+    width: 60%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    margin-top: 5px;
+    box-shadow: 0 1px #6ec48d;
+  }
+}
 .skills-icon {
-  font-size: 50px;
+  font-size: 80px;
   text-shadow: -1px -1px #3b915a;
 }
 .skills-list {
   list-style-type: none;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .skills-list {
+    margin-top: 20px;
+    font-size: 18px;
+  }
 }
 
 .social-icon {
@@ -4929,15 +4942,26 @@ ul {
 }
 
 .portfolio-item {
-  background: rgba(74, 181, 113, 0.6);
-  padding: 20px;
+  margin-bottom: 20px;
+  transition: all .3s;
 }
-.portfolio-item:hover {
-  background: #4ab571;
+.portfolio-item:hover .portfolio-item-icon {
+  display: block;
 }
 .portfolio-item-link {
   position: relative;
   display: block;
+}
+.portfolio-item-link:hover:before {
+  opacity: 0.8;
+  background: #4ab571;
+}
+.portfolio-item-link:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .3s;
 }
 .portfolio-item-icon {
   position: absolute;
@@ -4945,6 +4969,7 @@ ul {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
+  display: none;
 }

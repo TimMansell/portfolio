@@ -1,23 +1,46 @@
 .portfolio-item {
-	background: rgba($colour-primary, 0.6);
-	padding: 20px;
+	//background: rgba($colour-primary, 0.6);
+	//background: $colour-primary;
+	//padding: 20px;
+	margin-bottom: 20px;
+	transition: all .3s;
 
 	&:hover {
-		background: $colour-primary;
+		//background: $colour-primary;
+		//background: rgba($colour-primary, 0.6);
 	}
+
+	&:hover &-icon {
+        display: block;
+    }
 
 	&-link {
 		position: relative;
   		display: block;
-	}
 
+  		&:hover {
+  			&:before {
+		    	opacity: 0.8;
+		    	background: $colour-primary;
+	    	}
+		}
+
+  		&:before {
+  			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: all .3s;
+  		}
+	}
 
 	&-icon {
 	  position: absolute;
 	  left: 50%;
 	  top: 50%;
 	  transform: translate(-50%, -50%);
-	  font-size: 30px;
+	  font-size: 50px;
 	  color: #fff;
+	  display: none;
 	}
 }

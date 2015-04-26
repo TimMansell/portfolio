@@ -1,11 +1,35 @@
 .skills {
+	&-section {
+		@include breakpoint(xs){
+			margin-bottom: 10px;
+
+			&:nth-last-of-type(n+2){
+				&:after {
+					content:'';
+					border-bottom: 1px solid darken($colour-primary, 10%);;
+					position: absolute;
+					width: 60%;
+					transform: translate(-50%);
+					margin-top: 5px;
+					box-shadow: 0 1px lighten($colour-primary, 10%);
+				}
+			}
+		}
+	}
+
 	&-icon {
-		font-size: 50px;
+		font-size: 80px;
 		text-shadow: -1px -1px darken($colour-primary, 10%);
 	}
 
 	&-list {
 		list-style-type: none;
-		margin-top: 20px;
+		margin-top: 10px;
+		font-size: 20px;
+
+		@include breakpoint(sm){
+			margin-top: 20px;
+			font-size: 18px;
+		}
 	}
 }
