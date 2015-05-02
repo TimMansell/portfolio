@@ -1,0 +1,34 @@
+.learn-more {
+	position: fixed;
+	bottom: 90px;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+	// Animate.
+	animation-duration: 1.5s;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+
+
+	&-scroll {
+		font-size: 35px;
+		text-shadow: 1px 1px darken($colour-primary, 10%);
+	}
+
+	&-link {
+		color: #fff;
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}

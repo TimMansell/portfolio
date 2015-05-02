@@ -4519,9 +4519,23 @@ button.close {
 .bg-primary {
   background-color: #4ab571;
 }
+.bg-primary h2 {
+  color: #fff;
+  text-shadow: -1px -1px #3b915a;
+}
+.bg-primary p {
+  color: #fff;
+}
 
 .bg-secondary {
-  background-color: #0d2c5a;
+  background-color: #2e3037;
+}
+.bg-secondary h2 {
+  color: #fff;
+  text-shadow: -1px -1px #17181b;
+}
+.bg-secondary p {
+  color: #fff;
 }
 
 .bg-tertiary {
@@ -4557,7 +4571,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   height: 100%;
 }
@@ -4566,6 +4580,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 1px;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -4575,7 +4590,7 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 48px;
   }
 }
@@ -4583,7 +4598,7 @@ h1 {
 h2 {
   font-size: 30px;
   line-height: 34px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   h2 {
@@ -4637,7 +4652,7 @@ h6 {
 }
 
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 25px;
@@ -4676,8 +4691,8 @@ ul {
 }
 
 .layout-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   position: relative;
   z-index: 100;
 }
@@ -4691,8 +4706,19 @@ ul {
 }
 
 .hero {
-  position: absolute;
-  width: 1920px;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .hero-img {
+    background-image: url('../img/hero.jpg?1430217379');
+    background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+  }
 }
 
 .lighter-note-amount {
@@ -4719,7 +4745,7 @@ ul {
   }
 }
 .skills-icon {
-  font-size: 80px;
+  font-size: 65px;
   text-shadow: -1px -1px #3b915a;
 }
 .skills-list {
@@ -4785,9 +4811,9 @@ ul {
     bottom: 0 !important;
     font-size: 20px;
     z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.55);
   }
   .navigation.is-sticky {
-    background-color: rgba(74, 181, 113, 0.95);
     top: 0 !important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   }
@@ -4813,23 +4839,9 @@ ul {
   }
 }
 
-#intro {
-  height: 100%;
-  color: #fff;
-}
-
-#intro .line {
-  background-color: #5b9bbc;
-}
-
-#intro .bullet {
-  color: #5b9bbc;
-}
-
-#intro a {
-  color: #5b9bbc;
-}
-
+/*.hero {
+	height: 100%;
+}*/
 .info {
   width: 100%;
   height: 100%;
@@ -4853,7 +4865,7 @@ ul {
   letter-spacing: 5px;
   line-height: 55px;
   text-transform: uppercase;
-  text-shadow: 3px 3px #3b915a;
+  text-shadow: 0px 0px 90px #000;
 }
 .info-sub-title {
   margin: 0;
@@ -4863,7 +4875,6 @@ ul {
   letter-spacing: 1px;
   line-height: 26px;
   text-transform: uppercase;
-  text-shadow: 1px 1px #3b915a;
 }
 
 .hamburger {
@@ -4972,4 +4983,73 @@ ul {
   font-size: 50px;
   color: #fff;
   display: none;
+}
+
+.learn-more {
+  position: fixed;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.learn-more-scroll {
+  font-size: 35px;
+  text-shadow: 1px 1px #3b915a;
+}
+.learn-more-link {
+  color: #fff;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+    transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+    transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+.testimonials-quote:before, .testimonials-quote:after {
+  font-family: FontAwesome;
+  font-size: 30px;
+  line-height: 30px;
+}
+.testimonials-quote:before {
+  content: "\f10d";
+}
+.testimonials-quote:after {
+  content: "\f10e";
+}
+.testimonials-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.testimonials-name {
+  font-size: 14px;
 }

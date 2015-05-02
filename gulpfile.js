@@ -8,7 +8,8 @@
 var gulp = require('gulp'); 
 
 // Include Our Plugins
-var compass = require('gulp-compass'),
+var bower = require('gulp-bower'),
+    compass = require('gulp-compass'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     connect = require('gulp-connect'),
@@ -22,16 +23,24 @@ var compass = require('gulp-compass'),
     runSequence = require('run-sequence'),
     vinylPaths = require('vinyl-paths'),
     autoprefixer = require('gulp-autoprefixer'),
-    pixrem = require('gulp-pixrem');
+    pixrem = require('gulp-pixrem'),
+    imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
+    modernizr = require('gulp-modernizr');
  
 // File destinations.
-var paths = {
-    cssFrom:'./app/scss',
-    cssTo:'./app/css',
-    img: './app/img',
-    fonts: './app/fonts',
-    js: './app/js'
-};
+var paths = new (function(){
+  this.app = './app';
+  this.dist = './dist';
+  this.assets = this.app + '/assets';
+  this.distAssets = this.dist + '/assets';
+  this.cssFrom = this.assets + '/scss';
+  this.cssTo = this.assets + '/css';
+  this.img = this.assets + '/img';
+  this.fonts = this.assets + '/fonts';
+  this.js = this.assets + '/js';
+  this.bowerDir = this.app + '/bower_components';
+})();
 
 //-----------------------------------------------------------------
 //  Shared tasks.
@@ -57,15 +66,45 @@ gulp.task('compass', function() {
 });
 
 // Lint our JS
-gulp.task('jshint', function() {
-  return gulp.src('./dist/js/*.js')
+gulp.task('jshint', function() { 
+  return gulp.src(paths.js + '/*.js')
     .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-    .pipe(jshint.reporter('fail'))
-    .pipe(notify({
-        title: 'JSHint',
-        message: 'JSHint Passed. Let it fly!',
-    }));
+    .pipe(jshint.reporter('default'));
+});
+
+// Install bower packages.
+gulp.task('bower', function() {
+  return bower();
+    //.pipe(gulp.dest(paths.devThemeDir + paths.bowerDir))
+});
+
+// Create custom modernizr file.
+gulp.task('modernizr', function() {
+  return gulp.src(paths.js +'/**/*.js')
+    .pipe(modernizr('modernizr-custom.js', {
+          "cache" : true,
+          "devFile" : false,
+          "dest" : false,
+          "options" : [
+              "setClasses",
+              "html5printshiv",
+              "addTest",
+              "testProp",
+              "fnBind"
+          ],
+          "tests" : [
+            "svg"
+          ],
+          "useBuffers": false
+      }))
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.js));
+});
+
+// Copy fonts.
+gulp.task('fonts', function() {
+  return gulp.src(paths.bowerDir + '/font-awesome/fonts/**/*')
+    .pipe(gulp.dest(paths.fonts));
 });
 
 //-----------------------------------------------------------------
@@ -75,31 +114,31 @@ gulp.task('jshint', function() {
 // Fire up a web server.
 gulp.task('serve', function() {
   connect.server({
-    root: './app',
+    root: paths.app,
     livereload: true
-  });  
+  });    
 
   // Watch main scss.
-  gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
+  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css'], ['reload']);
 
-  // Watch css or html changes.
-  gulp.watch(['./app/*.html', './app/css/*.css'], ['reload']);
+  // Watch JS for changes.
+  gulp.watch(paths.js + '/*.js', ['jshint']);  
 });
 
 // Live reload html.
 gulp.task('reload', function () {
-  gulp.src('./app/*.html')
+  gulp.src(paths.app + '/*.html')
     .pipe(connect.reload());
 });
 
 // Watch Files For Changes.
 gulp.task('watch', function() {
        
-    // Watch main scss.
-    gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
+  // Watch main scss.
+  gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
 
-    // Watch css or html changes.
-    gulp.watch(['./app/*.html', './app/css/*.css'], ['reload']);
+  // Watch css or html changes.
+  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css'], ['reload']);   
 });
 
 
@@ -108,21 +147,31 @@ gulp.task('watch', function() {
 //-----------------------------------------------------------------
 
 gulp.task('build-clean', function () {
-  return gulp.src('dist/*')
-    //.pipe(stripDebug())
-    .pipe(gulp.dest('dist'))
+  return gulp.src(paths.dist +'/*')
+    .pipe(gulp.dest(paths.dist +'/'))
     .pipe(vinylPaths(del));
 });
 
 gulp.task('build-minify', function () {
-  return gulp.src('./app/index.html')
+  return gulp.src(paths.app + '/index.html')
     .pipe(usemin({
       css: [minifyCss(), 'concat'],
       js: [uglify(), rev()]
     }))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest(paths.dist +'/'));
+});
+
+// Copy our images.
+gulp.task('build-images', function () {
+  gulp.src(paths.assets + '/img/**/*')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest(paths.distAssets + '/img'));
 });
 
 gulp.task('build', function() {
-  runSequence(['build-clean', 'compass'], 'build-minify');
+  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-minify']);
 });

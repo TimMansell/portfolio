@@ -1,9 +1,27 @@
 .bg-primary {
 	background-color: $colour-primary;
+
+	h2 {
+		color: #fff;
+		text-shadow: -1px -1px darken($colour-primary, 10%);
+	}
+
+	p {
+		color: #fff;
+	}
 }
 
 .bg-secondary {
 	background-color: $colour-secondary;
+
+	h2 {
+		color: #fff;
+		text-shadow: -1px -1px darken($colour-secondary, 10%);
+	}
+	
+	p {
+		color: #fff;
+	}
 }
 
 .bg-tertiary {
