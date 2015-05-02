@@ -34,6 +34,7 @@
     "gulp-autoprefixer": "^2.1.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-pixrem": "^0.1.4",
+    "imagemin-pngquant": "^4.1.0",
     "run-sequence": "^1.0.2",
     "vinyl-paths": "^1.0.0"
   }

@@ -34,12 +34,12 @@ var paths = new (function(){
   this.dist = './dist';
   this.assets = this.app + '/assets';
   this.distAssets = this.dist + '/assets';
-  this.cssFrom = this.assets + '/scss';
+  this.cssFrom = this.app + '/scss';
   this.cssTo = this.assets + '/css';
   this.img = this.assets + '/img';
   this.fonts = this.assets + '/fonts';
   this.js = this.assets + '/js';
-  this.bowerDir = this.app + '/bower_components';
+  //this.bowerDir = this.app + '/bower_components';
 })();
 
 //-----------------------------------------------------------------
@@ -103,7 +103,7 @@ gulp.task('modernizr', function() {
 
 // Copy fonts.
 gulp.task('fonts', function() {
-  return gulp.src(paths.bowerDir + '/font-awesome/fonts/**/*')
+  return gulp.src(paths.bowerDir + '/fontawesome/fonts/**/*')
     .pipe(gulp.dest(paths.fonts));
 });
 
@@ -117,6 +117,9 @@ gulp.task('serve', function() {
     root: paths.app,
     livereload: true
   });    
+
+  // Watch main scss.
+  gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
 
   // Watch main scss.
   gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css'], ['reload']);
@@ -172,6 +175,14 @@ gulp.task('build-images', function () {
     .pipe(gulp.dest(paths.distAssets + '/img'));
 });
 
+// Copy the rest of the assets.
+gulp.task('build-assets', function(callback) {
+  gulp.src([paths.assets + '/**', '!'+ paths.assets + '/css/**', '!'+ paths.assets + '/img/**', '!'+ paths.assets + '/js/**'])
+    .pipe(gulp.dest(paths.distAssets));
+
+    callback();
+});
+
 gulp.task('build', function() {
-  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-minify']);
+  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-minify'], 'build-assets');
 });

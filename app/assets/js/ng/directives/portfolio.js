@@ -8,7 +8,7 @@
     function tmPortfolio() {
       var directive = {
         link: link,
-        templateUrl: '/templates/portfolio.html',
+        templateUrl: '/assets/templates/portfolio.html',
         restrict: 'EA',
         controller: portfolioController,
         controllerAs: 'pf',

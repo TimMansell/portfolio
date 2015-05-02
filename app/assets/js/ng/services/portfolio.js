@@ -15,7 +15,7 @@
 	    return service;
 
 	    function get(){
-        	return $http.get('json/portfolio.json')
+        	return $http.get('assets/json/portfolio.json')
 	            .then(success)
 	            .catch(failed);
 

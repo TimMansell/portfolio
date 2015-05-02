@@ -1,29 +1,36 @@
 .portfolio-item {
-	//background: rgba($colour-primary, 0.6);
+	background: rgba($colour-primary, 0.3);
 	//background: $colour-primary;
-	//padding: 20px;
+	padding: 10px;
 	margin-bottom: 20px;
 	transition: all .3s;
+	position: relative;
+	overflow: hidden;	
 
 	&:hover {
 		//background: $colour-primary;
 		//background: rgba($colour-primary, 0.6);
 	}
 
-	&:hover &-icon {
+	/*&:hover &-icon {
         display: block;
+    }*/
+
+    &:hover &-info {
+    	transform: translateY(0);
     }
 
 	&-link {
-		position: relative;
+		/*position: relative;
   		display: block;
+  		overflow: hidden;*/
 
-  		&:hover {
+  		/*&:hover {
   			&:before {
 		    	opacity: 0.8;
 		    	background: $colour-primary;
 	    	}
-		}
+		}*/
 
   		&:before {
   			content: '';
@@ -35,12 +42,39 @@
 	}
 
 	&-icon {
-	  position: absolute;
+	  /*position: absolute;
 	  left: 50%;
 	  top: 50%;
-	  transform: translate(-50%, -50%);
-	  font-size: 50px;
+	  transform: translate(-50%, -50%);*/
+	  font-size: 30px;
 	  color: #fff;
-	  display: none;
+	  //display: none;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	}
+
+	&-info {
+		//display: none;
+		position: absolute;
+  		transform: translateY(100%);
+  		transition: all 0.3s;
+  		top: 0;
+  		left: 0;
+  		background: rgba($colour-primary, 0.95);
+  		height: 100%;
+  		padding: 15px;
+	}
+
+	&-title {
+		//display: none;
+		font-size: 18px;
+		color: #fff;
+	}
+
+	&-description {
+		//display: none;
+		font-size: 14px;
+		line-height: 1.5;
+  		margin-bottom: 5px;
 	}
 }

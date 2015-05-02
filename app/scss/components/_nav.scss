@@ -4,7 +4,7 @@
 		@include breakpoint(xs){
 			position: fixed;
 			bottom: 100px;
-			//background: rgba(255,255,255,0.5);
+			//background: rgba(255,255,255,0.7);
 			text-align: center;
 			left: 20px;
 			right: 20px;
@@ -37,7 +37,8 @@
 		bottom: 0 !important;
 		font-size: 20px;
 		z-index: 999999;
-		background-color: rgba(#000, 0.55);
+		background-color: rgba(#000, 0.7);
+		transform: translatez(0);
 
 		&.is-sticky {
 			

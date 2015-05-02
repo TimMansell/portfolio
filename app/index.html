@@ -1,121 +1,105 @@
 <!DOCTYPE html>
 <html class="no-js">
-	<head>
+<head>
 
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Front-end Developer | Tim Mansell</title>
+	<title>Front-end Developer | Tim Mansell</title>
 
-		<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
 
-		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 
-		<!-- build:css css/main.min.css -->
-		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" media="screen">
-		<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
-		<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css"/>
-		<!-- <link rel="stylesheet" href="bower_components/stickyNavbar.js/jquery.stickyNavbar.css"/> -->
-		<link rel="stylesheet" href="css/main.css" media="screen">
-		<!-- endbuild -->
+	<!-- build:css assets/css/main.min.css -->
+	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" media="screen">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+	<!-- <link rel="stylesheet" href="bower_components/stickyNavbar.js/jquery.stickyNavbar.css"/> -->
+	<link rel="stylesheet" href="assets/css/main.css" media="screen">
+	<!-- endbuild -->
 
-		<!-- build:jsHead js/head.min.js -->
-		<script src="assets/js/modernizr-custom.js"></script>
-		<!-- endbuild -->
-	</head>
+	<!-- build:jsHead assets/js/head.min.js -->
+	<script src="assets/js/modernizr-custom.js"></script>
+	<!-- endbuild -->
+</head>
 
-	<body ng-app="TM">
-		<!-- <div class="top-decorations"></div> -->
+<body ng-app="TM">
+	<!-- <div class="top-decorations"></div> -->
 
-		<nav id="nav" class="navigation" tm-navigation>
-				<ul class="navigation-menu hidden-xs" ng-class="{true:'', false:''}[menu.open]" ng-click="menu.open=!menu.open">
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+	<nav id="nav" class="navigation" tm-navigation>
+		<ul class="navigation-menu hidden-xs" ng-class="{true:'', false:''}[menu.open]" ng-click="menu.open=!menu.open">
+			<li><a href="#profile">Profile</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
 
-				<button class="hamburger visible-xs" data-ng-class="{true:'active', false:''}[menu.open]" data-ng-click="menu.open=!menu.open">
-			  		<span class="hamburger-menu">toggle menu</span>
-				</button>
-			</nav>
+		<button class="hamburger visible-xs" data-ng-class="{true:'active', false:''}[menu.open]" data-ng-click="menu.open=!menu.open">
+			<span class="hamburger-menu">toggle menu</span>
+		</button>
+	</nav>
 
-		<!-- <div id="video" data-vide-bg="video/4318736" data-vide-options="loop: false, muted: false, position: 0% 0%">
-			</div> -->
+	<!-- Start: Intro -->
+	<section id="intro" class="hero bg-primary">
+		<div class="hero-img"></div>		
 
-		<!-- Start: Intro -->
-		<section id="intro" class="hero bg-primary">
-			<div class="hero-img"></div>
-			<!-- <video autoplay loop class="hero">
-				<source src="video/4318736.mp4" type="video/mp4">
-			</video> -->
+		<div class="info" tm-center-content element=".js-info-content">
+			<div class="js-info-content info-content" tm-scroll-fade>
+				<div class="info-blurb" tm-shuffle-content>
+					<h4 class="info-blurb-item info-sub-title">Front-end ninja</h4>
+					<h4 class="info-blurb-item info-sub-title">Avid Snowboarder</h4>
+					<h4 class="info-blurb-item info-sub-title">Hard worker</h4>
+				</div>
+				<h1 class="info-title">Hi! I'm Tim Mansell</h1>
+				<h4 class="info-sub-title">Melboure, Australia</h4>
+			</div>
+		</div>
 
-			
+		<div class="learn-more hidden-xs">
+			<a class="learn-more-link" href="">
+				<i class="learn-more-scroll fa fa-caret-down"></i>
+			</a>
+		</div>
 
-			<div class="info" tm-center-content element=".js-info-content">
-				<div class="js-info-content info-content" tm-scroll-fade>
-					<div class="info-blurb" tm-shuffle-content>
-						<h4 class="info-blurb-item info-sub-title">Front-end ninja</h4>
-						<h4 class="info-blurb-item info-sub-title">Avid Snowboarder</h4>
-						<h4 class="info-blurb-item info-sub-title">Hard worker</h4>
-					</div>
-					<h1 class="info-title">Hi! I'm Tim Mansell</h1>
-					<h4 class="info-sub-title">Melboure, Australia</h4>
+	</section>
+	<!-- End: Intro -->
+
+	<!-- Start: Personal profile -->
+	<section id="profile" class="layout-section bg-tertiary scrollto">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="text-center" tm-shuffle-on-screen>A little bit about myself</h2>
+					<div class="centered line"></div>
 				</div>
 			</div>
 
-			<div class="learn-more">
-				<!-- <p class="learn-more-text">Learn more about Tim Mansell</p> -->
-				<a class="learn-more-link" href="">
-					<i class="learn-more-scroll fa fa-caret-down"></i>
-				</a>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p>I am an experienced and ambitious Front-end Developer with over 6 years commercial experience in a design agency environment. I excell in both front-end and back-end development.</p>
+
+					<p>I develop with best practices in mind and adhere to W3C standards. Not all browsers are created equal, so I ensure that any website I work on displays pixel-perfect in all of the major players (Chrome, Firefox, IE &amp; Safari).</p>
+
+					<p>I believe that having a functional website is only part of the solution. Being found is just as important. Search Engine Optimisation is an integral part of my development process.</p>
+
+					<p>Please view my <a href="#portfolio">portfolio</a> to see some examples of my work.</p>
+				</div>
 			</div>
 
-			
-
-		</section>
-		<!-- End: Intro -->
-
-		<!-- Start: Personal profile -->
-		<section id="profile" class="layout-section bg-tertiary scrollto">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h2 class="text-center">A little bit about myself</h2>
-						<div class="centered line"></div>
-					</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="centered line"></div>
 				</div>
+			</div>
 
-				<div class="row">
-					<div class="col-xs-12 text-center">
-						<p>I am an experienced and ambitious Front-end Developer with over 6 years commercial experience in a design agency environment. I excell in both front-end and back-end development.</p>
-
-						<p>I develop with best practices in mind and adhere to W3C standards. Not all browsers are created equal, so I ensure that any website I work on displays pixel-perfect in all of the major players (Chrome, Firefox, IE &amp; Safari).</p>
-
-						<p>I believe that having a functional website is only part of the solution. Being found is just as important. Search Engine Optimisation is an integral part of my development process.</p>
-
-						<p>Please view my <a href="#portfolio">portfolio</a> to see some examples of my work.</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="centered line"></div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="text-center">
-					<!-- <div class="col-xs-4 col-sm-offset-3 col-sm-2 text-center"> -->
-						<a target="_blank" href="https://au.linkedin.com/in/timmansell"><i class="fa fa-linkedin social-icon"></i></a>
-					<!-- </div>
-					<div class="col-xs-4 col-sm-2 text-center"> -->
-						<a target="_blank" href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
-					<!-- </div>
-					<div class="col-xs-4 col-sm-2 text-center"> -->
-						<a target="_blank" href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
+			<div class="row social">
+				<div class="text-center">
+					<a target="_blank" href="https://au.linkedin.com/in/timmansell"><i class="fa fa-linkedin social-icon"></i></a>
+					<a target="_blank" href="https://twitter.com/TimMansell"><i class="fa fa-twitter social-icon"></i></a>
+					<a target="_blank" href="https://github.com/TimMansell"><i class="fa fa-github social-icon"></i></a>
 					</div>
 				</div>
 			</div>
@@ -127,7 +111,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center">Skills</h2>
+						<h2 class="text-center" tm-shuffle-on-screen>Skills</h2>
 						<div class="centered line"></div>
 					</div>
 				</div>
@@ -207,15 +191,15 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-xs-12">
-						<h2>Portfolio</h2>
+						<h2 tm-shuffle-on-screen>Portfolio</h2>
 						<p>Here's a sample of my lastest work</p>
 					</div>
 				</div>
 
 				<!-- <div class="row"> -->
-					
-					<!-- Portfolio items -->
-					<div class="row" tm-portfolio></div>
+
+				<!-- Portfolio items -->
+				<div class="row" tm-portfolio></div>
 				<!-- </div> -->
 			</div>
 		</section>
@@ -226,22 +210,30 @@
 				<div class="row text-center lighter-note">
 					<div class="col-xs-6 col-sm-3">
 						<i class="fa fa-code lighter-note-icon"></i>
-						<p class="lighter-note-amount">800</p>
+						<p class="lighter-note-amount">
+							<tm-random-numbers-on-screen>0</tm-random-numbers-on-screen>
+						</p>
 						<p>Lines of code</p>
 					</div>
 					<div class="col-xs-6 col-sm-3">
 						<i class="lighter-note-icon fa fa-code-fork"></i>
-						<p class="lighter-note-amount">800</p>
+						<p class="lighter-note-amount">
+							<tm-random-numbers-on-screen>0</tm-random-numbers-on-screen>
+						</p>
 						<p>Git commits</p>
 					</div>
 					<div class="col-xs-6 col-sm-3">
-					<i class="lighter-note-icon fa fa-coffee"></i>	
-						<p class="lighter-note-amount">800</p>
+						<i class="lighter-note-icon fa fa-coffee"></i>	
+						<p class="lighter-note-amount">
+							<tm-random-numbers-on-screen>0</tm-random-numbers-on-screen>
+						</p>
 						<p>Coffees consumed</p>
 					</div>
 					<div class="col-xs-6 col-sm-3">
 						<i class="lighter-note-icon fa fa-bicycle"></i>
-						<p class="lighter-note-amount">800</p>
+						<p class="lighter-note-amount">
+							<tm-random-numbers-on-screen>0</tm-random-numbers-on-screen>
+						</p>
 						<p>Kilometers cycled</p>
 					</div>
 				</div>
@@ -255,100 +247,102 @@
 					<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
 
 						<tm-carousel class="testimonials" autoplay="true" speed="6000">
-						  	<div class="testimonials-quote">
-						  		<p class="testimonials-text">I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.</p>
-								<p class="testimonials-name">Rusty Brooke</p>
-							</div>
-						  	<div class="testimonials-quote">
-						  		<p class="testimonials-text">Tim worked with the Graphic Cafe for over 4 years, in that time Tim lead the web development side to the business, his ability to problem solve was second to none as we often tested the boundaries of web and interactive development.</p>
-								<p class="testimonials-name">Matt O’Dea</p>
-							</div>
-						  	<div class="testimonials-quote">
-						  		<p class="testimonials-text">Tim is really brilliant developer and he has wide knowledge in the IT industry.</p>
-								<p class="testimonials-name">Randy An</p>
-						  	</div>
-						</tm-carousel>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Start: Contact -->
-		<section id="contact" class="scrollto layout-section bg-secondary">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h2 class="text-center">Let's get in touch</h2>
-						<div class="centered line"></div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
-						<div id="form-message"></div>
-						<form id="form-contact" name="form-contact">
-							<div class="col-xs-12 col-md-6">
-								<div class="form-group">
-									<label class="sr-only" for="name">What's your name?</label>
-									<input class="form-control" type="text" name="name" id="name" value="" placeholder="What's your name?">
-								</div>
-
-								<div class="form-group">
-									<label class="sr-only" for="name">What's your e-mail?</label>
-									<input class="form-control" type="email" name="email" id="email" value="" placeholder="What's your email?">
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-6">
-								<div class="form-group">
-									<label class="sr-only" for="name">What do you have in mind?</label>
-									<textarea class="form-control" name="message" id="message" rows="4" placeholder="Your message?"></textarea>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<a href="#" class="btn btn-primary" id="submit-contact">Send the pidgeons!</a>
-							</div>
-						</form>
-					</div>
-
-					
+						<div class="testimonials-quote">
+							<p class="testimonials-text">I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.</p>
+							<p class="testimonials-name">Rusty Brooke</p>
+						</div>
+						<div class="testimonials-quote">
+							<p class="testimonials-text">Tim worked with the Graphic Cafe for over 4 years, in that time Tim lead the web development side to the business, his ability to problem solve was second to none as we often tested the boundaries of web and interactive development.</p>
+							<p class="testimonials-name">Matt O’Dea</p>
+						</div>
+						<div class="testimonials-quote">
+							<p class="testimonials-text">Tim is really brilliant developer and he has wide knowledge in the IT industry.</p>
+							<p class="testimonials-name">Randy An</p>
+						</div>
+					</tm-carousel>
 
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<footer>
-			<div class="container">
-				<div class="col-sm-6">Copyright - Tim Mansell</div>
-				<div class="col-sm-6"></div>
+	<!-- Start: Contact -->
+	<section id="contact" class="scrollto layout-section bg-secondary">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="text-center" tm-shuffle-on-screen>Let's get in touch</h2>
+					<div class="centered line"></div>
+				</div>
 			</div>
-		</footer>	
 
-		<!-- build:jsLib js/lib.min.js -->
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/angular/angular.min.js"></script>
-		<!-- endbuild -->
+			<div class="row">
+				<div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
+					<div id="form-message"></div>
+					<form id="form-contact" name="form-contact">
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+								<label class="sr-only" for="name">What's your name?</label>
+								<input class="form-control" type="text" name="name" id="name" value="" placeholder="What's your name?">
+							</div>
 
-		<!-- build:jsPlugins js/plugins.min.js -->
-		<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-		<script src="bower_components/stickyNavbar.js/jquery.stickyNavbar.min.js"></script>
-		<script src="js/lib/jquery.shuffleLetters.js"></script>
-		<!-- endbuild -->		
+							<div class="form-group">
+								<label class="sr-only" for="name">What's your e-mail?</label>
+								<input class="form-control" type="email" name="email" id="email" value="" placeholder="What's your email?">
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="form-group">
+								<label class="sr-only" for="name">What do you have in mind?</label>
+								<textarea class="form-control" name="message" id="message" rows="4" placeholder="Your message?"></textarea>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<a href="#" class="btn btn-primary" id="submit-contact">Send!</a>
+						</div>
+					</form>
+				</div>
 
-		<!-- build:jsNg js/app.min.js -->
-		<script src="js/ng/app.js"></script>
-		<script src="js/ng/directives/carousel.js"></script>
-		<script src="js/ng/directives/centerContent.js"></script>
-		<script src="js/ng/directives/lazyLoad.js"></script>
-		<script src="js/ng/directives/scrollFade.js"></script>
-		<script src="js/ng/directives/shuffleContent.js"></script>
-		<script src="js/ng/directives/nav.js"></script>
-		<script src="js/ng/directives/portfolio.js"></script>
-		<script src="js/ng/services/portfolio.js"></script>
-		<!-- endbuild -->	
 
-		<!-- Loading: jQuery One page nav -->
+
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-secondary">
+		<div class="container">
+			<div class="col-sm-6">Copyright - Tim Mansell</div>
+			<div class="col-sm-6"></div>
+		</div>
+	</footer>	
+
+	<!-- build:jsLib assets/js/lib.min.js -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:jsPlugins assets/js/plugins.min.js -->
+	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+	<script src="bower_components/stickyNavbar.js/jquery.stickyNavbar.min.js"></script>
+	<script src="assets/js/lib/jquery.shuffleLetters.js"></script>
+	<!-- endbuild -->		
+
+	<!-- build:jsNg assets/js/app.min.js -->
+	<script src="assets/js/ng/app.js"></script>
+	<script src="assets/js/ng/directives/carousel.js"></script>
+	<script src="assets/js/ng/directives/centerContent.js"></script>
+	<script src="assets/js/ng/directives/lazyLoad.js"></script>
+	<script src="assets/js/ng/directives/scrollFade.js"></script>
+	<script src="assets/js/ng/directives/shuffleContent.js"></script>
+	<script src="assets/js/ng/directives/nav.js"></script>
+	<script src="assets/js/ng/directives/shuffleOnScreen.js"></script>
+	<script src="assets/js/ng/directives/randomNumbersOnScreen.js"></script>
+	<script src="assets/js/ng/directives/portfolio.js"></script>
+	<script src="assets/js/ng/services/portfolio.js"></script>
+	<!-- endbuild -->	
+
+	<!-- Loading: jQuery One page nav -->
 		<!--<script src="assets/js/jquery.scrollto.min.js"></script>
 		<script src="assets/js/jquery.nav.js"></script>-->
 	</body>
-</html>
+	</html>
