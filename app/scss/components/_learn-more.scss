@@ -13,15 +13,15 @@
 
 	&-scroll {
 		font-size: 55px;
-		//text-shadow: 1px 1px darken($colour-primary, 10%);
+		//text-shadow: 1px 1px darken($primary-colour, 10%);
 		opacity: .7;
 	}
 
 	&-link {
-		color: #fff;
+		color: $link-colour;
 
 		&:hover {
-			color: #fff;
+			color: $link-colour;
 		}
 	}
 }

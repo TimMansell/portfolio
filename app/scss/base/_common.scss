@@ -7,12 +7,17 @@ body {
     font-family: $font-family-primary;
     font-size: 16px;
     height: 100%;
+
+    &.no-scroll {
+        @include breakpoint(xs){
+            overflow:hidden;
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-style: normal;
-    //font-family: $font-family-primary;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0;
@@ -93,12 +98,13 @@ p {
 }
 
 a {
-    color: #fff;
+    color: $link-colour;
     @include transition(color, 0.3s);
+    text-decoration: none;
 
     &:hover, &:focus {
         text-decoration: none;
-        color: #fff;
+        color: $link-colour;
         outline: none;
     }
 }

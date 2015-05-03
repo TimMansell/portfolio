@@ -22,7 +22,7 @@
     @media(max-width:$screen-md-min) { @content; }
   }
   @else if $width == xs { // Only target mobile.
-    @media(max-width:$screen-xs-min) { @content; }
+    @media(max-width:$screen-xs-max) { @content; }
   }
   @else {
     @media($width) { @content; }

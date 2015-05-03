@@ -1,0 +1,15 @@
+.divider {
+	@include breakpoint(xs){
+		margin-bottom: 30px;
+
+		&:after {
+			content:'';
+			border-bottom: 1px solid darken($primary-colour, 10%);;
+			position: absolute;
+			width: 60%;
+			transform: translate(-50%);
+			margin-top: 10px;
+			box-shadow: 0 1px lighten($primary-colour, 10%);
+		}
+	}
+}

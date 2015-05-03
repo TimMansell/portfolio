@@ -2,15 +2,15 @@
 	&-amount {
 		font-size: 40px;
   		margin-top: 20px;
-  		text-shadow: -1px -1px darken($colour-primary, 10%);
+  		text-shadow: -1px -1px darken($primary-colour, 10%);
 	}
 
 	&-icon {
 		font-size: 90px;
-		text-shadow: -1px -1px darken($colour-primary, 10%);
+		text-shadow: -1px -1px darken($primary-colour, 10%);
 	}
 
 	&-text {
-		text-shadow: -1px -1px darken($colour-primary, 10%);
+		text-shadow: -1px -1px darken($primary-colour, 10%);
 	}
 }

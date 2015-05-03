@@ -4,20 +4,19 @@
 	&-icon {
 		font-size: 30px;
 		display: inline-block;
-		background: $colour-primary;
+		background: $primary-colour;
 		padding: 15px;
 		border-radius: 50%;
-		//box-shadow: 0px 1px 13px darken($colour-primary, 10%);
-		color: #fff;
-		text-shadow: -1px -1px darken($colour-primary, 10%);
+		color: $icon-colour;
+		text-shadow: -1px -1px darken($primary-colour, 10%);
 		width: 60px;
 		height: 60px;
 		margin: 0 15px;
 		transition: box-shadow .3s, background .3s;
 
 		&:hover {
-			background: darken($colour-primary, 10%);
-			box-shadow: 0 0 0 5px rgba($colour-primary, 0.5);
+			background: darken($primary-colour, 10%);
+			box-shadow: 0 0 0 5px rgba($primary-colour, 0.5);
 		}
 	}
 }

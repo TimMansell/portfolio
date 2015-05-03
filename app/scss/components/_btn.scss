@@ -3,12 +3,12 @@
 	font-size: 20px;
 
 	&-primary {
-		background: $colour-primary;
-		border-color: $colour-primary;
+		background: $primary-colour;
+		border-color: $primary-colour;
 	}
 
 	&-primary:hover {
-		background: darken($colour-primary, 15%);
-		border-color: darken($colour-primary, 15%);
+		background: darken($primary-colour, 15%);
+		border-color: darken($primary-colour, 15%);
 	}
 }
