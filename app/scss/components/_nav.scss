@@ -44,7 +44,6 @@
 		@include breakpoint(sm){
 			font-size: 18px;
 			padding: 0 18px;
-			text-shadow: -1px -1px darken($primary-colour, 10%);
 
 			&:hover, &.active {
 				background-color: darken($primary-colour, 10%);
@@ -81,6 +80,12 @@
 			top: 0 !important;
 			box-shadow: inset 0 -1px darken($primary-colour, 10%), 0 1px 1px rgba(0,0,0,0.2);
 			background-color: rgba($primary-colour, 0.95);
+		}
+	}
+
+	&-menu-is-sticky &-menu-link {
+		@include breakpoint(sm){
+			text-shadow: -1px -1px darken($primary-colour, 10%);
 		}
 	}
 }

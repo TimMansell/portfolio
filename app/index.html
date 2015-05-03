@@ -5,15 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Front-end Developer | Tim Mansell</title>
+	<title>Front-end Developer | Melbourne | Tim Mansell</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 
 	<!-- build:css assets/css/main.min.css -->
 	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" media="screen">
 	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
-	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css"/>
-	<!-- <link rel="stylesheet" href="bower_components/stickyNavbar.js/jquery.stickyNavbar.css"/> -->
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	<!-- endbuild -->
 
@@ -76,9 +74,9 @@
 
 				<div class="row">
 					<div class="col-xs-12 text-center">
-						<p>I am an experienced and ambitious Front-end Developer with over 6 years commercial experience in a design agency environment. I excell in both front-end and back-end development.</p>
+						<p>I am an experienced and ambitious Front-end Developer with over 7 years commercial experience in a digital agency environment. I excell in both front-end and back-end development.</p>
 
-						<p>I develop with best practices in mind and adhere to W3C standards. Not all browsers are created equal, so I ensure that any website I work on displays pixel-perfect in all of the major players (Chrome, Firefox, IE &amp; Safari).</p>
+						<p>I develop with best practices in mind and adhere to W3C standards. Unfortunately not all browsers are created equal, so I utilise Progressive Enhancement where possible, to ensure that any website I work on displays perfectly in all of the evergreen browsers (Chrome, Firefox, and Safari).... and IE.</p>
 
 						<p>I believe that having a functional website is only part of the solution. Being found is just as important. Search Engine Optimisation is an integral part of my development process.</p>
 
@@ -90,12 +88,12 @@
 			</div>
 		</section>
 
-		<section id="skills" class="scrollto layout-section bg-primary text-center">
+		<section id="skills" class="layout-section bg-primary text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
 						<h2 class="text-center" tm-shuffle-on-screen>Skills</h2>
-						<p>I spend most of my time specialising in these skillsets.</p>
+						<p class="text-description">I spend most of my time specialising in these skillsets</p>
 					</div>
 				</div>
 
@@ -167,7 +165,7 @@
 					</div>
 				</div>					
 
-				<p>I am currently playing around with</p>
+				<p class="text-description">I am currently playing around with</p>
 				<i class="fa fa-gamepad skills-icon"></i>
 				<ul class="skills-list">
 					<li>ReactJS</li>
@@ -176,12 +174,12 @@
 			</div>
 		</section>
 
-		<section id="portfolio" class="scrollto layout-section bg-secondary">
+		<section id="portfolio" class="layout-section bg-secondary">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-xs-12">
 						<h2 tm-shuffle-on-screen>Portfolio</h2>
-						<p>Here's a sample of my lastest work</p>
+						<p class="text-description">Here's a sample of my lastest work</p>
 					</div>
 				</div>
 
@@ -224,7 +222,7 @@
 			</div>
 		</section>
 
-		<section id="testimonials" class="scrollto layout-section bg-tertiary">
+		<section id="testimonials" class="layout-section bg-tertiary">
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
@@ -296,7 +294,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<tm-social-icons></tm-social-icons>
-						<p class="footer-bar-text text-center">&copy; Copyright<br>Tim Mansell</p>
+						<p class="footer-bar-text text-center">&copy; Copyright&nbsp;<tm-date></tm-date><br>Tim Mansell</p>
 					</div>
 				</div>
 			</div>
@@ -324,6 +322,7 @@
 	<script src="assets/js/ng/directives/scrollBlur.js"></script>
 	<script src="assets/js/ng/directives/shuffleContent.js"></script>
 	<script src="assets/js/ng/directives/nav.js"></script>
+	<script src="assets/js/ng/directives/date.js"></script>
 	<script src="assets/js/ng/directives/shuffleOnScreen.js"></script>
 	<script src="assets/js/ng/directives/randomNumbersOnScreen.js"></script>
 	<script src="assets/js/ng/directives/portfolio.js"></script>
@@ -331,5 +330,14 @@
 
 	<script src="assets/js/ng/services/portfolio.js"></script>
 	<!-- endbuild -->	
+
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-32933519-1','auto');ga('send','pageview');
+	</script>
 </body>
 </html>

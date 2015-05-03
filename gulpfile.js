@@ -16,6 +16,7 @@ var bower = require('gulp-bower'),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
     usemin = require('gulp-usemin'),
+    minifyHtml = require('gulp-minify-html'),
     rev = require('gulp-rev'),
     jshint = require('gulp-jshint'),
     notify = require("gulp-notify"),
@@ -158,7 +159,8 @@ gulp.task('build-minify', function () {
   return gulp.src(paths.app + '/index.html')
     .pipe(usemin({
       css: [minifyCss(), 'concat'],
-      js: [uglify(), rev()]
+      js: [uglify(), rev()],
+      html: [minifyHtml({empty: true})],
     }))
     .pipe(gulp.dest(paths.dist +'/'));
 });

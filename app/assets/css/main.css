@@ -2743,6 +2743,10 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
 .bg-primary {
   background-color: #4ab571;
   box-shadow: inset 0 1px #3b915a, inset 0 -1px #3b915a;
@@ -2751,8 +2755,9 @@ input[type="button"].btn-block {
   color: #fff;
   text-shadow: -1px -1px #3b915a;
 }
-.bg-primary p {
+.bg-primary .text-description {
   color: #fff;
+  text-shadow: -1px -1px #3b915a;
 }
 
 .bg-secondary {
@@ -2763,8 +2768,9 @@ input[type="button"].btn-block {
   color: #fff;
   text-shadow: -1px -1px #17181b;
 }
-.bg-secondary p {
+.bg-secondary .text-description {
   color: #fff;
+  text-shadow: -1px -1px #17181b;
 }
 
 .bg-tertiary {
@@ -2928,7 +2934,7 @@ ul {
 }
 @media (max-width: 767px) {
   .footer {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
 }
 
@@ -3049,7 +3055,6 @@ ul {
   .navigation-menu-link {
     font-size: 18px;
     padding: 0 18px;
-    text-shadow: -1px -1px #3b915a;
   }
   .navigation-menu-link:hover, .navigation-menu-link.active {
     background-color: #3b915a;
@@ -3083,6 +3088,11 @@ ul {
     top: 0 !important;
     box-shadow: inset 0 -1px #3b915a, 0 1px 1px rgba(0, 0, 0, 0.2);
     background-color: rgba(74, 181, 113, 0.95);
+  }
+}
+@media (min-width: 768px) {
+  .navigation-menu-is-sticky .navigation-menu-link {
+    text-shadow: -1px -1px #3b915a;
   }
 }
 
@@ -3243,29 +3253,57 @@ ul {
   color: #fff;
   padding-left: 5px;
   padding-right: 5px;
+  transition: all .3s;
+}
+.portfolio-item-icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .portfolio-item-info {
   position: absolute;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
-  transition: all 0.3s;
+  text-shadow: -1px -1px #3b915a;
+  transition: all .3s;
   top: 0;
   left: 0;
   background: rgba(74, 181, 113, 0.95);
   height: 100%;
   padding: 15px;
+  width: 100%;
+  color: #fff;
 }
 .portfolio-item-title {
   font-size: 18px;
   color: #fff;
+  margin-bottom: 5px;
 }
 .portfolio-item-description {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.2;
   margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .portfolio-item-description {
+    line-height: 1.5;
+  }
+}
+.portfolio-item-tech {
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .portfolio-item-img {
   margin: auto;
+}
+.portfolio-item-more-info {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
 }
 
 .learn-more {

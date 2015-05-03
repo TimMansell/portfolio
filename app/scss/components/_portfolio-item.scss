@@ -1,5 +1,5 @@
 .portfolio-item {
-	background: rgba($primary-colour, 0.3);
+	background: rgba($primary-colour, .3);
 	padding: 10px;
 	margin-bottom: 20px;
 	transition: all .3s;
@@ -26,31 +26,60 @@
 	  color: $icon-colour;
 	  padding-left: 5px;
 	  padding-right: 5px;
+	  transition: all .3s;
+
+	  &:hover {
+	  	transform: scale(1.2);
+	  }
 	}
 
 	&-info {
 		position: absolute;
   		transform: translateY(100%);
-  		transition: all 0.3s;
+  		text-shadow: -1px -1px darken($primary-colour, 10%);
+  		transition: all .3s;
   		top: 0;
   		left: 0;
-  		background: rgba($primary-colour, 0.95);
+  		background: rgba($primary-colour, .95);
   		height: 100%;
   		padding: 15px;
+  		width: 100%;
+  		color: $portfolio-text-colour;
 	}
 
 	&-title {
 		font-size: 18px;
 		color: $icon-colour;
+		margin-bottom: 5px;
 	}
 
 	&-description {
-		font-size: 14px;
-		line-height: 1.5;
+		font-size: 15px;
+		line-height: 1.2;
   		margin-bottom: 5px;
+
+  		@include breakpoint(sm){
+  			line-height: 1.5;	
+  		}
+	}
+
+	&-tech {
+		position: absolute;
+		bottom: 45px;
+		left: 0;
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	&-img {
 		margin: auto;
+	}
+
+	&-more-info {
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+		left: 0;
 	}
 }
