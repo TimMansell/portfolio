@@ -1,17 +1,14 @@
 .navigation {
-
 	&-menu {
 		@include breakpoint(xs){
 			position: fixed;
 			bottom: 100px;
-			//background: rgba(255,255,255,0.7);
 			text-align: center;
 			left: 20px;
 			right: 20px;
 			list-style: none;
 			z-index: 999999;
 			background-color: #cb0032;
-			//display: none;
 		}
 
 		@include breakpoint(sm){
@@ -41,13 +38,14 @@
 		transform: translatez(0);
 
 		&.is-sticky {
-			
+			position: fixed;
 			top: 0 !important;
 			box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+			background-color: rgba($colour-primary, 0.95);
 		}
 
 		li {
-			padding: 0 18px;
+			//padding: 0 18px;
 			line-height: 60px;
 			display: inline-block;
 			float: left;
@@ -60,14 +58,17 @@
 			letter-spacing: 2px;
 			color: #fff;
 			text-decoration: none;
+			padding: 0 18px;
 
 			&:hover {
-				color: #fff;
+				background-color: darken($colour-primary, 10%);
+				box-shadow: inset 1px 0 darken($colour-primary, 11%), inset -1px 0 darken($colour-primary, 11%);
 			}
 		}
 
 		.active {
-			color: #fff;
+			background-color: darken($colour-primary, 10%);
+			box-shadow: inset 1px 0 darken($colour-primary, 11%), inset -1px 0 darken($colour-primary, 11%);
 		}
 	}	
 }

@@ -12,12 +12,17 @@
 
 
 	&-scroll {
-		font-size: 35px;
-		text-shadow: 1px 1px darken($colour-primary, 10%);
+		font-size: 55px;
+		//text-shadow: 1px 1px darken($colour-primary, 10%);
+		opacity: .7;
 	}
 
 	&-link {
 		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
 	}
 }
 

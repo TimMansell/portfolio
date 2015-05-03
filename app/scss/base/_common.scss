@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    //color: $colour-06;
     font-size: 32px;
     line-height: 38px;
 
@@ -33,7 +32,6 @@ h1 {
 h2 {
     font-size: 30px;
     line-height: 34px;
-    //color: $colour-06;
     margin-bottom: 50px;
 
     @include breakpoint(sm){
@@ -50,7 +48,6 @@ h2 {
 h3 {
     font-size: 24px;
     line-height: 28px;
-    //color: $colour-01;
 
     @include breakpoint(sm){
         font-size: 28px;
@@ -61,7 +58,6 @@ h3 {
 h4 {
     font-size: 22px;
     line-height: 24px;
-    //color: $colour-06;
 
     @include breakpoint(sm){
         font-size: 24px;
@@ -72,7 +68,6 @@ h4 {
 h5 {
     font-size: 18px;
     line-height: 22px;
-    //color: $colour-06;
 
     @include breakpoint(sm){
         font-size: 20px;
@@ -83,7 +78,6 @@ h5 {
 h6 {
     font-size: 16px;
     line-height: 20px;
-    //color: $colour-01;
 
     @include breakpoint(sm){
         font-size: 17px;
@@ -93,33 +87,21 @@ h6 {
 
 p {
     font-family: $font-family-primary;
-    //color: $colour-13;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 25px;
-
-    + ul {
-        margin-top: -8px;
-    }
 }
 
 a {
-    //color: $colour-08;
+    color: #fff;
     @include transition(color, 0.3s);
 
     &:hover, &:focus {
         text-decoration: none;
-        //color: $colour-06;
+        color: #fff;
+        outline: none;
     }
 }
-
-/*strong {
-    color: $colour-12;
-}
-
-hr {
-    border-color: $hr-colour;
-}*/
 
 ul {
     padding: 0;

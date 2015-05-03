@@ -17,7 +17,7 @@
             windowHasScrolled = 0,
             elementFromScreen = 0,
             elementHasShuffled = false,
-            graceFromBottom = 150;
+            showFromBottom = (attrs.showFromBottom) ? attrs.showFromBottom : 50;
 
         // Set height so element keeps it's height when text dissapears.
         element.css('height', element.height());
@@ -28,7 +28,7 @@
           elementFromScreen = element.offset().top;
 
           // We have scrolled to the element, now do your stuff!
-          if(windowHasScrolled >= (elementFromScreen + graceFromBottom) && elementHasShuffled === false){
+          if(windowHasScrolled >= (elementFromScreen + showFromBottom) && elementHasShuffled === false){
             element.shuffleLetters();    
 
             // We've shuffled once so turn off.

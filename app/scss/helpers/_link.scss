@@ -1,0 +1,10 @@
+.link {
+	color: $colour-primary;
+	transition: border-color .3s;
+	border-bottom: 1px solid transparent;
+
+	&:hover {
+		color: darken($colour-primary, 10%);
+		border-color: darken($colour-primary, 10%);
+	}
+}

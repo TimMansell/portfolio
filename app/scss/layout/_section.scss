@@ -1,14 +1,12 @@
 .layout-section {
 	padding-top: 80px;
 	padding-bottom: 80px;
-	position: relative;
-  	z-index: 100;
 	
 	&:last-of-type {
 		padding-bottom: 140px;
 		
 		@include breakpoint(sm){
-			padding-bottom: 40px;
+			padding-bottom: 80px;
 		}
 	}
 }

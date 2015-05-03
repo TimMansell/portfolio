@@ -1,5 +1,7 @@
 .skills {
 	&-section {
+		margin-bottom: 30px;
+
 		@include breakpoint(xs){
 			margin-bottom: 10px;
 
@@ -15,11 +17,19 @@
 				}
 			}
 		}
+
+		/*transition: box-shadow .3s, background .3s;
+
+		&:hover {
+			background: darken($colour-primary, 10%);
+			box-shadow: 0 0 0 5px rgba($colour-primary, 0.5);
+		}*/
 	}
 
 	&-icon {
 		font-size: 65px;
 		text-shadow: -1px -1px darken($colour-primary, 10%);
+		//box-shadow: 0 0 0 5px rgba($colour-primary, 0.5);
 	}
 
 	&-list {

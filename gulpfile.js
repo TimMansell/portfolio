@@ -39,7 +39,6 @@ var paths = new (function(){
   this.img = this.assets + '/img';
   this.fonts = this.assets + '/fonts';
   this.js = this.assets + '/js';
-  //this.bowerDir = this.app + '/bower_components';
 })();
 
 //-----------------------------------------------------------------
@@ -58,7 +57,7 @@ gulp.task('compass', function() {
     font: paths.fonts
   }))
   .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['> 5%', 'last 2 versions'],
       cascade: false
   }))
   .pipe(pixrem())

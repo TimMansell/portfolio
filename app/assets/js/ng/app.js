@@ -12,7 +12,7 @@ var appConfig = {
 // Init app with dependencies.
 (function() {
 	angular
-		.module('TM', [])
+		.module('TM', ['duScroll'])
   		.config(['$locationProvider', function ($locationProvider) {
   	}]);
 })();

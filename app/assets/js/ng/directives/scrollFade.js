@@ -22,7 +22,7 @@
           if (opacity >= 0){
             element.css('opacity', opacity);
           }
-        }) ;    
+        });    
       }
     }
 })();

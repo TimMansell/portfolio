@@ -18,7 +18,8 @@
 
         element.slick({
           autoplay: autoplay,
-          autoplaySpeed: speed
+          autoplaySpeed: speed,
+          adaptiveHeight: true
         });        
       }
     }
