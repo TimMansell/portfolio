@@ -27,7 +27,8 @@ var bower = require('gulp-bower'),
     pixrem = require('gulp-pixrem'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
-    modernizr = require('gulp-modernizr');
+    modernizr = require('gulp-modernizr'),
+    uncss = require('gulp-uncss');
  
 // File destinations.
 var paths = new (function(){
@@ -176,6 +177,24 @@ gulp.task('build-images', function () {
     .pipe(gulp.dest(paths.distAssets + '/img'));
 });
 
+// Remove unused CSS.
+gulp.task('uncss', function() {
+  return gulp.src(paths.cssTo + '/**/*.css')
+    .pipe(uncss({
+        html: [
+          './app/index.html', 
+          './app/assets/templates/**/*.html'
+        ],
+        ignore: [
+          '.no-scroll',
+          /.navigation(?:-[a-z]*)*/,
+          /.hamburger(?:-[a-z]*)*/,
+          /.slick(?:-[a-z]*)*/,
+        ]
+    }))
+    .pipe(gulp.dest(paths.cssTo));
+});
+
 // Copy the rest of the assets.
 gulp.task('build-assets', function(callback) {
   gulp.src([paths.assets + '/**', '!'+ paths.assets + '/css/**', '!'+ paths.assets + '/img/**', '!'+ paths.assets + '/js/**'])
@@ -185,5 +204,5 @@ gulp.task('build-assets', function(callback) {
 });
 
 gulp.task('build', function() {
-  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-minify'], 'build-assets');
+  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], 'uncss', ['fonts', 'build-images', 'build-minify'], 'build-assets');
 });
