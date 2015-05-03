@@ -35,6 +35,7 @@
     "gulp-imagemin": "^2.2.1",
     "gulp-minify-html": "^1.0.2",
     "gulp-pixrem": "^0.1.4",
+    "gulp-uncss": "^1.0.1",
     "imagemin-pngquant": "^4.1.0",
     "run-sequence": "^1.0.2",
     "vinyl-paths": "^1.0.0"
