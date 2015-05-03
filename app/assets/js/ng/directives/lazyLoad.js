@@ -13,13 +13,12 @@
       return directive;
 
       function link(scope, element, attrs) {
-        var autoplay = (attrs.autoplay) ? true : false,
-            speed =  (attrs.speed) ? attrs.speed : 3000;
+        var bLazy = new Blazy({
+            offset: 600
+        });  
 
-        element.slick({
-          autoplay: autoplay,
-          autoplaySpeed: speed
-        });        
+        // blazy doesn't lik {{}} in data-src so we need to add it after.
+        element.attr('data-src', attrs.img) ;
       }
     }
 })();
