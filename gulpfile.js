@@ -222,6 +222,12 @@ gulp.task('build-assets', function() {
     .pipe(gulp.dest(paths.distAssets));
 });
 
+// Copy root files.
+gulp.task('build-root', function() {
+  return gulp.src([paths.app + '/.htaccess', paths.app + '/favicon.ico'])
+    .pipe(gulp.dest(paths.dist));
+});
+
 gulp.task('build', function() {
-  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-package'], ['build-assets', 'build-html']);
+  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'build-html');
 });
