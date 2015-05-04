@@ -203,7 +203,7 @@ gulp.task('uncss', function() {
   return gulp.src(paths.dest + '/assets/css/**/*.css')
     .pipe(uncss({
         html: [
-          './app/index.html', 
+          './app/*.html', 
           './app/assets/templates/**/*.html'
         ],
         ignore: [
