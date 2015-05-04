@@ -5,7 +5,9 @@
 	transition: all .3s;
 	position: relative;
 	overflow: hidden;	
-
+	display: block;
+	height: 0;
+	padding-bottom: 56.25%;
 
     &:hover &-info {
     	transform: translateY(0);
