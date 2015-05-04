@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmPortfolio', tmPortfolio);
 
+    //tmPortfolio.$inject = [''];
+
     function tmPortfolio() {
       var directive = {
         link: link,
@@ -19,25 +21,23 @@
       function link(scope, element, attrs) {
         
       }
+    }
 
-      portfolioController.$inject = ['$scope', 'portfolioService'];
+    portfolioController.$inject = ['$scope', 'portfolioService'];
 
-      function portfolioController($scope, portfolioService) {
-        var pf = this;
-            
-        pf.items = [];
-         
-        init();
+    function portfolioController($scope, portfolioService) {
+      var pf = this;
+          
+      pf.items = [];
+       
+      init();
 
-        ////////////
+      function init() {
+          return portfolioService.get().then(function(data) {
+              pf.items = data;
 
-        function init() {
-            return portfolioService.get().then(function(data) {
-                pf.items = data;
-
-                return pf.items;
-            });
-        }
+              return pf.items;
+          });
       }
     }
 })();

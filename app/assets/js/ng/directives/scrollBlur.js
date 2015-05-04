@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmScrollBlur', tmScrollBlur);
 
+    //tmScrollBlur.$inject = [''];
+
     function tmScrollBlur() {
       var directive = {
         link: link,

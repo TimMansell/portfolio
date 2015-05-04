@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmCarousel', tmCarousel);
 
+    //tmCarousel.$inject = [''];
+
     function tmCarousel() {
       var directive = {
         link: link,

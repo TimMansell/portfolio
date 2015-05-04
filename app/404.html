@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>404 Page not found! | Front-end / AngularJS Developer | Melbourne | Tim Mansell</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+
+	<!-- build:css assets/css/404.min.css -->
+	<link rel="stylesheet" href="assets/css/main.css" media="screen">
+	<!-- endbuild -->
+
+	<!-- build:js assets/js/html5shiv.min.js -->
+	<!--[if lt IE 9]>
+    	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+	<!-- endbuild -->
+</head>
+
+<body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
+	<nav id="nav" class="navigation" ng-class="{true:'navigation-active', false:''}[menu.open]" tm-navigation>
+		<ul class="navigation-menu" ng-class="{true:'navigation-menu-active', false:''}[menu.open]">
+			<li class="navigation-menu-item">
+				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#profile">Profile</a></li>
+			<li class="navigation-menu-item">
+				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#skills">Skills</a></li>
+			<li class="navigation-menu-item">
+				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#portfolio">Portfolio</a></li>
+			<li class="navigation-menu-item">
+				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#testimonials">Testimonials</a></li>
+			<li class="navigation-menu-item">
+				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#contact">Contact</a></li>
+		</ul>
+
+		<button class="hamburger visible-xs" ng-class="{true:'hamburger-active', false:''}[menu.open]" ng-click="menu.open=!menu.open">
+			<span class="hamburger-menu">toggle menu</span>
+		</button>
+	</nav>
+
+	<section id="intro" class="hero bg-primary">
+		<div class="hero-img"></div>		
+
+		<div class="info" tm-center-content element=".js-info-content">
+			<div class="js-info-content info-content">
+				<h4 class="info-text info-sub-title">404</h4>
+				<h1 class="info-title">Page not found</h1>
+				<div class="info-blurb" tm-shuffle-content>
+					<h4 class="info-blurb-item info-text">Taken a wrong turn?</h4>
+					<h4 class="info-blurb-item info-text">End of the line</h4>
+					<h4 class="info-blurb-item info-text">Visit one of the links below</h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="learn-more hidden-xs">
+			<a class="learn-more-link">
+				<i class="learn-more-scroll fa fa-angle-down"></i>
+			</a>
+		</div>
+
+	</section>
+
+	<!-- build:js assets/js/404.min.js -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+	<script src="assets/js/lib/jquery.shuffleLetters.js"></script>
+	<script src="assets/js/ng/app.js"></script>
+	<script src="assets/js/ng/directives/centerContent.js"></script>
+	<script src="assets/js/ng/directives/shuffleContent.js"></script>
+	<script src="assets/js/ng/directives/nav.js"></script>
+	<!-- endbuild -->	
+
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-32933519-1','auto');ga('send','pageview');
+	</script>
+</body>
+</html>

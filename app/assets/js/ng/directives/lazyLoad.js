@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmLazyLoad', tmLazyLoad);
 
+    //tmLazyLoad.$inject = [''];
+
     function tmLazyLoad() {
       var directive = {
         link: link,

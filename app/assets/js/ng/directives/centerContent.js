@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmCenterContent', tmCenterContent);
 
+    //tmCenterContent.$inject = [''];
+
     function tmCenterContent() {
       var directive = {
         link: link,

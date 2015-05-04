@@ -15,7 +15,8 @@ var bower = require('gulp-bower'),
     connect = require('gulp-connect'),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
-    usemin = require('gulp-usemin'),
+    useref = require('gulp-useref'),
+    gulpif = require('gulp-if'),
     minifyHtml = require('gulp-minify-html'),
     rev = require('gulp-rev'),
     jshint = require('gulp-jshint'),
@@ -76,7 +77,6 @@ gulp.task('jshint', function() {
 // Install bower packages.
 gulp.task('bower', function() {
   return bower();
-    //.pipe(gulp.dest(paths.devThemeDir + paths.bowerDir))
 });
 
 // Create custom modernizr file.
@@ -88,7 +88,6 @@ gulp.task('modernizr', function() {
           "dest" : false,
           "options" : [
               "setClasses",
-              "html5printshiv",
               "addTest",
               "testProp",
               "fnBind"
@@ -129,6 +128,13 @@ gulp.task('serve', function() {
   gulp.watch(paths.js + '/*.js', ['jshint']);  
 });
 
+gulp.task('serve-build', function() {
+  connect.server({
+    root: paths.dist,
+    port: 8888
+  });     
+});
+
 // Live reload html.
 gulp.task('reload', function () {
   gulp.src(paths.app + '/*.html')
@@ -150,20 +156,35 @@ gulp.task('watch', function() {
 //  Production build.
 //-----------------------------------------------------------------
 
+
 gulp.task('build-clean', function () {
   return gulp.src(paths.dist +'/*')
     .pipe(gulp.dest(paths.dist +'/'))
     .pipe(vinylPaths(del));
 });
 
-gulp.task('build-minify', function () {
-  return gulp.src(paths.app + '/index.html')
-    .pipe(usemin({
-      css: [minifyCss(), 'concat'],
-      js: [uglify(), rev()],
-      html: [minifyHtml({empty: true})],
+// Package up js, css and minify.
+gulp.task('build-package', function () {
+  var assets = useref.assets();
+    
+  return gulp.src(paths.app + '/*.html')
+    .pipe(assets)
+    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulpif('*.css', minifyCss()))
+    .pipe(assets.restore())
+    .pipe(useref())
+    .pipe(gulp.dest(paths.dist));
+});
+
+// Minify HTML.
+gulp.task('build-html', function () {   
+  return gulp.src(paths.dist + '/*.html')
+    .pipe(minifyHtml({
+      empty: true,
+      quotes: true,
+      conditionals: true
     }))
-    .pipe(gulp.dest(paths.dist +'/'));
+    .pipe(gulp.dest(paths.dist));
 });
 
 // Copy our images.
@@ -179,7 +200,7 @@ gulp.task('build-images', function () {
 
 // Remove unused CSS.
 gulp.task('uncss', function() {
-  return gulp.src(paths.cssTo + '/**/*.css')
+  return gulp.src(paths.dest + '/assets/css/**/*.css')
     .pipe(uncss({
         html: [
           './app/index.html', 
@@ -192,17 +213,15 @@ gulp.task('uncss', function() {
           /.slick(?:-[a-z]*)*/,
         ]
     }))
-    .pipe(gulp.dest(paths.cssTo));
+    .pipe(gulp.dest(paths.dist));
 });
 
 // Copy the rest of the assets.
-gulp.task('build-assets', function(callback) {
-  gulp.src([paths.assets + '/**', '!'+ paths.assets + '/css/**', '!'+ paths.assets + '/img/**', '!'+ paths.assets + '/js/**'])
+gulp.task('build-assets', function() {
+  return gulp.src([paths.assets + '/**', '!'+ paths.assets + '/css/**', '!'+ paths.assets + '/img/**', '!'+ paths.assets + '/js/**'])
     .pipe(gulp.dest(paths.distAssets));
-
-    callback();
 });
 
 gulp.task('build', function() {
-  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], 'uncss', ['fonts', 'build-images', 'build-minify'], 'build-assets');
+  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-package'], ['build-assets', 'build-html']);
 });

@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmShuffleOnScreen', tmShuffleOnScreen);
 
+    //tmShuffleOnScreen.$inject = [''];
+
     function tmShuffleOnScreen() {
       var directive = {
         link: link,

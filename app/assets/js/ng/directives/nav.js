@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmNavigation', tmNavigation);
 
+    //tmNavigation.$inject = [''];
+
     function tmNavigation() {
       var directive = {
         link: link,

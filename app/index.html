@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Front-end Developer | Melbourne | Tim Mansell</title>
+	<title>Front-end / AngularJS Developer | Melbourne | Tim Mansell</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 
@@ -15,8 +15,10 @@
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	<!-- endbuild -->
 
-	<!-- build:jsHead assets/js/head.min.js -->
-	<script src="assets/js/modernizr-custom.js"></script>
+	<!-- build:js assets/js/html5shiv.min.js -->
+	<!--[if lt IE 9]>
+    	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
 	<!-- endbuild -->
 </head>
 
@@ -301,17 +303,15 @@
 		</div>
 	</footer>	
 
-	<!-- build:jsLib assets/js/scripts.min.js -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/angular/angular.min.js"></script>
-
+	<!-- build:js assets/js/scripts.min.js -->
+	<script src="assets/js/modernizr-custom.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
 	<script src="bower_components/blazy/blazy.min.js"></script>
 	<script src="assets/js/lib/jquery.shuffleLetters.js"></script>
-
 	<script src="assets/js/ng/app.js"></script>
-
 	<script src="assets/js/ng/directives/carousel.js"></script>
 	<script src="assets/js/ng/directives/centerContent.js"></script>
 	<script src="assets/js/ng/directives/lazyLoad.js"></script>
@@ -324,7 +324,6 @@
 	<script src="assets/js/ng/directives/randomNumbersOnScreen.js"></script>
 	<script src="assets/js/ng/directives/portfolio.js"></script>
 	<script src="assets/js/ng/directives/socialIcons.js"></script>
-
 	<script src="assets/js/ng/services/portfolio.js"></script>
 	<!-- endbuild -->	
 

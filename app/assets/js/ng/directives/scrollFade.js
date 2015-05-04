@@ -5,6 +5,8 @@
         .module('TM')
         .directive('tmScrollFade', tmScrollFade);
 
+    //tmScrollFade.$inject = [''];
+
     function tmScrollFade() {
       var directive = {
         link: link,
