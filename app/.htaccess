@@ -1,3 +1,9 @@
+# Redirect some pages from 2012 site
+Redirect 301 /services.html /
+Redirect 301 /about.html /
+Redirect 301 /my-portfolio.html /
+Redirect 301 /contact-me.php /
+
 # No sense advertising what we are running
 ServerSignature Off
 
