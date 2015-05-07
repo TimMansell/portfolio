@@ -21,7 +21,7 @@
 	<!-- endbuild -->
 </head>
 
-<body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
+<body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]" tm-web-fonts>
 	<nav id="nav" class="navigation" ng-class="{true:'navigation-active', false:''}[menu.open]" tm-navigation>
 		<ul class="navigation-menu" ng-class="{true:'navigation-menu-active', false:''}[menu.open]">
 			<li class="navigation-menu-item">
@@ -325,16 +325,9 @@
 	<script src="assets/js/ng/directives/randomNumbersOnScreen.js"></script>
 	<script src="assets/js/ng/directives/portfolio.js"></script>
 	<script src="assets/js/ng/directives/socialIcons.js"></script>
+	<script src="assets/js/ng/directives/webFonts.js"></script>
 	<script src="assets/js/ng/services/portfolio.js"></script>
 	<!-- endbuild -->
-
-	<script>
-	  WebFont.load({
-	    google: {
-	      families: ['Raleway:700,400']
-	    }
-	  });
-	</script>	
 
 	<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
