@@ -375,6 +375,7 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1766,6 +1767,7 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .form-control:focus {
@@ -2779,6 +2781,7 @@ input[type="button"].btn-block {
 
 .link {
   color: #4ab571;
+  -webkit-transition: border-color .3s;
   transition: border-color .3s;
   border-bottom: 1px solid transparent;
 }
@@ -2907,6 +2910,7 @@ p {
 
 a {
   color: #fff;
+  -webkit-transition: color, 0.3s;
   transition: color, 0.3s;
   text-decoration: none;
 }
@@ -3001,6 +3005,7 @@ ul {
   width: 60px;
   height: 60px;
   margin: 0 15px;
+  -webkit-transition: box-shadow .3s, background .3s;
   transition: box-shadow .3s, background .3s;
 }
 .social-icon:hover {
@@ -3159,6 +3164,7 @@ ul {
   text-indent: -9999px;
   appearance: none;
   border: none;
+  -webkit-transition: background 0.3s;
   transition: background 0.3s;
   z-index: 999999;
   left: 50%;
@@ -3192,6 +3198,7 @@ ul {
   transform: rotate(-45deg);
 }
 .hamburger-active .hamburger-menu:before, .hamburger-active .hamburger-menu:after {
+  -webkit-transition-delay: 0, 0.3s;
   transition-delay: 0, 0.3s;
   box-shadow: none;
 }
@@ -3203,6 +3210,7 @@ ul {
   right: 18px;
   height: 3px;
   background-color: #fff;
+  -webkit-transition: background 0 0.3s;
   transition: background 0 0.3s;
   box-shadow: -1px -1px #43a366;
 }
@@ -3214,17 +3222,21 @@ ul {
   height: 3px;
   background-color: #fff;
   content: "";
+  -webkit-transition-duration: 0.3s, 0.3s;
   transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
   transition-delay: 0.3s, 0;
   box-shadow: -1px -1px #43a366;
 }
 .hamburger-menu:before {
   top: -10px;
+  -webkit-transition-property: top, -webkit-transform;
   transition-property: top, -webkit-transform;
   transition-property: top, transform;
 }
 .hamburger-menu:after {
   bottom: -10px;
+  -webkit-transition-property: bottom, -webkit-transform;
   transition-property: bottom, -webkit-transform;
   transition-property: bottom, transform;
 }
@@ -3233,6 +3245,7 @@ ul {
   background: rgba(74, 181, 113, 0.3);
   padding: 10px;
   margin-bottom: 20px;
+  -webkit-transition: all .3s;
   transition: all .3s;
   position: relative;
   overflow: hidden;
@@ -3249,6 +3262,7 @@ ul {
   width: 100%;
   height: 100%;
   position: absolute;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 .portfolio-item-icon {
@@ -3256,6 +3270,7 @@ ul {
   color: #fff;
   padding-left: 5px;
   padding-right: 5px;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 .portfolio-item-icon:hover {
@@ -3267,6 +3282,7 @@ ul {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   text-shadow: -1px -1px #3b915a;
+  -webkit-transition: all .3s;
   transition: all .3s;
   top: 0;
   left: 0;

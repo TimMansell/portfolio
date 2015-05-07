@@ -29,7 +29,10 @@ var bower = require('gulp-bower'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     modernizr = require('gulp-modernizr'),
-    uncss = require('gulp-uncss');
+    uncss = require('gulp-uncss'),
+    critical = require('critical'),
+    rename = require('gulp-rename'),
+    replace = require('gulp-replace');
  
 // File destinations.
 var paths = new (function(){
@@ -165,7 +168,7 @@ gulp.task('build-clean', function () {
 
 // Package up js, css and minify.
 gulp.task('build-package', function () {
-  var assets = useref.assets();
+ var assets = useref.assets();
     
   return gulp.src(paths.app + '/*.html')
     .pipe(assets)
@@ -173,6 +176,13 @@ gulp.task('build-package', function () {
     .pipe(gulpif('*.css', minifyCss()))
     .pipe(assets.restore())
     .pipe(useref())
+    .pipe(gulp.dest(paths.dist));
+});
+
+// Add defer to scripts to stop render blocking.
+gulp.task('defer-scripts', function() {
+  return gulp.src(paths.dist + '/*.html')
+    .pipe(replace('<script src="assets/js/scripts.min.js">', '<script src="assets/js/scripts.min.js" defer>'))
     .pipe(gulp.dest(paths.dist));
 });
 
@@ -200,10 +210,10 @@ gulp.task('build-images', function () {
 
 // Remove unused CSS.
 gulp.task('uncss', function() {
-  return gulp.src(paths.dest + '/assets/css/**/*.css')
+  return gulp.src(paths.dist + '/assets/css/**/*.min.css')
     .pipe(uncss({
         html: [
-          './app/*.html', 
+          './app/index.html', 
           './app/assets/templates/**/*.html'
         ],
         ignore: [
@@ -213,7 +223,27 @@ gulp.task('uncss', function() {
           /.slick(?:-[a-z]*)*/,
         ]
     }))
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.distAssets +'/css'));
+});
+
+gulp.task('critical', ['uncss', 'copy-styles'], function () {
+    critical.generateInline({
+        base: './dist/',
+        src: 'index.html',
+        styleTarget: 'assets/css/site.css',
+        htmlTarget: 'index.html',
+        width: 320,
+        height: 480,
+        minify: true
+    });
+});
+
+gulp.task('copy-styles', function () {
+    return gulp.src(['dist/assets/css/main.min.css'])
+        .pipe(rename({
+            basename: "site" 
+        }))
+        .pipe(gulp.dest('dist/assets/css'));
 });
 
 // Copy the rest of the assets.
@@ -229,5 +259,5 @@ gulp.task('build-root', function() {
 });
 
 gulp.task('build', function() {
-  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'build-html');
+  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html');
 });
