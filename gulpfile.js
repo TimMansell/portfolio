@@ -131,7 +131,7 @@ gulp.task('serve', function() {
   gulp.watch(paths.js + '/*.js', ['jshint']);  
 });
 
-gulp.task('serve-build', function() {
+gulp.task('serve:build', function() {
   connect.server({
     root: paths.dist,
     port: 8888
