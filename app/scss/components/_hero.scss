@@ -3,7 +3,7 @@
 
 	&-img {
 		@include breakpoint(sm){
-			background-image: image-url('hero.jpg');
+			background-image: url('../img/hero.jpg');
 			background-position: center;
 			position: fixed;
 			top: 0;

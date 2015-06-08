@@ -1,10 +1,12 @@
 .link {
-	color: $primary-colour;
+	//color: $primary-colour;
+	color: inherit;
 	transition: border-color .3s;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid inherit;
 
 	&:hover {
-		color: darken($primary-colour, 10%);
+		//color: darken($primary-colour, 10%);
+		color: inherit;
 		border-color: darken($primary-colour, 10%);
 	}
 }

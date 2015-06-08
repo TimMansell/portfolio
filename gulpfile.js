@@ -1,18 +1,18 @@
-//-----------------------------------------------------------------
-//  gulp watch - Will watch and compile sass.
+//--------------------------------------------------------------------------------------------------------------------
 //  gulp serve - Load up a webserver. Watch for css and html changes and live reload.
+//  gulp serve:build - Load up a webserver referencing build folder.  Use to test the build process has worked.
 //  gulp build - Use this command to package assets up. ie, concat, minify etc.
-//-----------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
 
 // Include gulp
 var gulp = require('gulp'); 
 
 // Include Our Plugins
 var bower = require('gulp-bower'),
-    compass = require('gulp-compass'),
+    sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    connect = require('gulp-connect'),
+    browserSync = require('browser-sync').create(),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
     useref = require('gulp-useref'),
@@ -25,14 +25,16 @@ var bower = require('gulp-bower'),
     runSequence = require('run-sequence'),
     vinylPaths = require('vinyl-paths'),
     autoprefixer = require('gulp-autoprefixer'),
-    pixrem = require('gulp-pixrem'),
+    pxtorem = require('gulp-pxtorem'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     modernizr = require('gulp-modernizr'),
     uncss = require('gulp-uncss'),
     critical = require('critical'),
     rename = require('gulp-rename'),
-    replace = require('gulp-replace');
+    replace = require('gulp-replace'),
+    filter = require('gulp-filter')
+    revReplace = require('gulp-rev-replace');
  
 // File destinations.
 var paths = new (function(){
@@ -47,26 +49,68 @@ var paths = new (function(){
   this.js = this.assets + '/js';
 })();
 
+// Module configs.
+var configs = {
+  autoprefixer: {
+    browsers: ['> 5%', 'last 2 versions'],
+    cascade: false
+  },
+  minifyCss: {
+    keepSpecialComments: 0,
+    rebase: false,
+    advanced: false
+  },
+  minifyHtml: {
+    empty: true,
+    quotes: true,
+    conditionals: true
+  },
+  pxtorem: {
+    root_value: 10,
+    prop_white_list: ['font', 'font-size', 'line-height', 'letter-spacing', 'margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left', 'padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left'],
+    replace: false
+  },
+  imagemin: {
+    progressive: true,
+    svgoPlugins: [{removeViewBox: false}],
+    use: [pngquant()]
+  },
+  modernizr: {
+    "cache" : true,
+    "devFile" : false,
+    "dest" : false,
+    "options" : [
+        "setClasses",
+        "html5printshiv",
+        "addTest",
+        "testProp",
+        "fnBind"
+    ],
+    "tests" : [
+      "svg",
+      "csstransitions",
+      "touchevents"
+    ],
+    "useBuffers": false
+  }
+};
+
 //-----------------------------------------------------------------
 //  Shared tasks.
 //-----------------------------------------------------------------
 
-// Compile compass.
-gulp.task('compass', function() {
+// Compile sass.
+gulp.task('sass', function() {
   return gulp.src(paths.cssFrom+'/**/*.scss')
   .pipe(plumber())
-  .pipe(compass({
-    comments:false,
-    css: paths.cssTo,
-    sass: paths.cssFrom,
-    image: paths.img,
-    font: paths.fonts
-  }))
-  .pipe(autoprefixer({
-      browsers: ['> 5%', 'last 2 versions'],
-      cascade: false
-  }))
-  .pipe(pixrem())
+  .pipe(sass({
+      includePaths: [
+        'bower_components/bootstrap-sass-official/assets/stylesheets',
+        'bower_components/fontawesome/scss'
+      ]
+    }))
+  .pipe(autoprefixer(configs.autoprefixer))
+  .pipe(pxtorem(configs.pxtorem))
   .pipe(gulp.dest(paths.cssTo));
 });
 
@@ -85,21 +129,7 @@ gulp.task('bower', function() {
 // Create custom modernizr file.
 gulp.task('modernizr', function() {
   return gulp.src(paths.js +'/**/*.js')
-    .pipe(modernizr('modernizr-custom.js', {
-          "cache" : true,
-          "devFile" : false,
-          "dest" : false,
-          "options" : [
-              "setClasses",
-              "addTest",
-              "testProp",
-              "fnBind"
-          ],
-          "tests" : [
-            "svg"
-          ],
-          "useBuffers": false
-      }))
+    .pipe(modernizr('modernizr-custom.js', configs.modernizr))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js));
 });
@@ -116,49 +146,32 @@ gulp.task('fonts', function() {
 
 // Fire up a web server.
 gulp.task('serve', function() {
-  connect.server({
-    root: paths.app,
-    livereload: true
-  });    
+  browserSync.init({
+      server: {
+          baseDir: "./app/"
+      }
+  });  
 
   // Watch main scss.
-  gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
-
-  // Watch main scss.
-  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css'], ['reload']);
+  gulp.watch(paths.cssFrom+'/**/*.scss', ['sass']);
 
   // Watch JS for changes.
   gulp.watch(paths.js + '/*.js', ['jshint']);  
+  
+  // Watch main files and reload browser.
+  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css']).on('change', browserSync.reload);
 });
-
-gulp.task('serve:build', function() {
-  connect.server({
-    root: paths.dist,
-    port: 8888
-  });     
-});
-
-// Live reload html.
-gulp.task('reload', function () {
-  gulp.src(paths.app + '/*.html')
-    .pipe(connect.reload());
-});
-
-// Watch Files For Changes.
-gulp.task('watch', function() {
-       
-  // Watch main scss.
-  gulp.watch(paths.cssFrom+'/**/*.scss', ['compass']);
-
-  // Watch css or html changes.
-  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css'], ['reload']);   
-});
-
 
 //-----------------------------------------------------------------
 //  Production build.
 //-----------------------------------------------------------------
-
+gulp.task('serve:build', ['build'], function() { 
+  browserSync.init({
+      server: {
+          baseDir: "./dist/"
+      }
+  }); 
+});
 
 gulp.task('build-clean', function () {
   return gulp.src(paths.dist +'/*')
@@ -168,43 +181,45 @@ gulp.task('build-clean', function () {
 
 // Package up js, css and minify.
 gulp.task('build-package', function () {
- var assets = useref.assets();
+  var jsFilter = filter("**/*.js"),
+      cssFilter = filter("**/*.css"),
+      assets = useref.assets();
     
   return gulp.src(paths.app + '/*.html')
     .pipe(assets)
-    .pipe(gulpif('*.js', uglify()))
-    .pipe(gulpif('*.css', minifyCss()))
+    .pipe(jsFilter)
+    .pipe(uglify())             
+    .pipe(jsFilter.restore())
+    .pipe(cssFilter)
+    .pipe(minifyCss(configs.minifyCss))           
+    .pipe(cssFilter.restore())
+    .pipe(rev())
     .pipe(assets.restore())
     .pipe(useref())
+    .pipe(revReplace(configs.revReplace))
     .pipe(gulp.dest(paths.dist));
 });
 
 // Add defer to scripts to stop render blocking.
 gulp.task('defer-scripts', function() {
   return gulp.src(paths.dist + '/*.html')
-    .pipe(replace('<script src="assets/js/scripts.min.js">', '<script src="assets/js/scripts.min.js" defer>'))
+    .pipe(replace(/<script src=".*scripts.*"/g, function(match, p1) {
+      return match +' defer></script>';
+    }))
     .pipe(gulp.dest(paths.dist));
 });
 
 // Minify HTML.
 gulp.task('build-html', function () {   
   return gulp.src(paths.dist + '/*.html')
-    .pipe(minifyHtml({
-      empty: true,
-      quotes: true,
-      conditionals: true
-    }))
+    .pipe(minifyHtml(configs.minifyHtml))
     .pipe(gulp.dest(paths.dist));
 });
 
 // Copy our images.
 gulp.task('build-images', function () {
   gulp.src(paths.assets + '/img/**/*')
-    .pipe(imagemin({
-      progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
-      use: [pngquant()]
-    }))
+    .pipe(imagemin(configs.imagemin))
     .pipe(gulp.dest(paths.distAssets + '/img'));
 });
 
@@ -258,6 +273,6 @@ gulp.task('build-root', function() {
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('build', function() {
-  runSequence(['build-clean', 'bower', 'compass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html');
+gulp.task('build', function(cb) {
+  runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html', cb);
 });
