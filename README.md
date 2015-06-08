@@ -1,16 +1,22 @@
 This is the source code for my personal portfolio site.
 
-##Instructions:
+My website uses npm, gulp, and bower.  Ensure you have those packages installed first.
 
-My website uses npm, gulp and bower.  Ensure you have those packages installed first.
+##Instructions:
 
 *npm install*
 
-To load my site in development mode run: 
+To load my site in development mode, run: 
+
+*gulp serve:dev*
+
+To load my site in production mode, run: 
 
 *gulp serve*
 
-To load my site in production mode run: 
+**Note**: if repo has just been cloned, 'gulp build' needs to be run before this step.
+
+To load my site in production mode using a clean repackaging of assets, run: 
 
 *gulp serve:build*
 

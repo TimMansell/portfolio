@@ -1,6 +1,7 @@
 //--------------------------------------------------------------------------------------------------------------------
-//  gulp serve - Load up a webserver. Watch for css and html changes and live reload.
-//  gulp serve:build - Load up a webserver referencing build folder.  Use to test the build process has worked.
+//  gulp serve - Load up a webserver referencing build folder (dest).  Use to test the build process has worked.
+//  gulp serve:dev - Load up a webserver referencing development folder (app). Watch for css and html changes and live reload.
+//  gulp serve:build - Load up a webserver referencing build folder. Will run build process also.
 //  gulp build - Use this command to package assets up. ie, concat, minify etc.
 //--------------------------------------------------------------------------------------------------------------------
 
@@ -59,6 +60,19 @@ var configs = {
     keepSpecialComments: 0,
     rebase: false,
     advanced: false
+  },
+  uncss: {
+    html: [
+      './app/index.html', 
+      './app/assets/templates/**/*.html'
+    ],
+    ignore: [
+      '.no-scroll',
+      /.navigation(?:-[a-z]*)*/,
+      /.hamburger(?:-[a-z]*)*/,
+      /.slick(?:-[a-z]*)*/,
+      /.goto-top(?:-[a-z]*)*/,
+    ]
   },
   minifyHtml: {
     empty: true,
@@ -145,7 +159,7 @@ gulp.task('fonts', function() {
 //-----------------------------------------------------------------
 
 // Fire up a web server.
-gulp.task('serve', function() {
+gulp.task('serve:dev', function() {
   browserSync.init({
       server: {
           baseDir: "./app/"
@@ -165,6 +179,14 @@ gulp.task('serve', function() {
 //-----------------------------------------------------------------
 //  Production build.
 //-----------------------------------------------------------------
+gulp.task('serve', function() { 
+  browserSync.init({
+      server: {
+          baseDir: "./dist/"
+      }
+  }); 
+});
+
 gulp.task('serve:build', ['build'], function() { 
   browserSync.init({
       server: {
@@ -188,10 +210,11 @@ gulp.task('build-package', function () {
   return gulp.src(paths.app + '/*.html')
     .pipe(assets)
     .pipe(jsFilter)
-    .pipe(uglify())             
+    .pipe(uglify())
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
-    .pipe(minifyCss(configs.minifyCss))           
+    .pipe(minifyCss(configs.minifyCss))
+    .pipe(uncss(configs.uncss))           
     .pipe(cssFilter.restore())
     .pipe(rev())
     .pipe(assets.restore())
@@ -223,47 +246,25 @@ gulp.task('build-images', function () {
     .pipe(gulp.dest(paths.distAssets + '/img'));
 });
 
-// Remove unused CSS.
-gulp.task('uncss', function() {
-  return gulp.src(paths.dist + '/assets/css/**/*.css')
-    .pipe(uncss({
-        html: [
-          './app/index.html', 
-          './app/assets/templates/**/*.html'
-        ],
-        ignore: [
-          '.no-scroll',
-          /.navigation(?:-[a-z]*)*/,
-          /.hamburger(?:-[a-z]*)*/,
-          /.slick(?:-[a-z]*)*/,
-          /.goto-top(?:-[a-z]*)*/,
-        ]
-    }))
-    .pipe(minifyCss(configs.minifyCss))
-    .pipe(gulp.dest(paths.distAssets +'/css'));
+// Inline above the fold css.
+gulp.task('critical-extract-css', function (cb) {
+  critical.generateInline({
+    base: './dist/',
+    src: 'index.html',
+    styleTarget: 'assets/css/site.css',
+    htmlTarget: 'index.html',
+    extract: true,
+    width: 320,
+    height: 480,
+    minify: true
+  }, cb);
 });
 
-// Copy styles so critical doesn't override our css.
-// gulp.task('copy-styles', function () {
-//     return gulp.src(['dist/assets/css/main.min-*.css'])
-//         .pipe(rename({
-//             basename: "site" 
-//         }))
-//         .pipe(gulp.dest('dist/assets/css'));
-// });
-
-// Inline above the fold css.
-gulp.task('critical', ['uncss'], function () {
-  critical.generateInline({
-      base: './dist/',
-      src: 'index.html',
-      styleTarget: 'assets/css/site.css',
-      htmlTarget: 'index.html',
-      extract: true,
-      width: 320,
-      height: 480,
-      minify: true
-  });
+// Minify critical css, as it unminifies our minified css code!
+gulp.task('critical-css', ['critical-extract-css'], function() {
+  return gulp.src(paths.distAssets +'/css/*')
+    .pipe(minifyCss(configs.minifyCss))
+    .pipe(gulp.dest(paths.distAssets +'/css'));
 });
 
 // Copy the rest of the assets.
@@ -279,6 +280,6 @@ gulp.task('build-root', function() {
 });
 
 gulp.task('build', function(cb) {
-  runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html', cb);
-  //runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'uncss', 'build-html', cb);
+  //runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html', cb);
+  runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
 });
