@@ -196,7 +196,7 @@ gulp.task('build-package', function () {
     .pipe(rev())
     .pipe(assets.restore())
     .pipe(useref())
-    .pipe(revReplace(configs.revReplace))
+    .pipe(revReplace())
     .pipe(gulp.dest(paths.dist));
 });
 
@@ -204,7 +204,7 @@ gulp.task('build-package', function () {
 gulp.task('defer-scripts', function() {
   return gulp.src(paths.dist + '/*.html')
     .pipe(replace(/<script src=".*scripts.*"/g, function(match, p1) {
-      return match +' defer></script>';
+      return match +' defer></script';
     }))
     .pipe(gulp.dest(paths.dist));
 });
@@ -218,14 +218,14 @@ gulp.task('build-html', function () {
 
 // Copy our images.
 gulp.task('build-images', function () {
-  gulp.src(paths.assets + '/img/**/*')
+  return gulp.src(paths.assets + '/img/**/*')
     .pipe(imagemin(configs.imagemin))
     .pipe(gulp.dest(paths.distAssets + '/img'));
 });
 
 // Remove unused CSS.
 gulp.task('uncss', function() {
-  return gulp.src(paths.dist + '/assets/css/**/*.min.css')
+  return gulp.src(paths.dist + '/assets/css/**/*.css')
     .pipe(uncss({
         html: [
           './app/index.html', 
@@ -236,29 +236,34 @@ gulp.task('uncss', function() {
           /.navigation(?:-[a-z]*)*/,
           /.hamburger(?:-[a-z]*)*/,
           /.slick(?:-[a-z]*)*/,
+          /.goto-top(?:-[a-z]*)*/,
         ]
     }))
+    .pipe(minifyCss(configs.minifyCss))
     .pipe(gulp.dest(paths.distAssets +'/css'));
 });
 
-gulp.task('critical', ['uncss', 'copy-styles'], function () {
-    critical.generateInline({
-        base: './dist/',
-        src: 'index.html',
-        styleTarget: 'assets/css/site.css',
-        htmlTarget: 'index.html',
-        width: 320,
-        height: 480,
-        minify: true
-    });
-});
+// Copy styles so critical doesn't override our css.
+// gulp.task('copy-styles', function () {
+//     return gulp.src(['dist/assets/css/main.min-*.css'])
+//         .pipe(rename({
+//             basename: "site" 
+//         }))
+//         .pipe(gulp.dest('dist/assets/css'));
+// });
 
-gulp.task('copy-styles', function () {
-    return gulp.src(['dist/assets/css/main.min.css'])
-        .pipe(rename({
-            basename: "site" 
-        }))
-        .pipe(gulp.dest('dist/assets/css'));
+// Inline above the fold css.
+gulp.task('critical', ['uncss'], function () {
+  critical.generateInline({
+      base: './dist/',
+      src: 'index.html',
+      styleTarget: 'assets/css/site.css',
+      htmlTarget: 'index.html',
+      extract: true,
+      width: 320,
+      height: 480,
+      minify: true
+  });
 });
 
 // Copy the rest of the assets.
@@ -275,4 +280,5 @@ gulp.task('build-root', function() {
 
 gulp.task('build', function(cb) {
   runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html', cb);
+  //runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'uncss', 'build-html', cb);
 });
