@@ -21,7 +21,7 @@
 		@include breakpoint(sm){
 			margin: 0 auto;
 			padding: 0;
-			display: inline-block;
+			display: inline-block !important;
 		}
 	}
 
