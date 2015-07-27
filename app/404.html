@@ -11,11 +11,11 @@
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	<!-- endbuild -->
 
-	<!-- build:js assets/js/html5shiv.min.js -->
 	<!--[if lt IE 9]>
-    	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-	<![endif]-->
+	<!-- build:js assets/js/html5shiv.min.js -->
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 	<!-- endbuild -->
+	<![endif]-->
 </head>
 
 <body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]" tm-web-fonts>
@@ -41,8 +41,8 @@
 	<section id="intro" class="hero bg-primary">
 		<div class="hero-img"></div>		
 
-		<div class="info" tm-center-content element=".js-info-content">
-			<div class="js-info-content info-content">
+		<div class="info">
+			<tm-scroll-fade>
 				<h4 class="info-text info-sub-title">404</h4>
 				<h1 class="info-title">Page not found</h1>
 				<div class="info-blurb" tm-shuffle-content>
@@ -50,7 +50,7 @@
 					<h4 class="info-blurb-item info-text">End of the line</h4>
 					<h4 class="info-blurb-item info-text">Visit one of the links below</h4>
 				</div>
-			</div>
+			</tm-scroll-fade>
 		</div>
 
 		<div class="learn-more hidden-xs">
@@ -68,7 +68,6 @@
 	<script src="bower_components/webfontloader/webfontloader.js"></script>
 	<script src="assets/js/lib/jquery.shuffleLetters.js"></script>
 	<script src="assets/js/ng/app.js"></script>
-	<script src="assets/js/ng/directives/centerContent.js"></script>
 	<script src="assets/js/ng/directives/shuffleContent.js"></script>
 	<script src="assets/js/ng/directives/nav.js"></script>
 	<script src="assets/js/ng/directives/webFonts.js"></script>
