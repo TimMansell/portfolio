@@ -67,7 +67,7 @@ var configs = {
       './app/assets/templates/**/*.html'
     ],
     ignore: [
-      '.no-scroll',
+      /.no-scroll/,
       /.navigation(?:-[a-z]*)*/,
       /.hamburger(?:-[a-z]*)*/,
       /.slick(?:-[a-z]*)*/,
@@ -253,7 +253,7 @@ gulp.task('critical-extract-css', function (cb) {
     src: 'index.html',
     styleTarget: 'assets/css/site.css',
     htmlTarget: 'index.html',
-    extract: true,
+    //extract: true,
     width: 320,
     height: 480,
     minify: true
@@ -280,6 +280,5 @@ gulp.task('build-root', function() {
 });
 
 gulp.task('build', function(cb) {
-  //runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical','build-html', cb);
   runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
 });
