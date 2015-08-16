@@ -35,7 +35,8 @@ var bower = require('gulp-bower'),
     rename = require('gulp-rename'),
     replace = require('gulp-replace'),
     filter = require('gulp-filter')
-    revReplace = require('gulp-rev-replace');
+    revReplace = require('gulp-rev-replace')
+    webpack = require('gulp-webpack');
  
 // File destinations.
 var paths = new (function(){
@@ -152,6 +153,13 @@ gulp.task('modernizr', function() {
 gulp.task('fonts', function() {
   return gulp.src(paths.bowerDir + '/fontawesome/fonts/**/*')
     .pipe(gulp.dest(paths.fonts));
+});
+
+// Webpack.
+gulp.task('webpack', function() {
+  return gulp.src(paths.js + '/entry.js')
+    .pipe(webpack( require('./webpack.config.js') ))
+    .pipe(gulp.dest(paths.js));
 });
 
 //-----------------------------------------------------------------
