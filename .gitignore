@@ -2,3 +2,6 @@ app/bower_components/
 node_modules/
 .sass-cache
 dist/*
+app/assets/css/main.css
+app/assets/js/bundle.js
+app/assets/js/vendor.bundle.js

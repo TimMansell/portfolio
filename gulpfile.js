@@ -135,12 +135,18 @@ gulp.task('webpack', function() {
     .pipe(gulp.dest(paths.js));
 });
 
+gulp.task('webpack404', function() {
+  return gulp.src(paths.js + '/entry404.js')
+    .pipe(webpack( require('./webpack.config.js') ))
+    .pipe(gulp.dest(paths.js));
+});
+
 //-----------------------------------------------------------------
 //  Development tasks.
 //-----------------------------------------------------------------
 
 // Fire up a web server.
-gulp.task('serve:dev', function() {
+gulp.task('serve:dev', ['webpack'], function() {
   browserSync.init({
       server: {
           baseDir: "./app/"
