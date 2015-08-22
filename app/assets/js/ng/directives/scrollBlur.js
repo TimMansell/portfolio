@@ -1,36 +1,28 @@
-(function() {
-    'use strict';
+module.exports = angular.module('TM').directive('tmScrollBlur', tmScrollBlur);
 
-    angular
-        .module('TM')
-        .directive('tmScrollBlur', tmScrollBlur);
+function tmScrollBlur() {
+  var directive = {
+    link: link,
+    restrict: 'EA'
+  };
+  return directive;
 
-    //tmScrollBlur.$inject = [''];
+  function link(scope, element, attrs) {
+    var $window = angular.element(window),
+        blurFrom = (attrs.blurFrom) ? parseInt(attrs.blurFrom) : 0,
+        blurTo = (attrs.blurTo) ? parseInt(attrs.blurTo) : 10;
 
-    function tmScrollBlur() {
-      var directive = {
-        link: link,
-        restrict: 'EA'
-      };
-      return directive;
+    
+    // Blur on scroll
+    $window.on('scroll', function(e){
+      blur = blurFrom + ( (blurTo - blurFrom) * ($window.scrollTop() / $window.height()));
 
-      function link(scope, element, attrs) {
-        var $window = angular.element(window),
-            blurFrom = (attrs.blurFrom) ? parseInt(attrs.blurFrom) : 0,
-            blurTo = (attrs.blurTo) ? parseInt(attrs.blurTo) : 10;
-
-        
-        // Blur on scroll
-        $window.on('scroll', function(e){
-          blur = blurFrom + ( (blurTo - blurFrom) * ($window.scrollTop() / $window.height()));
-
-          if(blur <= blurTo){
-            element.css({
-              '-webkit-filter': 'blur('+blur+'px)',
-              'filter': 'blur('+blur+'px)'
-            });
-          }
-        });    
+      if(blur <= blurTo){
+        element.css({
+          '-webkit-filter': 'blur('+blur+'px)',
+          'filter': 'blur('+blur+'px)'
+        });
       }
-    }
-})();
+    });    
+  }
+}

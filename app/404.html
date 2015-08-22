@@ -10,12 +10,6 @@
 	<!-- build:css assets/css/404.min.css -->
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
 	<!-- endbuild -->
-
-	<!--[if lt IE 9]>
-	<!-- build:js assets/js/html5shiv.min.js -->
-	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-	<!-- endbuild -->
-	<![endif]-->
 </head>
 
 <body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]" tm-web-fonts>
@@ -61,17 +55,7 @@
 
 	</section>
 
-	<!-- build:js assets/js/404.min.js -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
-	<script src="bower_components/webfontloader/webfontloader.js"></script>
-	<script src="assets/js/lib/jquery.shuffleLetters.js"></script>
-	<script src="assets/js/ng/app.js"></script>
-	<script src="assets/js/ng/directives/shuffleContent.js"></script>
-	<script src="assets/js/ng/directives/nav.js"></script>
-	<script src="assets/js/ng/directives/webFonts.js"></script>
-	<!-- endbuild -->	
+	<script src="assets/js/bundle.js"></script>
 
 	<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

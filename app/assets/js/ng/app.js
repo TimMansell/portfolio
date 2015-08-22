@@ -1,18 +1,8 @@
 'use strict';
 
-// Some variables.
-var appConfig = {
-	breakpoints: {
-		xs: 767,
-		sm: 991,
-		md: 1199
-	}
-};
+require('angular');
+//require("exports?file!angular-scroll/angular-scroll.js");
 
 // Init app with dependencies.
-(function() {
-	angular
-		.module('TM', ['duScroll']);
-  		/*.config(['$locationProvider', function ($locationProvider) {
-  	}]);*/
-})();
+// module.exports = angular.module('TM', ['duScroll']);
+module.exports = angular.module('TM', []);

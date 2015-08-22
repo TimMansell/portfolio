@@ -1,31 +1,25 @@
-(function() {
-    'use strict';
+module.exports = angular.module('TM').factory('portfolioService', portfolioService);
 
-    angular
-        .module('TM')
-        .factory('portfolioService', portfolioService);
+portfolioService.$inject = ['$http'];
 
-    portfolioService.$inject = ['$http'];
+function portfolioService($http) {
+    var service = {
+        get: get
+    };
 
-    function portfolioService($http) {
-	    var service = {
-	        get: get
-	    };
+    return service;
 
-	    return service;
+    function get(){
+    	return $http.get('assets/json/portfolio.json')
+            .then(success)
+            .catch(failed);
 
-	    function get(){
-        	return $http.get('assets/json/portfolio.json')
-	            .then(success)
-	            .catch(failed);
+        function success(response) {
+            return response.data;
+        }
 
-	        function success(response) {
-	            return response.data;
-	        }
-
-	        function failed(error) {
-	            //logger.error('XHR Failed for getAvengers.' + error.data);
-	        }
-	    }
-	}
-})();
+        function failed(error) {
+            //logger.error('XHR Failed for getAvengers.' + error.data);
+        }
+    }
+}

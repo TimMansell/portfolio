@@ -29,7 +29,6 @@ var bower = require('gulp-bower'),
     pxtorem = require('gulp-pxtorem'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
-    modernizr = require('gulp-modernizr'),
     uncss = require('gulp-uncss'),
     critical = require('critical'),
     rename = require('gulp-rename'),
@@ -89,24 +88,6 @@ var configs = {
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
     use: [pngquant()]
-  },
-  modernizr: {
-    "cache" : true,
-    "devFile" : false,
-    "dest" : false,
-    "options" : [
-        "setClasses",
-        "html5printshiv",
-        "addTest",
-        "testProp",
-        "fnBind"
-    ],
-    "tests" : [
-      "svg",
-      "csstransitions",
-      "touchevents"
-    ],
-    "useBuffers": false
   }
 };
 
@@ -141,14 +122,6 @@ gulp.task('bower', function() {
   return bower();
 });
 
-// Create custom modernizr file.
-gulp.task('modernizr', function() {
-  return gulp.src(paths.js +'/**/*.js')
-    .pipe(modernizr('modernizr-custom.js', configs.modernizr))
-    .pipe(uglify())
-    .pipe(gulp.dest(paths.js));
-});
-
 // Copy fonts.
 gulp.task('fonts', function() {
   return gulp.src(paths.bowerDir + '/fontawesome/fonts/**/*')
@@ -178,10 +151,11 @@ gulp.task('serve:dev', function() {
   gulp.watch(paths.cssFrom+'/**/*.scss', ['sass']);
 
   // Watch JS for changes.
-  gulp.watch(paths.js + '/*.js', ['jshint']);  
+  gulp.watch(paths.js + '/ng/**/*.js', ['webpack']);  
+  //gulp.watch(paths.js + '/*.js', ['jshint']);  
   
   // Watch main files and reload browser.
-  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css']).on('change', browserSync.reload);
+  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css', paths.js + '/bundle.js']).on('change', browserSync.reload);
 });
 
 //-----------------------------------------------------------------
@@ -288,5 +262,5 @@ gulp.task('build-root', function() {
 });
 
 gulp.task('build', function(cb) {
-  runSequence(['build-clean', 'bower', 'sass', 'modernizr'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
+  runSequence(['build-clean', 'bower', 'sass'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
 });

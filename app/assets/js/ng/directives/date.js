@@ -1,21 +1,15 @@
-(function() {
-    'use strict';
+module.exports = angular.module('TM').directive('tmDate', tmDate);
 
-    angular
-        .module('TM')
-        .directive('tmDate', tmDate);
+tmDate.$inject = ['$filter'];
 
-    tmDate.$inject = ['$filter'];
+function tmDate($filter) {
+  var directive = {
+    link: link,
+    restrict: 'EA'
+  };
+  return directive;
 
-    function tmDate($filter) {
-      var directive = {
-        link: link,
-        restrict: 'EA'
-      };
-      return directive;
-
-      function link(scope, element, attrs) {
-        element.html($filter('date')(new Date(), 'yyyy'));
-      }
-    }
-})();
+  function link(scope, element, attrs) {
+    element.html($filter('date')(new Date(), 'yyyy'));
+  }
+}

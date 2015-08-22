@@ -1,43 +1,35 @@
-(function() {
-    'use strict';
+module.exports = angular.module('TM').directive('tmPortfolio', tmPortfolio);
 
-    angular
-        .module('TM')
-        .directive('tmPortfolio', tmPortfolio);
+function tmPortfolio() {
+  var directive = {
+    link: link,
+    templateUrl: 'assets/templates/portfolio.html',
+    restrict: 'EA',
+    controller: portfolioController,
+    controllerAs: 'pf',
+    bindToController: true
+  };
+  return directive;
 
-    //tmPortfolio.$inject = [''];
+  function link(scope, element, attrs) {
+    
+  }
+}
 
-    function tmPortfolio() {
-      var directive = {
-        link: link,
-        templateUrl: 'assets/templates/portfolio.html',
-        restrict: 'EA',
-        controller: portfolioController,
-        controllerAs: 'pf',
-        bindToController: true
-      };
-      return directive;
+portfolioController.$inject = ['$scope', 'portfolioService'];
 
-      function link(scope, element, attrs) {
-        
-      }
-    }
+function portfolioController($scope, portfolioService) {
+  var pf = this;
+      
+  pf.items = [];
+   
+  init();
 
-    portfolioController.$inject = ['$scope', 'portfolioService'];
+  function init() {
+      return portfolioService.get().then(function(data) {
+          pf.items = data;
 
-    function portfolioController($scope, portfolioService) {
-      var pf = this;
-          
-      pf.items = [];
-       
-      init();
-
-      function init() {
-          return portfolioService.get().then(function(data) {
-              pf.items = data;
-
-              return pf.items;
-          });
-      }
-    }
-})();
+          return pf.items;
+      });
+  }
+}
