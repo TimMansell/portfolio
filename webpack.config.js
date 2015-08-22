@@ -13,7 +13,9 @@ module.exports = {
   resolve: {
     root: PATHS.bower,
     alias: {
-      'jquery': PATHS.bower + '/jquery/dist/jquery.js'
+      'jquery': PATHS.bower + '/jquery/dist/jquery.js',
+      'angular-scroll': PATHS.bower + '/angular-scroll/angular-scroll.js',
+      'shuffleLetters': path.resolve(__dirname, './app/assets/js/lib/jquery.shuffleLetters.js'),
     }
   },
   entry: {
@@ -25,7 +27,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js"),
+    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js'),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',

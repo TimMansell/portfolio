@@ -1,3 +1,5 @@
+require('shuffleLetters');
+
 module.exports = angular.module('TM').directive('tmShuffleContent', tmShuffleContent);
 
 tmShuffleContent.$inject = ['$interval'];

@@ -11,8 +11,8 @@ require('./ng/directives/portfolio.js');
 require('./ng/directives/randomNumbersOnScreen.js');
 require('./ng/directives/scrollBlur.js');
 require('./ng/directives/scrollFade.js');
-//require('./ng/directives/shuffleContent.js');
-//require('./ng/directives/shuffleOnScreen.js');
+require('./ng/directives/shuffleContent.js');
+require('./ng/directives/shuffleOnScreen.js');
 require('./ng/directives/socialIcons.js');
 require('./ng/directives/webFonts.js');
 
