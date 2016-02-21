@@ -8,7 +8,7 @@
         "url": "http://www.captainschoice.com.au/"
     },
     {
-        "title": "Tourism Victoria",
+        "title": "Tourism Victoria - Mobile site",
         "src": "assets/img/portfolio/tourism-victoria-mobile-site.jpg",
         "thumb": "assets/img/portfolio/tourism-victoria-mobile-site-thb.jpg",
         "description": "Dedicated mobile site build. Built on top of .NET stack.",
@@ -32,12 +32,12 @@
         "url": "http://pointandclaim.com/"
     },
     {
-        "title": "Movember",
-        "src": "assets/img/portfolio/movember.jpg",
-        "thumb": "assets/img/portfolio/movember-thb.jpg",
-        "description": "Responsive website rebuild.  Built on top of ZEND framework.",
-        "tech": "Bootstrap 3, SCSS/Compass, jQuery, Grunt, and Bower.",
-        "url": "http://movember.com/"
+        "title": "Tourism Victoria",
+        "src": "assets/img/portfolio/visit-victoria.jpg",
+        "thumb": "assets/img/portfolio/visit-victoria-thb.jpg",
+        "description": "Responsive website rebuild.  Built on top of .NET stack.",
+        "tech": "AngularJS, Bootstrap 3, SASS, Gulp, Bower, and jQuery.",
+        "url": "http://visitvictoria.com/"
     },
     {
         "title": "Simply Great Meals",
