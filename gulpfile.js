@@ -101,8 +101,7 @@ gulp.task('sass', function() {
   .pipe(plumber())
   .pipe(sass({
       includePaths: [
-        'bower_components/bootstrap-sass-official/assets/stylesheets',
-        'bower_components/fontawesome/scss'
+        'node_modules'
       ]
     }))
   .pipe(autoprefixer(configs.autoprefixer))
@@ -119,7 +118,7 @@ gulp.task('eslint', function() {
 
 // Copy fonts.
 gulp.task('fonts', function() {
-  return gulp.src('node_modules/font-awesome/fonts/**/*')
+  return gulp.src('./node_modules/font-awesome/fonts/**/*')
     .pipe(gulp.dest(paths.fonts));
 });
 
@@ -152,7 +151,7 @@ gulp.task('serve:dev', ['webpack'], function() {
   gulp.watch(paths.cssFrom+'/**/*.scss', ['sass']);
 
   // Watch JS for changes.
-  gulp.watch(paths.js + '/ng/**/*.js', ['webpack']);  
+  gulp.watch(paths.js + '/**/*.js', ['webpack']);  
   //gulp.watch(paths.js + '/*.js', ['jshint']);  
   
   // Watch main files and reload browser.

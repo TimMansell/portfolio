@@ -1,8 +1,8 @@
-module.exports = angular.module('TM').factory('portfolioService', portfolioService);
+// module.exports = angular.module('TM').factory('portfolioService', portfolioService);
 
 portfolioService.$inject = ['$http'];
 
-function portfolioService($http) {
+export default function portfolioService($http) {
     var service = {
         get: get
     };

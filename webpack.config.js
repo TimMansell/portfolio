@@ -10,13 +10,26 @@ var PATHS = {
 module.exports = {
   context: PATHS.app,
   entry: {
-    app: PATHS.app + '/assets/js/entry.js'
+    app: PATHS.app + '/assets/js/app.js'
   },
   output: {
     path: PATHS.app + '/assets/js',
     filename: 'bundle.js',
   },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js')
-  ]
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      },
+      {
+        test: /\.html$/,
+        loader: 'html'        
+      }
+    ]
+  }
 };
