@@ -1,3 +1,5 @@
+import angular from 'angular';
+
 import component from './portfolio.component';
 import service from './portfolio.service';
 

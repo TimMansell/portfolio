@@ -24,7 +24,6 @@ var sass = require('gulp-sass'),
     notify = require("gulp-notify"),
     del = require('del'),
     runSequence = require('run-sequence'),
-    vinylPaths = require('vinyl-paths'),
     autoprefixer = require('gulp-autoprefixer'),
     pxtorem = require('gulp-pxtorem'),
     imagemin = require('gulp-imagemin'),
@@ -44,10 +43,11 @@ var paths = new (function(){
   this.assets = this.app + '/assets';
   this.distAssets = this.dist + '/assets';
   this.cssFrom = this.app + '/scss';
-  this.cssTo = this.assets + '/css';
-  this.img = this.assets + '/img';
-  this.fonts = this.assets + '/fonts';
-  this.js = this.assets + '/js';
+  this.cssTo = this.distAssets + '/css';
+  this.img = this.distAssets + '/img';
+  this.fonts = this.distAssets + '/fonts';
+  this.jsFrom = this.assets + '/js';
+  this.jsTo = this.distAssets + '/js';
 })();
 
 // Module configs.
@@ -111,9 +111,9 @@ gulp.task('sass', function() {
 
 // Lint our JS
 gulp.task('eslint', function() { 
-  return gulp.src(paths.js + '/*.js')
+  return gulp.src(paths.jsFrom + '/**/*.js')
     .pipe(eslint())
-    .pipe(eslint.reporter('default'));
+    .pipe(eslint.format());
 });
 
 // Copy fonts.
@@ -124,15 +124,15 @@ gulp.task('fonts', function() {
 
 // Webpack.
 gulp.task('webpack', function() {
-  return gulp.src(paths.js + '/entry.js')
+  return gulp.src(paths.jsFrom + '/app.js')
     .pipe(webpack( require('./webpack.config.js') ))
-    .pipe(gulp.dest(paths.js));
+    .pipe(gulp.dest(paths.jsTo));
 });
 
 gulp.task('webpack404', function() {
-  return gulp.src(paths.js + '/entry404.js')
+  return gulp.src(paths.jsFrom + '/entry404.js')
     .pipe(webpack( require('./webpack.config.js') ))
-    .pipe(gulp.dest(paths.js));
+    .pipe(gulp.dest(paths.jsTo));
 });
 
 //-----------------------------------------------------------------
@@ -140,22 +140,22 @@ gulp.task('webpack404', function() {
 //-----------------------------------------------------------------
 
 // Fire up a web server.
-gulp.task('serve:dev', ['webpack'], function() {
-  browserSync.init({
-      server: {
-          baseDir: "./app/"
-      }
-  });  
+gulp.task('serve:dev', function(cb) {
+  runSequence('build-clean', ['webpack', 'sass'], ['fonts', 'build-images', 'build-assets'], 'build-html', 'serve', 'watch', cb);
+});
 
+gulp.task('watch', function() { 
   // Watch main scss.
   gulp.watch(paths.cssFrom+'/**/*.scss', ['sass']);
 
   // Watch JS for changes.
-  gulp.watch(paths.js + '/**/*.js', ['webpack']);  
-  //gulp.watch(paths.js + '/*.js', ['jshint']);  
-  
+  gulp.watch(paths.jsFrom + '/**/*.js', ['webpack', 'eslint']);  
+
+  // Watch HTML for changes.
+  gulp.watch(paths.app + '/*.html', ['build-html']);  
+    
   // Watch main files and reload browser.
-  gulp.watch([paths.app + '/*.html', paths.cssTo + '/*.css', paths.js + '/bundle.js']).on('change', browserSync.reload);
+  gulp.watch([paths.dist + '/*.html', paths.cssTo + '/*.css', paths.jsTo + '/bundle.js']).on('change', browserSync.reload);
 });
 
 //-----------------------------------------------------------------
@@ -178,9 +178,12 @@ gulp.task('serve:build', ['build'], function() {
 });
 
 gulp.task('build-clean', function () {
-  return gulp.src(paths.dist +'/*')
-    .pipe(gulp.dest(paths.dist +'/'))
-    .pipe(vinylPaths(del));
+  return del([
+    paths.dist +'/**/*'
+  ]);
+  // return gulp.src(paths.dist +'/*')
+  //   .pipe(gulp.dest(paths.dist +'/'))
+  //   .pipe(vinylPaths(del));
 });
 
 // Package up js, css and minify.
@@ -216,7 +219,7 @@ gulp.task('defer-scripts', function() {
 
 // Minify HTML.
 gulp.task('build-html', function () {   
-  return gulp.src(paths.dist + '/*.html')
+  return gulp.src(paths.app + '/*.html')
     .pipe(minifyHtml(configs.minifyHtml))
     .pipe(gulp.dest(paths.dist));
 });

@@ -4,7 +4,8 @@ var webpack = require('webpack');
 
 // PATHS
 var PATHS = {
-  app: path.join(__dirname, '/app')
+  app: path.join(__dirname, '/app'),
+  dist: path.join(__dirname, '/dist')
 };
 
 module.exports = {
@@ -13,9 +14,10 @@ module.exports = {
     app: PATHS.app + '/assets/js/app.js'
   },
   output: {
-    path: PATHS.app + '/assets/js',
+    path: PATHS.dist + '/assets/js',
     filename: 'bundle.js',
   },
+  devtool: 'source-map',
   module: {
     loaders: [
       {
