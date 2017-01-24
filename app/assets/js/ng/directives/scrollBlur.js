@@ -2,7 +2,7 @@ module.exports = angular.module('TM').directive('tmScrollBlur', tmScrollBlur);
 
 function tmScrollBlur() {
   var directive = {
-    link: link,
+    // link: link,
     restrict: 'EA'
   };
   return directive;

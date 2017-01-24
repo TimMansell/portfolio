@@ -1,4 +1,4 @@
-require('shuffleLetters');
+// require('shuffleLetters');
 
 module.exports = angular.module('TM').directive('tmShuffleContent', tmShuffleContent);
 
@@ -6,7 +6,7 @@ tmShuffleContent.$inject = ['$interval'];
 
 function tmShuffleContent($interval) {
   var directive = {
-    link: link,
+    //link: link,
     restrict: 'EA'
   };
   return directive;

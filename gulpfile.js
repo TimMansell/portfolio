@@ -9,8 +9,7 @@
 var gulp = require('gulp'); 
 
 // Include Our Plugins
-var bower = require('gulp-bower'),
-    sass = require('gulp-sass'),
+var sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     browserSync = require('browser-sync').create(),
@@ -20,7 +19,8 @@ var bower = require('gulp-bower'),
     gulpif = require('gulp-if'),
     minifyHtml = require('gulp-minify-html'),
     rev = require('gulp-rev'),
-    jshint = require('gulp-jshint'),
+    //jshint = require('gulp-jshint'),
+    eslint = require('gulp-eslint'),
     notify = require("gulp-notify"),
     del = require('del'),
     runSequence = require('run-sequence'),
@@ -35,7 +35,7 @@ var bower = require('gulp-bower'),
     replace = require('gulp-replace'),
     filter = require('gulp-filter')
     revReplace = require('gulp-rev-replace')
-    webpack = require('gulp-webpack');
+    webpack = require('webpack-stream');
  
 // File destinations.
 var paths = new (function(){
@@ -111,20 +111,15 @@ gulp.task('sass', function() {
 });
 
 // Lint our JS
-gulp.task('jshint', function() { 
+gulp.task('eslint', function() { 
   return gulp.src(paths.js + '/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
-
-// Install bower packages.
-gulp.task('bower', function() {
-  return bower();
+    .pipe(eslint())
+    .pipe(eslint.reporter('default'));
 });
 
 // Copy fonts.
 gulp.task('fonts', function() {
-  return gulp.src(paths.bowerDir + '/fontawesome/fonts/**/*')
+  return gulp.src('node_modules/font-awesome/fonts/**/*')
     .pipe(gulp.dest(paths.fonts));
 });
 
@@ -268,5 +263,5 @@ gulp.task('build-root', function() {
 });
 
 gulp.task('build', function(cb) {
-  runSequence(['build-clean', 'bower', 'sass'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
+  runSequence(['build-clean', 'sass'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
 });

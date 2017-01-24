@@ -1,10 +1,10 @@
-require('slick-carousel');
+// require('slick-carousel');
 
 module.exports = angular.module('TM').directive('tmCarousel', tmCarousel);
 
 function tmCarousel() {
   var directive = {
-    link: link,
+    // link: link,
     restrict: 'EA'
   };
   return directive;

@@ -5,7 +5,7 @@ tmRandomNumbersOnScreen.$inject = ['$timeout', '$filter'];
 function tmRandomNumbersOnScreen($timeout, $filter) {
   var directive = {
     scope: {},
-    link: link,
+    // link: link,
     restrict: 'EA'
   };
   return directive;

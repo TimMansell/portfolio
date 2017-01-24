@@ -8,19 +8,21 @@ function tmNavigation() {
   return directive;
 
   function link(scope, element, attrs) {
-    var $window = angular.element(window),
-        elementFromTop = element.offset().top,
-        showFromBottom = (attrs.showFromBottom) ? attrs.showFromBottom : 50;
+    // var $window = document.querySelector('window'),
+    //     elementFromTop = element[0].offsetTop,
+    //     showFromBottom = (attrs.showFromBottom) ? attrs.showFromBottom : 50;
 
-    // Calculate on scroll
-    $window.on('scroll', function(){
+    //     console.log('$window', $window);
 
-      // We have scrolled to the element, now do your stuff!
-      if($window.scrollTop() >= elementFromTop){
-        element.addClass('navigation-menu-is-sticky');
-      } else {
-        element.removeClass('navigation-menu-is-sticky');
-      }
-    });
+    // // Calculate on scroll
+    // $window.on('scroll', function(){
+
+    //   // We have scrolled to the element, now do your stuff!
+    //   if($window.scrollTop() >= elementFromTop){
+    //     element.addClass('navigation-menu-is-sticky');
+    //   } else {
+    //     element.removeClass('navigation-menu-is-sticky');
+    //   }
+    // });
   }
 }

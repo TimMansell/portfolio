@@ -1,10 +1,10 @@
-require('webfontloader');
+// require('webfontloader');
 
 module.exports = angular.module('TM').directive('tmWebFonts', tmWebFonts);
 
 function tmWebFonts() {
   var directive = {
-    link: link,
+    // link: link,
     restrict: 'EA'
   };
   return directive;

@@ -1,10 +1,10 @@
-require('shuffleLetters');
+// require('shuffleLetters');
 
 module.exports = angular.module('TM').directive('tmShuffleOnScreen', tmShuffleOnScreen);
 
 function tmShuffleOnScreen() {
   var directive = {
-    link: link,
+    //link: link,
     restrict: 'EA'
   };
   return directive;

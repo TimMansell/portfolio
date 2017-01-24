@@ -4,7 +4,7 @@ tmGoToTop.$inject = ['$window'];
 
 function tmGoToTop($window) {
   var directive = {
-    link: link,
+    // link: link,
     restrict: 'EA',
     template: '<a href="#" class="goto-top"></a>',
     replace: true
