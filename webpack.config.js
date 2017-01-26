@@ -1,3 +1,5 @@
+// var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 'use strict';
 var path = require('path');
 var webpack = require('webpack');
@@ -20,9 +22,13 @@ module.exports = {
   devtool: 'source-map',
   module: {
     loaders: [
+      // { 
+      //   test: /\.scss$/,
+      //   loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader") 
+      // },
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015']
@@ -34,12 +40,19 @@ module.exports = {
       }
     ]
   },
+  sassLoader: {
+    includePaths: [
+      path.resolve(__dirname, "./app/scss"),
+      path.resolve(__dirname, "./node_modules")
+    ]
+  },
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       'root.jQuery': 'jquery'
-    })
+    }),
+    // new ExtractTextPlugin("main.css", {allChunks: false})
   ]
 };

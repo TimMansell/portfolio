@@ -36,9 +36,9 @@ export default function tmNavigation() {
 
       // We have scrolled to the element, now do your stuff!
       if($window.scrollTop() >= elementFromTop){
-        element.addClass('navigation-menu-is-sticky');
+        element.addClass('navigation__menu-is-sticky');
       } else {
-        element.removeClass('navigation-menu-is-sticky');
+        element.removeClass('navigation__menu-is-sticky');
       }
     });
   }

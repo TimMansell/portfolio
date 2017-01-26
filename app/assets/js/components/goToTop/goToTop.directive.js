@@ -43,9 +43,9 @@ export default function tmGoToTop($window, $document) {
     function checkPosition(){
       if($window.scrollY >= config.showAt){
         // console.log('cp', $window.scrollTop);
-        element.addClass('goto-top_show');
+        element.addClass('goto-top__show');
       } else {
-        element.removeClass('goto-top_show');
+        element.removeClass('goto-top__show');
       }
     };
 

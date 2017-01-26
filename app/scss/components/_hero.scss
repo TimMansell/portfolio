@@ -1,7 +1,7 @@
 .hero {
 	height: 100%;
 
-	&-img {
+	&__img {
 		@include breakpoint(sm){
 			background-image: url('../img/hero.jpg');
 			background-position: center;

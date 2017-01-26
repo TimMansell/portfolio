@@ -1,16 +1,16 @@
 .lighter-note {
-	&-amount {
+	&__amount {
 		font-size: 40px;
   		margin-top: 20px;
   		text-shadow: -1px -1px darken($primary-colour, 10%);
 	}
 
-	&-icon {
+	&__icon {
 		font-size: 90px;
 		text-shadow: -1px -1px darken($primary-colour, 10%);
 	}
 
-	&-text {
+	&__text {
 		text-shadow: -1px -1px darken($primary-colour, 10%);
 	}
 }

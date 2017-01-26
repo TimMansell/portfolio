@@ -14,62 +14,62 @@
 </head>
 
 <body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
-	<nav id="nav" class="navigation" ng-class="{true:'navigation-active', false:''}[menu.open]" tm-navigation>
-		<ul class="navigation-menu" ng-class="{true:'navigation-menu-active', false:''}[menu.open]">
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="#profile" du-smooth-scroll du-scrollspy>Profile</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="#skills" du-smooth-scroll du-scrollspy>Skills</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="#portfolio" du-smooth-scroll du-scrollspy>Portfolio</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="#testimonials" du-smooth-scroll du-scrollspy>Testimonials</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="#contact" du-smooth-scroll du-scrollspy>Contact</a></li>
+	<nav id="nav" class="navigation" ng-class="{true:'navigation__active', false:''}[menu.open]" tm-navigation>
+		<ul class="navigation__menu" ng-class="{true:'navigation__menu-active', false:''}[menu.open]">
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="#profile" du-smooth-scroll du-scrollspy>Profile</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="#skills" du-smooth-scroll du-scrollspy>Skills</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="#portfolio" du-smooth-scroll du-scrollspy>Portfolio</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="#testimonials" du-smooth-scroll du-scrollspy>Testimonials</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="#contact" du-smooth-scroll du-scrollspy>Contact</a></li>
 		</ul>
 
-		<button class="hamburger visible-xs" ng-class="{true:'hamburger-active', false:''}[menu.open]" ng-click="menu.open=!menu.open">
-			<span class="hamburger-menu">toggle menu</span>
+		<button class="hamburger visible-xs" ng-class="{true:'hamburger--active', false:''}[menu.open]" ng-click="menu.open=!menu.open">
+			<span class="hamburger__menu">toggle menu</span>
 		</button>
 	</nav>
 
-	<section id="intro" class="hero bg-primary">
-		<div class="hero-img" tm-scroll-blur blur-from="3"></div>
+	<section id="intro" class="hero bg--primary">
+		<div class="hero__img" tm-scroll-blur blur-from="3"></div>
 
 		<div class="info">
 			<tm-scroll-fade>
-				<h4 class="info-text info-sub-title">Melbourne, Australia</h4>
-				<h1 class="info-title">Hi! I'm Tim Mansell</h1>
-				<div class="info-blurb">
+				<h4 class="info__text info__sub-title">Melbourne, Australia</h4>
+				<h1 class="info__title">Hi! I'm Tim Mansell</h1>
+				<div class="info__blurb">
 					<tm-shuffle-content>
-						<h4 class="info-blurb-item info-text">Front-end ninja</h4>
-						<h4 class="info-blurb-item info-text">AngularJS Developer</h4>
-						<h4 class="info-blurb-item info-text">Avid Snowboarder</h4>
-						<h4 class="info-blurb-item info-text">Hard worker</h4>
+						<h4 class="info__blurb-item info__text">Front-end ninja</h4>
+						<h4 class="info__blurb-item info__text">AngularJS Developer</h4>
+						<h4 class="info__blurb-item info__text">Avid Snowboarder</h4>
+						<h4 class="info__blurb-item info__text">Hard worker</h4>
 					</tm-shuffle-content>
 				</div>
 			</tm-scroll-fade>
 		</div>
 
 		<div class="learn-more hidden-xs">
-			<a class="learn-more-link" href="#profile" du-smooth-scroll>
-				<i class="learn-more-scroll fa fa-angle-down"></i>
+			<a class="learn-more__link" href="#profile" du-smooth-scroll>
+				<i class="learn-more__scroll fa fa-angle-down"></i>
 			</a>
 		</div>
 
 	</section>
 
 	<main class="content">
-		<section id="profile" class="layout-section bg-tertiary scrollto">
+		<section id="profile" class="layout-section bg--tertiary scrollto">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center" tm-shuffle-on-screen>A little bit about myself</h2>
+						<h2 class="text--center" tm-shuffle-on-screen>A little bit about myself</h2>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-xs-12 text-center">
+					<div class="col-xs-12 text--center">
 						<p>I am an experienced and ambitious Front-end Developer with over 7 years commercial experience in a digital agency environment. I excell in both front-end and back-end development.</p>
 
 						<p>I develop with best practices in mind and adhere to W3C standards. Unfortunately not all browsers are created equal, so I utilise Progressive Enhancement where possible, to ensure that any website I work on displays perfectly in all of the evergreen browsers (Chrome, Firefox, and Safari).... and IE.</p>
@@ -84,11 +84,11 @@
 			</div>
 		</section>
 
-		<section id="skills" class="layout-section bg-primary text-center">
+		<section id="skills" class="layout-section bg--primary text--center">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center" tm-shuffle-on-screen>Skills</h2>
+						<h2 class="text--center" tm-shuffle-on-screen>Skills</h2>
 						<p class="text-description">I spend most of my time with these technologies / tools / methodologies</p>
 					</div>
 				</div>
@@ -96,9 +96,9 @@
 				<div class="row skills">
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-xs-12 col-sm-4 text-center divider">
-								<i class="fa fa-html5 skills-icon"></i>
-								<ul class="skills-list">
+							<div class="col-xs-12 col-sm-4 text--center divider">
+								<i class="fa fa-html5 skills__icon"></i>
+								<ul class="skills__list">
 									<li>Semantic HTML5</li>
 									<li>Bootstrap</li>
 									<li>SEO</li>
@@ -107,9 +107,9 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text-center divider">
-								<i class="fa fa-css3 skills-icon"></i>
-								<ul class="skills-list">
+							<div class="col-xs-12 col-sm-4 text--center divider">
+								<i class="fa fa-css3 skills__icon"></i>
+								<ul class="skills__list">
 									<li>CSS3</li>
 									<li>SCSS / LESS</li>
 									<li>BEM / OOCSS</li>
@@ -117,9 +117,9 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text-center divider">
-								<i class="fa fa-mobile skills-icon"></i>
-								<ul class="skills-list">
+							<div class="col-xs-12 col-sm-4 text--center divider">
+								<i class="fa fa-mobile skills__icon"></i>
+								<ul class="skills__list">
 									<li>Responsive</li>
 									<li>Mobile First</li>
 									<li><a class="link" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.timmansell.com%2F&tab=mobile" target="_blank">Performance</a></li>
@@ -131,9 +131,9 @@
 
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-xs-12 col-sm-4 text-center divider">
-								<i class="fa fa-code skills-icon"></i>
-								<ul class="skills-list">
+							<div class="col-xs-12 col-sm-4 text--center divider">
+								<i class="fa fa-code skills__icon"></i>
+								<ul class="skills__list">
 									<li>JavaScript ES5/ES6</li>
 									<li>AngularJS</li>
 									<li>React</li>
@@ -143,9 +143,9 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text-center divider">
-								<i class="fa fa-terminal skills-icon"></i>
-								<ul class="skills-list">
+							<div class="col-xs-12 col-sm-4 text--center divider">
+								<i class="fa fa-terminal skills__icon"></i>
+								<ul class="skills__list">
 									<li>Node.js</li>
 									<li>NPM / Yarn</li>
 									<li>Gulp / Grunt</li>
@@ -154,9 +154,9 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text-center divider">
-								<i class="fa fa-paper-plane skills-icon"></i>
-								<ul class="skills-list">
+							<div class="col-xs-12 col-sm-4 text--center divider">
+								<i class="fa fa-paper-plane skills__icon"></i>
+								<ul class="skills__list">
 									<li>Agile</li>
 									<li>Scrum</li>
 									<li>Kanban</li>
@@ -169,8 +169,8 @@
 				</div>					
 
 				<p class="text-description">I am currently playing around with</p>
-				<i class="fa fa-gamepad skills-icon"></i>
-				<ul class="skills-list">
+				<i class="fa fa-gamepad skills__icon"></i>
+				<ul class="skills__list">
 					<li>Angular2</li>
 					<li>Web Components</li>
 					<li>Various PostCSS modules</li>
@@ -178,9 +178,9 @@
 			</div>
 		</section>
 
-		<section id="portfolio" class="layout-section bg-secondary">
+		<section id="portfolio" class="layout-section bg--secondary">
 			<div class="container container-large">
-				<div class="row text-center">
+				<div class="row text--center">
 					<div class="col-xs-12">
 						<h2 tm-shuffle-on-screen>Portfolio</h2>
 						<p class="text-description">Here's a sample of my lastest work</p>
@@ -193,44 +193,44 @@
 			</div>
 		</section>
 
-		<section class="layout-section bg-primary">
+		<section class="layout-section bg--primary">
 			<div class="container">
-				<div class="row text-center lighter-note">
+				<div class="row text--center lighter-note">
 					<div class="col-xs-12 col-sm-3 divider">
-						<i class="fa fa-code lighter-note-icon"></i>
-						<p class="lighter-note-amount">
+						<i class="fa fa-code lighter-note__icon"></i>
+						<p class="lighter-note__amount">
 							<tm-random-numbers-on-screen append-character="+" min-count="3000" max-count="50000">0</tm-random-numbers-on-screen>
 						</p>
-						<p class="lighter-note-text">lines of code</p>
+						<p class="lighter-note__text">lines of code</p>
 					</div>
 					<div class="col-xs-12 col-sm-3 divider">
-						<i class="lighter-note-icon fa fa-code-fork"></i>
-						<p class="lighter-note-amount">
+						<i class="lighter-note__icon fa fa-code-fork"></i>
+						<p class="lighter-note__amount">
 							<tm-random-numbers-on-screen max-count="1200" append-character="+">0</tm-random-numbers-on-screen>
 						</p>
-						<p class="lighter-note-text">git commits</p>
+						<p class="lighter-note__text">git commits</p>
 					</div>
 					<div class="col-xs-12 col-sm-3 divider">
-						<i class="lighter-note-icon fa fa-coffee"></i>	
-						<p class="lighter-note-amount">
+						<i class="lighter-note__icon fa fa-coffee"></i>	
+						<p class="lighter-note__amount">
 							<tm-random-numbers-on-screen max-count="760" append-character="+">0</tm-random-numbers-on-screen>
 						</p>
-						<p class="lighter-note-text">coffees consumed</p>
+						<p class="lighter-note__text">coffees consumed</p>
 					</div>
 					<div class="col-xs-12 col-sm-3 divider">
-						<i class="lighter-note-icon fa fa-bicycle"></i>
-						<p class="lighter-note-amount">
+						<i class="lighter-note__icon fa fa-bicycle"></i>
+						<p class="lighter-note__amount">
 							<tm-random-numbers-on-screen max-count="3500" append-character="+">0</tm-random-numbers-on-screen>
 						</p>
-						<p class="lighter-note-text">kilometers cycled</p>
+						<p class="lighter-note__text">kilometers cycled</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="testimonials" class="layout-section bg-tertiary">
+		<section id="testimonials" class="layout-section bg--tertiary">
 			<div class="container">
-				<div class="row text-center">
+				<div class="row text--center">
 					<div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
 						<tm-testimonials></tm-testimonials>
 					</div>
@@ -239,55 +239,13 @@
 		</section>
 	</main>
 
-	<footer id="contact" class="footer bg-secondary scrollto">
-	
-		<!-- <section  class="layout-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h2 class="text-center" tm-shuffle-on-screen>Let's get in touch</h2>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
-						<div id="form-message"></div>
-						<form id="form-contact" name="formContact" novalidate>
-							<div class="col-xs-12 col-md-6">
-								<div class="form-group">
-									<label class="sr-only" for="name">What's your name?</label>
-									<input class="form-control" ng-model="form.name" type="text" name="name" id="name" value="" placeholder="What's your name?" required>
-									<span class="error" ng-show="formContact.name.$error.required">Error</span>
-								</div>
-
-								<div class="form-group">
-									<label class="sr-only" for="name">What's your e-mail?</label>
-									<input class="form-control" ng-model="form.email" type="email" name="email" id="email" value="" placeholder="What's your email?" required>
-									<span class="error" ng-show="formContact.email.$error.required">Error</span>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-6">
-								<div class="form-group">
-									<label class="sr-only" for="name">What do you have in mind?</label>
-									<textarea class="form-control" ng-model="form.message" name="message" id="message" rows="4" placeholder="Your message?" required></textarea>
-									<span class="error" ng-show="formContact.message.$error.required">Error</span>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<button type="submit" class="btn btn-primary" id="submit-contact">Send!</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
+	<footer id="contact" class="footer bg--secondary scrollto">
 		<div class="footer-bar">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
 						<tm-social-icons></tm-social-icons>
-						<p class="footer-bar-text text-center">&copy; Copyright&nbsp;<tm-date></tm-date><br>Tim Mansell</p>
+						<p class="footer-bar__text text--center">&copy; Copyright&nbsp;<tm-date></tm-date><br>Tim Mansell</p>
 					</div>
 				</div>
 			</div>

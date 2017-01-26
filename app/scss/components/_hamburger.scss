@@ -22,11 +22,11 @@
 		outline: none;
 	}
 
-	&-active {
+	&--active {
 		background-color: $tertiary-colour;
 	}
 
-	&-active &-menu{
+	&--active &__menu{
 		background: none;
 		box-shadow: none;
 
@@ -47,7 +47,7 @@
 		}
 	}
 
-	&-menu {
+	&__menu {
 		display: block;
 		position: absolute;
 		top: 30px;

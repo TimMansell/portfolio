@@ -151,7 +151,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.cssFrom+'/**/*.scss', ['sass']);
 
   // Watch JS for changes.
-  gulp.watch(paths.jsFrom + '/**/*.js', ['webpack', 'eslint']);  
+  gulp.watch(paths.jsFrom + '/**/*.js', ['webpack']);  
 
   // Watch HTML for changes.
   gulp.watch(paths.app + '/*.html', ['build-html']);  

@@ -1,24 +1,26 @@
 .testimonials {
-  &-quote:before, &-quote:after {
-    font-family: FontAwesome;
-    font-size: 30px;
-    line-height: 30px;
+  &__quote {
+    &:before, &:after {
+      font-family: FontAwesome;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &:before {
+      content: "\f10d";
+    }
+
+    &:after {
+      content: "\f10e";
+    }
   }
 
-  &-quote:before {
-    content: "\f10d";
-  }
-
-  &-quote:after {
-    content: "\f10e";
-  }
-
-  &-text {
+  &__text {
     margin-top: 20px;
     margin-bottom: 10px;
   }
 
-  &-name {
+  &__name {
     font-size: 14px;
   }
 }

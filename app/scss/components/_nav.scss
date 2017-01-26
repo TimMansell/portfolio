@@ -13,7 +13,7 @@
 		transform: translatez(0);
 	}
 
-	&-menu {
+	&__menu {
 		display: none;
 		text-align: center;
 		list-style: none;
@@ -25,7 +25,7 @@
 		}
 	}
 
-	&-menu-item {
+	&__menu-item {
 		@include breakpoint(sm){
 			line-height: 60px;
 			display: inline-block;
@@ -34,7 +34,7 @@
 		}
 	}
 
-	&-menu-link {
+	&__menu-link {
 		color: $link-colour;
 		padding: 5px;
 		display: block;
@@ -52,7 +52,7 @@
 		}
 	}
 
-	&-active {
+	&__active {
 		@include breakpoint(xs){
 			position: fixed;
 			top: 0;
@@ -64,7 +64,7 @@
 		}
 	}
 
-	&-menu-active {
+	&__menu-active {
 		@include breakpoint(xs){
 			display: block;
 			position: fixed;
@@ -74,7 +74,7 @@
 		}
 	}
 
-	&-menu-is-sticky {
+	&__menu-is-sticky {
 		@include breakpoint(sm){
 			position: fixed;
 			top: 0 !important;
@@ -83,7 +83,7 @@
 		}
 	}
 
-	&-menu-is-sticky &-menu-link {
+	&__menu-is-sticky &__menu-link {
 		@include breakpoint(sm){
 			text-shadow: -1px -1px darken($primary-colour, 10%);
 		}
