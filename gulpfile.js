@@ -112,6 +112,7 @@ gulp.task('sass', function() {
 // Lint our JS
 gulp.task('eslint', function() { 
   return gulp.src(paths.jsFrom + '/**/*.js')
+    .pipe(plumber())
     .pipe(eslint())
     .pipe(eslint.format());
 });
@@ -125,6 +126,7 @@ gulp.task('fonts', function() {
 // Webpack.
 gulp.task('webpack', function() {
   return gulp.src(paths.jsFrom + '/app.js')
+    .pipe(plumber())
     .pipe(webpack( require('./webpack.config.js') ))
     .pipe(gulp.dest(paths.jsTo));
 });

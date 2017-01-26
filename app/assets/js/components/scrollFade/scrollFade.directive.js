@@ -1,8 +1,6 @@
-module.exports = angular.module('TM').directive('tmScrollFade', tmScrollFade);
-
-function tmScrollFade() {
+export default function tmScrollFade() {
   var directive = {
-    // link: link,
+    link: link,
     restrict: 'EA'
   };
   return directive;

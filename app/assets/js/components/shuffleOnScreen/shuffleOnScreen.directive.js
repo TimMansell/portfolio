@@ -1,10 +1,12 @@
+import shuffleLetters from 'shuffle-letters';
+
 // require('shuffleLetters');
 
-module.exports = angular.module('TM').directive('tmShuffleOnScreen', tmShuffleOnScreen);
+// module.exports = angular.module('TM').directive('tmShuffleOnScreen', tmShuffleOnScreen);
 
-function tmShuffleOnScreen() {
+export default function tmShuffleOnScreen() {
   var directive = {
-    //link: link,
+    link: link,
     restrict: 'EA'
   };
   return directive;
@@ -26,7 +28,8 @@ function tmShuffleOnScreen() {
 
       // We have scrolled to the element, now do your stuff!
       if(windowHasScrolled >= (elementFromScreen + showFromBottom) && elementHasShuffled === false){
-        element.shuffleLetters();    
+        // element.shuffleLetters();    
+        shuffleLetters(element[0]);
 
         // We've shuffled once so turn off.
         elementHasShuffled = !elementHasShuffled;

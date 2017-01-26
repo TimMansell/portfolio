@@ -1,11 +1,9 @@
-module.exports = angular.module('TM').directive('tmRandomNumbersOnScreen', tmRandomNumbersOnScreen);
-
 tmRandomNumbersOnScreen.$inject = ['$timeout', '$filter'];
 
-function tmRandomNumbersOnScreen($timeout, $filter) {
+export default function tmRandomNumbersOnScreen($timeout, $filter) {
   var directive = {
     scope: {},
-    // link: link,
+    link: link,
     restrict: 'EA'
   };
   return directive;
