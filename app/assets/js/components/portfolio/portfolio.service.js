@@ -1,5 +1,3 @@
-// module.exports = angular.module('TM').factory('portfolioService', portfolioService);
-
 portfolioService.$inject = ['$http'];
 
 export default function portfolioService($http) {

@@ -1,9 +1,5 @@
 import shuffleLetters from 'shuffle-letters';
 
-// require('shuffleLetters');
-
-// module.exports = angular.module('TM').directive('tmShuffleOnScreen', tmShuffleOnScreen);
-
 export default function tmShuffleOnScreen() {
   var directive = {
     link: link,

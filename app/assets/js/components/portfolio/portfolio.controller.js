@@ -1,6 +1,6 @@
-portfolioController.$inject = ['$scope', 'portfolioService'];
+portfolioController.$inject = ['portfolioService'];
 
-export default function portfolioController($scope, portfolioService) {
+export default function portfolioController(portfolioService) {
   var ctrl = this;
       
   ctrl.items = [];

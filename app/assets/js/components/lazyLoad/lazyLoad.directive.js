@@ -1,7 +1,4 @@
-// var Blazy = require('bLazy');
 import Blazy from 'bLazy';
-
-// module.exports = angular.module('TM').directive('tmLazyLoad', tmLazyLoad);
 
 export default function tmLazyLoad() {
   var directive = {

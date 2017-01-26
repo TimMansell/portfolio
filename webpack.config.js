@@ -1,8 +1,11 @@
-// var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 'use strict';
+
 var path = require('path');
 var webpack = require('webpack');
+var argv = require('yargs').argv;
+
+// var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 
 // PATHS
 var PATHS = {
@@ -10,7 +13,8 @@ var PATHS = {
   dist: path.join(__dirname, '/dist')
 };
 
-module.exports = {
+//module.exports = {
+var config = {
   context: PATHS.app,
   entry: {
     app: PATHS.app + '/assets/js/app.js'
@@ -52,7 +56,24 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       'root.jQuery': 'jquery'
-    }),
+    })
     // new ExtractTextPlugin("main.css", {allChunks: false})
   ]
 };
+
+// If production build then minify JS.
+if(argv.prod){
+  config.plugins.push(new webpackUglifyJsPlugin({
+    cacheFolder: path.resolve(__dirname, 'public/cached_uglify/'),
+    minimize: true,
+    sourceMap: false,
+    output: {
+      comments: false
+    },
+    compressor: {
+      warnings: false
+    }
+  }));
+}
+
+module.exports  = config;

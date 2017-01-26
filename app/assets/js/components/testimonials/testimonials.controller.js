@@ -1,6 +1,6 @@
-testimonialsController.$inject = ['$scope', '$interval', 'testimonialsService'];
+testimonialsController.$inject = ['$interval', 'testimonialsService'];
 
-export default function testimonialsController($scope, $interval, testimonialsService) {
+export default function testimonialsController($interval, testimonialsService) {
   let ctrl = this;
       
   let items = [];

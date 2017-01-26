@@ -1,27 +1,23 @@
 //--------------------------------------------------------------------------------------------------------------------
 //  gulp serve - Load up a webserver referencing build folder (dest).  Use to test the build process has worked.
 //  gulp serve:dev - Load up a webserver referencing development folder (app). Watch for css and html changes and live reload.
-//  gulp serve:build - Load up a webserver referencing build folder. Will run build process also.
-//  gulp build - Use this command to package assets up. ie, concat, minify etc.
+//  gulp serve:build --prod - Load up a webserver referencing build folder. Will run build process also.
+//  gulp build --prod - Use this command to package assets up. ie, concat, minify etc.
 //--------------------------------------------------------------------------------------------------------------------
 
 // Include gulp
 var gulp = require('gulp'); 
 
+var argv = require('yargs').argv;
+
 // Include Our Plugins
 var sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
     browserSync = require('browser-sync').create(),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
-    useref = require('gulp-useref'),
     gulpif = require('gulp-if'),
     minifyHtml = require('gulp-minify-html'),
-    rev = require('gulp-rev'),
-    //jshint = require('gulp-jshint'),
     eslint = require('gulp-eslint'),
-    notify = require("gulp-notify"),
     del = require('del'),
     runSequence = require('run-sequence'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -29,11 +25,7 @@ var sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     uncss = require('gulp-uncss'),
-    critical = require('critical'),
-    rename = require('gulp-rename'),
-    replace = require('gulp-replace'),
-    filter = require('gulp-filter')
-    revReplace = require('gulp-rev-replace')
+    critical = require('critical').stream,
     webpack = require('webpack-stream');
  
 // File destinations.
@@ -63,8 +55,7 @@ var configs = {
   },
   uncss: {
     html: [
-      './app/index.html', 
-      './app/assets/templates/**/*.html'
+      './app/**/*.html'
     ],
     ignore: [
       /.no-scroll/,
@@ -72,6 +63,7 @@ var configs = {
       /.hamburger(?:-[a-z]*)*/,
       /.slick(?:-[a-z]*)*/,
       /.goto-top(?:-[a-z]*)*/,
+      /.hidden(?:-[a-z]*)*/,
     ]
   },
   minifyHtml: {
@@ -106,6 +98,8 @@ gulp.task('sass', function() {
     }))
   .pipe(autoprefixer(configs.autoprefixer))
   .pipe(pxtorem(configs.pxtorem))
+  .pipe(gulpif(argv.prod, minifyCss(configs.minifyCss) ))
+  .pipe(gulpif(argv.prod, uncss(configs.uncss)))
   .pipe(gulp.dest(paths.cssTo));
 });
 
@@ -172,51 +166,18 @@ gulp.task('serve', function() {
 });
 
 gulp.task('serve:build', ['build'], function() { 
-  browserSync.init({
-      server: {
-          baseDir: "./dist/"
-      }
-  }); 
+  runSequence('serve');
+  // browserSync.init({
+  //     server: {
+  //         baseDir: "./dist/"
+  //     }
+  // }); 
 });
 
 gulp.task('build-clean', function () {
   return del([
     paths.dist +'/**/*'
   ]);
-  // return gulp.src(paths.dist +'/*')
-  //   .pipe(gulp.dest(paths.dist +'/'))
-  //   .pipe(vinylPaths(del));
-});
-
-// Package up js, css and minify.
-gulp.task('build-package', function () {
-  var jsFilter = filter("**/*.js"),
-      cssFilter = filter("**/*.css"),
-      assets = useref.assets();
-    
-  return gulp.src(paths.app + '/*.html')
-    .pipe(assets)
-    .pipe(jsFilter)
-    .pipe(uglify())
-    .pipe(jsFilter.restore())
-    .pipe(cssFilter)
-    .pipe(minifyCss(configs.minifyCss))
-    .pipe(uncss(configs.uncss))           
-    .pipe(cssFilter.restore())
-    .pipe(rev())
-    .pipe(assets.restore())
-    .pipe(useref())
-    .pipe(revReplace())
-    .pipe(gulp.dest(paths.dist));
-});
-
-// Add defer to scripts to stop render blocking.
-gulp.task('defer-scripts', function() {
-  return gulp.src(paths.dist + '/*.html')
-    .pipe(replace(/<script src=".*scripts.*"/g, function(match, p1) {
-      return match +' defer></script';
-    }))
-    .pipe(gulp.dest(paths.dist));
 });
 
 // Minify HTML.
@@ -234,25 +195,23 @@ gulp.task('build-images', function () {
 });
 
 // Inline above the fold css.
-gulp.task('critical-extract-css', function (cb) {
-  critical.generateInline({
-    base: './dist/',
-    src: 'index.html',
-    styleTarget: 'assets/css/site.css',
-    htmlTarget: 'index.html',
-    //extract: true,
-    width: 320,
-    height: 480,
-    minify: true
-  }, cb);
-});
+// gulp.task('critical-extract-css', function (cb) {
+//   return gulp.src(paths.dist+'/index.html')
+//         .pipe(critical({
+//           base: './dist/', 
+//           inline: true, 
+//           css: ['./dist/assets/css/main.css']
+//          }))
+//         .on('error', err => console.log(err.message) )
+//         .pipe(gulp.dest(paths.dist));
+// });
 
-// Minify critical css, as it unminifies our minified css code!
-gulp.task('critical-css', ['critical-extract-css'], function() {
-  return gulp.src(paths.distAssets +'/css/*')
-    .pipe(minifyCss(configs.minifyCss))
-    .pipe(gulp.dest(paths.distAssets +'/css'));
-});
+// // Minify critical css, as it unminifies our minified css code!
+// gulp.task('critical-css', ['critical-extract-css'], function() {
+//   return gulp.src(paths.distAssets +'/css/*')
+//     .pipe(minifyCss(configs.minifyCss))
+//     .pipe(gulp.dest(paths.distAssets +'/css'));
+// });
 
 // Copy the rest of the assets.
 gulp.task('build-assets', function() {
@@ -262,10 +221,10 @@ gulp.task('build-assets', function() {
 
 // Copy root files.
 gulp.task('build-root', function() {
-  return gulp.src([paths.app + '/.htaccess', paths.app + '/favicon.ico'])
+  return gulp.src([paths.app + '/favicon.ico'])
     .pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('build', function(cb) {
-  runSequence(['build-clean', 'sass'], ['fonts', 'build-images', 'build-package', 'build-assets', 'build-root'], 'defer-scripts', 'critical-css', 'build-html', cb);
+  runSequence(['build-clean'], ['webpack', 'sass'], ['fonts', 'build-images', 'build-assets', 'build-root', 'build-html'], cb);
 });

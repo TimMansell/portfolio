@@ -1,7 +1,3 @@
-
-
-// module.exports = angular.module('TM').directive('tmNavigation', tmNavigation);
-
 export default function tmNavigation() {
   var directive = {
     link: link,
