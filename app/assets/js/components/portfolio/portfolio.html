@@ -1,7 +1,7 @@
 <div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="item in $ctrl.items">
 	<div class="portfolio-item">
 		<img class="portfolio-item__img img-responsive b-lazy" tm-lazy-load img="{{item.thumb}}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="{{item.title}}">
-		<div class="portfolio-item__info text-center">
+		<div class="portfolio-item__info text--center">
 			<h3 class="portfolio-item__title" ng-bind="item.title"></h3>
 			<p class="portfolio-item__description hidden-xs" ng-bind="item.description"></p>
 			<p class="portfolio-item__description portfolio-item__tech" ng-bind="item.tech"></p>

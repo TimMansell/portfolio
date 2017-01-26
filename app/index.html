@@ -8,9 +8,7 @@
 
 	<title>Front-end / AngularJS Developer | Melbourne | Tim Mansell</title>
 
-	<!-- build:css assets/css/main.min.css -->
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
-	<!-- endbuild -->
 </head>
 
 <body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
@@ -64,7 +62,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text--center" tm-shuffle-on-screen>A little bit about myself</h2>
+						<div class="heading">
+							<h2 class="heading__title heading--primary text--center" tm-shuffle-on-screen>A little bit about myself</h2>
+						</div>
 					</div>
 				</div>
 
@@ -88,15 +88,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text--center" tm-shuffle-on-screen>Skills</h2>
-						<p class="text-description">I spend most of my time with these technologies / tools / methodologies</p>
+						<div class="heading text--secondary">
+							<h2 class="heading__title text--center" tm-shuffle-on-screen>Skills</h2>
+							<p class="heading__description">I spend most of my time with these technologies / tools / methodologies</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row skills">
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-xs-12 col-sm-4 text--center divider">
+							<div class="col-xs-12 col-sm-4 text--center text--secondary divider">
 								<i class="fa fa-html5 skills__icon"></i>
 								<ul class="skills__list">
 									<li>Semantic HTML5</li>
@@ -107,7 +109,7 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text--center divider">
+							<div class="col-xs-12 col-sm-4 text--center text--secondary divider">
 								<i class="fa fa-css3 skills__icon"></i>
 								<ul class="skills__list">
 									<li>CSS3</li>
@@ -117,7 +119,7 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text--center divider">
+							<div class="col-xs-12 col-sm-4 text--center text--secondary divider">
 								<i class="fa fa-mobile skills__icon"></i>
 								<ul class="skills__list">
 									<li>Responsive</li>
@@ -131,7 +133,7 @@
 
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-xs-12 col-sm-4 text--center divider">
+							<div class="col-xs-12 col-sm-4 text--center text--secondary divider">
 								<i class="fa fa-code skills__icon"></i>
 								<ul class="skills__list">
 									<li>JavaScript ES5/ES6</li>
@@ -143,7 +145,7 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text--center divider">
+							<div class="col-xs-12 col-sm-4 text--center text--secondary divider">
 								<i class="fa fa-terminal skills__icon"></i>
 								<ul class="skills__list">
 									<li>Node.js</li>
@@ -154,7 +156,7 @@
 								</ul>
 							</div>
 
-							<div class="col-xs-12 col-sm-4 text--center divider">
+							<div class="col-xs-12 col-sm-4 text--center text--secondary divider">
 								<i class="fa fa-paper-plane skills__icon"></i>
 								<ul class="skills__list">
 									<li>Agile</li>
@@ -168,9 +170,9 @@
 					</div>
 				</div>					
 
-				<p class="text-description">I am currently playing around with</p>
-				<i class="fa fa-gamepad skills__icon"></i>
-				<ul class="skills__list">
+				<p class="text-description text--secondary">I am currently playing around with</p>
+				<i class="fa fa-gamepad skills__icon text--secondary"></i>
+				<ul class="skills__list text--secondary">
 					<li>Angular2</li>
 					<li>Web Components</li>
 					<li>Various PostCSS modules</li>
@@ -182,8 +184,10 @@
 			<div class="container container-large">
 				<div class="row text--center">
 					<div class="col-xs-12">
-						<h2 tm-shuffle-on-screen>Portfolio</h2>
-						<p class="text-description">Here's a sample of my lastest work</p>
+						<div class="heading text--tertiary">
+							<h2 class="heading__title text--center" tm-shuffle-on-screen>Portfolio</h2>
+							<p class="heading__description">Here's a sample of my lastest work</p>
+						</div>
 					</div>
 				</div>
 
@@ -193,7 +197,7 @@
 			</div>
 		</section>
 
-		<section class="layout-section bg--primary">
+		<section class="layout-section bg--primary text--secondary">
 			<div class="container">
 				<div class="row text--center lighter-note">
 					<div class="col-xs-12 col-sm-3 divider">
@@ -254,11 +258,9 @@
 
 	<tm-go-to-top show-at="700"></tm-go-to-top>
 
-	<!-- build:js assets/js/scripts.min.js -->
-	<script src="assets/js/bundle.js"></script>
-	<!-- endbuild -->
+	<script src="assets/js/bundle.js" defer></script>
 
-	<script>
+	<script defer>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 		e=o.createElement(i);r=o.getElementsByTagName(i)[0];

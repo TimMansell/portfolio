@@ -35,7 +35,7 @@ export default function tmGoToTop($window, $document) {
       element[0].addEventListener('click', function(e) {
         e.preventDefault();
 
-        $document.scrollTop(0, 500);
+        $document.scrollTopAnimated(0, 500);
       });
     };
 
