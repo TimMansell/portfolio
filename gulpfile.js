@@ -221,7 +221,7 @@ gulp.task('build-assets', function() {
 
 // Copy root files.
 gulp.task('build-root', function() {
-  return gulp.src([paths.app + '/favicon.ico'])
+  return gulp.src([paths.app + '/favicon.ico', paths.app + '/CNAME'])
     .pipe(gulp.dest(paths.dist));
 });
 
