@@ -13,7 +13,7 @@
 	}
 
 	&--tertiary {
-	color: $secondary-text-colour;
-		text-shadow: -1px -1px darken($secondary-colour, 10%);
+		color: $secondary-text-colour;
+		text-shadow: -1px -1px darken($secondary-colour, 10%) !important;
 	}
 }
