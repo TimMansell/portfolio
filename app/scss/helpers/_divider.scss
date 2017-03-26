@@ -1,5 +1,5 @@
 .divider {
-	@include breakpoint(xs){
+	 @include media-breakpoint-only(xs){
 		margin-bottom: 30px;
 
 		&:after {

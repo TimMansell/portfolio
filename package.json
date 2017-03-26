@@ -16,9 +16,10 @@
     "angular": "^1.6.1",
     "angular-scroll": "^1.0.0",
     "blazy": "~1.3.1",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap": "4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
+    "normalize-scss": "^6.0.0",
     "shuffle-letters": "yuheiy/shuffle-letters",
     "webfontloader": "~1.5.18"
   },

@@ -9,7 +9,7 @@ body {
     height: 100%;
 
     &.no-scroll {
-        @include breakpoint(xs){
+        @include media-breakpoint-only(sm){
             overflow:hidden;
         }
     }
@@ -33,7 +33,7 @@ p {
 
 a {
     color: $link-colour;
-    @include transition(color, 0.3s);
+    transition: color .3s;
     text-decoration: none;
 
     &:hover, &:focus {

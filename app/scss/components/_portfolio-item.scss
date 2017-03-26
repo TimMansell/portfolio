@@ -61,7 +61,7 @@
 		line-height: 1.2;
   		margin-bottom: 5px;
 
-  		@include breakpoint(sm){
+  		@include media-breakpoint-up(sm){
   			line-height: 1.5;	
   		}
 	}

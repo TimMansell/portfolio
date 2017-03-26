@@ -16,7 +16,7 @@
 			display: block;
 		//}
 
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			font-size: 26px;
 		}
 	}
@@ -32,7 +32,7 @@
 		text-transform: uppercase;
 		text-shadow: 3px 3px darken($primary-colour, 10%);
 
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			text-shadow: 2px 2px $info-text-shadow-colour;
 			font-size: 55px;
 			line-height: 55px;
@@ -43,7 +43,7 @@
 		color: $secondary-text-colour;
 		font-size: 16px;
 
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			font-size: 18px;
 		}
 	}
@@ -58,7 +58,7 @@
 		text-transform: uppercase;
 		text-shadow: 1px 1px darken($primary-colour, 10%);
 
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			text-shadow: 2px 2px $info-text-shadow-colour;
 		}
 	}

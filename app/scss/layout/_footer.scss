@@ -1,7 +1,7 @@
 .footer {
 	position: relative;
 
-	@include breakpoint(xs){
+	@include media-breakpoint-only(sm){
 		padding-bottom: 60px;
 	}
 }

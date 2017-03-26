@@ -2,9 +2,10 @@
 	height: 100%;
 
 	&__img {
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			background-image: url('../img/hero.jpg');
 			background-position: center;
+			background-size: cover;
 			position: fixed;
 			top: 0;
 			width: 100%;

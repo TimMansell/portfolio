@@ -1,5 +1,5 @@
 .navigation {
-	@include breakpoint(sm){
+	@include media-breakpoint-up(lg){
 		width: 100%;
 		height: 60px;
 		text-align: center;
@@ -18,7 +18,7 @@
 		text-align: center;
 		list-style: none;
 
-		@include breakpoint(sm){
+		@include media-breakpoint-up(md){
 			margin: 0 auto;
 			padding: 0;
 			display: inline-block !important;
@@ -26,7 +26,7 @@
 	}
 
 	&__menu-item {
-		@include breakpoint(sm){
+		@include media-breakpoint-up(md){
 			line-height: 60px;
 			display: inline-block;
 			float: left;
@@ -41,7 +41,7 @@
 		font-size: 30px;
 		letter-spacing: 2px;
 
-		@include breakpoint(sm){
+		@include media-breakpoint-up(md){
 			font-size: 18px;
 			padding: 0 18px;
 
@@ -53,7 +53,7 @@
 	}
 
 	&__active {
-		@include breakpoint(xs){
+		@include media-breakpoint-down(md){
 			position: fixed;
 			top: 0;
 			bottom: 0;
@@ -65,7 +65,7 @@
 	}
 
 	&__menu-active {
-		@include breakpoint(xs){
+		@include media-breakpoint-down(md){
 			display: block;
 			position: fixed;
 			bottom: 0;
@@ -75,7 +75,7 @@
 	}
 
 	&__menu-is-sticky {
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			position: fixed;
 			top: 0 !important;
 			box-shadow: inset 0 -1px darken($primary-colour, 10%), 0 1px 1px rgba(0,0,0,0.2);
@@ -84,7 +84,7 @@
 	}
 
 	&__menu-is-sticky &__menu-link {
-		@include breakpoint(sm){
+		@include media-breakpoint-up(sm){
 			text-shadow: -1px -1px darken($primary-colour, 10%);
 		}
 	}
