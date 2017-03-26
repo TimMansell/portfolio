@@ -7,60 +7,59 @@
 
 	<title>404 Page not found! | Front-end / AngularJS Developer | Melbourne | Tim Mansell</title>
 
-	<!-- build:css assets/css/404.min.css -->
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
-	<!-- endbuild -->
 </head>
 
-<body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]" tm-web-fonts>
-	<nav id="nav" class="navigation" ng-class="{true:'navigation-active', false:''}[menu.open]" tm-navigation>
-		<ul class="navigation-menu" ng-class="{true:'navigation-menu-active', false:''}[menu.open]">
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#profile">Profile</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#skills">Skills</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#portfolio">Portfolio</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#testimonials">Testimonials</a></li>
-			<li class="navigation-menu-item">
-				<a class="navigation-menu-link" ng-click="menu.open=!menu.open" href="/#contact">Contact</a></li>
+<body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
+	<nav id="nav" class="navigation" ng-class="{true:'navigation__active', false:''}[menu.open]" tm-navigation>
+		<ul class="navigation__menu" ng-class="{true:'navigation__menu-active', false:''}[menu.open]">
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="/#profile" du-smooth-scroll du-scrollspy>Profile</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="/#skills" du-smooth-scroll du-scrollspy>Skills</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="/#portfolio" du-smooth-scroll du-scrollspy>Portfolio</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="/#presentations" du-smooth-scroll du-scrollspy>Presentations</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="/#testimonials" du-smooth-scroll du-scrollspy>Testimonials</a></li>
+			<li class="navigation__menu-item">
+				<a class="navigation__menu-link" ng-click="menu.open=!menu.open" href="/#contact" du-smooth-scroll du-scrollspy>Contact</a></li>
 		</ul>
 
-		<button class="hamburger hidden-sm-up" ng-class="{true:'hamburger-active', false:''}[menu.open]" ng-click="menu.open=!menu.open">
-			<span class="hamburger-menu">toggle menu</span>
+		<button class="hamburger hidden-lg-up" ng-class="{true:'hamburger--active', false:''}[menu.open]" ng-click="menu.open=!menu.open">
+			<span class="hamburger__menu">toggle menu</span>
 		</button>
 	</nav>
 
-	<section id="intro" class="hero bg-primary">
-		<div class="hero-img"></div>		
+	<section id="intro" class="hero bg--primary">
+		<div class="hero__img" tm-scroll-blur blur-from="3"></div>
 
 		<div class="info">
 			<tm-scroll-fade>
-				<h4 class="info-text info-sub-title">404</h4>
-				<h1 class="info-title">Page not found</h1>
-				<div class="info-blurb">
+				<h4 class="info__text info__sub-title">404</h4>
+				<h1 class="info__title">Page not found</h1>
+				<div class="info__blurb">
 					<tm-shuffle-content>
-						<h4 class="info-blurb-item info-text">Taken a wrong turn?</h4>
-						<h4 class="info-blurb-item info-text">End of the line</h4>
-						<h4 class="info-blurb-item info-text">Visit one of the links below</h4>
+						<h4 class="info__blurb-item info__text">Taken a wrong turn?</h4>
+						<h4 class="info__blurb-item info__text">End of the line</h4>
+						<h4 class="info__blurb-item info__text">Visit one of the links below</h4>
 					</tm-shuffle-content>
 				</div>
 			</tm-scroll-fade>
 		</div>
 
-		<div class="learn-more hidden-sm-up">
-			<a class="learn-more-link">
-				<i class="learn-more-scroll fa fa-angle-down"></i>
+		<div class="learn-more hidden-md-down">
+			<a class="learn-more__link">
+				<i class="learn-more__scroll fa fa-angle-down"></i>
 			</a>
 		</div>
 
 	</section>
 
-	<script src="assets/js/vendor.min.js"></script>
-	<script src="assets/js/scripts.min.js"></script>
+	<script src="assets/js/bundle.js" defer></script>
 
-	<script>
+	<script defer>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
