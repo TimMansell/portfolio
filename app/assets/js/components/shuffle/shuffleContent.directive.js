@@ -31,9 +31,9 @@ export default function tmShuffleContent($interval) {
 
     // Shuffle text.
     function shuffle(){
-      $elements.addClass('invisible');
+      $elements.addClass('hidden-xs-up');
 
-      angular.element(elementsArray[0]).removeClass('invisible');
+      angular.element(elementsArray[0]).removeClass('hidden-xs-up');
 
       shuffleLetters(angular.element(elementsArray[0])[0]);
 

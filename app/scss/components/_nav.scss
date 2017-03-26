@@ -17,20 +17,28 @@
 		display: none;
 		text-align: center;
 		list-style: none;
+		margin: 0 auto;
 
 		@include media-breakpoint-up(md){
-			margin: 0 auto;
+			// margin: 0 auto;
 			padding: 0;
 			display: inline-block !important;
 		}
 	}
 
 	&__menu-item {
+		width: 100%;
+
 		@include media-breakpoint-up(md){
 			line-height: 60px;
 			display: inline-block;
 			float: left;
 			text-transform: uppercase;
+		}
+		
+
+		@include media-breakpoint-up(lg){
+			width: auto;
 		}
 	}
 
@@ -41,7 +49,11 @@
 		font-size: 30px;
 		letter-spacing: 2px;
 
-		@include media-breakpoint-up(md){
+		@include media-breakpoint-up(sm){
+			padding: 1px;
+		}
+
+		@include media-breakpoint-up(lg){
 			font-size: 18px;
 			padding: 0 18px;
 
@@ -72,10 +84,14 @@
 			left: 50%;
 			transform: translate(-50%, -100px);
 		}
+
+		// @include media-breakpoint-up(md){
+		// 	transform: translate(-50%, -100px)
+		// }
 	}
 
 	&__menu-is-sticky {
-		@include media-breakpoint-up(sm){
+		@include media-breakpoint-up(md){
 			position: fixed;
 			top: 0 !important;
 			box-shadow: inset 0 -1px darken($primary-colour, 10%), 0 1px 1px rgba(0,0,0,0.2);
@@ -84,7 +100,7 @@
 	}
 
 	&__menu-is-sticky &__menu-link {
-		@include media-breakpoint-up(sm){
+		@include media-breakpoint-up(md){
 			text-shadow: -1px -1px darken($primary-colour, 10%);
 		}
 	}
