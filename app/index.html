@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" media="screen">
 </head>
 
-<body ng-app="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
+<body id="TM" ng-class="{true:'no-scroll', false:''}[menu.open]">
 	<nav id="nav" class="navigation" ng-class="{true:'navigation__active', false:''}[menu.open]" tm-navigation>
 		<ul class="navigation__menu" ng-class="{true:'navigation__menu-active', false:''}[menu.open]">
 			<li class="navigation__menu-item">
@@ -274,7 +274,7 @@
 				<div class="row">
 					<div class="col-12">
 						<tm-social-icons></tm-social-icons>
-						<p class="footer-bar__text text--center">&copy; Copyright&nbsp;<tm-date></tm-date><br>Tim Mansell</p>
+						<div id="date" class="text--center"></div>
 					</div>
 				</div>
 			</div>
