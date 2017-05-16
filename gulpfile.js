@@ -140,7 +140,7 @@ gulp.task('serve:dev', function(cb) {
   runSequence('build-clean', ['webpack', 'sass'], ['fonts', 'build-images', 'build-assets'], 'build-html', 'serve', 'watch', cb);
 });
 
-gulp.task('watch', function() { 
+gulp.task('watch', function(cb) { 
   // Watch main scss.
   gulp.watch(paths.cssFrom+'/**/*.scss', ['sass']);
 
@@ -152,17 +152,21 @@ gulp.task('watch', function() {
     
   // Watch main files and reload browser.
   gulp.watch([paths.dist + '/*.html', paths.cssTo + '/*.css', paths.jsTo + '/bundle.js']).on('change', browserSync.reload);
+
+  cb();
 });
 
 //-----------------------------------------------------------------
 //  Production build.
 //-----------------------------------------------------------------
-gulp.task('serve', function() { 
+gulp.task('serve', function(cb) { 
   browserSync.init({
       server: {
           baseDir: "./dist/"
       }
   }); 
+
+  cb();
 });
 
 gulp.task('serve:build', ['build'], function() { 
