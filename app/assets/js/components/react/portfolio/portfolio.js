@@ -3,13 +3,10 @@ import ReactDOM from 'react-dom';
 
 import {PortfolioItem} from './portfolioItem';
 
-
-
 export class Portfolio extends React.Component {
     render() {
-		let numbers = [
+		let items = [
 			{
-				"id": 1,
 				"title": "Captain's Choice",
 				"src": "assets/img/portfolio/captains-choice.jpg",
 				"thumb": "assets/img/portfolio/captains-choice-thb.jpg",
@@ -18,7 +15,6 @@ export class Portfolio extends React.Component {
 				"url": "http://www.captainschoice.com.au/"
 			},
 			{
-				"id": 2,
 				"title": "Tourism Victoria - Mobile site",
 				"src": "assets/img/portfolio/tourism-victoria-mobile-site.jpg",
 				"thumb": "assets/img/portfolio/tourism-victoria-mobile-site-thb.jpg",
@@ -27,7 +23,6 @@ export class Portfolio extends React.Component {
 				"url": "http://m.visitvictoria.com/"
 			},
 			{
-				"id": 3,
 				"title": "UniSuper",
 				"src": "assets/img/portfolio/unisuper-mobile-site.jpg",
 				"thumb": "assets/img/portfolio/unisuper-mobile-site-thb.jpg",
@@ -36,7 +31,6 @@ export class Portfolio extends React.Component {
 				"url": "http://m.unisuper.com.au/"
 			},
 			{
-				"id": 4,
 				"title": "Point & Claim",
 				"src": "assets/img/portfolio/point-and-claim.jpg",
 				"thumb": "assets/img/portfolio/point-and-claim-thb.jpg",
@@ -45,7 +39,6 @@ export class Portfolio extends React.Component {
 				"url": "http://pointandclaim.com/"
 			},
 			{
-				"id": 5,
 				"title": "Tourism Victoria",
 				"src": "assets/img/portfolio/visit-victoria.jpg",
 				"thumb": "assets/img/portfolio/visit-victoria-thb.jpg",
@@ -54,7 +47,6 @@ export class Portfolio extends React.Component {
 				"url": "http://visitvictoria.com/"
 			},
 			{
-				"id": 6,
 				"title": "Simply Great Meals",
 				"src": "assets/img/portfolio/simply-great-meals.jpg",
 				"thumb": "assets/img/portfolio/simply-great-meals-thb.jpg",
@@ -64,9 +56,9 @@ export class Portfolio extends React.Component {
 			}
 		];
 
-		let listItems = numbers.map((number) =>
-			<div className="col-12 col-sm-6 col-lg-4" key={number.id}>
-		 		<PortfolioItem data={number} />
+		let listItems = items.map((item, i) =>
+			<div className="col-12 col-sm-6 col-lg-4" key={i}>
+		 		<PortfolioItem data={item} />
 			</div>
 		);
 

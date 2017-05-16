@@ -17,7 +17,7 @@ import {GoToTop} from './components/react/goToTop/goToTop';
 
 class App extends React.Component {
     render() {
-        return <div>
+        return <div className="full-height">
           <Navigation />
           <Intro />
           <main className="content">
