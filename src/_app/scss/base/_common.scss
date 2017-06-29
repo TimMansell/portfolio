@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: $font-family-primary;
+    font-size: 16px;
+    height: 100%;
+
+    &.no-scroll {
+        @include media-breakpoint-down(md){
+            overflow:hidden;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+p {
+    font-family: $font-family-primary;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+a {
+    color: $link-colour;
+    transition: color .3s;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $link-colour;
+        outline: none;
+    }
+}
+
+ul {
+    padding: 0;
+}

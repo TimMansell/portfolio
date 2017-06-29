@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Captain's Choice",
+        "src": "assets/img/portfolio/captains-choice.jpg",
+        "thumb": "assets/img/portfolio/captains-choice-thb.jpg",
+        "description": "Responsive website rebuild. Built on top of .NET stack.",
+        "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
+        "url": "http://www.captainschoice.com.au/"
+    },
+    {
+        "title": "Tourism Victoria - Mobile site",
+        "src": "assets/img/portfolio/tourism-victoria-mobile-site.jpg",
+        "thumb": "assets/img/portfolio/tourism-victoria-mobile-site-thb.jpg",
+        "description": "Dedicated mobile site build. Built on top of .NET stack.",
+        "tech": "AngularJS, Bootstrap 2, LESS, and jQuery.",
+        "url": "http://m.visitvictoria.com/"
+    },
+    {
+        "title": "UniSuper",
+        "src": "assets/img/portfolio/unisuper-mobile-site.jpg",
+        "thumb": "assets/img/portfolio/unisuper-mobile-site-thb.jpg",
+        "description": "Dedicated mobile site build. Built on top of .NET stack.",
+        "tech": "AngularJS, Bootstrap 3, SCSS/Compass, and jQuery.",
+        "url": "http://m.unisuper.com.au/"
+    },
+    {
+        "title": "Point & Claim",
+        "src": "assets/img/portfolio/point-and-claim.jpg",
+        "thumb": "assets/img/portfolio/point-and-claim-thb.jpg",
+        "description": "Responsive website rebuild. Built on top of CodeIgnitor framework.",
+        "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, and Gulp.",
+        "url": "http://pointandclaim.com/"
+    },
+    {
+        "title": "Tourism Victoria",
+        "src": "assets/img/portfolio/visit-victoria.jpg",
+        "thumb": "assets/img/portfolio/visit-victoria-thb.jpg",
+        "description": "Responsive website rebuild.  Built on top of .NET stack.",
+        "tech": "AngularJS, Bootstrap 3, SASS, Gulp, Bower, and jQuery.",
+        "url": "http://visitvictoria.com/"
+    },
+    {
+        "title": "Simply Great Meals",
+        "src": "assets/img/portfolio/simply-great-meals.jpg",
+        "thumb": "assets/img/portfolio/simply-great-meals-thb.jpg",
+        "description": "Responsive website rebuild focusing on mobile and tablet devices. Built on top of .NET stack.",
+        "tech": "Backbone, SCSS, and jQuery.",
+        "url": "http://simplygreatmeals.com.au/"
+    }
+]

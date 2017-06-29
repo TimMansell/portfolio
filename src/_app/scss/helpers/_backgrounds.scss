@@ -1,0 +1,15 @@
+.bg {
+	&--primary {
+		background-color: $primary-colour;
+		box-shadow: inset 0 1px darken($primary-colour, 10%), inset 0 -1px darken($primary-colour, 10%);
+	}
+
+	&--secondary {
+		background-color: $secondary-colour;
+		box-shadow: inset 0 1px darken($secondary-colour, 10%), inset 0 -1px darken($secondary-colour, 10%);
+	}
+
+	&--tertiary {
+		background-color: #fff;	
+	}
+}

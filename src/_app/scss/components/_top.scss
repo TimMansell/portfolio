@@ -1,0 +1,39 @@
+.goto-top {
+	position: fixed;
+	z-index: 1000;
+	right: -70px;
+ 	bottom: 22px;
+ 	padding: 10px;
+ 	background: $primary-colour;
+ 	//opacity: .85;
+ 	box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), .5);
+ 	border-radius: 50%;
+ 	transition: all .3s;
+
+ 	@include media-breakpoint-up(sm){
+ 		bottom: 30px;
+ 	}
+
+ 	&:hover {
+ 		background: darken($primary-colour, 13%);
+	}
+
+ 	&:before {
+ 		content: "\f077";
+ 		font-family: FontAwesome;
+ 		text-shadow: -1px -1px darken($primary-colour, 5%);
+ 		font-size: 22px;
+
+ 		@include media-breakpoint-up(sm){
+ 			font-size: 32px;
+ 		}
+ 	}
+
+ 	&__show {
+ 		right: 10px;
+
+ 		@include media-breakpoint-up(sm){
+ 			right: 30px;
+ 		}
+ 	}
+}
