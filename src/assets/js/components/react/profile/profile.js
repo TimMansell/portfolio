@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { Link } from 'react-scroll';
 
 import {SocialIcons} from '../socialIcons/socialIcons';
+import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Profile extends React.Component {
     render() {
@@ -11,7 +12,9 @@ export class Profile extends React.Component {
 				<div className="row">
 					<div className="col-12">
 						<div className="heading">
-							<h2 className="heading__title heading--primary text--center" tm-shuffle-on-screen>A little bit about myself</h2>
+							<ShuffleCharacters>
+								<h2 className="heading__title heading--primary text--center">A little bit about myself</h2>
+							</ShuffleCharacters>
 						</div>
 					</div>
 				</div>

@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 // import format from 'date-fns/format';
+import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Skills extends React.Component {
     render() {
@@ -10,7 +11,9 @@ export class Skills extends React.Component {
 				<div className="row">
 					<div className="col-12">
 						<div className="heading text--secondary">
-							<h2 className="heading__title text--center" tm-shuffle-on-screen>Skills</h2>
+							<ShuffleCharacters>
+								<h2 className="heading__title text--center">Skills</h2>
+							</ShuffleCharacters>
 							<p className="heading__description">I spend most of my time with these technologies / tools / methodologies</p>
 						</div>
 					</div>
@@ -45,7 +48,7 @@ export class Skills extends React.Component {
 								<ul className="skills__list">
 									<li>Responsive</li>
 									<li>Mobile First</li>
-									<li><a className="link" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.timmansell.com%2F&tab=mobile" target="_blank">Performance</a></li>
+									<li><a className="link" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.timmansell.com%2F&tab=mobile" target="_blank" rel="noopener noreferrer">Performance</a></li>
 									<li>Optimisation</li>
 								</ul>
 							</div>

@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { Link } from 'react-scroll';
 
 // import format from 'date-fns/format';
 import Hero from '../hero/hero';
+import {ScrollFade} from '../scrollFade/scrollFade';
+import {ShuffleContent} from '../shuffleContent/shuffleContent';
 
 export class Intro extends React.Component {
     render() {
@@ -11,18 +13,18 @@ export class Intro extends React.Component {
 		<Hero blurFrom={3} blurTo={10} />
 
 		<div className="info">
-			<tm-scroll-fade>
+			<ScrollFade fadeMultiplier={1.15}>
 				<h4 className="info__text info__sub-title">Melbourne, Australia</h4>
 				<h1 className="info__title">Hi! I'm Tim Mansell</h1>
 				<div className="info__blurb">
-					<tm-shuffle-content>
+					<ShuffleContent>
 						<h4 className="info__blurb-item info__text">Front-end ninja</h4>
 						<h4 className="info__blurb-item info__text">AngularJS Developer</h4>
 						<h4 className="info__blurb-item info__text">Avid Snowboarder</h4>
 						<h4 className="info__blurb-item info__text">Hard worker</h4>
-					</tm-shuffle-content>
+					</ShuffleContent>
 				</div>
-			</tm-scroll-fade>
+			</ScrollFade>
 		</div>
 
 		<div className="learn-more hidden-md-down">
@@ -34,3 +36,10 @@ export class Intro extends React.Component {
 	</section>;
     }
 }
+
+{/*<ShuffleContent>
+						<h4 className="info__blurb-item info__text">Front-end ninja</h4>
+						<h4 className="info__blurb-item info__text">AngularJS Developer</h4>
+						<h4 className="info__blurb-item info__text">Avid Snowboarder</h4>
+						<h4 className="info__blurb-item info__text">Hard worker</h4>
+					</ShuffleContent>*/}

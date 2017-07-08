@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 import {PortfolioItem} from './portfolioItem';
+import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Portfolio extends React.Component {
     render() {
@@ -67,7 +68,9 @@ export class Portfolio extends React.Component {
 				<div className="row text--center">
 					<div className="col-12">
 						<div className="heading text--tertiary">
-							<h2 className="heading__title text--center" tm-shuffle-on-screen>Portfolio</h2>
+							<ShuffleCharacters>
+								<h2 className="heading__title text--center">Portfolio</h2>
+							</ShuffleCharacters>
 							<p className="heading__description">Here's a sample of my lastest work</p>
 						</div>
 					</div>

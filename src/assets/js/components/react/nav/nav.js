@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 import debounce from 'lodash/debounce';
 import classnames from 'classnames';
