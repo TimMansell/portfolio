@@ -1,12 +1,9 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-
-// import format from 'date-fns/format';
 
 export class PortfolioItem extends React.Component {
     render() {
         return <div className="portfolio-item">
-            <img className="portfolio-item__img img--responsive b-lazy" src={this.props.data.src} alt={this.props.data.title} />
+            <img className="portfolio-item__img img--responsive b-lazy" src={this.props.data.thumb} alt={this.props.data.title} />
             <div className="portfolio-item__info text--center">
                 <h3 className="portfolio-item__title">{this.props.data.title}</h3>
                 <p className="portfolio-item__description hidden-sm-up">{this.props.data.description}</p>

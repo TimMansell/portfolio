@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+
 
 import {SocialIcons} from '../socialIcons/socialIcons';
 import {Copyright} from '../date/date';

@@ -8,8 +8,6 @@ export class ShuffleContent extends React.Component {
 
         this.shuffleContent = React.Children.toArray(this.props.children);
 
-        console.log('this.shuffleContent', this.shuffleContent);
-
         this.state = {
             content: this.shuffleContent[0]
         };

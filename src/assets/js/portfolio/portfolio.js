@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 
 import {PortfolioItem} from './portfolioItem';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
