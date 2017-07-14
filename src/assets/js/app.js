@@ -5,19 +5,19 @@ import { connect } from 'react-redux';
 import ScrollLock from 'react-scrolllock';
 // import { Provider } from 'react-redux'
 
-import Navigation from './components/react/nav/nav';
-import {Intro} from './components/react/intro/intro';
+import Navigation from './nav/nav';
+import {Intro} from './intro/intro';
 
-import {Profile} from './components/react/profile/profile';
-import {Skills} from './components/react/skills/skills';
-import {Portfolio} from './components/react/portfolio/portfolio';
-import {Stats} from './components/react/stats/stats';
-import {Presentations} from './components/react/presentations/presentations';
-import {Testimonials} from './components/react/testimonials/testimonials';
+import {Profile} from './profile/profile';
+import {Skills} from './skills/skills';
+import {Portfolio} from './portfolio/portfolio';
+import {Stats} from './stats/stats';
+import {Presentations} from './presentations/presentations';
+import {Testimonials} from './testimonials/testimonials';
 
 
-import {Footer} from './components/react/footer/footer';
-import {GoToTop} from './components/react/goToTop/goToTop';
+import {Footer} from './footer/footer';
+import {GoToTop} from './goToTop/goToTop';
 
 class App extends React.Component {
     render() {

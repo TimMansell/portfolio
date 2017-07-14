@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import * as actions from '../../../../../actions';
+import * as actions from '../../../actions';
 
 import debounce from 'lodash/debounce';
 import classnames from 'classnames';
@@ -65,22 +65,22 @@ class Navigation extends React.Component {
         return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>
 			<ul className={menuClasses}>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="profile" smooth={true} spy={true} onClick={this.closeMenu}>Profile</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="skills" smooth={true} spy={true} onClick={this.closeMenu}>Skills</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="portfolio" smooth={true} spy={true} onClick={this.closeMenu}>Portfolio</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="portfolio" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Portfolio</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="presentations" smooth={true} spy={true} onClick={this.closeMenu}>Presentations</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="presentations" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Presentations</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="testimonials" smooth={true} spy={true} onClick={this.closeMenu}>Testimonials</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="testimonials" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Testimonials</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="contact" smooth={true} spy={true} onClick={this.closeMenu}>Contact</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="contact" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Contact</Link>
 				</li>
 			</ul>
 
