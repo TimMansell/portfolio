@@ -68,7 +68,7 @@ export class Portfolio extends React.Component {
 				<div className="row text--center">
 					<div className="col-12">
 						<div className="heading text--tertiary">
-							<ShuffleCharacters>
+							<ShuffleCharacters inViewport={true}>
 								<h2 className="heading__title text--center">Portfolio</h2>
 							</ShuffleCharacters>
 							<p className="heading__description">Here's a sample of my lastest work</p>

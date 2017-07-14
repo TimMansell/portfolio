@@ -1,38 +1,39 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+import { slice } from 'immutable';
 
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class ShuffleContent extends React.Component {
-    
-    
-    // let $elements = angular.element(element).children(),
-    //     elementsArray = Array.prototype.slice.apply($elements),
-    //     containerHeight = angular.element(elementsArray[0]).height();
+    constructor(props) {
+		super(props);
 
-    // // console.log('el', angular.element(elementsArray[0])[0]);
+        this.shuffleContent = React.Children.toArray(this.props.children);
 
-    // // // Set height of container.
-    // element.height(containerHeight).css({display:'block'});
+        console.log('this.shuffleContent', this.shuffleContent);
 
-    // shuffle();
+        this.state = {
+            content: this.shuffleContent[0]
+        };
+	}
 
-    // $interval(shuffle, 4000);
+    componentDidMount() {
+        this.tick = setInterval(this.rotateContent, 4000);
+    }
 
-    // // Shuffle text.
-    // function shuffle(){
-    //   $elements.addClass('hidden-xs-up');
+    componentWillUnmount() {
+        window.clearInterval(this.tick);
+    }
 
-    //   angular.element(elementsArray[0]).removeClass('hidden-xs-up');
+    rotateContent = () => {
+        this.shuffleContent.push(this.shuffleContent.shift());
 
-    //   shuffleLetters(angular.element(elementsArray[0])[0]);
-
-    //   elementsArray.push(elementsArray.shift());
-    // }
+        this.setState(prevState => ({
+            content: this.shuffleContent[0]
+        })); 
+    }
 
     render() {
-        return <div>
-            <ShuffleCharacters>{this.props.children}</ShuffleCharacters>
-        </div>;
+        return <ShuffleCharacters>{this.state.content}</ShuffleCharacters>;
     }
 }

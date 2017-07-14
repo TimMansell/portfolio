@@ -12,7 +12,7 @@ export class Profile extends React.Component {
 				<div className="row">
 					<div className="col-12">
 						<div className="heading">
-							<ShuffleCharacters>
+							<ShuffleCharacters inViewport={true}>
 								<h2 className="heading__title heading--primary text--center">A little bit about myself</h2>
 							</ShuffleCharacters>
 						</div>

@@ -11,7 +11,7 @@ export class Skills extends React.Component {
 				<div className="row">
 					<div className="col-12">
 						<div className="heading text--secondary">
-							<ShuffleCharacters>
+							<ShuffleCharacters inViewport={true}>
 								<h2 className="heading__title text--center">Skills</h2>
 							</ShuffleCharacters>
 							<p className="heading__description">I spend most of my time with these technologies / tools / methodologies</p>
