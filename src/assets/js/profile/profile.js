@@ -21,7 +21,7 @@ export class Profile extends React.Component {
 
 				<div className="row">
 					<div className="col-12 text--center">
-						<p>I am an experienced and ambitious Front-end Developer with over 9 years commercial experience in a digital agency environment. I specialise in HTML5, CSS3, SCSS, AngularJS, NodeJS, Yarn, Gulp, and Webpack.</p>
+						<p>I am an experienced and ambitious Front-end Developer with over 8 years commercial experience in a digital agency environment. The last two years I have worked client-side. I specialise in HTML5, CSS3, SCSS, React, AngularJS, NodeJS, Yarn, Gulp, and Webpack.</p>
 
 						<p>I develop with best practices in mind and adhere to W3C standards. Unfortunately not all browsers are created equal, so I utilise Progressive Enhancement where possible, to ensure that any website I work on displays perfectly in all of the evergreen browsers.</p>
 

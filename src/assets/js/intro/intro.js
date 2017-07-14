@@ -19,6 +19,7 @@ export class Intro extends React.Component {
 				<div className="info__blurb">
 					<ShuffleContent>
 						<h4 className="info__blurb-item info__text">Front-end ninja</h4>
+						<h4 className="info__blurb-item info__text">React Developer</h4>
 						<h4 className="info__blurb-item info__text">AngularJS Developer</h4>
 						<h4 className="info__blurb-item info__text">Avid Snowboarder</h4>
 						<h4 className="info__blurb-item info__text">Hard worker</h4>

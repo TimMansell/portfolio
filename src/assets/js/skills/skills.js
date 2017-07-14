@@ -26,10 +26,10 @@ export class Skills extends React.Component {
 								<i className="fa fa-html5 skills__icon"></i>
 								<ul className="skills__list">
 									<li>Semantic HTML5</li>
-									<li>Bootstrap</li>
+									<li>Bootstrap 3/4</li>
 									<li>SEO</li>
 									<li>Accessibility</li>
-									<li>PHP</li>
+									<li>Web Components</li>
 								</ul>
 							</div>
 
@@ -38,8 +38,10 @@ export class Skills extends React.Component {
 								<ul className="skills__list">
 									<li>CSS3</li>
 									<li>SCSS / LESS</li>
-									<li>BEM / OOCSS</li>
+									<li>BEM</li>
+									<li>OOCSS</li>
 									<li>PostCSS</li>
+									<li>Atomic Design</li>
 								</ul>
 							</div>
 
@@ -60,7 +62,7 @@ export class Skills extends React.Component {
 							<div className="col-12 col-sm-4 text--center text--secondary divider">
 								<i className="fa fa-code skills__icon"></i>
 								<ul className="skills__list">
-									<li>JavaScript ES5/ES6</li>
+									<li>ES5/ES6</li>
 									<li>Babel</li>
 									<li>AngularJS</li>
 									<li>React</li>
@@ -77,7 +79,8 @@ export class Skills extends React.Component {
 									<li>NPM / Yarn</li>
 									<li>Gulp / Grunt</li>
 									<li>Git / SVN</li>
-									<li>Webpack</li>
+									<li>Webpack 3</li>
+
 								</ul>
 							</div>
 
@@ -99,7 +102,6 @@ export class Skills extends React.Component {
 				<i className="fa fa-gamepad skills__icon text--secondary"></i>
 				<ul className="skills__list text--secondary">
 					<li>Angular2</li>
-					<li>Web Components</li>
 					<li>Various PostCSS modules</li>
 				</ul>
 			</div>
