@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import WebFont from 'webfontloader';
 
 import configureStore from './store/configureStore';
 
 import './assets/css/main.css';
 import App from './assets/js/app';
-// import registerServiceWorker from './registerServiceWorker';
 
 const store = configureStore();
 
@@ -15,4 +15,10 @@ ReactDOM.render(
     <App />
   </Provider>, 
   document.getElementById('root'));
-// registerServiceWorker();
+
+// Load web fonts.
+WebFont.load({
+  google:{
+    families: ['Raleway:700,400']
+  }
+});  
