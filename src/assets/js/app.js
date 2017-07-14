@@ -1,7 +1,11 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
+// import { bindActionCreators } from 'redux';
+// import classnames from 'classnames';
+import ScrollLock from 'react-scrolllock';
+// import { Provider } from 'react-redux'
 
-import {Navigation} from './components/react/nav/nav';
+import Navigation from './components/react/nav/nav';
 import {Intro} from './components/react/intro/intro';
 
 import {Profile} from './components/react/profile/profile';
@@ -17,7 +21,11 @@ import {GoToTop} from './components/react/goToTop/goToTop';
 
 class App extends React.Component {
     render() {
-        return (<div className="full-height">
+      // let classes = classnames('full-height', {
+			//   'no-scroll': this.props.isMobileMenu
+		  // });
+
+        return (<div>
           <Navigation />
           <Intro />
           <main className="content">
@@ -30,12 +38,20 @@ class App extends React.Component {
           </main>
           <Footer />
           <GoToTop />
-          
+          {this.props.isMobileMenu && <ScrollLock />}
         </div>);
     }
 }
 
-export default App;
+function mapStateToProps(state, ownProps) {
+  return {
+    isMobileMenu: state.isMobileMenu
+  };
+}
+
+export default connect(mapStateToProps)(App);
+
+//no-scroll
 
 // Init app.
 // ReactDOM.render(

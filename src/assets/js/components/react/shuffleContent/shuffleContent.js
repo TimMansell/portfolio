@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { slice } from 'immutable';
 
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 

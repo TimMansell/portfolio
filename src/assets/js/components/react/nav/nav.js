@@ -1,11 +1,16 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import * as actions from '../../../../../actions';
 
 import debounce from 'lodash/debounce';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 
-export class Navigation extends React.Component {
+import Hamburger from '../hamburger/hamburger';
+
+class Navigation extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -43,34 +48,58 @@ export class Navigation extends React.Component {
 		}));
 	}
 
-    render() {
-		let classes = classnames('navigation', {'navigation__menu-is-sticky': this.state.isFixedNav});
+	closeMenu = () => {
+		this.props.actions.setMobileMenu(false);
+	}
 
-        return <nav id="nav" className={classes} ref={(input) => { this.textInput = input; }}>
-			<ul className="navigation__menu">
+    render() {
+		let navClasses = classnames('navigation', {
+			'navigation__menu-is-sticky': this.state.isFixedNav && !this.props.isMobileMenu,
+			'navigation__active': this.props.isMobileMenu
+		});
+
+		let menuClasses = classnames('navigation__menu', {
+			'navigation__menu-active': this.props.isMobileMenu
+		});
+
+        return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>
+			<ul className={menuClasses}>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" to="profile" smooth={true}>Profile</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="profile" smooth={true} spy={true} onClick={this.closeMenu}>Profile</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" to="skills" smooth={true}>Skills</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="skills" smooth={true} spy={true} onClick={this.closeMenu}>Skills</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" to="portfolio" smooth={true}>Portfolio</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="portfolio" smooth={true} spy={true} onClick={this.closeMenu}>Portfolio</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" to="presentations" smooth={true}>Presentations</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="presentations" smooth={true} spy={true} onClick={this.closeMenu}>Presentations</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" to="testimonials" smooth={true}>Testimonials</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="testimonials" smooth={true} spy={true} onClick={this.closeMenu}>Testimonials</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" to="contact" smooth={true}>Contact</Link>
+					<Link className="navigation__menu-link" activeClass="active" to="contact" smooth={true} spy={true} onClick={this.closeMenu}>Contact</Link>
 				</li>
 			</ul>
 
-			<button className="hamburger hidden-lg-up">
-				<span className="hamburger__menu">toggle menu</span>
-			</button>
+			<Hamburger />
 		</nav>;
     }
 }
+
+function mapStateToProps(state, ownProps) {
+	console.log('state', state);
+  return {
+    isMobileMenu: state.isMobileMenu
+  };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

@@ -14,9 +14,12 @@ export class ShuffleCharacters extends React.Component {
         this.state = {
             content: this.props.children
         };
+
+        console.log('cont');
 	}
 
     componentDidMount() {
+        console.log('mounting');
 
         if(this.inViewport){
             // Find DOM element so we can work out when it's visible on page.
@@ -33,18 +36,18 @@ export class ShuffleCharacters extends React.Component {
     }
 
     componentWillReceiveProps(nextProps){
-        // console.log('update', ReactDOM.findDOMNode(this).children);
+        // console.log('nextProps', nextProps);
 
-        this.setState(prevState => ({
-            content: nextProps.children
-        }));
+        // this.setState(prevState => ({
+        //     content: nextProps.children
+        // }));
 
         // this.shuffle();
     }
 
     componentWillUpdate(){
-        console.log('shuffle');
-        this.shuffle();
+        // console.log('shuffle');
+        // this.shuffle();
     }
 
     handleScroll = throttle((e) => {

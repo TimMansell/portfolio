@@ -7,11 +7,12 @@ body {
     font-family: $font-family-primary;
     font-size: 16px;
     height: 100%;
+}
 
-    &.no-scroll {
-        @include media-breakpoint-down(md){
-            overflow:hidden;
-        }
+.no-scroll {
+    @include media-breakpoint-down(md){
+        overflow:hidden;
+        //max-height: 100vh;
     }
 }
 
@@ -35,6 +36,7 @@ a {
     color: $link-colour;
     transition: color .3s;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover, &:focus {
         text-decoration: none;
