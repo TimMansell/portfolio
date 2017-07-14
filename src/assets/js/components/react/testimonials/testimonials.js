@@ -4,8 +4,10 @@ import React from 'react';
 import {TestimonialItem} from './testimonialItem';
 
 export class Testimonials extends React.Component {
-    render() {
-		let testimonials = [
+	constructor(props) {
+		super(props);
+
+        this.testimonials = [
 			{
 				"author": "Rusty Brooke",
 				"description": "I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me."
@@ -20,17 +22,33 @@ export class Testimonials extends React.Component {
 			}
 		];
 
-		let listItems = testimonials.map((testimonial, i) =>
-			<div className="col-12 col-sm-6 col-lg-4" key={i}>
-		 		<TestimonialItem data={testimonial} />
-			</div>
-		);
+        this.state = {
+            testimonial: this.testimonials[0]
+        };
+	}
 
+	componentDidMount() {
+        this.tick = setInterval(this.rotateContent, 5000);
+    }
+
+    componentWillUnmount() {
+        window.clearInterval(this.tick);
+    }
+
+    rotateContent = () => {
+        this.testimonials.push(this.testimonials.shift());
+
+        this.setState(prevState => ({
+            testimonial: this.testimonials[0]
+        })); 
+    }
+
+    render() {
         return <section id="testimonials" className="layout-section bg--tertiary">
 			<div className="container">
 				<div className="row text--center">
 					<div className="col-sm-10 offset-sm-1">
-						{listItems}
+						<TestimonialItem data={this.state.testimonial} />
 					</div>
 				</div>
 			</div>
