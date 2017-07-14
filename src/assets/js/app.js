@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 // import { bindActionCreators } from 'redux';
 // import classnames from 'classnames';
-import ScrollLock from 'react-scrolllock';
+
 // import { Provider } from 'react-redux'
 
 import Navigation from './nav/nav';
@@ -18,6 +18,8 @@ import {Testimonials} from './testimonials/testimonials';
 
 import {Footer} from './footer/footer';
 import {GoToTop} from './goToTop/goToTop';
+
+import WindowLock from './windowLock/windowLock';
 
 class App extends React.Component {
     render() {
@@ -38,7 +40,8 @@ class App extends React.Component {
           </main>
           <Footer />
           <GoToTop />
-          {this.props.isMobileMenu && <ScrollLock />}
+          <WindowLock />
+          
         </div>);
     }
 }

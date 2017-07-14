@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+// import ScrollLock from 'react-scrolllock';
 
 import * as actions from '../../../actions';
 
@@ -17,8 +18,6 @@ class Navigation extends React.Component {
 		this.state = {
 			isFixedNav: false
 		};
-
-		// this.handleScroll = this.handleScroll.bind(this);
 	}
 
 	componentDidMount() {
@@ -90,7 +89,6 @@ class Navigation extends React.Component {
 }
 
 function mapStateToProps(state, ownProps) {
-	console.log('state', state);
   return {
     isMobileMenu: state.isMobileMenu
   };
