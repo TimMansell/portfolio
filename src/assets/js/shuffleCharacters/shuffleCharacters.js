@@ -1,35 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { throttle } from 'lodash';
-import inViewport from 'in-viewport';
+// import { throttle } from 'lodash';
+// import inViewport from 'in-viewport';
 import shuffleLetters from 'shuffle-letters';
 
 export class ShuffleCharacters extends React.Component {
-    constructor(props) {
-		super(props);
+    // constructor(props) {
+	// 	super(props);
 
-        this.inViewport = this.props.inViewport;
+    //     // this.inViewport = this.props.inViewport;
 
-        this.state = {
-            content: this.props.children
-        };
-	}
+    //     this.state = {
+    //         content: this.props.children
+    //     };
+	// }
 
     componentDidMount() {
-        if(this.inViewport){
+        console.log('mount');
+        // if(this.inViewport){
             // Find DOM element so we can work out when it's visible on page.
-            this.element = ReactDOM.findDOMNode(this).children;
+            // this.element = ReactDOM.findDOMNode(this).children;
 
-            window.addEventListener('scroll', this.handleScroll);
-        } else {
+            // window.addEventListener('scroll', this.handleScroll);
+        // } else {
             this.shuffle();
-        }
+        // }
     }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+    // componentWillUnmount() {
+    //     window.removeEventListener('scroll', this.handleScroll);
+    // }
 
     componentWillReceiveProps(nextProps){
         // console.log('nextProps', nextProps);
@@ -41,23 +42,23 @@ export class ShuffleCharacters extends React.Component {
         // this.shuffle();
     }
 
-    componentWillUpdate(){
-        // console.log('shuffle');
-        // this.shuffle();
-    }
+    // componentWillUpdate(){
+    //     console.log('shuffle');
+    //     this.shuffle();
+    // }
 
-    handleScroll = throttle((e) => {
+    // handleScroll = throttle((e) => {
 
-        // When element is in viewport then shuffle letters.
-      if(inViewport(this.element[0])){
-        // shuffleLetters(ReactDOM.findDOMNode(this).children);
-        this.shuffle();
+    //     // When element is in viewport then shuffle letters.
+    //   if(inViewport(this.element[0])){
+    //     // shuffleLetters(ReactDOM.findDOMNode(this).children);
+    //     this.shuffle();
 
-        // We've shuffled once so remove event listener.
-        window.removeEventListener('scroll', this.handleScroll);
-      }
+    //     // We've shuffled once so remove event listener.
+    //     window.removeEventListener('scroll', this.handleScroll);
+    //   }
 
-    }, 30)
+    // }, 30)
 
     shuffle = () => {
         // console.log('ReactDOM.findDOMNode(this).children', ReactDOM.findDOMNode(this).children);
@@ -65,6 +66,6 @@ export class ShuffleCharacters extends React.Component {
     }
 
     render() {
-        return <div>{this.state.content}</div>;
+        return <div>{this.props.children}</div>;
     }
 }

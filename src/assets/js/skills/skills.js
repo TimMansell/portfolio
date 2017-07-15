@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-// import format from 'date-fns/format';
+import InViewport from '../inViewport/inViewport';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Skills extends React.Component {
@@ -11,9 +10,11 @@ export class Skills extends React.Component {
 				<div className="row">
 					<div className="col-12">
 						<div className="heading text--secondary">
-							<ShuffleCharacters inViewport={true}>
-								<h2 className="heading__title text--center">Skills</h2>
-							</ShuffleCharacters>
+							<InViewport>
+								<ShuffleCharacters>
+									<h2 className="heading__title text--center">Skills</h2>
+								</ShuffleCharacters>
+							</InViewport>
 							<p className="heading__description">I spend most of my time with these technologies / tools / methodologies</p>
 						</div>
 					</div>
@@ -65,7 +66,7 @@ export class Skills extends React.Component {
 									<li>ES5/ES6</li>
 									<li>Babel</li>
 									<li>AngularJS</li>
-									<li>React</li>
+									<li>React/ Redux</li>
 									<li>Backbone.js</li>
 									<li>JSON</li>
 									<li>jQuery</li>

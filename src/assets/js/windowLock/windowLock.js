@@ -36,9 +36,9 @@ class WindowLock extends React.Component {
 		return window.matchMedia("(max-width: 768px)").matches;
 	}
 
-    render() {
-        return <div>{this.props.isMobileMenu && this.state.isMobileView && <ScrollLock />}</div>;
-    }
+	render() {
+			return <div>{this.props.isMobileMenu && this.state.isMobileView && <ScrollLock />}</div>;
+	}
 }
 
 function mapStateToProps(state, ownProps) {

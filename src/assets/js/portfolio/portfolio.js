@@ -1,5 +1,6 @@
 import React from 'react';
 
+import InViewport from '../inViewport/inViewport';
 import {PortfolioItem} from './portfolioItem';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
@@ -67,9 +68,11 @@ export class Portfolio extends React.Component {
 				<div className="row text--center">
 					<div className="col-12">
 						<div className="heading text--tertiary">
-							<ShuffleCharacters inViewport={true}>
+							<InViewport>
+								<ShuffleCharacters>
 								<h2 className="heading__title text--center">Portfolio</h2>
-							</ShuffleCharacters>
+								</ShuffleCharacters>
+							</InViewport>
 							<p className="heading__description">Here's a sample of my work</p>
 						</div>
 					</div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-// import ScrollLock from 'react-scrolllock';
+
 
 import * as actions from '../../../actions';
 
@@ -21,7 +21,7 @@ class Navigation extends React.Component {
 	}
 
 	componentDidMount() {
-    	window.addEventListener('scroll', debounce(this.handleScroll));
+    	window.addEventListener('scroll', this.handleScroll);
 
 		this.setState(prevState => ({
 			offset: this.textInput.offsetTop
@@ -33,7 +33,7 @@ class Navigation extends React.Component {
 	}
 
 	handleScroll = (event) => {
-		let scrollTop = event.srcElement.body.scrollTop,
+		let scrollTop = window.scrollY || document.documentElement.scrollTop,
 			isFixedNav = false;
 
 		if(scrollTop >= this.state.offset){

@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-// import format from 'date-fns/format';
+import InViewport from '../inViewport/inViewport';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Presentations extends React.Component {
@@ -11,9 +10,11 @@ export class Presentations extends React.Component {
 				<div className="row text--center">
 					<div className="col-12">
 						<div className="heading text--tertiary">
-							<ShuffleCharacters inViewport={true}>
+							<InViewport>
+								<ShuffleCharacters>
 								<h2 className="heading__title text--center">Presentations</h2>
-							</ShuffleCharacters>
+								</ShuffleCharacters>
+							</InViewport>
 							<p className="heading__description">Some talks I have done</p>
 						</div>
 					</div>

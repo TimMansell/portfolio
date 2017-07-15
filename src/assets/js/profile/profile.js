@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Link } from 'react-scroll';
 
+import InViewport from '../inViewport/inViewport';
 import {SocialIcons} from '../socialIcons/socialIcons';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
@@ -12,9 +12,11 @@ export class Profile extends React.Component {
 				<div className="row">
 					<div className="col-12">
 						<div className="heading">
-							<ShuffleCharacters inViewport={true}>
-								<h2 className="heading__title heading--primary text--center">A little bit about myself</h2>
-							</ShuffleCharacters>
+							<InViewport>
+								<ShuffleCharacters>
+									<h2 className="heading__title heading--primary text--center">A little bit about myself</h2>
+								</ShuffleCharacters>
+							</InViewport>
 						</div>
 					</div>
 				</div>
