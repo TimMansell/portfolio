@@ -4,11 +4,10 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import classnames from 'classnames';
 
-import * as actions from '../../../actions';
+import * as actions from '../../actions';
 
 class Hamburger extends React.Component {
     handleClick = () => {
-        console.log('clck');
         this.props.actions.setMobileMenu(!this.props.isMobileMenu);
     }
 	

@@ -17,7 +17,7 @@ export class ShuffleCharacters extends React.Component {
 	// }
 
     componentDidMount() {
-        console.log('mount');
+        // console.log('mount');
         // if(this.inViewport){
             // Find DOM element so we can work out when it's visible on page.
             // this.element = ReactDOM.findDOMNode(this).children;

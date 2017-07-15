@@ -2,10 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+import * as actions from '../../actions';
 
-import * as actions from '../../../actions';
-
-import debounce from 'lodash/debounce';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 

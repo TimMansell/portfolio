@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-// import { throttle } from 'lodash';
-
 class Counter extends React.Component {
     constructor(props) {
         super(props);

@@ -21,6 +21,11 @@ export class ShuffleContent extends React.Component {
         window.clearInterval(this.tick);
     }
 
+    // componentWillUpdate(){
+    //     console.log('update');
+    //     // this.shuffle();
+    // }
+
     rotateContent = () => {
         this.shuffleContent.push(this.shuffleContent.shift());
 
@@ -29,7 +34,13 @@ export class ShuffleContent extends React.Component {
         })); 
     }
 
+    // content(){
+    //     return <ShuffleCharacters>{this.state.content}</ShuffleCharacters>;
+    // }
+
     render() {
         return <ShuffleCharacters>{this.state.content}</ShuffleCharacters>;
+        // return <div>{this.content()}</div>;
+        // return {this.state.renderChild ? <ShuffleCharacters>{this.state.content}</ShuffleCharacters> : null};
     }
 }

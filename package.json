@@ -24,8 +24,8 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "build:css": "node-sass --include-path ./node_modules src/scss -o src/assets/css/",
-    "watch:css": "npm run build:css && node-sass --include-path ./node_modules src/scss -o src/assets/css/ --watch --recursive",
+    "build:css": "node-sass --include-path ./node_modules src/scss -o src/css/",
+    "watch:css": "npm run build:css && node-sass --include-path ./node_modules src/scss -o src/css/ --watch --recursive",
     "start": "run-p watch:css start:react",
     "build": "run-s build:css build:react",
     "start:react": "react-scripts start",
