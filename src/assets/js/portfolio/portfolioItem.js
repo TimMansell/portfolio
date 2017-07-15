@@ -1,9 +1,10 @@
 import React from 'react';
+import InViewport from '../inViewport/inViewport';
 
 export class PortfolioItem extends React.Component {
     render() {
         return <div className="portfolio-item">
-            <img className="portfolio-item__img img--responsive b-lazy" src={this.props.data.thumb} alt={this.props.data.title} />
+            <InViewport><img className="portfolio-item__img img--responsive" src={this.props.data.thumb} alt={this.props.data.title} /></InViewport>
             <div className="portfolio-item__info text--center">
                 <h3 className="portfolio-item__title">{this.props.data.title}</h3>
                 <p className="portfolio-item__description hidden-sm-up">{this.props.data.description}</p>

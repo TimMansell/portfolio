@@ -14,7 +14,6 @@ export default class InViewport extends React.Component {
     componentDidMount() {
         const element = ReactDOM.findDOMNode(this);
 
-
         inViewport(element, this.visible); 
     }
 
@@ -25,7 +24,8 @@ export default class InViewport extends React.Component {
     }
     
     render() {
-        return <div>&nbsp;
+        return <div>
+            {!this.state.isInViewport && '\&nbsp;' }
             {this.state.isInViewport && <span>{this.props.children}</span>}
         </div>;
     }
