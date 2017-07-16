@@ -2,7 +2,7 @@ This is the source code for my personal portfolio site.
 
 My website uses nodejs, ensure you have that installed first.
 
-##Instructions:
+## Instructions:
 
 `npm install` or `yarn`
 
