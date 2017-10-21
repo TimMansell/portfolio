@@ -23,7 +23,7 @@ export class Skills extends React.Component {
 					'CSS3',
 					'SCSS / LESS',
 					'BEM',
-					'OOCSS',
+					'OOCSS / SMACSS',
 					'PostCSS',
 					'Atomic Design'
 				],
@@ -40,10 +40,10 @@ export class Skills extends React.Component {
 			},
 			{
 				list: [
-					'ES5/ES6',
+					'ES5 / ES6',
 					'Babel',
 					'AngularJS',
-					'React/ Redux',
+					'React / Redux',
 					'Backbone.js',
 					'JSON',
 					'jQuery'
@@ -55,7 +55,7 @@ export class Skills extends React.Component {
 					'Node.js',
 					'NPM / Yarn',
 					'Gulp / Grunt',
-					'Git / SVN',
+					'Git / GitFlow / SVN',
 					'Webpack 3'
 				],
 				icon: 'fa-terminal'
@@ -65,10 +65,21 @@ export class Skills extends React.Component {
 					'Agile',
 					'Scrum',
 					'Kanban',
-					'JIRA',
+					'JIRA / VSTS',
 					'Table Tennis'
 				],
 				icon: 'fa-paper-plane'
+			}
+		];
+
+		const learning = [
+			{
+				list: [
+					'WebVR / ReactVR',
+					'Functional Programming',
+					'CSS Grid'
+				],
+				icon: 'fa-gamepad'
 			}
 		];
 
@@ -96,11 +107,18 @@ export class Skills extends React.Component {
 				</div>
 
 				<p className="text-description text--secondary">I am currently playing around with</p>
-				<i className="fa fa-gamepad skills__icon text--secondary"></i>
+				{/* <i className="fa fa-gamepad skills__icon text--secondary"></i>
 				<ul className="skills__list text--secondary">
 					<li>Angular2</li>
 					<li>Various PostCSS modules</li>
-				</ul>
+				</ul> */}
+				<div className="row skills">
+				{learning.map((skill, i) =>
+						<div className="col-12 text--center text--secondary" key={i}>
+							<SkillsItem skill={skill} />
+						</div>
+					)}
+					</div>
 			</div>
 		</section>;
     }

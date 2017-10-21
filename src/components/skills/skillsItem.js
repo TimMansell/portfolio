@@ -3,10 +3,6 @@ import React from 'react';
 import classnames from 'classnames';
 
 export default class SkillsItem extends React.Component {
-	constructor(props){
-		super(props);
-	}
-
     render() {
 		let iconClass = classnames('fa skills__icon', this.props.skill.icon);
 
