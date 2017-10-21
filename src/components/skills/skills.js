@@ -3,8 +3,86 @@ import React from 'react';
 import InViewport from '../inViewport/inViewport';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
+import SkillsItem from './skillsItem';
+
 export class Skills extends React.Component {
     render() {
+		const skills = [
+			{
+				list: [
+					'Semantic HTML5',
+					'Bootstrap 3/4',
+					'SEO',
+					'Accessibility',
+					'Web Components'
+				],
+				icon: 'fa-html5'
+			},
+			{
+				list: [
+					'CSS3',
+					'SCSS / LESS',
+					'BEM',
+					'OOCSS / SMACSS',
+					'PostCSS',
+					'Atomic Design'
+				],
+				icon: 'fa-css3'
+			},
+			{
+				list: [
+					'Responsive',
+					'Mobile First',
+					'Performance',
+					'Optimisation'
+				],
+				icon: 'fa-mobile'
+			},
+			{
+				list: [
+					'ES5 / ES6',
+					'Babel',
+					'AngularJS',
+					'React / Redux',
+					'Backbone.js',
+					'JSON',
+					'jQuery'
+				],
+				icon: 'fa-code'
+			},
+			{
+				list: [
+					'Node.js',
+					'NPM / Yarn',
+					'Gulp / Grunt',
+					'Git / GitFlow / SVN',
+					'Webpack 3'
+				],
+				icon: 'fa-terminal'
+			},
+			{
+				list: [
+					'Agile',
+					'Scrum',
+					'Kanban',
+					'JIRA / VSTS',
+					'Table Tennis'
+				],
+				icon: 'fa-paper-plane'
+			}
+		];
+
+		const learning = [
+			{
+				list: [
+					'WebVR / ReactVR',
+					'Functional Programming',
+					'CSS Grid'
+				],
+				icon: 'fa-gamepad'
+			}
+		];
+
         return <section id="skills" className="layout-section bg--primary text--center">
 			<div className="container">
 				<div className="row">
@@ -21,90 +99,21 @@ export class Skills extends React.Component {
 				</div>
 
 				<div className="row skills">
-					<div className="col-lg-6">
-						<div className="row">
-							<div className="col-12 col-sm-4 text--center text--secondary divider">
-								<i className="fa fa-html5 skills__icon"></i>
-								<ul className="skills__list">
-									<li>Semantic HTML5</li>
-									<li>Bootstrap 3/4</li>
-									<li>SEO</li>
-									<li>Accessibility</li>
-									<li>Web Components</li>
-								</ul>
-							</div>
-
-							<div className="col-12 col-sm-4 text--center text--secondary divider">
-								<i className="fa fa-css3 skills__icon"></i>
-								<ul className="skills__list">
-									<li>CSS3</li>
-									<li>SCSS / LESS</li>
-									<li>BEM</li>
-									<li>OOCSS</li>
-									<li>PostCSS</li>
-									<li>Atomic Design</li>
-								</ul>
-							</div>
-
-							<div className="col-12 col-sm-4 text--center text--secondary divider">
-								<i className="fa fa-mobile skills__icon"></i>
-								<ul className="skills__list">
-									<li>Responsive</li>
-									<li>Mobile First</li>
-									<li><a className="link" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.timmansell.com%2F&tab=mobile" target="_blank" rel="noopener noreferrer">Performance</a></li>
-									<li>Optimisation</li>
-								</ul>
-							</div>
+					{skills.map((skill, i) =>
+						<div className="col-12 col-sm-6 col-md-4 col-lg-2 text--center text--secondary divider" key={i}>
+							<SkillsItem skill={skill} />
 						</div>
-					</div>
-
-					<div className="col-lg-6">
-						<div className="row">
-							<div className="col-12 col-sm-4 text--center text--secondary divider">
-								<i className="fa fa-code skills__icon"></i>
-								<ul className="skills__list">
-									<li>ES5/ES6</li>
-									<li>Babel</li>
-									<li>AngularJS</li>
-									<li>React/ Redux</li>
-									<li>Backbone.js</li>
-									<li>JSON</li>
-									<li>jQuery</li>
-								</ul>
-							</div>
-
-							<div className="col-12 col-sm-4 text--center text--secondary divider">
-								<i className="fa fa-terminal skills__icon"></i>
-								<ul className="skills__list">
-									<li>Node.js</li>
-									<li>NPM / Yarn</li>
-									<li>Gulp / Grunt</li>
-									<li>Git / SVN</li>
-									<li>Webpack 3</li>
-
-								</ul>
-							</div>
-
-							<div className="col-12 col-sm-4 text--center text--secondary divider">
-								<i className="fa fa-paper-plane skills__icon"></i>
-								<ul className="skills__list">
-									<li>Agile</li>
-									<li>Scrum</li>
-									<li>Kanban</li>
-									<li>JIRA</li>
-									<li>Table Tennis</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>					
+					)}
+				</div>
 
 				<p className="text-description text--secondary">I am currently playing around with</p>
-				<i className="fa fa-gamepad skills__icon text--secondary"></i>
-				<ul className="skills__list text--secondary">
-					<li>Angular2</li>
-					<li>Various PostCSS modules</li>
-				</ul>
+				<div className="row skills">
+					{learning.map((skill, i) =>
+						<div className="col-12 text--center text--secondary" key={i}>
+							<SkillsItem skill={skill} />
+						</div>
+					)}
+				</div>
 			</div>
 		</section>;
     }
