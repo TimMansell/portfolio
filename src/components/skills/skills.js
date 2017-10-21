@@ -107,18 +107,13 @@ export class Skills extends React.Component {
 				</div>
 
 				<p className="text-description text--secondary">I am currently playing around with</p>
-				{/* <i className="fa fa-gamepad skills__icon text--secondary"></i>
-				<ul className="skills__list text--secondary">
-					<li>Angular2</li>
-					<li>Various PostCSS modules</li>
-				</ul> */}
 				<div className="row skills">
-				{learning.map((skill, i) =>
+					{learning.map((skill, i) =>
 						<div className="col-12 text--center text--secondary" key={i}>
 							<SkillsItem skill={skill} />
 						</div>
 					)}
-					</div>
+				</div>
 			</div>
 		</section>;
     }
