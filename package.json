@@ -20,7 +20,6 @@
     "react-scrolllock": "^1.0.8",
     "redux": "^3.7.2",
     "serve": "^6.0.2",
-    "shuffle-letters": "yuheiy/shuffle-letters",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
