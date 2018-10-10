@@ -11,7 +11,7 @@ export class PortfolioItem extends React.Component {
                 <p className="portfolio-item__description portfolio-item__tech">{this.props.data.tech}</p>
 
                 <div className="portfolio-item__more-info">
-                    <a href={this.props.data.url} target="_blank" title="Visit website">
+                    <a href={this.props.data.url} target="_blank" rel="noopener noreferrer" title="Visit website">
                         <i className="fa fa-globe portfolio-item__icon"></i>
                     </a>
                 </div>

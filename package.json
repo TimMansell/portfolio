@@ -8,18 +8,18 @@
     "date-fns": "^2.0.0-alpha.1",
     "font-awesome": "^4.7.0",
     "in-viewport": "^3.5.0",
-    "lodash": "^4.17.4",
-    "node-sass": "^4.9.0",
+    "lodash": "4.17.11",
+    "node-sass": "4.9.3",
     "normalize-scss": "^7.0.0",
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
-    "react-scripts": "1.0.8",
+    "react-scripts": "2.0.4",
     "react-scroll": "^1.5.3",
     "react-scrolllock": "^1.0.8",
     "redux": "^3.7.2",
-    "serve": "^6.0.2",
+    "serve": "10.0.2",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
@@ -32,5 +32,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "serve": "serve -s build"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
