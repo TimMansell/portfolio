@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 // import { throttle } from 'lodash';
 // import inViewport from 'in-viewport';
-import shuffleLetters from 'shuffle-letters';
+// import shuffleLetters from 'shuffle-letters';
 
 export class ShuffleCharacters extends React.Component {
     // constructor(props) {
@@ -62,7 +62,9 @@ export class ShuffleCharacters extends React.Component {
 
     shuffle = () => {
         // console.log('ReactDOM.findDOMNode(this).children', ReactDOM.findDOMNode(this).children);
-        shuffleLetters(ReactDOM.findDOMNode(this).children);
+        // shuffleLetters(ReactDOM.findDOMNode(this).children);
+
+        return ReactDOM.findDOMNode(this).children;
     }
 
     render() {

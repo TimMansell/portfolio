@@ -23,7 +23,7 @@ export class Presentations extends React.Component {
 					<div className="col-sm-10 offset-sm-1">
 						<i className="lighter-note__icon fa fa-file-powerpoint-o text--secondary"></i>	
 						<ul className="text--tertiary skills__list">
-							<li><a href="presentations/web-components/" target="_blank" rel="noopener noreferrer">Web components</a></li>
+							<li><a href="https://timmansell.github.io/presentations/web-components/" target="_blank" rel="noopener noreferrer">Web components</a></li>
 							<li><a href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY" target="_blank" rel="noopener noreferrer">CSS with superpowers</a></li>
 						</ul>
 					</div>

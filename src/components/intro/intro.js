@@ -28,7 +28,7 @@ export class Intro extends React.Component {
 			</ScrollFade>
 		</div>
 
-		<div className="learn-more hidden-md-down">
+		<div className="learn-more d-none d-lg-block">
 			<Link className="learn-more__link" to="profile" smooth={true}>
 				<i className="learn-more__scroll fa fa-angle-down"></i>
 			</Link>
