@@ -12,7 +12,7 @@ class Hamburger extends React.Component {
     }
 	
     render() {
-        let classes = classnames('hamburger hidden-lg-up', {
+        let classes = classnames('hamburger d-lg-none', {
 			'hamburger--active': this.props.isMobileMenu
 		});
 
