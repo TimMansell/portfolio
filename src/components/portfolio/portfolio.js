@@ -6,14 +6,14 @@ import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Portfolio extends React.Component {
     render() {
-		let items = [
+		const items = [
 			{
 				"title": "Captain's Choice",
 				"src": require('./captains-choice.jpg'),
 				"thumb": require('./captains-choice-thb.jpg'),
 				"description": "Responsive website rebuild. Built on top of .NET stack.",
 				"tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
-				"url": "http://www.captainschoice.com.au/"
+				"url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
 			},
 			{
 				"title": "Tourism Victoria - Mobile site",
@@ -21,7 +21,7 @@ export class Portfolio extends React.Component {
 				"thumb": require('./tourism-victoria-mobile-site-thb.jpg'),
 				"description": "Dedicated mobile site build. Built on top of .NET stack.",
 				"tech": "AngularJS, Bootstrap 2, LESS, and jQuery.",
-				"url": "http://m.visitvictoria.com/"
+				"url": "https://web.archive.org/web/20170323211519/http://m.visitvictoria.com"
 			},
 			{
 				"title": "UniSuper",
@@ -37,7 +37,7 @@ export class Portfolio extends React.Component {
 				"thumb": require('./point-and-claim-thb.jpg'),
 				"description": "Responsive website rebuild. Built on top of CodeIgnitor framework.",
 				"tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, and Gulp.",
-				"url": "http://pointandclaim.com/"
+				"url": "https://web.archive.org/web/20160622073557/http://pointandclaim.com/"
 			},
 			{
 				"title": "Tourism Victoria",
