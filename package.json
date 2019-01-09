@@ -20,6 +20,7 @@
     "react-scrolllock": "^1.0.8",
     "redux": "^3.7.2",
     "serve": "10.0.2",
+    "shuffle-letters": "https://github.com/TimMansell/shuffle-letters.git",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
