@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
+// import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class ShuffleContent extends React.Component {
     constructor(props) {
@@ -39,7 +39,8 @@ export class ShuffleContent extends React.Component {
     // }
 
     render() {
-        return <ShuffleCharacters>{this.state.content}</ShuffleCharacters>;
+        //return <ShuffleCharacters>{this.state.content}</ShuffleCharacters>;
+        return <div>{this.state.content}</div>;
         // return <div>{this.content()}</div>;
         // return {this.state.renderChild ? <ShuffleCharacters>{this.state.content}</ShuffleCharacters> : null};
     }

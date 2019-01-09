@@ -25,7 +25,7 @@ export default class InViewport extends React.Component {
     
     render() {
         return <div>
-            {!this.state.isInViewport && '&nbsp;' }
+            {!this.state.isInViewport && <span>&nbsp;</span> }
             {this.state.isInViewport && <span>{this.props.children}</span>}
         </div>;
     }

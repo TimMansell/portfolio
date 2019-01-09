@@ -8,11 +8,15 @@ My website uses nodejs, ensure you have that installed first.
 
 To load my site in development mode, run:
 
-`npm start`
+`npm start` or `yarn start`
 
 To load my site in production mode, run:
 
 `npm run build` then `npm run serve`
+
+or 
+
+`yarn build` then `yarn serve`
 
 ### Old website source code:
 - 2012 website can be found here. https://github.com/TimMansell/portfolio/tree/2012
