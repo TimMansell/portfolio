@@ -1,0 +1,70 @@
+[
+    {
+        "list": [
+            "Semantic HTML5",
+            "Bootstrap 3/4",
+            "SEO",
+            "a11y",
+            "Web Components",
+            "Pattern Library"
+        ],
+        "icon": "fa-html5"
+    },
+    {
+        "list": [
+            "CSS3",
+            "SCSS / LESS",
+            "BEM",
+            "OOCSS / SMACSS",
+            "PostCSS",
+            "Atomic Design",
+            "Styleguides"
+        ],
+        "icon": "fa-css3"
+    },
+    {
+        "list": [
+            "Responsive",
+            "Mobile First",
+            "Retina",
+            "Performance",
+            "Optimisation"
+        ],
+        "icon": "fa-mobile"
+    },
+    {
+        "list": [
+            "ES6+ / Babel",
+            "AngularJS",
+            "React / Redux",
+            "Vue / Vuex/ Nuxt",
+            "Backbone.js",
+            "JSON"
+        ],
+        "icon": "fa-code"
+    },
+    {
+        "list": [
+            "Node.js",
+            "NPM / Yarn",
+            "Gulp / Grunt",
+            "Git / SVN",
+            "Webpack",
+            "ESLint",
+            "Docker"
+        ],
+        "icon": "fa-terminal"
+    },
+    {
+        "list": [
+            "Agile",
+            "Scrum",
+            "Kanban",
+            "JIRA / VSTS",
+            "Slack",
+            "Trello",
+            "Table Tennis"
+        ],
+        "icon": "fa-paper-plane"
+    }
+]
