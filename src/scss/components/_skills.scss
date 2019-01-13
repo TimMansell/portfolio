@@ -1,5 +1,19 @@
 .skills {
 	margin-bottom: 30px;
+	display: grid;
+	grid-gap: 16px;
+
+	@include media-breakpoint-up(sm){
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include media-breakpoint-up(md){
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	@include media-breakpoint-up(lg){
+		grid-template-columns: repeat(6, 1fr);
+	}
 
 	&__icon {
 		font-size: 65px;
@@ -15,6 +29,13 @@
 		@include media-breakpoint-up(sm){
 			margin-top: 20px;
 			font-size: 18px;
+		}
+	}
+
+	&__item {
+		&--single {
+			grid-column-end: -1;
+			grid-column-start: 1;
 		}
 	}
 }

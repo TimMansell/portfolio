@@ -98,18 +98,18 @@ export class Skills extends React.Component {
 					</div>
 				</div>
 
-				<div className="row skills">
+				<div className="skills">
 					{skills.map((skill, i) =>
-						<div className="col-12 col-sm-6 col-md-4 col-lg-2 text--center text--secondary divider" key={i}>
+						<div className="skills__item text--center text--secondary divider" key={i}>
 							<SkillsItem skill={skill} />
 						</div>
 					)}
 				</div>
 
 				<p className="text-description text--secondary">I am currently playing around with</p>
-				<div className="row skills">
+				<div className="skills">
 					{learning.map((skill, i) =>
-						<div className="col-12 text--center text--secondary" key={i}>
+						<div className="skills__item--single text--center text--secondary" key={i}>
 							<SkillsItem skill={skill} />
 						</div>
 					)}
