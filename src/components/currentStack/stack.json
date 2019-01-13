@@ -1,0 +1,46 @@
+[
+    {
+        "name": "VueJS / Nuxt",
+        "icon": "fab-vue"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "fab-node"
+    },
+    {
+        "name": "PostCSS",
+        "icon": "fab-"
+    },
+    {
+        "name": "Webpack",
+        "icon": "fab-"
+    },
+    {
+        "name": "NPM",
+        "icon": "fab-npm"
+    },
+    {
+        "name": "Git",
+        "icon": "fab-git"
+    },
+    {
+        "name": "Yarn",
+        "icon": "fab-yan"
+    },
+    {
+        "name": "React / Redux",
+        "icon": "fab-react"
+    },
+    {
+        "name": "SCSS",
+        "icon": "fab-"
+    },
+    {
+        "name": "Babel",
+        "icon": "fab-"
+    },
+    {
+        "name": "ESLint",
+        "icon": "fab-"
+    }
+]
