@@ -7,6 +7,12 @@ import Hero from '../hero/hero';
 import {ScrollFade} from '../scrollFade/scrollFade';
 import {ShuffleContent} from '../shuffleContent/shuffleContent';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+library.add(faChevronDown);
+
 export class Intro extends React.Component {
     render() {
         return <section id="intro" className="hero bg--primary">
@@ -30,7 +36,7 @@ export class Intro extends React.Component {
 
 		<div className="learn-more d-none d-lg-block">
 			<Link className="learn-more__link" to="profile" smooth={true}>
-				<i className="learn-more__scroll fa fa-angle-down"></i>
+				<FontAwesomeIcon className="learn-more__scroll" icon={faChevronDown} />
 			</Link>
 		</div>
 

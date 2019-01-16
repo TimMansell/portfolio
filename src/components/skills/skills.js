@@ -20,7 +20,7 @@ export class Skills extends React.Component {
 									<h2 className="heading__title text--center">Skills</h2>
 								</ShuffleCharacters>
 							</InViewport>
-							<p className="heading__description">I spend most of my time with these technologies / tools / methodologies</p>
+							<p className="heading__description">I have acquired many skills during my professional career.  Most notable and relevant are</p>
 						</div>
 					</div>
 				</div>
