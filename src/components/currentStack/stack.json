@@ -1,46 +1,58 @@
 [
     {
         "name": "VueJS / Nuxt",
-        "icon": "fab-vue"
+        "iconFamily": "fab",
+        "icon": "vuejs"
     },
     {
         "name": "NodeJS",
-        "icon": "fab-node"
-    },
-    {
-        "name": "PostCSS",
-        "icon": "fab-"
-    },
-    {
-        "name": "Webpack",
-        "icon": "fab-"
+        "iconFamily": "fab",
+        "icon": "node"
     },
     {
         "name": "NPM",
-        "icon": "fab-npm"
+        "iconFamily": "fab",
+        "icon": "npm"
     },
     {
         "name": "Git",
-        "icon": "fab-git"
+        "iconFamily": "fab",
+        "icon": "git"
     },
     {
         "name": "Yarn",
-        "icon": "fab-yan"
+        "iconFamily": "fab",
+        "icon": "yarn"
     },
     {
         "name": "React / Redux",
-        "icon": "fab-react"
+        "iconFamily": "fab",
+        "icon": "react"
     },
     {
+        "name": "PostCSS",
+        "iconFamily": "fas",
+        "icon": "code"
+    },
+    {
+        "name": "Webpack",
+        "iconFamily": "fas",
+        "icon": "code"
+    },
+   
+    {
         "name": "SCSS",
-        "icon": "fab-"
+        "iconFamily": "fas",
+        "icon": "code"
     },
     {
         "name": "Babel",
-        "icon": "fab-"
+        "iconFamily": "fas",
+        "icon": "code"
     },
     {
         "name": "ESLint",
-        "icon": "fab-"
+        "iconFamily": "fas",
+        "icon": "code"
     }
 ]
