@@ -4,6 +4,9 @@
             "WebVR / ReactVR",
             "CSS Grid"
         ],
-        "icon": "fa-gamepad"
+        "icon": {
+            "name": "gamepad",
+            "family": "fa"
+        }
     }
 ]

@@ -1,16 +1,17 @@
 .social {
 	margin-top: 40px;
+	display: flex;
+	justify-content: center;
 
 	&__icon {
 		font-size: 30px;
-		display: inline-block;
+		display: flex;
+		justify-content: center;
 		background: $primary-colour;
 		padding: 15px;
 		border-radius: 50%;
 		color: $icon-colour;
 		text-shadow: -1px -1px darken($primary-colour, 10%);
-		width: 60px;
-		height: 60px;
 		margin: 0 15px;
 		transition: box-shadow .3s, background .3s;
 

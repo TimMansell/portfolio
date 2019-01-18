@@ -1,58 +1,80 @@
 [
     {
         "name": "VueJS / Nuxt",
-        "iconFamily": "fab",
-        "icon": "vuejs"
+        "icon": {
+            "name": "vuejs",
+            "family": "fab"
+        }
     },
     {
         "name": "NodeJS",
-        "iconFamily": "fab",
-        "icon": "node"
+        "icon": {
+            "name": "node",
+            "family": "fab"
+        }
     },
     {
         "name": "NPM",
-        "iconFamily": "fab",
-        "icon": "npm"
+        "icon": {
+            "name": "npm",
+            "family": "fab"
+        }
     },
     {
         "name": "Git",
-        "iconFamily": "fab",
-        "icon": "git"
+        "icon": {
+            "name": "git",
+            "family": "fab"
+        }
     },
     {
         "name": "Yarn",
-        "iconFamily": "fab",
-        "icon": "yarn"
+        "icon": {
+            "name": "yarn",
+            "family": "fab"
+        }
     },
     {
         "name": "React / Redux",
-        "iconFamily": "fab",
-        "icon": "react"
+        "icon": {
+            "name": "react",
+            "family": "fab"
+        }
     },
     {
         "name": "PostCSS",
-        "iconFamily": "fas",
-        "icon": "code"
+        "icon": {
+            "name": "code",
+            "family": "fas"
+        }
     },
     {
         "name": "Webpack",
-        "iconFamily": "fas",
-        "icon": "code"
+        "icon": {
+            "name": "code",
+            "family": "fas"
+        }
     },
    
     {
         "name": "SCSS",
-        "iconFamily": "fas",
-        "icon": "code"
+        "icon": {
+            "name": "code",
+            "family": "fas"
+        }
     },
     {
         "name": "Babel",
-        "iconFamily": "fas",
-        "icon": "code"
+        "icon": {
+            "name": "code",
+            "family": "fas"
+        }
     },
     {
         "name": "ESLint",
-        "iconFamily": "fas",
-        "icon": "code"
+        "icon": {
+            "name": "code",
+            "family": "fas"
+        }
     }
 ]

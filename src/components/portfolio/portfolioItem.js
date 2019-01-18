@@ -1,6 +1,12 @@
 import React from 'react';
 import InViewport from '../inViewport/inViewport';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faDesktop);
+
 export class PortfolioItem extends React.Component {
     render() {
         return <div className="portfolio-item">
@@ -12,7 +18,7 @@ export class PortfolioItem extends React.Component {
 
                 <div className="portfolio-item__more-info">
                     <a href={this.props.data.url} target="_blank" rel="noopener noreferrer" title="Visit website">
-                        <i className="fa fa-globe portfolio-item__icon"></i>
+                    <FontAwesomeIcon icon={faDesktop} className="portfolio-item__icon" />
                     </a>
                 </div>
             </div>

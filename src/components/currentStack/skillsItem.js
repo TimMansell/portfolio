@@ -12,7 +12,7 @@ export default class SkillsItem extends React.Component {
     render() {
         return (
 			<div>
-				<FontAwesomeIcon icon={[this.props.skill.iconFamily ,this.props.skill.icon]} size="4x" />
+				<FontAwesomeIcon icon={[this.props.skill.icon.family ,this.props.skill.icon.name]} size="4x" />
 				<p>{this.props.skill.name}</p>
 			</div>
 		);
