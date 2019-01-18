@@ -1,80 +1,73 @@
 [
     {
-        "name": "VueJS / Nuxt",
-        "icon": {
-            "name": "vuejs",
-            "family": "fab"
-        }
+        "name": "React",
+        "url": "https://reactjs.org/",
+        "img": "react.svg",
+        "width": "72"
+    },    {
+        "name": "NodeJS",
+        "url": "https://nodejs.org/en/",
+        "img": "nodejs.svg",
+        "width": "108"
     },
     {
-        "name": "NodeJS",
-        "icon": {
-            "name": "node",
-            "family": "fab"
-        }
+        "name": "VueJS",
+        "url": "https://vuejs.org/",
+        "img": "vuejs.svg",
+        "width": "66"
     },
     {
         "name": "NPM",
-        "icon": {
-            "name": "npm",
-            "family": "fab"
-        }
-    },
-    {
-        "name": "Git",
-        "icon": {
-            "name": "git",
-            "family": "fab"
-        }
-    },
-    {
-        "name": "Yarn",
-        "icon": {
-            "name": "yarn",
-            "family": "fab"
-        }
-    },
-    {
-        "name": "React / Redux",
-        "icon": {
-            "name": "react",
-            "family": "fab"
-        }
-    },
-    {
-        "name": "PostCSS",
-        "icon": {
-            "name": "code",
-            "family": "fas"
-        }
+        "url": "https://www.npmjs.com/",
+        "img": "npm.svg",
+        "width": "108"
     },
     {
         "name": "Webpack",
-        "icon": {
-            "name": "code",
-            "family": "fas"
-        }
-    },
-   
-    {
-        "name": "SCSS",
-        "icon": {
-            "name": "code",
-            "family": "fas"
-        }
+        "url": "https://webpack.js.org/",
+        "img": "webpack.svg",
+        "width": "84"
     },
     {
-        "name": "Babel",
-        "icon": {
-            "name": "code",
-            "family": "fas"
-        }
+        "name": "Yarn",
+        "url": "https://yarnpkg.com",
+        "img": "yarn.png",
+        "width": "132"
     },
     {
         "name": "ESLint",
-        "icon": {
-            "name": "code",
-            "family": "fas"
-        }
+        "url": "https://eslint.org/",
+        "img": "eslint.svg",
+        "width": "81"
+    },
+    {
+        "name": "Babel",
+        "url": "https://babeljs.io/",
+        "img": "babel.svg",
+        "width": "144"
+    },
+    {
+        "name": "VSCode",
+        "url": "https://code.visualstudio.com/",
+        "img": "vscode.svg",
+        "width": "66"
+    },
+    {
+        "name": "SCSS",
+        "url": "https://sass-lang.com/",
+        "img": "sass.svg",
+        "width": "81"
+    },
+    {
+        "name": "PostCSS",
+        "url": "https://postcss.org/",
+        "img": "postcss.svg",
+        "width": "66"
+    },
+    {
+        "name": "Git",
+        "url": "https://git-scm.com/",
+        "img": "git.svg",
+        "width": "108"
     }
 ]
