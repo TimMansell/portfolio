@@ -8,7 +8,7 @@
         "name": "NodeJS",
         "url": "https://nodejs.org/en/",
         "img": "nodejs.svg",
-        "width": "108"
+        "width": "90"
     },
     {
         "name": "VueJS",
@@ -20,7 +20,7 @@
         "name": "NPM",
         "url": "https://www.npmjs.com/",
         "img": "npm.svg",
-        "width": "108"
+        "width": "90"
     },
     {
         "name": "Webpack",
@@ -38,13 +38,13 @@
         "name": "ESLint",
         "url": "https://eslint.org/",
         "img": "eslint.svg",
-        "width": "81"
+        "width": "75"
     },
     {
         "name": "Babel",
         "url": "https://babeljs.io/",
         "img": "babel.svg",
-        "width": "144"
+        "width": "160"
     },
     {
         "name": "VSCode",
@@ -56,7 +56,7 @@
         "name": "SCSS",
         "url": "https://sass-lang.com/",
         "img": "sass.svg",
-        "width": "81"
+        "width": "75"
     },
     {
         "name": "PostCSS",
@@ -68,6 +68,6 @@
         "name": "Git",
         "url": "https://git-scm.com/",
         "img": "git.svg",
-        "width": "108"
+        "width": "90"
     }
 ]

@@ -10,7 +10,7 @@ import stack from './stack.json';
 export class CurrentStack extends React.Component {
     render() {
         return <section id="stack" className="layout-section bg--tertiary text--center">
-			<div className="container container-large">
+			<div className="container container-medium">
 				<div className="row">
 					<div className="col-12">
 						<div className="heading">
@@ -26,7 +26,7 @@ export class CurrentStack extends React.Component {
 
 				<div className="stack">
 					{stack.map((stack, i) =>
-						<StackItem stack={stack} />
+						<StackItem stack={stack} key={i} />
 					)}
 				</div>
 			</div>
