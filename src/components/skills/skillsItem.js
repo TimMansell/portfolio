@@ -15,7 +15,7 @@ export default class SkillsItem extends React.Component {
 				<FontAwesomeIcon icon={[this.props.skill.icon.family ,this.props.skill.icon.name]} size="4x" />
 				<ul className="skills__list">
 					{this.props.skill.list.map((item, i) =>
-						<li key={i}>{item}</li>
+						<li className="skills__item" key={i}>{item}</li>
 					)}
 				</ul>
 			</div>

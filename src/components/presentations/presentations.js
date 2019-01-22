@@ -29,8 +29,8 @@ export class Presentations extends React.Component {
 					<div className="col-sm-10 offset-sm-1">
 						<FontAwesomeIcon icon={faChalkboardTeacher} className="lighter-note__icon text--secondary" />
 						<ul className="text--tertiary skills__list">
-							<li><a href="https://timmansell.github.io/presentations/web-components/index.html" target="_blank" rel="noopener noreferrer">Web components</a></li>
-							<li><a href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY" target="_blank" rel="noopener noreferrer">CSS with superpowers</a></li>
+							<li className="skills__item"><a className="link link--alt" href="https://timmansell.github.io/presentations/web-components/index.html" target="_blank" rel="noopener noreferrer">Web components</a></li>
+							<li className="skills__item"><a className="link link--alt" href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY" target="_blank" rel="noopener noreferrer">CSS with superpowers</a></li>
 						</ul>
 					</div>
 				</div>
