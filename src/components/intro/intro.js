@@ -24,11 +24,10 @@ export class Intro extends React.Component {
 				<h1 className="info__title">Hi! I'm Tim Mansell</h1>
 				<div className="info__blurb">
 					<ShuffleContent>
-						<h4 className="info__blurb-item info__text">Front-end ninja</h4>
-						<h4 className="info__blurb-item info__text">React Developer</h4>
-						<h4 className="info__blurb-item info__text">AngularJS Developer</h4>
-						<h4 className="info__blurb-item info__text">Avid Snowboarder</h4>
-						<h4 className="info__blurb-item info__text">Hard worker</h4>
+						<h4 className="info__blurb-item info__text">Front-end Engineer</h4>
+						<h4 className="info__blurb-item info__text">Javascript Engineer</h4>
+						<h4 className="info__blurb-item info__text">React Engineer</h4>
+						<h4 className="info__blurb-item info__text">VueJS Engineer</h4>
 					</ShuffleContent>
 				</div>
 			</ScrollFade>
