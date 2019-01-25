@@ -11,8 +11,8 @@ library.add(faCode, faCss3Alt, faJs, faTerminal, faClipboardList, faTrello, faGa
 export default class SkillsItem extends React.Component {
     render() {
         return (
-			<div>
-				<FontAwesomeIcon icon={[this.props.skill.icon.family ,this.props.skill.icon.name]} size="4x" />
+			<div className="divider">
+				<FontAwesomeIcon icon={[this.props.skill.icon.family ,this.props.skill.icon.name]} className="icon icon--secondary" />
 				<ul className="skills__list">
 					{this.props.skill.list.map((item, i) =>
 						<li className="skills__item" key={i}>{item}</li>

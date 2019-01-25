@@ -1,11 +1,6 @@
 .hamburger {
 	position: fixed;
-	// overflow: hidden;
-	// margin: 0;
-	// padding: 0;
-	// font-size: 0;
 	text-indent: -9999px;
-	// appearance: none;
 	border: none;
 	transition: background 0.3s;
 	z-index: 999999;
@@ -54,7 +49,6 @@
 	&__menu {
 		display: block;
 		position: absolute;
-		// top: 30px;
 		left: 18px;
 		right: 18px;
 		height: 3px;
@@ -64,7 +58,6 @@
 
 		&:after, &:before {
 			position: absolute;
-			// display: block;
 			left: 0;
 			width: 100%;
 			height: 3px;

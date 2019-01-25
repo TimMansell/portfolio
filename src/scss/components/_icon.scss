@@ -1,0 +1,9 @@
+.icon {
+    font-size: 80px;
+    text-shadow: -1px -1px darken($primary-colour, 10%);
+    margin-bottom: 20px;
+
+    &--secondary {
+        font-size: 65px;
+    }
+}

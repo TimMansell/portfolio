@@ -1,15 +1,22 @@
 .divider {
 	 @include media-breakpoint-only(xs){
-		margin-bottom: 30px;
+		margin-bottom: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		&:after {
 			content:'';
+			margin-top: 20px;
 			border-bottom: 1px solid darken($primary-colour, 10%);;
-			// position: absolute;
 			width: 60%;
-			// transform: translate(-50%);
-			margin-top: 10px;
 			box-shadow: 0 1px lighten($primary-colour, 10%);
+		}
+	}
+
+	&:last-of-type {
+		&:after {
+			content: none;
 		}
 	}
 }

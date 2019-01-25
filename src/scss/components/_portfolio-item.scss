@@ -2,11 +2,9 @@
 	background: rgba($primary-colour, .3);
 	border: 1px solid rgba($primary-colour, .305);
 	padding: 10px;
-	margin-bottom: 20px;
 	transition: all .3s;
 	position: relative;
 	overflow: hidden;	
-	display: block;
 	height: 0;
 	padding-bottom: 56.25%;
 
@@ -47,36 +45,34 @@
   		height: 100%;
   		padding: 15px;
   		width: 100%;
-  		color: $portfolio-text-colour;
+		  color: $portfolio-text-colour;
+		  text-align: center;
 	}
 
 	&__title {
-		font-size: 18px;
-		color: $icon-colour;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	&__description {
 		font-size: 15px;
 		line-height: 1.2;
-  		margin-bottom: 5px;
+		margin-bottom: 5px;
+		display: none;
 
   		@include media-breakpoint-up(sm){
-  			line-height: 1.5;	
+			display: block;
   		}
 	}
 
 	&__tech {
 		position: absolute;
-		bottom: 45px;
+		bottom: 20px;
 		left: 0;
 		width: 100%;
 		padding-left: 10%;
 		padding-right: 10%;
-	}
-
-	&__img {
-		margin: auto;
+		font-size: 15px;
+		line-height: 1.2;
 	}
 
 	&__more-info {
