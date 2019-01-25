@@ -1,8 +1,8 @@
 import React from 'react';
 
-import InViewport from '../inViewport/inViewport';
+import {Header} from '../header/header';
+
 import {PortfolioItem} from './portfolioItem';
-import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 
 export class Portfolio extends React.Component {
     render() {
@@ -64,14 +64,7 @@ export class Portfolio extends React.Component {
         return <section id="portfolio" className="layout-section bg--secondary">
 			<div className="container container-large">
 
-				<div className="heading text--tertiary">
-					<InViewport>
-						<ShuffleCharacters>
-						<h2 className="heading__title text--center">Portfolio</h2>
-						</ShuffleCharacters>
-					</InViewport>
-					<p className="heading__description text--center">Here's a sample of my work</p>
-				</div>
+				<Header title="Portfolio" text="Here's a sample of my work" tertiary />
 
 				<div className="portfolio">
 					{listItems}	

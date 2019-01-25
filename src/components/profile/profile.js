@@ -1,22 +1,14 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import InViewport from '../inViewport/inViewport';
 import {SocialIcons} from '../socialIcons/socialIcons';
-import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
+import {Header} from '../header/header';
 
 export class Profile extends React.Component {
     render() {
         return <section id="profile" className="layout-section bg--tertiary scrollto">
 			<div className="container">
-
-				<div className="heading heading--primary">
-					<InViewport>
-						<ShuffleCharacters>
-							<h2 className="heading__title ">A little bit about myself</h2>
-						</ShuffleCharacters>
-					</InViewport>
-				</div>
+				<Header title="A little bit about myself" primary />
 			
 				<div className="profile text--center">
 					<p>I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.</p>
