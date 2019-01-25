@@ -18,7 +18,7 @@ export class Profile extends React.Component {
 					</InViewport>
 				</div>
 			
-				<div className="text--center">
+				<div className="profile text--center">
 					<p>I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.</p>
 
 					<p>I develop with best practices in mind and adhere to W3C standards. Unfortunately not all browsers are created equal, so I utilise Progressive Enhancement (where possible), and use CSS/JS transpilers (PostCSS &amp; Babel), to ensure my code works across all popluar evergreen browsers.</p>
