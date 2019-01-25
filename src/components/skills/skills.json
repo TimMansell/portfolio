@@ -1,0 +1,88 @@
+[
+    {
+        "list": [
+            "Semantic HTML5",
+            "Bootstrap 3/4",
+            "SEO",
+            "a11y",
+            "Web Components",
+            "Pattern Library"
+        ],
+        "icon": {
+            "name": "code",
+            "family": "fa"
+        }
+    },
+    {
+        "list": [
+            "CSS3",
+            "SCSS / LESS",
+            "BEM",
+            "OOCSS / SMACSS",
+            "PostCSS",
+            "Atomic Design",
+            "Styleguides"
+        ],
+        "icon": {
+            "name": "css3-alt",
+            "family": "fab"
+        }
+    },
+    {
+        "list": [
+            "Responsive",
+            "Mobile First",
+            "Retina",
+            "Performance",
+            "Optimisation"
+        ],
+        "icon": {
+            "name": "clipboard-list",
+            "family": "fa"
+        }
+    },
+    {
+        "list": [
+            "ES6+ / Babel",
+            "AngularJS",
+            "React / Redux",
+            "Vue / Vuex/ Nuxt",
+            "Backbone.js",
+            "JSON"
+        ],
+        "icon": {
+            "name": "js",
+            "family": "fab"
+        }
+    },
+    {
+        "list": [
+            "Node.js",
+            "NPM / Yarn",
+            "Gulp / Grunt",
+            "Git / SVN",
+            "Webpack",
+            "ESLint",
+            "Docker"
+        ],
+        "icon": {
+            "name": "terminal",
+            "family": "fa"
+        }
+    },
+    {
+        "list": [
+            "Agile",
+            "Scrum",
+            "Kanban",
+            "JIRA / VSTS",
+            "Slack",
+            "Trello",
+            "Table Tennis"
+        ],
+        "icon": {
+            "name": "trello",
+            "family": "fab"
+        }
+    }
+]

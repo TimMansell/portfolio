@@ -1,17 +1,21 @@
 import React from 'react';
 
-import classnames from 'classnames';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCss3Alt, faJs, faTrello } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faTerminal, faClipboardList, faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faCode, faCss3Alt, faJs, faTerminal, faClipboardList, faTrello, faGamepad);
+
 
 export default class SkillsItem extends React.Component {
     render() {
-		let iconClass = classnames('fa skills__icon', this.props.skill.icon);
-
         return (
 			<div>
-				<i className={iconClass}></i>
+				<FontAwesomeIcon icon={[this.props.skill.icon.family ,this.props.skill.icon.name]} size="4x" />
 				<ul className="skills__list">
 					{this.props.skill.list.map((item, i) =>
-						<li key={i}>{item}</li>
+						<li className="skills__item" key={i}>{item}</li>
 					)}
 				</ul>
 			</div>

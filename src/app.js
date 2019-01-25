@@ -6,6 +6,7 @@ import {Intro} from './components/intro/intro';
 
 import {Profile} from './components/profile/profile';
 import {Skills} from './components/skills/skills';
+import {CurrentStack} from './components/currentStack/currentStack';
 import {Portfolio} from './components/portfolio/portfolio';
 import {Stats} from './components/stats/stats';
 import {Presentations} from './components/presentations/presentations';
@@ -25,6 +26,7 @@ class App extends React.Component {
           <main className="content">
             <Profile />
             <Skills />
+            <CurrentStack />
             <Portfolio />
             <Stats />
             <Presentations />

@@ -1,18 +1,6 @@
 .testimonials {
   &__quote {
-    &:before, &:after {
-      font-family: FontAwesome;
-      font-size: 30px;
-      line-height: 30px;
-    }
-
-    &:before {
-      content: "\f10d";
-    }
-
-    &:after {
-      content: "\f10e";
-    }
+    font-size: 30px;
   }
 
   &__text {

@@ -19,6 +19,6 @@ ReactDOM.render(
 // Load web fonts.
 WebFont.load({
   google:{
-    families: ['Raleway:700,400']
+    families: ['Open Sans:700,400']
   }
 });  

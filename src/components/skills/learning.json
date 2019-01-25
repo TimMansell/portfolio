@@ -1,0 +1,12 @@
+[
+    {
+        "list": [
+            "WebVR / ReactVR",
+            "CSS Grid"
+        ],
+        "icon": {
+            "name": "gamepad",
+            "family": "fa"
+        }
+    }
+]
