@@ -20,20 +20,20 @@ export class Intro extends React.Component {
 
 		<div className="info">
 			<ScrollFade fadeMultiplier={1.15}>
-				<h4 className="info__text info__sub-title">Melbourne, Australia</h4>
+				<h4 className="info__text info__text--sub-title">Melbourne, Australia</h4>
 				<h1 className="info__title">Hi! I'm Tim Mansell</h1>
-				<div className="info__blurb">
-					<ShuffleContent>
-						<h4 className="info__blurb-item info__text">Front-end Engineer</h4>
-						<h4 className="info__blurb-item info__text">Javascript Engineer</h4>
-						<h4 className="info__blurb-item info__text">React Engineer</h4>
-						<h4 className="info__blurb-item info__text">VueJS Engineer</h4>
-					</ShuffleContent>
-				</div>
+				
+				<ShuffleContent>
+					<h4 className="info__text info__text--blurb">Front-end Engineer</h4>
+					<h4 className="info__text info__text--blurb">Javascript Engineer</h4>
+					<h4 className="info__text info__text--blurb">React Engineer</h4>
+					<h4 className="info__text info__text--blurb">VueJS Engineer</h4>
+				</ShuffleContent>
+				
 			</ScrollFade>
 		</div>
 
-		<div className="learn-more d-none d-lg-block">
+		<div className="learn-more">
 			<Link className="learn-more__link" to="profile" smooth={true}>
 				<FontAwesomeIcon className="learn-more__scroll" icon={faChevronDown} />
 			</Link>

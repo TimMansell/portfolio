@@ -8,7 +8,7 @@ library.add(faLinkedin, faTwitter, faGithub);
 
 export class SocialIcons extends React.Component {
     render() {
-        return <div className="social text--center">
+        return <div className="social">
             <a className="social__icon" target="_blank" href="https://au.linkedin.com/in/timmansell" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
             </a>

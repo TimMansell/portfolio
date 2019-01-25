@@ -1,4 +1,5 @@
 .learn-more {
+	display: none;
 	position: fixed;
 	bottom: 90px;
 	left: 0;
@@ -8,7 +9,11 @@
 	// Animate.
 	animation-duration: 1.5s;
     animation-name: floating;
-    animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	
+	@include media-breakpoint-up(lg){
+		display: block;
+	}
 
 
 	&__scroll {

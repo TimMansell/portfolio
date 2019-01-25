@@ -10,10 +10,10 @@ export class Profile extends React.Component {
         return <section id="profile" className="layout-section bg--tertiary scrollto">
 			<div className="container">
 
-				<div className="heading">
+				<div className="heading heading--primary">
 					<InViewport>
 						<ShuffleCharacters>
-							<h2 className="heading__title heading--primary text--center">A little bit about myself</h2>
+							<h2 className="heading__title ">A little bit about myself</h2>
 						</ShuffleCharacters>
 					</InViewport>
 				</div>

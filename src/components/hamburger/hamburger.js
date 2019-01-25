@@ -12,8 +12,8 @@ class Hamburger extends React.Component {
     }
 	
     render() {
-        let classes = classnames('hamburger d-lg-none', {
-			'hamburger--active': this.props.isMobileMenu
+      let classes = classnames('hamburger', {
+		  	'hamburger--active': this.props.isMobileMenu
 		});
 
         return <button className={classes} onClick={this.handleClick}>
