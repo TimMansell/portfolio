@@ -1,4 +1,17 @@
 .lighter-note {
+	display: grid;
+	grid-gap: 16px;
+
+	@include media-breakpoint-up(sm){
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	&__amount {
 		font-size: 40px;
   		margin-top: 20px;

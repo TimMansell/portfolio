@@ -13,20 +13,18 @@ export class Presentations extends React.Component {
     render() {
         return <section id="presentations" className="layout-section bg--secondary">
 			<div className="container">
-				<div className="row text--center">
-					<div className="col-12">
-						<div className="heading text--tertiary">
-							<InViewport>
-								<ShuffleCharacters>
-								<h2 className="heading__title text--center">Presentations</h2>
-								</ShuffleCharacters>
-							</InViewport>
-							<p className="heading__description">Some talks I have done</p>
-						</div>
-					</div>
+
+				<div className="heading text--tertiary">
+					<InViewport>
+						<ShuffleCharacters>
+						<h2 className="heading__title text--center">Presentations</h2>
+						</ShuffleCharacters>
+					</InViewport>
+					<p className="heading__description text--center">Some talks I have done</p>
 				</div>
-				<div className="row text--center">
-					<div className="col-sm-10 offset-sm-1">
+
+				<div className="skills">
+					<div className="skills--single text--center">
 						<FontAwesomeIcon icon={faChalkboardTeacher} className="lighter-note__icon text--secondary" />
 						<ul className="text--tertiary skills__list">
 							<li className="skills__item"><a className="link link--alt" href="https://timmansell.github.io/presentations/web-components/index.html" target="_blank" rel="noopener noreferrer">Web components</a></li>

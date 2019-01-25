@@ -10,7 +10,10 @@ library.add(faDesktop);
 export class PortfolioItem extends React.Component {
     render() {
         return <div className="portfolio-item">
-            <InViewport><img className="portfolio-item__img img--responsive" src={this.props.data.thumb} alt={this.props.data.title} /></InViewport>
+            <InViewport>
+                <img className="portfolio-item__img img--responsive" src={this.props.data.thumb} alt={this.props.data.title} />
+            </InViewport>
+            
             <div className="portfolio-item__info text--center">
                 <h3 className="portfolio-item__title">{this.props.data.title}</h3>
                 <p className="portfolio-item__description d-none d-md-block">{this.props.data.description}</p>

@@ -15,6 +15,11 @@
 		grid-template-columns: repeat(6, 1fr);
 	}
 
+	&--single {
+		grid-column-end: -1;
+		grid-column-start: 1;
+	}
+
 	&__icon {
 		font-size: 65px;
 		text-shadow: -1px -1px darken($primary-colour, 10%);
@@ -29,13 +34,6 @@
 		@include media-breakpoint-up(sm){
 			margin-top: 20px;
 			font-size: 18px;
-		}
-	}
-
-	&__item {
-		&--single {
-			grid-column-end: -1;
-			grid-column-start: 1;
 		}
 	}
 

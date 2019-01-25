@@ -12,22 +12,20 @@ export class Skills extends React.Component {
     render() {
         return <section id="skills" className="layout-section bg--primary text--center">
 			<div className="container">
-				<div className="row">
-					<div className="col-12">
-						<div className="heading text--secondary">
-							<InViewport>
-								<ShuffleCharacters>
-									<h2 className="heading__title text--center">Skills</h2>
-								</ShuffleCharacters>
-							</InViewport>
-							<p className="heading__description">I have acquired many skills during my professional career.  Most notable and relevant are</p>
-						</div>
-					</div>
+
+				<div className="heading text--secondary">
+					<InViewport>
+						<ShuffleCharacters>
+							<h2 className="heading__title text--center">Skills</h2>
+						</ShuffleCharacters>
+					</InViewport>
+					<p className="heading__description">I have acquired many skills during my professional career.  Most notable and relevant are</p>
 				</div>
+
 
 				<div className="skills">
 					{skills.map((skill, i) =>
-						<div className="skills__item text--center text--secondary divider" key={i}>
+						<div className="text--center text--secondary divider" key={i}>
 							<SkillsItem skill={skill} />
 						</div>
 					)}
@@ -36,7 +34,7 @@ export class Skills extends React.Component {
 				<p className="text-description text--secondary">I am currently playing around with</p>
 				<div className="skills">
 					{learning.map((skill, i) =>
-						<div className="skills__item--single text--center text--secondary" key={i}>
+						<div className="skills--single text--center text--secondary" key={i}>
 							<SkillsItem skill={skill} />
 						</div>
 					)}

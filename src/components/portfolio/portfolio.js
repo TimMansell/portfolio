@@ -58,28 +58,23 @@ export class Portfolio extends React.Component {
 		];
 
 		let listItems = items.map((item, i) =>
-			<div className="col-12 col-sm-6 col-lg-4" key={i}>
-		 		<PortfolioItem data={item} />
-			</div>
+			<PortfolioItem data={item} key={i} />
 		);
 
         return <section id="portfolio" className="layout-section bg--secondary">
 			<div className="container container-large">
-				<div className="row text--center">
-					<div className="col-12">
-						<div className="heading text--tertiary">
-							<InViewport>
-								<ShuffleCharacters>
-								<h2 className="heading__title text--center">Portfolio</h2>
-								</ShuffleCharacters>
-							</InViewport>
-							<p className="heading__description">Here's a sample of my work</p>
-						</div>
-					</div>
+
+				<div className="heading text--tertiary">
+					<InViewport>
+						<ShuffleCharacters>
+						<h2 className="heading__title text--center">Portfolio</h2>
+						</ShuffleCharacters>
+					</InViewport>
+					<p className="heading__description text--center">Here's a sample of my work</p>
 				</div>
 
-				<div className="row">
-				{listItems}	
+				<div className="portfolio">
+					{listItems}	
 				</div>
 				
 			</div>

@@ -13,8 +13,8 @@ export class Stats extends React.Component {
     render() {
         return <section className="layout-section bg--primary text--secondary">
 			<div className="container">
-				<div className="row text--center lighter-note">
-					<div className="col-xs-12 col-sm-3 divider">
+				<div className="lighter-note">
+					<div className="lighter-note__item divider">
 						<FontAwesomeIcon icon={faCode} className="lighter-note__icon" />
 						<InViewport>
 							<p className="lighter-note__amount">
@@ -23,7 +23,7 @@ export class Stats extends React.Component {
 						</InViewport>
 						<p className="lighter-note__text">lines of code</p>
 					</div>
-					<div className="col-xs-12 col-sm-3 divider">
+					<div className="lighter-note__item divider">
 						<FontAwesomeIcon icon={faCodeBranch} className="lighter-note__icon" />
 						<InViewport>
 							<p className="lighter-note__amount">
@@ -32,7 +32,7 @@ export class Stats extends React.Component {
 						</InViewport>
 						<p className="lighter-note__text">git commits</p>
 					</div>
-					<div className="col-xs-12 col-sm-3 divider">
+					<div className="lighter-note__item divider">
 						<FontAwesomeIcon icon={faMugHot} className="lighter-note__icon" />
 						<InViewport>
 							<p className="lighter-note__amount">
@@ -41,7 +41,7 @@ export class Stats extends React.Component {
 						</InViewport>
 						<p className="lighter-note__text">coffees consumed</p>
 					</div>
-					<div className="col-xs-12 col-sm-3 divider">
+					<div className="lighter-note__item divider">
 						<FontAwesomeIcon icon={faBicycle} className="lighter-note__icon" />
 						<InViewport>
 							<p className="lighter-note__amount">
