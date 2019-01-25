@@ -1,7 +1,6 @@
 import React from 'react';
 
-import InViewport from '../inViewport/inViewport';
-import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
+import {Header} from '../header/header';
 
 import SkillsItem from './skillsItem';
 
@@ -13,14 +12,7 @@ export class Skills extends React.Component {
         return <section id="skills" className="layout-section bg--primary text--center">
 			<div className="container">
 
-				<div className="heading text--secondary">
-					<InViewport>
-						<ShuffleCharacters>
-							<h2 className="heading__title text--center">Skills</h2>
-						</ShuffleCharacters>
-					</InViewport>
-					<p className="heading__description">I have acquired many skills during my professional career.  Most notable and relevant are</p>
-				</div>
+				<Header title="Skills" text="I have acquired many skills during my professional career.  Most notable and relevant are" secondary />
 
 
 				<div className="skills">

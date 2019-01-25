@@ -1,7 +1,6 @@
 import React from 'react';
 
-import InViewport from '../inViewport/inViewport';
-import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
+import {Header} from '../header/header';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
@@ -14,14 +13,7 @@ export class Presentations extends React.Component {
         return <section id="presentations" className="layout-section bg--secondary">
 			<div className="container">
 
-				<div className="heading text--tertiary">
-					<InViewport>
-						<ShuffleCharacters>
-						<h2 className="heading__title text--center">Presentations</h2>
-						</ShuffleCharacters>
-					</InViewport>
-					<p className="heading__description text--center">Some talks I have done</p>
-				</div>
+				<Header title="Presentations" text="Some talks I have done" tertiary />
 
 				<div className="skills">
 					<div className="skills--single text--center">
