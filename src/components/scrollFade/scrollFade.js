@@ -37,3 +37,5 @@ export class ScrollFade extends React.Component {
         return <div style={this.state.styles}>{this.props.children}</div>;
     }
 }
+
+export default ScrollFade;

@@ -22,3 +22,5 @@ export class CurrentStack extends React.Component {
 		</section>;
     }
 }
+
+export default CurrentStack;

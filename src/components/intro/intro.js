@@ -42,3 +42,5 @@ export class Intro extends React.Component {
 	</section>;
     }
 }
+
+export default Intro;

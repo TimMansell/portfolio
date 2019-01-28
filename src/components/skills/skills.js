@@ -30,3 +30,5 @@ export class Skills extends React.Component {
 		</section>;
     }
 }
+
+export default Skills;

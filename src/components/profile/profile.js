@@ -25,3 +25,5 @@ export class Profile extends React.Component {
 		</section>;
     }
 }
+
+export default Profile;

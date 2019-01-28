@@ -7,7 +7,7 @@ import * as actions from '../../actions';
 
 import debounce from 'lodash/debounce';
 
-class WindowLock extends React.Component {
+export class WindowLock extends React.Component {
 	constructor(props) {
 		super(props);
 

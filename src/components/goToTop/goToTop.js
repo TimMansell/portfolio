@@ -47,3 +47,5 @@ export class GoToTop extends React.Component {
         </Link>;
     }
 }
+
+export default GoToTop;

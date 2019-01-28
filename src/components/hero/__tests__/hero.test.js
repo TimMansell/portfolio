@@ -1,7 +1,7 @@
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 
-import Hero from './hero';
+import Hero from '../hero';
 
 describe("Hero", () => {
   it("should render my component", () => {

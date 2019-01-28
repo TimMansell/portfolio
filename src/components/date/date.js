@@ -8,3 +8,5 @@ export class Copyright extends React.Component {
         return <p className="footer-bar__text">&copy; {format(new Date(), 'YYYY')}<br/>Tim Mansell</p>;
     }
 }
+
+export default Copyright;

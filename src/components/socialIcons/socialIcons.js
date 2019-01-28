@@ -21,3 +21,5 @@ export class SocialIcons extends React.Component {
         </div>;
     }
 }
+
+export default SocialIcons;

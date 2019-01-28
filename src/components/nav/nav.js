@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
 
 import Hamburger from '../hamburger/hamburger';
 
-class Navigation extends React.Component {
+export class Navigation extends React.Component {
 	constructor(props) {
 		super(props);
 
