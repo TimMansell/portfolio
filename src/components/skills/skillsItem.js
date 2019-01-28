@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(faCode, faCss3Alt, faJs, faTerminal, faClipboardList, faTrello, faGamepad);
 
 
-export default class SkillsItem extends React.Component {
+export class SkillsItem extends React.Component {
     render() {
         return (
 			<div className="divider">
@@ -22,3 +22,5 @@ export default class SkillsItem extends React.Component {
 		);
     }
 }
+
+export default SkillsItem;

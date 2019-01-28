@@ -18,7 +18,7 @@ import {GoToTop} from './components/goToTop/goToTop';
 
 import WindowLock from './components/windowLock/windowLock';
 
-class App extends React.Component {
+export class App extends React.Component {
     render() {
         return (<div>
           <Navigation />
