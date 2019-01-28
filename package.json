@@ -34,6 +34,7 @@
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "serve": "serve -s build"
   },
