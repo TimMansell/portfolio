@@ -9,7 +9,7 @@ describe("Header", () => {
   });
 
   it("Should display a title", () => {
-    const wrapper = shallow(<Header title="t1itle" />);
+    const wrapper = shallow(<Header title="title" />);
 
     expect(
       wrapper.find('[data-test-heading-title]').text()
