@@ -33,7 +33,7 @@
     "build": "run-s build:css build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --verbose=false",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "serve": "serve -s build"
