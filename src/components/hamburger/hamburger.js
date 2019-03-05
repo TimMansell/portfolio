@@ -6,7 +6,7 @@ import classnames from 'classnames';
 
 import * as actions from '../../actions';
 
-class Hamburger extends React.Component {
+export class Hamburger extends React.Component {
     handleClick = () => {
         this.props.actions.setMobileMenu(!this.props.isMobileMenu);
     }

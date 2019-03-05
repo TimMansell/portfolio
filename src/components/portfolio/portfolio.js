@@ -74,3 +74,5 @@ export class Portfolio extends React.Component {
 		</section>;
     }
 }
+
+export default Portfolio;

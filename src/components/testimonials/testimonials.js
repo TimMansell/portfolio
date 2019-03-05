@@ -60,3 +60,5 @@ export class Testimonials extends React.Component {
 		</section>;
     }
 }
+
+export default Testimonials;

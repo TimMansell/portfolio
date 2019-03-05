@@ -11,3 +11,5 @@ export class TestimonialItem extends React.Component {
         </div>;
     }
 }
+
+export default TestimonialItem;

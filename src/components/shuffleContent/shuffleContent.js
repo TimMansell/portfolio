@@ -45,3 +45,5 @@ export class ShuffleContent extends React.Component {
         // return {this.state.renderChild ? <ShuffleCharacters>{this.state.content}</ShuffleCharacters> : null};
     }
 }
+
+export default ShuffleContent;

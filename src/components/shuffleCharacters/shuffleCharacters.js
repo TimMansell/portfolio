@@ -16,3 +16,5 @@ export class ShuffleCharacters extends React.Component {
         return <div>{this.props.children}</div>;
     }
 }
+
+export default ShuffleCharacters

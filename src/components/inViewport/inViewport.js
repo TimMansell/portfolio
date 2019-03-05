@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import inViewport from 'in-viewport';
 
-export default class InViewport extends React.Component {
+export class InViewport extends React.Component {
     constructor(props) {
 		super(props);
 
@@ -30,3 +30,5 @@ export default class InViewport extends React.Component {
         </div>;
     }
 }
+
+export default InViewport;

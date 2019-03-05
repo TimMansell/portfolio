@@ -3,7 +3,7 @@ import React from 'react';
 
 import { throttle } from 'lodash';
 
-class Hero extends React.Component {
+export class Hero extends React.Component {
     constructor(props) {
         super(props);
 

@@ -28,3 +28,5 @@ export class PortfolioItem extends React.Component {
         </div>;
     }
 }
+
+export default PortfolioItem;

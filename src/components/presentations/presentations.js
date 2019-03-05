@@ -28,3 +28,5 @@ export class Presentations extends React.Component {
 		</section>;
     }
 }
+
+export default Presentations;

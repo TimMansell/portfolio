@@ -55,3 +55,5 @@ export class Stats extends React.Component {
 		</section>;
     }
 }
+
+export default Stats;

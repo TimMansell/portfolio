@@ -15,10 +15,10 @@
     "node-sass": "4.9.3",
     "normalize-scss": "^7.0.0",
     "npm-run-all": "^4.0.2",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-redux": "^5.0.5",
-    "react-scripts": "2.0.4",
+    "react-scripts": "2.1.3",
     "react-scroll": "^1.5.3",
     "react-scrolllock": "^1.0.8",
     "redux": "^3.7.2",
@@ -29,11 +29,13 @@
   "scripts": {
     "build:css": "node-sass --include-path ./node_modules src/scss -o src/css/",
     "watch:css": "npm run build:css && node-sass --include-path ./node_modules src/scss -o src/css/ --watch --recursive",
-    "start": "run-p watch:css start:react",
-    "build": "run-s build:css build:react",
+    "start": "run-p watch:css start:react test",
+    "build": "run-s test build:css build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --verbose=false",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
+    "test:all": "cross-env CI=true yarn test",
     "eject": "react-scripts eject",
     "serve": "serve -s build"
   },
@@ -42,5 +44,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "react-test-renderer": "^16.7.0"
+  }
 }
