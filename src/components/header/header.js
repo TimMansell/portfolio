@@ -15,13 +15,13 @@ export class Header extends React.Component {
         let text = '';
         
         if (this.props.text) {
-            text = <p className="heading__description text--center">{this.props.text}</p>;
+            text = <p className="heading__description text--center" data-test-heading-description>{this.props.text}</p>;
         }
         
         return <div className={classes}>
             <InViewport>
                 <ShuffleCharacters>
-                    <h2 className="heading__title">{this.props.title}</h2>
+                    <h2 className="heading__title" data-test-heading-title>{this.props.title}</h2>
                 </ShuffleCharacters>
             </InViewport>
             {text}
