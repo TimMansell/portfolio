@@ -6,6 +6,7 @@ import {Intro} from './components/intro/intro';
 
 import {Profile} from './components/profile/profile';
 import {Skills} from './components/skills/skills';
+import {RetiredSkills} from './components/skills/retiredSkills';
 import {CurrentStack} from './components/currentStack/currentStack';
 import {Portfolio} from './components/portfolio/portfolio';
 import {Stats} from './components/stats/stats';
@@ -26,6 +27,7 @@ export class App extends React.Component {
           <main className="content">
             <Profile />
             <Skills />
+            <RetiredSkills />
             <CurrentStack />
             <Portfolio />
             <Stats />
