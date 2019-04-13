@@ -35,7 +35,9 @@
             "Mobile First CSS",
             "Retina Images",
             "Web Performance",
-            "Optimisation"
+            "Page Optimisation",
+            "CI/CD",
+            "Unit Testing"
         ],
         "icon": {
             "name": "clipboard-list",
@@ -63,9 +65,9 @@
             "NPM / Yarn",
             "Git",
             "ESLint",
-            "Docker",
             "Netlify",
-            "Semaphore"
+            "Semaphore",
+            "Docker"
         ],
         "icon": {
             "name": "terminal",
