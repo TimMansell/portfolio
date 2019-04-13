@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Section from '../../layout/section/section';
 import {Header} from '../header/header';
 
 import SkillsItem from './skillsItem';
@@ -8,7 +9,7 @@ import skills from './skills.json';
 
 export class Skills extends React.Component {
     render() {
-        return <section id="skills" className="layout-section bg--primary">
+        return <Section id="skills" primary>
 			<div className="container">
 				<Header title="Skills" text="I have acquired many skills during my professional career.  Most notable and relevant are" secondary />
 
@@ -19,7 +20,7 @@ export class Skills extends React.Component {
 				</div>
 				
 			</div>
-		</section>;
+		</Section>;
     }
 }
 
