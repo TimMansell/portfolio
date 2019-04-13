@@ -18,7 +18,7 @@ export class Presentations extends React.Component {
 				<div className="skills skills--single">
 					
 						<FontAwesomeIcon icon={faChalkboardTeacher} className="icon" />
-						<ul className="skills__list skills__list--alternate">
+						<ul className="skills__list">
 							<li className="skills__item"><a className="link link--alt" href="https://timmansell.github.io/presentations/web-components/index.html" target="_blank" rel="noopener noreferrer">Web components</a></li>
 							<li className="skills__item"><a className="link link--alt" href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY" target="_blank" rel="noopener noreferrer">CSS with superpowers</a></li>
 						</ul>

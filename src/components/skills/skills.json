@@ -1,12 +1,13 @@
 [
     {
         "list": [
-            "Semantic HTML5",
-            "Bootstrap 3/4",
+            "HTML5",
+            "Semantic Markup",
+            "Bootstrap 4",
             "SEO",
             "a11y",
             "Web Components",
-            "Pattern Library"
+            "Styleguides"
         ],
         "icon": {
             "name": "code",
@@ -16,12 +17,12 @@
     {
         "list": [
             "CSS3",
-            "SCSS / LESS",
+            "SCSS",
             "BEM",
-            "OOCSS / SMACSS",
+            "SMACSS",
             "PostCSS",
             "Atomic Design",
-            "Styleguides"
+            "CSS Grid"
         ],
         "icon": {
             "name": "css3-alt",
@@ -30,11 +31,13 @@
     },
     {
         "list": [
-            "Responsive",
-            "Mobile First",
-            "Retina",
-            "Performance",
-            "Optimisation"
+            "Responsive Design",
+            "Mobile First CSS",
+            "Retina Images",
+            "Web Performance",
+            "Page Optimisation",
+            "CI/CD",
+            "Unit Testing"
         ],
         "icon": {
             "name": "clipboard-list",
@@ -43,11 +46,12 @@
     },
     {
         "list": [
-            "ES6+ / Babel",
-            "AngularJS",
+            "ES6+",
+            "Babel",
+            "Webpack",
             "React / Redux",
-            "Vue / Vuex/ Nuxt",
-            "Backbone.js",
+            "Vue / Vuex / Nuxt",
+            "Jest",
             "JSON"
         ],
         "icon": {
@@ -59,10 +63,10 @@
         "list": [
             "Node.js",
             "NPM / Yarn",
-            "Gulp / Grunt",
-            "Git / SVN",
-            "Webpack",
+            "Git",
             "ESLint",
+            "Netlify",
+            "Semaphore",
             "Docker"
         ],
         "icon": {
@@ -75,7 +79,7 @@
             "Agile",
             "Scrum",
             "Kanban",
-            "JIRA / VSTS",
+            "JIRA",
             "Slack",
             "Trello",
             "Table Tennis"
