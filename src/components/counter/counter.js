@@ -34,7 +34,7 @@ class Counter extends React.Component {
     }
 
     render() {
-        return <span>{this.state.counter}+</span>;
+        return <>{this.state.counter}+</>;
     }
 }
 

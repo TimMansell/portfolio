@@ -6,7 +6,7 @@ import {Copyright} from '../date/date';
 
 export class Footer extends React.Component {
     render() {
-        return <footer id="contact" className="footer layout-section bg--secondary scrollto">
+        return <footer id="contact" className="footer layout-section bg--secondary">
 		<div className="footer-bar">
 			<div className="container">
 				<SocialIcons />

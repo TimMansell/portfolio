@@ -24,10 +24,10 @@ export class InViewport extends React.Component {
     }
     
     render() {
-        return <div>
+        return <>
             {!this.state.isInViewport && <span>&nbsp;</span> }
             {this.state.isInViewport && <span>{this.props.children}</span>}
-        </div>;
+        </>;
     }
 }
 
