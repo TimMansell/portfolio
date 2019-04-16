@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import Section from '../../layout/section/section';
 import {SocialIcons} from '../socialIcons/socialIcons';
 import {Header} from '../header/header';
 
 export class Profile extends React.Component {
     render() {
-        return <Section id="profile" tertiary>
+        return <>
 				<Header title="A little bit about myself" primary />
 			
 				<div className="profile text--center">
@@ -21,7 +20,7 @@ export class Profile extends React.Component {
 				</div>
 				
 				<SocialIcons />
-			</Section>
+			</>
     }
 }
 

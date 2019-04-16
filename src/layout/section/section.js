@@ -2,21 +2,24 @@ import React from 'react';
 
 import classnames from 'classnames';
 
-class Section extends React.Component {
-	render() {
-		const classes = classnames('layout-section scrollto', {
-			'bg--primary': this.props.primary,
-			'bg--secondary': this.props.secondary,
-			'bg--tertiary': this.props.tertiary
-		});
+const SectionWrap = ({container, background, id="", children}) => {
+	const sectionClasses = classnames('layout-section', {
+		'bg--primary': background === 'primary',
+		'bg--secondary': background === 'secondary',
+		'bg--tertiary': background === 'tertiary'
+	});
 
-		return <section id={this.props.id} className={classes}>
-			<div className="container">
-				{this.props.children}
-			</div>
-		</section>
-	}
+	const containerClasses = classnames('container', {
+		'container-medium': container === 'medium',
+		'container-large': container === 'large'
+	});
+
+	return <section id={id} className={sectionClasses}>
+		<div className={containerClasses}>
+			{children}
+		</div>
+	</section>
 };
 
   
-  export default Section;
+export default SectionWrap;
