@@ -11,8 +11,7 @@ library.add(faCode, faCodeBranch, faMugHot, faBicycle);
 
 export class Stats extends React.Component {
     render() {
-        return <section className="layout-section bg--primary">
-			<div className="container">
+        return <>
 				<div className="lighter-note">
 					<div className="lighter-note__item divider">
 						<FontAwesomeIcon icon={faCode} className="icon" />
@@ -51,8 +50,7 @@ export class Stats extends React.Component {
 						<p className="lighter-note__text">kilometers cycled</p>
 					</div>
 				</div>
-			</div>
-		</section>;
+			</>;
     }
 }
 

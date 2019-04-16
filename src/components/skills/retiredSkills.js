@@ -8,8 +8,7 @@ import skills from './retiredSkills.json';
 
 export class RetiredSkills extends React.Component {
     render() {
-        return <section id="retired-skills" className="layout-section bg--secondary">
-			<div className="container">
+        return <>
 				<Header title="Retired Skills" text="I am still highly skilled in this area, but I have since moved onto newer tech" tertiary />
 
 				<div className="skills">
@@ -17,8 +16,7 @@ export class RetiredSkills extends React.Component {
 						<SkillsItem skill={skill} key={i} />
 					)}
 				</div>
-			</div>
-		</section>;
+			</>;
     }
 }
 

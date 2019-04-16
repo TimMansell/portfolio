@@ -6,8 +6,7 @@ import {Header} from '../header/header';
 
 export class Profile extends React.Component {
     render() {
-        return <section id="profile" className="layout-section bg--tertiary scrollto">
-			<div className="container">
+        return <>
 				<Header title="A little bit about myself" primary />
 			
 				<div className="profile text--center">
@@ -21,8 +20,7 @@ export class Profile extends React.Component {
 				</div>
 				
 				<SocialIcons />
-			</div>
-		</section>;
+			</>
     }
 }
 
