@@ -1,0 +1,56 @@
+[
+    {
+        "list": [
+            "PHP",
+            "MySQL",
+            "Bootstrap 3"
+        ],
+        "icon": {
+            "name": "code",
+            "family": "fa"
+        }
+    },
+    {
+        "list": [
+            "LESS",
+            "OOCSS",
+            "Compass"
+        ],
+        "icon": {
+            "name": "css3-alt",
+            "family": "fab"
+        }
+    },
+    {
+        "list": [
+            "AngularJS",
+            "Backbone.js",
+            "jQuery"
+        ],
+        "icon": {
+            "name": "js",
+            "family": "fab"
+        }
+    },
+    {
+        "list": [
+            "Gulp / Grunt",
+            "SVN",
+            "Bower"
+        ],
+        "icon": {
+            "name": "terminal",
+            "family": "fa"
+        }
+    },
+    {
+        "list": [
+            "Waterfall",
+            "VSTS"
+        ],
+        "icon": {
+            "name": "trello",
+            "family": "fab"
+        }
+    }
+]

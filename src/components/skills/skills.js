@@ -5,7 +5,6 @@ import {Header} from '../header/header';
 import SkillsItem from './skillsItem';
 
 import skills from './skills.json';
-import learning from './learning.json';
 
 export class Skills extends React.Component {
     render() {
@@ -18,14 +17,7 @@ export class Skills extends React.Component {
 						<SkillsItem skill={skill} key={i} />
 					)}
 				</div>
-
-				<p className="text-description text--secondary text--center">I am currently playing around with</p>
 				
-				<div className="skills skills--single">
-					{learning.map((skill, i) =>
-						<SkillsItem skill={skill} key={i} />
-					)}
-				</div>
 			</div>
 		</section>;
     }

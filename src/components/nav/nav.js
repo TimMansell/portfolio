@@ -68,6 +68,9 @@ export class Navigation extends React.Component {
 					<Link className="navigation__menu-link" activeClass="active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
 				</li>
 				<li className="navigation__menu-item">
+					<Link className="navigation__menu-link" activeClass="active" to="retired-skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Retired Skills</Link>
+				</li>
+				<li className="navigation__menu-item">
 					<Link className="navigation__menu-link" activeClass="active" to="stack" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Stack</Link>
 				</li>
 				<li className="navigation__menu-item">
