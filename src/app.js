@@ -18,50 +18,47 @@ import {GoToTop} from './components/goToTop/goToTop';
 
 import WindowLock from './components/windowLock/windowLock';
 
-export class App extends React.Component {
-    render() {
-        return (<div>
-          <Navigation />
-          <Intro />
-          <main className="content">
-            <SectionWrap id="profile" background="tertiary">
-              <Profile />
-            </SectionWrap>
+export const App = () => {
+  return <>
+    <Navigation />
+    <Intro />
+    <main className="content">
+      <SectionWrap id="profile" background="tertiary">
+        <Profile />
+      </SectionWrap>
 
-            <SectionWrap id="skills" background="primary">
-              <Skills />
-            </SectionWrap>
-            
-            <SectionWrap id="retired-skills" background="secondary">
-              <RetiredSkills />
-            </SectionWrap>
-            
-            <SectionWrap id="stack" background="tertiary" container="medium">
-              <CurrentStack />
-            </SectionWrap>
-            
-            <SectionWrap id="portfolio" background="secondary" container="large">
-              <Portfolio />
-            </SectionWrap>
-            
-            <SectionWrap id="stats" background="primary">
-              <Stats />
-            </SectionWrap>
-            
-            <SectionWrap id="presentations" background="secondary">
-              <Presentations />
-            </SectionWrap>
-            
-            <SectionWrap id="testimonials" background="tertiary">
-              <Testimonials />
-            </SectionWrap>
-          </main>
-          <Footer />
-          <GoToTop />
-          <WindowLock />
-          
-        </div>);
-    }
+      <SectionWrap id="skills" background="primary">
+        <Skills />
+      </SectionWrap>
+      
+      <SectionWrap id="retired-skills" background="secondary">
+        <RetiredSkills />
+      </SectionWrap>
+      
+      <SectionWrap id="stack" background="tertiary" container="medium">
+        <CurrentStack />
+      </SectionWrap>
+      
+      <SectionWrap id="portfolio" background="secondary" container="large">
+        <Portfolio />
+      </SectionWrap>
+      
+      <SectionWrap id="stats" background="primary">
+        <Stats />
+      </SectionWrap>
+      
+      <SectionWrap id="presentations" background="secondary">
+        <Presentations />
+      </SectionWrap>
+      
+      <SectionWrap id="testimonials" background="tertiary">
+        <Testimonials />
+      </SectionWrap>
+    </main>
+    <Footer />
+    <GoToTop />
+    <WindowLock />
+  </>;
 }
 
 function mapStateToProps(state, ownProps) {

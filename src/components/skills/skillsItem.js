@@ -7,20 +7,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add(faCode, faCss3Alt, faJs, faTerminal, faClipboardList, faTrello, faGamepad);
 
-
-export class SkillsItem extends React.Component {
-    render() {
-        return (
-			<div className="divider">
-				<FontAwesomeIcon icon={[this.props.skill.icon.family ,this.props.skill.icon.name]} className="icon icon--secondary" />
-				<ul className="skills__list">
-					{this.props.skill.list.map((item, i) =>
-						<li className="skills__item" key={i}>{item}</li>
-					)}
-				</ul>
-			</div>
-		);
-    }
+export const SkillsItem = ({skill}) => {
+	return <div className="divider">
+		<FontAwesomeIcon icon={[skill.icon.family ,skill.icon.name]} className="icon icon--secondary" />
+		<ul className="skills__list">
+			{skill.list.map((item, i) =>
+				<li className="skills__item" key={i}>{item}</li>
+			)}
+		</ul>
+	</div>;
 }
 
 export default SkillsItem;
