@@ -10,8 +10,8 @@ const SectionWrap = ({container, background, id="", children}) => {
 	});
 
 	const containerClasses = classnames('container', {
-		'container-medium': container === 'medium',
-		'container-large': container === 'large'
+		'container--medium': container === 'medium',
+		'container--large': container === 'large'
 	});
 
 	return <section id={id} className={sectionClasses}>
@@ -21,5 +21,4 @@ const SectionWrap = ({container, background, id="", children}) => {
 	</section>
 };
 
-  
 export default SectionWrap;
