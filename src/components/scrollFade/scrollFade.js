@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { throttle } from 'lodash';
 
 export class ScrollFade extends React.Component {
@@ -20,9 +19,11 @@ export class ScrollFade extends React.Component {
     }
 
     handleScroll = throttle((e) => {
-        let opacity = 1 - (window.scrollY / window.innerHeight) * this.props.fadeMultiplier;
+        const { fadeMultiplier } = this.props;
 
-        let styles = {
+        const opacity = 1 - (window.scrollY / window.innerHeight) * fadeMultiplier;
+
+        const styles = {
             opacity: opacity
         };
 
@@ -34,7 +35,9 @@ export class ScrollFade extends React.Component {
     }, 30)
 
     render() {
-        return <div style={this.state.styles}>{this.props.children}</div>;
+        const { children } = this.props;
+
+        return <div style={this.state.styles}>{children}</div>;
     }
 }
 

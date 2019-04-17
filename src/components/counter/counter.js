@@ -5,10 +5,10 @@ class Counter extends React.Component {
         super(props);
 
         this.state = {
-            counter: this.props.begin
+            counter: props.begin
         };
 
-        this.randomCountTo = Math.floor(Math.random()*(this.props.end-this.props.begin+1)+this.props.begin)
+        this.randomCountTo = Math.floor(Math.random()*(props.end-props.begin+1)+props.begin)
     }
 
     componentDidMount() {

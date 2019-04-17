@@ -49,14 +49,16 @@ export class Navigation extends React.Component {
 		this.props.actions.setMobileMenu(false);
 	}
 
-    render() {
+	render() {
+		const { isMobileMenu } = this.props;
+
 		let navClasses = classnames('navigation', {
-			'navigation__menu-is-sticky': this.state.isFixedNav && !this.props.isMobileMenu,
-			'navigation__active': this.props.isMobileMenu
+			'navigation__menu-is-sticky': this.state.isFixedNav && !isMobileMenu,
+			'navigation__active': isMobileMenu
 		});
 
 		let menuClasses = classnames('navigation__menu', {
-			'navigation__menu-active': this.props.isMobileMenu
+			'navigation__menu-active': isMobileMenu
 		});
 
         return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>

@@ -37,7 +37,9 @@ export class WindowLock extends React.Component {
 	}
 
 	render() {
-			return <div>{this.props.isMobileMenu && this.state.isMobileView && <ScrollLock />}</div>;
+		const { isMobileMenu } = this.props;
+
+		return <>{isMobileMenu && this.state.isMobileView && <ScrollLock />}</>;
 	}
 }
 

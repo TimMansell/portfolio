@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 import { throttle } from 'lodash';
 
 export class Hero extends React.Component {
@@ -8,8 +6,7 @@ export class Hero extends React.Component {
         super(props);
 
         this.state = {
-            blurFrom: props.blurFrom, 
-            blurTo: props.blurTo
+            styles: {}
         };
     }
 
@@ -22,24 +19,10 @@ export class Hero extends React.Component {
     }
 
     handleScroll = throttle((e) => {
-        let blur = this.props.blurFrom + ( (this.props.blurTo - this.props.blurFrom) * (window.scrollY / window.innerHeight));
-
-        let blurCss;
-
-        if(blur <= this.props.blurTo){
-            // element.css({
-            //   '-webkit-filter': 'blur('+blur+'px)',
-            //   'filter': 'blur('+blur+'px)'
-            // });
-
-            blurCss = {
-                'filter': 'blur('+blur+'px)'
-            };
-        }
-
+        const { blurFrom, blurTo } = this.props;
         
-
-        // console.log('win', window);
+        const blur = blurFrom + ( (blurTo - blurFrom) * (window.scrollY / window.innerHeight));
+        const blurCss = (blur <= blurTo) ? {'filter': 'blur('+blur+'px)'} : {};
 
         this.setState(prevState => ({    
             styles: blurCss

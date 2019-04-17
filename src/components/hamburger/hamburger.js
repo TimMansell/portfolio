@@ -7,19 +7,23 @@ import classnames from 'classnames';
 import * as actions from '../../actions';
 
 export class Hamburger extends React.Component {
-    handleClick = () => {
-        this.props.actions.setMobileMenu(!this.props.isMobileMenu);
-    }
-	
-    render() {
-      let classes = classnames('hamburger', {
-		  	'hamburger--active': this.props.isMobileMenu
-		});
+  toggleHamburger = () => { 
+    const { isMobileMenu } = this.props;
 
-        return <button className={classes} onClick={this.handleClick}>
-				<span className="hamburger__menu">toggle menu</span>
-			</button>;
-    }
+    this.props.actions.setMobileMenu(!isMobileMenu);
+  }
+
+  render() {
+    const { isMobileMenu } = this.props;
+
+    let classes = classnames('hamburger', {
+      'hamburger--active': isMobileMenu
+    });
+    
+    return <button type="button" className={classes} onClick={this.toggleHamburger}>
+      <span className="hamburger__menu">toggle menu</span>
+    </button>;
+  }
 }
 
 function mapStateToProps(state, ownProps) {
