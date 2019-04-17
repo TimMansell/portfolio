@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCss3Alt, faJs, faTrello } from '@fortawesome/free-brands-svg-icons';
@@ -17,5 +18,9 @@ export const SkillsItem = ({skill}) => {
 		</ul>
 	</div>;
 }
+
+SkillsItem.propTypes = {
+	skill: PropTypes.object.isRequired
+};
 
 export default SkillsItem;

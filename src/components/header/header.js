@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import InViewport from '../inViewport/inViewport';
 import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
@@ -24,5 +25,13 @@ export const Header = ({primary, secondary, tertiary, text, title}) => {
         {text}
     </div>;
 }
+
+Header.propTypes = {
+    primary: PropTypes.bool,
+    secondary: PropTypes.bool,
+    tertiary: PropTypes.bool, 
+    text: PropTypes.string, 
+    title: PropTypes.string.isRequired
+};
 
 export default Header;

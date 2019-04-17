@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class ShuffleContent extends React.Component {
     constructor(props) {
@@ -31,5 +32,9 @@ export class ShuffleContent extends React.Component {
         return <div>{this.state.content}</div>;
     }
 }
+
+ShuffleContent.propTypes = {
+	children: PropTypes.node.isRequired
+};
 
 export default ShuffleContent;

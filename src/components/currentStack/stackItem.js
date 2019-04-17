@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const SkillsItem = ({stack}) => {
 	return <div className="stack__item">
@@ -13,4 +14,9 @@ export const SkillsItem = ({stack}) => {
 		</a>
 	</div>;
 }
+
+SkillsItem.propTypes = {
+	stack: PropTypes.object.isRequired
+};
+
 export default SkillsItem;

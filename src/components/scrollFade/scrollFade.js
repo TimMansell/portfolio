@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
 export class ScrollFade extends React.Component {
@@ -40,5 +41,10 @@ export class ScrollFade extends React.Component {
         return <div style={this.state.styles}>{children}</div>;
     }
 }
+
+ScrollFade.propTypes = {
+    fadeMultiplier: PropTypes.number.isRequired,
+    children: PropTypes.node.isRequired
+};
 
 export default ScrollFade;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import inViewport from 'in-viewport';
 
@@ -32,5 +33,9 @@ export class InViewport extends React.Component {
         </>;
     }
 }
+
+InViewport.propTypes = {
+	children: PropTypes.node.isRequired
+};
 
 export default InViewport;

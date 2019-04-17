@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
 export class Hero extends React.Component {
@@ -33,5 +34,10 @@ export class Hero extends React.Component {
         return <div className="hero__img" style={this.state.styles}></div>;
     }
 }
+
+Hero.propTypes = {
+    blurFrom: PropTypes.number.isRequired,
+    blurTo: PropTypes.number.isRequired
+};
 
 export default Hero;

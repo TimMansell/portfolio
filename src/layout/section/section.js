@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 const SectionWrap = ({container, background, id="", children}) => {
@@ -19,6 +19,13 @@ const SectionWrap = ({container, background, id="", children}) => {
 			{children}
 		</div>
 	</section>
+};
+
+SectionWrap.propTypes = {
+	container: PropTypes.string,
+	background: PropTypes.string,
+	id: PropTypes.string,
+	children: PropTypes.element
 };
 
 export default SectionWrap;

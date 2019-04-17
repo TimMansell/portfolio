@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 
 import shuffleLetters from 'shuffle-letters';
@@ -19,4 +20,9 @@ export class ShuffleCharacters extends React.Component {
     }
 }
 
-export default ShuffleCharacters
+ShuffleCharacters.propTypes = {
+	children: PropTypes.element.isRequired
+};
+
+
+export default ShuffleCharacters;

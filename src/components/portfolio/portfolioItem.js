@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import InViewport from '../inViewport/inViewport';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -26,5 +28,9 @@ export const PortfolioItem = ({data}) => {
         </div>
     </div>;
 }
+
+PortfolioItem.propTypes = {
+	data: PropTypes.object.isRequired
+};
 
 export default PortfolioItem;

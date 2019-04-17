@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -61,7 +62,7 @@ export class Navigation extends React.Component {
 			'navigation__menu-active': isMobileMenu
 		});
 
-        return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>
+		return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>
 			<ul className={menuClasses}>
 				<li className="navigation__menu-item">
 					<Link className="navigation__menu-link" activeClass="active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
@@ -105,5 +106,10 @@ const mapDispatchToProps = (dispatch) => {
     actions: bindActionCreators(actions, dispatch)
   };
 };
+
+Navigation.propTypes = {
+	isMobileMenu: PropTypes.bool
+};
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

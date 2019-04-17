@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const TestimonialItem = ({data}) => {
     return <div className="testimonials__quote">
@@ -6,5 +7,9 @@ export const TestimonialItem = ({data}) => {
         <p className="testimonials__name">{data.author}</p>
     </div>;
 }
+
+TestimonialItem.propTypes = {
+	data: PropTypes.object.isRequired
+};
 
 export default TestimonialItem;
