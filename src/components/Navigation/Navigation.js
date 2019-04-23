@@ -8,7 +8,7 @@ import * as actions from '../../actions';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 
-import Hamburger from '../Hamburger/hamburger';
+import Hamburger from '../Hamburger';
 
 export class Navigation extends React.Component {
 	constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { WindowLock } from '../windowLock';
+import {WindowLock} from '../windowLock'; // Import named so we don't use redux.
 
 window.matchMedia = jest.fn().mockImplementation(query => {
     return {
