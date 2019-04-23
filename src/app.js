@@ -1,22 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import SectionWrap from './layout/section/section';
+import SectionWrap from './layout/SectionWrap';
 
-import Navigation from './components/nav/nav';
-import {Intro} from './components/intro/intro';
-import {Profile} from './components/profile/profile';
-import {Skills} from './components/skills/skills';
-import {RetiredSkills} from './components/skills/retiredSkills';
-import {CurrentStack} from './components/currentStack/currentStack';
-import {Portfolio} from './components/portfolio/portfolio';
-import {Stats} from './components/stats/stats';
-import {Presentations} from './components/presentations/presentations';
-import {Testimonials} from './components/testimonials/testimonials';
-import {Footer} from './components/footer/footer';
-import {GoToTop} from './components/goToTop/goToTop';
+import Navigation from './components/Navigation';
+import Intro from './components/Intro';
+import Profile from './components/Profile';
+import Skills from './components/Skills';
+import RetiredSkills from './components/RetiredSkills';
+import CurrentStack from './components/CurrentStack';
+import Portfolio from './components/Portfolio';
+import Stats from './components/Stats';
+import Presentations from './components/Presentations';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
+import GoToTop from './components/GoToTop';
 
-import WindowLock from './components/windowLock/windowLock';
+import WindowLock from './components/WindowLock';
 
 export const App = () => {
   return <>

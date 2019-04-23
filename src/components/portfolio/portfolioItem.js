@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import InViewport from '../inViewport/inViewport';
+import InViewport from '../InViewport';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';

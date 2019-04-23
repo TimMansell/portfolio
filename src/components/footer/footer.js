@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {SocialIcons} from '../socialIcons/socialIcons';
-import {Copyright} from '../date/date';
+import SocialIcons from '../SocialIcons';
+import Copyright from '../Copyright';
 
 export const Footer = () => {
 	return <footer id="contact" className="footer layout-section bg--secondary">

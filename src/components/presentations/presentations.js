@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Header} from '../header/header';
+import Header from '../Header';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import Hero from '../hero/hero';
-import {ScrollFade} from '../scrollFade/scrollFade';
-import {ShuffleContent} from '../shuffleContent/shuffleContent';
+import Hero from '../Hero';
+import ScrollFade from '../ScrollFade';
+import ShuffleContent from '../ShuffleContent';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {TestimonialItem} from './testimonialItem';
+import TestimonialItem from './TestimonialItem';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';

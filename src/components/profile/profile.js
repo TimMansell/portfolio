@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import {SocialIcons} from '../socialIcons/socialIcons';
-import {Header} from '../header/header';
+import SocialIcons from '../SocialIcons';
+import Header from '../Header';
 
 export const Profile = () => {
 	return <>

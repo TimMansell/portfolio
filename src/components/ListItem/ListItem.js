@@ -8,19 +8,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add(faCode, faCss3Alt, faJs, faTerminal, faClipboardList, faTrello, faGamepad);
 
-export const SkillsItem = ({skill}) => {
+export const ListItem = ({item}) => {
 	return <div className="divider">
-		<FontAwesomeIcon icon={[skill.icon.family ,skill.icon.name]} className="icon icon--secondary" />
+		<FontAwesomeIcon icon={[item.icon.family ,item.icon.name]} className="icon icon--secondary" />
 		<ul className="skills__list">
-			{skill.list.map((item, i) =>
+			{item.list.map((item, i) =>
 				<li className="skills__item" key={i}>{item}</li>
 			)}
 		</ul>
 	</div>;
 }
 
-SkillsItem.propTypes = {
-	skill: PropTypes.object.isRequired
+ListItem.propTypes = {
+	item: PropTypes.object.isRequired
 };
 
-export default SkillsItem;
+export default ListItem;

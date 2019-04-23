@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import InViewport from '../inViewport';
+import InViewport from '../InViewport';
 
 describe("InViewport", () => {
   it("should render my component", () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import InViewport from '../inViewport/inViewport';
-import {ShuffleCharacters} from '../shuffleCharacters/shuffleCharacters';
 import classnames from 'classnames';
+
+import InViewport from '../InViewport';
+import ShuffleCharacters from '../ShuffleCharacters';
 
 export const Header = ({primary, secondary, tertiary, text, title}) => {
     let classes = classnames('heading ', {

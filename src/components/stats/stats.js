@@ -1,7 +1,7 @@
 import React from 'react';
-import InViewport from '../inViewport/inViewport';
 
-import Counter from '../counter/counter';
+import InViewport from '../InViewport';
+import Counter from '../Counter';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCode, faCodeBranch, faMugHot, faBicycle } from '@fortawesome/free-solid-svg-icons';

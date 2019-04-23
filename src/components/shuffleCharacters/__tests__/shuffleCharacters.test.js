@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 
-import ShuffleCharacters from '../shuffleCharacters';
+import ShuffleCharacters from '../ShuffleCharacters';
 
 describe("ShuffleCharacters", () => {
   it("should render my component", () => {

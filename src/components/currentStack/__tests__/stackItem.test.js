@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 
-import StackItem from '../stackItem';
+import StackItem from '../StackItem';
 
 const props = {
   url: '',

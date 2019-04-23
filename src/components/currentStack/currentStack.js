@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {Header} from '../header/header';
+import Header from '../Header';
+import StackItem from './StackItem';
 
-import StackItem from './stackItem';
-
-import stack from './stack.json';
+import stack from './json/stack.json';
 
 export const CurrentStack = () => {
 	return <>

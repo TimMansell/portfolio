@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import SkillsItem from '../skillsItem';
+import ListItem from '../ListItem';
 
 const props =  {
     "list": [],
@@ -11,8 +11,8 @@ const props =  {
     }
 }
 
-describe("SkillsItem", () => {
+describe("ListItem", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<SkillsItem skill={props} />);
+    const wrapper = shallow(<ListItem item={props} />);
   });
 });
