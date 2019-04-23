@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import PortfolioItem from '../portfolioItem';
+import PortfolioItem from '../PortfolioItem';
 
 const props = {
     thumb: 'my-bupa.jpg',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Profile from '../profile';
+import Profile from '../Profile';
 
 describe("Profile", () => {
   it("should render my component", () => {
