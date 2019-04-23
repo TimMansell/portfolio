@@ -3,7 +3,7 @@
 
 	&__img {
 		@include media-breakpoint-up(md){
-			background-image: url('../img/hero.jpg');
+			background-image: url('../components/Hero/img/hero.jpg');
 			background-position: center;
 			background-size: cover;
 			position: fixed;
