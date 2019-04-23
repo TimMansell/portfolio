@@ -2,6 +2,8 @@ import React from 'react';
 
 import TestimonialItem from './TestimonialItem';
 
+import testimonials from './json/testimonials.json';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,20 +14,7 @@ export class Testimonials extends React.Component {
 	constructor(props) {
 		super(props);
 
-        this.testimonials = [
-			{
-				"author": "Rusty Brooke",
-				"description": "I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me."
-			},
-			{
-				"author": "Matt O’Dea",
-				"description": "Tim worked with the Graphic Cafe for over 4 years, in that time Tim lead the web development side to the business, his ability to problem solve was second to none as we often tested the boundaries of web and interactive development."
-			},
-			{
-				"author": "Randy An",
-				"description": "Tim is really brilliant developer and he has wide knowledge in the IT industry."
-			}
-		];
+		this.testimonials = testimonials;
 
         this.state = {
             testimonial: this.testimonials[0]
@@ -38,10 +27,10 @@ export class Testimonials extends React.Component {
 
     componentWillUnmount() {
         window.clearInterval(this.tick);
-    }
-
+	}
+	
     rotateContent = () => {
-        this.testimonials.push(this.testimonials.shift());
+		this.testimonials.push(this.testimonials.shift());
 
         this.setState(prevState => ({
             testimonial: this.testimonials[0]
