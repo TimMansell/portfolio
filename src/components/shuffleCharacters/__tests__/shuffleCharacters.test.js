@@ -6,6 +6,10 @@ import ShuffleCharacters from '../shuffleCharacters';
 
 describe("ShuffleCharacters", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<ShuffleCharacters />, {disableLifecycleMethods: true});
+    const props =  {
+      children: '<p></p>'
+    };
+
+    const wrapper = shallow(<ShuffleCharacters {...props} />, {disableLifecycleMethods: true});
   });
 });

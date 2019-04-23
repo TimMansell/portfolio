@@ -5,6 +5,11 @@ import Hero from '../hero';
 
 describe("Hero", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<Hero />);
+    const props = {
+      blurFrom: 0,
+      blurTo: 1
+    };
+
+    const wrapper = shallow(<Hero {...props}/>);
   });
 });

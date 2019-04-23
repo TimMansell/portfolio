@@ -21,7 +21,7 @@ export class ShuffleCharacters extends React.Component {
 }
 
 ShuffleCharacters.propTypes = {
-	children: PropTypes.element.isRequired
+	children: PropTypes.node.isRequired
 };
 
 

@@ -5,6 +5,10 @@ import ShuffleContent from '../shuffleContent';
 
 describe("ShuffleContent", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<ShuffleContent />);
+    const props =  {
+      children: '<p></p>'
+    };
+
+    const wrapper = shallow(<ShuffleContent {...props}/>);
   });
 });

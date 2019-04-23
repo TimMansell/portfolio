@@ -5,6 +5,11 @@ import Counter from '../counter';
 
 describe("Counter", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<Counter />);
+    const props = {
+      begin: 0,
+      end: 1
+    };
+
+    const wrapper = shallow(<Counter {...props}/>);
   });
 });
