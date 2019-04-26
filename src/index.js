@@ -5,7 +5,8 @@ import WebFont from 'webfontloader';
 
 import configureStore from './store/configureStore';
 
-import './css/main.css';
+import 'sanitize.css';
+import './scss/main.scss';
 import App from './app';
 
 const store = configureStore();
