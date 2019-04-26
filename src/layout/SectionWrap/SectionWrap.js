@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import './SectionWrap.scss';
+
 const SectionWrap = ({container, background, id="", children}) => {
 	const sectionClasses = classnames('layout-section', {
 		'bg--primary': background === 'primary',
