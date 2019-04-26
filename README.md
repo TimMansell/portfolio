@@ -2,7 +2,7 @@ This is the source code for my personal portfolio site.
 
 My website uses npm, gulp, and bower.  Ensure you have those packages installed first.
 
-##Instructions:
+## Instructions:
 
 *npm install*
 
@@ -20,6 +20,6 @@ To load my site in production mode using a clean repackaging of assets, run:
 
 *gulp serve:build*
 
-###Old website
+### Old website
 Source code for my old 2012 website can be found here. 
 https://github.com/TimMansell/portfolio/tree/2012
