@@ -10,6 +10,8 @@ import { Link } from 'react-scroll';
 
 import Hamburger from '../Hamburger';
 
+import './Navigation.scss';
+
 export class Navigation extends React.Component {
 	constructor(props) {
 		super(props);

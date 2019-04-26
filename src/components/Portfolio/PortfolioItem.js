@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 import InViewport from '../InViewport';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDesktop } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './PortfolioItem.scss';
 
-library.add(faDesktop);
+import { IconDesktop } from '../Icon';
 
 export const PortfolioItem = ({data}) => {
     return <div className="portfolio-item">
@@ -22,7 +20,7 @@ export const PortfolioItem = ({data}) => {
 
             <div className="portfolio-item__more-info">
                 <a href={data.url} target="_blank" rel="noopener noreferrer" title="Visit website">
-                    <FontAwesomeIcon icon={faDesktop} className="portfolio-item__icon" />
+                    <IconDesktop size="xs" className="portfolio-item__icon" />
                 </a>
             </div>
         </div>

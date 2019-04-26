@@ -3,6 +3,8 @@ import React from 'react';
 import Header from '../Header';
 import PortfolioItem from './PortfolioItem';
 
+import './Portfolio.scss';
+
 export const Portfolio = () => {
 	const items = [
 		{

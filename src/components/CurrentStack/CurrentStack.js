@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../Header';
 import StackItem from './StackItem';
 
+import './CurrentStack.scss';
 import stack from './json/stack.json';
 
 export const CurrentStack = () => {

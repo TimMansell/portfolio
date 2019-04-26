@@ -1,15 +1,11 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 
 import Hero from '../Hero';
+import LearnMore from '../LearnMore';
 import ScrollFade from '../ScrollFade';
 import ShuffleContent from '../ShuffleContent';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-library.add(faChevronDown);
+import './Intro.scss';
 
 export const Intro = () => {
 	return <section id="intro" className="hero bg--primary">
@@ -30,11 +26,7 @@ export const Intro = () => {
 		</ScrollFade>
 	</div>
 
-	<div className="learn-more">
-		<Link className="learn-more__link" to="profile" smooth={true}>
-			<FontAwesomeIcon className="learn-more__scroll" icon={faChevronDown} />
-		</Link>
-	</div>
+	<LearnMore />
 
 </section>;
 }
