@@ -5,11 +5,7 @@ import TestimonialItem from './TestimonialItem';
 import testimonials from './json/testimonials.json';
 import './Testimonials.scss';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-library.add(faQuoteLeft, faQuoteRight);
+import { IconQuoteLeft, IconQuoteRight } from '../Icon';
 
 export class Testimonials extends React.Component {
 	constructor(props) {
@@ -41,9 +37,9 @@ export class Testimonials extends React.Component {
     render() {
         return <>
 			<div className="testimonials text--center">
-				<FontAwesomeIcon icon={faQuoteLeft} className="testimonials__quote" />
+				<IconQuoteLeft className="testimonials__quote" />
 				<TestimonialItem data={this.state.testimonial} />
-				<FontAwesomeIcon icon={faQuoteRight} className="testimonials__quote" />
+				<IconQuoteRight className="testimonials__quote" />
 			</div>
 		</>;
     }
