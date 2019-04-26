@@ -1,4 +1,13 @@
 @import 'variables';
+@import 'utilities/breakpoints';
+
+.footer {
+	position: relative;
+
+	@include media-breakpoint-only(sm){
+		padding-bottom: 60px;
+	}
+}
 
 .footer-bar {
 	color: $link-colour;
