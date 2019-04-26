@@ -4,6 +4,8 @@ import { Link } from 'react-scroll';
 import SocialIcons from '../SocialIcons';
 import Header from '../Header';
 
+import './Profile.scss';
+
 export const Profile = () => {
 	return <>
 		<Header title="A little bit about myself" primary />

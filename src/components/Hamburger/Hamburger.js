@@ -6,6 +6,8 @@ import classnames from 'classnames';
 
 import * as actions from '../../actions';
 
+import './Hamburger.scss';
+
 export class Hamburger extends React.Component {
   toggleHamburger = () => { 
     const { isMobileMenu } = this.props;

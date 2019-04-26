@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { throttle } from 'lodash';
 
+import './Hero.scss';
+
 export class Hero extends React.Component {
     constructor(props) {
         super(props);

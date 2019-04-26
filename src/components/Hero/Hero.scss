@@ -1,9 +1,11 @@
+@import 'utilities/breakpoints';
+
 .hero {
 	height: 100vh;
 
 	&__img {
 		@include media-breakpoint-up(md){
-			background-image: url('../components/Hero/img/hero.jpg');
+			background-image: url('./img/hero.jpg');
 			background-position: center;
 			background-size: cover;
 			position: fixed;
