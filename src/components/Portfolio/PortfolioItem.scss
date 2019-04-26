@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'utilities/breakpoints';
+
 .portfolio-item {
 	background: rgba($primary-colour, .3);
 	border: 1px solid rgba($primary-colour, .305);

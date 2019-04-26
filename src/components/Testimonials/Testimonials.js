@@ -3,6 +3,7 @@ import React from 'react';
 import TestimonialItem from './TestimonialItem';
 
 import testimonials from './json/testimonials.json';
+import './Testimonials.scss';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';

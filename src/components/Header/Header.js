@@ -5,6 +5,8 @@ import classnames from 'classnames';
 import InViewport from '../InViewport';
 import ShuffleCharacters from '../ShuffleCharacters';
 
+import './Header.scss';
+
 export const Header = ({primary, secondary, tertiary, text, title}) => {
     let classes = classnames('heading ', {
         'heading--primary': primary,

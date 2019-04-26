@@ -4,6 +4,8 @@ import { Link } from 'react-scroll';
 import { throttle } from 'lodash';
 import classnames from 'classnames';
 
+import './GoToTop.scss';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -5,6 +5,8 @@ import Hero from '../Hero';
 import ScrollFade from '../ScrollFade';
 import ShuffleContent from '../ShuffleContent';
 
+import './Intro.scss';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

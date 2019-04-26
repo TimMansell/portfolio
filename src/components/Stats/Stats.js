@@ -3,6 +3,8 @@ import React from 'react';
 import InViewport from '../InViewport';
 import Counter from '../Counter';
 
+import './Stats.scss';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCode, faCodeBranch, faMugHot, faBicycle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

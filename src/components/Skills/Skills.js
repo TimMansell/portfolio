@@ -4,6 +4,7 @@ import Header from '../Header';
 import ListItem from '../ListItem';
 
 import skills from './json/skills.json';
+import './Skills.scss';
 
 export const Skills = () => {
 	return <>

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import InViewport from '../InViewport';
 
+import './PortfolioItem.scss';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
