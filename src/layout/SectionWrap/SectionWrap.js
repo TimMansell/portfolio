@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import './SectionWrap.scss';
 
 const SectionWrap = ({container, background, id="", children}) => {
-	const sectionClasses = classnames('layout-section', {
+	const sectionClasses = classnames('section-wrap', {
 		'bg--primary': background === 'primary',
 		'bg--secondary': background === 'secondary',
 		'bg--tertiary': background === 'tertiary'
