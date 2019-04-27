@@ -1,3 +1,5 @@
+@import 'utilities/breakpoints';
+
 html {
     font-size: 62.5%;
     height: 100%;
@@ -7,12 +9,6 @@ body {
     font-family: $font-family-primary;
     font-size: 16px;
     height: 100%;
-}
-
-.no-scroll {
-    @include media-breakpoint-down(md){
-        overflow:hidden;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
