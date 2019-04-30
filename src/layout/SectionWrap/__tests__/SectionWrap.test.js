@@ -11,7 +11,7 @@ describe("Section", () => {
     it("should render a default component", () => {
         const wrapper = shallow(<SectionWrap />);
 
-        expect(wrapper.hasClass('layout-section')).toBeTruthy();
+        expect(wrapper.hasClass('section-wrap')).toBeTruthy();
         expect(wrapper.find('.container')).toHaveLength(1);
     });
 

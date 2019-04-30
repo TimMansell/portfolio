@@ -3,6 +3,7 @@
 .icon {
     font-size: 80px;
     text-shadow: -1px -1px darken($primary-colour, 10%);
+    color: $secondary-text-colour;
 
     &--md {
         font-size: 65px;

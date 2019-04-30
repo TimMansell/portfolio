@@ -37,7 +37,7 @@ export class GoToTop extends React.Component {
     }, 30)
 
     render() {
-        let classes = classnames('goto-top', {'goto-top__show': this.state.isVisible});
+        let classes = classnames('goto-top', {'goto-top--show': this.state.isVisible});
 
         return <Link className={classes} to="root" smooth={true}>
             <IconAngleUp size="sm" />

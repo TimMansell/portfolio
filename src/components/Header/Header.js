@@ -15,7 +15,7 @@ export const Header = ({primary, secondary, tertiary, text, title}) => {
     });
  
     if (text) {
-        text = <p className="heading__description text--center" data-test-heading-description>{text}</p>;
+        text = <p data-test-heading-description>{text}</p>;
     }
     
     return <div className={classes}>
