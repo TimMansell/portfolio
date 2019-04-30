@@ -26,18 +26,8 @@
  		background: darken($primary-colour, 13%);
 	}
 
- 	// &:before {
- 	// 	content: "\f077";
- 	// 	font-family: FontAwesome;
- 	// 	text-shadow: -1px -1px darken($primary-colour, 5%);
- 	// 	font-size: 22px;
 
- 	// 	@include media-breakpoint-up(sm){
- 	// 		font-size: 32px;
- 	// 	}
- 	// }
-
- 	&__show {
+ 	&--show {
  		right: 10px;
 
  		@include media-breakpoint-up(sm){

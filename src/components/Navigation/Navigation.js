@@ -55,40 +55,44 @@ export class Navigation extends React.Component {
 	render() {
 		const { isMobileMenu } = this.props;
 
-		let navClasses = classnames('navigation', {
-			'navigation__menu-is-sticky': this.state.isFixedNav && !isMobileMenu,
-			'navigation__active': isMobileMenu
+		const navClasses = classnames('navigation', {
+			'navigation--is-sticky': this.state.isFixedNav && !isMobileMenu,
+			'navigation--active': isMobileMenu
 		});
 
-		let menuClasses = classnames('navigation__menu', {
-			'navigation__menu-active': isMobileMenu
+		const menuClasses = classnames('navigation__menu', {
+			'navigation__menu--active': isMobileMenu
+		});
+
+		const linkClasses = classnames('navigation__menu-link', {
+			'navigation__menu-link--is-sticky': this.state.isFixedNav && !isMobileMenu,
 		});
 
 		return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>
 			<ul className={menuClasses}>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="retired-skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Retired Skills</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="retired-skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Retired Skills</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="stack" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Stack</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="stack" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Stack</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="portfolio" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Portfolio</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="portfolio" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Portfolio</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="presentations" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Presentations</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="presentations" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Presentations</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="testimonials" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Testimonials</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="testimonials" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Testimonials</Link>
 				</li>
 				<li className="navigation__menu-item">
-					<Link className="navigation__menu-link" activeClass="active" to="contact" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Contact</Link>
+					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="contact" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Contact</Link>
 				</li>
 			</ul>
 
