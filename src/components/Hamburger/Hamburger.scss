@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'utilities/breakpoints';
 
+$mobile-menu-bg-colour: #fff;
+
 .hamburger {
 	position: fixed;
 	text-indent: -9999px;

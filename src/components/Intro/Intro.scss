@@ -23,7 +23,7 @@
 		text-shadow: 3px 3px darken($primary-colour, 10%);
 
 		@include media-breakpoint-up(md){
-			text-shadow: 2px 2px $info-text-shadow-colour;
+			text-shadow: 2px 2px $tertiary-text-colour;
 			font-size: 55px;
 			line-height: 55px;
 		}
@@ -38,7 +38,7 @@
 		text-shadow: 1px 1px darken($primary-colour, 10%);
 
 		@include media-breakpoint-up(md){
-			text-shadow: 2px 2px $info-text-shadow-colour;
+			text-shadow: 2px 2px $tertiary-text-colour;
 		}
 
 		&--sub-title {

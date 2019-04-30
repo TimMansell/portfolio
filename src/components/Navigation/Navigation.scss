@@ -8,7 +8,7 @@
 		position: absolute;
 		bottom: 0 !important;
 		z-index: 999999;
-		background-color: rgba($nav-bg-colour, 0.7);
+		background-color: rgba($tertiary-text-colour, 0.7);
 	}
 
 	&__menu {
@@ -31,7 +31,7 @@
 	}
 
 	&__menu-link {
-		color: $link-colour;
+		color: $secondary-text-colour;
 		padding: 5px;
 		display: block;
 		font-size: 30px;
@@ -60,7 +60,7 @@
 			left: 0;
 			right: 0;
 			z-index: 999999;
-			background-color: rgba($nav-bg-colour, 0.8);
+			background-color: rgba($tertiary-text-colour, 0.8);
 		}
 	}
 
