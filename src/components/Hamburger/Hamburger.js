@@ -18,12 +18,16 @@ export class Hamburger extends React.Component {
   render() {
     const { isMobileMenu } = this.props;
 
-    let classes = classnames('hamburger', {
+    const buttonClasses = classnames('hamburger', {
       'hamburger--active': isMobileMenu
     });
+
+    const hamburgerClasses = classnames('hamburger__menu', {
+      'hamburger__menu--active': isMobileMenu
+    });
     
-    return <button type="button" className={classes} onClick={this.toggleHamburger}>
-      <span className="hamburger__menu">toggle menu</span>
+    return <button type="button" className={buttonClasses} onClick={this.toggleHamburger}>
+      <span className={hamburgerClasses}>toggle menu</span>
     </button>;
   }
 }

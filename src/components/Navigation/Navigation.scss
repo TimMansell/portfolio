@@ -47,9 +47,12 @@
 			@include media-breakpoint-down(md){
 				display: block;
 				position: fixed;
+				width: 100%;
 				bottom: 0;
 				left: 50%;
 				transform: translate(-50%, -100px);
+				padding-left: 16px;
+				padding-right: 16px;
 			}
 		}
 	}

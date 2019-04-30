@@ -1,19 +1,16 @@
 import React from 'react';
 
+import SectionWrap from '../../layout/SectionWrap';
 import SocialIcons from '../SocialIcons';
 import Copyright from '../Copyright';
 
-import './Footer.scss';
-
 export const Footer = () => {
-	return <footer id="contact" className="footer layout-section bg--secondary">
-		<div className="footer-bar">
-			<div className="container">
-				<SocialIcons />
-				<Copyright />
-			</div>
-		</div>
-	</footer>;
+	return <SectionWrap id="contact" background="secondary">
+		<footer>
+			<SocialIcons />
+			<Copyright />
+		</footer>
+	</SectionWrap>;
 }
 
 export default Footer;

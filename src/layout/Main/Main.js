@@ -11,10 +11,8 @@ import Stats from '../../components/Stats';
 import Presentations from '../../components/Presentations';
 import Testimonials from '../../components/Testimonials';
 
-import './Main.scss';
-
 const Main = () => {
-	return <main className="content">
+	return <main>
 		<SectionWrap id="profile" background="tertiary">
 			<Profile />
 		</SectionWrap>
