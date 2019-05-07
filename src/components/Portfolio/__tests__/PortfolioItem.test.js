@@ -13,6 +13,7 @@ const props = {
 
 describe("PortfolioItem", () => {
   it("should render my component", () => {
+    // eslint-disable-next-line 
     const wrapper = shallow(<PortfolioItem data={props} />);
   });
 });
