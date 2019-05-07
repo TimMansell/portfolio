@@ -2,18 +2,16 @@
 @import 'utilities/breakpoints';
 
 .portfolio-item {
-	background: rgba($primary-colour, .3);
-	border: 1px solid rgba($primary-colour, .305);
-	padding: 10px;
+	background: rgba(#e1e1e3, 1);
 	transition: all .3s;
 	position: relative;
 	overflow: hidden;	
-	height: 0;
-	padding-bottom: 56.25%;
+	border-radius: 7px;
 
-    &:hover &__info {
-    	transform: translateY(0);
-    }
+	&:hover &__info {
+		transform: translateY(0);
+	}
+
 
 	&__link {
   		&:before {
@@ -26,7 +24,6 @@
 	}
 
 	&__icon {
-	  // color: $icon-colour;
 	  padding-left: 5px;
 	  padding-right: 5px;
 	  transition: all .3s;
