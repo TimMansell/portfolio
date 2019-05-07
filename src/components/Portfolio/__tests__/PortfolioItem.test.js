@@ -4,15 +4,16 @@ import { shallow } from 'enzyme';
 import PortfolioItem from '../PortfolioItem';
 
 const props = {
-    thumb: 'my-bupa.jpg',
-    title: '',
-    description: '',
-    tech: '',
-    url: ''
-  };
+  thumb: './img/my-bupa.jpg',
+  title: '',
+  description: '',
+  tech: '',
+  url: ''
+};
 
 describe("PortfolioItem", () => {
   it("should render my component", () => {
+    // eslint-disable-next-line 
     const wrapper = shallow(<PortfolioItem data={props} />);
   });
 });
