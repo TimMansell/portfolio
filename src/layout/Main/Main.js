@@ -10,6 +10,9 @@ import Portfolio from '../../components/Portfolio';
 import Stats from '../../components/Stats';
 import Presentations from '../../components/Presentations';
 import Testimonials from '../../components/Testimonials';
+import Parallax from '../../components/Parallax';
+
+import parallaxImage from './parallax-tim.jpg';
 
 const Main = () => {
 	return <main>
@@ -28,6 +31,8 @@ const Main = () => {
 		<SectionWrap id="stack" background="tertiary" container="medium">
 			<CurrentStack />
 		</SectionWrap>
+
+		<Parallax image={parallaxImage} />
 		
 		<SectionWrap id="portfolio" background="secondary" container="large">
 			<Portfolio />
