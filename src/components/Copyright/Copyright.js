@@ -1,8 +1,10 @@
 import React from 'react';
 import format from 'date-fns/format';
 
+import './Copyright.scss';
+
 export const Copyright = () => {
-    return <p className="footer-bar__text">&copy; {format(new Date(), 'YYYY')}<br/>Tim Mansell</p>;
+    return <p className="copyright">&copy; {format(new Date(), 'YYYY')}<br/>Tim Mansell</p>;
 }
 
 export default Copyright;

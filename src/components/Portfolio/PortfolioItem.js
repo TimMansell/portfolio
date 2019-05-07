@@ -5,12 +5,14 @@ import InViewport from '../InViewport';
 
 import './PortfolioItem.scss';
 
+import PortfolioIcons from './PortfolioIcons';
 import { IconDesktop } from '../Icon';
 
 export const PortfolioItem = ({data}) => {
     return <div className="portfolio-item">
+        <PortfolioIcons />
         <InViewport>
-            <img className="img--responsive" src={data.thumb} alt={data.title} />
+            <img className="img--responsive" src={require(`${data.thumb}`)} alt={data.title} />
         </InViewport>
         
         <div className="portfolio-item__info">

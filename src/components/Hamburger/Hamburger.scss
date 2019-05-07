@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'utilities/breakpoints';
 
+$mobile-menu-bg-colour: #fff;
+
 .hamburger {
 	position: fixed;
 	text-indent: -9999px;
@@ -26,27 +28,6 @@
 
 	&--active {
 		background-color: $tertiary-colour;
-	}
-
-	&--active &__menu{
-		background: none;
-		box-shadow: none;
-
-		&:before {
-			top: 0;
-			transform: rotate(45deg);
-		}
-
-		&:after {
-			bottom: 0;
-			transform: rotate(-45deg);
-		}
-
-		&:before,
-		&:after {
-			transition-delay: 0, 0.3s;
-			box-shadow: none;
-		}
 	}
 
 	&__menu {
@@ -79,6 +60,27 @@
 		&:after {
 			bottom: -10px;
 			transition-property: bottom, transform;
+		}
+
+		&--active {
+			background: none;
+			box-shadow: none;
+	
+			&:before {
+				top: 0;
+				transform: rotate(45deg);
+			}
+	
+			&:after {
+				bottom: 0;
+				transform: rotate(-45deg);
+			}
+	
+			&:before,
+			&:after {
+				transition-delay: 0, 0.3s;
+				box-shadow: none;
+			}
 		}
 	}
 }
