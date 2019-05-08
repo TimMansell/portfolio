@@ -3,6 +3,7 @@
 .parallax {
 	position: relative;
 	height: 400px;
+	overflow: hidden;
 	
 	&__image {
 		max-width: 100%;
