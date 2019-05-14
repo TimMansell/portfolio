@@ -59,3 +59,22 @@
 		}
 	}
 }
+
+.intro-hi {
+	color: $secondary-text-colour;
+	margin: 15px 0;
+	padding: 0 25px;
+	font-size: 80px;
+	font-weight: 900;
+	letter-spacing: 5px;
+	// line-height: 45px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-shadow: 3px 3px darken($primary-colour, 10%);
+
+	@include media-breakpoint-up(md){
+		text-shadow: 2px 2px $tertiary-text-colour;
+		font-size: 100px;
+		// line-height: 55px;
+	}
+}

@@ -1,9 +1,14 @@
 import React from 'react';
+// import anime from 'animejs/lib/anime.js';
 
 import Hero from '../Hero';
 import LearnMore from '../LearnMore';
 import ScrollFade from '../ScrollFade';
 import ShuffleContent from '../ShuffleContent';
+import Tagline from '../Tagline';
+
+import IntroHi from './IntroHi';
+import IntroName from './IntroName';
 
 import './Intro.scss';
 
@@ -14,14 +19,10 @@ export const Intro = () => {
 	<div className="info">
 		<ScrollFade fadeMultiplier={1.15}>
 			<h4 className="info__text info__text--sub-title">Melbourne, Australia</h4>
-			<h1 className="info__title">Hi! I'm Tim Mansell</h1>
+			<IntroHi />
+			<IntroName />
 			
-			<ShuffleContent>
-				<h4 className="info__text info__text--blurb">Front-end Engineer</h4>
-				<h4 className="info__text info__text--blurb">Javascript Engineer</h4>
-				<h4 className="info__text info__text--blurb">React Engineer</h4>
-				<h4 className="info__text info__text--blurb">VueJS Engineer</h4>
-			</ShuffleContent>
+			<Tagline />
 			
 		</ScrollFade>
 	</div>
