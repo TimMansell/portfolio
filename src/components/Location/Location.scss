@@ -11,8 +11,8 @@
 	text-transform: uppercase;
 	text-shadow: 1px 1px darken($primary-colour, 10%);
 
-	animation: location .75s ease-in-out;
-	animation-delay: 4.85s;
+	animation: location .5s ease-in-out;
+	animation-delay: $animation-location-delay;
 	animation-fill-mode: forwards;
 
 	@include media-breakpoint-up(md){

@@ -14,9 +14,7 @@
 	opacity: 0;
 
 	animation: hi 3s ease-in-out;
-	animation-delay: 1s;
 	animation-fill-mode: forwards;
-	// animation-timing-function: cubic-bezier(1,.03,.6,.67);
 
 	@include media-breakpoint-up(md){
 		text-shadow: 2px 2px $tertiary-text-colour;
@@ -25,17 +23,13 @@
 }
 
 @keyframes hi {
-	from {
-		opacity: 0;
-		// transform: translateY(-15px);
-	}
-
-	35%, 65% {
+	35%, 75% {
 		opacity: 1;
 		transform: translateY(0);
 	}
 
 	to {
-		transform: translateY(15px);
+		opacity: 0;
+		transform: translateY(20px);
 	}
 }

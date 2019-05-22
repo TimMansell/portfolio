@@ -6,8 +6,8 @@
 	overflow: hidden;
 	opacity: 0;
 
-	animation: tagline 1s ease-in-out;
-	animation-delay: 4.5s;
+	animation: tagline .5s ease-in-out;
+	animation-delay: $animation-tagline-delay;
 	animation-fill-mode: forwards;
 
 	&__item {
