@@ -42,11 +42,22 @@ export class Parallax extends React.Component {
         const element = this.parallaxElement.current;
         const isInViewport = inViewport(element); 
         const isMaxScroll = this.checkMaxScroll();
-        // const scrollDirection = this.checkScrollDirection(e);
+        const isMinScroll = this.checkMinScroll();
+        const scrollDirection = this.checkScrollDirection(e);
+
+        // console.log('scrollDirection', scrollDirection);
+
+        // const a = this.state.initialPostion * scrollDirection;
+
+        // console.log('this.state.initialPostion', this.state.initialPostion);
+
+        console.log('isInViewport', isInViewport);
+        console.log('isMaxScroll', isMaxScroll);
+        console.log('isMinScroll', isMinScroll);
 
 
-        if(isInViewport && !isMaxScroll){
-            const transform = `translate3d(0, -${this.state.initialPostion + 2}px, 0)`;
+        if(isInViewport && !isMaxScroll && !isMinScroll){
+            const transform = `translate3d(0, ${this.state.initialPostion}px, 0)`;
             const newStyle = {
                 ...initialStyle,
                 transform
@@ -54,7 +65,7 @@ export class Parallax extends React.Component {
 
             this.setState(prevState => ({
                 imgStyle: newStyle,
-                initialPostion: this.state.initialPostion + 2
+                initialPostion: this.state.initialPostion + scrollDirection
             }));
         }
     }, 30)
@@ -66,19 +77,33 @@ export class Parallax extends React.Component {
         return initialPostion > maxScroll;
     }
 
-    // checkScrollDirection(e){
-    //     const { currentScrollPosition } = this.state;
-    //     const newScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    checkMinScroll(){
+        const { initialPostion } = this.state;
+        const minScroll = 0;
 
-    //     console.log('currentScrollPosition', currentScrollPosition);
-    //     console.log('newScrollPosition', newScrollPosition);
+        console.log('initialPostion', initialPostion);
+        // console.log('minScroll', minScroll);
 
-    //     if(newScrollPosition > currentScrollPosition){
-    //         return '-';
-    //     } else {
-    //         return '+';
-    //     }
-    // }
+        return initialPostion < minScroll;
+    }
+
+    checkScrollDirection(e){
+        const { currentScrollPosition } = this.state;
+        const newScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // console.log('currentScrollPosition', currentScrollPosition);
+        // console.log('newScrollPosition', newScrollPosition);
+
+        this.setState(prevState => ({
+            currentScrollPosition: newScrollPosition
+        }));
+
+        if(newScrollPosition > currentScrollPosition){
+            return -2;
+        } else {
+            return +2;
+        }
+    }
 
     getImageDimensions = () => {
         this.setState(prevState => ({
