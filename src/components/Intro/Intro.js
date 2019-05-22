@@ -3,32 +3,35 @@ import React from 'react';
 import Hero from '../Hero';
 import LearnMore from '../LearnMore';
 import ScrollFade from '../ScrollFade';
-import ShuffleContent from '../ShuffleContent';
+// import ShuffleContent from '../ShuffleContent';
+
+import Hi from '../Hi';
+import Location from '../Location';
+import Name from '../Name';
+import Tagline from '../Tagline';
 
 import './Intro.scss';
 
 export const Intro = () => {
-	return <section id="intro" className="hero bg--primary">
-	<Hero blurFrom={3} blurTo={10} />
+	return <section id="intro" className="bg--primary">
+		<Hero blurFrom={3} blurTo={10} />
 
-	<div className="info">
-		<ScrollFade fadeMultiplier={1.15}>
-			<h4 className="info__text info__text--sub-title">Melbourne, Australia</h4>
-			<h1 className="info__title">Hi! I'm Tim Mansell</h1>
-			
-			<ShuffleContent>
-				<h4 className="info__text info__text--blurb">Front-end Engineer</h4>
-				<h4 className="info__text info__text--blurb">Javascript Engineer</h4>
-				<h4 className="info__text info__text--blurb">React Engineer</h4>
-				<h4 className="info__text info__text--blurb">VueJS Engineer</h4>
-			</ShuffleContent>
-			
-		</ScrollFade>
-	</div>
+		<div className="intro">
+			<Hi />
 
-	<LearnMore />
+			<ScrollFade fadeMultiplier={1.15}>
+				<Location />
+				
+				<Name />
+				
+				<Tagline />
+				
+			</ScrollFade>
+		</div>
 
-</section>;
+		<LearnMore />
+
+	</section>;
 }
 
 export default Intro;
