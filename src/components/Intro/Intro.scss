@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'utilities/breakpoints';
 
-.info {
+.intro {
 	display: flex;
     align-items: center;
 	justify-content: center;
@@ -11,97 +11,4 @@
     width: 100%;
 	height: 100%;
 	text-align: center;
-	
-
-	&__title {
-		color: $secondary-text-colour;
-		margin: 15px 0;
-		padding: 0 25px;
-		font-size: 45px;
-		font-weight: 900;
-		letter-spacing: 5px;
-		line-height: 45px;
-		text-transform: uppercase;
-		text-shadow: 3px 3px darken($primary-colour, 10%);
-		opacity: 0;
-
-		animation: title 3s ease-in-out;
-		animation-delay: 3.75s;
-		animation-fill-mode: forwards;
-
-		@include media-breakpoint-up(md){
-			text-shadow: 2px 2px $tertiary-text-colour;
-			font-size: 55px;
-			line-height: 55px;
-		}
-	}
-
-	&__text {
-		color: $secondary-text-colour;
-		font-weight: 300;
-		letter-spacing: 1px;
-		line-height: 26px;
-		text-transform: uppercase;
-		text-shadow: 1px 1px darken($primary-colour, 10%);
-
-		@include media-breakpoint-up(md){
-			text-shadow: 2px 2px $tertiary-text-colour;
-		}
-
-		&--sub-title {
-			font-size: 16px;
-			opacity: 0;
-
-			animation: location 3s ease-in-out;
-			animation-delay: 4s;
-			animation-fill-mode: forwards;
-
-			@include media-breakpoint-up(md){
-				font-size: 18px;
-			}
-		}
-
-		&--blurb {
-			font-size: 22px;
-			display: block;
-		
-			@include media-breakpoint-up(md){
-				font-size: 26px;
-			}
-		}
-	}
 }
-
-@keyframes title {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes location {
-	from {
-		opacity: 0;
-		transform: translateY(-10px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-
-
-// @keyframes title {
-// 	from {
-
-// 	}
-
-// 	to {
-		
-// 	}
-// }

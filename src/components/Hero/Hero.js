@@ -33,7 +33,9 @@ export class Hero extends React.Component {
     }, 30)
 
     render() {
-        return <div className="hero__img" style={this.state.styles}></div>;
+        return <div className="hero">
+            <div className="hero__img" style={this.state.styles}></div>
+        </div>;
     }
 }
 

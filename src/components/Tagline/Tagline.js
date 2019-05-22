@@ -4,10 +4,10 @@ import './Tagline.scss';
 
 export const Tagline = () => {
 	return <div className="tagline">
-		<h4 className="info__text info__text--blurb">Front-end Engineer</h4>
-		<h4 className="info__text info__text--blurb">Javascript Engineer</h4>
-		<h4 className="info__text info__text--blurb">React Engineer</h4>
-		<h4 className="info__text info__text--blurb">VueJS Engineer</h4>
+		<h4 className="tagline__item">Front-end Engineer</h4>
+		<h4 className="tagline__item">Javascript Engineer</h4>
+		<h4 className="tagline__item">React Engineer</h4>
+		<h4 className="tagline__item">VueJS Engineer</h4>
 	</div>;
 }
 

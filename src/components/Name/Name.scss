@@ -1,41 +1,37 @@
 @import 'variables';
 @import 'utilities/breakpoints';
 
-.hi {
+.name {
 	color: $secondary-text-colour;
-	font-size: 80px;
+	margin: 15px 0;
+	padding: 0 25px;
+	font-size: 45px;
 	font-weight: 900;
 	letter-spacing: 5px;
-	line-height: 1;
-	height: 0;
-	margin: 0;
+	line-height: 45px;
 	text-transform: uppercase;
 	text-shadow: 3px 3px darken($primary-colour, 10%);
 	opacity: 0;
 
-	animation: hi 3s ease-in-out;
-	animation-delay: 1s;
+	animation: title 2s ease-in-out;
+	animation-delay: 3.65s;
 	animation-fill-mode: forwards;
-	// animation-timing-function: cubic-bezier(1,.03,.6,.67);
 
 	@include media-breakpoint-up(md){
 		text-shadow: 2px 2px $tertiary-text-colour;
-		font-size: 100px;
+		font-size: 55px;
+		line-height: 55px;
 	}
 }
 
-@keyframes hi {
+@keyframes title {
 	from {
 		opacity: 0;
-		// transform: translateY(-15px);
-	}
-
-	35%, 65% {
-		opacity: 1;
-		transform: translateY(0);
+		transform: translateY(15px);
 	}
 
 	to {
-		transform: translateY(15px);
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
