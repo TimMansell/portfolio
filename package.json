@@ -17,7 +17,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "7.1.0",
-    "react-scripts": "3.0.0",
+    "react-scripts": "3.0.1",
     "react-scroll": "^1.5.3",
     "react-scrolllock": "^1.0.8",
     "redux": "4.0.4",
