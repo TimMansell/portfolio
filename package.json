@@ -19,10 +19,10 @@
     "react-redux": "7.1.0",
     "react-scripts": "3.0.1",
     "react-scroll": "^1.5.3",
-    "react-scrolllock": "^1.0.8",
+    "react-scrolllock": "4.0.1",
     "redux": "4.0.4",
-    "sanitize.css": "^8.0.0",
-    "serve": "10.0.2",
+    "sanitize.css": "^11.0.0",
+    "serve": "11.1.0",
     "shuffle-letters": "https://github.com/TimMansell/shuffle-letters.git",
     "webfontloader": "^1.6.28"
   },
