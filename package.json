@@ -10,7 +10,7 @@
     "classnames": "^2.2.5",
     "date-fns": "^2.0.0-alpha.1",
     "in-viewport": "^3.5.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.13",
     "node-sass": "4.9.3",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.7.2",
