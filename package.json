@@ -14,8 +14,8 @@
     "node-sass": "4.9.3",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.7.2",
-    "react": "16.7.0",
-    "react-dom": "16.7.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-redux": "7.1.0",
     "react-scripts": "3.0.1",
     "react-scroll": "^1.5.3",
@@ -31,7 +31,7 @@
     "build": "run-s test build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --verbose=false",
+    "test": "react-scripts test --env=jsdom --verbose=false --watch-all",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
     "test:all": "cross-env CI=true yarn test",
     "eject": "react-scripts eject",
@@ -47,6 +47,6 @@
     "cross-env": "^5.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
-    "react-test-renderer": "16.7.0"
+    "react-test-renderer": "^16.7.0"
   }
 }
