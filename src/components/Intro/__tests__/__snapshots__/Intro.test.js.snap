@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro should match snapshot 1`] = `
+<section
+  className="bg--primary"
+  id="intro"
+>
+  <div
+    className="hero"
+  >
+    <div
+      className="hero__img"
+      style={Object {}}
+    />
+  </div>
+  <div
+    className="intro"
+  >
+    <p
+      className="hi"
+    >
+      Hi!
+    </p>
+    <div
+      style={Object {}}
+    >
+      <h4
+        className="location"
+      >
+        Melbourne, Australia
+      </h4>
+      <h1
+        className="name"
+      >
+        I'm Tim Mansell
+      </h1>
+      <div
+        className="tagline"
+      >
+        <h4
+          className="tagline__item"
+        >
+          Front-end Engineer
+        </h4>
+        <h4
+          className="tagline__item"
+        >
+          Javascript Engineer
+        </h4>
+        <h4
+          className="tagline__item"
+        >
+          React Engineer
+        </h4>
+        <h4
+          className="tagline__item"
+        >
+          VueJS Engineer
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div
+    className="learn-more"
+  >
+    <a
+      className="learn-more__link"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-chevron-down fa-w-14 icon learn-more__scroll icon--sm"
+        data-icon="chevron-down"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+  </div>
+</section>
+`;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 
 import Icon, { 
   IconChevronDown, 
@@ -24,16 +25,33 @@ import Icon, {
 } from '../Icon';
 
 describe("Default Icon", () => {
+  it("should match snapshot", () => {
+    const props = {
+      name: [
+        "fab",
+        "css3-alt"
+      ],
+      className: 'test-class',
+      size: 'md',
+      padded: true
+    };
+
+    const snapshot = renderer.create(<Icon {...props} />).toJSON();
+    
+    expect(snapshot).toMatchSnapshot();
+  });
+
   it("should render my default Icon", () => {
     const props = {
-      name: {
-        name: "code",
-        family: "fa"
-      }
-    }
-    const wrapper = shallow(<Icon {...props} />);
+      name: [
+        "fa",
+        "code"
+      ]
+    };
 
-    expect(wrapper.props().icon).toEqual(props.name);
+    const wrapper = mount(<Icon {...props} />);
+
+    expect(wrapper.props().name).toEqual(props.name);
 
   });
 

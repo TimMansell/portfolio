@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio should match snapshot 1`] = `
+Array [
+  <div
+    className="heading  heading--tertiary"
+  >
+    <span>
+       
+    </span>
+    <p
+      data-test="heading-description"
+    >
+      Here's a sample of my work
+    </p>
+  </div>,
+  <div
+    className="portfolio"
+  >
+    <div
+      className="portfolio-item"
+    >
+      <div
+        className="portfolio-icons"
+      >
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="portfolio-item__info"
+      >
+        <h3
+          className="portfolio-item__title"
+        >
+          myBupa
+        </h3>
+        <p
+          className="portfolio-item__description"
+        >
+          Responsive website rebuild.  Built on top of .NET stack.
+        </p>
+        <p
+          className="portfolio-item__tech"
+        >
+          AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.
+        </p>
+        <div
+          className="portfolio-item__more-info"
+        >
+          <a
+            href="https://my.bupa.com.au"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Visit website"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              data-icon="desktop"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="portfolio-item"
+    >
+      <div
+        className="portfolio-icons"
+      >
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="portfolio-item__info"
+      >
+        <h3
+          className="portfolio-item__title"
+        >
+          Captain's Choice
+        </h3>
+        <p
+          className="portfolio-item__description"
+        >
+          Responsive website rebuild. Built on top of .NET stack.
+        </p>
+        <p
+          className="portfolio-item__tech"
+        >
+          AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.
+        </p>
+        <div
+          className="portfolio-item__more-info"
+        >
+          <a
+            href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Visit website"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              data-icon="desktop"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="portfolio-item"
+    >
+      <div
+        className="portfolio-icons"
+      >
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="portfolio-item__info"
+      >
+        <h3
+          className="portfolio-item__title"
+        >
+          Tourism Victoria
+        </h3>
+        <p
+          className="portfolio-item__description"
+        >
+          Responsive website rebuild.  Built on top of .NET stack.
+        </p>
+        <p
+          className="portfolio-item__tech"
+        >
+          AngularJS, Bootstrap 3, SASS, Gulp, Bower, and jQuery.
+        </p>
+        <div
+          className="portfolio-item__more-info"
+        >
+          <a
+            href="http://visitvictoria.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Visit website"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              data-icon="desktop"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="portfolio-item"
+    >
+      <div
+        className="portfolio-icons"
+      >
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="portfolio-item__info"
+      >
+        <h3
+          className="portfolio-item__title"
+        >
+          UniSuper
+        </h3>
+        <p
+          className="portfolio-item__description"
+        >
+          Dedicated mobile site build. Built on top of .NET stack.
+        </p>
+        <p
+          className="portfolio-item__tech"
+        >
+          AngularJS, Bootstrap 3, SCSS/Compass, and jQuery.
+        </p>
+        <div
+          className="portfolio-item__more-info"
+        >
+          <a
+            href="http://m.unisuper.com.au/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Visit website"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              data-icon="desktop"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="portfolio-item"
+    >
+      <div
+        className="portfolio-icons"
+      >
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="portfolio-item__info"
+      >
+        <h3
+          className="portfolio-item__title"
+        >
+          Point & Claim
+        </h3>
+        <p
+          className="portfolio-item__description"
+        >
+          Responsive website rebuild. Built on top of CodeIgnitor framework.
+        </p>
+        <p
+          className="portfolio-item__tech"
+        >
+          AngularJS, Bootstrap 3, SCSS/Compass, jQuery, and Gulp.
+        </p>
+        <div
+          className="portfolio-item__more-info"
+        >
+          <a
+            href="https://web.archive.org/web/20160622073557/http://pointandclaim.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Visit website"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              data-icon="desktop"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="portfolio-item"
+    >
+      <div
+        className="portfolio-icons"
+      >
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+        <div
+          className="portfolio-icons__icon"
+        />
+      </div>
+      <span>
+         
+      </span>
+      <div
+        className="portfolio-item__info"
+      >
+        <h3
+          className="portfolio-item__title"
+        >
+          Simply Great Meals
+        </h3>
+        <p
+          className="portfolio-item__description"
+        >
+          Responsive website rebuild focusing on mobile and tablet devices. Built on top of .NET stack.
+        </p>
+        <p
+          className="portfolio-item__tech"
+        >
+          Backbone, SCSS, and jQuery.
+        </p>
+        <div
+          className="portfolio-item__more-info"
+        >
+          <a
+            href="http://simplygreatmeals.com.au/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Visit website"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              data-icon="desktop"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

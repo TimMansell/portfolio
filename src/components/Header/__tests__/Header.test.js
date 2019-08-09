@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 
 import Header from '../Header';
 
@@ -16,7 +17,7 @@ describe("Header", () => {
     const wrapper = shallow(<Header {...props} />);
 
     expect(
-      wrapper.find('[data-test-heading-title]').text()
+      wrapper.find('[data-test="heading-title"]').text()
       ).toEqual(props.title);
   });
 
@@ -24,7 +25,7 @@ describe("Header", () => {
     const wrapper = shallow(<Header {...props} text="text" />);
 
     expect(
-      wrapper.find('[data-test-heading-description]').text()
+      wrapper.find('[data-test="heading-description"]').text()
     ).toEqual('text');
   });
 
@@ -50,5 +51,11 @@ describe("Header", () => {
     expect(
       wrapper.hasClass('heading--tertiary')
     ).toBeTruthy();
+  });
+
+  it("should match snapshot", () => {
+    const snapshot = renderer.create(<Header {...props} text="text" />).toJSON();
+    
+    expect(snapshot).toMatchSnapshot();
   });
 });
