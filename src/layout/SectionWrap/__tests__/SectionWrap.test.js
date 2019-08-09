@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 
 import SectionWrap from '../SectionWrap';
 
@@ -7,6 +8,12 @@ describe("Section", () => {
     it("should render my component", () => {
         const wrapper = shallow(<SectionWrap />);
     });
+
+    it("should match snapshot", () => {
+        const snapshot = renderer.create(<SectionWrap/>).toJSON();
+        
+        expect(snapshot).toMatchSnapshot();
+      });
 
     it("should render a default component", () => {
         const wrapper = shallow(<SectionWrap />);

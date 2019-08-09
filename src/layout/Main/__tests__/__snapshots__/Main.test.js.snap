@@ -1,0 +1,1741 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should match snapshot 1`] = `
+<main>
+  <section
+    className="section-wrap bg--tertiary"
+    id="profile"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="heading  heading--primary"
+      >
+        <span>
+           
+        </span>
+      </div>
+      <div
+        className="profile text--center"
+      >
+        <p>
+          I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.
+        </p>
+        <p>
+          I develop with best practices in mind and adhere to W3C standards. Unfortunately not all browsers are created equal, so I utilise Progressive Enhancement (where possible), and use CSS/JS transpilers (PostCSS & Babel), to ensure my code works across all popluar evergreen browsers.
+        </p>
+        <p>
+          I believe that having a functional website is only part of the solution. Being found is just as important. Accessibility (a11y) and Search Engine Optimisation (SEO) is an integral part of my development process.
+        </p>
+        <p>
+          Please view my  
+          <a
+            className="link"
+            onClick={[Function]}
+          >
+            portfolio
+          </a>
+           to see some examples of my work.
+        </p>
+      </div>
+      <div
+        className="social"
+      >
+        <a
+          className="social__icon"
+          href="https://au.linkedin.com/in/timmansell"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-linkedin fa-w-14 icon icon--xs"
+            data-icon="linkedin"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
+        <a
+          className="social__icon"
+          href="https://twitter.com/TimMansell"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-twitter fa-w-16 icon icon--xs"
+            data-icon="twitter"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
+        <a
+          className="social__icon"
+          href="https://github.com/TimMansell"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-github fa-w-16 icon icon--xs"
+            data-icon="github"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 496 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--primary"
+    id="skills"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="heading  heading--secondary"
+      >
+        <span>
+           
+        </span>
+        <p
+          data-test="heading-description"
+        >
+          I have acquired many skills during my professional career.  Most notable and relevant are
+        </p>
+      </div>
+      <div
+        className="skills"
+      >
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+            data-icon="code"
+            data-prefix="fa"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              HTML5
+            </li>
+            <li
+              className="skills__item"
+            >
+              Semantic Markup
+            </li>
+            <li
+              className="skills__item"
+            >
+              Bootstrap 4
+            </li>
+            <li
+              className="skills__item"
+            >
+              SEO
+            </li>
+            <li
+              className="skills__item"
+            >
+              a11y
+            </li>
+            <li
+              className="skills__item"
+            >
+              Web Components
+            </li>
+            <li
+              className="skills__item"
+            >
+              Styleguides
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+            data-icon="css3-alt"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              CSS3
+            </li>
+            <li
+              className="skills__item"
+            >
+              SCSS
+            </li>
+            <li
+              className="skills__item"
+            >
+              BEM
+            </li>
+            <li
+              className="skills__item"
+            >
+              SMACSS
+            </li>
+            <li
+              className="skills__item"
+            >
+              PostCSS
+            </li>
+            <li
+              className="skills__item"
+            >
+              Atomic Design
+            </li>
+            <li
+              className="skills__item"
+            >
+              CSS Grid
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-clipboard-list fa-w-12 icon icon--md icon--padded"
+            data-icon="clipboard-list"
+            data-prefix="fa"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM96 424c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm0-96c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm96-192c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm128 368c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              Responsive Design
+            </li>
+            <li
+              className="skills__item"
+            >
+              Mobile First CSS
+            </li>
+            <li
+              className="skills__item"
+            >
+              Retina Images
+            </li>
+            <li
+              className="skills__item"
+            >
+              Web Performance
+            </li>
+            <li
+              className="skills__item"
+            >
+              Page Optimisation
+            </li>
+            <li
+              className="skills__item"
+            >
+              CI/CD
+            </li>
+            <li
+              className="skills__item"
+            >
+              Unit Testing
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+            data-icon="js"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              ES6+
+            </li>
+            <li
+              className="skills__item"
+            >
+              Babel
+            </li>
+            <li
+              className="skills__item"
+            >
+              Webpack
+            </li>
+            <li
+              className="skills__item"
+            >
+              React / Redux
+            </li>
+            <li
+              className="skills__item"
+            >
+              Vue / Vuex / Nuxt
+            </li>
+            <li
+              className="skills__item"
+            >
+              Jest
+            </li>
+            <li
+              className="skills__item"
+            >
+              JSON
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+            data-icon="terminal"
+            data-prefix="fa"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              Node.js
+            </li>
+            <li
+              className="skills__item"
+            >
+              NPM / Yarn
+            </li>
+            <li
+              className="skills__item"
+            >
+              Git
+            </li>
+            <li
+              className="skills__item"
+            >
+              ESLint
+            </li>
+            <li
+              className="skills__item"
+            >
+              Netlify
+            </li>
+            <li
+              className="skills__item"
+            >
+              Semaphore
+            </li>
+            <li
+              className="skills__item"
+            >
+              Docker
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+            data-icon="trello"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              Agile
+            </li>
+            <li
+              className="skills__item"
+            >
+              Scrum
+            </li>
+            <li
+              className="skills__item"
+            >
+              Kanban
+            </li>
+            <li
+              className="skills__item"
+            >
+              JIRA
+            </li>
+            <li
+              className="skills__item"
+            >
+              Slack
+            </li>
+            <li
+              className="skills__item"
+            >
+              Trello
+            </li>
+            <li
+              className="skills__item"
+            >
+              Table Tennis
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--secondary"
+    id="retired-skills"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="heading  heading--tertiary"
+      >
+        <span>
+           
+        </span>
+        <p
+          data-test="heading-description"
+        >
+          I am still highly skilled in this area, but I have since moved onto newer tech
+        </p>
+      </div>
+      <div
+        className="skills"
+      >
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+            data-icon="code"
+            data-prefix="fa"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              PHP
+            </li>
+            <li
+              className="skills__item"
+            >
+              MySQL
+            </li>
+            <li
+              className="skills__item"
+            >
+              Bootstrap 3
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+            data-icon="css3-alt"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              LESS
+            </li>
+            <li
+              className="skills__item"
+            >
+              OOCSS
+            </li>
+            <li
+              className="skills__item"
+            >
+              Compass
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+            data-icon="js"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              AngularJS
+            </li>
+            <li
+              className="skills__item"
+            >
+              Backbone.js
+            </li>
+            <li
+              className="skills__item"
+            >
+              jQuery
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+            data-icon="terminal"
+            data-prefix="fa"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              Gulp / Grunt
+            </li>
+            <li
+              className="skills__item"
+            >
+              SVN
+            </li>
+            <li
+              className="skills__item"
+            >
+              Bower
+            </li>
+          </ul>
+        </div>
+        <div
+          className="divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+            data-icon="trello"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <ul
+            className="skills__list"
+          >
+            <li
+              className="skills__item"
+            >
+              Waterfall
+            </li>
+            <li
+              className="skills__item"
+            >
+              VSTS
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--tertiary"
+    id="stack"
+  >
+    <div
+      className="container container--medium"
+    >
+      <div
+        className="heading  heading--primary"
+      >
+        <span>
+           
+        </span>
+        <p
+          data-test="heading-description"
+        >
+          I spend most of my time with these technologies / tools / methodologies
+        </p>
+      </div>
+      <div
+        className="stack"
+      >
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://reactjs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="React"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "react.svg",
+                }
+              }
+              title="React"
+              width="72"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://nodejs.org/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="NodeJS"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "nodejs.svg",
+                }
+              }
+              title="NodeJS"
+              width="90"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://vuejs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="VueJS"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "vuejs.svg",
+                }
+              }
+              title="VueJS"
+              width="66"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://www.npmjs.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="NPM"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "npm.svg",
+                }
+              }
+              title="NPM"
+              width="90"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://webpack.js.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Webpack"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "webpack.svg",
+                }
+              }
+              title="Webpack"
+              width="84"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://yarnpkg.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Yarn"
+              className="stack__image img--responsive"
+              src="yarn.png"
+              title="Yarn"
+              width="132"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://eslint.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="ESLint"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "eslint.svg",
+                }
+              }
+              title="ESLint"
+              width="75"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://babeljs.io/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Babel"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "babel.svg",
+                }
+              }
+              title="Babel"
+              width="160"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://code.visualstudio.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="VSCode"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "vscode.svg",
+                }
+              }
+              title="VSCode"
+              width="66"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://sass-lang.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="SCSS"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "sass.svg",
+                }
+              }
+              title="SCSS"
+              width="75"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://postcss.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="PostCSS"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "postcss.svg",
+                }
+              }
+              title="PostCSS"
+              width="66"
+            />
+          </a>
+        </div>
+        <div
+          className="stack__item"
+        >
+          <a
+            href="https://git-scm.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Git"
+              className="stack__image img--responsive"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "git.svg",
+                }
+              }
+              title="Git"
+              width="90"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--secondary"
+    id="portfolio"
+  >
+    <div
+      className="container container--large"
+    >
+      <div
+        className="heading  heading--tertiary"
+      >
+        <span>
+           
+        </span>
+        <p
+          data-test="heading-description"
+        >
+          Here's a sample of my work
+        </p>
+      </div>
+      <div
+        className="portfolio"
+      >
+        <div
+          className="portfolio-item"
+        >
+          <div
+            className="portfolio-icons"
+          >
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+          </div>
+          <span>
+             
+          </span>
+          <div
+            className="portfolio-item__info"
+          >
+            <h3
+              className="portfolio-item__title"
+            >
+              myBupa
+            </h3>
+            <p
+              className="portfolio-item__description"
+            >
+              Responsive website rebuild.  Built on top of .NET stack.
+            </p>
+            <p
+              className="portfolio-item__tech"
+            >
+              AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.
+            </p>
+            <div
+              className="portfolio-item__more-info"
+            >
+              <a
+                href="https://my.bupa.com.au"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="portfolio-item"
+        >
+          <div
+            className="portfolio-icons"
+          >
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+          </div>
+          <span>
+             
+          </span>
+          <div
+            className="portfolio-item__info"
+          >
+            <h3
+              className="portfolio-item__title"
+            >
+              Captain's Choice
+            </h3>
+            <p
+              className="portfolio-item__description"
+            >
+              Responsive website rebuild. Built on top of .NET stack.
+            </p>
+            <p
+              className="portfolio-item__tech"
+            >
+              AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.
+            </p>
+            <div
+              className="portfolio-item__more-info"
+            >
+              <a
+                href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="portfolio-item"
+        >
+          <div
+            className="portfolio-icons"
+          >
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+          </div>
+          <span>
+             
+          </span>
+          <div
+            className="portfolio-item__info"
+          >
+            <h3
+              className="portfolio-item__title"
+            >
+              Tourism Victoria
+            </h3>
+            <p
+              className="portfolio-item__description"
+            >
+              Responsive website rebuild.  Built on top of .NET stack.
+            </p>
+            <p
+              className="portfolio-item__tech"
+            >
+              AngularJS, Bootstrap 3, SASS, Gulp, Bower, and jQuery.
+            </p>
+            <div
+              className="portfolio-item__more-info"
+            >
+              <a
+                href="http://visitvictoria.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="portfolio-item"
+        >
+          <div
+            className="portfolio-icons"
+          >
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+          </div>
+          <span>
+             
+          </span>
+          <div
+            className="portfolio-item__info"
+          >
+            <h3
+              className="portfolio-item__title"
+            >
+              UniSuper
+            </h3>
+            <p
+              className="portfolio-item__description"
+            >
+              Dedicated mobile site build. Built on top of .NET stack.
+            </p>
+            <p
+              className="portfolio-item__tech"
+            >
+              AngularJS, Bootstrap 3, SCSS/Compass, and jQuery.
+            </p>
+            <div
+              className="portfolio-item__more-info"
+            >
+              <a
+                href="http://m.unisuper.com.au/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="portfolio-item"
+        >
+          <div
+            className="portfolio-icons"
+          >
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+          </div>
+          <span>
+             
+          </span>
+          <div
+            className="portfolio-item__info"
+          >
+            <h3
+              className="portfolio-item__title"
+            >
+              Point & Claim
+            </h3>
+            <p
+              className="portfolio-item__description"
+            >
+              Responsive website rebuild. Built on top of CodeIgnitor framework.
+            </p>
+            <p
+              className="portfolio-item__tech"
+            >
+              AngularJS, Bootstrap 3, SCSS/Compass, jQuery, and Gulp.
+            </p>
+            <div
+              className="portfolio-item__more-info"
+            >
+              <a
+                href="https://web.archive.org/web/20160622073557/http://pointandclaim.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="portfolio-item"
+        >
+          <div
+            className="portfolio-icons"
+          >
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+            <div
+              className="portfolio-icons__icon"
+            />
+          </div>
+          <span>
+             
+          </span>
+          <div
+            className="portfolio-item__info"
+          >
+            <h3
+              className="portfolio-item__title"
+            >
+              Simply Great Meals
+            </h3>
+            <p
+              className="portfolio-item__description"
+            >
+              Responsive website rebuild focusing on mobile and tablet devices. Built on top of .NET stack.
+            </p>
+            <p
+              className="portfolio-item__tech"
+            >
+              Backbone, SCSS, and jQuery.
+            </p>
+            <div
+              className="portfolio-item__more-info"
+            >
+              <a
+                href="http://simplygreatmeals.com.au/"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--primary"
+    id="stats"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="lighter-note"
+      >
+        <div
+          className="lighter-note__item divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-code fa-w-20 icon icon--padded"
+            data-icon="code"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span>
+             
+          </span>
+          <p
+            className="lighter-note__text"
+          >
+            lines of code
+          </p>
+        </div>
+        <div
+          className="lighter-note__item divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-code-branch fa-w-12 icon icon--padded"
+            data-icon="code-branch"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M384 144c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 36.4 24.3 67.1 57.5 76.8-.6 16.1-4.2 28.5-11 36.9-15.4 19.2-49.3 22.4-85.2 25.7-28.2 2.6-57.4 5.4-81.3 16.9v-144c32.5-10.2 56-40.5 56-76.3 0-44.2-35.8-80-80-80S0 35.8 0 80c0 35.8 23.5 66.1 56 76.3v199.3C23.5 365.9 0 396.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-34-21.2-63.1-51.2-74.6 3.1-5.2 7.8-9.8 14.9-13.4 16.2-8.2 40.4-10.4 66.1-12.8 42.2-3.9 90-8.4 118.2-43.4 14-17.4 21.1-39.8 21.6-67.9 31.6-10.8 54.4-40.7 54.4-75.9zM80 64c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm0 384c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm224-320c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span>
+             
+          </span>
+          <p
+            className="lighter-note__text"
+          >
+            git commits
+          </p>
+        </div>
+        <div
+          className="lighter-note__item divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-mug-hot fa-w-16 icon icon--padded"
+            data-icon="mug-hot"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span>
+             
+          </span>
+          <p
+            className="lighter-note__text"
+          >
+            coffees consumed
+          </p>
+        </div>
+        <div
+          className="lighter-note__item divider"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-bicycle fa-w-20 icon icon--padded"
+            data-icon="bicycle"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512.509 192.001c-16.373-.064-32.03 2.955-46.436 8.495l-77.68-125.153A24 24 0 0 0 368.001 64h-64c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h50.649l14.896 24H256.002v-16c0-8.837-7.163-16-16-16h-87.459c-13.441 0-24.777 10.999-24.536 24.437.232 13.044 10.876 23.563 23.995 23.563h48.726l-29.417 47.52c-13.433-4.83-27.904-7.483-42.992-7.52C58.094 191.83.412 249.012.002 319.236-.413 390.279 57.055 448 128.002 448c59.642 0 109.758-40.793 123.967-96h52.033a24 24 0 0 0 20.406-11.367L410.37 201.77l14.938 24.067c-25.455 23.448-41.385 57.081-41.307 94.437.145 68.833 57.899 127.051 126.729 127.719 70.606.685 128.181-55.803 129.255-125.996 1.086-70.941-56.526-129.72-127.476-129.996zM186.75 265.772c9.727 10.529 16.673 23.661 19.642 38.228h-43.306l23.664-38.228zM128.002 400c-44.112 0-80-35.888-80-80s35.888-80 80-80c5.869 0 11.586.653 17.099 1.859l-45.505 73.509C89.715 331.327 101.213 352 120.002 352h81.3c-12.37 28.225-40.562 48-73.3 48zm162.63-96h-35.624c-3.96-31.756-19.556-59.894-42.383-80.026L237.371 184h127.547l-74.286 120zm217.057 95.886c-41.036-2.165-74.049-35.692-75.627-76.755-.812-21.121 6.633-40.518 19.335-55.263l44.433 71.586c4.66 7.508 14.524 9.816 22.032 5.156l13.594-8.437c7.508-4.66 9.817-14.524 5.156-22.032l-44.468-71.643a79.901 79.901 0 0 1 19.858-2.497c44.112 0 80 35.888 80 80-.001 45.54-38.252 82.316-84.313 79.885z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span>
+             
+          </span>
+          <p
+            className="lighter-note__text"
+          >
+            kilometers cycled
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--secondary"
+    id="presentations"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="heading  heading--tertiary"
+      >
+        <span>
+           
+        </span>
+        <p
+          data-test="heading-description"
+        >
+          Some talks I have done
+        </p>
+      </div>
+      <div
+        className="skills skills--single"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon icon--padded"
+          data-icon="chalkboard-teacher"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 640 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <ul
+          className="skills__list"
+        >
+          <li
+            className="skills__item"
+          >
+            <a
+              className="link link--alt"
+              href="https://timmansell.github.io/presentations/web-components/index.html"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Web components
+            </a>
+          </li>
+          <li
+            className="skills__item"
+          >
+            <a
+              className="link link--alt"
+              href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              CSS with superpowers
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section
+    className="section-wrap bg--tertiary"
+    id="testimonials"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="testimonials text--center"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-quote-left fa-w-16 icon testimonials__quote"
+          data-icon="quote-left"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <div
+          className="testimonials__quote"
+        >
+          <p
+            className="testimonials__text"
+          >
+            I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.
+          </p>
+          <p
+            className="testimonials__name"
+          >
+            Rusty Brooke
+          </p>
+        </div>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-quote-right fa-w-16 icon testimonials__quote"
+          data-icon="quote-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+`;
