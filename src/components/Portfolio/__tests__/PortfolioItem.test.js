@@ -14,6 +14,7 @@ describe("PortfolioItem", () => {
       url: ''
     };
     
+    // eslint-disable-next-line
     const wrapper = shallow(<PortfolioItem data={data} />);
   });
 
