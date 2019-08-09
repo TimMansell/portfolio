@@ -31,7 +31,7 @@
     "build": "run-s test build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --verbose=false --watch-all",
+    "test": "react-scripts test --env=jsdom --verbose=false",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
     "test:all": "cross-env CI=true yarn test",
     "eject": "react-scripts eject",
