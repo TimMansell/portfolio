@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentStack should match snapshot 1`] = `
+Array [
+  <div
+    className="heading  heading--primary"
+  >
+    <span>
+       
+    </span>
+    <p
+      data-test-heading-description={true}
+    >
+      I spend most of my time with these technologies / tools / methodologies
+    </p>
+  </div>,
+  <div
+    className="stack"
+  >
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://reactjs.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="React"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "react.svg",
+            }
+          }
+          title="React"
+          width="72"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://nodejs.org/en/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="NodeJS"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "nodejs.svg",
+            }
+          }
+          title="NodeJS"
+          width="90"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://vuejs.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="VueJS"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "vuejs.svg",
+            }
+          }
+          title="VueJS"
+          width="66"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://www.npmjs.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="NPM"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "npm.svg",
+            }
+          }
+          title="NPM"
+          width="90"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://webpack.js.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Webpack"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "webpack.svg",
+            }
+          }
+          title="Webpack"
+          width="84"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://yarnpkg.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Yarn"
+          className="stack__image img--responsive"
+          src="yarn.png"
+          title="Yarn"
+          width="132"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://eslint.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="ESLint"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eslint.svg",
+            }
+          }
+          title="ESLint"
+          width="75"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://babeljs.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Babel"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "babel.svg",
+            }
+          }
+          title="Babel"
+          width="160"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://code.visualstudio.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="VSCode"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "vscode.svg",
+            }
+          }
+          title="VSCode"
+          width="66"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://sass-lang.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="SCSS"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "sass.svg",
+            }
+          }
+          title="SCSS"
+          width="75"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://postcss.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="PostCSS"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "postcss.svg",
+            }
+          }
+          title="PostCSS"
+          width="66"
+        />
+      </a>
+    </div>
+    <div
+      className="stack__item"
+    >
+      <a
+        href="https://git-scm.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Git"
+          className="stack__image img--responsive"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "git.svg",
+            }
+          }
+          title="Git"
+          width="90"
+        />
+      </a>
+    </div>
+  </div>,
+]
+`;
