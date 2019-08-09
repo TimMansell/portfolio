@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Retired Skills should match snapshot 1`] = `
+Array [
+  <div
+    className="heading  heading--tertiary"
+  >
+    <span>
+       
+    </span>
+    <p
+      data-test="heading-description"
+    >
+      I am still highly skilled in this area, but I have since moved onto newer tech
+    </p>
+  </div>,
+  <div
+    className="skills"
+  >
+    <div
+      className="divider"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+        data-icon="code"
+        data-prefix="fa"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 640 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <ul
+        className="skills__list"
+      >
+        <li
+          className="skills__item"
+        >
+          PHP
+        </li>
+        <li
+          className="skills__item"
+        >
+          MySQL
+        </li>
+        <li
+          className="skills__item"
+        >
+          Bootstrap 3
+        </li>
+      </ul>
+    </div>
+    <div
+      className="divider"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+        data-icon="css3-alt"
+        data-prefix="fab"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <ul
+        className="skills__list"
+      >
+        <li
+          className="skills__item"
+        >
+          LESS
+        </li>
+        <li
+          className="skills__item"
+        >
+          OOCSS
+        </li>
+        <li
+          className="skills__item"
+        >
+          Compass
+        </li>
+      </ul>
+    </div>
+    <div
+      className="divider"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+        data-icon="js"
+        data-prefix="fab"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <ul
+        className="skills__list"
+      >
+        <li
+          className="skills__item"
+        >
+          AngularJS
+        </li>
+        <li
+          className="skills__item"
+        >
+          Backbone.js
+        </li>
+        <li
+          className="skills__item"
+        >
+          jQuery
+        </li>
+      </ul>
+    </div>
+    <div
+      className="divider"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+        data-icon="terminal"
+        data-prefix="fa"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 640 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <ul
+        className="skills__list"
+      >
+        <li
+          className="skills__item"
+        >
+          Gulp / Grunt
+        </li>
+        <li
+          className="skills__item"
+        >
+          SVN
+        </li>
+        <li
+          className="skills__item"
+        >
+          Bower
+        </li>
+      </ul>
+    </div>
+    <div
+      className="divider"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+        data-icon="trello"
+        data-prefix="fab"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <ul
+        className="skills__list"
+      >
+        <li
+          className="skills__item"
+        >
+          Waterfall
+        </li>
+        <li
+          className="skills__item"
+        >
+          VSTS
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;

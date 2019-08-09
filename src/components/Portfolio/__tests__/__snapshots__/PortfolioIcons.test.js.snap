@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PortfolioIcons should match snapshot 1`] = `
+<div
+  className="portfolio-icons"
+>
+  <div
+    className="portfolio-icons__icon"
+  />
+  <div
+    className="portfolio-icons__icon"
+  />
+  <div
+    className="portfolio-icons__icon"
+  />
+</div>
+`;

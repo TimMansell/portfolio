@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tagline should match snapshot 1`] = `
+<div
+  className="tagline"
+>
+  <h4
+    className="tagline__item"
+  >
+    Front-end Engineer
+  </h4>
+  <h4
+    className="tagline__item"
+  >
+    Javascript Engineer
+  </h4>
+  <h4
+    className="tagline__item"
+  >
+    React Engineer
+  </h4>
+  <h4
+    className="tagline__item"
+  >
+    VueJS Engineer
+  </h4>
+</div>
+`;

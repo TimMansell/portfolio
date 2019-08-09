@@ -9,11 +9,9 @@ describe("App", () => {
     const wrapper = shallow(<App />);
   });
 
-  // it("should match snapshot", () => {
-  //   const snapshot = renderer.create(<App />).toJSON();
+  it.skip("should match snapshot", () => {
+    const snapshot = renderer.create(<App />).toJSON();
     
-  //   expect(snapshot).toMatchSnapshot();
-  // });
-
-  
+    expect(snapshot).toMatchSnapshot();
+  });
 });

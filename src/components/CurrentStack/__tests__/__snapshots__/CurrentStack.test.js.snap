@@ -9,7 +9,7 @@ Array [
        
     </span>
     <p
-      data-test-heading-description={true}
+      data-test="heading-description"
     >
       I spend most of my time with these technologies / tools / methodologies
     </p>

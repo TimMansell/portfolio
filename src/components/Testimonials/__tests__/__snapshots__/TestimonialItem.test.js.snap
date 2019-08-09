@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestimonialsItem should match snapshot 1`] = `
+<div
+  className="testimonials__quote"
+>
+  <p
+    className="testimonials__text"
+  >
+    Description
+  </p>
+  <p
+    className="testimonials__name"
+  >
+    Author
+  </p>
+</div>
+`;

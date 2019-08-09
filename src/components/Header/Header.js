@@ -15,13 +15,13 @@ export const Header = ({primary, secondary, tertiary, text, title}) => {
     });
  
     if (text) {
-        text = <p data-test-heading-description>{text}</p>;
+        text = <p data-test="heading-description">{text}</p>;
     }
     
     return <div className={classes}>
         <InViewport>
             <ShuffleCharacters>
-                <h2 className="heading__title" data-test-heading-title>{title}</h2>
+                <h2 className="heading__title" data-test="heading-title">{title}</h2>
             </ShuffleCharacters>
         </InViewport>
         {text}
