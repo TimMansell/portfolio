@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero should match snapshot 1`] = `
+<div
+  className="hero"
+>
+  <div
+    className="hero__img"
+    style={Object {}}
+  />
+</div>
+`;

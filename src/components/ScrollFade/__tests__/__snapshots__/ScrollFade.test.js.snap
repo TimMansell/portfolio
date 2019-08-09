@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollFade should match snapshot 1`] = `
+<div
+  style={Object {}}
+>
+  &lt;p&gt;&lt;/p&gt;
+</div>
+`;

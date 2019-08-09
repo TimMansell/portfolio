@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
+import renderer from 'react-test-renderer';
 
 import StackItem from '../StackItem';
 
@@ -13,5 +14,11 @@ const props = {
 describe("StackItem", () => {
   it("should render my component", () => {
     const wrapper = shallow(<StackItem stack={props} />);
+  });
+
+  it("should match snapshot", () => {
+    const snapshot = renderer.create(<StackItem stack={props} />).toJSON();
+    
+    expect(snapshot).toMatchSnapshot();
   });
 });
