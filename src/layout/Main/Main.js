@@ -1,18 +1,21 @@
 import React from 'react';
 
-import SectionWrap from '../SectionWrap';
+import SectionWrap from 'layout/SectionWrap';
 
-import Profile from '../../components/Profile';
-import Skills from '../../components/Skills';
-import RetiredSkills from '../../components/RetiredSkills';
-import CurrentStack from '../../components/CurrentStack';
-import Portfolio from '../../components/Portfolio';
-import Stats from '../../components/Stats';
-import Presentations from '../../components/Presentations';
-import Testimonials from '../../components/Testimonials';
+import Profile from 'components/Profile';
+import Skills from 'components/Skills';
+import RetiredSkills from 'components/RetiredSkills';
+import CurrentStack from 'components/CurrentStack';
+import Portfolio from 'components/Portfolio';
+import Stats from 'components/Stats';
+import Presentations from 'components/Presentations';
+import Testimonials from 'components/Testimonials';
+import Footer from 'components/Footer';
+
+import './Main.scss';
 
 const Main = () => {
-	return <main>
+	return <main className="main">
 		<SectionWrap id="profile" background="tertiary">
 			<Profile />
 		</SectionWrap>
@@ -44,6 +47,8 @@ const Main = () => {
 		<SectionWrap id="testimonials" background="tertiary">
 			<Testimonials />
 		</SectionWrap>
+
+		<Footer />
 	</main>
 };
 

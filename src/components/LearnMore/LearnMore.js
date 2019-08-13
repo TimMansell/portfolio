@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 import './LearnMore.scss';
 
-import { IconChevronDown } from '../Icon';
+import { IconChevronDown } from 'components/Icon';
 
 export const ListItem = () => {
 	return <div className="learn-more">

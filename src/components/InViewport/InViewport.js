@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
 import inViewport from 'in-viewport';
 
 export class InViewport extends React.Component {
@@ -10,10 +9,12 @@ export class InViewport extends React.Component {
         this.state = {
             isInViewport: false
         };
+
+        this.refInViewport = React.createRef();
     }
     
     componentDidMount() {
-        const element = ReactDOM.findDOMNode(this);
+        const element = this.refInViewport.current;
 
         inViewport(element, this.visible); 
     }
@@ -26,11 +27,12 @@ export class InViewport extends React.Component {
     
     render() {
         const { children } = this.props;
+        const { isInViewport } = this.state;
 
-        return <>
-            {!this.state.isInViewport && <span>&nbsp;</span> }
-            {this.state.isInViewport && <span>{children}</span>}
-        </>;
+        return <div ref={this.refInViewport}>
+            {!isInViewport && <span>&nbsp;</span> }
+            {isInViewport && <span>{children}</span>}
+        </div>;
     }
 }
 

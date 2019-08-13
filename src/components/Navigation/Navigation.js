@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import * as actions from '../../actions';
+import * as actions from 'actions';
 
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 
-import Hamburger from '../Hamburger';
+import Hamburger from 'components/Hamburger';
 
 import './Navigation.scss';
 
@@ -19,13 +19,15 @@ export class Navigation extends React.Component {
 		this.state = {
 			isFixedNav: false
 		};
+
+		this.refNavigation = React.createRef();
 	}
 
 	componentDidMount() {
     	window.addEventListener('scroll', this.handleScroll);
 
 		this.setState(prevState => ({
-			offset: this.textInput.offsetTop
+			offset: this.refNavigation.current.offsetTop
 		}));
 	}
 
@@ -34,10 +36,12 @@ export class Navigation extends React.Component {
 	}
 
 	handleScroll = (event) => {
-		let scrollTop = window.scrollY || document.documentElement.scrollTop,
-			isFixedNav = false;
+		const scrollTop = window.scrollY || document.documentElement.scrollTop;
+		const { offset } = this.state;
 
-		if(scrollTop >= this.state.offset){
+		let	isFixedNav = false;
+
+		if(scrollTop >= offset){
 			isFixedNav = true;
 		} else {
 			isFixedNav = false;
@@ -54,9 +58,10 @@ export class Navigation extends React.Component {
 
 	render() {
 		const { isMobileMenu } = this.props;
+		const { isFixedNav } = this.state;
 
 		const navClasses = classnames('navigation', {
-			'navigation--is-sticky': this.state.isFixedNav && !isMobileMenu,
+			'navigation--is-sticky': isFixedNav && !isMobileMenu,
 			'navigation--active': isMobileMenu
 		});
 
@@ -65,10 +70,10 @@ export class Navigation extends React.Component {
 		});
 
 		const linkClasses = classnames('navigation__menu-link', {
-			'navigation__menu-link--is-sticky': this.state.isFixedNav && !isMobileMenu,
+			'navigation__menu-link--is-sticky': isFixedNav && !isMobileMenu,
 		});
 
-		return <nav id="nav" className={navClasses} ref={(input) => { this.textInput = input; }}>
+		return <nav id="nav" className={navClasses} ref={this.refNavigation}>
 			<ul className={menuClasses}>
 				<li className="navigation__menu-item">
 					<Link className={linkClasses} activeClass="navigation__menu-link--active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>

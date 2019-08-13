@@ -29,7 +29,9 @@ export class ShuffleContent extends React.Component {
     }
 
     render() {
-        return <div>{this.state.content}</div>;
+        const { content } = this.state;
+
+        return <div>{content}</div>;
     }
 }
 

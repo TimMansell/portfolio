@@ -13,11 +13,11 @@ const props = {
 
 describe("StackItem", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<StackItem stack={props} />);
+    const wrapper = shallow(<StackItem {...props} />);
   });
 
   it("should match snapshot", () => {
-    const snapshot = renderer.create(<StackItem stack={props} />).toJSON();
+    const snapshot = renderer.create(<StackItem {...props} />).toJSON();
     
     expect(snapshot).toMatchSnapshot();
   });

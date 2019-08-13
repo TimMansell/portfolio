@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Header from '../Header';
-import ListItem from '../ListItem';
+import Header from 'components/Header';
+import ListItem from 'components/ListItem';
 
 import skills from './json/skills.json';
 import './Skills.scss';

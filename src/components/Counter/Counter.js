@@ -5,11 +5,13 @@ class Counter extends React.Component {
     constructor(props) {
         super(props);
 
+        const {begin, end} = props;
+
         this.state = {
-            counter: props.begin
+            counter: begin
         };
 
-        this.randomCountTo = Math.floor(Math.random()*(props.end-props.begin+1)+props.begin)
+        this.randomCountTo = Math.floor(Math.random()*(end-begin+1)+begin)
     }
 
     componentDidMount() {
@@ -21,7 +23,9 @@ class Counter extends React.Component {
     }
 
     incrementCounter = () => {
-        if(this.state.counter <= this.randomCountTo){
+        const { counter } = this.state;
+
+        if(counter <= this.randomCountTo){
             this.setState(prevState => ({
                 counter: prevState.counter + 1
             })); 
@@ -35,7 +39,9 @@ class Counter extends React.Component {
     }
 
     render() {
-        return <>{this.state.counter}+</>;
+        const { counter } = this.state;
+
+        return <>{counter}+</>;
     }
 }
 

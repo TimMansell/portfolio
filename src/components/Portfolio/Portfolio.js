@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Header from '../Header';
+import Header from 'components/Header';
 import PortfolioItem from './PortfolioItem';
 
 import './Portfolio.scss';
 import portfolioJson from './json/portfolio.json';
 
 export const Portfolio = () => {
-	let listItems = portfolioJson.map((item, i) =>
-		<PortfolioItem data={item} key={i} />
+	const listItems = portfolioJson.map((item, i) =>
+		<PortfolioItem {...item} key={i} />
 	);
 
 	return <>
