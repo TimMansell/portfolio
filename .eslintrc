@@ -18,10 +18,20 @@
     "standard",
     "promise"
   ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "globals": {
     "document": false,
     "navigator": false,
     "window": false
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "version": "detect", 
+    }
   },
   "rules": {
     "accessor-pairs": 2,
