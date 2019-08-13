@@ -21,8 +21,9 @@ export class ScrollFade extends React.Component {
 
     handleScroll = throttle((e) => {
         const { fadeMultiplier } = this.props;
+        const { scrollY, innerHeight } = window;
 
-        const opacity = 1 - (window.scrollY / window.innerHeight) * fadeMultiplier;
+        const opacity = 1 - (scrollY / innerHeight) * fadeMultiplier;
 
         const styles = {
             opacity: opacity
@@ -37,8 +38,9 @@ export class ScrollFade extends React.Component {
 
     render() {
         const { children } = this.props;
+        const { styles } = this.state;
 
-        return <div style={this.state.styles}>{children}</div>;
+        return <div style={styles}>{children}</div>;
     }
 }
 

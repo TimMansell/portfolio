@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import InViewport from '../InViewport';
+import InViewport from 'components/InViewport';
 
 import './PortfolioItem.scss';
 
 import PortfolioIcons from './PortfolioIcons';
-import { IconDesktop } from '../Icon';
+import { IconDesktop } from 'components/Icon';
 
-export const PortfolioItem = ({data}) => {
+export const PortfolioItem = ({thumb, title, description, tech, url}) => {
     return <div className="portfolio-item">
         <PortfolioIcons />
         <InViewport>
-            <img className="img--responsive" src={require(`${data.thumb}`)} alt={data.title} />
+            <img className="img--responsive" src={require(`${thumb}`)} alt={title} />
         </InViewport>
         
         <div className="portfolio-item__info">
-            <h3 className="portfolio-item__title">{data.title}</h3>
-            <p className="portfolio-item__description">{data.description}</p>
-            <p className="portfolio-item__tech">{data.tech}</p>
+            <h3 className="portfolio-item__title">{title}</h3>
+            <p className="portfolio-item__description">{description}</p>
+            <p className="portfolio-item__tech">{tech}</p>
 
             <div className="portfolio-item__more-info">
-                <a href={data.url} target="_blank" rel="noopener noreferrer" title="Visit website">
+                <a href={url} target="_blank" rel="noopener noreferrer" title="Visit website">
                     <IconDesktop size="xs" className="portfolio-item__icon" />
                 </a>
             </div>
@@ -30,7 +30,11 @@ export const PortfolioItem = ({data}) => {
 }
 
 PortfolioItem.propTypes = {
-	data: PropTypes.object.isRequired
+    thumb: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    tech: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 };
 
 export default PortfolioItem;

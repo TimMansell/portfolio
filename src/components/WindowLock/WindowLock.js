@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import ScrollLock from 'react-scrolllock';
 
-import * as actions from '../../actions';
+import * as actions from 'actions';
 
 import debounce from 'lodash.debounce';
 
@@ -26,7 +26,7 @@ export class WindowLock extends React.Component {
 	}
 
 	handleResize = (event) => {
-		let isInsideMobileView = this.isInsideMobileView();
+		const isInsideMobileView = this.isInsideMobileView();
 
 		this.setState(prevState => ({
 			isMobileView: isInsideMobileView
@@ -39,8 +39,9 @@ export class WindowLock extends React.Component {
 
 	render() {
 		const { isMobileMenu } = this.props;
+		const { isMobileView } = this.state;
 
-		return <>{isMobileMenu && this.state.isMobileView && <ScrollLock />}</>;
+		return <>{isMobileMenu && isMobileView && <ScrollLock />}</>;
 	}
 }
 

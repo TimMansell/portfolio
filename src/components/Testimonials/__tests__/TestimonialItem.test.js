@@ -6,21 +6,21 @@ import TestimonialsItem from '../TestimonialItem';
 
 describe("TestimonialsItem", () => {
   it("should render my component", () => {
-    const data = {
+    const props = {
       description: '',
       author: ''
     };
 
-    const wrapper = shallow(<TestimonialsItem data={data} />);
+    const wrapper = shallow(<TestimonialsItem {...props} />);
   });
 
   it("should match snapshot", () => {
-    const data = {
+    const props = {
       description: 'Description',
       author: 'Author'
     };
 
-    const snapshot = renderer.create(<TestimonialsItem data={data} />).toJSON();
+    const snapshot = renderer.create(<TestimonialsItem {...props} />).toJSON();
     
     expect(snapshot).toMatchSnapshot();
   });

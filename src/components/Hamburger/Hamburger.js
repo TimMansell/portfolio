@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import classnames from 'classnames';
 
-import * as actions from '../../actions';
+import * as actions from 'actions';
 
 import './Hamburger.scss';
 

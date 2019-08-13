@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import SocialIcons from '../SocialIcons';
-import Header from '../Header';
+import SocialIcons from 'components/SocialIcons';
+import Header from 'components/Header';
 
 import './Profile.scss';
 

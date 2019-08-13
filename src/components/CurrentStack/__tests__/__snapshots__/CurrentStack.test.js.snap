@@ -5,9 +5,11 @@ Array [
   <div
     className="heading  heading--primary"
   >
-    <span>
-       
-    </span>
+    <div>
+      <span>
+         
+      </span>
+    </div>
     <p
       data-test="heading-description"
     >

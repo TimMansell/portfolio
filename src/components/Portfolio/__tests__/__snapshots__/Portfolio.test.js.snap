@@ -5,9 +5,11 @@ Array [
   <div
     className="heading  heading--tertiary"
   >
-    <span>
-       
-    </span>
+    <div>
+      <span>
+         
+      </span>
+    </div>
     <p
       data-test="heading-description"
     >
@@ -33,9 +35,11 @@ Array [
           className="portfolio-icons__icon"
         />
       </div>
-      <span>
-         
-      </span>
+      <div>
+        <span>
+           
+        </span>
+      </div>
       <div
         className="portfolio-item__info"
       >
@@ -100,9 +104,11 @@ Array [
           className="portfolio-icons__icon"
         />
       </div>
-      <span>
-         
-      </span>
+      <div>
+        <span>
+           
+        </span>
+      </div>
       <div
         className="portfolio-item__info"
       >
@@ -167,9 +173,11 @@ Array [
           className="portfolio-icons__icon"
         />
       </div>
-      <span>
-         
-      </span>
+      <div>
+        <span>
+           
+        </span>
+      </div>
       <div
         className="portfolio-item__info"
       >
@@ -234,9 +242,11 @@ Array [
           className="portfolio-icons__icon"
         />
       </div>
-      <span>
-         
-      </span>
+      <div>
+        <span>
+           
+        </span>
+      </div>
       <div
         className="portfolio-item__info"
       >
@@ -301,9 +311,11 @@ Array [
           className="portfolio-icons__icon"
         />
       </div>
-      <span>
-         
-      </span>
+      <div>
+        <span>
+           
+        </span>
+      </div>
       <div
         className="portfolio-item__info"
       >
@@ -368,9 +380,11 @@ Array [
           className="portfolio-icons__icon"
         />
       </div>
-      <span>
-         
-      </span>
+      <div>
+        <span>
+           
+        </span>
+      </div>
       <div
         className="portfolio-item__info"
       >

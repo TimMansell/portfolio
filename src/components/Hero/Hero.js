@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { throttle } from 'lodash';
+import throttle from 'lodash.throttle';
 
 import './Hero.scss';
 
@@ -25,7 +25,7 @@ export class Hero extends React.Component {
         const { blurFrom, blurTo } = this.props;
         
         const blur = blurFrom + ( (blurTo - blurFrom) * (window.scrollY / window.innerHeight));
-        const blurCss = (blur <= blurTo) ? {'filter': 'blur('+blur+'px)'} : {};
+        const blurCss = (blur <= blurTo) ? {'filter': `blur(${blur}px)`} : {};
 
         this.setState(prevState => ({    
             styles: blurCss
@@ -33,8 +33,10 @@ export class Hero extends React.Component {
     }, 30)
 
     render() {
+        const { styles } = this.state;
+
         return <div className="hero">
-            <div className="hero__img" style={this.state.styles}></div>
+            <div className="hero__img" style={styles}></div>
         </div>;
     }
 }

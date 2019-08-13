@@ -35,10 +35,12 @@ export class Testimonials extends React.Component {
     }
 
     render() {
+        const { testimonial } = this.state;
+
         return <>
 			<div className="testimonials text--center">
 				<IconQuoteLeft className="testimonials__quote" />
-				<TestimonialItem data={this.state.testimonial} />
+				<TestimonialItem {...testimonial} />
 				<IconQuoteRight className="testimonials__quote" />
 			</div>
 		</>;

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 
 import './GoToTop.scss';
 
-import { IconAngleUp } from '../Icon';
+import { IconAngleUp } from 'components/Icon';
 
 export class GoToTop extends React.Component {
     constructor(props) {
@@ -37,7 +37,8 @@ export class GoToTop extends React.Component {
     }, 30)
 
     render() {
-        let classes = classnames('goto-top', {'goto-top--show': this.state.isVisible});
+        const { isVisible } = this.state;
+        const classes = classnames('goto-top', {'goto-top--show': isVisible});
 
         return <Link className={classes} to="root" smooth={true}>
             <IconAngleUp size="sm" />

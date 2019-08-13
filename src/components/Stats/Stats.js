@@ -1,11 +1,11 @@
 import React from 'react';
 
-import InViewport from '../InViewport';
-import Counter from '../Counter';
+import InViewport from 'components/InViewport';
+import Counter from 'components/Counter';
 
 import './Stats.scss';
 
-import { IconCode, IconCodeBranch, IconMugHot, IconBicycle } from '../Icon';
+import { IconCode, IconCodeBranch, IconMugHot, IconBicycle } from 'components/Icon';
 
 export const Stats = () => {
 	return <>

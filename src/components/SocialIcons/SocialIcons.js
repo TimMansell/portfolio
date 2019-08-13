@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SocialIcons.scss';
 
-import { IconLinkedin, IconTwitter, IconGithub } from '../Icon';
+import { IconLinkedin, IconTwitter, IconGithub } from 'components/Icon';
 
 export const SocialIcons = () => {
     return <div className="social">
