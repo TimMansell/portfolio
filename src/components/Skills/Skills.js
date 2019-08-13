@@ -7,15 +7,15 @@ import skills from './json/skills.json';
 import './Skills.scss';
 
 export const Skills = () => {
-	return <>
+  return <>
 		<Header title="Skills" text="I have acquired many skills during my professional career.  Most notable and relevant are" secondary />
 
 		<div className="skills">
-			{skills.map((skill, i) =>
-				<ListItem item={skill} key={i} />
-			)}
+		  {skills.map((skill, i) =>
+		    <ListItem item={skill} key={i} />
+		  )}
 		</div>
 	</>;
-}
+};
 
 export default Skills;

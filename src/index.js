@@ -14,12 +14,12 @@ const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <App />
-  </Provider>, 
+  </Provider>,
   document.getElementById('root'));
 
 // Load web fonts.
 WebFont.load({
-  google:{
+  google: {
     families: ['Open Sans:700,400']
   }
-});  
+});

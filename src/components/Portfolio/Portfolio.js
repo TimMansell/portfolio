@@ -7,17 +7,17 @@ import './Portfolio.scss';
 import portfolioJson from './json/portfolio.json';
 
 export const Portfolio = () => {
-	const listItems = portfolioJson.map((item, i) =>
-		<PortfolioItem {...item} key={i} />
-	);
+  const listItems = portfolioJson.map((item, i) =>
+    <PortfolioItem {...item} key={i} />
+  );
 
-	return <>
+  return <>
 		<Header title="Portfolio" text="Here's a sample of my work" tertiary />
 
 		<div className="portfolio">
-			{listItems}	
+		  {listItems}
 		</div>
 	</>;
-}
+};
 
 export default Portfolio;

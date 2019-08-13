@@ -15,41 +15,41 @@ import Footer from 'components/Footer';
 import './Main.scss';
 
 const Main = () => {
-	return <main className="main">
-		<SectionWrap id="profile" background="tertiary">
-			<Profile />
-		</SectionWrap>
+  return <main className="main">
+    <SectionWrap id="profile" background="tertiary">
+      <Profile />
+    </SectionWrap>
 
-		<SectionWrap id="skills" background="primary">
-			<Skills />
-		</SectionWrap>
-		
-		<SectionWrap id="retired-skills" background="secondary">
-			<RetiredSkills />
-		</SectionWrap>
-		
-		<SectionWrap id="stack" background="tertiary" container="medium">
-			<CurrentStack />
-		</SectionWrap>
-		
-		<SectionWrap id="portfolio" background="secondary" container="large">
-			<Portfolio />
-		</SectionWrap>
-		
-		<SectionWrap id="stats" background="primary">
-			<Stats />
-		</SectionWrap>
-		
-		<SectionWrap id="presentations" background="secondary">
-			<Presentations />
-		</SectionWrap>
-		
-		<SectionWrap id="testimonials" background="tertiary">
-			<Testimonials />
-		</SectionWrap>
+    <SectionWrap id="skills" background="primary">
+      <Skills />
+    </SectionWrap>
 
-		<Footer />
-	</main>
+    <SectionWrap id="retired-skills" background="secondary">
+      <RetiredSkills />
+    </SectionWrap>
+
+    <SectionWrap id="stack" background="tertiary" container="medium">
+      <CurrentStack />
+    </SectionWrap>
+
+    <SectionWrap id="portfolio" background="secondary" container="large">
+      <Portfolio />
+    </SectionWrap>
+
+    <SectionWrap id="stats" background="primary">
+      <Stats />
+    </SectionWrap>
+
+    <SectionWrap id="presentations" background="secondary">
+      <Presentations />
+    </SectionWrap>
+
+    <SectionWrap id="testimonials" background="tertiary">
+      <Testimonials />
+    </SectionWrap>
+
+    <Footer />
+  </main>;
 };
 
 export default Main;

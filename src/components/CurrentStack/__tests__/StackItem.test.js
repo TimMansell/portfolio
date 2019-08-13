@@ -11,14 +11,14 @@ const props = {
   width: ''
 };
 
-describe("StackItem", () => {
-  it("should render my component", () => {
+describe('StackItem', () => {
+  it('should render my component', () => {
     const wrapper = shallow(<StackItem {...props} />);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<StackItem {...props} />).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });

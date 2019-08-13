@@ -16,9 +16,9 @@ export const App = () => {
     <GoToTop />
     <WindowLock />
   </>;
-}
+};
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps (state, ownProps) {
   return {
     isMobileMenu: state.isMobileMenu
   };

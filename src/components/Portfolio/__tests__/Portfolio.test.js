@@ -4,15 +4,15 @@ import renderer from 'react-test-renderer';
 
 import Portfolio from '../Portfolio';
 
-describe("Portfolio", () => {
-  it("should render my component", () => {
+describe('Portfolio', () => {
+  it('should render my component', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<Portfolio />);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<Portfolio/>).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });
