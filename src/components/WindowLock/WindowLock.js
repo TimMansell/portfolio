@@ -6,7 +6,7 @@ import ScrollLock from 'react-scrolllock';
 
 import * as actions from '../../actions';
 
-import debounce from 'lodash/debounce';
+import debounce from 'lodash.debounce';
 
 export class WindowLock extends React.Component {
 	constructor(props) {

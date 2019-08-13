@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { throttle } from 'lodash';
+import throttle from 'lodash.throttle';
 
 export class ScrollFade extends React.Component {
     constructor(props) {

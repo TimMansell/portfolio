@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { throttle } from 'lodash';
+import throttle from 'lodash.throttle';
 import classnames from 'classnames';
 
 import './GoToTop.scss';
