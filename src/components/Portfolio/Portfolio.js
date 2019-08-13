@@ -12,12 +12,12 @@ export const Portfolio = () => {
   );
 
   return <>
-		<Header title="Portfolio" text="Here's a sample of my work" tertiary />
+  <Header title="Portfolio" text="Here's a sample of my work" tertiary />
 
-		<div className="portfolio">
-		  {listItems}
-		</div>
-	</>;
+  <div className="portfolio">
+    {listItems}
+  </div>
+</>;
 };
 
 export default Portfolio;

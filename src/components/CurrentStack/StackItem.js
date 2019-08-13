@@ -17,9 +17,9 @@ export const SkillsItem = ({url, img, name, width}) => {
 
 SkillsItem.propTypes = {
   url: PropTypes.string.isRequired,
-  	img: PropTypes.string.isRequired,
-  	name: PropTypes.string.isRequired,
-  	width: PropTypes.string.isRequired
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired
 };
 
 export default SkillsItem;

@@ -6,7 +6,7 @@ import PortfolioIcons from '../PortfolioIcons';
 
 describe('PortfolioIcons', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
+  // eslint-disable-next-line
     const wrapper = shallow(<PortfolioIcons />);
   });
 
