@@ -67,10 +67,13 @@ const Icon = ({ name, className, size, padded }) => {
 };
 
 Icon.propTypes = {
-  name: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object
+  ]),
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export default Icon;
@@ -81,9 +84,10 @@ export const IconChevronDown = ({ className, size, padded }) => {
 };
 
 IconChevronDown.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconAngleUp = ({ className, size, padded }) => {
@@ -91,9 +95,10 @@ export const IconAngleUp = ({ className, size, padded }) => {
 };
 
 IconAngleUp.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconTerminal = ({ className, size, padded }) => {
@@ -101,9 +106,10 @@ export const IconTerminal = ({ className, size, padded }) => {
 };
 
 IconTerminal.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconClipboardList = ({ className, size, padded }) => {
@@ -111,9 +117,10 @@ export const IconClipboardList = ({ className, size, padded }) => {
 };
 
 IconClipboardList.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconGamepad = ({ className, size, padded }) => {
@@ -121,9 +128,10 @@ export const IconGamepad = ({ className, size, padded }) => {
 };
 
 IconGamepad.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconDesktop = ({ className, size, padded }) => {
@@ -131,9 +139,10 @@ export const IconDesktop = ({ className, size, padded }) => {
 };
 
 IconDesktop.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconChalkboardTeacher = ({ className, size, padded }) => {
@@ -141,9 +150,10 @@ export const IconChalkboardTeacher = ({ className, size, padded }) => {
 };
 
 IconChalkboardTeacher.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconCode = ({ className, size, padded }) => {
@@ -151,9 +161,10 @@ export const IconCode = ({ className, size, padded }) => {
 };
 
 IconCode.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconCodeBranch = ({ className, size, padded }) => {
@@ -161,9 +172,10 @@ export const IconCodeBranch = ({ className, size, padded }) => {
 };
 
 IconCodeBranch.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconMugHot = ({ className, size, padded }) => {
@@ -171,9 +183,10 @@ export const IconMugHot = ({ className, size, padded }) => {
 };
 
 IconMugHot.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconBicycle = ({ className, size, padded }) => {
@@ -181,9 +194,10 @@ export const IconBicycle = ({ className, size, padded }) => {
 };
 
 IconBicycle.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconQuoteLeft = ({ className, size, padded }) => {
@@ -191,9 +205,10 @@ export const IconQuoteLeft = ({ className, size, padded }) => {
 };
 
 IconQuoteLeft.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconQuoteRight = ({ className, size, padded }) => {
@@ -201,9 +216,10 @@ export const IconQuoteRight = ({ className, size, padded }) => {
 };
 
 IconQuoteRight.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 // Brand Icons.
@@ -212,9 +228,10 @@ export const IconCss3Alt = ({ className, size, padded }) => {
 };
 
 IconCss3Alt.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconJs = ({ className, size, padded }) => {
@@ -222,9 +239,10 @@ export const IconJs = ({ className, size, padded }) => {
 };
 
 IconJs.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconTrello = ({ className, size, padded }) => {
@@ -232,9 +250,10 @@ export const IconTrello = ({ className, size, padded }) => {
 };
 
 IconTrello.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconLinkedin = ({ className, size, padded }) => {
@@ -242,9 +261,10 @@ export const IconLinkedin = ({ className, size, padded }) => {
 };
 
 IconLinkedin.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconTwitter = ({ className, size, padded }) => {
@@ -252,9 +272,10 @@ export const IconTwitter = ({ className, size, padded }) => {
 };
 
 IconTwitter.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
 export const IconGithub = ({ className, size, padded }) => {
@@ -262,8 +283,9 @@ export const IconGithub = ({ className, size, padded }) => {
 };
 
 IconGithub.propTypes = {
-  className: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  padded: PropTypes.string.isRequired
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool
 };
 
