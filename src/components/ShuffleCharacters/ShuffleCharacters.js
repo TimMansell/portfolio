@@ -4,30 +4,29 @@ import PropTypes from 'prop-types';
 import shuffleLetters from 'shuffle-letters';
 
 export class ShuffleCharacters extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor (props) {
+    super(props);
 
-        this.refShuffle = React.createRef();
-    }
+    this.refShuffle = React.createRef();
+  }
 
-    componentDidMount() {
-        this.shuffle();
-    }
+  componentDidMount () {
+    this.shuffle();
+  }
 
     shuffle = () => {
-        shuffleLetters(this.refShuffle.current.children);
+      shuffleLetters(this.refShuffle.current.children);
     }
 
-    render() {
-        const { children } = this.props;
+    render () {
+      const { children } = this.props;
 
-        return <div ref={this.refShuffle}>{children}</div>;
+      return <div ref={this.refShuffle}>{children}</div>;
     }
 }
 
 ShuffleCharacters.propTypes = {
-	children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 };
-
 
 export default ShuffleCharacters;

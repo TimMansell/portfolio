@@ -5,45 +5,45 @@ import throttle from 'lodash.throttle';
 import './Hero.scss';
 
 export class Hero extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor (props) {
+    super(props);
 
-        this.state = {
-            styles: {}
-        };
-    }
+    this.state = {
+      styles: {}
+    };
+  }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
     handleScroll = throttle((e) => {
-        const { blurFrom, blurTo } = this.props;
-        
-        const blur = blurFrom + ( (blurTo - blurFrom) * (window.scrollY / window.innerHeight));
-        const blurCss = (blur <= blurTo) ? {'filter': `blur(${blur}px)`} : {};
+      const { blurFrom, blurTo } = this.props;
 
-        this.setState(prevState => ({    
-            styles: blurCss
-        }));
+      const blur = blurFrom + ((blurTo - blurFrom) * (window.scrollY / window.innerHeight));
+      const blurCss = (blur <= blurTo) ? {'filter': `blur(${blur}px)`} : {};
+
+      this.setState(prevState => ({
+        styles: blurCss
+      }));
     }, 30)
 
-    render() {
-        const { styles } = this.state;
+    render () {
+      const { styles } = this.state;
 
-        return <div className="hero">
-            <div className="hero__img" style={styles}></div>
-        </div>;
+      return <div className="hero">
+        <div className="hero__img" style={styles}></div>
+      </div>;
     }
 }
 
 Hero.propTypes = {
-    blurFrom: PropTypes.number.isRequired,
-    blurTo: PropTypes.number.isRequired
+  blurFrom: PropTypes.number.isRequired,
+  blurTo: PropTypes.number.isRequired
 };
 
 export default Hero;

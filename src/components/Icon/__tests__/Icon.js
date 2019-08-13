@@ -129,10 +129,6 @@ describe('Icons', () => {
     const wrapper = shallow(<IconTerminal />);
   });
 
-  it('should render my IconAngleUp', () => {
-    const wrapper = shallow(<IconAngleUp />);
-  });
-
   it('should render my IconClipboardList', () => {
     const wrapper = shallow(<IconClipboardList />);
   });
