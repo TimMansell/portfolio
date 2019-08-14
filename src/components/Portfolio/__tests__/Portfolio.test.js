@@ -6,7 +6,7 @@ import Portfolio from '../Portfolio';
 
 describe('Portfolio', () => {
   it('should render my component', () => {
-  // eslint-disable-next-line
+    // eslint-disable-next-line
     const wrapper = shallow(<Portfolio />);
   });
 
