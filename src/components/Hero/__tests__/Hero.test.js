@@ -9,14 +9,15 @@ const props = {
   blurTo: 1
 };
 
-describe("Hero", () => {
-  it("should render my component", () => {
+describe('Hero', () => {
+  it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Hero {...props}/>);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<Hero {...props}/>).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });

@@ -1,37 +1,35 @@
 import React from 'react';
 
-import Hero from '../Hero';
-import LearnMore from '../LearnMore';
-import ScrollFade from '../ScrollFade';
-// import ShuffleContent from '../ShuffleContent';
-
-import Hi from '../Hi';
-import Location from '../Location';
-import Name from '../Name';
-import Tagline from '../Tagline';
+import Hero from 'components/Hero';
+import LearnMore from 'components/LearnMore';
+import ScrollFade from 'components/ScrollFade';
+import Hi from 'components/Hi';
+import Location from 'components/Location';
+import Name from 'components/Name';
+import Tagline from 'components/Tagline';
 
 import './Intro.scss';
 
 export const Intro = () => {
-	return <section id="intro" className="bg--primary">
-		<Hero blurFrom={3} blurTo={10} />
+  return <section id="intro" className="bg--primary">
+    <Hero blurFrom={3} blurTo={10} />
 
-		<div className="intro">
-			<Hi />
+    <div className="intro">
+      <Hi />
 
-			<ScrollFade fadeMultiplier={1.15}>
-				<Location />
-				
-				<Name />
-				
-				<Tagline />
-				
-			</ScrollFade>
-		</div>
+      <ScrollFade fadeMultiplier={1.15}>
+        <Location />
 
-		<LearnMore />
+        <Name />
 
-	</section>;
-}
+        <Tagline />
+
+      </ScrollFade>
+    </div>
+
+    <LearnMore />
+
+  </section>;
+};
 
 export default Intro;

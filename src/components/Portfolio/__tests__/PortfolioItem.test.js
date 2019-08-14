@@ -4,31 +4,23 @@ import renderer from 'react-test-renderer';
 
 import PortfolioItem from '../PortfolioItem';
 
-describe("PortfolioItem", () => {
-  it("should render my component", () => {
-    const data = {
-      thumb: './img/my-bupa.jpg',
-      title: '',
-      description: '',
-      tech: '',
-      url: ''
-    };
-    
-    // eslint-disable-next-line
-    const wrapper = shallow(<PortfolioItem data={data} />);
+const props = {
+  thumb: './img/my-bupa.jpg',
+  title: 'Title',
+  description: 'Description',
+  tech: 'Tech',
+  url: 'url.com'
+};
+
+describe('PortfolioItem', () => {
+  it('should render my component', () => {
+  // eslint-disable-next-line
+    const wrapper = shallow(<PortfolioItem {...props} />);
   });
 
-  it("should match snapshot", () => {
-    const data = {
-      thumb: './img/my-bupa.jpg',
-      title: 'Title',
-      description: 'Description',
-      tech: 'Tech',
-      url: 'url.com'
-    };
+  it('should match snapshot', () => {
+    const snapshot = renderer.create(<PortfolioItem {...props} />).toJSON();
 
-    const snapshot = renderer.create(<PortfolioItem data={data} />).toJSON();
-    
     expect(snapshot).toMatchSnapshot();
   });
 });

@@ -4,9 +4,11 @@ exports[`Header should match snapshot 1`] = `
 <div
   className="heading "
 >
-  <span>
-     
-  </span>
+  <div>
+    <span>
+       
+    </span>
+  </div>
   <p
     data-test="heading-description"
   >

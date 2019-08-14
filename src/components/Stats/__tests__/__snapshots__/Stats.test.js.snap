@@ -24,9 +24,11 @@ exports[`Stats should match snapshot 1`] = `
         style={Object {}}
       />
     </svg>
-    <span>
-       
-    </span>
+    <div>
+      <span>
+         
+      </span>
+    </div>
     <p
       className="lighter-note__text"
     >
@@ -53,9 +55,11 @@ exports[`Stats should match snapshot 1`] = `
         style={Object {}}
       />
     </svg>
-    <span>
-       
-    </span>
+    <div>
+      <span>
+         
+      </span>
+    </div>
     <p
       className="lighter-note__text"
     >
@@ -82,9 +86,11 @@ exports[`Stats should match snapshot 1`] = `
         style={Object {}}
       />
     </svg>
-    <span>
-       
-    </span>
+    <div>
+      <span>
+         
+      </span>
+    </div>
     <p
       className="lighter-note__text"
     >
@@ -111,9 +117,11 @@ exports[`Stats should match snapshot 1`] = `
         style={Object {}}
       />
     </svg>
-    <span>
-       
-    </span>
+    <div>
+      <span>
+         
+      </span>
+    </div>
     <p
       className="lighter-note__text"
     >

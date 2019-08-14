@@ -5,7 +5,6 @@
   "parserOptions": {
     "ecmaVersion": 8,
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
       "jsx": true
     },
     "sourceType": "module"
@@ -14,14 +13,26 @@
     "es6": true,
     "node": true
   },
+  "parser": "babel-eslint",
   "plugins": [
     "standard",
     "promise"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
   ],
   "globals": {
     "document": false,
     "navigator": false,
     "window": false
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "version": "detect", 
+    }
   },
   "rules": {
     "accessor-pairs": 2,
@@ -273,7 +284,7 @@
     ],
     "semi": [
       2,
-      "never"
+      "always"
     ],
     "semi-spacing": [
       2,

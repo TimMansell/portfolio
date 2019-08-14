@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const TestimonialItem = ({data}) => {
-    return <div className="testimonials__quote">
-        <p className="testimonials__text">{data.description}</p>
-        <p className="testimonials__name">{data.author}</p>
-    </div>;
-}
+export const TestimonialItem = ({description, author}) => {
+  return <div className="testimonials__quote">
+    <p className="testimonials__text">{description}</p>
+    <p className="testimonials__name">{author}</p>
+  </div>;
+};
 
 TestimonialItem.propTypes = {
-	data: PropTypes.object.isRequired
+  description: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired
 };
 
 export default TestimonialItem;

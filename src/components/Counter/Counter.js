@@ -2,46 +2,52 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Counter extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor (props) {
+    super(props);
 
-        this.state = {
-            counter: props.begin
-        };
+    const {begin, end} = props;
 
-        this.randomCountTo = Math.floor(Math.random()*(props.end-props.begin+1)+props.begin)
-    }
+    this.state = {
+      counter: begin
+    };
 
-    componentDidMount() {
-        this.tick = setInterval(this.incrementCounter, 1);
-    }
+    this.randomCountTo = Math.floor(Math.random() * (end - begin + 1) + begin);
+  }
 
-    componentWillUnmount() {
-        this.clearInterval();
-    }
+  componentDidMount () {
+    this.tick = setInterval(this.incrementCounter, 1);
+  }
+
+  componentWillUnmount () {
+    this.clearInterval();
+  }
 
     incrementCounter = () => {
-        if(this.state.counter <= this.randomCountTo){
-            this.setState(prevState => ({
-                counter: prevState.counter + 1
-            })); 
-        } else {
-            this.clearInterval();
-        }
+      const { counter } = this.state;
+
+      if (counter <= this.randomCountTo) {
+        this.setState(prevState => ({
+          counter: prevState.counter + 1
+        }));
+      } else {
+        this.clearInterval();
+      }
     }
 
     clearInterval = () => {
-        window.clearInterval(this.tick);
+      window.clearInterval(this.tick);
     }
 
-    render() {
-        return <>{this.state.counter}+</>;
+    render () {
+      const { counter } = this.state;
+
+      return <>{counter}+</>;
     }
 }
 
 Counter.propTypes = {
-    end: PropTypes.number.isRequired,
-    begin: PropTypes.number.isRequired
+  end: PropTypes.number.isRequired,
+  begin: PropTypes.number.isRequired
 };
 
 export default Counter;

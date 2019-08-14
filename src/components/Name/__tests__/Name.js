@@ -4,14 +4,15 @@ import renderer from 'react-test-renderer';
 
 import Name from '../Name';
 
-describe("Name", () => {
-  it("should render my component", () => {
+describe('Name', () => {
+  it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Name />);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<Name/>).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });
