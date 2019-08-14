@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "run-p start:react test",
-    "build": "run-s test build:react",
+    "build": "run-s lint test build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
     "lint": "eslint src",
