@@ -3,41 +3,41 @@ import PropTypes from 'prop-types';
 import inViewport from 'in-viewport';
 
 export class InViewport extends React.Component {
-    constructor(props) {
-		super(props);
+  constructor (props) {
+    super(props);
 
-        this.state = {
-            isInViewport: false
-        };
+    this.state = {
+      isInViewport: false
+    };
 
-        this.refInViewport = React.createRef();
-    }
-    
-    componentDidMount() {
-        const element = this.refInViewport.current;
+    this.refInViewport = React.createRef();
+  }
 
-        inViewport(element, this.visible); 
-    }
+  componentDidMount () {
+    const element = this.refInViewport.current;
 
-	visible = () => {
-        this.setState(prevState => ({
-            isInViewport: true
-        }));
-    }
-    
-    render() {
-        const { children } = this.props;
-        const { isInViewport } = this.state;
+    inViewport(element, this.visible);
+  }
 
-        return <div ref={this.refInViewport}>
-            {!isInViewport && <span>&nbsp;</span> }
-            {isInViewport && <span>{children}</span>}
-        </div>;
-    }
+  visible = () => {
+    this.setState(prevState => ({
+      isInViewport: true
+    }));
+  }
+
+  render () {
+    const { children } = this.props;
+    const { isInViewport } = this.state;
+
+    return <div ref={this.refInViewport}>
+      {!isInViewport && <span>&nbsp;</span> }
+      {isInViewport && <span>{children}</span>}
+    </div>;
+  }
 }
 
 InViewport.propTypes = {
-	children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default InViewport;

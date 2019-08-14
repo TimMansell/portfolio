@@ -12,15 +12,15 @@ const props = {
   url: 'url.com'
 };
 
-describe("PortfolioItem", () => {
-  it("should render my component", () => { 
-    // eslint-disable-next-line
+describe('PortfolioItem', () => {
+  it('should render my component', () => {
+  // eslint-disable-next-line
     const wrapper = shallow(<PortfolioItem {...props} />);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<PortfolioItem {...props} />).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });

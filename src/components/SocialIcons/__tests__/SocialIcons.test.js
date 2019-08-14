@@ -4,14 +4,15 @@ import renderer from 'react-test-renderer';
 
 import SocialIcons from '../SocialIcons';
 
-describe("SocialIcons", () => {
-  it("should render my component", () => {
+describe('SocialIcons', () => {
+  it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<SocialIcons />);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<SocialIcons/>).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });

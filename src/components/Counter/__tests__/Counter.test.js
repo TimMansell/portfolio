@@ -9,14 +9,15 @@ const props = {
   end: 1
 };
 
-describe("Counter", () => {
-  it("should render my component", () => {
+describe('Counter', () => {
+  it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Counter {...props}/>);
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<Counter {...props}/>).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });

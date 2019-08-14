@@ -6,22 +6,23 @@ import Header from '../Header';
 
 const props = {
   title: 'Test Title'
-}
+};
 
-describe("Header", () => {
-  it("should render my component", () => {
+describe('Header', () => {
+  it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Header {...props} />);
   });
 
-  it("Should display a title", () => {
+  it('Should display a title', () => {
     const wrapper = shallow(<Header {...props} />);
 
     expect(
       wrapper.find('[data-test="heading-title"]').text()
-      ).toEqual(props.title);
+    ).toEqual(props.title);
   });
 
-  it("Should display a sub-title", () => {
+  it('Should display a sub-title', () => {
     const wrapper = shallow(<Header {...props} text="text" />);
 
     expect(
@@ -29,7 +30,7 @@ describe("Header", () => {
     ).toEqual('text');
   });
 
-  it("Should display a primary class", () => {
+  it('Should display a primary class', () => {
     const wrapper = shallow(<Header {...props} primary />);
 
     expect(
@@ -37,7 +38,7 @@ describe("Header", () => {
     ).toBeTruthy();
   });
 
-  it("Should display a secondary class", () => {
+  it('Should display a secondary class', () => {
     const wrapper = shallow(<Header {...props} secondary />);
 
     expect(
@@ -45,7 +46,7 @@ describe("Header", () => {
     ).toBeTruthy();
   });
 
-  it("Should display a teritiary class", () => {
+  it('Should display a teritiary class', () => {
     const wrapper = shallow(<Header {...props} tertiary />);
 
     expect(
@@ -53,9 +54,9 @@ describe("Header", () => {
     ).toBeTruthy();
   });
 
-  it("should match snapshot", () => {
+  it('should match snapshot', () => {
     const snapshot = renderer.create(<Header {...props} text="text" />).toJSON();
-    
+
     expect(snapshot).toMatchSnapshot();
   });
 });

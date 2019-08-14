@@ -49,6 +49,13 @@ $ npm run build
 $ npm run serve
 ```
 
+## Linting
+
+To lint JS.
+```bash
+$ yarn lint
+```
+
 ## Testing
 
 Run unit tests for files changes since last commit.  Watches for changes to files.
