@@ -4,15 +4,15 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import classnames from 'classnames';
 
-import * as actions from 'actions';
+import { setMobileMenu } from 'actions';
 
 import './Hamburger.scss';
 
 export class Hamburger extends React.Component {
   toggleHamburger = () => {
-    const { isMobileMenu } = this.props;
+    const { isMobileMenu, setMobileMenu } = this.props;
 
-    this.props.actions.setMobileMenu(!isMobileMenu);
+    setMobileMenu(!isMobileMenu);
   }
 
   render () {
@@ -39,13 +39,12 @@ function mapStateToProps (state, ownProps) {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
+  return bindActionCreators({ setMobileMenu }, dispatch);
 };
 
 Hamburger.propTypes = {
-  isMobileMenu: PropTypes.bool
+  isMobileMenu: PropTypes.bool,
+  setMobileMenu: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hamburger);

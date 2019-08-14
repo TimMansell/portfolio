@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import * as actions from 'actions';
+import { setMobileMenu } from 'actions';
 
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
@@ -53,7 +53,9 @@ export class Navigation extends React.Component {
   }
 
   closeMenu = () => {
-    this.props.actions.setMobileMenu(false);
+    const { setMobileMenu } = this.props;
+
+    setMobileMenu(false);
   }
 
   render () {
@@ -113,13 +115,12 @@ function mapStateToProps (state, ownProps) {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
+  return bindActionCreators({ setMobileMenu }, dispatch);
 };
 
 Navigation.propTypes = {
-  isMobileMenu: PropTypes.bool
+  isMobileMenu: PropTypes.bool,
+  setMobileMenu: PropTypes.func
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navigation);
