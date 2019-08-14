@@ -6,6 +6,7 @@ import LearnMore from '../LearnMore';
 
 describe('LearnMore', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<LearnMore />);
   });
 

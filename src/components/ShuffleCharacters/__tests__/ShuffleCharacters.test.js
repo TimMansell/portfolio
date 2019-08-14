@@ -9,6 +9,7 @@ describe('ShuffleCharacters', () => {
       children: '<p></p>'
     };
 
+    // eslint-disable-next-line
     const wrapper = shallow(<ShuffleCharacters {...props} />, {disableLifecycleMethods: true});
   });
 });

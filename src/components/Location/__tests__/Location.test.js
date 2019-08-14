@@ -6,6 +6,7 @@ import Location from '../Location';
 
 describe('Location', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Location />);
   });
 

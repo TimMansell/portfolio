@@ -6,6 +6,7 @@ import GoToTop from '../GoToTop';
 
 describe('GoToTop', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<GoToTop />);
   });
 

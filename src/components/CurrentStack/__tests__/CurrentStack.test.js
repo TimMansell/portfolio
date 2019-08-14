@@ -6,6 +6,7 @@ import CurrentStack from '../CurrentStack';
 
 describe('CurrentStack', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<CurrentStack />);
   });
 

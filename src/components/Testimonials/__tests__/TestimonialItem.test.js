@@ -11,6 +11,7 @@ describe('TestimonialsItem', () => {
       author: ''
     };
 
+    // eslint-disable-next-line
     const wrapper = shallow(<TestimonialsItem {...props} />);
   });
 

@@ -6,6 +6,7 @@ import SectionWrap from '../SectionWrap';
 
 describe('Section', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<SectionWrap />);
   });
 

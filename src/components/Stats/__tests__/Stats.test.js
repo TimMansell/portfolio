@@ -6,6 +6,7 @@ import Stats from '../Stats';
 
 describe('Stats', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Stats />);
   });
 

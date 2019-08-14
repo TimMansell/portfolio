@@ -15,6 +15,7 @@ window.matchMedia = jest.fn().mockImplementation(query => {
 
 describe('WindowLock', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<WindowLock />, {disableLifecycleMethods: true});
   });
 });

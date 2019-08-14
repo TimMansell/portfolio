@@ -11,6 +11,7 @@ const props = {
 
 describe('Hero', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Hero {...props}/>);
   });
 

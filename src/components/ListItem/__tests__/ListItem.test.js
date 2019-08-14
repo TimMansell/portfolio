@@ -14,6 +14,7 @@ describe('ListItem', () => {
       }
     };
 
+    // eslint-disable-next-line
     const wrapper = shallow(<ListItem item={item} />);
   });
 

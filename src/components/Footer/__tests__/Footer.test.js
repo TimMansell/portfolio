@@ -6,6 +6,7 @@ import Footer from '../Footer';
 
 describe('Footer', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Footer />);
   });
 

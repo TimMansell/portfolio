@@ -10,6 +10,7 @@ describe('ShuffleContent', () => {
       children: '<p></p>'
     };
 
+    // eslint-disable-next-line
     const wrapper = shallow(<ShuffleContent {...props}/>);
   });
 

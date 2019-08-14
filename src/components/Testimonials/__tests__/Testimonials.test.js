@@ -6,6 +6,7 @@ import Testimonials from '../Testimonials';
 
 describe('Testimonials', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Testimonials />);
   });
 

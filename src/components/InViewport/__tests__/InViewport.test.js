@@ -9,6 +9,7 @@ describe('InViewport', () => {
       children: '<p></p>'
     };
 
+    // eslint-disable-next-line
     const wrapper = shallow(<InViewport {...props} />, {disableLifecycleMethods: true});
   });
 });

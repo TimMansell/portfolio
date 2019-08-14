@@ -6,6 +6,7 @@ import {Hamburger} from '../Hamburger'; // Import named so we don't use redux.
 
 describe('Hamburger', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Hamburger />);
   });
 

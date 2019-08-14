@@ -6,6 +6,7 @@ import Profile from '../Profile';
 
 describe('Profile', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Profile />);
   });
 

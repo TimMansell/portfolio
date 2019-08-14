@@ -6,6 +6,7 @@ import Presentations from '../Presentations';
 
 describe('Presentations', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Presentations />);
   });
 

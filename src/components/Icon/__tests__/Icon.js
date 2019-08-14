@@ -118,78 +118,97 @@ describe('Icons', () => {
   });
 
   it('should render my IconChevronDown', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconChevronDown />);
   });
 
   it('should render my IconAngleUp', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconAngleUp />);
   });
 
   it('should render my IconTerminal', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconTerminal />);
   });
 
   it('should render my IconClipboardList', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconClipboardList />);
   });
 
   it('should render my IconGamepad', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconGamepad />);
   });
 
   it('should render my IconDesktop', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconDesktop />);
   });
 
   it('should render my IconChalkboardTeacher', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconChalkboardTeacher />);
   });
 
   it('should render my IconCode', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconCode />);
   });
 
   it('should render my IconCodeBranch', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconCodeBranch />);
   });
 
   it('should render my IconMugHot', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconMugHot />);
   });
 
   it('should render my IconBicycle', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconBicycle />);
   });
 
   it('should render my IconQuoteLeft', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconQuoteLeft />);
   });
 
   it('should render my IconQuoteRight', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconQuoteRight />);
   });
 
   it('should render my IconCss3Alt', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconCss3Alt />);
   });
 
   it('should render my IconJs', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconJs />);
   });
 
   it('should render my IconTrello', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconTrello />);
   });
 
   it('should render my IconLinkedin', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconLinkedin />);
   });
 
   it('should render my IconTwitter', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconTwitter />);
   });
 
   it('should render my IconGithub', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<IconGithub />);
   });
 });

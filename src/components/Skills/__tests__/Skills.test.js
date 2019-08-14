@@ -6,6 +6,7 @@ import Skills from '../Skills';
 
 describe('Skills', () => {
   it('should render my component', () => {
+    // eslint-disable-next-line
     const wrapper = shallow(<Skills />);
   });
 
