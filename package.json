@@ -32,16 +32,25 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "start": "run-p start:react test",
-    "build": "run-s lint test build:react",
-    "start:react": "react-scripts start",
-    "build:react": "react-scripts build",
-    "lint": "eslint src",
-    "test": "react-scripts test --env=jsdom --verbose=false",
-    "test:coverage": "react-scripts test --env=jsdom --coverage",
-    "test:all": "cross-env CI=true yarn test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src cypress",
+    "test": "run-s test:unit:all test:e2e",
+    "test:unit": "react-scripts test --env=jsdom --verbose=false",
+    "test:unit:watch": "react-scripts test --env=jsdom --verbose=false --watchAll",
+    "test:unit:coverage": "react-scripts test --env=jsdom --coverage",
+    "test:unit:all": "cross-env CI=true yarn test:unit",
+    "test:e2e": "npm-run-all build test:commands:run",
+    "test:e2e:open": "cross-env npm-run-all build test:commands:open",
+    "test:e2e:updatesnapshots": "npm-run-all build test:commands:updatesnapshots",
     "eject": "react-scripts eject",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open --env GUI=true",
+    "cy:update:snapshots": "cypress run --env updateSnapshots=true",
+    "test:commands:run": "server-test serve :5000 cy:run",
+    "test:commands:open": "server-test serve :5000 cy:open",
+    "test:commands:updatesnapshots": "server-test serve :5000 cy:update:snapshots"
   },
   "browserslist": [
     ">0.2%",
@@ -50,9 +59,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "axe-core": "^3.4.0",
     "cross-env": "^5.2.0",
+    "cypress": "^3.5.0",
+    "cypress-axe": "^0.5.1",
+    "cypress-image-snapshot": "^3.1.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
-    "react-test-renderer": "^16.7.0"
+    "react-test-renderer": "^16.7.0",
+    "start-server-and-test": "^1.10.6"
   }
 }

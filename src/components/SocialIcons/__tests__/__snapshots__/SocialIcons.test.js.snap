@@ -5,6 +5,7 @@ exports[`SocialIcons should match snapshot 1`] = `
   className="social"
 >
   <a
+    aria-label="Visit my linked profile"
     className="social__icon"
     href="https://au.linkedin.com/in/timmansell"
     rel="noopener noreferrer"
@@ -29,6 +30,7 @@ exports[`SocialIcons should match snapshot 1`] = `
     </svg>
   </a>
   <a
+    aria-label="Visit my twitter page"
     className="social__icon"
     href="https://twitter.com/TimMansell"
     rel="noopener noreferrer"
@@ -53,6 +55,7 @@ exports[`SocialIcons should match snapshot 1`] = `
     </svg>
   </a>
   <a
+    aria-label="Visit my github profile"
     className="social__icon"
     href="https://github.com/TimMansell"
     rel="noopener noreferrer"

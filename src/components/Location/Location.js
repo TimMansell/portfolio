@@ -3,7 +3,7 @@ import React from 'react';
 import './Location.scss';
 
 export const Location = () => {
-  return <h4 className="location">Melbourne, Australia</h4>;
+  return <div className="location">Melbourne, Australia</div>;
 };
 
 export default Location;

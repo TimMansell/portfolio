@@ -6,6 +6,7 @@ exports[`LearnMore should match snapshot 1`] = `
 >
   <a
     className="learn-more__link"
+    data-e2e="learn-more-btn"
     onClick={[Function]}
   >
     <svg

@@ -6,9 +6,13 @@ Array [
     className="heading  heading--tertiary"
   >
     <div>
-      <span>
-         
-      </span>
+      <h2
+        aria-label="Retired Skills"
+        className="heading__title"
+        data-test="heading-title"
+      >
+        Retired Skills
+      </h2>
     </div>
     <p
       data-test="heading-description"

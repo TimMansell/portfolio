@@ -4,6 +4,7 @@ exports[`Intro should match snapshot 1`] = `
 <section
   className="bg--primary"
   id="intro"
+  role="banner"
 >
   <div
     className="hero"
@@ -24,11 +25,11 @@ exports[`Intro should match snapshot 1`] = `
     <div
       style={Object {}}
     >
-      <h4
+      <div
         className="location"
       >
         Melbourne, Australia
-      </h4>
+      </div>
       <h1
         className="name"
       >
@@ -37,26 +38,26 @@ exports[`Intro should match snapshot 1`] = `
       <div
         className="tagline"
       >
-        <h4
+        <div
           className="tagline__item"
         >
           Front-end Engineer
-        </h4>
-        <h4
+        </div>
+        <div
           className="tagline__item"
         >
           Javascript Engineer
-        </h4>
-        <h4
+        </div>
+        <div
           className="tagline__item"
         >
           React Engineer
-        </h4>
-        <h4
+        </div>
+        <div
           className="tagline__item"
         >
           VueJS Engineer
-        </h4>
+        </div>
       </div>
     </div>
   </div>
@@ -65,6 +66,7 @@ exports[`Intro should match snapshot 1`] = `
   >
     <a
       className="learn-more__link"
+      data-e2e="learn-more-btn"
       onClick={[Function]}
     >
       <svg
