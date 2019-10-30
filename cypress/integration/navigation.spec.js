@@ -1,9 +1,17 @@
 const url = '/';
 
 describe('Navigation', () => {
-  context.skip('desktop resolution', () => {
+  // eslint-disable-next-line no-undef
+  context('desktop resolution', () => {
     beforeEach(() => {
       cy.visit(url);
+    });
+
+    it('should be fixed to bottom of viewport ', () => {
+      cy.scrollTo('bottom');
+
+      cy.get('[data-e2e="navigation"]')
+        .should('have.class', 'navigation--is-sticky');
     });
 
     it('clicking on profile item should scroll page to profile section', () => {
@@ -71,6 +79,7 @@ describe('Navigation', () => {
     });
   });
 
+  // eslint-disable-next-line no-undef
   context('mobile resolution', () => {
     beforeEach(() => {
       cy.viewport('iphone-5');
@@ -90,7 +99,6 @@ describe('Navigation', () => {
 
       cy.get('[data-e2e="navigation"]')
         .should('have.class', 'navigation--active');
-
     });
 
     it('clicking on skills item in hamburger menu should scroll page to skills section and close menu', () => {
