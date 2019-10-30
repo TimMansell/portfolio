@@ -36,7 +36,7 @@
     "build": "run-s lint test build:react",
     "start:react": "react-scripts start",
     "build:react": "react-scripts build",
-    "lint": "eslint src",
+    "lint": "eslint src cypress",
     "test": "react-scripts test --env=jsdom --verbose=false",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
     "test:all": "cross-env CI=true yarn test",
