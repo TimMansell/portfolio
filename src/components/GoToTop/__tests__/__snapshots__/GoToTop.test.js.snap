@@ -3,6 +3,7 @@
 exports[`GoToTop should match snapshot 1`] = `
 <a
   className="goto-top"
+  data-e2e="goto-top-btn"
   onClick={[Function]}
 >
   <svg

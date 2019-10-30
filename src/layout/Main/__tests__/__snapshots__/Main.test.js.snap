@@ -15,9 +15,13 @@ exports[`Main should match snapshot 1`] = `
         className="heading  heading--primary"
       >
         <div>
-          <span>
-             
-          </span>
+          <h2
+            aria-label="A little bit about myself"
+            className="heading__title"
+            data-test="heading-title"
+          >
+            A little bit about myself
+          </h2>
         </div>
       </div>
       <div
@@ -47,6 +51,7 @@ exports[`Main should match snapshot 1`] = `
         className="social"
       >
         <a
+          aria-label="Visit my linked profile"
           className="social__icon"
           href="https://au.linkedin.com/in/timmansell"
           rel="noopener noreferrer"
@@ -71,6 +76,7 @@ exports[`Main should match snapshot 1`] = `
           </svg>
         </a>
         <a
+          aria-label="Visit my twitter page"
           className="social__icon"
           href="https://twitter.com/TimMansell"
           rel="noopener noreferrer"
@@ -95,6 +101,7 @@ exports[`Main should match snapshot 1`] = `
           </svg>
         </a>
         <a
+          aria-label="Visit my github profile"
           className="social__icon"
           href="https://github.com/TimMansell"
           rel="noopener noreferrer"
@@ -132,9 +139,13 @@ exports[`Main should match snapshot 1`] = `
         className="heading  heading--secondary"
       >
         <div>
-          <span>
-             
-          </span>
+          <h2
+            aria-label="Skills"
+            className="heading__title"
+            data-test="heading-title"
+          >
+            Skills
+          </h2>
         </div>
         <p
           data-test="heading-description"
@@ -519,9 +530,13 @@ exports[`Main should match snapshot 1`] = `
         className="heading  heading--tertiary"
       >
         <div>
-          <span>
-             
-          </span>
+          <h2
+            aria-label="Retired Skills"
+            className="heading__title"
+            data-test="heading-title"
+          >
+            Retired Skills
+          </h2>
         </div>
         <p
           data-test="heading-description"
@@ -741,9 +756,13 @@ exports[`Main should match snapshot 1`] = `
         className="heading  heading--primary"
       >
         <div>
-          <span>
-             
-          </span>
+          <h2
+            aria-label="Current Stack"
+            className="heading__title"
+            data-test="heading-title"
+          >
+            Current Stack
+          </h2>
         </div>
         <p
           data-test="heading-description"
@@ -1071,9 +1090,13 @@ exports[`Main should match snapshot 1`] = `
         className="heading  heading--tertiary"
       >
         <div>
-          <span>
-             
-          </span>
+          <h2
+            aria-label="Portfolio"
+            className="heading__title"
+            data-test="heading-title"
+          >
+            Portfolio
+          </h2>
         </div>
         <p
           data-test="heading-description"
@@ -1649,9 +1672,13 @@ exports[`Main should match snapshot 1`] = `
         className="heading  heading--tertiary"
       >
         <div>
-          <span>
-             
-          </span>
+          <h2
+            aria-label="Presentations"
+            className="heading__title"
+            data-test="heading-title"
+          >
+            Presentations
+          </h2>
         </div>
         <p
           data-test="heading-description"
@@ -1783,6 +1810,7 @@ exports[`Main should match snapshot 1`] = `
           className="social"
         >
           <a
+            aria-label="Visit my linked profile"
             className="social__icon"
             href="https://au.linkedin.com/in/timmansell"
             rel="noopener noreferrer"
@@ -1807,6 +1835,7 @@ exports[`Main should match snapshot 1`] = `
             </svg>
           </a>
           <a
+            aria-label="Visit my twitter page"
             className="social__icon"
             href="https://twitter.com/TimMansell"
             rel="noopener noreferrer"
@@ -1831,6 +1860,7 @@ exports[`Main should match snapshot 1`] = `
             </svg>
           </a>
           <a
+            aria-label="Visit my github profile"
             className="social__icon"
             href="https://github.com/TimMansell"
             rel="noopener noreferrer"

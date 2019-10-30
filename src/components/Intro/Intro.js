@@ -11,7 +11,7 @@ import Tagline from 'components/Tagline';
 import './Intro.scss';
 
 export const Intro = () => {
-  return <section id="intro" className="bg--primary">
+  return <section id="intro" className="bg--primary" role="banner">
     <Hero blurFrom={3} blurTo={10} />
 
     <div className="intro">

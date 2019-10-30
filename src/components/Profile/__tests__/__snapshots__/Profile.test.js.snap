@@ -6,9 +6,13 @@ Array [
     className="heading  heading--primary"
   >
     <div>
-      <span>
-         
-      </span>
+      <h2
+        aria-label="A little bit about myself"
+        className="heading__title"
+        data-test="heading-title"
+      >
+        A little bit about myself
+      </h2>
     </div>
   </div>,
   <div
@@ -38,6 +42,7 @@ Array [
     className="social"
   >
     <a
+      aria-label="Visit my linked profile"
       className="social__icon"
       href="https://au.linkedin.com/in/timmansell"
       rel="noopener noreferrer"
@@ -62,6 +67,7 @@ Array [
       </svg>
     </a>
     <a
+      aria-label="Visit my twitter page"
       className="social__icon"
       href="https://twitter.com/TimMansell"
       rel="noopener noreferrer"
@@ -86,6 +92,7 @@ Array [
       </svg>
     </a>
     <a
+      aria-label="Visit my github profile"
       className="social__icon"
       href="https://github.com/TimMansell"
       rel="noopener noreferrer"
