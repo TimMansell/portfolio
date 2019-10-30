@@ -36,8 +36,8 @@
             "Retina Images",
             "Web Performance",
             "Page Optimisation",
-            "CI/CD",
-            "Unit Testing"
+            "CI / CD",
+            "Unit /e2e Testing"
         ],
         "icon": {
             "name": "clipboard-list",
@@ -51,7 +51,7 @@
             "Webpack",
             "React / Redux",
             "Vue / Vuex / Nuxt",
-            "Jest",
+            "Jest / Cypress",
             "JSON"
         ],
         "icon": {
