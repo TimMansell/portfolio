@@ -5,27 +5,22 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
+  - name: Install dependencies
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - yarn
   - name: Lint
     task:
-      prologue:
-        commands:
-          - checkout
       jobs:
-        - name: make lint
+        - name: 'Job #1'
           commands:
-            - echo "lint your code"
-  - name: Unit tests
+            - yarn lint
+  - name: Tests
     task:
-      prologue:
-        commands:
-          - checkout
       jobs:
-        - name: Unit tests 1/3
+        - name: 'Job #1'
           commands:
-            - echo "run 1/3"
-        - name: Unit tests 2/3
-          commands:
-            - echo "run 2/3"
-        - name: Unit tests 3/3
-          commands:
-            - echo "run 3/3"
+            - yarn build
+            - 'yarn test:ci'
