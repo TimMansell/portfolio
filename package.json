@@ -34,7 +34,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:ci": "run-s lint test:unit:all build test:e2e:ci",
     "lint": "eslint src cypress",
     "test": "run-s test:unit:all test:e2e",
     "test:unit": "react-scripts test --env=jsdom --verbose=false",
@@ -42,7 +41,6 @@
     "test:unit:coverage": "react-scripts test --env=jsdom --coverage",
     "test:unit:all": "cross-env CI=true yarn test:unit",
     "test:e2e": "npm-run-all build test:commands:run",
-    "test:e2e:ci": "npm-run-all test:commands:run",
     "test:e2e:open": "cross-env npm-run-all build test:commands:open",
     "test:e2e:updatesnapshots": "npm-run-all build test:commands:updatesnapshots",
     "eject": "react-scripts eject",
