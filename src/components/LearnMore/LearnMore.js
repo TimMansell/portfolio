@@ -7,7 +7,7 @@ import { IconChevronDown } from 'components/Icon';
 
 export const ListItem = () => {
   return <div className="learn-more">
-    <Link className="learn-more__link" to="profile" smooth={true}>
+    <Link data-e2e="learn-more-btn" className="learn-more__link" to="profile" smooth={true}>
       <IconChevronDown size="sm" className="learn-more__scroll" />
     </Link>
   </div>;

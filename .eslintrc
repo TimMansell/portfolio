@@ -24,6 +24,8 @@
     "plugin:jest/recommended"
   ],
   "globals": {
+    "cy": true,
+    "Cypress": true,
     "document": false,
     "navigator": false,
     "window": false
