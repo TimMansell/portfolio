@@ -40,8 +40,11 @@
     "test": "react-scripts test --env=jsdom --verbose=false",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
     "test:all": "cross-env CI=true yarn test",
+    "test:e2e": "server-test start:react :3000 cy:run",
     "eject": "react-scripts eject",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
   },
   "browserslist": [
     ">0.2%",
@@ -51,8 +54,12 @@
   ],
   "devDependencies": {
     "cross-env": "^5.2.0",
+    "cypress": "^3.5.0",
+    "cypress-axe": "^0.5.1",
+    "cypress-image-snapshot": "^3.1.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
-    "react-test-renderer": "^16.7.0"
+    "react-test-renderer": "^16.7.0",
+    "start-server-and-test": "^1.10.6"
   }
 }
