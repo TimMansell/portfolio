@@ -194,12 +194,12 @@ Array [
         <li
           className="skills__item"
         >
-          CI/CD
+          CI / CD
         </li>
         <li
           className="skills__item"
         >
-          Unit Testing
+          Unit /e2e Testing
         </li>
       </ul>
     </div>
@@ -254,7 +254,7 @@ Array [
         <li
           className="skills__item"
         >
-          Jest
+          Jest / Cypress
         </li>
         <li
           className="skills__item"

@@ -327,12 +327,12 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="skills__item"
             >
-              CI/CD
+              CI / CD
             </li>
             <li
               className="skills__item"
             >
-              Unit Testing
+              Unit /e2e Testing
             </li>
           </ul>
         </div>
@@ -387,7 +387,7 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="skills__item"
             >
-              Jest
+              Jest / Cypress
             </li>
             <li
               className="skills__item"
