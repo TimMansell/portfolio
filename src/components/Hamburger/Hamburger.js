@@ -26,7 +26,7 @@ export class Hamburger extends React.Component {
       'hamburger__menu--active': isMobileMenu
     });
 
-    return <button type="button" className={buttonClasses} onClick={this.toggleHamburger}>
+    return <button type="button" data-e2e="hambuger" className={buttonClasses} onClick={this.toggleHamburger}>
       <span className={hamburgerClasses}>toggle menu</span>
     </button>;
   }
