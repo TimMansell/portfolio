@@ -17,6 +17,9 @@ blocks:
         - name: 'Job #1'
           commands:
             - yarn lint
+      prologue:
+        commands:
+          - yarn
   - name: Tests
     task:
       jobs:
@@ -24,3 +27,6 @@ blocks:
           commands:
             - yarn build
             - 'yarn test:ci'
+      prologue:
+        commands:
+          - yarn
