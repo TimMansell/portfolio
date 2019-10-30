@@ -75,31 +75,31 @@ export class Navigation extends React.Component {
       'navigation__menu-link--is-sticky': isFixedNav && !isMobileMenu
     });
 
-    return <nav id="nav" className={navClasses} ref={this.refNavigation}>
+    return <nav id="nav" data-e2e="navigation" className={navClasses} ref={this.refNavigation} role="navigation">
       <ul className={menuClasses}>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
+          <Link data-e2e="navigation-profile" className={linkClasses} activeClass="navigation__menu-link--active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
+          <Link data-e2e="navigation-skills" className={linkClasses} activeClass="navigation__menu-link--active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="retired-skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Retired Skills</Link>
+          <Link data-e2e="navigation-retired-skills" className={linkClasses} activeClass="navigation__menu-link--active" to="retired-skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Retired Skills</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="stack" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Stack</Link>
+          <Link data-e2e="navigation-stack" className={linkClasses} activeClass="navigation__menu-link--active" to="stack" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Stack</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="portfolio" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Portfolio</Link>
+          <Link data-e2e="navigation-portfolio" className={linkClasses} activeClass="navigation__menu-link--active" to="portfolio" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Portfolio</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="presentations" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Presentations</Link>
+          <Link data-e2e="navigation-presentations" className={linkClasses} activeClass="navigation__menu-link--active" to="presentations" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Presentations</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="testimonials" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Testimonials</Link>
+          <Link data-e2e="navigation-testimonials" className={linkClasses} activeClass="navigation__menu-link--active" to="testimonials" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Testimonials</Link>
         </li>
         <li className="navigation__menu-item">
-          <Link className={linkClasses} activeClass="navigation__menu-link--active" to="contact" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Contact</Link>
+          <Link data-e2e="navigation-contact" className={linkClasses} activeClass="navigation__menu-link--active" to="contact" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Contact</Link>
         </li>
       </ul>
 

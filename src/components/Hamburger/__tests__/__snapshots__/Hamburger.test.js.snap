@@ -3,6 +3,7 @@
 exports[`Hamburger should match snapshot 1`] = `
 <button
   className="hamburger"
+  data-e2e="hambuger"
   onClick={[Function]}
   type="button"
 >
