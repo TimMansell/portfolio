@@ -13,5 +13,4 @@ blocks:
             - checkout
             - yarn
             - yarn lint
-            - yarn build
-            - 'yarn test:ci'
+            - yarn test
