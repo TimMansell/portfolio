@@ -75,7 +75,7 @@ export class Navigation extends React.Component {
       'navigation__menu-link--is-sticky': isFixedNav && !isMobileMenu
     });
 
-    return <nav id="nav" data-e2e="navigation" className={navClasses} ref={this.refNavigation}>
+    return <nav id="nav" data-e2e="navigation" className={navClasses} ref={this.refNavigation} role="navigation">
       <ul className={menuClasses}>
         <li className="navigation__menu-item">
           <Link data-e2e="navigation-profile" className={linkClasses} activeClass="navigation__menu-link--active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>

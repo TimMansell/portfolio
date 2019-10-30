@@ -53,6 +53,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "axe-core": "^3.4.0",
     "cross-env": "^5.2.0",
     "cypress": "^3.5.0",
     "cypress-axe": "^0.5.1",

@@ -18,11 +18,9 @@ export const Header = ({primary, secondary, tertiary, text, title}) => {
   }
 
   return <div className={classes}>
-    <InViewport>
-      <ShuffleCharacters>
-        <h2 className="heading__title" data-test="heading-title">{title}</h2>
-      </ShuffleCharacters>
-    </InViewport>
+    <ShuffleCharacters>
+      <h2 className="heading__title" data-test="heading-title" aria-label={title}>{title}</h2>
+    </ShuffleCharacters>
     {text}
   </div>;
 };
