@@ -8,13 +8,6 @@ My website uses nodejs, ensure you have that installed first.
 ```bash
 $ yarn
 ```
-
-or 
-
-```bash
-$ npm install
-```
-
 ## Development
 
 - Fires up a local development server
@@ -27,12 +20,6 @@ $ npm install
 $ yarn start
 ```
 
-or
-
-```bash
-$ npm start
-```
-
 ## Production
 
 To load my site in production mode
@@ -40,13 +27,6 @@ To load my site in production mode
 ```bash
 $ yarn build
 $ yarn serve
-```
-
-or
-
-```bash
-$ npm run build
-$ npm run serve
 ```
 
 ## Linting
@@ -58,9 +38,21 @@ $ yarn lint
 
 ## Testing
 
-Run unit tests for files changes since last commit.  Watches for changes to files.
+### Unit Tests
+
+Jest and Enzyme as used for unit tests.
+
+Run unit tests for files changes since last commit.
+
 ```bash
-$ yarn test
+$ yarn test:unit
+```
+
+Watches for changes to files
+- `yarn start` must be done first
+
+```bash
+yarn test:unit:watch
 ```
 
 View unit test coverage
@@ -73,6 +65,29 @@ Run all unit tests
 
 ```bash
 $ yarn test:all
+```
+
+### e2e Tests
+
+Cypress is used for e2e testing.
+
+Run e2e tests
+
+```bash
+yarn test:e2e
+```
+
+Run e2e tests in GUI mode
+- Snapshots are disabled in this mode as the snapshots use a different viewport size to `yarn test:e2e` and fail.
+
+```bash
+yarn test:e2e:open
+```
+
+Update e2e snapshots
+
+```bash
+yarn test:e2e:updatesnapshots
 ```
 
 ## Old website source code:
