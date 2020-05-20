@@ -1,26 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import throttle from 'lodash.throttle';
 
-export class ScrollFade extends React.Component {
-  constructor (props) {
-    super(props);
+export const ScrollFade = ({ fadeMultiplier, children }) => {
+  const [styles, setStyles] = useState({});
 
-    this.state = {
-      styles: {}
-    };
-  }
-
-  componentDidMount () {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount () {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-    handleScroll = throttle((e) => {
-      const { fadeMultiplier } = this.props;
+  useEffect(() => {
+    const onScroll = throttle((e) => {
       const { scrollY, innerHeight } = window;
 
       const opacity = 1 - (scrollY / innerHeight) * fadeMultiplier;
@@ -30,19 +16,17 @@ export class ScrollFade extends React.Component {
       };
 
       if (opacity >= 0) {
-        this.setState(prevState => ({
-          styles: styles
-        }));
+        setStyles(styles);
       }
-    }, 30)
+    }, 30);
 
-    render () {
-      const { children } = this.props;
-      const { styles } = this.state;
+    window.addEventListener('scroll', onScroll);
 
-      return <div style={styles}>{children}</div>;
-    }
-}
+    return () => window.removeEventListener('scroll', onScroll);
+  });
+
+  return <div style={styles}>{children}</div>;
+};
 
 ScrollFade.propTypes = {
   fadeMultiplier: PropTypes.number.isRequired,
