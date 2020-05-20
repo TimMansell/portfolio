@@ -18,4 +18,9 @@ module.exports = {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 };
