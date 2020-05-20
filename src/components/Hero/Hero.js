@@ -8,9 +8,10 @@ export const Hero = ({ blurFrom, blurTo }) => {
   const [styles, setStyles] = useState({});
 
   useEffect(() => {
-    const onScroll = throttle((e) => {
-      const blur = blurFrom + ((blurTo - blurFrom) * (window.scrollY / window.innerHeight));
-      const blurCss = (blur <= blurTo) ? {'filter': `blur(${blur}px)`} : {};
+    const onScroll = throttle(() => {
+      const blur =
+        blurFrom + (blurTo - blurFrom) * (window.scrollY / window.innerHeight);
+      const blurCss = blur <= blurTo ? { filter: `blur(${blur}px)` } : {};
 
       setStyles(blurCss);
     }, 30);
@@ -20,14 +21,16 @@ export const Hero = ({ blurFrom, blurTo }) => {
     return () => window.removeEventListener('scroll', onScroll);
   });
 
-  return <div className="hero">
-    <div className="hero__img" style={styles}></div>
-  </div>;
+  return (
+    <div className="hero">
+      <div className="hero__img" style={styles}></div>
+    </div>
+  );
 };
 
 Hero.propTypes = {
   blurFrom: PropTypes.number.isRequired,
-  blurTo: PropTypes.number.isRequired
+  blurTo: PropTypes.number.isRequired,
 };
 
 export default Hero;

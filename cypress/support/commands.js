@@ -26,17 +26,17 @@ import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('checkDesktopSnapshot', (el) => {
+Cypress.Commands.add('checkDesktopSnapshot', () => {
   cy.viewport('macbook-11');
   cy.matchImageSnapshot('desktop');
 });
 
-Cypress.Commands.add('checkMobileSnapshot', (el) => {
+Cypress.Commands.add('checkMobileSnapshot', () => {
   cy.viewport('iphone-5');
   cy.matchImageSnapshot('mobile');
 });
 
 addMatchImageSnapshotCommand({
   failureThreshold: 5, // threshold for entire image
-  failureThresholdType: 'percent' // percent of image or number of pixels
+  failureThresholdType: 'percent', // percent of image or number of pixels
 });

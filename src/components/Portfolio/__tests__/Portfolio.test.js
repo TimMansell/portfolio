@@ -11,7 +11,7 @@ describe('Portfolio', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Portfolio/>).toJSON();
+    const snapshot = renderer.create(<Portfolio />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

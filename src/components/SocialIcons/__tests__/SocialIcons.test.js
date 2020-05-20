@@ -11,7 +11,7 @@ describe('SocialIcons', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<SocialIcons/>).toJSON();
+    const snapshot = renderer.create(<SocialIcons />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

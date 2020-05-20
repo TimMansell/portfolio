@@ -12,7 +12,7 @@ export const WindowLock = () => {
   };
 
   useEffect(() => {
-    const onResize = debounce((e) => {
+    const onResize = debounce(() => {
       const isInsideMobileView = checkInsideMobileView();
 
       setIsMobileView(isInsideMobileView);
