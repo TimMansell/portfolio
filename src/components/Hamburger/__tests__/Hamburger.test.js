@@ -8,7 +8,8 @@ import { MenuContext } from '../../../context/mobileMenu';
 const MockComponent = () => (
   <MenuContext.Provider value={[false, jest.fn()]}>
     <Hamburger />
-  </MenuContext.Provider>);
+  </MenuContext.Provider>
+);
 
 describe('Hamburger', () => {
   it('should render my component', () => {
@@ -17,7 +18,7 @@ describe('Hamburger', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<MockComponent/>).toJSON();
+    const snapshot = renderer.create(<MockComponent />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

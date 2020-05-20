@@ -11,7 +11,7 @@ describe('Section', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<SectionWrap/>).toJSON();
+    const snapshot = renderer.create(<SectionWrap />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });
@@ -24,7 +24,11 @@ describe('Section', () => {
   });
 
   it('should wrap an element', () => {
-    const wrapper = shallow(<SectionWrap><p>test</p></SectionWrap>);
+    const wrapper = shallow(
+      <SectionWrap>
+        <p>test</p>
+      </SectionWrap>
+    );
 
     expect(wrapper.find('p').text()).toEqual('test');
   });

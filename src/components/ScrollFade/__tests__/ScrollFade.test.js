@@ -6,7 +6,7 @@ import ScrollFade from '../ScrollFade';
 
 const props = {
   fadeMultiplier: 0,
-  children: '<p></p>'
+  children: '<p></p>',
 };
 
 describe('ScrollFade', () => {
