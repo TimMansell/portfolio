@@ -1,26 +1,26 @@
 @import 'variables';
 
 .social {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 
-	&__icon {
-		display: flex;
-		justify-content: center;
-		background: $primary-colour;
-		padding: 15px;
-		border-radius: 50%;
-		// color: $icon-colour;
-		text-shadow: -1px -1px darken($primary-colour, 10%);
-		margin: 0 15px;
-		transition: box-shadow .3s, background .3s;
-		width: 60px;
-		height: 60px;
+  &__icon {
+    display: flex;
+    justify-content: center;
+    background: $primary-colour;
+    padding: 15px;
+    border-radius: 50%;
+    // color: $icon-colour;
+    text-shadow: -1px -1px darken($primary-colour, 10%);
+    margin: 0 15px;
+    transition: box-shadow 0.3s, background 0.3s;
+    width: 60px;
+    height: 60px;
 
-		&:hover {
-			background: darken($primary-colour, 10%);
-			box-shadow: 0 0 0 5px rgba($primary-colour, 0.5);
-		}
-	}
+    &:hover {
+      background: darken($primary-colour, 10%);
+      box-shadow: 0 0 0 5px rgba($primary-colour, 0.5);
+    }
+  }
 }

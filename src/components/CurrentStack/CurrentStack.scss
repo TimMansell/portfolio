@@ -1,23 +1,23 @@
 @import 'utilities/breakpoints';
 
 .stack {
-    display: grid;
-    grid-gap: 32px;
+  display: grid;
+  grid-gap: 32px;
 
-    @include media-breakpoint-up(sm){
-        grid-template-columns: repeat(4, 1fr);
-    }
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    @include media-breakpoint-up(md){
-        grid-template-columns: repeat(6, 1fr);
-    }
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
-    @include media-breakpoint-up(xl){
-        grid-template-columns: repeat(12, 1fr);   
-    }
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(12, 1fr);
+  }
 
-    &__item {
-        align-self: center;    
-        justify-self: center;   
-    }
+  &__item {
+    align-self: center;
+    justify-self: center;
+  }
 }
