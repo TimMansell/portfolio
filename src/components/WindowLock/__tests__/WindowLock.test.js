@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import {WindowLock} from '../WindowLock'; // Import named so we don't use redux.
+import WindowLock from '../WindowLock';
+import { MenuContext } from '../../../context/mobileMenu';
 
 window.matchMedia = jest.fn().mockImplementation(query => {
   return {
@@ -15,7 +16,12 @@ window.matchMedia = jest.fn().mockImplementation(query => {
 
 describe('WindowLock', () => {
   it('should render my component', () => {
+    const MockComponent = () => (
+      <MenuContext.Provider value={[false, jest.fn()]}>
+        <WindowLock />
+      </MenuContext.Provider>);
+
     // eslint-disable-next-line
-    const wrapper = shallow(<WindowLock />, {disableLifecycleMethods: true});
+    const wrapper = shallow(<MockComponent />);
   });
 });
