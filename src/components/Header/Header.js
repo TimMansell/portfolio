@@ -5,23 +5,31 @@ import ShuffleCharacters from 'components/ShuffleCharacters';
 
 import './Header.scss';
 
-export const Header = ({primary, secondary, tertiary, text, title}) => {
+export const Header = ({ primary, secondary, tertiary, text, title }) => {
   const classes = classnames('heading ', {
     'heading--primary': primary,
     'heading--secondary': secondary,
-    'heading--tertiary': tertiary
+    'heading--tertiary': tertiary,
   });
 
   if (text) {
     text = <p data-test="heading-description">{text}</p>;
   }
 
-  return <div className={classes}>
-    <ShuffleCharacters>
-      <h2 className="heading__title" data-test="heading-title" aria-label={title}>{title}</h2>
-    </ShuffleCharacters>
-    {text}
-  </div>;
+  return (
+    <div className={classes}>
+      <ShuffleCharacters>
+        <h2
+          className="heading__title"
+          data-test="heading-title"
+          aria-label={title}
+        >
+          {title}
+        </h2>
+      </ShuffleCharacters>
+      {text}
+    </div>
+  );
 };
 
 Header.propTypes = {
@@ -29,7 +37,7 @@ Header.propTypes = {
   secondary: PropTypes.bool,
   tertiary: PropTypes.bool,
   text: PropTypes.string,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default Header;

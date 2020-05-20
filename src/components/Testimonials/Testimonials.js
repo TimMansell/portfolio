@@ -15,7 +15,7 @@ export const Testimonials = () => {
     const timer = setInterval(() => {
       const sortedTestimonials = [
         ...testimonials.slice(1),
-        ...testimonials.slice(0, 1)
+        ...testimonials.slice(0, 1),
       ];
 
       setTestimonials(sortedTestimonials);
@@ -25,11 +25,13 @@ export const Testimonials = () => {
     return () => clearInterval(timer);
   });
 
-  return <div className="testimonials text--center">
-    <IconQuoteLeft className="testimonials__quote" />
-    <TestimonialItem {...testimonial} />
-    <IconQuoteRight className="testimonials__quote" />
-  </div>;
+  return (
+    <div className="testimonials text--center">
+      <IconQuoteLeft className="testimonials__quote" />
+      <TestimonialItem {...testimonial} />
+      <IconQuoteRight className="testimonials__quote" />
+    </div>
+  );
 };
 
 export default Testimonials;

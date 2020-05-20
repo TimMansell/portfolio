@@ -21,19 +21,16 @@ import Icon, {
   IconTrello,
   IconLinkedin,
   IconTwitter,
-  IconGithub
+  IconGithub,
 } from '../Icon';
 
 describe('Default Icon', () => {
   it('should match snapshot', () => {
     const props = {
-      name: [
-        'fab',
-        'css3-alt'
-      ],
+      name: ['fab', 'css3-alt'],
       className: 'test-class',
       size: 'md',
-      padded: true
+      padded: true,
     };
 
     const snapshot = renderer.create(<Icon {...props} />).toJSON();
@@ -43,10 +40,7 @@ describe('Default Icon', () => {
 
   it('should render my default Icon', () => {
     const props = {
-      name: [
-        'fa',
-        'code'
-      ]
+      name: ['fa', 'code'],
     };
 
     const wrapper = mount(<Icon {...props} />);
@@ -56,7 +50,7 @@ describe('Default Icon', () => {
 
   it('should render a custom class', () => {
     const props = {
-      className: 'test-class'
+      className: 'test-class',
     };
 
     const wrapper = shallow(<Icon {...props} />);
@@ -66,7 +60,7 @@ describe('Default Icon', () => {
 
   it('should add a size class', () => {
     const props = {
-      size: 'md'
+      size: 'md',
     };
 
     const wrapper = shallow(<Icon {...props} />);
@@ -76,7 +70,7 @@ describe('Default Icon', () => {
 
   it('should add a margin', () => {
     const props = {
-      padded: true
+      padded: true,
     };
 
     const wrapper = shallow(<Icon {...props} />);
@@ -89,7 +83,7 @@ describe('Default Icon', () => {
 describe('Icons', () => {
   it('should render a custom class', () => {
     const props = {
-      className: 'test-class'
+      className: 'test-class',
     };
 
     const wrapper = shallow(<IconChevronDown {...props} />);
@@ -99,7 +93,7 @@ describe('Icons', () => {
 
   it('should have a padded prop', () => {
     const props = {
-      padded: true
+      padded: true,
     };
 
     const wrapper = shallow(<IconChevronDown {...props} />);
@@ -109,7 +103,7 @@ describe('Icons', () => {
 
   it('should have a size prop', () => {
     const props = {
-      size: 'md'
+      size: 'md',
     };
 
     const wrapper = shallow(<IconChevronDown {...props} />);

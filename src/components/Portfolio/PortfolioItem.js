@@ -8,25 +8,36 @@ import './PortfolioItem.scss';
 import PortfolioIcons from './PortfolioIcons';
 import { IconDesktop } from 'components/Icon';
 
-export const PortfolioItem = ({thumb, title, description, tech, url}) => {
-  return <div className="portfolio-item">
-    <PortfolioIcons />
-    <InViewport>
-      <img className="img--responsive" src={require(`${thumb}`)} alt={title} />
-    </InViewport>
+export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
+  return (
+    <div className="portfolio-item">
+      <PortfolioIcons />
+      <InViewport>
+        <img
+          className="img--responsive"
+          src={require(`${thumb}`)}
+          alt={title}
+        />
+      </InViewport>
 
-    <div className="portfolio-item__info">
-      <h3 className="portfolio-item__title">{title}</h3>
-      <p className="portfolio-item__description">{description}</p>
-      <p className="portfolio-item__tech">{tech}</p>
+      <div className="portfolio-item__info">
+        <h3 className="portfolio-item__title">{title}</h3>
+        <p className="portfolio-item__description">{description}</p>
+        <p className="portfolio-item__tech">{tech}</p>
 
-      <div className="portfolio-item__more-info">
-        <a href={url} target="_blank" rel="noopener noreferrer" title="Visit website">
-          <IconDesktop size="xs" className="portfolio-item__icon" />
-        </a>
+        <div className="portfolio-item__more-info">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit website"
+          >
+            <IconDesktop size="xs" className="portfolio-item__icon" />
+          </a>
+        </div>
       </div>
     </div>
-  </div>;
+  );
 };
 
 PortfolioItem.propTypes = {
@@ -34,7 +45,7 @@ PortfolioItem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 };
 
 export default PortfolioItem;

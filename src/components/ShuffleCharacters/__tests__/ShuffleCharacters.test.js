@@ -6,7 +6,7 @@ import ShuffleCharacters from '../ShuffleCharacters';
 describe('ShuffleCharacters', () => {
   it('should render my component', () => {
     const props = {
-      children: '<p></p>'
+      children: '<p></p>',
     };
 
     // eslint-disable-next-line

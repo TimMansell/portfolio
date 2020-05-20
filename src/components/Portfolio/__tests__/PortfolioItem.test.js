@@ -9,12 +9,12 @@ const props = {
   title: 'Title',
   description: 'Description',
   tech: 'Tech',
-  url: 'url.com'
+  url: 'url.com',
 };
 
 describe('PortfolioItem', () => {
   it('should render my component', () => {
-  // eslint-disable-next-line
+    // eslint-disable-next-line
     const wrapper = shallow(<PortfolioItem {...props} />);
   });
 

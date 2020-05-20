@@ -11,25 +11,25 @@ import Tagline from 'components/Tagline';
 import './Intro.scss';
 
 export const Intro = () => {
-  return <section id="intro" className="bg--primary" role="banner">
-    <Hero blurFrom={3} blurTo={10} />
+  return (
+    <section id="intro" className="bg--primary" role="banner">
+      <Hero blurFrom={3} blurTo={10} />
 
-    <div className="intro">
-      <Hi />
+      <div className="intro">
+        <Hi />
 
-      <ScrollFade fadeMultiplier={1.15}>
-        <Location />
+        <ScrollFade fadeMultiplier={1.15}>
+          <Location />
 
-        <Name />
+          <Name />
 
-        <Tagline />
+          <Tagline />
+        </ScrollFade>
+      </div>
 
-      </ScrollFade>
-    </div>
-
-    <LearnMore />
-
-  </section>;
+      <LearnMore />
+    </section>
+  );
 };
 
 export default Intro;

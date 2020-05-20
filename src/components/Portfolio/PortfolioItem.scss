@@ -2,81 +2,80 @@
 @import 'utilities/breakpoints';
 
 .portfolio-item {
-	transition: all .3s;
-	position: relative;
-	overflow: hidden;	
-	border-radius: 7px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
 
-	&:hover &__info {
-		transform: translateY(0);
-	}
+  &__link {
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: all 0.3s;
+    }
+  }
 
+  &__icon {
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.3s;
 
-	&__link {
-  		&:before {
-  			content: '';
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				transition: all .3s;
-  		}
-	}
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 
-	&__icon {
-	  padding-left: 5px;
-	  padding-right: 5px;
-	  transition: all .3s;
+  &__info {
+    position: absolute;
+    transform: translateY(100%);
+    text-shadow: -1px -1px darken($primary-colour, 10%);
+    transition: all 0.3s;
+    top: 0;
+    left: 0;
+    background: rgba($primary-colour, 0.95);
+    height: 100%;
+    padding: 15px;
+    width: 100%;
+    color: $secondary-text-colour;
+    text-align: center;
+  }
 
-	  &:hover {
-	  	transform: scale(1.2);
-	  }
-	}
+  &:hover &__info {
+    transform: translateY(0);
+  }
 
-	&__info {
-		position: absolute;
-  		transform: translateY(100%);
-  		text-shadow: -1px -1px darken($primary-colour, 10%);
-  		transition: all .3s;
-  		top: 0;
-  		left: 0;
-  		background: rgba($primary-colour, .95);
-  		height: 100%;
-  		padding: 15px;
-  		width: 100%;
-		  color: $secondary-text-colour;
-		  text-align: center;
-	}
+  &__title {
+    margin-bottom: 10px;
+  }
 
-	&__title {
-		margin-bottom: 10px;
-	}
+  &__description {
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    display: none;
 
-	&__description {
-		font-size: 15px;
-		line-height: 1.2;
-		margin-bottom: 5px;
-		display: none;
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+  }
 
-  		@include media-breakpoint-up(sm){
-			display: block;
-  		}
-	}
+  &__tech {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
+    line-height: 1.2;
+  }
 
-	&__tech {
-		position: absolute;
-		bottom: 20px;
-		left: 0;
-		width: 100%;
-		padding-left: 10%;
-		padding-right: 10%;
-		font-size: 15px;
-		line-height: 1.2;
-	}
-
-	&__more-info {
-		position: absolute;
-		bottom: 10px;
-		width: 100%;
-		left: 0;
-	}
+  &__more-info {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+  }
 }

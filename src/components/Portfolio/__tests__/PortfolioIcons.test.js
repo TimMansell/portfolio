@@ -6,12 +6,12 @@ import PortfolioIcons from '../PortfolioIcons';
 
 describe('PortfolioIcons', () => {
   it('should render my component', () => {
-  // eslint-disable-next-line
+    // eslint-disable-next-line
     const wrapper = shallow(<PortfolioIcons />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<PortfolioIcons/>).toJSON();
+    const snapshot = renderer.create(<PortfolioIcons />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

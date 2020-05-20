@@ -8,7 +8,8 @@ import { MenuContext } from '../../../context/mobileMenu';
 const MockComponent = () => (
   <MenuContext.Provider value={[false, jest.fn()]}>
     <Navigation />
-  </MenuContext.Provider>);
+  </MenuContext.Provider>
+);
 
 describe('Navigation', () => {
   it('should render my component', () => {
