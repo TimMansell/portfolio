@@ -2,36 +2,35 @@
 @import 'utilities/breakpoints';
 
 .goto-top {
-	display: flex;
-	justify-content: center;
-	position: fixed;
-	z-index: 1000;
-	right: -70px;
- 	bottom: 22px;
- 	// padding: 10px;
- 	background: $primary-colour;
- 	//opacity: .85;
- 	box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), .5);
- 	border-radius: 50%;
-	transition: all .3s;
-	width: 50px;
-	height: 50px;
-	color: $secondary-text-colour;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  right: -70px;
+  bottom: 22px;
+  // padding: 10px;
+  background: $primary-colour;
+  //opacity: .85;
+  box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), 0.5);
+  border-radius: 50%;
+  transition: all 0.3s;
+  width: 50px;
+  height: 50px;
+  color: $secondary-text-colour;
 
- 	@include media-breakpoint-up(sm){
- 		bottom: 30px;
- 	}
+  @include media-breakpoint-up(sm) {
+    bottom: 30px;
+  }
 
- 	&:hover {
- 		background: darken($primary-colour, 13%);
-	}
+  &:hover {
+    background: darken($primary-colour, 13%);
+  }
 
+  &--show {
+    right: 10px;
 
- 	&--show {
- 		right: 10px;
-
- 		@include media-breakpoint-up(sm){
- 			right: 30px;
- 		}
- 	}
+    @include media-breakpoint-up(sm) {
+      right: 30px;
+    }
+  }
 }
