@@ -2,13 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import WebFont from 'webfontloader';
 
-import configureStore from './store/configureStore';
-
 import 'sanitize.css';
 import './scss/global.scss';
 import App from 'app';
-
-const store = configureStore();
 
 ReactDOM.render(
   <App />,
