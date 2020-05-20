@@ -6,13 +6,13 @@ export const ScrollFade = ({ fadeMultiplier, children }) => {
   const [styles, setStyles] = useState({});
 
   useEffect(() => {
-    const onScroll = throttle((e) => {
+    const onScroll = throttle(() => {
       const { scrollY, innerHeight } = window;
 
       const opacity = 1 - (scrollY / innerHeight) * fadeMultiplier;
 
       const styles = {
-        opacity: opacity
+        opacity: opacity,
       };
 
       if (opacity >= 0) {
@@ -30,7 +30,7 @@ export const ScrollFade = ({ fadeMultiplier, children }) => {
 
 ScrollFade.propTypes = {
   fadeMultiplier: PropTypes.number.isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default ScrollFade;

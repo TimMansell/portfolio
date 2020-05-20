@@ -11,7 +11,7 @@ describe('Tagline', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Tagline/>).toJSON();
+    const snapshot = renderer.create(<Tagline />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });
