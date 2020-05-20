@@ -1,65 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import React, { useState, useEffect, useContext } from 'react';
+import { MenuContext } from '../../context/mobileMenu';
 import ScrollLock from 'react-scrolllock';
-
-import * as actions from 'actions';
-
 import debounce from 'lodash.debounce';
 
-export class WindowLock extends React.Component {
-  constructor (props) {
-    super(props);
+export const WindowLock = () => {
+  const [isMobileView, setIsMobileView] = useState(true);
+  const [isMobileMenu] = useContext(MenuContext);
 
-    this.state = {
-      isMobileView: this.isInsideMobileView()
-    };
-  }
-
-  componentDidMount () {
-    window.addEventListener('resize', debounce(this.handleResize));
-  }
-
-  componentWillUnmount () {
-    window.removeEventListener('resize', this.handleResize);
-  }
-
-  handleResize = (event) => {
-    const isInsideMobileView = this.isInsideMobileView();
-
-    this.setState(prevState => ({
-      isMobileView: isInsideMobileView
-    }));
-  }
-
-  isInsideMobileView () {
+  const checkInsideMobileView = () => {
     return window.matchMedia('(max-width: 768px)').matches;
-  }
-
-  render () {
-    const { isMobileMenu } = this.props;
-    const { isMobileView } = this.state;
-
-    return <>{isMobileMenu && isMobileView && <ScrollLock />}</>;
-  }
-}
-
-function mapStateToProps (state, ownProps) {
-  return {
-    isMobileMenu: state.isMobileMenu
   };
-}
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
+  useEffect(() => {
+    const onResize = debounce((e) => {
+      const isInsideMobileView = checkInsideMobileView();
+
+      setIsMobileView(isInsideMobileView);
+    });
+
+    window.addEventListener('resize', onResize);
+
+    return () => window.removeEventListener('resize', onResize);
+  });
+
+  return <>{isMobileMenu && isMobileView && <ScrollLock />}</>;
 };
 
-WindowLock.propTypes = {
-  isMobileMenu: PropTypes.bool
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(WindowLock);
-
+export default WindowLock;

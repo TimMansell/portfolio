@@ -1,49 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-class Counter extends React.Component {
-  constructor (props) {
-    super(props);
+export const Counter = ({begin, end}) => {
+  const [counter, setCounter] = useState(begin);
+  const [randomCountTo] = useState(Math.floor(Math.random() * (end - begin + 1) + begin));
 
-    const {begin, end} = props;
+  useEffect(() => {
+    if (counter <= randomCountTo) {
+      const timer = setInterval(() => {
+        setCounter(counter + 1);
+      }, 1);
 
-    this.state = {
-      counter: begin
-    };
-
-    this.randomCountTo = Math.floor(Math.random() * (end - begin + 1) + begin);
-  }
-
-  componentDidMount () {
-    this.tick = setInterval(this.incrementCounter, 1);
-  }
-
-  componentWillUnmount () {
-    this.clearInterval();
-  }
-
-    incrementCounter = () => {
-      const { counter } = this.state;
-
-      if (counter <= this.randomCountTo) {
-        this.setState(prevState => ({
-          counter: prevState.counter + 1
-        }));
-      } else {
-        this.clearInterval();
-      }
+      return () => clearInterval(timer);
     }
+  });
 
-    clearInterval = () => {
-      window.clearInterval(this.tick);
-    }
-
-    render () {
-      const { counter } = this.state;
-
-      return <>{counter}+</>;
-    }
-}
+  return <>{counter}+</>;
+};
 
 Counter.propTypes = {
   end: PropTypes.number.isRequired,
