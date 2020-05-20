@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { MenuContext } from '../../context/mobileMenu';
-import PropTypes from 'prop-types';
 import ScrollLock from 'react-scrolllock';
 import debounce from 'lodash.debounce';
 
@@ -25,10 +24,6 @@ export const WindowLock = () => {
   });
 
   return <>{isMobileMenu && isMobileView && <ScrollLock />}</>;
-};
-
-WindowLock.propTypes = {
-  isMobileMenu: PropTypes.bool
 };
 
 export default WindowLock;
