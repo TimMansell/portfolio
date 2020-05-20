@@ -6,7 +6,7 @@ $mobile-menu-bg-colour: #fff;
 .hamburger {
   position: fixed;
   text-indent: -9999px;
-  border: none;
+  border: 0;
   transition: background 0.3s;
   z-index: 999999;
   left: 50%;

@@ -7,10 +7,6 @@
   overflow: hidden;
   border-radius: 7px;
 
-  &:hover &__info {
-    transform: translateY(0);
-  }
-
   &__link {
     &::before {
       content: '';
@@ -44,6 +40,10 @@
     width: 100%;
     color: $secondary-text-colour;
     text-align: center;
+  }
+
+  &:hover &__info {
+    transform: translateY(0);
   }
 
   &__title {

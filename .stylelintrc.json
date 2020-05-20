@@ -2,7 +2,7 @@
   "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
   "rules": {
     "max-nesting-depth": [
-      2,
+      3,
       {
         "ignore": ["blockless-at-rules", "pseudo-classes"]
       }
