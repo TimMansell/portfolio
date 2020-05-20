@@ -6,7 +6,7 @@ import InViewport from '../InViewport';
 describe('InViewport', () => {
   it('should render my component', () => {
     const props = {
-      children: '<p></p>'
+      children: '<p></p>',
     };
 
     // eslint-disable-next-line

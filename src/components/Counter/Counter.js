@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export const Counter = ({begin, end}) => {
+export const Counter = ({ begin, end }) => {
   const [counter, setCounter] = useState(begin);
-  const [randomCountTo] = useState(Math.floor(Math.random() * (end - begin + 1) + begin));
+  const [randomCountTo] = useState(
+    Math.floor(Math.random() * (end - begin + 1) + begin)
+  );
 
   useEffect(() => {
     if (counter <= randomCountTo) {
@@ -20,7 +22,7 @@ export const Counter = ({begin, end}) => {
 
 Counter.propTypes = {
   end: PropTypes.number.isRequired,
-  begin: PropTypes.number.isRequired
+  begin: PropTypes.number.isRequired,
 };
 
 export default Counter;

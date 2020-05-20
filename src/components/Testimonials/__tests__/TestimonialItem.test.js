@@ -8,7 +8,7 @@ describe('TestimonialsItem', () => {
   it('should render my component', () => {
     const props = {
       description: '',
-      author: ''
+      author: '',
     };
 
     // eslint-disable-next-line
@@ -18,7 +18,7 @@ describe('TestimonialsItem', () => {
   it('should match snapshot', () => {
     const props = {
       description: 'Description',
-      author: 'Author'
+      author: 'Author',
     };
 
     const snapshot = renderer.create(<TestimonialsItem {...props} />).toJSON();

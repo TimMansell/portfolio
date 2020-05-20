@@ -14,5 +14,5 @@ export const MenuContextProvider = ({ children }) => {
 };
 
 MenuContextProvider.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };

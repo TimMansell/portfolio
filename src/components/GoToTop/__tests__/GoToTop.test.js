@@ -11,7 +11,7 @@ describe('GoToTop', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<GoToTop/>).toJSON();
+    const snapshot = renderer.create(<GoToTop />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

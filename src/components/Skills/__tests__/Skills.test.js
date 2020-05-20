@@ -11,7 +11,7 @@ describe('Skills', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Skills/>).toJSON();
+    const snapshot = renderer.create(<Skills />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

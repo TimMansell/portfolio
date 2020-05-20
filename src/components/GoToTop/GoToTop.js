@@ -9,10 +9,10 @@ import { IconAngleUp } from 'components/Icon';
 
 export const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const classes = classnames('goto-top', {'goto-top--show': isVisible});
+  const classes = classnames('goto-top', { 'goto-top--show': isVisible });
 
   useEffect(() => {
-    const onScroll = throttle((e) => {
+    const onScroll = throttle(() => {
       setIsVisible(window.scrollY >= 800);
     }, 30);
 
@@ -21,9 +21,11 @@ export const GoToTop = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, [isVisible]);
 
-  return <Link data-e2e="goto-top-btn" className={classes} to="root" smooth={true}>
-    <IconAngleUp size="sm" />
-  </Link>;
+  return (
+    <Link data-e2e="goto-top-btn" className={classes} to="root" smooth={true}>
+      <IconAngleUp size="sm" />
+    </Link>
+  );
 };
 
 export default GoToTop;

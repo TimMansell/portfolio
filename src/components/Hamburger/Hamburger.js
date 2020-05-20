@@ -12,16 +12,23 @@ export const Hamburger = () => {
   };
 
   const buttonClasses = classnames('hamburger', {
-    'hamburger--active': isMobileMenu
+    'hamburger--active': isMobileMenu,
   });
 
   const hamburgerClasses = classnames('hamburger__menu', {
-    'hamburger__menu--active': isMobileMenu
+    'hamburger__menu--active': isMobileMenu,
   });
 
-  return <button type="button" data-e2e="hambuger" className={buttonClasses} onClick={() => toggleHamburger()}>
-    <span className={hamburgerClasses}>toggle menu</span>
-  </button>;
+  return (
+    <button
+      type="button"
+      data-e2e="hambuger"
+      className={buttonClasses}
+      onClick={() => toggleHamburger()}
+    >
+      <span className={hamburgerClasses}>toggle menu</span>
+    </button>
+  );
 };
 
 export default Hamburger;
