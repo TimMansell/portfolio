@@ -9,7 +9,7 @@ export const InViewport = ({ children }) => {
   useEffect(() => {
     const isVisible = () => {
       setIsInViewport(true);
-    }
+    };
 
     inViewport(refInViewport.current, isVisible);
   });
