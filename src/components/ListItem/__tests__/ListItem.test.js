@@ -10,8 +10,8 @@ describe('ListItem', () => {
       list: [],
       icon: {
         name: '',
-        family: ''
-      }
+        family: '',
+      },
     };
 
     // eslint-disable-next-line
@@ -23,8 +23,8 @@ describe('ListItem', () => {
       list: ['Item 1', 'Item 2'],
       icon: {
         name: 'css3-alt',
-        family: 'fab'
-      }
+        family: 'fab',
+      },
     };
 
     const snapshot = renderer.create(<ListItem item={item} />).toJSON();

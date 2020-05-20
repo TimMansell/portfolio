@@ -14,14 +14,16 @@ export const InViewport = ({ children }) => {
     inViewport(refInViewport.current, isVisible);
   });
 
-  return <div ref={refInViewport}>
-    {!isInViewport && <span>&nbsp;</span> }
-    {isInViewport && <span>{children}</span>}
-  </div>;
+  return (
+    <div ref={refInViewport}>
+      {!isInViewport && <span>&nbsp;</span>}
+      {isInViewport && <span>{children}</span>}
+    </div>
+  );
 };
 
 InViewport.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default InViewport;

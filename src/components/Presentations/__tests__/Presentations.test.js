@@ -11,7 +11,7 @@ describe('Presentations', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Presentations/>).toJSON();
+    const snapshot = renderer.create(<Presentations />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

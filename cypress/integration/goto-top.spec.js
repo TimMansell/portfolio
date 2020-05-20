@@ -8,17 +8,14 @@ describe('Goto Top', () => {
   it('goto top button should show', () => {
     cy.scrollTo('bottom');
 
-    cy.get('[data-e2e="goto-top-btn"]')
-      .should('be.visible');
+    cy.get('[data-e2e="goto-top-btn"]').should('be.visible');
   });
 
   it('clicking on goto top button should scroll to intro section', () => {
     cy.scrollTo('bottom');
 
-    cy.get('[data-e2e="goto-top-btn"]')
-      .click();
+    cy.get('[data-e2e="goto-top-btn"]').click();
 
-    cy.get('#intro')
-      .should('be.visible');
+    cy.get('#intro').should('be.visible');
   });
 });
