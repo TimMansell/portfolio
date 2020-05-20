@@ -1,23 +1,23 @@
 @import 'variables';
 
 .icon {
-    font-size: 80px;
-    text-shadow: -1px -1px darken($primary-colour, 10%);
-    color: $secondary-text-colour;
+  font-size: 80px;
+  text-shadow: -1px -1px darken($primary-colour, 10%);
+  color: $secondary-text-colour;
 
-    &--md {
-        font-size: 65px;
-    }
+  &--md {
+    font-size: 65px;
+  }
 
-    &--sm {
-        font-size: 48px;
-    }
+  &--sm {
+    font-size: 48px;
+  }
 
-    &--xs {
-        font-size: 30px;
-    }
+  &--xs {
+    font-size: 30px;
+  }
 
-    &--padded {
-        margin-bottom: 20px;
-    }
+  &--padded {
+    margin-bottom: 20px;
+  }
 }
