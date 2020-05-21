@@ -1,50 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import React, { useContext } from 'react';
+import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
-
-import { setMobileMenu } from 'actions';
 
 import './Hamburger.scss';
 
-export class Hamburger extends React.Component {
-  toggleHamburger = () => {
-    const { isMobileMenu, setMobileMenu } = this.props;
+export const Hamburger = () => {
+  const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
 
-    setMobileMenu(!isMobileMenu);
-  }
-
-  render () {
-    const { isMobileMenu } = this.props;
-
-    const buttonClasses = classnames('hamburger', {
-      'hamburger--active': isMobileMenu
-    });
-
-    const hamburgerClasses = classnames('hamburger__menu', {
-      'hamburger__menu--active': isMobileMenu
-    });
-
-    return <button type="button" data-e2e="hambuger" className={buttonClasses} onClick={this.toggleHamburger}>
-      <span className={hamburgerClasses}>toggle menu</span>
-    </button>;
-  }
-}
-
-function mapStateToProps (state, ownProps) {
-  return {
-    isMobileMenu: state.isMobileMenu
+  const toggleHamburger = () => {
+    setIsMobileMenu(!isMobileMenu);
   };
-}
 
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ setMobileMenu }, dispatch);
+  const buttonClasses = classnames('hamburger', {
+    'hamburger--active': isMobileMenu,
+  });
+
+  const hamburgerClasses = classnames('hamburger__menu', {
+    'hamburger__menu--active': isMobileMenu,
+  });
+
+  return (
+    <button
+      type="button"
+      data-e2e="hambuger"
+      className={buttonClasses}
+      onClick={() => toggleHamburger()}
+    >
+      <span className={hamburgerClasses}>toggle menu</span>
+    </button>
+  );
 };
 
-Hamburger.propTypes = {
-  isMobileMenu: PropTypes.bool,
-  setMobileMenu: PropTypes.func
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Hamburger);
+export default Hamburger;

@@ -7,7 +7,7 @@ import ShuffleContent from '../ShuffleContent';
 describe('ShuffleContent', () => {
   it('should render my component', () => {
     const props = {
-      children: '<p></p>'
+      children: '<p></p>',
     };
 
     // eslint-disable-next-line
@@ -16,9 +16,9 @@ describe('ShuffleContent', () => {
 
   it('should match snapshot', () => {
     const props = {
-      children: '<p>Text</p>'
+      children: '<p>Text</p>',
     };
-    const snapshot = renderer.create(<ShuffleContent {...props}/>).toJSON();
+    const snapshot = renderer.create(<ShuffleContent {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

@@ -1,18 +1,25 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-// import renderer from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 
-import { Navigation } from '../Navigation';
+import Navigation from '../Navigation';
+import { MenuContext } from '../../../context/mobileMenu';
+
+const MockComponent = () => (
+  <MenuContext.Provider value={[false, jest.fn()]}>
+    <Navigation />
+  </MenuContext.Provider>
+);
 
 describe('Navigation', () => {
   it('should render my component', () => {
     // eslint-disable-next-line
-    const wrapper = shallow(<Navigation />, {disableLifecycleMethods: true});
+    const wrapper = shallow(<MockComponent />);
   });
 
-  /* it.skip('should match snapshot', () => {
-    const snapshot = renderer.create(<Navigation/>).toJSON();
+  it('should match snapshot', () => {
+    const snapshot = renderer.create(<MockComponent />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
-  }); */
+  });
 });

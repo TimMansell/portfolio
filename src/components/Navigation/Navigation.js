@@ -1,10 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-
-import { setMobileMenu } from 'actions';
-
+import React, { useState, useEffect, useRef, useContext } from 'react';
+import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 
@@ -12,115 +7,167 @@ import Hamburger from 'components/Hamburger';
 
 import './Navigation.scss';
 
-export class Navigation extends React.Component {
-  constructor (props) {
-    super(props);
+export const Navigation = () => {
+  const [isFixedNav, setIsFixedNav] = useState(false);
+  const refNavigation = useRef(null);
+  const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
 
-    this.state = {
-      isFixedNav: false
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const { clientHeight } = refNavigation.current;
+
+      setIsFixedNav(scrollTop >= window.innerHeight - clientHeight);
     };
 
-    this.refNavigation = React.createRef();
-  }
+    window.addEventListener('scroll', onScroll);
 
-  componentDidMount () {
-    window.addEventListener('scroll', this.handleScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  });
 
-    this.setState(prevState => ({
-      offset: this.refNavigation.current.offsetTop
-    }));
-  }
+  const closeMenu = () => {
+    setIsMobileMenu(false);
+  };
 
-  componentWillUnmount () {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+  const navClasses = classnames('navigation', {
+    'navigation--is-sticky': isFixedNav && !isMobileMenu,
+    'navigation--active': isMobileMenu,
+  });
 
-  handleScroll = (event) => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const { offset } = this.state;
-    // eslint-disable-next-line no-tabs
-    let	isFixedNav = false;
+  const menuClasses = classnames('navigation__menu', {
+    'navigation__menu--active': isMobileMenu,
+  });
 
-    if (scrollTop >= offset) {
-      isFixedNav = true;
-    } else {
-      isFixedNav = false;
-    }
+  const linkClasses = classnames('navigation__menu-link', {
+    'navigation__menu-link--is-sticky': isFixedNav && !isMobileMenu,
+  });
 
-    this.setState(prevState => ({
-      isFixedNav: isFixedNav
-    }));
-  }
-
-  closeMenu = () => {
-    const { setMobileMenu } = this.props;
-
-    setMobileMenu(false);
-  }
-
-  render () {
-    const { isMobileMenu } = this.props;
-    const { isFixedNav } = this.state;
-
-    const navClasses = classnames('navigation', {
-      'navigation--is-sticky': isFixedNav && !isMobileMenu,
-      'navigation--active': isMobileMenu
-    });
-
-    const menuClasses = classnames('navigation__menu', {
-      'navigation__menu--active': isMobileMenu
-    });
-
-    const linkClasses = classnames('navigation__menu-link', {
-      'navigation__menu-link--is-sticky': isFixedNav && !isMobileMenu
-    });
-
-    return <nav id="nav" data-e2e="navigation" className={navClasses} ref={this.refNavigation} role="navigation">
+  return (
+    <nav
+      id="nav"
+      data-e2e="navigation"
+      className={navClasses}
+      ref={refNavigation}
+      role="navigation"
+    >
       <ul className={menuClasses}>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-profile" className={linkClasses} activeClass="navigation__menu-link--active" to="profile" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Profile</Link>
+          <Link
+            data-e2e="navigation-profile"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="profile"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Profile
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-skills" className={linkClasses} activeClass="navigation__menu-link--active" to="skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Skills</Link>
+          <Link
+            data-e2e="navigation-skills"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="skills"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Skills
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-retired-skills" className={linkClasses} activeClass="navigation__menu-link--active" to="retired-skills" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Retired Skills</Link>
+          <Link
+            data-e2e="navigation-retired-skills"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="retired-skills"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Retired Skills
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-stack" className={linkClasses} activeClass="navigation__menu-link--active" to="stack" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Stack</Link>
+          <Link
+            data-e2e="navigation-stack"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="stack"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Stack
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-portfolio" className={linkClasses} activeClass="navigation__menu-link--active" to="portfolio" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Portfolio</Link>
+          <Link
+            data-e2e="navigation-portfolio"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="portfolio"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Portfolio
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-presentations" className={linkClasses} activeClass="navigation__menu-link--active" to="presentations" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Presentations</Link>
+          <Link
+            data-e2e="navigation-presentations"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="presentations"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Presentations
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-testimonials" className={linkClasses} activeClass="navigation__menu-link--active" to="testimonials" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Testimonials</Link>
+          <Link
+            data-e2e="navigation-testimonials"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="testimonials"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Testimonials
+          </Link>
         </li>
         <li className="navigation__menu-item">
-          <Link data-e2e="navigation-contact" className={linkClasses} activeClass="navigation__menu-link--active" to="contact" smooth={true} spy={true} duration={500} onClick={this.closeMenu}>Contact</Link>
+          <Link
+            data-e2e="navigation-contact"
+            className={linkClasses}
+            activeClass="navigation__menu-link--active"
+            to="contact"
+            smooth={true}
+            spy={true}
+            duration={500}
+            onClick={() => closeMenu()}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
 
       <Hamburger />
-    </nav>;
-  }
-}
-
-function mapStateToProps (state, ownProps) {
-  return {
-    isMobileMenu: state.isMobileMenu
-  };
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ setMobileMenu }, dispatch);
+    </nav>
+  );
 };
 
-Navigation.propTypes = {
-  isMobileMenu: PropTypes.bool,
-  setMobileMenu: PropTypes.func
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Navigation);
+export default Navigation;

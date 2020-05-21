@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { MenuContextProvider } from 'context/mobileMenu';
 
 import Main from 'layout/Main';
 
@@ -9,19 +9,15 @@ import GoToTop from 'components/GoToTop';
 import WindowLock from 'components/WindowLock';
 
 export const App = () => {
-  return <>
-    <Navigation />
-    <Intro />
-    <Main />
-    <GoToTop />
-    <WindowLock />
-  </>;
+  return (
+    <MenuContextProvider>
+      <Navigation />
+      <Intro />
+      <Main />
+      <GoToTop />
+      <WindowLock />
+    </MenuContextProvider>
+  );
 };
 
-function mapStateToProps (state, ownProps) {
-  return {
-    isMobileMenu: state.isMobileMenu
-  };
-}
-
-export default connect(mapStateToProps)(App);
+export default App;

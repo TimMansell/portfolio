@@ -6,7 +6,7 @@ import Hero from '../Hero';
 
 const props = {
   blurFrom: 0,
-  blurTo: 1
+  blurTo: 1,
 };
 
 describe('Hero', () => {
@@ -16,7 +16,7 @@ describe('Hero', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Hero {...props}/>).toJSON();
+    const snapshot = renderer.create(<Hero {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

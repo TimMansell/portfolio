@@ -8,7 +8,7 @@ const props = {
   url: '',
   img: 'babel.svg',
   name: '',
-  width: ''
+  width: '',
 };
 
 describe('StackItem', () => {
