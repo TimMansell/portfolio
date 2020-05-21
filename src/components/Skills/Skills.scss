@@ -2,45 +2,44 @@
 @import 'utilities/breakpoints';
 
 .skills {
-	margin-bottom: 30px;
-	display: grid;
-	grid-gap: 16px;
-	color: $secondary-text-colour;
-	text-align: center;
+  margin-bottom: 30px;
+  display: grid;
+  grid-gap: 16px;
+  color: $secondary-text-colour;
+  text-align: center;
 
-	@include media-breakpoint-up(sm){
-		grid-template-columns: repeat(2, 1fr);
-	}
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-	@include media-breakpoint-up(md){
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	@include media-breakpoint-up(lg){
-		grid-template-columns: repeat( auto-fit, minmax(10px, 1fr) );
-	}
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-	&--single {
-		display: block;
-	}
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  }
 
-	&__icon {
-		font-size: 65px;
-		text-shadow: -1px -1px darken($primary-colour, 10%);
-	}
+  &--single {
+    display: block;
+  }
 
-	&__list {
-		list-style-type: none;
-		font-size: 20px;
-		text-shadow: -1px -1px rgba(0,0,0,.2);
+  &__icon {
+    font-size: 65px;
+    text-shadow: -1px -1px darken($primary-colour, 10%);
+  }
 
-		@include media-breakpoint-up(sm){
-			font-size: 18px;
-		}
-	}
+  &__list {
+    list-style-type: none;
+    font-size: 20px;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
 
-	&__item {
-		margin-bottom: 5px;
-		
-	}
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 5px;
+  }
 }

@@ -2,95 +2,96 @@
 @import 'utilities/breakpoints';
 
 .navigation {
-	@include media-breakpoint-up(lg){
-		width: 100%;
-		height: 60px;
-		position: absolute;
-		bottom: 0 !important;
-		z-index: 999999;
-		background-color: rgba($tertiary-text-colour, 0.7);
-	}
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0 !important;
+    z-index: 999999;
+    background-color: rgba($tertiary-text-colour, 0.7);
+  }
 
-	&--active {
-		@include media-breakpoint-down(md){
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 999999;
-			background-color: rgba($tertiary-text-colour, 0.8);
-		}
-	}
+  &--active {
+    @include media-breakpoint-down(md) {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999999;
+      background-color: rgba($tertiary-text-colour, 0.8);
+    }
+  }
 
-	&--is-sticky {
-		@include media-breakpoint-up(lg){
-			position: fixed;
-			top: 0 !important;
-			box-shadow: inset 0 -1px darken($primary-colour, 10%), 0 1px 1px rgba(0,0,0,0.2);
-			background-color: rgba($primary-colour, 0.95);
-		}
-	}
+  &--is-sticky {
+    @include media-breakpoint-up(lg) {
+      position: fixed;
+      top: 0 !important;
+      box-shadow: inset 0 -1px darken($primary-colour, 10%), 0 1px 1px rgba(0, 0, 0, 0.2);
+      background-color: rgba($primary-colour, 0.95);
+    }
+  }
 
-	&__menu {
-		display: none;
-		text-align: center;
-		list-style: none;
-		margin: 0;
+  &__menu {
+    display: none;
+    text-align: center;
+    list-style: none;
+    margin: 0;
 
-		@include media-breakpoint-up(lg){
-			display: flex;
-			justify-content: center;
-		}
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: center;
+    }
 
-		&--active {
-			@include media-breakpoint-down(md){
-				display: block;
-				position: fixed;
-				width: 100%;
-				bottom: 0;
-				left: 50%;
-				transform: translate(-50%, -100px);
-				padding-left: 16px;
-				padding-right: 16px;
-			}
-		}
-	}
+    &--active {
+      @include media-breakpoint-down(md) {
+        display: block;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -100px);
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  }
 
-	&__menu-item {
-		@include media-breakpoint-up(md){
-			line-height: 60px;
-			text-transform: uppercase;
-		}
-	}
+  &__menu-item {
+    @include media-breakpoint-up(md) {
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+  }
 
-	&__menu-link {
-		color: $secondary-text-colour;
-		padding: 5px;
-		display: block;
-		font-size: 30px;
-		letter-spacing: 2px;
+  &__menu-link {
+    color: $secondary-text-colour;
+    padding: 5px;
+    display: block;
+    font-size: 30px;
+    letter-spacing: 2px;
 
-		@include media-breakpoint-up(sm){
-			padding: 1px;
-		}
-		
-		@include media-breakpoint-up(lg){
-			font-size: 18px;
-			padding: 0 18px;
-		}
+    @include media-breakpoint-up(sm) {
+      padding: 1px;
+    }
 
-		&--active, &:hover {
-			@include media-breakpoint-up(lg){
-				background-color: darken($primary-colour, 10%);
-				box-shadow: inset 1px 0 darken($primary-colour, 11%), inset -1px 0 darken($primary-colour, 11%);
-			}
-		}
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+      padding: 0 18px;
+    }
 
-		&--is-sticky {
-			@include media-breakpoint-up(lg){
-				text-shadow: -1px -1px darken($primary-colour, 10%);
-			}
-		}
-	}
+    &--active,
+    &:hover {
+      @include media-breakpoint-up(lg) {
+        background-color: darken($primary-colour, 10%);
+        box-shadow: inset 1px 0 darken($primary-colour, 11%), inset -1px 0 darken($primary-colour, 11%);
+      }
+    }
+
+    &--is-sticky {
+      @include media-breakpoint-up(lg) {
+        text-shadow: -1px -1px darken($primary-colour, 10%);
+      }
+    }
+  }
 }

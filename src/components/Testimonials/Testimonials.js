@@ -1,50 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import TestimonialItem from './TestimonialItem';
 
-import testimonials from './json/testimonials.json';
+import testimonialsJson from './json/testimonials.json';
 import './Testimonials.scss';
 
 import { IconQuoteLeft, IconQuoteRight } from '../Icon';
 
-export class Testimonials extends React.Component {
-  constructor (props) {
-    super(props);
+export const Testimonials = () => {
+  const [testimonials, setTestimonials] = useState(testimonialsJson);
+  const [testimonial, setTestimonial] = useState(testimonialsJson[0]);
 
-    this.testimonials = testimonials;
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const sortedTestimonials = [
+        ...testimonials.slice(1),
+        ...testimonials.slice(0, 1),
+      ];
 
-    this.state = {
-      testimonial: this.testimonials[0]
-    };
-  }
+      setTestimonials(sortedTestimonials);
+      setTestimonial(sortedTestimonials[0]);
+    }, 5000);
 
-  componentDidMount () {
-    this.tick = setInterval(this.rotateContent, 5000);
-  }
+    return () => clearInterval(timer);
+  });
 
-  componentWillUnmount () {
-    window.clearInterval(this.tick);
-  }
-
-    rotateContent = () => {
-      this.testimonials.push(this.testimonials.shift());
-
-      this.setState(prevState => ({
-        testimonial: this.testimonials[0]
-      }));
-    }
-
-    render () {
-      const { testimonial } = this.state;
-
-      return <>
-      <div className="testimonials text--center">
-        <IconQuoteLeft className="testimonials__quote" />
-        <TestimonialItem {...testimonial} />
-        <IconQuoteRight className="testimonials__quote" />
-      </div>
-      </>;
-    }
-}
+  return (
+    <div className="testimonials text--center">
+      <IconQuoteLeft className="testimonials__quote" />
+      <TestimonialItem {...testimonial} />
+      <IconQuoteRight className="testimonials__quote" />
+    </div>
+  );
+};
 
 export default Testimonials;

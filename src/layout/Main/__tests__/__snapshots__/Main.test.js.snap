@@ -37,14 +37,16 @@ exports[`Main should match snapshot 1`] = `
           I believe that having a functional website is only part of the solution. Being found is just as important. Accessibility (a11y) and Search Engine Optimisation (SEO) is an integral part of my development process.
         </p>
         <p>
-          Please view my  
+          Please view my
+           
           <a
             className="link"
             onClick={[Function]}
           >
             portfolio
           </a>
-           to see some examples of my work.
+           
+          to see some examples of my work.
         </p>
       </div>
       <div
@@ -1889,7 +1891,7 @@ exports[`Main should match snapshot 1`] = `
           className="copyright"
         >
           © 
-          2019
+          2020
           <br />
           Tim Mansell
         </p>

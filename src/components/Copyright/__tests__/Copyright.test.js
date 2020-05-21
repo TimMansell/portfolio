@@ -11,7 +11,7 @@ describe('Copyright', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Copyright/>).toJSON();
+    const snapshot = renderer.create(<Copyright />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

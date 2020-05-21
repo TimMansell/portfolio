@@ -6,7 +6,7 @@ import Counter from '../Counter';
 
 const props = {
   begin: 0,
-  end: 1
+  end: 1,
 };
 
 describe('Counter', () => {
@@ -16,7 +16,7 @@ describe('Counter', () => {
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Counter {...props}/>).toJSON();
+    const snapshot = renderer.create(<Counter {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

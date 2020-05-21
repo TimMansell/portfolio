@@ -1,42 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-export class ShuffleContent extends React.Component {
-  constructor (props) {
-    super(props);
+export const ShuffleContent = ({ children }) => {
+  const [shuffleContent, setShuffleContent] = useState(
+    React.Children.toArray(children)
+  );
+  const [content, setContent] = useState(shuffleContent[0]);
 
-    this.shuffleContent = React.Children.toArray(props.children);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const shuffledContent = [
+        ...shuffleContent.slice(1),
+        ...shuffleContent.slice(0, 1),
+      ];
 
-    this.state = {
-      content: this.shuffleContent[0]
-    };
-  }
+      setShuffleContent(shuffledContent);
+      setContent(shuffledContent[0]);
+    }, 4000);
 
-  componentDidMount () {
-    this.tick = setInterval(this.rotateContent, 4000);
-  }
+    return () => clearInterval(timer);
+  });
 
-  componentWillUnmount () {
-    window.clearInterval(this.tick);
-  }
-
-    rotateContent = () => {
-      this.shuffleContent.push(this.shuffleContent.shift());
-
-      this.setState(prevState => ({
-        content: this.shuffleContent[0]
-      }));
-    }
-
-    render () {
-      const { content } = this.state;
-
-      return <div>{content}</div>;
-    }
-}
+  return <div>{content}</div>;
+};
 
 ShuffleContent.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default ShuffleContent;
