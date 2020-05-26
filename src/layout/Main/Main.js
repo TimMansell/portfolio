@@ -33,7 +33,7 @@ const Main = () => {
         <CurrentStack />
       </SectionWrap>
 
-      <SectionWrap id="portfolio" background="secondary" container="large">
+      <SectionWrap id="portfolio" background="secondary" container="medium">
         <Portfolio />
       </SectionWrap>
 
