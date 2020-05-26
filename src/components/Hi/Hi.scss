@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 .hi {
   color: $secondary-text-colour;
@@ -15,7 +14,7 @@
   animation: hi 3s ease-in-out;
   animation-fill-mode: forwards;
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: $bp-md) {
     text-shadow: 2px 2px $tertiary-text-colour;
     font-size: 100px;
   }
