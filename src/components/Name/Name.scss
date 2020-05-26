@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 .name {
   color: $secondary-text-colour;
@@ -16,7 +15,7 @@
   animation-delay: $animation-name-delay;
   animation-fill-mode: forwards;
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: $bp-md) {
     text-shadow: 2px 2px $tertiary-text-colour;
     font-size: 70px;
   }

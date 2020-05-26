@@ -1,10 +1,10 @@
-@import 'utilities/breakpoints';
+@import 'variables';
 
 .hero {
   height: 100vh;
 
   &__img {
-    @include media-breakpoint-up(md) {
+    @media (min-width: $bp-md) {
       background-image: url('./img/hero.jpg');
       background-position: center;
       background-size: cover;

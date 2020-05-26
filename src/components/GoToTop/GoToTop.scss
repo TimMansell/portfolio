@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 .goto-top {
   display: flex;
@@ -18,7 +17,7 @@
   height: 50px;
   color: $secondary-text-colour;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $bp-sm) {
     bottom: 30px;
   }
 
@@ -29,7 +28,7 @@
   &--show {
     right: 10px;
 
-    @include media-breakpoint-up(sm) {
+    @media (min-width: $bp-sm) {
       right: 30px;
     }
   }
