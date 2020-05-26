@@ -1,18 +1,18 @@
-@import 'utilities/breakpoints';
+@import 'variables';
 
 .stack {
   display: grid;
   grid-gap: 32px;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $bp-sm) {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: $bp-md) {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  @include media-breakpoint-up(xl) {
+  @media (min-width: $bp-xl) {
     grid-template-columns: repeat(12, 1fr);
   }
 
