@@ -1,14 +1,14 @@
-@import 'utilities/breakpoints';
+@import 'variables';
 
 .portfolio {
   display: grid;
   grid-gap: 24px;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $bp-sm) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: $bp-lg) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

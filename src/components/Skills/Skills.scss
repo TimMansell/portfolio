@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 .skills {
   margin-bottom: 30px;
@@ -8,15 +7,15 @@
   color: $secondary-text-colour;
   text-align: center;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $bp-sm) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include media-breakpoint-up(md) {
+  @media (min-width: $bp-md) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: $bp-lg) {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   }
 
@@ -34,7 +33,7 @@
     font-size: 20px;
     text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
 
-    @include media-breakpoint-up(sm) {
+    @media (min-width: $bp-sm) {
       font-size: 18px;
     }
   }

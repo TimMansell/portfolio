@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 .learn-more {
   display: none;
@@ -14,7 +13,7 @@
   animation-name: floating;
   animation-iteration-count: infinite;
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: $bp-lg) {
     display: block;
   }
 

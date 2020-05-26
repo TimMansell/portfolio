@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 .tagline {
   height: 30px;
@@ -18,7 +17,7 @@
     text-transform: uppercase;
     text-shadow: 1px 1px darken($primary-colour, 10%);
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: $bp-md) {
       font-size: 26px;
       text-shadow: 2px 2px $tertiary-text-colour;
     }

@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'utilities/breakpoints';
 
 $mobile-menu-bg-colour: #fff;
 
@@ -18,7 +17,7 @@ $mobile-menu-bg-colour: #fff;
   background-color: $primary-colour;
   bottom: 0;
 
-  @include media-breakpoint-up(lg) {
+  @media (min-width: $bp-lg) {
     display: none;
   }
 
