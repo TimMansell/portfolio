@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
+  "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines", "stylelint-config-css-modules"],
   "rules": {
     "max-nesting-depth": [
       3,
@@ -7,6 +7,7 @@
         "ignore": ["blockless-at-rules", "pseudo-classes"]
       }
     ],
-    "order/properties-alphabetical-order": null
+    "order/properties-alphabetical-order": null,
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$"
   }
 }
