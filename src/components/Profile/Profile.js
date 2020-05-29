@@ -4,14 +4,14 @@ import { Link } from 'react-scroll';
 import SocialIcons from 'components/SocialIcons';
 import Header from 'components/Header';
 
-import './Profile.scss';
+import styles from './Profile.module.scss';
 
 export const Profile = () => {
   return (
     <>
       <Header title="A little bit about myself" primary />
 
-      <div className="profile text--center">
+      <div className={styles.profile}>
         <p>
           I am an experienced and ambitious Front-end Engineer with over 8 years
           commercial experience in a digital agency environment. The last four

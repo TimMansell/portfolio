@@ -1,6 +1,6 @@
 @import 'variables';
 
-.learn-more {
+.learnMore {
   display: none;
   position: fixed;
   bottom: 90px;
@@ -16,17 +16,17 @@
   @media (min-width: $bp-lg) {
     display: block;
   }
+}
 
-  &__scroll {
-    opacity: 0.7;
-  }
+.scroll {
+  opacity: 0.7;
+}
 
-  &__link {
+.link {
+  color: $secondary-text-colour;
+
+  &:hover {
     color: $secondary-text-colour;
-
-    &:hover {
-      color: $secondary-text-colour;
-    }
   }
 }
 

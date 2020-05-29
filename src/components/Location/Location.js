@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './Location.scss';
+import styles from './Location.module.scss';
 
 export const Location = () => {
-  return <div className="location">Melbourne, Australia</div>;
+  return <div className={styles.location}>Melbourne, Australia</div>;
 };
 
 export default Location;
