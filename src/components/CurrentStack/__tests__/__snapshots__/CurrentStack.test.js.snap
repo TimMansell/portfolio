@@ -33,7 +33,7 @@ Array [
       >
         <img
           alt="React"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -59,7 +59,7 @@ Array [
       >
         <img
           alt="NodeJS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -85,7 +85,7 @@ Array [
       >
         <img
           alt="VueJS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -111,7 +111,7 @@ Array [
       >
         <img
           alt="NPM"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -137,7 +137,7 @@ Array [
       >
         <img
           alt="Webpack"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -163,7 +163,7 @@ Array [
       >
         <img
           alt="Yarn"
-          className="stack__image img--responsive"
+          className="img"
           src="yarn.png"
           title="Yarn"
           width="132"
@@ -180,7 +180,7 @@ Array [
       >
         <img
           alt="ESLint"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -206,7 +206,7 @@ Array [
       >
         <img
           alt="Babel"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -232,7 +232,7 @@ Array [
       >
         <img
           alt="VSCode"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -258,7 +258,7 @@ Array [
       >
         <img
           alt="SCSS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -284,7 +284,7 @@ Array [
       >
         <img
           alt="PostCSS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -310,7 +310,7 @@ Array [
       >
         <img
           alt="Git"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
