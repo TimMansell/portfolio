@@ -1,13 +1,13 @@
 [
     {
         "list": [
-            "HTML5",
-            "Semantic Markup",
-            "Bootstrap 4",
-            "SEO",
-            "a11y",
-            "Web Components",
-            "Styleguides"
+            {"name": "HTML5"},
+            {"name": "Semantic Markup"},
+            {"name": "Bootstrap 4"},
+            {"name": "SEO"},
+            {"name": "a11y"},
+            {"name": "Web Components"},
+            {"name": "Styleguides"}
         ],
         "icon": {
             "name": "code",
@@ -16,13 +16,13 @@
     },
     {
         "list": [
-            "CSS3",
-            "SCSS",
-            "BEM",
-            "SMACSS",
-            "PostCSS",
-            "Atomic Design",
-            "CSS Grid"
+            {"name": "CSS3"},
+            {"name": "SCSS"},
+            {"name": "BEM"},
+            {"name": "SMACSS"},
+            {"name": "PostCSS"},
+            {"name": "Atomic Design"},
+            {"name": "CSS Grid"}
         ],
         "icon": {
             "name": "css3-alt",
@@ -31,13 +31,13 @@
     },
     {
         "list": [
-            "Responsive Design",
-            "Mobile First CSS",
-            "Retina Images",
-            "Web Performance",
-            "Page Optimisation",
-            "CI / CD",
-            "Unit /e2e Testing"
+            {"name": "Responsive Design"},
+            {"name": "Mobile First CSS"},
+            {"name": "Retina Images"},
+            {"name": "Web Performance"},
+            {"name": "Page Optimisation"},
+            {"name": "CI / CD"},
+            {"name": "Unit /e2e Testing"}
         ],
         "icon": {
             "name": "clipboard-list",
@@ -46,13 +46,13 @@
     },
     {
         "list": [
-            "ES6+",
-            "Babel",
-            "Webpack",
-            "React / Redux",
-            "Vue / Vuex / Nuxt",
-            "Jest / Cypress",
-            "JSON"
+            {"name": "ES6+"},
+            {"name": "Babel"},
+            {"name": "Webpack"},
+            {"name": "React / Redux"},
+            {"name": "Vue / Vuex / Nuxt"},
+            {"name": "Jest / Cypress"},
+            {"name": "JSON"}
         ],
         "icon": {
             "name": "js",
@@ -61,13 +61,13 @@
     },
     {
         "list": [
-            "Node.js",
-            "NPM / Yarn",
-            "Git",
-            "ESLint",
-            "Netlify",
-            "Semaphore",
-            "Docker"
+            {"name": "Node.js"},
+            {"name": "NPM / Yarn"},
+            {"name": "Git"},
+            {"name": "ESLint"},
+            {"name": "Netlify"},
+            {"name": "Semaphore"},
+            {"name": "Docker"}
         ],
         "icon": {
             "name": "terminal",
@@ -76,13 +76,13 @@
     },
     {
         "list": [
-            "Agile",
-            "Scrum",
-            "Kanban",
-            "JIRA",
-            "Slack",
-            "Trello",
-            "Table Tennis"
+            {"name": "Agile"},
+            {"name": "Scrum"},
+            {"name": "Kanban"},
+            {"name": "JIRA"},
+            {"name": "Slack"},
+            {"name": "Trello"},
+            {"name": "Table Tennis"}
         ],
         "icon": {
             "name": "trello",

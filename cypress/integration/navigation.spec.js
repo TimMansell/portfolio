@@ -10,10 +10,7 @@ describe('Navigation', () => {
     it('should be fixed to bottom of viewport ', () => {
       cy.scrollTo('bottom');
 
-      cy.get('[data-e2e="navigation"]').should(
-        'have.class',
-        'navigation--is-sticky'
-      );
+      cy.get('[data-e2e="navigation"').should('be.visible');
     });
 
     it('clicking on profile item should scroll page to profile section', () => {
@@ -78,14 +75,9 @@ describe('Navigation', () => {
     });
 
     it('hamburger menu should open when button is clicked', () => {
-      cy.get('[data-e2e="hambuger"]')
-        .click()
-        .should('have.class', 'hamburger--active');
+      cy.get('[data-e2e="hambuger"]').click();
 
-      cy.get('[data-e2e="navigation"]').should(
-        'have.class',
-        'navigation--active'
-      );
+      cy.get('[data-e2e="navigation"]').should('be.visible');
     });
 
     it('clicking on skills item in hamburger menu should scroll page to skills section and close menu', () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './Hi.scss';
+import styles from './Hi.module.scss';
 
 export const Hi = () => {
-  return <p className="hi">Hi!</p>;
+  return <p className={styles.hi}>Hi!</p>;
 };
 
 export default Hi;

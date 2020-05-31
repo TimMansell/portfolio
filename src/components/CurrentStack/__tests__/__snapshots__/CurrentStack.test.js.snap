@@ -3,12 +3,12 @@
 exports[`CurrentStack should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--primary"
+    className="heading headingPrimary"
   >
     <div>
       <h2
         aria-label="Current Stack"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         Current Stack
@@ -24,7 +24,7 @@ Array [
     className="stack"
   >
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://reactjs.org/"
@@ -33,7 +33,7 @@ Array [
       >
         <img
           alt="React"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -50,7 +50,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://nodejs.org/en/"
@@ -59,7 +59,7 @@ Array [
       >
         <img
           alt="NodeJS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -76,7 +76,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://vuejs.org/"
@@ -85,7 +85,7 @@ Array [
       >
         <img
           alt="VueJS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -102,7 +102,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://www.npmjs.com/"
@@ -111,7 +111,7 @@ Array [
       >
         <img
           alt="NPM"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -128,7 +128,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://webpack.js.org/"
@@ -137,7 +137,7 @@ Array [
       >
         <img
           alt="Webpack"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -154,7 +154,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://yarnpkg.com"
@@ -163,7 +163,7 @@ Array [
       >
         <img
           alt="Yarn"
-          className="stack__image img--responsive"
+          className="img"
           src="yarn.png"
           title="Yarn"
           width="132"
@@ -171,7 +171,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://eslint.org/"
@@ -180,7 +180,7 @@ Array [
       >
         <img
           alt="ESLint"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -197,7 +197,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://babeljs.io/"
@@ -206,7 +206,7 @@ Array [
       >
         <img
           alt="Babel"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -223,7 +223,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://code.visualstudio.com/"
@@ -232,7 +232,7 @@ Array [
       >
         <img
           alt="VSCode"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -249,7 +249,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://sass-lang.com/"
@@ -258,7 +258,7 @@ Array [
       >
         <img
           alt="SCSS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -275,7 +275,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://postcss.org/"
@@ -284,7 +284,7 @@ Array [
       >
         <img
           alt="PostCSS"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {
@@ -301,7 +301,7 @@ Array [
       </a>
     </div>
     <div
-      className="stack__item"
+      className="item"
     >
       <a
         href="https://git-scm.com/"
@@ -310,7 +310,7 @@ Array [
       >
         <img
           alt="Git"
-          className="stack__image img--responsive"
+          className="img"
           src={
             Object {
               "ReactComponent": Object {

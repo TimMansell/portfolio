@@ -8,14 +8,14 @@ import Location from 'components/Location';
 import Name from 'components/Name';
 import Tagline from 'components/Tagline';
 
-import './Intro.scss';
+import styles from './Intro.module.scss';
 
 export const Intro = () => {
   return (
-    <section id="intro" className="bg--primary" role="banner">
+    <section id="intro" className={styles.background} role="banner">
       <Hero blurFrom={3} blurTo={10} />
 
-      <div className="intro">
+      <div className={styles.intro}>
         <Hi />
 
         <ScrollFade fadeMultiplier={1.15}>

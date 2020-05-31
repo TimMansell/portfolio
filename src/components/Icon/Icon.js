@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-import './Icon.scss';
+import styles from './Icon.module.scss';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -56,11 +56,11 @@ library.add(
 
 // Default Icon.
 const Icon = ({ name, className, size, padded }) => {
-  const classes = classnames('icon', className, {
-    'icon--xs': size === 'xs',
-    'icon--sm': size === 'sm',
-    'icon--md': size === 'md',
-    'icon--padded': padded,
+  const classes = classnames(styles.icon, className, {
+    [styles.iconXs]: size === 'xs',
+    [styles.iconSm]: size === 'sm',
+    [styles.iconMd]: size === 'md',
+    [styles.iconPadded]: padded,
   });
 
   return <FontAwesomeIcon icon={name} className={classes} />;

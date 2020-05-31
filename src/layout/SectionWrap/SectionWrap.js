@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import './SectionWrap.scss';
+import styles from './SectionWrap.module.scss';
 
 const SectionWrap = ({ container, background, id = '', children }) => {
-  const sectionClasses = classnames('section-wrap', {
-    'bg--primary': background === 'primary',
-    'bg--secondary': background === 'secondary',
-    'bg--tertiary': background === 'tertiary',
+  const sectionClasses = classnames(styles.section, {
+    [styles.bgPrimary]: background === 'primary',
+    [styles.bgSecondary]: background === 'secondary',
+    [styles.bgTertiary]: background === 'tertiary',
   });
 
-  const containerClasses = classnames('container', {
-    'container--medium': container === 'medium',
-    'container--large': container === 'large',
+  const containerClasses = classnames(styles.container, {
+    [styles.containerMedium]: container === 'medium',
+    [styles.containerLarge]: container === 'large',
   });
 
   return (

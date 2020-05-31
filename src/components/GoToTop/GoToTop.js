@@ -3,13 +3,13 @@ import { Link } from 'react-scroll';
 import throttle from 'lodash.throttle';
 import classnames from 'classnames';
 
-import './GoToTop.scss';
+import styles from './GoToTop.module.scss';
 
 import { IconAngleUp } from 'components/Icon';
 
 export const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const classes = classnames('goto-top', { 'goto-top--show': isVisible });
+  const classes = classnames(styles.gotoTop, { [styles.show]: isVisible });
 
   useEffect(() => {
     const onScroll = throttle(() => {

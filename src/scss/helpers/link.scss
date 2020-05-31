@@ -1,0 +1,16 @@
+@import 'variables';
+
+.link {
+  color: inherit;
+  border-bottom: 1px solid $secondary-colour;
+
+  &:hover {
+    color: inherit;
+    border: 0;
+  }
+}
+
+.alt {
+  composes: link;
+  border-color: $secondary-text-colour;
+}
