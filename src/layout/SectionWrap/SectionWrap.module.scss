@@ -40,13 +40,13 @@
 }
 
 .bgPrimary {
-  composes: primary from '~scss/helpers/_backgrounds.scss';
+  composes: primary from '~scss/helpers/backgrounds.scss';
 }
 
 .bgSecondary {
-  composes: secondary from '~scss/helpers/_backgrounds.scss';
+  composes: secondary from '~scss/helpers/backgrounds.scss';
 }
 
 .bgTertiary {
-  composes: tertiary from '~scss/helpers/_backgrounds.scss';
+  composes: tertiary from '~scss/helpers/backgrounds.scss';
 }
