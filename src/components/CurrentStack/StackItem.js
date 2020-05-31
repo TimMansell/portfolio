@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 import Image from '../Image';
 
+import styles from './CurrentStack.module.scss';
+
 export const SkillsItem = ({ url, img, name, width }) => {
   const src = require(`./img/${img}`);
 
   return (
-    <div className="stack__item">
+    <div className={styles.item}>
       <a href={url} target="_blank" rel="noopener noreferrer">
         <Image src={src} name={name} width={width} />
       </a>
