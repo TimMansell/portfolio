@@ -1,3 +1,5 @@
+@import 'variables';
+
 .link {
   color: inherit;
   border-bottom: 1px solid $secondary-colour;
@@ -6,8 +8,9 @@
     color: inherit;
     border: 0;
   }
+}
 
-  &--alt {
-    border-color: $secondary-text-colour;
-  }
+.alt {
+  composes: link;
+  border-color: $secondary-text-colour;
 }

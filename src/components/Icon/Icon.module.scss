@@ -5,19 +5,19 @@
   text-shadow: -1px -1px darken($primary-colour, 10%);
   color: $secondary-text-colour;
 
-  &--md {
+  &Md {
     font-size: 65px;
   }
 
-  &--sm {
+  &Sm {
     font-size: 48px;
   }
 
-  &--xs {
+  &Xs {
     font-size: 30px;
   }
 
-  &--padded {
+  &Padded {
     margin-bottom: 20px;
   }
 }

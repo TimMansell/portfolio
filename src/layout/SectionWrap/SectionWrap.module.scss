@@ -1,6 +1,6 @@
 @import 'variables';
 
-.section-wrap {
+.section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -28,13 +28,25 @@
     max-width: 1140px;
   }
 
-  &--medium {
+  &Medium {
     width: 85%;
     max-width: 85%;
   }
 
-  &--large {
+  &Large {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.bgPrimary {
+  composes: primary from '~scss/helpers/backgrounds.scss';
+}
+
+.bgSecondary {
+  composes: secondary from '~scss/helpers/backgrounds.scss';
+}
+
+.bgTertiary {
+  composes: tertiary from '~scss/helpers/backgrounds.scss';
 }

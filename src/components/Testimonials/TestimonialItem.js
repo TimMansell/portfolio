@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Testimonials.module.scss';
 
 export const TestimonialItem = ({ description, author }) => {
   return (
-    <div className="testimonials__quote">
-      <p className="testimonials__text">{description}</p>
-      <p className="testimonials__name">{author}</p>
+    <div className={styles.quote}>
+      <p className={styles.text}>{description}</p>
+      <p className={styles.name}>{author}</p>
     </div>
   );
 };

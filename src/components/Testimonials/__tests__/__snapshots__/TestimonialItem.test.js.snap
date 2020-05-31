@@ -2,15 +2,15 @@
 
 exports[`TestimonialsItem should match snapshot 1`] = `
 <div
-  className="testimonials__quote"
+  className="quote"
 >
   <p
-    className="testimonials__text"
+    className="text"
   >
     Description
   </p>
   <p
-    className="testimonials__name"
+    className="name"
   >
     Author
   </p>

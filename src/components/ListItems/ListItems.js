@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ListItem from './ListItem';
-import './ListItems.scss';
+import styles from './ListItems.module.scss';
 
 export const ListItems = ({ items }) => {
   return (
-    <div className="list-items">
+    <div className={styles.items}>
       {items.map((item, i) => (
         <ListItem item={item} key={i} />
       ))}

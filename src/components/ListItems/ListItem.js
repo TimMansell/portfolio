@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Icon from 'components/Icon';
-import './ListItem.scss';
+import styles from './ListItem.module.scss';
 
 export const ListItem = ({ item }) => {
   const displayItem = ({ name, url }) => {
     if (url) {
       return (
         <a
-          className="link link--alt"
+          className={styles.link}
           href={url}
           target="_blank"
           rel="noopener noreferrer"
@@ -23,11 +23,11 @@ export const ListItem = ({ item }) => {
   };
 
   return (
-    <div className="list-item">
+    <div className={styles.item}>
       <Icon name={[item.icon.family, item.icon.name]} size="md" padded />
-      <ul className="list-item__list">
+      <ul className={styles.list}>
         {item.list.map((listItem, i) => (
-          <li className="list-item__item" key={i}>
+          <li className={styles.listitem} key={i}>
             {displayItem(listItem)}
           </li>
         ))}
