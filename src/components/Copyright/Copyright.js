@@ -1,11 +1,11 @@
 import React from 'react';
 import format from 'date-fns/format';
 
-import './Copyright.scss';
+import styles from './Copyright.module.scss';
 
 export const Copyright = () => {
   return (
-    <p className="copyright">
+    <p className={styles.copyright}>
       &copy; {format(new Date(), 'yyyy')}
       <br />
       Tim Mansell

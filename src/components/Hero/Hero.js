@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import throttle from 'lodash.throttle';
 
-import './Hero.scss';
+import styles from './Hero.module.scss';
 
 export const Hero = ({ blurFrom, blurTo }) => {
-  const [styles, setStyles] = useState({});
+  const [blur, setBlur] = useState({});
 
   useEffect(() => {
     const onScroll = throttle(() => {
@@ -13,7 +13,7 @@ export const Hero = ({ blurFrom, blurTo }) => {
         blurFrom + (blurTo - blurFrom) * (window.scrollY / window.innerHeight);
       const blurCss = blur <= blurTo ? { filter: `blur(${blur}px)` } : {};
 
-      setStyles(blurCss);
+      setBlur(blurCss);
     }, 30);
 
     window.addEventListener('scroll', onScroll);
@@ -22,8 +22,8 @@ export const Hero = ({ blurFrom, blurTo }) => {
   });
 
   return (
-    <div className="hero">
-      <div className="hero__img" style={styles}></div>
+    <div className={styles.hero}>
+      <div className={styles.img} style={blur}></div>
     </div>
   );
 };

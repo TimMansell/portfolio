@@ -1,0 +1,20 @@
+@import 'variables';
+
+.testimonials {
+  padding: 0 15%;
+  text-align: center;
+}
+
+.quote {
+  font-size: 30px;
+  color: $tertiary-text-colour;
+}
+
+.text {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.name {
+  font-size: 14px;
+}

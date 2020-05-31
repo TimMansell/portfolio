@@ -1,0 +1,23 @@
+@import 'variables';
+
+.stack {
+  display: grid;
+  grid-gap: 32px;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (min-width: $bp-xl) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.item {
+  align-self: center;
+  justify-self: center;
+}

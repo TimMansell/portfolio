@@ -3,7 +3,7 @@ import React from 'react';
 import Header from 'components/Header';
 import PortfolioItem from './PortfolioItem';
 
-import './Portfolio.scss';
+import styles from './Portfolio.module.scss';
 import portfolioJson from './json/portfolio.json';
 
 export const Portfolio = () => {
@@ -15,7 +15,7 @@ export const Portfolio = () => {
     <>
       <Header title="Portfolio" text="Here's a sample of my work" tertiary />
 
-      <div className="portfolio">{listItems}</div>
+      <div className={styles.portfolio}>{listItems}</div>
     </>
   );
 };

@@ -1,0 +1,45 @@
+@import 'variables';
+
+.learnMore {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  // Animate.
+  animation-duration: 1.5s;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+
+  @media (min-width: $bp-lg) {
+    display: block;
+  }
+}
+
+.scroll {
+  opacity: 0.7;
+}
+
+.link {
+  color: $secondary-text-colour;
+
+  &:hover {
+    color: $secondary-text-colour;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(8%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

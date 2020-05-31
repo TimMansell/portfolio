@@ -3,7 +3,7 @@ import React from 'react';
 import Header from 'components/Header';
 import StackItem from './StackItem';
 
-import './CurrentStack.scss';
+import styles from './CurrentStack.module.scss';
 import stackItems from './json/stack.json';
 
 export const CurrentStack = () => {
@@ -15,7 +15,7 @@ export const CurrentStack = () => {
         primary
       />
 
-      <div className="stack">
+      <div className={styles.stack}>
         {stackItems.map((stack, i) => (
           <StackItem {...stack} key={i} />
         ))}

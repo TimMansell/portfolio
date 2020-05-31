@@ -1,0 +1,52 @@
+@import 'variables';
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $bp-sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $bp-md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $bp-lg) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $bp-xl) {
+    max-width: 1140px;
+  }
+
+  &Medium {
+    width: 85%;
+    max-width: 85%;
+  }
+
+  &Large {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.bgPrimary {
+  composes: primary from '~scss/helpers/backgrounds.scss';
+}
+
+.bgSecondary {
+  composes: secondary from '~scss/helpers/backgrounds.scss';
+}
+
+.bgTertiary {
+  composes: tertiary from '~scss/helpers/backgrounds.scss';
+}

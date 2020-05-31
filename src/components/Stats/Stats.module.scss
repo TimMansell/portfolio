@@ -1,0 +1,25 @@
+@import 'variables';
+
+.lighterNote {
+  display: grid;
+  grid-gap: 16px;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.item {
+  composes: divider from '~scss/helpers/divider.scss';
+  color: $secondary-text-colour;
+}
+
+.amount {
+  font-size: 40px;
+  text-shadow: -1px -1px darken($primary-colour, 10%);
+}
+
+.text {
+  text-shadow: -1px -1px darken($primary-colour, 10%);
+  text-align: center;
+}

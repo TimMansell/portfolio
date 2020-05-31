@@ -2,7 +2,7 @@
 
 exports[`Intro should match snapshot 1`] = `
 <section
-  className="bg--primary"
+  className="background"
   id="intro"
   role="banner"
 >
@@ -10,7 +10,7 @@ exports[`Intro should match snapshot 1`] = `
     className="hero"
   >
     <div
-      className="hero__img"
+      className="img"
       style={Object {}}
     />
   </div>
@@ -39,22 +39,22 @@ exports[`Intro should match snapshot 1`] = `
         className="tagline"
       >
         <div
-          className="tagline__item"
+          className="item"
         >
           Front-end Engineer
         </div>
         <div
-          className="tagline__item"
+          className="item"
         >
           Javascript Engineer
         </div>
         <div
-          className="tagline__item"
+          className="item"
         >
           React Engineer
         </div>
         <div
-          className="tagline__item"
+          className="item"
         >
           VueJS Engineer
         </div>
@@ -62,16 +62,16 @@ exports[`Intro should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="learn-more"
+    className="learnMore"
   >
     <a
-      className="learn-more__link"
+      className="link"
       data-e2e="learn-more-btn"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chevron-down fa-w-14 icon learn-more__scroll icon--sm"
+        className="svg-inline--fa fa-chevron-down fa-w-14 icon scroll iconSm"
         data-icon="chevron-down"
         data-prefix="fas"
         focusable="false"

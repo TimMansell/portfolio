@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './PortfolioIcons.scss';
+import styles from './PortfolioIcons.module.scss';
 
 export const PortfolioIcons = () => {
   return (
-    <div className="portfolio-icons">
-      <div className="portfolio-icons__icon" />
-      <div className="portfolio-icons__icon" />
-      <div className="portfolio-icons__icon" />
+    <div className={styles.portfolioIcons}>
+      <div className={styles.icon} />
+      <div className={styles.icon} />
+      <div className={styles.icon} />
     </div>
   );
 };

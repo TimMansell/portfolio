@@ -2,11 +2,11 @@
 
 exports[`Testimonials should match snapshot 1`] = `
 <div
-  className="testimonials text--center"
+  className="testimonials"
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-quote-left fa-w-16 icon testimonials__quote"
+    className="svg-inline--fa fa-quote-left fa-w-16 icon quote"
     data-icon="quote-left"
     data-prefix="fas"
     focusable="false"
@@ -22,22 +22,22 @@ exports[`Testimonials should match snapshot 1`] = `
     />
   </svg>
   <div
-    className="testimonials__quote"
+    className="quote"
   >
     <p
-      className="testimonials__text"
+      className="text"
     >
       I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.
     </p>
     <p
-      className="testimonials__name"
+      className="name"
     >
       Rusty Brooke
     </p>
   </div>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-quote-right fa-w-16 icon testimonials__quote"
+    className="svg-inline--fa fa-quote-right fa-w-16 icon quote"
     data-icon="quote-right"
     data-prefix="fas"
     focusable="false"
