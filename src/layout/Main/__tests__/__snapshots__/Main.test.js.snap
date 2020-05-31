@@ -776,7 +776,7 @@ exports[`Main should match snapshot 1`] = `
         className="stack"
       >
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://reactjs.org/"
@@ -802,7 +802,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://nodejs.org/en/"
@@ -828,7 +828,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://vuejs.org/"
@@ -854,7 +854,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://www.npmjs.com/"
@@ -880,7 +880,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://webpack.js.org/"
@@ -906,7 +906,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://yarnpkg.com"
@@ -923,7 +923,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://eslint.org/"
@@ -949,7 +949,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://babeljs.io/"
@@ -975,7 +975,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://code.visualstudio.com/"
@@ -1001,7 +1001,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://sass-lang.com/"
@@ -1027,7 +1027,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://postcss.org/"
@@ -1053,7 +1053,7 @@ exports[`Main should match snapshot 1`] = `
           </a>
         </div>
         <div
-          className="stack__item"
+          className="item"
         >
           <a
             href="https://git-scm.com/"
