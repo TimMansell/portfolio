@@ -1,7 +1,6 @@
 @import 'variables';
 
-/* stylelint-disable-next-line selector-class-pattern */
-.list-item {
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,18 +27,18 @@
       content: none;
     }
   }
+}
 
-  &__list {
-    list-style-type: none;
-    font-size: 20px;
-    text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+.list {
+  list-style-type: none;
+  font-size: 20px;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
 
-    @media (min-width: $bp-sm) {
-      font-size: 18px;
-    }
+  @media (min-width: $bp-sm) {
+    font-size: 18px;
   }
+}
 
-  &__item {
-    margin-bottom: 5px;
-  }
+.listitem {
+  margin-bottom: 5px;
 }
