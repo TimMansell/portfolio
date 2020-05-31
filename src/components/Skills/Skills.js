@@ -1,10 +1,9 @@
 import React from 'react';
 
 import Header from 'components/Header';
-import ListItem from 'components/ListItem';
+import ListItems from 'components/ListItems';
 
 import skills from './json/skills.json';
-import styles from './Skills.module.scss';
 
 export const Skills = () => {
   return (
@@ -15,11 +14,7 @@ export const Skills = () => {
         secondary
       />
 
-      <div className={styles.skills}>
-        {skills.map((skill, i) => (
-          <ListItem item={skill} key={i} />
-        ))}
-      </div>
+      <ListItems items={skills} />
     </>
   );
 };

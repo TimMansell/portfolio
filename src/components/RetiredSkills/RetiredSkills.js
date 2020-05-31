@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from 'components/Header';
-import ListItem from 'components/ListItem';
+import ListItems from 'components/ListItems';
 
 import skills from './json/retiredSkills.json';
 
@@ -14,11 +14,7 @@ export const RetiredSkills = () => {
         tertiary
       />
 
-      <div className="skills">
-        {skills.map((skill, i) => (
-          <ListItem item={skill} key={i} />
-        ))}
-      </div>
+      <ListItems items={skills} />
     </>
   );
 };
