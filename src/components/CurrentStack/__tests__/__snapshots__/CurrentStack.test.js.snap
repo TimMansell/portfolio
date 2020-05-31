@@ -3,7 +3,7 @@
 exports[`CurrentStack should match snapshot 1`] = `
 Array [
   <div
-    className="heading primary"
+    className="heading headingPrimary"
   >
     <div>
       <h2

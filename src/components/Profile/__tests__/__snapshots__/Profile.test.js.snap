@@ -3,7 +3,7 @@
 exports[`Profile should match snapshot 1`] = `
 Array [
   <div
-    className="heading primary"
+    className="heading headingPrimary"
   >
     <div>
       <h2
@@ -52,7 +52,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-linkedin fa-w-14 icon xs"
+        className="svg-inline--fa fa-linkedin fa-w-14 icon iconXs"
         data-icon="linkedin"
         data-prefix="fab"
         focusable="false"
@@ -77,7 +77,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-twitter fa-w-16 icon xs"
+        className="svg-inline--fa fa-twitter fa-w-16 icon iconXs"
         data-icon="twitter"
         data-prefix="fab"
         focusable="false"
@@ -102,7 +102,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-github fa-w-16 icon xs"
+        className="svg-inline--fa fa-github fa-w-16 icon iconXs"
         data-icon="github"
         data-prefix="fab"
         focusable="false"

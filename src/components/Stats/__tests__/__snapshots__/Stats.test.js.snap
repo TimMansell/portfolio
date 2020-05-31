@@ -9,7 +9,7 @@ exports[`Stats should match snapshot 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-code fa-w-20 icon padded"
+      className="svg-inline--fa fa-code fa-w-20 icon iconPadded"
       data-icon="code"
       data-prefix="fas"
       focusable="false"
@@ -40,7 +40,7 @@ exports[`Stats should match snapshot 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-code-branch fa-w-12 icon padded"
+      className="svg-inline--fa fa-code-branch fa-w-12 icon iconPadded"
       data-icon="code-branch"
       data-prefix="fas"
       focusable="false"
@@ -71,7 +71,7 @@ exports[`Stats should match snapshot 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-mug-hot fa-w-16 icon padded"
+      className="svg-inline--fa fa-mug-hot fa-w-16 icon iconPadded"
       data-icon="mug-hot"
       data-prefix="fas"
       focusable="false"
@@ -102,7 +102,7 @@ exports[`Stats should match snapshot 1`] = `
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-bicycle fa-w-20 icon padded"
+      className="svg-inline--fa fa-bicycle fa-w-20 icon iconPadded"
       data-icon="bicycle"
       data-prefix="fas"
       focusable="false"

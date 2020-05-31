@@ -3,7 +3,7 @@
 exports[`Presentations should match snapshot 1`] = `
 Array [
   <div
-    className="heading tertiary"
+    className="heading headingTertiary"
   >
     <div>
       <h2
@@ -28,7 +28,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon md padded"
+        className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon iconMd iconPadded"
         data-icon="chalkboard-teacher"
         data-prefix="fa"
         focusable="false"

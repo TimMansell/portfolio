@@ -12,7 +12,7 @@ exports[`Main should match snapshot 1`] = `
       className="container"
     >
       <div
-        className="heading primary"
+        className="heading headingPrimary"
       >
         <div>
           <h2
@@ -61,7 +61,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin fa-w-14 icon xs"
+            className="svg-inline--fa fa-linkedin fa-w-14 icon iconXs"
             data-icon="linkedin"
             data-prefix="fab"
             focusable="false"
@@ -86,7 +86,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-twitter fa-w-16 icon xs"
+            className="svg-inline--fa fa-twitter fa-w-16 icon iconXs"
             data-icon="twitter"
             data-prefix="fab"
             focusable="false"
@@ -111,7 +111,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github fa-w-16 icon xs"
+            className="svg-inline--fa fa-github fa-w-16 icon iconXs"
             data-icon="github"
             data-prefix="fab"
             focusable="false"
@@ -138,7 +138,7 @@ exports[`Main should match snapshot 1`] = `
       className="container"
     >
       <div
-        className="heading secondary"
+        className="heading headingSecondary"
       >
         <div>
           <h2
@@ -163,7 +163,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 icon md padded"
+            className="svg-inline--fa fa-code fa-w-20 icon iconMd iconPadded"
             data-icon="code"
             data-prefix="fa"
             focusable="false"
@@ -223,7 +223,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
+            className="svg-inline--fa fa-css3-alt fa-w-12 icon iconMd iconPadded"
             data-icon="css3-alt"
             data-prefix="fab"
             focusable="false"
@@ -283,7 +283,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-clipboard-list fa-w-12 icon md padded"
+            className="svg-inline--fa fa-clipboard-list fa-w-12 icon iconMd iconPadded"
             data-icon="clipboard-list"
             data-prefix="fa"
             focusable="false"
@@ -343,7 +343,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-js fa-w-14 icon md padded"
+            className="svg-inline--fa fa-js fa-w-14 icon iconMd iconPadded"
             data-icon="js"
             data-prefix="fab"
             focusable="false"
@@ -403,7 +403,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
+            className="svg-inline--fa fa-terminal fa-w-20 icon iconMd iconPadded"
             data-icon="terminal"
             data-prefix="fa"
             focusable="false"
@@ -463,7 +463,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trello fa-w-14 icon md padded"
+            className="svg-inline--fa fa-trello fa-w-14 icon iconMd iconPadded"
             data-icon="trello"
             data-prefix="fab"
             focusable="false"
@@ -529,7 +529,7 @@ exports[`Main should match snapshot 1`] = `
       className="container"
     >
       <div
-        className="heading tertiary"
+        className="heading headingTertiary"
       >
         <div>
           <h2
@@ -554,7 +554,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 icon md padded"
+            className="svg-inline--fa fa-code fa-w-20 icon iconMd iconPadded"
             data-icon="code"
             data-prefix="fa"
             focusable="false"
@@ -594,7 +594,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
+            className="svg-inline--fa fa-css3-alt fa-w-12 icon iconMd iconPadded"
             data-icon="css3-alt"
             data-prefix="fab"
             focusable="false"
@@ -634,7 +634,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-js fa-w-14 icon md padded"
+            className="svg-inline--fa fa-js fa-w-14 icon iconMd iconPadded"
             data-icon="js"
             data-prefix="fab"
             focusable="false"
@@ -674,7 +674,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
+            className="svg-inline--fa fa-terminal fa-w-20 icon iconMd iconPadded"
             data-icon="terminal"
             data-prefix="fa"
             focusable="false"
@@ -714,7 +714,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trello fa-w-14 icon md padded"
+            className="svg-inline--fa fa-trello fa-w-14 icon iconMd iconPadded"
             data-icon="trello"
             data-prefix="fab"
             focusable="false"
@@ -752,10 +752,10 @@ exports[`Main should match snapshot 1`] = `
     id="stack"
   >
     <div
-      className="container medium"
+      className="container containerMedium"
     >
       <div
-        className="heading primary"
+        className="heading headingPrimary"
       >
         <div>
           <h2
@@ -1086,10 +1086,10 @@ exports[`Main should match snapshot 1`] = `
     id="portfolio"
   >
     <div
-      className="container medium"
+      className="container containerMedium"
     >
       <div
-        className="heading tertiary"
+        className="heading headingTertiary"
       >
         <div>
           <h2
@@ -1159,7 +1159,7 @@ exports[`Main should match snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
                   data-icon="desktop"
                   data-prefix="fas"
                   focusable="false"
@@ -1228,7 +1228,7 @@ exports[`Main should match snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
                   data-icon="desktop"
                   data-prefix="fas"
                   focusable="false"
@@ -1297,7 +1297,7 @@ exports[`Main should match snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
                   data-icon="desktop"
                   data-prefix="fas"
                   focusable="false"
@@ -1334,7 +1334,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 icon padded"
+            className="svg-inline--fa fa-code fa-w-20 icon iconPadded"
             data-icon="code"
             data-prefix="fas"
             focusable="false"
@@ -1365,7 +1365,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code-branch fa-w-12 icon padded"
+            className="svg-inline--fa fa-code-branch fa-w-12 icon iconPadded"
             data-icon="code-branch"
             data-prefix="fas"
             focusable="false"
@@ -1396,7 +1396,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mug-hot fa-w-16 icon padded"
+            className="svg-inline--fa fa-mug-hot fa-w-16 icon iconPadded"
             data-icon="mug-hot"
             data-prefix="fas"
             focusable="false"
@@ -1427,7 +1427,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-bicycle fa-w-20 icon padded"
+            className="svg-inline--fa fa-bicycle fa-w-20 icon iconPadded"
             data-icon="bicycle"
             data-prefix="fas"
             focusable="false"
@@ -1464,7 +1464,7 @@ exports[`Main should match snapshot 1`] = `
       className="container"
     >
       <div
-        className="heading tertiary"
+        className="heading headingTertiary"
       >
         <div>
           <h2
@@ -1489,7 +1489,7 @@ exports[`Main should match snapshot 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon md padded"
+            className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon iconMd iconPadded"
             data-icon="chalkboard-teacher"
             data-prefix="fa"
             focusable="false"
@@ -1617,7 +1617,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-linkedin fa-w-14 icon xs"
+              className="svg-inline--fa fa-linkedin fa-w-14 icon iconXs"
               data-icon="linkedin"
               data-prefix="fab"
               focusable="false"
@@ -1642,7 +1642,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-twitter fa-w-16 icon xs"
+              className="svg-inline--fa fa-twitter fa-w-16 icon iconXs"
               data-icon="twitter"
               data-prefix="fab"
               focusable="false"
@@ -1667,7 +1667,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-github fa-w-16 icon xs"
+              className="svg-inline--fa fa-github fa-w-16 icon iconXs"
               data-icon="github"
               data-prefix="fab"
               focusable="false"

@@ -3,7 +3,7 @@
 exports[`Skills should match snapshot 1`] = `
 Array [
   <div
-    className="heading secondary"
+    className="heading headingSecondary"
   >
     <div>
       <h2
@@ -28,7 +28,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-code fa-w-20 icon md padded"
+        className="svg-inline--fa fa-code fa-w-20 icon iconMd iconPadded"
         data-icon="code"
         data-prefix="fa"
         focusable="false"
@@ -88,7 +88,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
+        className="svg-inline--fa fa-css3-alt fa-w-12 icon iconMd iconPadded"
         data-icon="css3-alt"
         data-prefix="fab"
         focusable="false"
@@ -148,7 +148,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-clipboard-list fa-w-12 icon md padded"
+        className="svg-inline--fa fa-clipboard-list fa-w-12 icon iconMd iconPadded"
         data-icon="clipboard-list"
         data-prefix="fa"
         focusable="false"
@@ -208,7 +208,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-js fa-w-14 icon md padded"
+        className="svg-inline--fa fa-js fa-w-14 icon iconMd iconPadded"
         data-icon="js"
         data-prefix="fab"
         focusable="false"
@@ -268,7 +268,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
+        className="svg-inline--fa fa-terminal fa-w-20 icon iconMd iconPadded"
         data-icon="terminal"
         data-prefix="fa"
         focusable="false"
@@ -328,7 +328,7 @@ Array [
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-trello fa-w-14 icon md padded"
+        className="svg-inline--fa fa-trello fa-w-14 icon iconMd iconPadded"
         data-icon="trello"
         data-prefix="fab"
         focusable="false"

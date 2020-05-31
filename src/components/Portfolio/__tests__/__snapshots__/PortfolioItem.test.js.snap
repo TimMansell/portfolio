@@ -51,7 +51,7 @@ exports[`PortfolioItem should match snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
+          className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
           data-icon="desktop"
           data-prefix="fas"
           focusable="false"
