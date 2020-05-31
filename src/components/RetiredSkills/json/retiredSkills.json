@@ -1,9 +1,9 @@
 [
     {
         "list": [
-            "PHP",
-            "MySQL",
-            "Bootstrap 3"
+            {"name": "PHP"},
+            {"name": "MySQL"},
+            {"name": "Bootstrap 3"}
         ],
         "icon": {
             "name": "code",
@@ -12,9 +12,9 @@
     },
     {
         "list": [
-            "LESS",
-            "OOCSS",
-            "Compass"
+            {"name": "LESS"},
+            {"name": "OOCSS"},
+            {"name": "Compass"}
         ],
         "icon": {
             "name": "css3-alt",
@@ -23,9 +23,9 @@
     },
     {
         "list": [
-            "AngularJS",
-            "Backbone.js",
-            "jQuery"
+            {"name": "AngularJS"},
+            {"name": "Backbone.js"},
+            {"name": "jQuery"}
         ],
         "icon": {
             "name": "js",
@@ -34,9 +34,9 @@
     },
     {
         "list": [
-            "Gulp / Grunt",
-            "SVN",
-            "Bower"
+            {"name": "Gulp / Grunt"},
+            {"name": "SVN"},
+            {"name": "Bower"}
         ],
         "icon": {
             "name": "terminal",
@@ -45,8 +45,8 @@
     },
     {
         "list": [
-            "Waterfall",
-            "VSTS"
+            {"name": "Waterfall"},
+            {"name": "VSTS"}
         ],
         "icon": {
             "name": "trello",

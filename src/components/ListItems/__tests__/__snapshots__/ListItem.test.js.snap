@@ -2,7 +2,7 @@
 
 exports[`ListItem should match snapshot 1`] = `
 <div
-  className="divider"
+  className="list-item"
 >
   <svg
     aria-hidden="true"
@@ -22,18 +22,14 @@ exports[`ListItem should match snapshot 1`] = `
     />
   </svg>
   <ul
-    className="skills__list"
+    className="list-item__list"
   >
     <li
-      className="skills__item"
-    >
-      Item 1
-    </li>
+      className="list-item__item"
+    />
     <li
-      className="skills__item"
-    >
-      Item 2
-    </li>
+      className="list-item__item"
+    />
   </ul>
 </div>
 `;

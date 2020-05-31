@@ -1,0 +1,21 @@
+@import 'variables';
+
+.list-items {
+  margin-bottom: 30px;
+  display: grid;
+  grid-gap: 16px;
+  color: $secondary-text-colour;
+  text-align: center;
+
+  @media (min-width: $bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  }
+}

@@ -21,10 +21,10 @@ Array [
     </p>
   </div>,
   <div
-    className="skills"
+    className="list-items"
   >
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -44,27 +44,27 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           PHP
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           MySQL
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Bootstrap 3
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -84,27 +84,27 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           LESS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           OOCSS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Compass
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -124,27 +124,27 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           AngularJS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Backbone.js
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           jQuery
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -164,27 +164,27 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Gulp / Grunt
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           SVN
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Bower
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -204,15 +204,15 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Waterfall
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           VSTS
         </li>
