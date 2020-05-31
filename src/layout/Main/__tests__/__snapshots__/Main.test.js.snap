@@ -785,7 +785,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="React"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -811,7 +811,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="NodeJS"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -837,7 +837,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="VueJS"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -863,7 +863,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="NPM"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -889,7 +889,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="Webpack"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -915,7 +915,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="Yarn"
-              className="stack__image img--responsive"
+              className="img"
               src="yarn.png"
               title="Yarn"
               width="132"
@@ -932,7 +932,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="ESLint"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -958,7 +958,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="Babel"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -984,7 +984,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="VSCode"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -1010,7 +1010,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="SCSS"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -1036,7 +1036,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="PostCSS"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {
@@ -1062,7 +1062,7 @@ exports[`Main should match snapshot 1`] = `
           >
             <img
               alt="Git"
-              className="stack__image img--responsive"
+              className="img"
               src={
                 Object {
                   "ReactComponent": Object {

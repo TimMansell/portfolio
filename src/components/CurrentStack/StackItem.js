@@ -1,17 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Image from '../Image';
+
 export const SkillsItem = ({ url, img, name, width }) => {
+  const src = require(`./img/${img}`);
+
   return (
     <div className="stack__item">
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <img
-          src={require(`./img/${img}`)}
-          alt={name}
-          className="stack__image img--responsive"
-          width={width}
-          title={name}
-        />
+        <Image src={src} name={name} width={width} />
       </a>
     </div>
   );
