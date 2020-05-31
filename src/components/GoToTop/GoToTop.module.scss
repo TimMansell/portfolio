@@ -1,6 +1,6 @@
 @import 'variables';
 
-.goto-top {
+.gotoTop {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -24,12 +24,12 @@
   &:hover {
     background: darken($primary-colour, 13%);
   }
+}
 
-  &--show {
-    right: 10px;
+.show {
+  right: 10px;
 
-    @media (min-width: $bp-sm) {
-      right: 30px;
-    }
+  @media (min-width: $bp-sm) {
+    right: 30px;
   }
 }

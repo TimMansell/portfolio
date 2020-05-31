@@ -12,11 +12,11 @@ import Presentations from 'components/Presentations';
 import Testimonials from 'components/Testimonials';
 import Footer from 'components/Footer';
 
-import './Main.scss';
+import styles from './Main.module.scss';
 
 const Main = () => {
   return (
-    <main className="main">
+    <main className={styles.main}>
       <SectionWrap id="profile" background="tertiary">
         <Profile />
       </SectionWrap>

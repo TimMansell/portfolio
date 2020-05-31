@@ -1,0 +1,23 @@
+@import 'variables';
+
+.item {
+  composes: divider from '~scss/helpers/divider.scss';
+}
+
+.list {
+  list-style-type: none;
+  font-size: 20px;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $bp-sm) {
+    font-size: 18px;
+  }
+}
+
+.listitem {
+  margin-bottom: 5px;
+}
+
+.link {
+  composes: alt from '~scss/helpers/link.scss';
+}

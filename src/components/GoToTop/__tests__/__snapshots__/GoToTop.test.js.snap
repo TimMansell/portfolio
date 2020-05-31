@@ -2,13 +2,13 @@
 
 exports[`GoToTop should match snapshot 1`] = `
 <a
-  className="goto-top"
+  className="gotoTop"
   data-e2e="goto-top-btn"
   onClick={[Function]}
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-angle-up fa-w-10 icon icon--sm"
+    className="svg-inline--fa fa-angle-up fa-w-10 icon iconSm"
     data-icon="angle-up"
     data-prefix="fas"
     focusable="false"

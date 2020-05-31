@@ -3,12 +3,12 @@
 exports[`Portfolio should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--tertiary"
+    className="heading headingTertiary"
   >
     <div>
       <h2
         aria-label="Portfolio"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         Portfolio
@@ -24,19 +24,19 @@ Array [
     className="portfolio"
   >
     <div
-      className="portfolio-item"
+      className="portfolioItem"
     >
       <div
-        className="portfolio-icons"
+        className="portfolioIcons"
       >
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
       </div>
       <div>
@@ -45,25 +45,25 @@ Array [
         </span>
       </div>
       <div
-        className="portfolio-item__info"
+        className="info"
       >
         <h3
-          className="portfolio-item__title"
+          className="title"
         >
           Find a Course (2018 - 2020)
         </h3>
         <p
-          className="portfolio-item__description"
+          className="description"
         >
           University of Melbourne's study portal.
         </p>
         <p
-          className="portfolio-item__tech"
+          className="tech"
         >
           VueJS, NuxtJS, PostCSS, ES6/Babel, Webpack
         </p>
         <div
-          className="portfolio-item__more-info"
+          className="moreinfo"
         >
           <a
             href="https://study.unimelb.edu.au/find"
@@ -73,7 +73,7 @@ Array [
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
               data-icon="desktop"
               data-prefix="fas"
               focusable="false"
@@ -93,19 +93,19 @@ Array [
       </div>
     </div>
     <div
-      className="portfolio-item"
+      className="portfolioItem"
     >
       <div
-        className="portfolio-icons"
+        className="portfolioIcons"
       >
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
       </div>
       <div>
@@ -114,25 +114,25 @@ Array [
         </span>
       </div>
       <div
-        className="portfolio-item__info"
+        className="info"
       >
         <h3
-          className="portfolio-item__title"
+          className="title"
         >
           myBupa (2016 - 2017)
         </h3>
         <p
-          className="portfolio-item__description"
+          className="description"
         >
           Responsive website rebuild.  Built on top of .NET stack.
         </p>
         <p
-          className="portfolio-item__tech"
+          className="tech"
         >
           AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.
         </p>
         <div
-          className="portfolio-item__more-info"
+          className="moreinfo"
         >
           <a
             href="https://my.bupa.com.au"
@@ -142,7 +142,7 @@ Array [
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
               data-icon="desktop"
               data-prefix="fas"
               focusable="false"
@@ -162,19 +162,19 @@ Array [
       </div>
     </div>
     <div
-      className="portfolio-item"
+      className="portfolioItem"
     >
       <div
-        className="portfolio-icons"
+        className="portfolioIcons"
       >
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
         <div
-          className="portfolio-icons__icon"
+          className="icon"
         />
       </div>
       <div>
@@ -183,25 +183,25 @@ Array [
         </span>
       </div>
       <div
-        className="portfolio-item__info"
+        className="info"
       >
         <h3
-          className="portfolio-item__title"
+          className="title"
         >
           Captain's Choice (2016)
         </h3>
         <p
-          className="portfolio-item__description"
+          className="description"
         >
           Responsive website rebuild. Built on top of .NET stack.
         </p>
         <p
-          className="portfolio-item__tech"
+          className="tech"
         >
           AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.
         </p>
         <div
-          className="portfolio-item__more-info"
+          className="moreinfo"
         >
           <a
             href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
@@ -211,7 +211,7 @@ Array [
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
               data-icon="desktop"
               data-prefix="fas"
               focusable="false"
