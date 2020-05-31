@@ -33,19 +33,19 @@ describe('Header', () => {
   it('Should display a primary class', () => {
     const wrapper = shallow(<Header {...props} primary />);
 
-    expect(wrapper.hasClass('heading--primary')).toBeTruthy();
+    expect(wrapper.hasClass('primary')).toBeTruthy();
   });
 
   it('Should display a secondary class', () => {
     const wrapper = shallow(<Header {...props} secondary />);
 
-    expect(wrapper.hasClass('heading--secondary')).toBeTruthy();
+    expect(wrapper.hasClass('secondary')).toBeTruthy();
   });
 
   it('Should display a teritiary class', () => {
     const wrapper = shallow(<Header {...props} tertiary />);
 
-    expect(wrapper.hasClass('heading--tertiary')).toBeTruthy();
+    expect(wrapper.hasClass('tertiary')).toBeTruthy();
   });
 
   it('should match snapshot', () => {
