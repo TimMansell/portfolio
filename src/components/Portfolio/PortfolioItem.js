@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import InViewport from 'components/InViewport';
 
-import './PortfolioItem.scss';
+import styles from './PortfolioItem.module.scss';
 
 import PortfolioIcons from './PortfolioIcons';
 import { IconDesktop } from 'components/Icon';
@@ -14,25 +14,25 @@ export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
   const src = require(`${thumb}`);
 
   return (
-    <div className="portfolio-item">
+    <div className={styles.portfolioItem}>
       <PortfolioIcons />
       <InViewport>
         <Image src={src} name={title} />
       </InViewport>
 
-      <div className="portfolio-item__info">
-        <h3 className="portfolio-item__title">{title}</h3>
-        <p className="portfolio-item__description">{description}</p>
-        <p className="portfolio-item__tech">{tech}</p>
+      <div className={styles.info}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
+        <p className={styles.tech}>{tech}</p>
 
-        <div className="portfolio-item__more-info">
+        <div className={styles.moreinfo}>
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
             title="Visit website"
           >
-            <IconDesktop size="xs" className="portfolio-item__icon" />
+            <IconDesktop size="xs" className={styles.icon} />
           </a>
         </div>
       </div>

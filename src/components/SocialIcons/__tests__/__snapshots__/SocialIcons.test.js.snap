@@ -6,14 +6,14 @@ exports[`SocialIcons should match snapshot 1`] = `
 >
   <a
     aria-label="Visit my linked profile"
-    className="social__icon"
+    className="icon"
     href="https://au.linkedin.com/in/timmansell"
     rel="noopener noreferrer"
     target="_blank"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-linkedin fa-w-14 icon icon--xs"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon iconXs"
       data-icon="linkedin"
       data-prefix="fab"
       focusable="false"
@@ -31,14 +31,14 @@ exports[`SocialIcons should match snapshot 1`] = `
   </a>
   <a
     aria-label="Visit my twitter page"
-    className="social__icon"
+    className="icon"
     href="https://twitter.com/TimMansell"
     rel="noopener noreferrer"
     target="_blank"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-twitter fa-w-16 icon icon--xs"
+      className="svg-inline--fa fa-twitter fa-w-16 icon iconXs"
       data-icon="twitter"
       data-prefix="fab"
       focusable="false"
@@ -56,14 +56,14 @@ exports[`SocialIcons should match snapshot 1`] = `
   </a>
   <a
     aria-label="Visit my github profile"
-    className="social__icon"
+    className="icon"
     href="https://github.com/TimMansell"
     rel="noopener noreferrer"
     target="_blank"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-github fa-w-16 icon icon--xs"
+      className="svg-inline--fa fa-github fa-w-16 icon iconXs"
       data-icon="github"
       data-prefix="fab"
       focusable="false"

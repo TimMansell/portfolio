@@ -1,14 +1,14 @@
 import React from 'react';
 
-import './SocialIcons.scss';
+import styles from './SocialIcons.module.scss';
 
 import { IconLinkedin, IconTwitter, IconGithub } from 'components/Icon';
 
 export const SocialIcons = () => {
   return (
-    <div className="social">
+    <div className={styles.social}>
       <a
-        className="social__icon"
+        className={styles.icon}
         target="_blank"
         href="https://au.linkedin.com/in/timmansell"
         rel="noopener noreferrer"
@@ -17,7 +17,7 @@ export const SocialIcons = () => {
         <IconLinkedin size="xs" />
       </a>
       <a
-        className="social__icon"
+        className={styles.icon}
         target="_blank"
         href="https://twitter.com/TimMansell"
         rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export const SocialIcons = () => {
         <IconTwitter size="xs" />
       </a>
       <a
-        className="social__icon"
+        className={styles.icon}
         target="_blank"
         href="https://github.com/TimMansell"
         rel="noopener noreferrer"

@@ -8,7 +8,7 @@ exports[`Hamburger should match snapshot 1`] = `
   type="button"
 >
   <span
-    className="hamburger__menu"
+    className="menu"
   >
     toggle menu
   </span>

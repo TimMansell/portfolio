@@ -15,9 +15,9 @@
   @media (min-width: $bp-xl) {
     grid-template-columns: repeat(12, 1fr);
   }
+}
 
-  &__item {
-    align-self: center;
-    justify-self: center;
-  }
+.item {
+  align-self: center;
+  justify-self: center;
 }

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import ShuffleCharacters from 'components/ShuffleCharacters';
 
-import './Header.scss';
+import styles from './Header.module.scss';
 
 export const Header = ({ primary, secondary, tertiary, text, title }) => {
-  const classes = classnames('heading ', {
-    'heading--primary': primary,
-    'heading--secondary': secondary,
-    'heading--tertiary': tertiary,
+  const classes = classnames(styles.heading, {
+    [styles.headingPrimary]: primary,
+    [styles.headingSecondary]: secondary,
+    [styles.headingTertiary]: tertiary,
   });
 
   if (text) {
@@ -20,7 +20,7 @@ export const Header = ({ primary, secondary, tertiary, text, title }) => {
     <div className={classes}>
       <ShuffleCharacters>
         <h2
-          className="heading__title"
+          className={styles.title}
           data-test="heading-title"
           aria-label={title}
         >
