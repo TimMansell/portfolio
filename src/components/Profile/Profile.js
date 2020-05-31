@@ -36,7 +36,7 @@ export const Profile = () => {
 
         <p>
           Please view my{' '}
-          <Link className="link" to="portfolio" smooth={true}>
+          <Link className={styles.link} to="portfolio" smooth={true}>
             portfolio
           </Link>{' '}
           to see some examples of my work.

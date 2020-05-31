@@ -9,7 +9,7 @@ export const ListItem = ({ item }) => {
     if (url) {
       return (
         <a
-          className="link link--alt"
+          className={styles.link}
           href={url}
           target="_blank"
           rel="noopener noreferrer"
