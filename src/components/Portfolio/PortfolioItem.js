@@ -8,16 +8,14 @@ import './PortfolioItem.scss';
 import PortfolioIcons from './PortfolioIcons';
 import { IconDesktop } from 'components/Icon';
 
+import Image from '../Image';
+
 export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
   return (
     <div className="portfolio-item">
       <PortfolioIcons />
       <InViewport>
-        <img
-          className="img--responsive"
-          src={require(`${thumb}`)}
-          alt={title}
-        />
+        <Image src={require(`${thumb}`)} name={title} />
       </InViewport>
 
       <div className="portfolio-item__info">
