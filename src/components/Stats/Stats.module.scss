@@ -10,9 +10,7 @@
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  composes: divider from '~scss/helpers/divider.scss';
   color: $secondary-text-colour;
 }
 
