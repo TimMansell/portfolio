@@ -3,12 +3,12 @@
 exports[`Retired Skills should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--tertiary"
+    className="heading tertiary"
   >
     <div>
       <h2
         aria-label="Retired Skills"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         Retired Skills
@@ -21,14 +21,14 @@ Array [
     </p>
   </div>,
   <div
-    className="list-items"
+    className="items"
   >
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+        className="svg-inline--fa fa-code fa-w-20 icon md padded"
         data-icon="code"
         data-prefix="fa"
         focusable="false"
@@ -44,31 +44,31 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           PHP
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           MySQL
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Bootstrap 3
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+        className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
         data-icon="css3-alt"
         data-prefix="fab"
         focusable="false"
@@ -84,31 +84,31 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           LESS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           OOCSS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Compass
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+        className="svg-inline--fa fa-js fa-w-14 icon md padded"
         data-icon="js"
         data-prefix="fab"
         focusable="false"
@@ -124,31 +124,31 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           AngularJS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Backbone.js
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           jQuery
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+        className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
         data-icon="terminal"
         data-prefix="fa"
         focusable="false"
@@ -164,31 +164,31 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Gulp / Grunt
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           SVN
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Bower
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+        className="svg-inline--fa fa-trello fa-w-14 icon md padded"
         data-icon="trello"
         data-prefix="fab"
         focusable="false"
@@ -204,15 +204,15 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Waterfall
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           VSTS
         </li>

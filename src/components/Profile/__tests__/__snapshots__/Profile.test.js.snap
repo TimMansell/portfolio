@@ -3,12 +3,12 @@
 exports[`Profile should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--primary"
+    className="heading primary"
   >
     <div>
       <h2
         aria-label="A little bit about myself"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         A little bit about myself
@@ -16,7 +16,7 @@ Array [
     </div>
   </div>,
   <div
-    className="profile text--center"
+    className="profile"
   >
     <p>
       I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.
@@ -45,14 +45,14 @@ Array [
   >
     <a
       aria-label="Visit my linked profile"
-      className="social__icon"
+      className="icon"
       href="https://au.linkedin.com/in/timmansell"
       rel="noopener noreferrer"
       target="_blank"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-linkedin fa-w-14 icon icon--xs"
+        className="svg-inline--fa fa-linkedin fa-w-14 icon xs"
         data-icon="linkedin"
         data-prefix="fab"
         focusable="false"
@@ -70,14 +70,14 @@ Array [
     </a>
     <a
       aria-label="Visit my twitter page"
-      className="social__icon"
+      className="icon"
       href="https://twitter.com/TimMansell"
       rel="noopener noreferrer"
       target="_blank"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-twitter fa-w-16 icon icon--xs"
+        className="svg-inline--fa fa-twitter fa-w-16 icon xs"
         data-icon="twitter"
         data-prefix="fab"
         focusable="false"
@@ -95,14 +95,14 @@ Array [
     </a>
     <a
       aria-label="Visit my github profile"
-      className="social__icon"
+      className="icon"
       href="https://github.com/TimMansell"
       rel="noopener noreferrer"
       target="_blank"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-github fa-w-16 icon icon--xs"
+        className="svg-inline--fa fa-github fa-w-16 icon xs"
         data-icon="github"
         data-prefix="fab"
         focusable="false"

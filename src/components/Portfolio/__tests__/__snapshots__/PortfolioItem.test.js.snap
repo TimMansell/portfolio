@@ -2,19 +2,19 @@
 
 exports[`PortfolioItem should match snapshot 1`] = `
 <div
-  className="portfolio-item"
+  className="portfolioItem"
 >
   <div
-    className="portfolio-icons"
+    className="portfolioIcons"
   >
     <div
-      className="portfolio-icons__icon"
+      className="icon"
     />
     <div
-      className="portfolio-icons__icon"
+      className="icon"
     />
     <div
-      className="portfolio-icons__icon"
+      className="icon"
     />
   </div>
   <div>
@@ -23,25 +23,25 @@ exports[`PortfolioItem should match snapshot 1`] = `
     </span>
   </div>
   <div
-    className="portfolio-item__info"
+    className="info"
   >
     <h3
-      className="portfolio-item__title"
+      className="title"
     >
       Title
     </h3>
     <p
-      className="portfolio-item__description"
+      className="description"
     >
       Description
     </p>
     <p
-      className="portfolio-item__tech"
+      className="tech"
     >
       Tech
     </p>
     <div
-      className="portfolio-item__more-info"
+      className="moreinfo"
     >
       <a
         href="url.com"
@@ -51,7 +51,7 @@ exports[`PortfolioItem should match snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+          className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
           data-icon="desktop"
           data-prefix="fas"
           focusable="false"
