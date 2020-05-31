@@ -21,10 +21,10 @@ Array [
     </p>
   </div>,
   <div
-    className="skills"
+    className="list-items"
   >
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -44,47 +44,47 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           HTML5
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Semantic Markup
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Bootstrap 4
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           SEO
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           a11y
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Web Components
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Styleguides
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -104,47 +104,47 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           CSS3
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           SCSS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           BEM
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           SMACSS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           PostCSS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Atomic Design
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           CSS Grid
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -164,47 +164,47 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Responsive Design
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Mobile First CSS
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Retina Images
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Web Performance
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Page Optimisation
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           CI / CD
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Unit /e2e Testing
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -224,47 +224,47 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           ES6+
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Babel
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Webpack
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           React / Redux
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Vue / Vuex / Nuxt
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Jest / Cypress
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           JSON
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -284,47 +284,47 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Node.js
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           NPM / Yarn
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Git
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           ESLint
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Netlify
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Semaphore
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Docker
         </li>
       </ul>
     </div>
     <div
-      className="divider"
+      className="list-item"
     >
       <svg
         aria-hidden="true"
@@ -344,40 +344,40 @@ Array [
         />
       </svg>
       <ul
-        className="skills__list"
+        className="list-item__list"
       >
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Agile
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Scrum
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Kanban
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           JIRA
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Slack
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Trello
         </li>
         <li
-          className="skills__item"
+          className="list-item__item"
         >
           Table Tennis
         </li>
