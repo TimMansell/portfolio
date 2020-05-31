@@ -11,11 +11,13 @@ import { IconDesktop } from 'components/Icon';
 import Image from '../Image';
 
 export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
+  const src = require(`${thumb}`);
+
   return (
     <div className="portfolio-item">
       <PortfolioIcons />
       <InViewport>
-        <Image src={require(`${thumb}`)} name={title} />
+        <Image src={src} name={title} />
       </InViewport>
 
       <div className="portfolio-item__info">

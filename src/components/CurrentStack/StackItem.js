@@ -4,10 +4,12 @@ import PropTypes from 'prop-types';
 import Image from '../Image';
 
 export const SkillsItem = ({ url, img, name, width }) => {
+  const src = require(`./img/${img}`);
+
   return (
     <div className="stack__item">
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <Image src={require(`./img/${img}`)} name={name} width={width} />
+        <Image src={src} name={name} width={width} />
       </a>
     </div>
   );
