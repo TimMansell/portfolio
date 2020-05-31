@@ -19,5 +19,5 @@
 }
 
 .link {
-  composes: linkalt from '~scss/helpers/link.scss';
+  composes: alt from '~scss/helpers/link.scss';
 }
