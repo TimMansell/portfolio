@@ -5,21 +5,21 @@ import Icon from 'components/Icon';
 import './ListItem.scss';
 
 export const ListItem = ({ item }) => {
-  const displayItem = (listItem) => {
-    if (typeof listItem === 'object') {
+  const displayItem = ({ name, url }) => {
+    if (url) {
       return (
         <a
           className="link link--alt"
-          href={listItem.url}
+          href={url}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {listItem.name}
+          {name}
         </a>
       );
     }
 
-    return listItem;
+    return name;
   };
 
   return (
