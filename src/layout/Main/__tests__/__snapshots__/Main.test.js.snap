@@ -5,19 +5,19 @@ exports[`Main should match snapshot 1`] = `
   className="main"
 >
   <section
-    className="section-wrap bg--tertiary"
+    className="section bgTertiary"
     id="profile"
   >
     <div
       className="container"
     >
       <div
-        className="heading  heading--primary"
+        className="heading primary"
       >
         <div>
           <h2
             aria-label="A little bit about myself"
-            className="heading__title"
+            className="title"
             data-test="heading-title"
           >
             A little bit about myself
@@ -25,7 +25,7 @@ exports[`Main should match snapshot 1`] = `
         </div>
       </div>
       <div
-        className="profile text--center"
+        className="profile"
       >
         <p>
           I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.
@@ -54,14 +54,14 @@ exports[`Main should match snapshot 1`] = `
       >
         <a
           aria-label="Visit my linked profile"
-          className="social__icon"
+          className="icon"
           href="https://au.linkedin.com/in/timmansell"
           rel="noopener noreferrer"
           target="_blank"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin fa-w-14 icon icon--xs"
+            className="svg-inline--fa fa-linkedin fa-w-14 icon xs"
             data-icon="linkedin"
             data-prefix="fab"
             focusable="false"
@@ -79,14 +79,14 @@ exports[`Main should match snapshot 1`] = `
         </a>
         <a
           aria-label="Visit my twitter page"
-          className="social__icon"
+          className="icon"
           href="https://twitter.com/TimMansell"
           rel="noopener noreferrer"
           target="_blank"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-twitter fa-w-16 icon icon--xs"
+            className="svg-inline--fa fa-twitter fa-w-16 icon xs"
             data-icon="twitter"
             data-prefix="fab"
             focusable="false"
@@ -104,14 +104,14 @@ exports[`Main should match snapshot 1`] = `
         </a>
         <a
           aria-label="Visit my github profile"
-          className="social__icon"
+          className="icon"
           href="https://github.com/TimMansell"
           rel="noopener noreferrer"
           target="_blank"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github fa-w-16 icon icon--xs"
+            className="svg-inline--fa fa-github fa-w-16 icon xs"
             data-icon="github"
             data-prefix="fab"
             focusable="false"
@@ -131,19 +131,19 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--primary"
+    className="section bgPrimary"
     id="skills"
   >
     <div
       className="container"
     >
       <div
-        className="heading  heading--secondary"
+        className="heading secondary"
       >
         <div>
           <h2
             aria-label="Skills"
-            className="heading__title"
+            className="title"
             data-test="heading-title"
           >
             Skills
@@ -156,14 +156,14 @@ exports[`Main should match snapshot 1`] = `
         </p>
       </div>
       <div
-        className="list-items"
+        className="items"
       >
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+            className="svg-inline--fa fa-code fa-w-20 icon md padded"
             data-icon="code"
             data-prefix="fa"
             focusable="false"
@@ -179,51 +179,51 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               HTML5
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Semantic Markup
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Bootstrap 4
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               SEO
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               a11y
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Web Components
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Styleguides
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+            className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
             data-icon="css3-alt"
             data-prefix="fab"
             focusable="false"
@@ -239,51 +239,51 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               CSS3
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               SCSS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               BEM
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               SMACSS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               PostCSS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Atomic Design
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               CSS Grid
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-clipboard-list fa-w-12 icon icon--md icon--padded"
+            className="svg-inline--fa fa-clipboard-list fa-w-12 icon md padded"
             data-icon="clipboard-list"
             data-prefix="fa"
             focusable="false"
@@ -299,51 +299,51 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Responsive Design
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Mobile First CSS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Retina Images
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Web Performance
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Page Optimisation
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               CI / CD
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Unit /e2e Testing
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+            className="svg-inline--fa fa-js fa-w-14 icon md padded"
             data-icon="js"
             data-prefix="fab"
             focusable="false"
@@ -359,51 +359,51 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               ES6+
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Babel
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Webpack
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               React / Redux
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Vue / Vuex / Nuxt
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Jest / Cypress
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               JSON
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+            className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
             data-icon="terminal"
             data-prefix="fa"
             focusable="false"
@@ -419,51 +419,51 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Node.js
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               NPM / Yarn
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Git
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               ESLint
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Netlify
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Semaphore
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Docker
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+            className="svg-inline--fa fa-trello fa-w-14 icon md padded"
             data-icon="trello"
             data-prefix="fab"
             focusable="false"
@@ -479,40 +479,40 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Agile
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Scrum
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Kanban
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               JIRA
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Slack
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Trello
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Table Tennis
             </li>
@@ -522,19 +522,19 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--secondary"
+    className="section bgSecondary"
     id="retired-skills"
   >
     <div
       className="container"
     >
       <div
-        className="heading  heading--tertiary"
+        className="heading tertiary"
       >
         <div>
           <h2
             aria-label="Retired Skills"
-            className="heading__title"
+            className="title"
             data-test="heading-title"
           >
             Retired Skills
@@ -547,14 +547,14 @@ exports[`Main should match snapshot 1`] = `
         </p>
       </div>
       <div
-        className="list-items"
+        className="items"
       >
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+            className="svg-inline--fa fa-code fa-w-20 icon md padded"
             data-icon="code"
             data-prefix="fa"
             focusable="false"
@@ -570,31 +570,31 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               PHP
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               MySQL
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Bootstrap 3
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+            className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
             data-icon="css3-alt"
             data-prefix="fab"
             focusable="false"
@@ -610,31 +610,31 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               LESS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               OOCSS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Compass
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+            className="svg-inline--fa fa-js fa-w-14 icon md padded"
             data-icon="js"
             data-prefix="fab"
             focusable="false"
@@ -650,31 +650,31 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               AngularJS
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Backbone.js
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               jQuery
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+            className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
             data-icon="terminal"
             data-prefix="fa"
             focusable="false"
@@ -690,31 +690,31 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Gulp / Grunt
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               SVN
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Bower
             </li>
           </ul>
         </div>
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+            className="svg-inline--fa fa-trello fa-w-14 icon md padded"
             data-icon="trello"
             data-prefix="fab"
             focusable="false"
@@ -730,15 +730,15 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               Waterfall
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               VSTS
             </li>
@@ -748,19 +748,19 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--tertiary"
+    className="section bgTertiary"
     id="stack"
   >
     <div
-      className="container container--medium"
+      className="container medium"
     >
       <div
-        className="heading  heading--primary"
+        className="heading primary"
       >
         <div>
           <h2
             aria-label="Current Stack"
-            className="heading__title"
+            className="title"
             data-test="heading-title"
           >
             Current Stack
@@ -1082,19 +1082,19 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--secondary"
+    className="section bgSecondary"
     id="portfolio"
   >
     <div
-      className="container container--medium"
+      className="container medium"
     >
       <div
-        className="heading  heading--tertiary"
+        className="heading tertiary"
       >
         <div>
           <h2
             aria-label="Portfolio"
-            className="heading__title"
+            className="title"
             data-test="heading-title"
           >
             Portfolio
@@ -1110,19 +1110,19 @@ exports[`Main should match snapshot 1`] = `
         className="portfolio"
       >
         <div
-          className="portfolio-item"
+          className="portfolioItem"
         >
           <div
-            className="portfolio-icons"
+            className="portfolioIcons"
           >
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
           </div>
           <div>
@@ -1131,25 +1131,25 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <div
-            className="portfolio-item__info"
+            className="info"
           >
             <h3
-              className="portfolio-item__title"
+              className="title"
             >
               Find a Course (2018 - 2020)
             </h3>
             <p
-              className="portfolio-item__description"
+              className="description"
             >
               University of Melbourne's study portal.
             </p>
             <p
-              className="portfolio-item__tech"
+              className="tech"
             >
               VueJS, NuxtJS, PostCSS, ES6/Babel, Webpack
             </p>
             <div
-              className="portfolio-item__more-info"
+              className="moreinfo"
             >
               <a
                 href="https://study.unimelb.edu.au/find"
@@ -1159,7 +1159,7 @@ exports[`Main should match snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
                   data-icon="desktop"
                   data-prefix="fas"
                   focusable="false"
@@ -1179,19 +1179,19 @@ exports[`Main should match snapshot 1`] = `
           </div>
         </div>
         <div
-          className="portfolio-item"
+          className="portfolioItem"
         >
           <div
-            className="portfolio-icons"
+            className="portfolioIcons"
           >
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
           </div>
           <div>
@@ -1200,25 +1200,25 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <div
-            className="portfolio-item__info"
+            className="info"
           >
             <h3
-              className="portfolio-item__title"
+              className="title"
             >
               myBupa (2016 - 2017)
             </h3>
             <p
-              className="portfolio-item__description"
+              className="description"
             >
               Responsive website rebuild.  Built on top of .NET stack.
             </p>
             <p
-              className="portfolio-item__tech"
+              className="tech"
             >
               AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.
             </p>
             <div
-              className="portfolio-item__more-info"
+              className="moreinfo"
             >
               <a
                 href="https://my.bupa.com.au"
@@ -1228,7 +1228,7 @@ exports[`Main should match snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
                   data-icon="desktop"
                   data-prefix="fas"
                   focusable="false"
@@ -1248,19 +1248,19 @@ exports[`Main should match snapshot 1`] = `
           </div>
         </div>
         <div
-          className="portfolio-item"
+          className="portfolioItem"
         >
           <div
-            className="portfolio-icons"
+            className="portfolioIcons"
           >
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
             <div
-              className="portfolio-icons__icon"
+              className="icon"
             />
           </div>
           <div>
@@ -1269,25 +1269,25 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <div
-            className="portfolio-item__info"
+            className="info"
           >
             <h3
-              className="portfolio-item__title"
+              className="title"
             >
               Captain's Choice (2016)
             </h3>
             <p
-              className="portfolio-item__description"
+              className="description"
             >
               Responsive website rebuild. Built on top of .NET stack.
             </p>
             <p
-              className="portfolio-item__tech"
+              className="tech"
             >
               AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.
             </p>
             <div
-              className="portfolio-item__more-info"
+              className="moreinfo"
             >
               <a
                 href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
@@ -1297,7 +1297,7 @@ exports[`Main should match snapshot 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="svg-inline--fa fa-desktop fa-w-18 icon portfolio-item__icon icon--xs"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon xs"
                   data-icon="desktop"
                   data-prefix="fas"
                   focusable="false"
@@ -1320,21 +1320,21 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--primary"
+    className="section bgPrimary"
     id="stats"
   >
     <div
       className="container"
     >
       <div
-        className="lighter-note"
+        className="lighterNote"
       >
         <div
-          className="lighter-note__item divider"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 icon icon--padded"
+            className="svg-inline--fa fa-code fa-w-20 icon padded"
             data-icon="code"
             data-prefix="fas"
             focusable="false"
@@ -1355,17 +1355,17 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <p
-            className="lighter-note__text"
+            className="text"
           >
             lines of code
           </p>
         </div>
         <div
-          className="lighter-note__item divider"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code-branch fa-w-12 icon icon--padded"
+            className="svg-inline--fa fa-code-branch fa-w-12 icon padded"
             data-icon="code-branch"
             data-prefix="fas"
             focusable="false"
@@ -1386,17 +1386,17 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <p
-            className="lighter-note__text"
+            className="text"
           >
             git commits
           </p>
         </div>
         <div
-          className="lighter-note__item divider"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mug-hot fa-w-16 icon icon--padded"
+            className="svg-inline--fa fa-mug-hot fa-w-16 icon padded"
             data-icon="mug-hot"
             data-prefix="fas"
             focusable="false"
@@ -1417,17 +1417,17 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <p
-            className="lighter-note__text"
+            className="text"
           >
             coffees consumed
           </p>
         </div>
         <div
-          className="lighter-note__item divider"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-bicycle fa-w-20 icon icon--padded"
+            className="svg-inline--fa fa-bicycle fa-w-20 icon padded"
             data-icon="bicycle"
             data-prefix="fas"
             focusable="false"
@@ -1448,7 +1448,7 @@ exports[`Main should match snapshot 1`] = `
             </span>
           </div>
           <p
-            className="lighter-note__text"
+            className="text"
           >
             kilometers cycled
           </p>
@@ -1457,19 +1457,19 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--secondary"
+    className="section bgSecondary"
     id="presentations"
   >
     <div
       className="container"
     >
       <div
-        className="heading  heading--tertiary"
+        className="heading tertiary"
       >
         <div>
           <h2
             aria-label="Presentations"
-            className="heading__title"
+            className="title"
             data-test="heading-title"
           >
             Presentations
@@ -1482,14 +1482,14 @@ exports[`Main should match snapshot 1`] = `
         </p>
       </div>
       <div
-        className="list-items"
+        className="items"
       >
         <div
-          className="list-item"
+          className="item"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon icon--md icon--padded"
+            className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon md padded"
             data-icon="chalkboard-teacher"
             data-prefix="fa"
             focusable="false"
@@ -1505,13 +1505,13 @@ exports[`Main should match snapshot 1`] = `
             />
           </svg>
           <ul
-            className="list-item__list"
+            className="list"
           >
             <li
-              className="list-item__item"
+              className="listitem"
             >
               <a
-                className="link link--alt"
+                className="link"
                 href="https://timmansell.github.io/presentations/web-components/index.html"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1520,10 +1520,10 @@ exports[`Main should match snapshot 1`] = `
               </a>
             </li>
             <li
-              className="list-item__item"
+              className="listitem"
             >
               <a
-                className="link link--alt"
+                className="link"
                 href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1537,18 +1537,18 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--tertiary"
+    className="section bgTertiary"
     id="testimonials"
   >
     <div
       className="container"
     >
       <div
-        className="testimonials text--center"
+        className="testimonials"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-quote-left fa-w-16 icon testimonials__quote"
+          className="svg-inline--fa fa-quote-left fa-w-16 icon quote"
           data-icon="quote-left"
           data-prefix="fas"
           focusable="false"
@@ -1564,22 +1564,22 @@ exports[`Main should match snapshot 1`] = `
           />
         </svg>
         <div
-          className="testimonials__quote"
+          className="quote"
         >
           <p
-            className="testimonials__text"
+            className="text"
           >
             I dealt with Tim on the implementation of my company's website while he was at The Graphic Cafe. Tim's sage advice and IT skills proved to be invaluable, especially to a cyber-illiterate like me.
           </p>
           <p
-            className="testimonials__name"
+            className="name"
           >
             Rusty Brooke
           </p>
         </div>
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-quote-right fa-w-16 icon testimonials__quote"
+          className="svg-inline--fa fa-quote-right fa-w-16 icon quote"
           data-icon="quote-right"
           data-prefix="fas"
           focusable="false"
@@ -1598,7 +1598,7 @@ exports[`Main should match snapshot 1`] = `
     </div>
   </section>
   <section
-    className="section-wrap bg--secondary"
+    className="section bgSecondary"
     id="contact"
   >
     <div
@@ -1610,14 +1610,14 @@ exports[`Main should match snapshot 1`] = `
         >
           <a
             aria-label="Visit my linked profile"
-            className="social__icon"
+            className="icon"
             href="https://au.linkedin.com/in/timmansell"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-linkedin fa-w-14 icon icon--xs"
+              className="svg-inline--fa fa-linkedin fa-w-14 icon xs"
               data-icon="linkedin"
               data-prefix="fab"
               focusable="false"
@@ -1635,14 +1635,14 @@ exports[`Main should match snapshot 1`] = `
           </a>
           <a
             aria-label="Visit my twitter page"
-            className="social__icon"
+            className="icon"
             href="https://twitter.com/TimMansell"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-twitter fa-w-16 icon icon--xs"
+              className="svg-inline--fa fa-twitter fa-w-16 icon xs"
               data-icon="twitter"
               data-prefix="fab"
               focusable="false"
@@ -1660,14 +1660,14 @@ exports[`Main should match snapshot 1`] = `
           </a>
           <a
             aria-label="Visit my github profile"
-            className="social__icon"
+            className="icon"
             href="https://github.com/TimMansell"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-github fa-w-16 icon icon--xs"
+              className="svg-inline--fa fa-github fa-w-16 icon xs"
               data-icon="github"
               data-prefix="fab"
               focusable="false"

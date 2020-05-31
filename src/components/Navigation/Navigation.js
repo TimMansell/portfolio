@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 import Hamburger from 'components/Hamburger';
 
-import './Navigation.scss';
+import styles from './Navigation.module.scss';
 
 export const Navigation = () => {
   const [isFixedNav, setIsFixedNav] = useState(false);
@@ -29,17 +29,17 @@ export const Navigation = () => {
     setIsMobileMenu(false);
   };
 
-  const navClasses = classnames('navigation', {
-    'navigation--is-sticky': isFixedNav && !isMobileMenu,
-    'navigation--active': isMobileMenu,
+  const navClasses = classnames(styles.navigation, {
+    [styles.sticky]: isFixedNav && !isMobileMenu,
+    [styles.active]: isMobileMenu,
   });
 
-  const menuClasses = classnames('navigation__menu', {
-    'navigation__menu--active': isMobileMenu,
+  const menuClasses = classnames(styles.menu, {
+    [styles.menuActive]: isMobileMenu,
   });
 
-  const linkClasses = classnames('navigation__menu-link', {
-    'navigation__menu-link--is-sticky': isFixedNav && !isMobileMenu,
+  const linkClasses = classnames(styles.link, {
+    [styles.linkSticky]: isFixedNav && !isMobileMenu,
   });
 
   return (
@@ -51,11 +51,11 @@ export const Navigation = () => {
       role="navigation"
     >
       <ul className={menuClasses}>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-profile"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="profile"
             smooth={true}
             spy={true}
@@ -65,11 +65,11 @@ export const Navigation = () => {
             Profile
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-skills"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="skills"
             smooth={true}
             spy={true}
@@ -79,11 +79,11 @@ export const Navigation = () => {
             Skills
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-retired-skills"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="retired-skills"
             smooth={true}
             spy={true}
@@ -93,11 +93,11 @@ export const Navigation = () => {
             Retired Skills
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-stack"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="stack"
             smooth={true}
             spy={true}
@@ -107,11 +107,11 @@ export const Navigation = () => {
             Stack
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-portfolio"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="portfolio"
             smooth={true}
             spy={true}
@@ -121,11 +121,11 @@ export const Navigation = () => {
             Portfolio
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-presentations"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="presentations"
             smooth={true}
             spy={true}
@@ -135,11 +135,11 @@ export const Navigation = () => {
             Presentations
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-testimonials"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="testimonials"
             smooth={true}
             spy={true}
@@ -149,11 +149,11 @@ export const Navigation = () => {
             Testimonials
           </Link>
         </li>
-        <li className="navigation__menu-item">
+        <li className={styles.item}>
           <Link
             data-e2e="navigation-contact"
             className={linkClasses}
-            activeClass="navigation__menu-link--active"
+            activeClass={styles.linkActive}
             to="contact"
             smooth={true}
             spy={true}

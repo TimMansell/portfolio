@@ -3,7 +3,7 @@ import React from 'react';
 import InViewport from 'components/InViewport';
 import Counter from 'components/Counter';
 
-import './Stats.scss';
+import styles from './Stats.module.scss';
 
 import {
   IconCode,
@@ -15,42 +15,42 @@ import {
 export const Stats = () => {
   return (
     <>
-      <div className="lighter-note">
-        <div className="lighter-note__item divider">
+      <div className={styles.lighterNote}>
+        <div className={styles.item}>
           <IconCode padded />
           <InViewport>
-            <p className="lighter-note__amount">
+            <p className={styles.amount}>
               <Counter begin={3000} end={50000} time={2000} />
             </p>
           </InViewport>
-          <p className="lighter-note__text">lines of code</p>
+          <p className={styles.text}>lines of code</p>
         </div>
-        <div className="lighter-note__item divider">
+        <div className={styles.item}>
           <IconCodeBranch padded />
           <InViewport>
-            <p className="lighter-note__amount">
+            <p className={styles.amount}>
               <Counter begin={300} end={1200} time={2000} />
             </p>
           </InViewport>
-          <p className="lighter-note__text">git commits</p>
+          <p className={styles.text}>git commits</p>
         </div>
-        <div className="lighter-note__item divider">
+        <div className={styles.item}>
           <IconMugHot padded />
           <InViewport>
-            <p className="lighter-note__amount">
+            <p className={styles.amount}>
               <Counter begin={200} end={760} time={2000} />
             </p>
           </InViewport>
-          <p className="lighter-note__text">coffees consumed</p>
+          <p className={styles.text}>coffees consumed</p>
         </div>
-        <div className="lighter-note__item divider">
+        <div className={styles.item}>
           <IconBicycle padded />
           <InViewport>
-            <p className="lighter-note__amount">
+            <p className={styles.amount}>
               <Counter begin={650} end={3500} time={2000} />
             </p>
           </InViewport>
-          <p className="lighter-note__text">kilometers cycled</p>
+          <p className={styles.text}>kilometers cycled</p>
         </div>
       </div>
     </>

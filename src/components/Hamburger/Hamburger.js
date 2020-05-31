@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
 
-import './Hamburger.scss';
+import styles from './Hamburger.module.scss';
 
 export const Hamburger = () => {
   const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
@@ -11,12 +11,12 @@ export const Hamburger = () => {
     setIsMobileMenu(!isMobileMenu);
   };
 
-  const buttonClasses = classnames('hamburger', {
-    'hamburger--active': isMobileMenu,
+  const buttonClasses = classnames(styles.hamburger, {
+    [styles.active]: isMobileMenu,
   });
 
-  const hamburgerClasses = classnames('hamburger__menu', {
-    'hamburger__menu--active': isMobileMenu,
+  const hamburgerClasses = classnames(styles.menu, {
+    [styles.menuActive]: isMobileMenu,
   });
 
   return (

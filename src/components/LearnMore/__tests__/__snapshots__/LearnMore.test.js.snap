@@ -2,16 +2,16 @@
 
 exports[`LearnMore should match snapshot 1`] = `
 <div
-  className="learn-more"
+  className="learnMore"
 >
   <a
-    className="learn-more__link"
+    className="link"
     data-e2e="learn-more-btn"
     onClick={[Function]}
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-chevron-down fa-w-14 icon learn-more__scroll icon--sm"
+      className="svg-inline--fa fa-chevron-down fa-w-14 icon scroll sm"
       data-icon="chevron-down"
       data-prefix="fas"
       focusable="false"

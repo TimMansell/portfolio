@@ -3,12 +3,12 @@
 exports[`Presentations should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--tertiary"
+    className="heading tertiary"
   >
     <div>
       <h2
         aria-label="Presentations"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         Presentations
@@ -21,14 +21,14 @@ Array [
     </p>
   </div>,
   <div
-    className="list-items"
+    className="items"
   >
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon icon--md icon--padded"
+        className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon md padded"
         data-icon="chalkboard-teacher"
         data-prefix="fa"
         focusable="false"
@@ -44,13 +44,13 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           <a
-            className="link link--alt"
+            className="link"
             href="https://timmansell.github.io/presentations/web-components/index.html"
             rel="noopener noreferrer"
             target="_blank"
@@ -59,10 +59,10 @@ Array [
           </a>
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           <a
-            className="link link--alt"
+            className="link"
             href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
             rel="noopener noreferrer"
             target="_blank"

@@ -3,12 +3,12 @@
 exports[`CurrentStack should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--primary"
+    className="heading primary"
   >
     <div>
       <h2
         aria-label="Current Stack"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         Current Stack

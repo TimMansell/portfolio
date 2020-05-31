@@ -3,12 +3,12 @@
 exports[`Skills should match snapshot 1`] = `
 Array [
   <div
-    className="heading  heading--secondary"
+    className="heading secondary"
   >
     <div>
       <h2
         aria-label="Skills"
-        className="heading__title"
+        className="title"
         data-test="heading-title"
       >
         Skills
@@ -21,14 +21,14 @@ Array [
     </p>
   </div>,
   <div
-    className="list-items"
+    className="items"
   >
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-code fa-w-20 icon icon--md icon--padded"
+        className="svg-inline--fa fa-code fa-w-20 icon md padded"
         data-icon="code"
         data-prefix="fa"
         focusable="false"
@@ -44,51 +44,51 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           HTML5
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Semantic Markup
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Bootstrap 4
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           SEO
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           a11y
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Web Components
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Styleguides
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-css3-alt fa-w-12 icon icon--md icon--padded"
+        className="svg-inline--fa fa-css3-alt fa-w-12 icon md padded"
         data-icon="css3-alt"
         data-prefix="fab"
         focusable="false"
@@ -104,51 +104,51 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           CSS3
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           SCSS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           BEM
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           SMACSS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           PostCSS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Atomic Design
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           CSS Grid
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-clipboard-list fa-w-12 icon icon--md icon--padded"
+        className="svg-inline--fa fa-clipboard-list fa-w-12 icon md padded"
         data-icon="clipboard-list"
         data-prefix="fa"
         focusable="false"
@@ -164,51 +164,51 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Responsive Design
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Mobile First CSS
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Retina Images
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Web Performance
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Page Optimisation
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           CI / CD
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Unit /e2e Testing
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-js fa-w-14 icon icon--md icon--padded"
+        className="svg-inline--fa fa-js fa-w-14 icon md padded"
         data-icon="js"
         data-prefix="fab"
         focusable="false"
@@ -224,51 +224,51 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           ES6+
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Babel
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Webpack
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           React / Redux
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Vue / Vuex / Nuxt
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Jest / Cypress
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           JSON
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-terminal fa-w-20 icon icon--md icon--padded"
+        className="svg-inline--fa fa-terminal fa-w-20 icon md padded"
         data-icon="terminal"
         data-prefix="fa"
         focusable="false"
@@ -284,51 +284,51 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Node.js
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           NPM / Yarn
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Git
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           ESLint
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Netlify
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Semaphore
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Docker
         </li>
       </ul>
     </div>
     <div
-      className="list-item"
+      className="item"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-trello fa-w-14 icon icon--md icon--padded"
+        className="svg-inline--fa fa-trello fa-w-14 icon md padded"
         data-icon="trello"
         data-prefix="fab"
         focusable="false"
@@ -344,40 +344,40 @@ Array [
         />
       </svg>
       <ul
-        className="list-item__list"
+        className="list"
       >
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Agile
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Scrum
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Kanban
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           JIRA
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Slack
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Trello
         </li>
         <li
-          className="list-item__item"
+          className="listitem"
         >
           Table Tennis
         </li>
