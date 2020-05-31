@@ -27,7 +27,7 @@ export const ListItem = ({ item }) => {
       <Icon name={[item.icon.family, item.icon.name]} size="md" padded />
       <ul className={styles.list}>
         {item.list.map((listItem, i) => (
-          <li className={styles.listItem} key={i}>
+          <li className={styles.listitem} key={i}>
             {displayItem(listItem)}
           </li>
         ))}
