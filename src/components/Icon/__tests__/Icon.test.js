@@ -65,7 +65,7 @@ describe('Default Icon', () => {
 
     const wrapper = shallow(<Icon {...props} />);
 
-    expect(wrapper.hasClass('md')).toEqual(true);
+    expect(wrapper.hasClass('iconMd')).toEqual(true);
   });
 
   it('should add a margin', () => {
@@ -75,7 +75,7 @@ describe('Default Icon', () => {
 
     const wrapper = shallow(<Icon {...props} />);
 
-    expect(wrapper.hasClass('padded')).toEqual(true);
+    expect(wrapper.hasClass('iconPadded')).toEqual(true);
   });
 });
 

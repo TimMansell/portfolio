@@ -54,13 +54,13 @@ describe('Section', () => {
   it('should render a medium container', () => {
     const wrapper = shallow(<SectionWrap container="medium" />);
 
-    expect(wrapper.find('.container').hasClass('medium')).toBeTruthy();
+    expect(wrapper.find('.container').hasClass('containerMedium')).toBeTruthy();
   });
 
   it('should render a large container', () => {
     const wrapper = shallow(<SectionWrap container="large" />);
 
-    expect(wrapper.find('.container').hasClass('large')).toBeTruthy();
+    expect(wrapper.find('.container').hasClass('containerLarge')).toBeTruthy();
   });
 
   it('should bind an id', () => {

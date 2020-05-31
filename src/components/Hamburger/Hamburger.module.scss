@@ -24,10 +24,10 @@ $mobile-menu-bg-colour: #fff;
   &:focus {
     outline: none;
   }
-}
 
-.active {
-  background-color: $tertiary-colour;
+  &Active {
+    background-color: $tertiary-colour;
+  }
 }
 
 .menu {
@@ -62,25 +62,25 @@ $mobile-menu-bg-colour: #fff;
     bottom: -10px;
     transition-property: bottom, transform;
   }
-}
 
-.menuActive {
-  background: none;
-  box-shadow: none;
-
-  &::before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    bottom: 0;
-    transform: rotate(-45deg);
-  }
-
-  &::before,
-  &::after {
-    transition-delay: 0, 0.3s;
+  &Active {
+    background: none;
     box-shadow: none;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    &::before,
+    &::after {
+      transition-delay: 0, 0.3s;
+      box-shadow: none;
+    }
   }
 }

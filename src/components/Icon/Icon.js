@@ -57,10 +57,10 @@ library.add(
 // Default Icon.
 const Icon = ({ name, className, size, padded }) => {
   const classes = classnames(styles.icon, className, {
-    [styles.xs]: size === 'xs',
-    [styles.sm]: size === 'sm',
-    [styles.md]: size === 'md',
-    [styles.padded]: padded,
+    [styles.iconXs]: size === 'xs',
+    [styles.iconSm]: size === 'sm',
+    [styles.iconMd]: size === 'md',
+    [styles.iconPadded]: padded,
   });
 
   return <FontAwesomeIcon icon={name} className={classes} />;

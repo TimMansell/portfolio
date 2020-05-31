@@ -12,7 +12,7 @@ export const Hamburger = () => {
   };
 
   const buttonClasses = classnames(styles.hamburger, {
-    [styles.active]: isMobileMenu,
+    [styles.hamburgerActive]: isMobileMenu,
   });
 
   const hamburgerClasses = classnames(styles.menu, {

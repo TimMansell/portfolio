@@ -12,8 +12,8 @@ const SectionWrap = ({ container, background, id = '', children }) => {
   });
 
   const containerClasses = classnames(styles.container, {
-    [styles.medium]: container === 'medium',
-    [styles.large]: container === 'large',
+    [styles.containerMedium]: container === 'medium',
+    [styles.containerLarge]: container === 'large',
   });
 
   return (

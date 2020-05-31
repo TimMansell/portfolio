@@ -30,8 +30,8 @@ export const Navigation = () => {
   };
 
   const navClasses = classnames(styles.navigation, {
-    [styles.sticky]: isFixedNav && !isMobileMenu,
-    [styles.active]: isMobileMenu,
+    [styles.navigationSticky]: isFixedNav && !isMobileMenu,
+    [styles.navigationActive]: isMobileMenu,
   });
 
   const menuClasses = classnames(styles.menu, {

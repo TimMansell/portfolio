@@ -27,16 +27,16 @@
   @media (min-width: $bp-xl) {
     max-width: 1140px;
   }
-}
 
-.medium {
-  width: 85%;
-  max-width: 85%;
-}
+  &Medium {
+    width: 85%;
+    max-width: 85%;
+  }
 
-.large {
-  width: 100%;
-  max-width: 100%;
+  &Large {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .bgPrimary {

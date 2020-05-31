@@ -7,9 +7,9 @@ import styles from './Header.module.scss';
 
 export const Header = ({ primary, secondary, tertiary, text, title }) => {
   const classes = classnames(styles.heading, {
-    [styles.primary]: primary,
-    [styles.secondary]: secondary,
-    [styles.tertiary]: tertiary,
+    [styles.headingPrimary]: primary,
+    [styles.headingSecondary]: secondary,
+    [styles.headingTertiary]: tertiary,
   });
 
   if (text) {
