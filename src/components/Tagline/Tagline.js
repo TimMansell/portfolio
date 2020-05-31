@@ -1,14 +1,14 @@
 import React from 'react';
 
-import './Tagline.scss';
+import styles from './Tagline.module.scss';
 
 export const Tagline = () => {
   return (
-    <div className="tagline">
-      <div className="tagline__item">Front-end Engineer</div>
-      <div className="tagline__item">Javascript Engineer</div>
-      <div className="tagline__item">React Engineer</div>
-      <div className="tagline__item">VueJS Engineer</div>
+    <div className={styles.tagline}>
+      <div className={styles.item}>Front-end Engineer</div>
+      <div className={styles.item}>Javascript Engineer</div>
+      <div className={styles.item}>React Engineer</div>
+      <div className={styles.item}>VueJS Engineer</div>
     </div>
   );
 };

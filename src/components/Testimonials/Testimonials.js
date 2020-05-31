@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import TestimonialItem from './TestimonialItem';
 
 import testimonialsJson from './json/testimonials.json';
-import './Testimonials.scss';
+import styles from './Testimonials.module.scss';
 
 import { IconQuoteLeft, IconQuoteRight } from '../Icon';
 
@@ -26,10 +26,10 @@ export const Testimonials = () => {
   });
 
   return (
-    <div className="testimonials text--center">
-      <IconQuoteLeft className="testimonials__quote" />
+    <div className={styles.testimonials}>
+      <IconQuoteLeft className={styles.quote} />
       <TestimonialItem {...testimonial} />
-      <IconQuoteRight className="testimonials__quote" />
+      <IconQuoteRight className={styles.quote} />
     </div>
   );
 };

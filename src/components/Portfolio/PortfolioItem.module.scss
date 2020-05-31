@@ -1,0 +1,81 @@
+@import 'variables';
+
+.portfolioItem {
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+
+  &:hover .info {
+    transform: translateY(0);
+  }
+}
+
+.link {
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s;
+  }
+}
+
+.icon {
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.info {
+  position: absolute;
+  transform: translateY(100%);
+  text-shadow: -1px -1px darken($primary-colour, 10%);
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  background: rgba($primary-colour, 0.95);
+  height: 100%;
+  padding: 15px;
+  width: 100%;
+  color: $secondary-text-colour;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  display: none;
+
+  @media (min-width: $bp-sm) {
+    display: block;
+  }
+}
+
+.tech {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.moreinfo {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+}

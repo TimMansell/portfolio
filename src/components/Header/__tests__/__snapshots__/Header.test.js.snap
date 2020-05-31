@@ -2,12 +2,12 @@
 
 exports[`Header should match snapshot 1`] = `
 <div
-  className="heading "
+  className="heading"
 >
   <div>
     <h2
       aria-label="Test Title"
-      className="heading__title"
+      className="title"
       data-test="heading-title"
     >
       Test Title

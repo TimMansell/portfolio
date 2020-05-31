@@ -1,0 +1,8 @@
+.profile {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.link {
+  composes: link from '~scss/helpers/link.scss';
+}
