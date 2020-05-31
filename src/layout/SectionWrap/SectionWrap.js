@@ -6,9 +6,9 @@ import styles from './SectionWrap.module.scss';
 
 const SectionWrap = ({ container, background, id = '', children }) => {
   const sectionClasses = classnames(styles.section, {
-    'bg--primary': background === 'primary',
-    'bg--secondary': background === 'secondary',
-    'bg--tertiary': background === 'tertiary',
+    [styles.bgPrimary]: background === 'primary',
+    [styles.bgSecondary]: background === 'secondary',
+    [styles.bgTertiary]: background === 'tertiary',
   });
 
   const containerClasses = classnames(styles.container, {

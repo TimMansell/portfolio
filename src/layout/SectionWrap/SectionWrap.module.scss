@@ -38,3 +38,15 @@
   width: 100%;
   max-width: 100%;
 }
+
+.bgPrimary {
+  composes: primary from '~scss/helpers/_backgrounds.scss';
+}
+
+.bgSecondary {
+  composes: secondary from '~scss/helpers/_backgrounds.scss';
+}
+
+.bgTertiary {
+  composes: tertiary from '~scss/helpers/_backgrounds.scss';
+}

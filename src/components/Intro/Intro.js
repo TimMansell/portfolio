@@ -12,7 +12,7 @@ import styles from './Intro.module.scss';
 
 export const Intro = () => {
   return (
-    <section id="intro" className="bg--primary" role="banner">
+    <section id="intro" className={styles.background} role="banner">
       <Hero blurFrom={3} blurTo={10} />
 
       <div className={styles.intro}>
