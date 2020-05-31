@@ -1,0 +1,18 @@
+[
+    {
+        "list": [
+            {
+                "name": "Web components",
+                "url": "https://timmansell.github.io/presentations/web-components/index.html"
+            },
+            {
+                "name": "CSS with superpowers",
+                "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+            }
+        ],
+        "icon": {
+            "name": "chalkboard-teacher",
+            "family": "fa"
+        }
+    }
+]
