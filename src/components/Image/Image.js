@@ -16,7 +16,7 @@ export const Image = ({ src, name, width }) => {
 };
 
 Image.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   name: PropTypes.string.isRequired,
   width: PropTypes.string,
 };
