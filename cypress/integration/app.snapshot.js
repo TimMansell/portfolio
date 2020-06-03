@@ -1,15 +1,31 @@
 const url = '/';
 
+const sizes = [
+  'iphone-5',
+  'iphone-6',
+  'iphone-xr',
+  'ipad-2',
+  ['ipad-2', 'landscape'],
+  'macbook-11',
+  'macbook-15',
+  [1920, 1080],
+  [2560, 1440],
+];
+
 describe('App', () => {
-  beforeEach(() => {
-    cy.visit(url);
-  });
+  sizes.forEach((size) => {
+    it(`matches ${size} snapshot`, () => {
+      cy.visit(url);
 
-  it('matches desktop snapshot', () => {
-    cy.checkDesktopSnapshot();
-  });
+      if (Cypress._.isArray(size)) {
+        cy.viewport(size[0], size[1]);
 
-  it('matches mobile snapshot', () => {
-    cy.checkMobileSnapshot();
+        cy.matchImageSnapshot(size.join());
+      } else {
+        cy.viewport(size);
+
+        cy.matchImageSnapshot(size);
+      }
+    });
   });
 });
