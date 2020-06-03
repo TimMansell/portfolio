@@ -19,5 +19,15 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 
+  on('before:browser:launch', (browser, launchOptions) => {
+    if (browser.name === 'electron' && browser.isHeadless) {
+      // launchOptions.args.push('--window-size=2560,1440');
+
+      launchOptions.preferences.width = 2560;
+
+      return launchOptions;
+    }
+  });
+
   addMatchImageSnapshotPlugin(on, config);
 };
