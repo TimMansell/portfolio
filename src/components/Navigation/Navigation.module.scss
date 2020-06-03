@@ -80,6 +80,11 @@
   }
 
   @media (min-width: $bp-lg) {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: $bp-xl) {
     font-size: 18px;
     padding: 0 18px;
   }
