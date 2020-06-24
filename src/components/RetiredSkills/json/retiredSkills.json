@@ -3,7 +3,7 @@
         "list": [
             {"name": "PHP"},
             {"name": "MySQL"},
-            {"name": "Bootstrap 3"}
+            {"name": "Flash"}
         ],
         "icon": {
             "name": "code",
@@ -13,7 +13,6 @@
     {
         "list": [
             {"name": "LESS"},
-            {"name": "OOCSS"},
             {"name": "Compass"}
         ],
         "icon": {
