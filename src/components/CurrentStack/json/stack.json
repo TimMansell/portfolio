@@ -26,7 +26,7 @@
         "name": "Webpack",
         "url": "https://webpack.js.org/",
         "img": "webpack.svg",
-        "width": "84"
+        "width": "80"
     },
     {
         "name": "Yarn",
@@ -41,16 +41,22 @@
         "width": "75"
     },
     {
+        "name": "Jest",
+        "url": "https://jestjs.io/",
+        "img": "jest.svg",
+        "width": "50"
+    },
+    {
         "name": "Babel",
         "url": "https://babeljs.io/",
         "img": "babel.svg",
         "width": "160"
     },
     {
-        "name": "VSCode",
-        "url": "https://code.visualstudio.com/",
-        "img": "vscode.svg",
-        "width": "66"
+        "name": "Cypress",
+        "url": "https://www.cypress.io/",
+        "img": "cypress.svg",
+        "width": "62"
     },
     {
         "name": "SCSS",
@@ -59,15 +65,21 @@
         "width": "75"
     },
     {
-        "name": "PostCSS",
-        "url": "https://postcss.org/",
-        "img": "postcss.svg",
-        "width": "66"
+        "name": "VSCode",
+        "url": "https://code.visualstudio.com/",
+        "img": "vscode.svg",
+        "width": "60"
     },
     {
         "name": "Git",
         "url": "https://git-scm.com/",
         "img": "git.svg",
-        "width": "90"
+        "width": "95"
+    },
+    {
+        "name": "PostCSS",
+        "url": "https://postcss.org/",
+        "img": "postcss.svg",
+        "width": "60"
     }
 ]
