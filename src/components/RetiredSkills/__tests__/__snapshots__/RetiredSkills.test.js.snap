@@ -59,7 +59,7 @@ Array [
         <li
           className="listitem"
         >
-          Bootstrap 3
+          Flash
         </li>
       </ul>
     </div>
@@ -90,11 +90,6 @@ Array [
           className="listitem"
         >
           LESS
-        </li>
-        <li
-          className="listitem"
-        >
-          OOCSS
         </li>
         <li
           className="listitem"
