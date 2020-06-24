@@ -194,7 +194,7 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
-              Bootstrap 4
+              Bootstrap
             </li>
             <li
               className="listitem"
@@ -215,6 +215,11 @@ exports[`Main should match snapshot 1`] = `
               className="listitem"
             >
               Styleguides
+            </li>
+            <li
+              className="listitem"
+            >
+              Storybook
             </li>
           </ul>
         </div>
@@ -259,6 +264,11 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
+              OOCSS
+            </li>
+            <li
+              className="listitem"
+            >
               SMACSS
             </li>
             <li
@@ -269,12 +279,12 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
-              Atomic Design
+              CSS Modules
             </li>
             <li
               className="listitem"
             >
-              CSS Grid
+              Flexbox / CSS Grid
             </li>
           </ul>
         </div>
@@ -334,7 +344,12 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
-              Unit /e2e Testing
+              Unit Testing
+            </li>
+            <li
+              className="listitem"
+            >
+              e2e Testing
             </li>
           </ul>
         </div>
@@ -365,6 +380,11 @@ exports[`Main should match snapshot 1`] = `
               className="listitem"
             >
               ES6+
+            </li>
+            <li
+              className="listitem"
+            >
+              Node.js
             </li>
             <li
               className="listitem"
@@ -424,12 +444,12 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
-              Node.js
+              NPM
             </li>
             <li
               className="listitem"
             >
-              NPM / Yarn
+              Yarn
             </li>
             <li
               className="listitem"
@@ -444,17 +464,22 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
-              Netlify
+              Stylelint
             </li>
             <li
               className="listitem"
             >
-              Semaphore
+              Prettier
             </li>
             <li
               className="listitem"
             >
-              Docker
+              Create React App
+            </li>
+            <li
+              className="listitem"
+            >
+              Vue CLI
             </li>
           </ul>
         </div>
@@ -495,6 +520,11 @@ exports[`Main should match snapshot 1`] = `
               className="listitem"
             >
               Kanban
+            </li>
+            <li
+              className="listitem"
+            >
+              GitHub
             </li>
             <li
               className="listitem"
@@ -585,7 +615,7 @@ exports[`Main should match snapshot 1`] = `
             <li
               className="listitem"
             >
-              Bootstrap 3
+              Flash
             </li>
           </ul>
         </div>
@@ -616,11 +646,6 @@ exports[`Main should match snapshot 1`] = `
               className="listitem"
             >
               LESS
-            </li>
-            <li
-              className="listitem"
-            >
-              OOCSS
             </li>
             <li
               className="listitem"
@@ -901,7 +926,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Webpack"
-              width="84"
+              width="80"
             />
           </a>
         </div>
@@ -952,6 +977,32 @@ exports[`Main should match snapshot 1`] = `
           className="item"
         >
           <a
+            href="https://jestjs.io/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Jest"
+              className="img"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "jest.svg",
+                }
+              }
+              title="Jest"
+              width="50"
+            />
+          </a>
+        </div>
+        <div
+          className="item"
+        >
+          <a
             href="https://babeljs.io/"
             rel="noopener noreferrer"
             target="_blank"
@@ -978,12 +1029,12 @@ exports[`Main should match snapshot 1`] = `
           className="item"
         >
           <a
-            href="https://code.visualstudio.com/"
+            href="https://www.cypress.io/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <img
-              alt="VSCode"
+              alt="Cypress"
               className="img"
               src={
                 Object {
@@ -992,11 +1043,11 @@ exports[`Main should match snapshot 1`] = `
                     "render": [Function],
                   },
                   "__esModule": true,
-                  "default": "vscode.svg",
+                  "default": "cypress.svg",
                 }
               }
-              title="VSCode"
-              width="66"
+              title="Cypress"
+              width="62"
             />
           </a>
         </div>
@@ -1030,12 +1081,12 @@ exports[`Main should match snapshot 1`] = `
           className="item"
         >
           <a
-            href="https://postcss.org/"
+            href="https://code.visualstudio.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <img
-              alt="PostCSS"
+              alt="VSCode"
               className="img"
               src={
                 Object {
@@ -1044,11 +1095,11 @@ exports[`Main should match snapshot 1`] = `
                     "render": [Function],
                   },
                   "__esModule": true,
-                  "default": "postcss.svg",
+                  "default": "vscode.svg",
                 }
               }
-              title="PostCSS"
-              width="66"
+              title="VSCode"
+              width="60"
             />
           </a>
         </div>
@@ -1074,7 +1125,33 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Git"
-              width="90"
+              width="95"
+            />
+          </a>
+        </div>
+        <div
+          className="item"
+        >
+          <a
+            href="https://postcss.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="PostCSS"
+              className="img"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "postcss.svg",
+                }
+              }
+              title="PostCSS"
+              width="60"
             />
           </a>
         </div>
