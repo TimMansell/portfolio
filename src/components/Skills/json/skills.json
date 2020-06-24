@@ -3,11 +3,12 @@
         "list": [
             {"name": "HTML5"},
             {"name": "Semantic Markup"},
-            {"name": "Bootstrap 4"},
+            {"name": "Bootstrap"},
             {"name": "SEO"},
             {"name": "a11y"},
             {"name": "Web Components"},
-            {"name": "Styleguides"}
+            {"name": "Styleguides"},
+            {"name": "Storybook"}
         ],
         "icon": {
             "name": "code",
@@ -19,10 +20,11 @@
             {"name": "CSS3"},
             {"name": "SCSS"},
             {"name": "BEM"},
+            {"name": "OOCSS"},
             {"name": "SMACSS"},
             {"name": "PostCSS"},
-            {"name": "Atomic Design"},
-            {"name": "CSS Grid"}
+            {"name": "CSS Modules"},
+            {"name": "Flexbox / CSS Grid"}
         ],
         "icon": {
             "name": "css3-alt",
@@ -37,7 +39,8 @@
             {"name": "Web Performance"},
             {"name": "Page Optimisation"},
             {"name": "CI / CD"},
-            {"name": "Unit /e2e Testing"}
+            {"name": "Unit Testing"},
+            {"name": "e2e Testing"}
         ],
         "icon": {
             "name": "clipboard-list",
@@ -47,6 +50,7 @@
     {
         "list": [
             {"name": "ES6+"},
+            {"name": "Node.js"},
             {"name": "Babel"},
             {"name": "Webpack"},
             {"name": "React / Redux"},
@@ -61,13 +65,14 @@
     },
     {
         "list": [
-            {"name": "Node.js"},
-            {"name": "NPM / Yarn"},
+            {"name": "NPM"},
+            {"name": "Yarn"},
             {"name": "Git"},
             {"name": "ESLint"},
-            {"name": "Netlify"},
-            {"name": "Semaphore"},
-            {"name": "Docker"}
+            {"name": "Stylelint"},
+            {"name": "Prettier"},
+            {"name": "Create React App"},
+            {"name": "Vue CLI"}
         ],
         "icon": {
             "name": "terminal",
@@ -79,6 +84,7 @@
             {"name": "Agile"},
             {"name": "Scrum"},
             {"name": "Kanban"},
+            {"name": "GitHub"},
             {"name": "JIRA"},
             {"name": "Slack"},
             {"name": "Trello"},
