@@ -149,7 +149,7 @@ Array [
             }
           }
           title="Webpack"
-          width="84"
+          width="80"
         />
       </a>
     </div>
@@ -200,6 +200,32 @@ Array [
       className="item"
     >
       <a
+        href="https://jestjs.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Jest"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "jest.svg",
+            }
+          }
+          title="Jest"
+          width="50"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
         href="https://babeljs.io/"
         rel="noopener noreferrer"
         target="_blank"
@@ -226,12 +252,12 @@ Array [
       className="item"
     >
       <a
-        href="https://code.visualstudio.com/"
+        href="https://www.cypress.io/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
-          alt="VSCode"
+          alt="Cypress"
           className="img"
           src={
             Object {
@@ -240,11 +266,11 @@ Array [
                 "render": [Function],
               },
               "__esModule": true,
-              "default": "vscode.svg",
+              "default": "cypress.svg",
             }
           }
-          title="VSCode"
-          width="66"
+          title="Cypress"
+          width="62"
         />
       </a>
     </div>
@@ -278,12 +304,12 @@ Array [
       className="item"
     >
       <a
-        href="https://postcss.org/"
+        href="https://code.visualstudio.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
-          alt="PostCSS"
+          alt="VSCode"
           className="img"
           src={
             Object {
@@ -292,11 +318,11 @@ Array [
                 "render": [Function],
               },
               "__esModule": true,
-              "default": "postcss.svg",
+              "default": "vscode.svg",
             }
           }
-          title="PostCSS"
-          width="66"
+          title="VSCode"
+          width="60"
         />
       </a>
     </div>
@@ -322,7 +348,33 @@ Array [
             }
           }
           title="Git"
-          width="90"
+          width="95"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        href="https://postcss.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="PostCSS"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "postcss.svg",
+            }
+          }
+          title="PostCSS"
+          width="60"
         />
       </a>
     </div>
