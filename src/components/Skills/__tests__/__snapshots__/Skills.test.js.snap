@@ -59,7 +59,7 @@ Array [
         <li
           className="listitem"
         >
-          Bootstrap 4
+          Bootstrap
         </li>
         <li
           className="listitem"
@@ -80,6 +80,11 @@ Array [
           className="listitem"
         >
           Styleguides
+        </li>
+        <li
+          className="listitem"
+        >
+          Storybook
         </li>
       </ul>
     </div>
@@ -124,6 +129,11 @@ Array [
         <li
           className="listitem"
         >
+          OOCSS
+        </li>
+        <li
+          className="listitem"
+        >
           SMACSS
         </li>
         <li
@@ -134,12 +144,12 @@ Array [
         <li
           className="listitem"
         >
-          Atomic Design
+          CSS Modules
         </li>
         <li
           className="listitem"
         >
-          CSS Grid
+          Flexbox / CSS Grid
         </li>
       </ul>
     </div>
@@ -199,7 +209,12 @@ Array [
         <li
           className="listitem"
         >
-          Unit /e2e Testing
+          Unit Testing
+        </li>
+        <li
+          className="listitem"
+        >
+          e2e Testing
         </li>
       </ul>
     </div>
@@ -230,6 +245,11 @@ Array [
           className="listitem"
         >
           ES6+
+        </li>
+        <li
+          className="listitem"
+        >
+          Node.js
         </li>
         <li
           className="listitem"
@@ -289,12 +309,12 @@ Array [
         <li
           className="listitem"
         >
-          Node.js
+          NPM
         </li>
         <li
           className="listitem"
         >
-          NPM / Yarn
+          Yarn
         </li>
         <li
           className="listitem"
@@ -309,17 +329,22 @@ Array [
         <li
           className="listitem"
         >
-          Netlify
+          Stylelint
         </li>
         <li
           className="listitem"
         >
-          Semaphore
+          Prettier
         </li>
         <li
           className="listitem"
         >
-          Docker
+          Create React App
+        </li>
+        <li
+          className="listitem"
+        >
+          Vue CLI
         </li>
       </ul>
     </div>
@@ -360,6 +385,11 @@ Array [
           className="listitem"
         >
           Kanban
+        </li>
+        <li
+          className="listitem"
+        >
+          GitHub
         </li>
         <li
           className="listitem"
