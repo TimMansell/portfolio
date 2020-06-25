@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const Counter = ({ begin, end }) => {
   const [counter, setCounter] = useState(begin);
   const [randomCountTo] = useState(
-    Math.floor(Math.random() * (end - begin + 1) + begin)
+    Math.floor(Math.random() * (end - begin + 1) + begin) + 1
   );
 
   useEffect(() => {
