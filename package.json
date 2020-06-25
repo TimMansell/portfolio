@@ -42,7 +42,8 @@
     "test:commands:open": "server-test serve 5000 \"cypress open --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:snapshots": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*spec*\"",
     "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\"",
-    "sloc": "sloc -d -e svg -f json src/ > src/loc.json 2>&1"
+    "sloc": "sloc -d -e svg -f json src/ > src/loc.json 2>&1",
+    "husky:precommit": "npm-run-all lint-staged sloc"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -85,7 +86,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm sloc"
+      "pre-commit": "npm husky:precommit"
     }
   },
   "lint-staged": {
