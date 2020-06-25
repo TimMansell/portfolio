@@ -3,7 +3,7 @@ import React from 'react';
 import InViewport from 'components/InViewport';
 import Counter from 'components/Counter';
 
-import loc from '../../loc.json';
+import stats from './json/stats.json';
 
 import styles from './Stats.module.scss';
 
@@ -22,11 +22,7 @@ export const Stats = () => {
           <IconCode padded />
           <InViewport>
             <p className={styles.amount}>
-              <Counter
-                begin={loc.summary.source - 1000}
-                end={loc.summary.source}
-                time={2000}
-              />
+              <Counter begin={stats.loc - 1000} end={stats.loc} time={2000} />
             </p>
           </InViewport>
           <p className={styles.text}>lines of code</p>
