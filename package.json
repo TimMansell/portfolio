@@ -41,7 +41,8 @@
     "test:commands:run": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:open": "server-test serve 5000 \"cypress open --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:snapshots": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*spec*\"",
-    "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\""
+    "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\"",
+    "sloc": "sloc -d -e svg -f json src/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -75,6 +76,7 @@
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.13.1",
     "serve": "11.3.2",
+    "sloc": "^0.2.1",
     "start-server-and-test": "^1.11.0",
     "stylelint": "^13.6.1",
     "stylelint-config-css-modules": "^2.2.0",
