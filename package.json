@@ -42,7 +42,7 @@
     "test:commands:open": "server-test serve 5000 \"cypress open --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:snapshots": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*spec*\"",
     "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\"",
-    "sloc": "sloc -d -e svg -f json src/"
+    "sloc": "sloc -d -e svg -f json src/ > loc.json 2>&1"
   },
   "eslintConfig": {
     "extends": "react-app"
