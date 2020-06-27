@@ -23,7 +23,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm-run-all build:tasks build:app",
+    "build:app": "react-scripts build",
+    "build:tasks": "node ./tasks/index.js",
     "lint": "npm-run-all --parallel lint:js lint:css",
     "lint:js": "eslint src cypress tasks --fix",
     "lint:css": "stylelint src/**/*.{css,scss} --fix",
@@ -41,10 +43,7 @@
     "test:commands:run": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:open": "server-test serve 5000 \"cypress open --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:snapshots": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*spec*\"",
-    "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\"",
-    "lint-staged": "lint-staged",
-    "sloc": "node ./tasks/sloc.js",
-    "husky:precommit": "npm-run-all lint-staged sloc"
+    "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -70,7 +69,6 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^3.1.0",
     "glob": "^7.1.6",
     "husky": "^3.1.0",
     "lint-staged": "^10.2.11",
@@ -89,7 +87,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run sloc"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
