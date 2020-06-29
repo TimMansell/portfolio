@@ -1,8 +1,5 @@
 const fetch = require('node-fetch');
-const fs = require('fs-extra');
 require('dotenv').config();
-
-const file = './src/components/Stats/json/github.json';
 
 const ACCESS_TOKEN = process.env.GITHUB_TOKEN;
 const query = `
@@ -16,6 +13,12 @@ const query = `
           ... on Commit {
             history {
               totalCount
+              nodes {
+                committedDate
+              }
+              pageInfo {
+                endCursor
+              }
             }
           }
         }
@@ -24,27 +27,29 @@ const query = `
   }`;
 
 const github = () =>
-  fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    body: JSON.stringify({ query }),
-    headers: {
-      Authorization: `Bearer ${ACCESS_TOKEN}`,
-    },
-  })
-    .then((res) => res.text())
-    .then((body) => formatAPIOutput(body))
-    .catch((error) => console.error(error));
+  new Promise((resolve, reject) => {
+    fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      body: JSON.stringify({ query }),
+      headers: {
+        Authorization: `Bearer ${ACCESS_TOKEN}`,
+      },
+    })
+      .then((res) => res.text())
+      .then((body) => resolve(formatAPIOutput(body)))
+      .catch(() => reject('Failed to fetch github stats'));
+  });
 
 const formatAPIOutput = (body) => {
   const { data } = JSON.parse(body);
   const { pullRequests, ref } = data.repository;
 
-  const obj = {
+  console.log('d', body);
+
+  return {
     pullRequests: pullRequests.totalCount,
     commits: ref.target.history.totalCount,
   };
-
-  fs.outputJsonSync(file, obj);
 };
 
 module.exports = github;
