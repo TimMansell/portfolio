@@ -62,7 +62,7 @@ export const Stats = () => {
               <Counter begin={0} end={stats.coffees} time={2000} />
             </p>
           </InViewport>
-          <p className={styles.text}>coffees consumed</p>
+          <p className={styles.text}>coffees</p>
         </div>
       </div>
     </>
