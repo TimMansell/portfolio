@@ -3,12 +3,9 @@ import PropTypes from 'prop-types';
 
 export const Counter = ({ begin, end }) => {
   const [counter, setCounter] = useState(begin);
-  const [randomCountTo] = useState(
-    Math.floor(Math.random() * (end - begin + 1) + begin)
-  );
 
   useEffect(() => {
-    if (counter <= randomCountTo) {
+    if (counter < end) {
       const timer = setInterval(() => {
         setCounter(counter + 1);
       }, 1);
@@ -17,7 +14,7 @@ export const Counter = ({ begin, end }) => {
     }
   });
 
-  return <>{counter}+</>;
+  return <>{counter}</>;
 };
 
 Counter.propTypes = {

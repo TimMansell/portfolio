@@ -12,8 +12,8 @@ import Icon, {
   IconChalkboardTeacher,
   IconCode,
   IconCodeBranch,
+  IconCodeLaptop,
   IconMugHot,
-  IconBicycle,
   IconQuoteLeft,
   IconQuoteRight,
   IconCss3Alt,
@@ -156,14 +156,14 @@ describe('Icons', () => {
     const wrapper = shallow(<IconCodeBranch />);
   });
 
+  it('should render my IconCodeLaptop', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<IconCodeLaptop />);
+  });
+
   it('should render my IconMugHot', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<IconMugHot />);
-  });
-
-  it('should render my IconBicycle', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconBicycle />);
   });
 
   it('should render my IconQuoteLeft', () => {
