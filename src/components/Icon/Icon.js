@@ -17,8 +17,8 @@ import {
   faChalkboardTeacher,
   faCode,
   faCodeBranch,
+  faLaptopCode,
   faMugHot,
-  faBicycle,
   faQuoteLeft,
   faQuoteRight,
 } from '@fortawesome/free-solid-svg-icons';
@@ -42,8 +42,8 @@ library.add(
   faChalkboardTeacher,
   faCode,
   faCodeBranch,
+  faLaptopCode,
   faMugHot,
-  faBicycle,
   faQuoteLeft,
   faQuoteRight,
   faCss3Alt,
@@ -213,6 +213,24 @@ IconCodeBranch.propTypes = {
   padded: PropTypes.bool,
 };
 
+export const IconCodeLaptop = ({ className, size, padded }) => {
+  return (
+    <Icon
+      name={faLaptopCode}
+      className={className}
+      size={size}
+      padded={padded}
+    />
+  );
+};
+
+IconCodeLaptop.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
 export const IconMugHot = ({ className, size, padded }) => {
   return (
     <Icon name={faMugHot} className={className} size={size} padded={padded} />
@@ -220,19 +238,6 @@ export const IconMugHot = ({ className, size, padded }) => {
 };
 
 IconMugHot.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconBicycle = ({ className, size, padded }) => {
-  return (
-    <Icon name={faBicycle} className={className} size={size} padded={padded} />
-  );
-};
-
-IconBicycle.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
