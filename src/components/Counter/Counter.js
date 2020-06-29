@@ -5,7 +5,7 @@ export const Counter = ({ begin, end }) => {
   const [counter, setCounter] = useState(begin);
 
   useEffect(() => {
-    if (counter <= end) {
+    if (counter < end) {
       const timer = setInterval(() => {
         setCounter(counter + 1);
       }, 1);
