@@ -1,7 +1,9 @@
 const fetch = require('node-fetch');
 require('dotenv').config();
 
+const DAILY_COFFEES = 4;
 const ACCESS_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_RESULTS_API_LIMIT = 100;
 const query = `
   query {
     repository(owner:"timmansell", name:"portfolio") {
@@ -15,9 +17,6 @@ const query = `
               totalCount
               nodes {
                 committedDate
-              }
-              pageInfo {
-                endCursor
               }
             }
           }
@@ -43,13 +42,24 @@ const github = () =>
 const formatAPIOutput = (body) => {
   const { data } = JSON.parse(body);
   const { pullRequests, ref } = data.repository;
-
-  console.log('d', body);
+  const { history } = ref.target;
+  const { totalCount, nodes } = history;
+  const coffees = calculateTotalCoffees(nodes, totalCount);
 
   return {
     pullRequests: pullRequests.totalCount,
-    commits: ref.target.history.totalCount,
+    commits: totalCount,
+    coffees,
   };
 };
+
+const getDate = (node) => node.committedDate.slice(0, 10);
+
+const calculateTotalCoffees = (nodes, totalCommits) =>
+  Math.round(
+    [...new Set(nodes.map(getDate))].length *
+      DAILY_COFFEES *
+      (totalCommits / GITHUB_RESULTS_API_LIMIT)
+  );
 
 module.exports = github;
