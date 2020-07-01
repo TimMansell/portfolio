@@ -43,6 +43,8 @@
   @media (min-width: $bp-lg) {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   &Active {
@@ -63,7 +65,6 @@
 
 .item {
   @media (min-width: $bp-md) {
-    line-height: 60px;
     text-transform: uppercase;
   }
 }
