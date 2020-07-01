@@ -1,6 +1,25 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines", "stylelint-config-css-modules"],
   "rules": {
+    "declaration-property-unit-whitelist": {
+      "font-size": ["rem"],
+      "letter-spacing": ["rem"],
+      "line-height": []
+    },
+    "declaration-property-unit-blacklist": {
+      "/^margin/": ["px"],
+      "/^padding/": ["px"],
+      "min-height": ["px"],
+      "max-height": ["px"],
+      "min-width": ["px"],
+      "max-width": ["px"],
+      "width": ["px"],
+      "height": ["px"],
+      "top": ["px"],
+      "right": ["px"],
+      "bottom": ["px"],
+      "left": ["px"]
+    },
     "max-nesting-depth": [
       3,
       {
@@ -8,6 +27,7 @@
       }
     ],
     "order/properties-alphabetical-order": null,
-    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$"
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "unit-blacklist": ["em"]
   }
 }
