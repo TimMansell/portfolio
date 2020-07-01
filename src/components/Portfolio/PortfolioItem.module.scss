@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .portfolioItem {
   transition: all 0.3s;
@@ -52,7 +53,7 @@
 }
 
 .description {
-  font-size: 15px;
+  font-size: pxtorem(15);
   line-height: 1.2;
   margin-bottom: 5px;
   display: none;
@@ -69,7 +70,7 @@
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 15px;
+  font-size: pxtorem(15);
   line-height: 1.2;
 }
 

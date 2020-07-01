@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .navigation {
   @media (min-width: $bp-lg) {
@@ -73,7 +74,7 @@
   color: $secondary-text-colour;
   padding: 5px;
   display: block;
-  font-size: 30px;
+  font-size: pxtorem(30);
   letter-spacing: 2px;
 
   @media (min-width: $bp-sm) {
@@ -81,12 +82,12 @@
   }
 
   @media (min-width: $bp-lg) {
-    font-size: 16px;
+    font-size: pxtorem(16);
     padding: 0 10px;
   }
 
   @media (min-width: $bp-xl) {
-    font-size: 18px;
+    font-size: pxtorem(18);
     padding: 0 18px;
   }
 

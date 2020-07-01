@@ -1,7 +1,8 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .copyright {
   color: $secondary-text-colour;
   text-align: center;
-  font-size: 14px;
+  font-size: pxtorem(14);
 }

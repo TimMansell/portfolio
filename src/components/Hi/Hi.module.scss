@@ -1,8 +1,9 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .hi {
   color: $secondary-text-colour;
-  font-size: 80px;
+  font-size: pxtorem(80);
   font-weight: 900;
   letter-spacing: 5px;
   line-height: 1;
@@ -16,7 +17,7 @@
 
   @media (min-width: $bp-md) {
     text-shadow: 2px 2px $tertiary-text-colour;
-    font-size: 100px;
+    font-size: pxtorem(100);
   }
 }
 

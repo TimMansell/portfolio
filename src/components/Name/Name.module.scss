@@ -1,10 +1,11 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .name {
   color: $secondary-text-colour;
   margin: 15px 0;
   padding: 0 25px;
-  font-size: 45px;
+  font-size: pxtorem(45);
   font-weight: 900;
   letter-spacing: 5px;
   line-height: 1;
@@ -17,7 +18,7 @@
 
   @media (min-width: $bp-md) {
     text-shadow: 2px 2px $tertiary-text-colour;
-    font-size: 70px;
+    font-size: pxtorem(70);
   }
 }
 
