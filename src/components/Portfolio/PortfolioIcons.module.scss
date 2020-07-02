@@ -11,8 +11,8 @@ $icon-colour-tertiary: #28ca42;
 }
 
 .icon {
-  width: 10px;
-  height: 10px;
+  width: pxtorem(10);
+  height: pxtorem(10);
   border-radius: 50%;
   margin-right: pxtorem(8);
 

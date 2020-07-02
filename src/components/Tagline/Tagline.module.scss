@@ -2,7 +2,7 @@
 @import 'utilities/pxtorem';
 
 .tagline {
-  height: 30px;
+  height: pxtorem(30);
   overflow: hidden;
   opacity: 0;
   animation: tagline 0.5s ease-in-out;
