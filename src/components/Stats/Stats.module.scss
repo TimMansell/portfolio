@@ -17,6 +17,7 @@
 
 .amount {
   font-size: pxtorem(40);
+  margin-bottom: pxtorem(12);
   text-shadow: -1px -1px darken($primary-colour, 10%);
 }
 
