@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .item {
   composes: divider from '~scss/helpers/divider.scss';
@@ -6,16 +7,16 @@
 
 .list {
   list-style-type: none;
-  font-size: 20px;
+  font-size: pxtorem(20);
   text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
 
   @media (min-width: $bp-sm) {
-    font-size: 18px;
+    font-size: pxtorem(18);
   }
 }
 
 .listitem {
-  margin-bottom: 5px;
+  margin-bottom: pxtorem(5);
 }
 
 .link {

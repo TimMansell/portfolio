@@ -1,18 +1,20 @@
+@import 'utilities/pxtorem';
+
 $icon-colour-primary: #ff5f58;
 $icon-colour-secondary: #ffbd2e;
 $icon-colour-tertiary: #28ca42;
 
 .portfolioIcons {
   display: flex;
-  padding: 10px;
+  padding: pxtorem(10);
   background: rgba(#e1e1e3, 1);
 }
 
 .icon {
-  width: 10px;
-  height: 10px;
+  width: pxtorem(10);
+  height: pxtorem(10);
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: pxtorem(8);
 
   &:first-of-type {
     background: $icon-colour-primary;
