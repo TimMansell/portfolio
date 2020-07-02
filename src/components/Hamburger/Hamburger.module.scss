@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 $mobile-menu-bg-colour: #fff;
 
@@ -33,8 +34,8 @@ $mobile-menu-bg-colour: #fff;
 .menu {
   display: block;
   position: absolute;
-  left: 18px;
-  right: 18px;
+  left: pxtorem(18);
+  right: pxtorem(18);
   height: 3px;
   background-color: $mobile-menu-bg-colour;
   transition: background 0 0.3s;
@@ -54,12 +55,12 @@ $mobile-menu-bg-colour: #fff;
   }
 
   &::before {
-    top: -10px;
+    top: pxtorem(-10);
     transition-property: top, transform;
   }
 
   &::after {
-    bottom: -10px;
+    bottom: pxtorem(-10);
     transition-property: bottom, transform;
   }
 

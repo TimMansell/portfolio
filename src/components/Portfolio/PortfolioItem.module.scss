@@ -65,7 +65,7 @@
 
 .tech {
   position: absolute;
-  bottom: 20px;
+  bottom: pxtorem(20);
   left: 0;
   width: 100%;
   padding-left: 10%;
@@ -76,7 +76,7 @@
 
 .moreinfo {
   position: absolute;
-  bottom: 10px;
+  bottom: pxtorem(10);
   width: 100%;
   left: 0;
 }
