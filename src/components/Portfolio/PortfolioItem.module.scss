@@ -23,8 +23,8 @@
 }
 
 .icon {
-  padding-left: pxtorem(5);
-  padding-right: pxtorem(5);
+  padding-left: var(--vr-xs);
+  padding-right: var(--vr-xs);
   transition: all 0.3s;
 
   &:hover {
@@ -42,20 +42,20 @@
   left: 0;
   background: rgba($primary-colour, 0.95);
   height: 100%;
-  padding: pxtorem(15);
+  padding: var(--vr);
   width: 100%;
   color: $secondary-text-colour;
   text-align: center;
 }
 
 .title {
-  margin-bottom: pxtorem(10);
+  margin-bottom: var(--vr-xs);
 }
 
 .description {
-  font-size: pxtorem(15);
+  font-size: var(--vr);
   line-height: 1.2;
-  margin-bottom: pxtorem(5);
+  margin-bottom: var(--vr-xs);
   display: none;
 
   @media (min-width: $bp-sm) {

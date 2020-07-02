@@ -13,7 +13,7 @@
 
 .text {
   margin: 0;
-  padding: pxtorem(20) 0;
+  padding: var(--vr) 0;
 }
 
 .name {

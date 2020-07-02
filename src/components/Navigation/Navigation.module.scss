@@ -54,8 +54,8 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -100px);
-    padding-left: pxtorem(16);
-    padding-right: pxtorem(16);
+    padding-left: var(--vr);
+    padding-right: var(--vr);
 
     @media (min-width: $bp-lg) {
       display: none;
@@ -76,22 +76,18 @@
   display: flex;
   align-items: center;
   color: $secondary-text-colour;
-  padding: pxtorem(5);
+  padding: var(--vr-xs);
   font-size: pxtorem(30);
   letter-spacing: pxtorem(2);
 
-  @media (min-width: $bp-sm) {
-    padding: pxtorem(1);
-  }
-
   @media (min-width: $bp-lg) {
     font-size: pxtorem(16);
-    padding: 0 pxtorem(10);
+    padding: 0 var(--vr-xs);
   }
 
   @media (min-width: $bp-xl) {
     font-size: pxtorem(18);
-    padding: 0 pxtorem(18);
+    padding: 0 var(--vr);
   }
 
   &Active,

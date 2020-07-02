@@ -19,6 +19,6 @@
   }
 
   &Padded {
-    margin-bottom: pxtorem(16);
+    margin-bottom: var(--vr);
   }
 }

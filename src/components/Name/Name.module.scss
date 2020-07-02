@@ -3,8 +3,8 @@
 
 .name {
   color: $secondary-text-colour;
-  margin: pxtorem(15) 0;
-  padding: 0 pxtorem(25);
+  margin: var(--vr) 0;
+  padding: 0 var(--vr-md);
   font-size: pxtorem(45);
   font-weight: 900;
   letter-spacing: pxtorem(5);

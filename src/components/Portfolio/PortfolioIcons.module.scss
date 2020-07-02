@@ -6,7 +6,7 @@ $icon-colour-tertiary: #28ca42;
 
 .portfolioIcons {
   display: flex;
-  padding: pxtorem(10);
+  padding: var(--vr-xs);
   background: rgba(#e1e1e3, 1);
 }
 
@@ -14,7 +14,7 @@ $icon-colour-tertiary: #28ca42;
   width: pxtorem(10);
   height: pxtorem(10);
   border-radius: 50%;
-  margin-right: pxtorem(8);
+  margin-right: var(--vr-xs);
 
   &:first-of-type {
     background: $icon-colour-primary;
