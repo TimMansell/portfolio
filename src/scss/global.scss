@@ -29,7 +29,7 @@ p {
   font-size: pxtorem(20);
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: pxtorem(25);
 }
 
 a {
