@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 $mobile-menu-bg-colour: #fff;
 
@@ -10,8 +11,8 @@ $mobile-menu-bg-colour: #fff;
   z-index: 999999;
   left: 50%;
   transform: translate(-50%, -35%);
-  width: 60px;
-  height: 60px;
+  width: pxtorem(60);
+  height: pxtorem(60);
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), 0.5);
   background-color: $primary-colour;
@@ -33,9 +34,9 @@ $mobile-menu-bg-colour: #fff;
 .menu {
   display: block;
   position: absolute;
-  left: 18px;
-  right: 18px;
-  height: 3px;
+  left: pxtorem(18);
+  right: pxtorem(18);
+  height: pxtorem(3);
   background-color: $mobile-menu-bg-colour;
   transition: background 0 0.3s;
   box-shadow: -1px -1px darken($primary-colour, 5%);
@@ -45,7 +46,7 @@ $mobile-menu-bg-colour: #fff;
     position: absolute;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: pxtorem(3);
     background-color: $mobile-menu-bg-colour;
     content: '';
     transition-duration: 0.3s, 0.3s;
@@ -54,12 +55,12 @@ $mobile-menu-bg-colour: #fff;
   }
 
   &::before {
-    top: -10px;
+    top: pxtorem(-10);
     transition-property: top, transform;
   }
 
   &::after {
-    bottom: -10px;
+    bottom: pxtorem(-10);
     transition-property: bottom, transform;
   }
 

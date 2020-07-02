@@ -1,7 +1,8 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .heading {
-  margin-bottom: 50px;
+  margin-bottom: pxtorem(50);
   text-align: center;
 
   &Primary {
@@ -20,7 +21,7 @@
 }
 
 .title {
-  font-size: 32px;
-  line-height: 36px;
-  margin-bottom: 20px;
+  font-size: pxtorem(32);
+  line-height: 1.125;
+  margin-bottom: pxtorem(20);
 }

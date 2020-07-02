@@ -1,8 +1,9 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .portfolio {
   display: grid;
-  grid-gap: 24px;
+  grid-gap: pxtorem(24);
 
   @media (min-width: $bp-lg) {
     grid-template-columns: repeat(4, 1fr);

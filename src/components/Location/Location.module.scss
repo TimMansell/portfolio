@@ -1,12 +1,13 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .location {
-  font-size: 16px;
+  font-size: pxtorem(16);
   opacity: 0;
   color: $secondary-text-colour;
   font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 26px;
+  letter-spacing: pxtorem(1);
+  line-height: 1.5;
   text-transform: uppercase;
   text-shadow: 1px 1px darken($primary-colour, 10%);
   animation: location 0.5s ease-in-out;
@@ -14,7 +15,7 @@
   animation-fill-mode: forwards;
 
   @media (min-width: $bp-md) {
-    font-size: 18px;
+    font-size: pxtorem(18);
     text-shadow: 2px 2px $tertiary-text-colour;
   }
 }
