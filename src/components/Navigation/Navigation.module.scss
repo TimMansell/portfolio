@@ -75,7 +75,7 @@
   padding: pxtorem(5);
   display: block;
   font-size: pxtorem(30);
-  letter-spacing: 2px;
+  letter-spacing: pxtorem(2);
 
   @media (min-width: $bp-sm) {
     padding: pxtorem(1);

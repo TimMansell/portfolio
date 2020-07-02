@@ -19,7 +19,7 @@ h5,
 h6 {
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: pxtorem(1);
   text-transform: uppercase;
   margin: 0;
 }

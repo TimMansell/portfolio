@@ -7,7 +7,7 @@
   padding: 0 pxtorem(25);
   font-size: pxtorem(45);
   font-weight: 900;
-  letter-spacing: 5px;
+  letter-spacing: pxtorem(5);
   line-height: 1;
   text-transform: uppercase;
   text-shadow: 3px 3px darken($primary-colour, 10%);
