@@ -2,7 +2,7 @@
 @import 'utilities/pxtorem';
 
 .skills {
-  margin-bottom: 30px;
+  margin-bottom: pxtorem(30);
   display: grid;
   grid-gap: 16px;
   color: $secondary-text-colour;
@@ -40,6 +40,6 @@
   }
 
   &__item {
-    margin-bottom: 5px;
+    margin-bottom: pxtorem(5);
   }
 }

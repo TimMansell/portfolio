@@ -23,8 +23,8 @@
 }
 
 .icon {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: pxtorem(5);
+  padding-right: pxtorem(5);
   transition: all 0.3s;
 
   &:hover {
@@ -42,20 +42,20 @@
   left: 0;
   background: rgba($primary-colour, 0.95);
   height: 100%;
-  padding: 15px;
+  padding: pxtorem(15);
   width: 100%;
   color: $secondary-text-colour;
   text-align: center;
 }
 
 .title {
-  margin-bottom: 10px;
+  margin-bottom: pxtorem(10);
 }
 
 .description {
   font-size: pxtorem(15);
   line-height: 1.2;
-  margin-bottom: 5px;
+  margin-bottom: pxtorem(5);
   display: none;
 
   @media (min-width: $bp-sm) {

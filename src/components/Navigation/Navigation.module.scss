@@ -55,8 +55,8 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -100px);
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: pxtorem(16);
+    padding-right: pxtorem(16);
 
     @media (min-width: $bp-lg) {
       display: none;
@@ -72,23 +72,23 @@
 
 .link {
   color: $secondary-text-colour;
-  padding: 5px;
+  padding: pxtorem(5);
   display: block;
   font-size: pxtorem(30);
   letter-spacing: 2px;
 
   @media (min-width: $bp-sm) {
-    padding: 1px;
+    padding: pxtorem(1);
   }
 
   @media (min-width: $bp-lg) {
     font-size: pxtorem(16);
-    padding: 0 10px;
+    padding: 0 pxtorem(10);
   }
 
   @media (min-width: $bp-xl) {
     font-size: pxtorem(18);
-    padding: 0 18px;
+    padding: 0 pxtorem(18);
   }
 
   &Active,
