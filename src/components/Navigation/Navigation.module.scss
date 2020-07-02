@@ -64,16 +64,19 @@
 }
 
 .item {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: $bp-md) {
-    display: flex;
     text-transform: uppercase;
   }
 }
 
 .link {
+  display: flex;
+  align-items: center;
   color: $secondary-text-colour;
   padding: pxtorem(5);
-  display: block;
   font-size: pxtorem(30);
   letter-spacing: pxtorem(2);
 
@@ -101,8 +104,6 @@
 
   &Sticky {
     @media (min-width: $bp-lg) {
-      display: flex;
-      align-items: center;
       text-shadow: -1px -1px darken($primary-colour, 10%);
     }
   }
