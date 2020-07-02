@@ -8,13 +8,13 @@
   z-index: 1000;
   right: pxtorem(-70);
   bottom: pxtorem(22);
-  background: $primary-colour;
+  background: var(--primary-colour);
   box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), 0.5);
   border-radius: 50%;
   transition: all 0.3s;
   width: pxtorem(50);
   height: pxtorem(50);
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
 
   @media (min-width: $bp-sm) {
     bottom: pxtorem(30);

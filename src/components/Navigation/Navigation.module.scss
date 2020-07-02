@@ -75,7 +75,7 @@
 .link {
   display: flex;
   align-items: center;
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   padding: var(--vr-xs);
   font-size: pxtorem(30);
   letter-spacing: pxtorem(2);

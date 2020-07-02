@@ -24,10 +24,10 @@
 }
 
 .link {
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
 
   &:hover {
-    color: $secondary-text-colour;
+    color: var(--secondary-text-colour);
   }
 }
 

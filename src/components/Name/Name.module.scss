@@ -2,7 +2,7 @@
 @import 'utilities/pxtorem';
 
 .name {
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   margin: var(--vr) 0;
   padding: 0 var(--vr-md);
   font-size: pxtorem(45);
@@ -13,11 +13,11 @@
   text-shadow: 3px 3px darken($primary-colour, 10%);
   opacity: 0;
   animation: title 1s ease-in-out;
-  animation-delay: $animation-name-delay;
+  animation-delay: var(--animation-name-delay);
   animation-fill-mode: forwards;
 
   @media (min-width: $bp-md) {
-    text-shadow: 2px 2px $tertiary-text-colour;
+    text-shadow: 2px 2px var(--tertiary-text-colour);
     font-size: pxtorem(70);
   }
 }

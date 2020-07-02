@@ -8,7 +8,7 @@
 
 .quote {
   font-size: pxtorem(30);
-  color: $tertiary-text-colour;
+  color: var(--tertiary-text-colour);
 }
 
 .text {

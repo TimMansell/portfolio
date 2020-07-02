@@ -1,8 +1,6 @@
 @import 'variables';
 @import 'utilities/pxtorem';
 
-$mobile-menu-bg-colour: #fff;
-
 .hamburger {
   position: fixed;
   text-indent: -9999px;
@@ -15,7 +13,7 @@ $mobile-menu-bg-colour: #fff;
   height: pxtorem(60);
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), 0.5);
-  background-color: $primary-colour;
+  background-color: var(--primary-colour);
   bottom: 0;
 
   @media (min-width: $bp-lg) {
@@ -27,7 +25,7 @@ $mobile-menu-bg-colour: #fff;
   }
 
   &Active {
-    background-color: $tertiary-colour;
+    background-color: var(--tertiary-colour);
   }
 }
 
@@ -37,7 +35,7 @@ $mobile-menu-bg-colour: #fff;
   left: pxtorem(18);
   right: pxtorem(18);
   height: pxtorem(3);
-  background-color: $mobile-menu-bg-colour;
+  background-color: var(--secondary-text-colour);
   transition: background 0 0.3s;
   box-shadow: -1px -1px darken($primary-colour, 5%);
 
@@ -47,7 +45,7 @@ $mobile-menu-bg-colour: #fff;
     left: 0;
     width: 100%;
     height: pxtorem(3);
-    background-color: $mobile-menu-bg-colour;
+    background-color: var(--secondary-text-colour);
     content: '';
     transition-duration: 0.3s, 0.3s;
     transition-delay: 0.3s, 0;

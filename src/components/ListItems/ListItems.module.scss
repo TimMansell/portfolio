@@ -5,7 +5,7 @@
   display: grid;
   grid-gap: pxtorem(16);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   text-align: center;
   margin-bottom: var(--vr-lg);
 

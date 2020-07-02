@@ -5,7 +5,7 @@
   margin-bottom: var(--vr-lg);
   display: grid;
   grid-gap: pxtorem(16);
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   text-align: center;
 
   @media (min-width: $bp-sm) {

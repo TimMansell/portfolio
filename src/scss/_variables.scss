@@ -4,10 +4,6 @@
 // Generic variables.
 //------------------------------------------
 
-$font-family-primary: 'Open Sans', sans-serif;
-$font-family-secondary: 'Open Sans', serif;
-$font-family-heading: 'Open Sans', serif;
-
 // Theme colours.
 $primary-colour: #358253;
 $secondary-colour: #2e3037;
@@ -17,11 +13,6 @@ $primary-text-colour: #333;
 $secondary-text-colour: #fff;
 $tertiary-text-colour: #000;
 
-// Animations
-$animation-tagline-delay: 5s;
-$animation-name-delay: 3.5s;
-$animation-location-delay: 5s;
-
 // Breakpoints.
 $bp-sm: 576px;
 $bp-md: 768px;
@@ -29,6 +20,22 @@ $bp-lg: 992px;
 $bp-xl: 1200px;
 
 :root {
+  --font-family-primary: 'Open Sans', sans-serif;
+  --font-family-secondary: 'Open Sans', serif;
+  --font-family-heading: 'Open Sans', serif;
+
+  // Colours.
+  --primary-colour: #{$primary-colour};
+  --secondary-colour: #{$secondary-colour};
+  --tertiary-colour: #{$tertiary-colour};
+  --primary-text-colour: #333;
+  --secondary-text-colour: #fff;
+  --tertiary-text-colour: #000;
+
+  // Borders
+  --bdr-primary: var(--secondary-colour);
+  --bdr-secondary: var(--secondary-text-colour);
+
   // Vertical rythm.
   --vr: #{pxtorem(16)};
   --vr-xxs: calc(var(--vr) / 3);
@@ -38,4 +45,9 @@ $bp-xl: 1200px;
   --vr-lg: calc(var(--vr) * 2);
   --vr-xl: calc(var(--vr) * 3);
   --vr-xxl: calc(var(--vr) * 4);
+
+  // Animations
+  --animation-tagline-delay: 5s;
+  --animation-name-delay: 3.5s;
+  --animation-location-delay: 5s;
 }

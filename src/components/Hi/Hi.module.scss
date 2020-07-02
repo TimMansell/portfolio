@@ -2,7 +2,7 @@
 @import 'utilities/pxtorem';
 
 .hi {
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   font-size: pxtorem(80);
   font-weight: 900;
   letter-spacing: pxtorem(5);
@@ -16,7 +16,7 @@
   animation-fill-mode: forwards;
 
   @media (min-width: $bp-md) {
-    text-shadow: 2px 2px $tertiary-text-colour;
+    text-shadow: 2px 2px var(--tertiary-text-colour);
     font-size: pxtorem(100);
   }
 }

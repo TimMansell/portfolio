@@ -2,7 +2,7 @@
 @import 'utilities/pxtorem';
 
 .copyright {
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   text-align: center;
   font-size: pxtorem(14);
 }

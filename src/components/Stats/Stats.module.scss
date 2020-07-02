@@ -12,7 +12,7 @@
 
 .item {
   composes: divider from '~scss/helpers/divider.scss';
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
 }
 
 .amount {
