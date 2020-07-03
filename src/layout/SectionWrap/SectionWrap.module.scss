@@ -2,14 +2,14 @@
 @import 'utilities/pxtorem';
 
 .section {
-  padding-top: pxtorem(80);
-  padding-bottom: pxtorem(80);
+  padding-top: var(--vr-xxl);
+  padding-bottom: var(--vr-xxl);
 }
 
 .container {
   width: 100%;
-  padding-left: pxtorem(20);
-  padding-right: pxtorem(20);
+  padding-left: var(--vr);
+  padding-right: var(--vr);
   margin-right: auto;
   margin-left: auto;
 
