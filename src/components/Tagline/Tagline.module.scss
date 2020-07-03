@@ -17,7 +17,7 @@
   letter-spacing: pxtorem(1);
   line-height: 1.2;
   text-transform: uppercase;
-  text-shadow: 1px 1px darken($primary-colour, 10%);
+  text-shadow: 1px 1px var(--primary-colour-2);
 
   @media (min-width: $bp-md) {
     font-size: pxtorem(26);

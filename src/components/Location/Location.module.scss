@@ -9,7 +9,7 @@
   letter-spacing: pxtorem(1);
   line-height: 1.5;
   text-transform: uppercase;
-  text-shadow: 1px 1px darken($primary-colour, 10%);
+  text-shadow: 1px 1px var(--primary-colour-2);
   animation: location 0.5s ease-in-out;
   animation-delay: var(--animation-location-delay);
   animation-fill-mode: forwards;

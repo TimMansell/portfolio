@@ -12,7 +12,7 @@
   width: pxtorem(60);
   height: pxtorem(60);
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), 0.5);
+  box-shadow: 0 0 10px var(--secondary-colour);
   background-color: var(--primary-colour);
   bottom: 0;
 
@@ -37,7 +37,7 @@
   height: pxtorem(3);
   background-color: var(--secondary-text-colour);
   transition: background 0 0.3s;
-  box-shadow: -1px -1px darken($primary-colour, 5%);
+  box-shadow: -1px -1px var(--primary-colour-1);
 
   &::after,
   &::before {
@@ -49,7 +49,7 @@
     content: '';
     transition-duration: 0.3s, 0.3s;
     transition-delay: 0.3s, 0;
-    box-shadow: -1px -1px darken($primary-colour, 5%);
+    box-shadow: -1px -1px var(--primary-colour-1);
   }
 
   &::before {

@@ -5,13 +5,12 @@
 //------------------------------------------
 
 // Theme colours.
-$primary-colour: #358253;
-$secondary-colour: #2e3037;
-$tertiary-colour: #cb0032;
-
-$primary-text-colour: #333;
-$secondary-text-colour: #fff;
-$tertiary-text-colour: #000;
+$primary-hue: 143;
+$primary-saturation: 42%;
+$secondary-hue: 227;
+$secondary-saturation: 9%;
+$tertiary-hue: 345;
+$tertiary-saturation: 100%;
 
 // Breakpoints.
 $bp-sm: 576px;
@@ -25,12 +24,20 @@ $bp-xl: 1200px;
   --font-family-heading: 'Open Sans', serif;
 
   // Colours.
-  --primary-colour: #{$primary-colour};
-  --secondary-colour: #{$secondary-colour};
-  --tertiary-colour: #{$tertiary-colour};
-  --primary-text-colour: #333;
-  --secondary-text-colour: #fff;
-  --tertiary-text-colour: #000;
+  --primary-colour: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
+  --primary-colour-transparent: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 95%);
+  --primary-colour-transparent-2: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 50%);
+  --primary-colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 31%);
+  --primary-colour-2: hsl(#{$primary-hue}, #{$primary-saturation}, 26%);
+  --primary-colour-3: hsl(#{$primary-hue}, #{$primary-saturation}, 6%);
+  --secondary-colour: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
+  --secondary-colour-1: hsl(#{$secondary-hue}, #{$secondary-saturation}, 10%);
+  --tertiary-colour: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
+
+  // Text colours.
+  --primary-text-colour: hsl(0, 0%, 20%);
+  --secondary-text-colour: hsl(0, 0%, 100%);
+  --tertiary-text-colour: hsl(0, 0%, 0%);
 
   // Borders
   --bdr-primary: var(--secondary-colour);

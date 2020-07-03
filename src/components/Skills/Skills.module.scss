@@ -26,7 +26,7 @@
 
   &__icon {
     font-size: pxtorem(65);
-    text-shadow: -1px -1px darken($primary-colour, 10%);
+    text-shadow: -1px -1px var(--primary-colour-2);
   }
 
   &__list {

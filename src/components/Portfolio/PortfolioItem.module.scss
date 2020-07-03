@@ -36,11 +36,11 @@
 .info {
   position: absolute;
   transform: translateY(100%);
-  text-shadow: -1px -1px darken($primary-colour, 10%);
+  text-shadow: -1px -1px var(--primary-colour-2);
   transition: all 0.3s;
   top: 0;
   left: 0;
-  background: rgba($primary-colour, 0.95);
+  background: var(--primary-colour-transparent);
   height: 100%;
   padding: var(--vr);
   width: 100%;

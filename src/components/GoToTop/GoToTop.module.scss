@@ -9,7 +9,7 @@
   right: pxtorem(-70);
   bottom: pxtorem(22);
   background: var(--primary-colour);
-  box-shadow: 0 0 10px rgba(darken($primary-colour, 30%), 0.5);
+  box-shadow: 0 0 10px -1px var(--secondary-colour);
   border-radius: 50%;
   transition: all 0.3s;
   width: pxtorem(50);
@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    background: darken($primary-colour, 13%);
+    background: var(--primary-colour-2);
   }
 }
 
