@@ -1,33 +1,39 @@
 @import 'utilities/pxtorem';
 
-$icon-colour-primary: #ff5f58;
-$icon-colour-secondary: #ffbd2e;
-$icon-colour-tertiary: #28ca42;
+:root {
+  --icon-background: hsl(240, 3%, 89%);
+  --icon-colour-primary: hsl(3, 100%, 67%);
+  --icon-colour-primary-shadow: hsl(3, 100%, 42%);
+  --icon-colour-secondary: hsl(41, 100%, 59%);
+  --icon-colour-secondary-shadow: hsl(41, 100%, 34%);
+  --icon-colour-tertiary: hsl(130, 67%, 47%);
+  --icon-colour-tertiary-shadow: hsl(130, 67%, 22%);
+}
 
 .portfolioIcons {
   display: flex;
-  padding: pxtorem(10);
-  background: rgba(#e1e1e3, 1);
+  padding: var(--vr-xs);
+  background: var(--icon-background);
 }
 
 .icon {
   width: pxtorem(10);
   height: pxtorem(10);
   border-radius: 50%;
-  margin-right: pxtorem(8);
+  margin-right: var(--vr-xs);
 
   &:first-of-type {
-    background: $icon-colour-primary;
-    box-shadow: inset 0 0 1px darken($icon-colour-primary, 25%);
+    background: var(--icon-colour-primary);
+    box-shadow: inset 0 0 1px var(--icon-colour-primary-shadow);
   }
 
   &:nth-of-type(2) {
-    background: $icon-colour-secondary;
-    box-shadow: inset 0 0 1px darken($icon-colour-secondary, 25%);
+    background: var(--icon-colour-secondary);
+    box-shadow: inset 0 0 1px var(--icon-colour-secondary-shadow);
   }
 
   &:last-of-type {
-    background: $icon-colour-tertiary;
-    box-shadow: inset 0 0 1px darken($icon-colour-tertiary, 25%);
+    background: var(--icon-colour-tertiary);
+    box-shadow: inset 0 0 1px var(--icon-colour-tertiary-shadow);
   }
 }
