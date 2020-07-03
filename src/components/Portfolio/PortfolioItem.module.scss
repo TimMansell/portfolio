@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .portfolioItem {
   transition: all 0.3s;
@@ -22,8 +23,8 @@
 }
 
 .icon {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: var(--vr-xs);
+  padding-right: var(--vr-xs);
   transition: all 0.3s;
 
   &:hover {
@@ -35,26 +36,26 @@
 .info {
   position: absolute;
   transform: translateY(100%);
-  text-shadow: -1px -1px darken($primary-colour, 10%);
+  text-shadow: -1px -1px var(--colour-1-alt-2);
   transition: all 0.3s;
   top: 0;
   left: 0;
-  background: rgba($primary-colour, 0.95);
+  background: var(--colour-1-transparent);
   height: 100%;
-  padding: 15px;
+  padding: var(--vr);
   width: 100%;
-  color: $secondary-text-colour;
+  color: var(--secondary-text-colour);
   text-align: center;
 }
 
 .title {
-  margin-bottom: 10px;
+  margin-bottom: var(--vr-xs);
 }
 
 .description {
-  font-size: 15px;
+  font-size: var(--vr);
   line-height: 1.2;
-  margin-bottom: 5px;
+  margin-bottom: var(--vr-xs);
   display: none;
 
   @media (min-width: $bp-sm) {
@@ -64,18 +65,18 @@
 
 .tech {
   position: absolute;
-  bottom: 20px;
+  bottom: pxtorem(20);
   left: 0;
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 15px;
+  font-size: pxtorem(15);
   line-height: 1.2;
 }
 
 .moreinfo {
   position: absolute;
-  bottom: 10px;
+  bottom: pxtorem(10);
   width: 100%;
   left: 0;
 }

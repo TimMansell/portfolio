@@ -1,10 +1,11 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .skills {
-  margin-bottom: 30px;
+  margin-bottom: var(--vr-lg);
   display: grid;
-  grid-gap: 16px;
-  color: $secondary-text-colour;
+  grid-gap: pxtorem(16);
+  color: var(--secondary-text-colour);
   text-align: center;
 
   @media (min-width: $bp-sm) {
@@ -24,21 +25,21 @@
   }
 
   &__icon {
-    font-size: 65px;
-    text-shadow: -1px -1px darken($primary-colour, 10%);
+    font-size: pxtorem(65);
+    text-shadow: -1px -1px var(--colour-1-alt-2);
   }
 
   &__list {
     list-style-type: none;
-    font-size: 20px;
+    font-size: pxtorem(20);
     text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
 
     @media (min-width: $bp-sm) {
-      font-size: 18px;
+      font-size: pxtorem(18);
     }
   }
 
   &__item {
-    margin-bottom: 5px;
+    margin-bottom: var(--vr-xs);
   }
 }

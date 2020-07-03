@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .testimonials {
   padding: 0 15%;
@@ -6,15 +7,15 @@
 }
 
 .quote {
-  font-size: 30px;
-  color: $tertiary-text-colour;
+  font-size: pxtorem(30);
+  color: var(--tertiary-text-colour);
 }
 
 .text {
   margin: 0;
-  padding: 20px 0;
+  padding: var(--vr) 0;
 }
 
 .name {
-  font-size: 14px;
+  font-size: pxtorem(14);
 }

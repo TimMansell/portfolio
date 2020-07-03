@@ -1,13 +1,14 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .navigation {
   @media (min-width: $bp-lg) {
     width: 100%;
-    height: 60px;
+    height: pxtorem(60);
     position: absolute;
     bottom: 0 !important;
+    background-color: rgba(#000, 0.7);
     z-index: 999999;
-    background-color: rgba($tertiary-text-colour, 0.7);
   }
 
   &Active {
@@ -17,7 +18,7 @@
     left: 0;
     right: 0;
     z-index: 999999;
-    background-color: rgba($tertiary-text-colour, 0.8);
+    background-color: rgba(#000, 0.8);
 
     @media (min-width: $bp-lg) {
       position: relative;
@@ -28,8 +29,8 @@
     @media (min-width: $bp-lg) {
       position: fixed;
       top: 0 !important;
-      box-shadow: inset 0 -1px darken($primary-colour, 10%), 0 1px 1px rgba(0, 0, 0, 0.2);
-      background-color: rgba($primary-colour, 0.95);
+      box-shadow: inset 0 -1px var(--colour-1-alt-2), 0 1px 1px rgba(#000, 0.2);
+      background-color: var(--colour-1-transparent);
     }
   }
 }
@@ -43,6 +44,7 @@
   @media (min-width: $bp-lg) {
     display: flex;
     justify-content: center;
+    height: 100%;
   }
 
   &Active {
@@ -52,8 +54,8 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -100px);
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: var(--vr);
+    padding-right: var(--vr);
 
     @media (min-width: $bp-lg) {
       display: none;
@@ -62,44 +64,43 @@
 }
 
 .item {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: $bp-md) {
-    line-height: 60px;
     text-transform: uppercase;
   }
 }
 
 .link {
-  color: $secondary-text-colour;
-  padding: 5px;
-  display: block;
-  font-size: 30px;
-  letter-spacing: 2px;
-
-  @media (min-width: $bp-sm) {
-    padding: 1px;
-  }
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-colour);
+  padding: var(--vr-xxs);
+  font-size: pxtorem(30);
+  letter-spacing: pxtorem(2);
 
   @media (min-width: $bp-lg) {
-    font-size: 16px;
-    padding: 0 10px;
+    font-size: pxtorem(16);
+    padding: 0 var(--vr-xs);
   }
 
   @media (min-width: $bp-xl) {
-    font-size: 18px;
-    padding: 0 18px;
+    font-size: pxtorem(18);
+    padding: 0 var(--vr);
   }
 
   &Active,
   &:hover {
     @media (min-width: $bp-lg) {
-      background-color: darken($primary-colour, 10%);
-      box-shadow: inset 1px 0 darken($primary-colour, 11%), inset -1px 0 darken($primary-colour, 11%);
+      background-color: var(--colour-1-alt-2);
+      box-shadow: inset 1px 0 var(--colour-1-alt-2), inset -1px 0 var(--colour-1-alt-2);
     }
   }
 
   &Sticky {
     @media (min-width: $bp-lg) {
-      text-shadow: -1px -1px darken($primary-colour, 10%);
+      text-shadow: -1px -1px var(--colour-1-alt-2);
     }
   }
 }

@@ -1,27 +1,67 @@
+@import 'utilities/pxtorem';
+
 //------------------------------------------
 // Generic variables.
 //------------------------------------------
 
-$font-family-primary: 'Open Sans', sans-serif;
-$font-family-secondary: 'Open Sans', serif;
-$font-family-heading: 'Open Sans', serif;
-
 // Theme colours.
-$primary-colour: #358253;
-$secondary-colour: #2e3037;
-$tertiary-colour: #cb0032;
-
-$primary-text-colour: #333;
-$secondary-text-colour: #fff;
-$tertiary-text-colour: #000;
-
-// Animations
-$animation-tagline-delay: 5s;
-$animation-name-delay: 3.5s;
-$animation-location-delay: 5s;
+$primary-hue: 143;
+$primary-saturation: 42%;
+$secondary-hue: 227;
+$secondary-saturation: 9%;
+$tertiary-hue: 345;
+$tertiary-saturation: 100%;
 
 // Breakpoints.
 $bp-sm: 576px;
 $bp-md: 768px;
 $bp-lg: 992px;
 $bp-xl: 1200px;
+
+:root {
+  --font-family-primary: 'Open Sans', sans-serif;
+  --font-family-secondary: 'Open Sans', serif;
+  --font-family-heading: 'Open Sans', serif;
+
+  // Colours.
+  --colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
+  --colour-2: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
+  --colour-3: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
+  --colour-4: hsl(0, 0%, 20%);
+  --colour-5: hsl(0, 0%, 100%);
+  --colour-6: hsl(0, 0%, 0%);
+
+  // Colour variations.
+  --colour-1-alt-1: hsl(#{$primary-hue}, #{$primary-saturation}, 31%);
+  --colour-1-alt-2: hsl(#{$primary-hue}, #{$primary-saturation}, 26%);
+  --colour-2-alt-1: hsl(#{$secondary-hue}, #{$secondary-saturation}, 10%);
+
+  // Transparent colours.
+  --colour-1-transparent: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 95%);
+  --colour-1-transparent-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 50%);
+
+  // Text colours.
+  --primary-text-colour: var(--colour-4);
+  --secondary-text-colour: var(--colour-5);
+  --tertiary-text-colour: var(--colour-6);
+
+  // Borders
+  --bdr-primary: var(--colour-2);
+  --bdr-secondary: var(--colour-5);
+
+  // Vertical rythm.
+  --vr: #{pxtorem(16)};
+  --vr-xxs: calc(var(--vr) / 3);
+  --vr-xs: calc(var(--vr) / 2);
+  --vr-sm: var(--vr);
+  --vr-md: calc(var(--vr) * 1.5);
+  --vr-lg: calc(var(--vr) * 2);
+  --vr-xl: calc(var(--vr) * 3);
+  --vr-xxl: calc(var(--vr) * 4);
+  --vr-xxxl: calc(var(--vr) * 5);
+
+  // Animations
+  --animation-tagline-delay: 5s;
+  --animation-name-delay: 3.5s;
+  --animation-location-delay: 5s;
+}

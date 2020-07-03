@@ -1,22 +1,23 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 .hi {
-  color: $secondary-text-colour;
-  font-size: 80px;
+  color: var(--secondary-text-colour);
+  font-size: pxtorem(80);
   font-weight: 900;
-  letter-spacing: 5px;
+  letter-spacing: pxtorem(5);
   line-height: 1;
   height: 0;
   margin: 0;
   text-transform: uppercase;
-  text-shadow: 3px 3px darken($primary-colour, 10%);
+  text-shadow: 3px 3px var(--colour-1-alt-2);
   opacity: 0;
   animation: hi 3s ease-in-out;
   animation-fill-mode: forwards;
 
   @media (min-width: $bp-md) {
-    text-shadow: 2px 2px $tertiary-text-colour;
-    font-size: 100px;
+    text-shadow: 2px 2px var(--tertiary-text-colour);
+    font-size: pxtorem(100);
   }
 }
 
