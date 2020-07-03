@@ -8,8 +8,8 @@
   z-index: 1000;
   right: pxtorem(-70);
   bottom: pxtorem(22);
-  background: var(--primary-colour);
-  box-shadow: 0 0 10px -1px var(--secondary-colour);
+  background: var(--colour-1);
+  box-shadow: 0 0 10px -1px var(--colour-2);
   border-radius: 50%;
   transition: all 0.3s;
   width: pxtorem(50);
@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    background: var(--primary-colour-2);
+    background: var(--colour-1-alt-2);
   }
 }
 

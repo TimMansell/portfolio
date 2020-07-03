@@ -29,8 +29,8 @@
     @media (min-width: $bp-lg) {
       position: fixed;
       top: 0 !important;
-      box-shadow: inset 0 -1px var(--primary-colour-2), 0 1px 1px rgba(#000, 0.2);
-      background-color: var(--primary-colour-transparent);
+      box-shadow: inset 0 -1px var(--colour-1-alt-2), 0 1px 1px rgba(#000, 0.2);
+      background-color: var(--colour-1-transparent);
     }
   }
 }
@@ -93,14 +93,14 @@
   &Active,
   &:hover {
     @media (min-width: $bp-lg) {
-      background-color: var(--primary-colour-2);
-      box-shadow: inset 1px 0 var(--primary-colour-2), inset -1px 0 var(--primary-colour-2);
+      background-color: var(--colour-1-alt-2);
+      box-shadow: inset 1px 0 var(--colour-1-alt-2), inset -1px 0 var(--colour-1-alt-2);
     }
   }
 
   &Sticky {
     @media (min-width: $bp-lg) {
-      text-shadow: -1px -1px var(--primary-colour-2);
+      text-shadow: -1px -1px var(--colour-1-alt-2);
     }
   }
 }

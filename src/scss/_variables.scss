@@ -24,24 +24,30 @@ $bp-xl: 1200px;
   --font-family-heading: 'Open Sans', serif;
 
   // Colours.
-  --primary-colour: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
-  --primary-colour-transparent: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 95%);
-  --primary-colour-transparent-2: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 50%);
-  --primary-colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 31%);
-  --primary-colour-2: hsl(#{$primary-hue}, #{$primary-saturation}, 26%);
-  --primary-colour-3: hsl(#{$primary-hue}, #{$primary-saturation}, 6%);
-  --secondary-colour: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
-  --secondary-colour-1: hsl(#{$secondary-hue}, #{$secondary-saturation}, 10%);
-  --tertiary-colour: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
+  --colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
+  --colour-2: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
+  --colour-3: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
+  --colour-4: hsl(0, 0%, 20%);
+  --colour-5: hsl(0, 0%, 100%);
+  --colour-6: hsl(0, 0%, 0%);
+
+  // Colour variations.
+  --colour-1-alt-1: hsl(#{$primary-hue}, #{$primary-saturation}, 31%);
+  --colour-1-alt-2: hsl(#{$primary-hue}, #{$primary-saturation}, 26%);
+  --colour-2-alt-1: hsl(#{$secondary-hue}, #{$secondary-saturation}, 10%);
+
+  // Transparent colours.
+  --colour-1-transparent: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 95%);
+  --colour-1-transparent-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 50%);
 
   // Text colours.
-  --primary-text-colour: hsl(0, 0%, 20%);
-  --secondary-text-colour: hsl(0, 0%, 100%);
-  --tertiary-text-colour: hsl(0, 0%, 0%);
+  --primary-text-colour: var(--colour-4);
+  --secondary-text-colour: var(--colour-5);
+  --tertiary-text-colour: var(--colour-6);
 
   // Borders
-  --bdr-primary: var(--secondary-colour);
-  --bdr-secondary: var(--secondary-text-colour);
+  --bdr-primary: var(--colour-2);
+  --bdr-secondary: var(--colour-5);
 
   // Vertical rythm.
   --vr: #{pxtorem(16)};
@@ -52,6 +58,7 @@ $bp-xl: 1200px;
   --vr-lg: calc(var(--vr) * 2);
   --vr-xl: calc(var(--vr) * 3);
   --vr-xxl: calc(var(--vr) * 4);
+  --vr-xxxl: calc(var(--vr) * 5);
 
   // Animations
   --animation-tagline-delay: 5s;
