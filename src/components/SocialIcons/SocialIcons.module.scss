@@ -4,24 +4,23 @@
 .social {
   display: flex;
   justify-content: center;
-  margin-bottom: pxtorem(30);
+  margin-bottom: var(--vr-lg);
 }
 
 .icon {
   display: flex;
   justify-content: center;
-  background: $primary-colour;
-  padding: pxtorem(15);
+  background: var(--colour-1);
+  padding: var(--vr);
   border-radius: 50%;
-  // color: $icon-colour;
-  text-shadow: -1px -1px darken($primary-colour, 10%);
-  margin: 0 pxtorem(15);
+  text-shadow: -1px -1px var(--colour-1-alt-2);
+  margin: 0 var(--vr);
   transition: box-shadow 0.3s, background 0.3s;
   width: pxtorem(60);
   height: pxtorem(60);
 
   &:hover {
-    background: darken($primary-colour, 10%);
-    box-shadow: 0 0 0 5px rgba($primary-colour, 0.5);
+    background: var(--colour-1-alt-2);
+    box-shadow: 0 0 0 5px var(--colour-1-transparent-2);
   }
 }

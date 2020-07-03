@@ -3,8 +3,8 @@
 
 .icon {
   font-size: pxtorem(80);
-  text-shadow: -1px -1px darken($primary-colour, 10%);
-  color: $secondary-text-colour;
+  text-shadow: -1px -1px var(--colour-1-alt-2);
+  color: var(--secondary-text-colour);
 
   &Md {
     font-size: pxtorem(65);
@@ -19,6 +19,6 @@
   }
 
   &Padded {
-    margin-bottom: pxtorem(16);
+    margin-bottom: var(--vr);
   }
 }
