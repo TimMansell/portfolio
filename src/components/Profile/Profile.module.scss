@@ -1,5 +1,7 @@
+@import 'utilities/pxtorem';
+
 .profile {
-  margin-bottom: 60px;
+  margin-bottom: var(--vr-xxl);
   text-align: center;
 }
 

@@ -6,13 +6,13 @@
 
 .img {
   @media (min-width: $bp-md) {
-    background-image: url('./img/hero.jpg');
-    background-position: center;
-    background-size: cover;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
+    background-image: url('./img/hero.jpg');
+    background-position: center;
+    background-size: cover;
     filter: blur(3px);
   }
 }

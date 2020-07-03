@@ -1,13 +1,13 @@
 @import 'variables';
+@import 'utilities/pxtorem';
 
 html {
-  font-size: 62.5%;
   height: 100%;
 }
 
 body {
-  font-family: $font-family-primary;
-  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-size: pxtorem(16);
   height: 100%;
 }
 
@@ -19,17 +19,17 @@ h5,
 h6 {
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: pxtorem(1);
   text-transform: uppercase;
   margin: 0;
 }
 
 p {
-  font-family: $font-family-primary;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: var(--font-family-primary);
+  font-size: pxtorem(20);
+  line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: var(--vr-md);
 }
 
 a {
@@ -40,7 +40,7 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $secondary-text-colour;
+    color: var(--secondary-text-colour);
     outline: none;
   }
 }
