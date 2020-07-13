@@ -43,12 +43,6 @@ describe('Navigation', () => {
       cy.get('#portfolio').should('be.visible');
     });
 
-    it('clicking on presentations item should scroll page to presentations section', () => {
-      cy.get('[data-e2e="navigation-presentations"]').click();
-
-      cy.get('#presentations').should('be.visible');
-    });
-
     it('clicking on testimonials item should scroll page to testimonials section', () => {
       cy.get('[data-e2e="navigation-testimonials"]').click();
 
