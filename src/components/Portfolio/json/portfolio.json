@@ -1,8 +1,8 @@
 [
     {
         "title": "Solitaire (2020)",
-        "src": "./img/solitaire.jpg",
-        "thumb": "./img/solitaire.jpg",
+        "src": "./img/solitaire-project.jpg",
+        "thumb": "./img/solitaire-project.jpg",
         "description": "I built a Solitaire game.",
         "tech": "Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack",
         "url": "https://solitaire.timmansell.com"
