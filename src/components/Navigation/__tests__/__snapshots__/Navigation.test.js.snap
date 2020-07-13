@@ -70,17 +70,6 @@ exports[`Navigation should match snapshot 1`] = `
     >
       <a
         className="link"
-        data-e2e="navigation-presentations"
-        onClick={[Function]}
-      >
-        Presentations
-      </a>
-    </li>
-    <li
-      className="item"
-    >
-      <a
-        className="link"
         data-e2e="navigation-testimonials"
         onClick={[Function]}
       >

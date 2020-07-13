@@ -123,20 +123,6 @@ export const Navigation = () => {
         </li>
         <li className={styles.item}>
           <Link
-            data-e2e="navigation-presentations"
-            className={linkClasses}
-            activeClass={styles.linkActive}
-            to="presentations"
-            smooth={true}
-            spy={true}
-            duration={500}
-            onClick={() => closeMenu()}
-          >
-            Presentations
-          </Link>
-        </li>
-        <li className={styles.item}>
-          <Link
             data-e2e="navigation-testimonials"
             className={linkClasses}
             activeClass={styles.linkActive}
