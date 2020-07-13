@@ -31,4 +31,20 @@
         "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
         "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
     }
+    ,
+    {
+        "title": "Web components presentation (2015)",
+        "src": "./img/web-components-presentation.jpg",
+        "thumb": "./img/web-components-presentation.jpg",
+        "description": "A talk about Web Components",
+        "url": "//web-components.timmansell.com"
+    }
+    ,
+    {
+        "title": "SASS Knowledgeshare (2014)",
+        "src": "./img/sass-compass-presentation.jpg",
+        "thumb": "./img/sass-compass-presentation.jpg",
+        "description": "A talk about SASS and Compass",
+        "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+    }
 ]
