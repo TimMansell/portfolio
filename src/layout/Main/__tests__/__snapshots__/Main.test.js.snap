@@ -1462,6 +1462,140 @@ exports[`Main should match snapshot 1`] = `
             </div>
           </div>
         </div>
+        <div
+          className="portfolioItem"
+        >
+          <div
+            className="portfolioIcons"
+          >
+            <div
+              className="icon"
+            />
+            <div
+              className="icon"
+            />
+            <div
+              className="icon"
+            />
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+          <div
+            className="info"
+          >
+            <h3
+              className="title"
+            >
+              Web components presentation (2015)
+            </h3>
+            <p
+              className="description"
+            >
+              A talk about Web Components
+            </p>
+            <p
+              className="tech"
+            />
+            <div
+              className="moreinfo"
+            >
+              <a
+                href="//web-components.timmansell.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="portfolioItem"
+        >
+          <div
+            className="portfolioIcons"
+          >
+            <div
+              className="icon"
+            />
+            <div
+              className="icon"
+            />
+            <div
+              className="icon"
+            />
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+          <div
+            className="info"
+          >
+            <h3
+              className="title"
+            >
+              SASS Knowledgeshare (2014)
+            </h3>
+            <p
+              className="description"
+            >
+              A talk about SASS and Compass
+            </p>
+            <p
+              className="tech"
+            />
+            <div
+              className="moreinfo"
+            >
+              <a
+                href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Visit website"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
+                  data-icon="desktop"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1616,86 +1750,6 @@ exports[`Main should match snapshot 1`] = `
           >
             coffees
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section
-    className="section bgSecondary"
-    id="presentations"
-  >
-    <div
-      className="container"
-    >
-      <div
-        className="heading headingTertiary"
-      >
-        <div>
-          <h2
-            aria-label="Presentations"
-            className="title"
-            data-test="heading-title"
-          >
-            Presentations
-          </h2>
-        </div>
-        <p
-          data-test="heading-description"
-        >
-          Some talks I have done
-        </p>
-      </div>
-      <div
-        className="items"
-      >
-        <div
-          className="item"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-chalkboard-teacher fa-w-20 icon iconMd iconPadded"
-            data-icon="chalkboard-teacher"
-            data-prefix="fa"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 640 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          <ul
-            className="list"
-          >
-            <li
-              className="listitem"
-            >
-              <a
-                className="link"
-                href="//web-components.timmansell.com"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Web components
-              </a>
-            </li>
-            <li
-              className="listitem"
-            >
-              <a
-                className="link"
-                href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                CSS with superpowers
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

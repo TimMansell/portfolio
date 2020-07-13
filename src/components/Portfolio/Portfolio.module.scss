@@ -6,6 +6,6 @@
   grid-gap: pxtorem(24);
 
   @media (min-width: $bp-lg) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

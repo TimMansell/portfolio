@@ -8,7 +8,6 @@ import RetiredSkills from 'components/RetiredSkills';
 import CurrentStack from 'components/CurrentStack';
 import Portfolio from 'components/Portfolio';
 import Stats from 'components/Stats';
-import Presentations from 'components/Presentations';
 import Testimonials from 'components/Testimonials';
 import Footer from 'components/Footer';
 
@@ -39,10 +38,6 @@ const Main = () => {
 
       <SectionWrap id="stats" background="primary">
         <Stats />
-      </SectionWrap>
-
-      <SectionWrap id="presentations" background="secondary">
-        <Presentations />
       </SectionWrap>
 
       <SectionWrap id="testimonials" background="tertiary">
