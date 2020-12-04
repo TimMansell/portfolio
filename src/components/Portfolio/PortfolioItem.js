@@ -11,15 +11,24 @@ import { IconDesktop } from 'components/Icon';
 import Image from '../Image';
 
 export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
-  const src = {
-    img: require(`./img/${thumb}.jpg`),
-  };
+  const srcs = [
+    {
+      type: 'avif',
+      src: require(`./img/${thumb}.avif`),
+    },
+    {
+      type: 'webp',
+      src: require(`./img/${thumb}.webp`),
+    },
+  ];
+
+  const fallback = require(`./img/${thumb}.jpg`);
 
   return (
     <div className={styles.portfolioItem}>
       <PortfolioIcons />
       <InViewport>
-        <Image src={src} name={title} />
+        <Image srcs={srcs} name={title} fallback={fallback} />
       </InViewport>
 
       <div className={styles.info}>
@@ -42,6 +51,8 @@ export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
   );
 };
 
+export default PortfolioItem;
+
 PortfolioItem.propTypes = {
   thumb: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
@@ -49,5 +60,3 @@ PortfolioItem.propTypes = {
   tech: PropTypes.string,
   url: PropTypes.string.isRequired,
 };
-
-export default PortfolioItem;

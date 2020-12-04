@@ -6,14 +6,17 @@ import Image from '../Image';
 import styles from './CurrentStack.module.scss';
 
 export const SkillsItem = ({ url, img, name, width }) => {
-  const src = {
-    img: require(`./img/${img}`),
-  };
+  const srcs = [
+    {
+      type: 'svg+xml',
+      src: require(`./img/${img}.svg`),
+    },
+  ];
 
   return (
     <div className={styles.item}>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <Image src={src} name={name} width={width} />
+        <Image srcs={srcs} name={name} width={width} />
       </a>
     </div>
   );
