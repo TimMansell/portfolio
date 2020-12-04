@@ -9,7 +9,7 @@ export const SkillsItem = ({ url, img, name, width }) => {
   const srcs = [
     {
       type: 'svg+xml',
-      src: require(`./img/${img}.svg`),
+      src: require(`./img/${img}`),
     },
   ];
 

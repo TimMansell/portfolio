@@ -1,48 +1,66 @@
 [
   {
     "title": "Solitaire (2020)",
-    "src": "solitaire-project",
-    "thumb": "solitaire-project",
     "description": "I built a Solitaire game.",
     "tech": "Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack",
-    "url": "https://solitaire.timmansell.com"
+    "url": "https://solitaire.timmansell.com",
+    "src": {
+      "name": "solitaire-project",
+      "types": ["avif", "webp"],
+      "fallback": "jpg"
+    }
   },
   {
     "title": "Find a Course (2018 - 2020)",
-    "src": "unimelb",
-    "thumb": "unimelb",
     "description": "University of Melbourne's study portal.",
     "tech": "VueJS, NuxtJS, PostCSS, ES6/Babel, and Webpack",
-    "url": "https://study.unimelb.edu.au/find"
+    "url": "https://study.unimelb.edu.au/find",
+    "src": {
+      "name": "unimelb",
+      "types": ["avif", "webp"],
+      "fallback": "jpg"
+    }
   },
   {
     "title": "myBupa (2016 - 2017)",
-    "src": "my-bupa",
-    "thumb": "my-bupa",
     "description": "Responsive website rebuild.  Built on top of .NET stack.",
     "tech": "AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.",
-    "url": "https://my.bupa.com.au"
+    "url": "https://my.bupa.com.au",
+    "src": {
+      "name": "my-bupa",
+      "types": ["avif", "webp"],
+      "fallback": "jpg"
+    }
   },
   {
     "title": "Captain's Choice (2016)",
-    "src": "captains-choice",
-    "thumb": "captains-choice",
     "description": "Responsive website rebuild. Built on top of .NET stack.",
     "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
-    "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
+    "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/",
+    "src": {
+      "name": "captains-choice",
+      "types": ["avif", "webp"],
+      "fallback": "jpg"
+    }
   },
   {
     "title": "Web components presentation (2015)",
-    "src": "web-components-presentation",
-    "thumb": "web-components-presentation",
     "description": "A talk about Web Components",
-    "url": "//web-components.timmansell.com"
+    "url": "//web-components.timmansell.com",
+    "src": {
+      "name": "web-components-presentation",
+      "types": ["avif", "webp"],
+      "fallback": "jpg"
+    }
   },
   {
     "title": "SASS Knowledgeshare (2014)",
-    "src": "sass-compass-presentation",
-    "thumb": "sass-compass-presentation",
     "description": "A talk about SASS and Compass",
-    "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+    "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY",
+    "src": {
+      "name": "sass-compass-presentation",
+      "types": ["avif", "webp"],
+      "fallback": "jpg"
+    }
   }
 ]

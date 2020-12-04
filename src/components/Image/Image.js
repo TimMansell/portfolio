@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import styles from './Image.module.scss';
 
-export const Image = ({ srcs, name, width, fallback }) => {
+export const Image = ({ srcs, name, width, defaultImg }) => {
   const fallbackImg =
-    srcs.length === 1 || fallback ? (
-      <img className={styles.img} alt={name} src={fallback} width={width} />
+    srcs.length === 1 || defaultImg ? (
+      <img className={styles.img} alt={name} src={defaultImg} width={width} />
     ) : (
       ''
     );
@@ -24,7 +24,7 @@ export const Image = ({ srcs, name, width, fallback }) => {
 
 Image.propTypes = {
   srcs: PropTypes.array.isRequired,
-  fallback: PropTypes.string,
+  defaultImg: PropTypes.string,
   name: PropTypes.string.isRequired,
   width: PropTypes.string,
 };

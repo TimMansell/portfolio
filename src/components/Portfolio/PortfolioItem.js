@@ -10,25 +10,19 @@ import { IconDesktop } from 'components/Icon';
 
 import Image from '../Image';
 
-export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
-  const srcs = [
-    {
-      type: 'avif',
-      src: require(`./img/${thumb}.avif`),
-    },
-    {
-      type: 'webp',
-      src: require(`./img/${thumb}.webp`),
-    },
-  ];
-
-  const fallback = require(`./img/${thumb}.jpg`);
+export const PortfolioItem = ({ src, title, description, tech, url }) => {
+  const { name, types, fallback } = src;
+  const srcs = types.map((type) => ({
+    type,
+    src: require(`./img/${name}.${type}`),
+  }));
+  const defaultImg = require(`./img/${name}.${fallback}`);
 
   return (
     <div className={styles.portfolioItem}>
       <PortfolioIcons />
       <InViewport>
-        <Image srcs={srcs} name={title} fallback={fallback} />
+        <Image srcs={srcs} name={title} defaultImg={defaultImg} />
       </InViewport>
 
       <div className={styles.info}>
@@ -54,7 +48,7 @@ export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  thumb: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.string,
