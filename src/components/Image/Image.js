@@ -5,13 +5,9 @@ import styles from './Image.module.scss';
 
 export const Image = ({ src, name, width }) => {
   return (
-    <img
-      src={src}
-      alt={name}
-      className={styles.img}
-      width={width}
-      title={name}
-    />
+    <picture title={name}>
+      <img className={styles.img} alt={name} src={src.img} width={width} />
+    </picture>
   );
 };
 

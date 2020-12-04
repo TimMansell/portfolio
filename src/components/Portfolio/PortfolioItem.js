@@ -11,7 +11,9 @@ import { IconDesktop } from 'components/Icon';
 import Image from '../Image';
 
 export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
-  const src = require(`${thumb}`);
+  const src = {
+    img: require(`./img/${thumb}.jpg`),
+  };
 
   return (
     <div className={styles.portfolioItem}>
@@ -44,7 +46,7 @@ PortfolioItem.propTypes = {
   thumb: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tech: PropTypes.string.isRequired,
+  tech: PropTypes.string,
   url: PropTypes.string.isRequired,
 };
 

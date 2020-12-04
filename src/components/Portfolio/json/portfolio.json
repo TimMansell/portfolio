@@ -1,50 +1,48 @@
 [
-    {
-        "title": "Solitaire (2020)",
-        "src": "./img/solitaire-project.jpg",
-        "thumb": "./img/solitaire-project.jpg",
-        "description": "I built a Solitaire game.",
-        "tech": "Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack",
-        "url": "https://solitaire.timmansell.com"
-    },
-    {
-        "title": "Find a Course (2018 - 2020)",
-        "src": "./img/unimelb.jpg",
-        "thumb": "./img/unimelb.jpg",
-        "description": "University of Melbourne's study portal.",
-        "tech": "VueJS, NuxtJS, PostCSS, ES6/Babel, and Webpack",
-        "url": "https://study.unimelb.edu.au/find"
-    },
-    {
-        "title": "myBupa (2016 - 2017)",
-        "src": "./img/my-bupa.jpg",
-        "thumb": "./img/my-bupa.jpg",
-        "description": "Responsive website rebuild.  Built on top of .NET stack.",
-        "tech": "AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.",
-        "url": "https://my.bupa.com.au"
-    },
-    {
-        "title": "Captain's Choice (2016)",
-        "src": "./img/captains-choice.jpg",
-        "thumb": "./img/captains-choice.jpg",
-        "description": "Responsive website rebuild. Built on top of .NET stack.",
-        "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
-        "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
-    }
-    ,
-    {
-        "title": "Web components presentation (2015)",
-        "src": "./img/web-components-presentation.jpg",
-        "thumb": "./img/web-components-presentation.jpg",
-        "description": "A talk about Web Components",
-        "url": "//web-components.timmansell.com"
-    }
-    ,
-    {
-        "title": "SASS Knowledgeshare (2014)",
-        "src": "./img/sass-compass-presentation.jpg",
-        "thumb": "./img/sass-compass-presentation.jpg",
-        "description": "A talk about SASS and Compass",
-        "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
-    }
+  {
+    "title": "Solitaire (2020)",
+    "src": "solitaire-project",
+    "thumb": "solitaire-project",
+    "description": "I built a Solitaire game.",
+    "tech": "Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack",
+    "url": "https://solitaire.timmansell.com"
+  },
+  {
+    "title": "Find a Course (2018 - 2020)",
+    "src": "unimelb",
+    "thumb": "unimelb",
+    "description": "University of Melbourne's study portal.",
+    "tech": "VueJS, NuxtJS, PostCSS, ES6/Babel, and Webpack",
+    "url": "https://study.unimelb.edu.au/find"
+  },
+  {
+    "title": "myBupa (2016 - 2017)",
+    "src": "my-bupa",
+    "thumb": "my-bupa",
+    "description": "Responsive website rebuild.  Built on top of .NET stack.",
+    "tech": "AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.",
+    "url": "https://my.bupa.com.au"
+  },
+  {
+    "title": "Captain's Choice (2016)",
+    "src": "captains-choice",
+    "thumb": "captains-choice",
+    "description": "Responsive website rebuild. Built on top of .NET stack.",
+    "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
+    "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
+  },
+  {
+    "title": "Web components presentation (2015)",
+    "src": "web-components-presentation",
+    "thumb": "web-components-presentation",
+    "description": "A talk about Web Components",
+    "url": "//web-components.timmansell.com"
+  },
+  {
+    "title": "SASS Knowledgeshare (2014)",
+    "src": "sass-compass-presentation",
+    "thumb": "sass-compass-presentation",
+    "description": "A talk about SASS and Compass",
+    "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+  }
 ]

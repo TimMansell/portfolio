@@ -6,7 +6,9 @@ import Image from '../Image';
 import styles from './CurrentStack.module.scss';
 
 export const SkillsItem = ({ url, img, name, width }) => {
-  const src = require(`./img/${img}`);
+  const src = {
+    img: require(`./img/${img}`),
+  };
 
   return (
     <div className={styles.item}>
