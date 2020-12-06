@@ -8,16 +8,21 @@ import styles from './PortfolioItem.module.scss';
 import PortfolioIcons from './PortfolioIcons';
 import { IconDesktop } from 'components/Icon';
 
-import Image from '../Image';
+import Picture from '../Picture';
 
-export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
-  const src = require(`${thumb}`);
+export const PortfolioItem = ({ src, title, description, tech, url }) => {
+  const { name, types, fallback } = src;
+  const srcs = types.map((type) => ({
+    type,
+    src: require(`./img/${name}.${type}`),
+  }));
+  const defaultImg = require(`./img/${name}.${fallback}`);
 
   return (
     <div className={styles.portfolioItem}>
       <PortfolioIcons />
       <InViewport>
-        <Image src={src} name={title} />
+        <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
       </InViewport>
 
       <div className={styles.info}>
@@ -40,12 +45,12 @@ export const PortfolioItem = ({ thumb, title, description, tech, url }) => {
   );
 };
 
+export default PortfolioItem;
+
 PortfolioItem.propTypes = {
-  thumb: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tech: PropTypes.string.isRequired,
+  tech: PropTypes.string,
   url: PropTypes.string.isRequired,
 };
-
-export default PortfolioItem;

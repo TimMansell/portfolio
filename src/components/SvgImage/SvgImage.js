@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Image.module.scss';
+import styles from './SvgImage.module.scss';
 
-export const Image = ({ src, name, width }) => {
+export const SvgImage = ({ src, name, width }) => {
   return (
     <img
       src={src}
@@ -15,10 +15,10 @@ export const Image = ({ src, name, width }) => {
   );
 };
 
-Image.propTypes = {
+SvgImage.propTypes = {
   src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   name: PropTypes.string.isRequired,
   width: PropTypes.string,
 };
 
-export default Image;
+export default SvgImage;

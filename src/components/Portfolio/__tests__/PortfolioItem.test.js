@@ -5,11 +5,15 @@ import renderer from 'react-test-renderer';
 import PortfolioItem from '../PortfolioItem';
 
 const props = {
-  thumb: './img/my-bupa.jpg',
   title: 'Title',
   description: 'Description',
   tech: 'Tech',
   url: 'url.com',
+  src: {
+    name: 'solitaire-project',
+    types: ['avif', 'webp'],
+    fallback: 'jpg',
+  },
 };
 
 describe('PortfolioItem', () => {
