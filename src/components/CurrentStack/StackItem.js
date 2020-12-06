@@ -5,7 +5,7 @@ import SvgImage from '../SvgImage';
 
 import styles from './CurrentStack.module.scss';
 
-export const SkillsItem = ({ url, img, name, width }) => {
+export const StackItem = ({ url, img, name, width }) => {
   const src = require(`./img/${img}`);
 
   return (
@@ -17,11 +17,11 @@ export const SkillsItem = ({ url, img, name, width }) => {
   );
 };
 
-SkillsItem.propTypes = {
+StackItem.propTypes = {
   url: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
 };
 
-export default SkillsItem;
+export default StackItem;
