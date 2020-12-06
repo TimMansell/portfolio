@@ -21,4 +21,13 @@ describe('SvgImage', () => {
 
     expect(snapshot).toMatchSnapshot();
   });
+
+  it('should have correct img properties', () => {
+    const wrapper = shallow(<SvgImage {...props} />);
+
+    expect(wrapper.props().src).toBe(props.src);
+    expect(wrapper.props().alt).toBe(props.name);
+    expect(wrapper.props().width).toBe(props.width);
+    expect(wrapper.props().title).toBe(props.name);
+  });
 });

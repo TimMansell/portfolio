@@ -5,7 +5,12 @@ import renderer from 'react-test-renderer';
 import Picture from '../Picture';
 
 const props = {
-  src: 'test src',
+  srcs: [
+    {
+      src: 'test src',
+      type: 'jpg',
+    },
+  ],
   name: 'test name',
 };
 
@@ -19,5 +24,33 @@ describe('Picture', () => {
     const snapshot = renderer.create(<Picture {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should have correct <source> properties', () => {
+    const wrapper = shallow(<Picture {...props} />);
+    const source = wrapper.find('[data-test="picture-source-0"]');
+
+    expect(source.props().srcSet).toBe(props.srcs[0].src);
+    expect(source.props().type).toBe(`image/${props.srcs[0].type}`);
+  });
+
+  it('should render srcs[0] in <img>', () => {
+    const wrapper = shallow(<Picture {...props} />);
+    const source = wrapper.find('[data-test="picture-img"]');
+
+    expect(source.props().src).toBe(props.srcs[0].src);
+    expect(source.props().alt).toBe(props.name);
+  });
+
+  it.only('should render defaultImg in <img>', () => {
+    const defaultImageProps = {
+      ...props,
+      defaultImg: 'default src',
+    };
+    const wrapper = shallow(<Picture {...defaultImageProps} />);
+    const source = wrapper.find('[data-test="picture-img"]');
+
+    expect(source.props().src).toBe(defaultImageProps.defaultImg);
+    expect(source.props().alt).toBe(props.name);
   });
 });
