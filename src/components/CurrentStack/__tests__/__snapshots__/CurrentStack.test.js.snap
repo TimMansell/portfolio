@@ -164,7 +164,16 @@ Array [
         <img
           alt="Yarn"
           className="img"
-          src="yarn.png"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "yarn.svg",
+            }
+          }
           title="Yarn"
           width="132"
         />
