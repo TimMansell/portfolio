@@ -42,7 +42,7 @@ describe('Picture', () => {
     expect(source.props().alt).toBe(props.name);
   });
 
-  it.only('should render defaultImg in <img>', () => {
+  it('should render defaultImg in <img>', () => {
     const defaultImageProps = {
       ...props,
       defaultImg: 'default src',
