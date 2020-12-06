@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Image.module.scss';
+import styles from './Picture.module.scss';
 
-export const Image = ({ srcs, name, width, defaultImg }) => {
+export const Picture = ({ srcs, name, defaultImg }) => {
   const fallbackImg =
     srcs.length === 1 || defaultImg ? (
-      <img className={styles.img} alt={name} src={defaultImg} width={width} />
+      <img className={styles.img} alt={name} src={defaultImg} />
     ) : (
       ''
     );
@@ -22,11 +22,10 @@ export const Image = ({ srcs, name, width, defaultImg }) => {
   );
 };
 
-Image.propTypes = {
+Picture.propTypes = {
   srcs: PropTypes.array.isRequired,
   defaultImg: PropTypes.string,
   name: PropTypes.string.isRequired,
-  width: PropTypes.string,
 };
 
-export default Image;
+export default Picture;

@@ -8,7 +8,7 @@ import styles from './PortfolioItem.module.scss';
 import PortfolioIcons from './PortfolioIcons';
 import { IconDesktop } from 'components/Icon';
 
-import Image from '../Image';
+import Picture from '../Picture';
 
 export const PortfolioItem = ({ src, title, description, tech, url }) => {
   const { name, types, fallback } = src;
@@ -22,7 +22,7 @@ export const PortfolioItem = ({ src, title, description, tech, url }) => {
     <div className={styles.portfolioItem}>
       <PortfolioIcons />
       <InViewport>
-        <Image srcs={srcs} name={title} defaultImg={defaultImg} />
+        <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
       </InViewport>
 
       <div className={styles.info}>

@@ -2,22 +2,21 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Image from '../Image';
+import Picture from '../Picture';
 
 const props = {
   src: 'test src',
   name: 'test name',
-  width: '20',
 };
 
-describe('Image', () => {
+describe('Picture', () => {
   it('should render my component', () => {
     // eslint-disable-next-line
-    const wrapper = shallow(<Image {...props} />);
+    const wrapper = shallow(<Picture {...props} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Image {...props} />).toJSON();
+    const snapshot = renderer.create(<Picture {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });
