@@ -822,7 +822,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="React"
-              width="72"
+              width="65"
             />
           </a>
         </div>
@@ -874,7 +874,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="VueJS"
-              width="66"
+              width="60"
             />
           </a>
         </div>
@@ -926,7 +926,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Webpack"
-              width="80"
+              width="75"
             />
           </a>
         </div>
@@ -952,7 +952,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Yarn"
-              width="132"
+              width="130"
             />
           </a>
         </div>
@@ -1030,7 +1030,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Babel"
-              width="160"
+              width="140"
             />
           </a>
         </div>
@@ -1056,7 +1056,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Cypress"
-              width="62"
+              width="60"
             />
           </a>
         </div>
@@ -1082,7 +1082,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="SCSS"
-              width="75"
+              width="70"
             />
           </a>
         </div>
@@ -1108,7 +1108,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="VSCode"
-              width="60"
+              width="55"
             />
           </a>
         </div>
@@ -1134,7 +1134,7 @@ exports[`Main should match snapshot 1`] = `
                 }
               }
               title="Git"
-              width="95"
+              width="105"
             />
           </a>
         </div>
@@ -1161,6 +1161,58 @@ exports[`Main should match snapshot 1`] = `
               }
               title="PostCSS"
               width="60"
+            />
+          </a>
+        </div>
+        <div
+          className="item"
+        >
+          <a
+            href="https://www.netlify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Netlify"
+              className="img"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "netlify.svg",
+                }
+              }
+              title="Netlify"
+              width="140"
+            />
+          </a>
+        </div>
+        <div
+          className="item"
+        >
+          <a
+            href="https://graphql.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="GraphQL"
+              className="img"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "graphql.svg",
+                }
+              }
+              title="GraphQL"
+              width="55"
             />
           </a>
         </div>
