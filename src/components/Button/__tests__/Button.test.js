@@ -1,0 +1,18 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+
+import Button from '../Button';
+
+describe('Button', () => {
+  it('should render my component', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<Button />);
+  });
+
+  it('should match snapshot', () => {
+    const snapshot = renderer.create(<Button />).toJSON();
+
+    expect(snapshot).toMatchSnapshot();
+  });
+});

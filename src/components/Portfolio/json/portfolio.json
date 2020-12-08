@@ -4,6 +4,7 @@
     "description": "I built a Solitaire game.",
     "tech": "Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack",
     "url": "https://solitaire.timmansell.com",
+    "source": "https://github.com/TimMansell/vue-solitaire",
     "src": {
       "name": "solitaire-project",
       "types": ["avif", "webp"],
@@ -47,6 +48,7 @@
     "title": "Web components presentation (2015)",
     "description": "A talk about Web Components",
     "url": "//web-components.timmansell.com",
+    "source": "https://github.com/TimMansell/web-components",
     "src": {
       "name": "web-components-presentation",
       "types": ["avif", "webp"],

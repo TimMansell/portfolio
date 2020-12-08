@@ -8,7 +8,6 @@ import Icon, {
   IconTerminal,
   IconClipboardList,
   IconGamepad,
-  IconDesktop,
   IconChalkboardTeacher,
   IconCode,
   IconCodeBranch,
@@ -134,11 +133,6 @@ describe('Icons', () => {
   it('should render my IconGamepad', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<IconGamepad />);
-  });
-
-  it('should render my IconDesktop', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconDesktop />);
   });
 
   it('should render my IconChalkboardTeacher', () => {

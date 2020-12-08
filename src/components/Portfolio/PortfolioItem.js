@@ -2,15 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import InViewport from 'components/InViewport';
+import Button from 'components/Button';
 
 import styles from './PortfolioItem.module.scss';
 
 import PortfolioIcons from './PortfolioIcons';
-import { IconDesktop } from 'components/Icon';
+// import { IconDesktop } from 'components/Icon';
 
 import Picture from '../Picture';
 
-export const PortfolioItem = ({ src, title, description, tech, url }) => {
+export const PortfolioItem = ({
+  src,
+  title,
+  description,
+  tech,
+  url,
+  source,
+}) => {
   const { name, types, fallback } = src;
   const srcs = types.map((type) => ({
     type,
@@ -29,19 +37,21 @@ export const PortfolioItem = ({ src, title, description, tech, url }) => {
         </div>
 
         <div className={styles.info}>
-          <h3 className={styles.title}>{title}</h3>
+          {/* <h3 className={styles.title}>{title}</h3> */}
           <p className={styles.description}>{description}</p>
           <p className={styles.tech}>{tech}</p>
 
-          <div className={styles.moreinfo}>
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Visit website"
-            >
-              <IconDesktop size="xs" className={styles.icon} />
-            </a>
+          <div className={styles.buttons}>
+            {url && (
+              <Button href={url} target="_blank" title="Visit website">
+                Visit website
+              </Button>
+            )}
+            {source && (
+              <Button href={source} target="_blank" title="View Souce">
+                View source
+              </Button>
+            )}
           </div>
         </div>
       </div>
@@ -57,4 +67,5 @@ PortfolioItem.propTypes = {
   description: PropTypes.string.isRequired,
   tech: PropTypes.string,
   url: PropTypes.string.isRequired,
+  source: PropTypes.string,
 };
