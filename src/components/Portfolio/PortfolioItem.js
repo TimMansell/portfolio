@@ -20,25 +20,29 @@ export const PortfolioItem = ({ src, title, description, tech, url }) => {
 
   return (
     <div className={styles.portfolioItem}>
-      <PortfolioIcons />
-      <InViewport>
-        <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
-      </InViewport>
+      <div className={styles.cube}>
+        <div className={styles.browser}>
+          <PortfolioIcons />
+          <InViewport>
+            <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
+          </InViewport>
+        </div>
 
-      <div className={styles.info}>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-        <p className={styles.tech}>{tech}</p>
+        <div className={styles.info}>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.description}>{description}</p>
+          <p className={styles.tech}>{tech}</p>
 
-        <div className={styles.moreinfo}>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Visit website"
-          >
-            <IconDesktop size="xs" className={styles.icon} />
-          </a>
+          <div className={styles.moreinfo}>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit website"
+            >
+              <IconDesktop size="xs" className={styles.icon} />
+            </a>
+          </div>
         </div>
       </div>
     </div>

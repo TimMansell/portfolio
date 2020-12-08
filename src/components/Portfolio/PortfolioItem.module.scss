@@ -2,13 +2,19 @@
 @import 'utilities/pxtorem';
 
 .portfolioItem {
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 7px;
+  perspective: 2000px;
+}
 
-  &:hover .info {
-    transform: translateY(0);
+.cube {
+  position: relative;
+  /* stylelint-disable-next-line declaration-property-unit-disallowed-list */
+  height: 212px;
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.4, 1);
+  transform-origin: 50% 50% -106px;
+
+  &:hover {
+    transform: rotateX(90deg);
   }
 }
 
@@ -32,18 +38,22 @@
   }
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
+.browser {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
 .info {
-  position: absolute;
-  transform: translateY(100%);
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  backface-visibility: hidden;
   text-shadow: -1px -1px var(--colour-1-alt-2);
-  transition: all 0.3s;
-  top: 0;
-  left: 0;
   background: var(--colour-1-transparent);
   height: 100%;
   padding: var(--vr);
-  width: 100%;
   color: var(--secondary-text-colour);
   text-align: center;
 }
