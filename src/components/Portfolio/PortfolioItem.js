@@ -12,6 +12,7 @@ import styles from './PortfolioItem.module.scss';
 export const PortfolioItem = ({
   src,
   title,
+  year,
   description,
   tech,
   url,
@@ -51,14 +52,16 @@ export const PortfolioItem = ({
     <div className={styles.portfolioItem}>
       <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
         <div className={styles.browser}>
-          <PortfolioIcons />
+          <PortfolioIcons title={title} />
           <InViewport>
             <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
           </InViewport>
         </div>
 
         <div className={styles.info}>
-          {/* <h3 className={styles.title}>{title}</h3> */}
+          <h3 className={styles.title}>
+            {title} ({year})
+          </h3>
           <p className={styles.description}>{description}</p>
           <p className={styles.tech}>{tech}</p>
 
@@ -85,6 +88,7 @@ export default PortfolioItem;
 PortfolioItem.propTypes = {
   src: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.string,
   url: PropTypes.string.isRequired,
