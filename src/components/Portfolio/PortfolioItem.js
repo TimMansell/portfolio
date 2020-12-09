@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import debounce from 'lodash.debounce';
 
 import InViewport from 'components/InViewport';
 import Button from 'components/Button';
+import PortfolioIcons from './PortfolioIcons';
+import Picture from '../Picture';
 
 import styles from './PortfolioItem.module.scss';
-
-import PortfolioIcons from './PortfolioIcons';
-// import { IconDesktop } from 'components/Icon';
-
-import Picture from '../Picture';
 
 export const PortfolioItem = ({
   src,
@@ -19,6 +17,9 @@ export const PortfolioItem = ({
   url,
   source,
 }) => {
+  const [cubeStyles, setCubeStyles] = useState({});
+  const cubeElement = useRef(null);
+
   const { name, types, fallback } = src;
   const srcs = types.map((type) => ({
     type,
@@ -26,9 +27,29 @@ export const PortfolioItem = ({
   }));
   const defaultImg = require(`./img/${name}.${fallback}`);
 
+  const getCubeHeight = debounce(() => {
+    const { clientHeight } = cubeElement.current;
+
+    setCubeStyles({
+      transformOrigin: `50% 50% -${clientHeight / 2}px`,
+    });
+  });
+
+  useEffect(() => {
+    window.addEventListener('scroll', getCubeHeight);
+
+    return () => window.removeEventListener('scroll', getCubeHeight);
+  });
+
+  useEffect(() => {
+    window.addEventListener('resize', getCubeHeight);
+
+    return () => window.removeEventListener('resize', getCubeHeight);
+  });
+
   return (
     <div className={styles.portfolioItem}>
-      <div className={styles.cube}>
+      <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
         <div className={styles.browser}>
           <PortfolioIcons />
           <InViewport>
