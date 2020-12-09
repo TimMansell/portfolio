@@ -61,7 +61,7 @@
   margin-bottom: var(--vr-sm);
   display: none;
 
-  @media (min-width: $bp-sm) {
+  @media (min-width: $bp-xs) {
     display: block;
   }
 }
