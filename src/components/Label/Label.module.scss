@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.label {
+  display: inline-block;
+  color: #fff;
+  padding: var(--vr-xxs);
+  border-radius: 3px;
+  background: var(--colour-2);
+  font-size: pxtorem(10);
+  margin-bottom: var(--vr-xxs);
+
+  & + & {
+    margin-left: var(--vr-xxs);
+  }
+}
