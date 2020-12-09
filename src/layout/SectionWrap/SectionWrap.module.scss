@@ -30,13 +30,17 @@
   }
 
   &Medium {
-    width: 85%;
-    max-width: 85%;
+    @media (min-width: $bp-xl) {
+      width: 85%;
+      max-width: 85%;
+    }
   }
 
   &Large {
-    width: 100%;
-    max-width: 100%;
+    @media (min-width: $bp-xl) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
 
