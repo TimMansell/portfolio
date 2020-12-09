@@ -6,6 +6,7 @@ import InViewport from 'components/InViewport';
 import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
+import Label from '../Label';
 
 import styles from './PortfolioItem.module.scss';
 
@@ -63,7 +64,11 @@ export const PortfolioItem = ({
             {title} ({year})
           </h3>
           <p className={styles.description}>{description}</p>
-          <p className={styles.tech}>{tech}</p>
+          <div className={styles.tech}>
+            {tech.map((item, index) => (
+              <Label key={index} label={item} />
+            ))}
+          </div>
 
           <div className={styles.buttons}>
             {url && (

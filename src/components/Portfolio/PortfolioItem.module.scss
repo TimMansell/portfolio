@@ -42,7 +42,6 @@
   transform: rotateX(-90deg);
   transform-origin: top;
   backface-visibility: hidden;
-  text-shadow: -1px -1px var(--colour-1-alt-2);
   background: var(--colour-1-transparent);
   padding: var(--vr);
   color: var(--secondary-text-colour);
@@ -56,6 +55,7 @@
 }
 
 .description {
+  flex: 1;
   font-size: var(--vr);
   line-height: 1.2;
   margin-bottom: var(--vr-sm);
@@ -67,8 +67,8 @@
 }
 
 .tech {
-  flex: 1;
   font-size: pxtorem(12);
+  margin-bottom: var(--vr-sm);
   line-height: 1.2;
 }
 
