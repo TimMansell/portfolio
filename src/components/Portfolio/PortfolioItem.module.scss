@@ -9,6 +9,7 @@
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.4, 1);
+  margin-bottom: var(--vr);
 
   &:hover {
     transform: rotateX(90deg);
@@ -36,39 +37,40 @@
 .info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
   transform: rotateX(-90deg);
   transform-origin: top;
   backface-visibility: hidden;
-  background: var(--colour-1-transparent);
-  padding: var(--vr);
+  background: var(--colour-1);
+  padding: var(--vr-sm);
   color: var(--secondary-text-colour);
   text-align: center;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+
+  @media (min-width: $bp-xl) {
+    padding: var(--vr-lg);
+  }
 }
 
 .title {
+  font-size: pxtorem(22);
   margin-bottom: var(--vr-xs);
 }
 
 .description {
-  flex: 1;
-  font-size: var(--vr);
-  line-height: 1.2;
+  font-size: pxtorem(14);
   margin-bottom: var(--vr-sm);
-  display: none;
-
-  @media (min-width: $bp-xs) {
-    display: block;
-  }
 }
 
 .tech {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4px;
   font-size: pxtorem(12);
-  margin-bottom: var(--vr-sm);
   line-height: 1.2;
 }
 
