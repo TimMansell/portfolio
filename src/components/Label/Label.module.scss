@@ -7,6 +7,10 @@
   border-radius: 3px;
   font-size: pxtorem(12);
   margin-bottom: var(--vr-xxs);
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(16);
+  }
 }
 
 .primary {

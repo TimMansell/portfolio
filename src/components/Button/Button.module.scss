@@ -16,4 +16,14 @@
   & + & {
     margin-left: var(--vr);
   }
+
+  @media (min-width: $bp-xxl) {
+    font-size: pxtorem(18);
+    padding: var(--vr-xs);
+  }
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(24);
+    padding: var(--vr-sm);
+  }
 }
