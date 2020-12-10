@@ -2,7 +2,7 @@
 @import 'utilities/pxtorem';
 
 .label {
-  color: #fff;
+  color: var(--colour-5);
   padding: var(--vr-xxs);
   border-radius: 3px;
   font-size: pxtorem(12);
