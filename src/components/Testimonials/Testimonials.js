@@ -19,11 +19,11 @@ const sliderSettings = {
 
 export const Testimonials = () => {
   return (
-    <div className={styles.testimonials}>
+    <div className={styles.testimonials} data-e2e="testimonials">
       <IconQuoteLeft className={styles.quote} />
       <Slider {...sliderSettings} className={styles.slider}>
         {testimonials.map((testimonial, index) => (
-          <div key={index}>
+          <div key={index} data-e2e={`testimonial-slide-${index}`}>
             <TestimonialItem {...testimonial} />
           </div>
         ))}
