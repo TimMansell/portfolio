@@ -32,4 +32,7 @@ jobs:
         run: yarn lint
 
       - name: Unit Tests
-        run: yarn test
+        run: yarn test:unit:all
+
+      - name: e2e Tests
+        run: yarn test:e2e
