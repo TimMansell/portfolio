@@ -2,20 +2,14 @@
 @import 'utilities/pxtorem';
 
 .testimonials {
-  padding: 0 15%;
   text-align: center;
+
+  @media (min-width: $bp-lg) {
+    padding: 0 15%;
+  }
 }
 
 .quote {
   font-size: pxtorem(30);
-  color: var(--tertiary-text-colour);
-}
-
-.text {
-  margin: 0;
-  padding: var(--vr) 0;
-}
-
-.name {
-  font-size: pxtorem(14);
+  color: var(--primary-text-colour);
 }
