@@ -2,15 +2,17 @@
 @import 'utilities/pxtorem';
 
 .label {
-  display: inline-block;
   color: #fff;
   padding: var(--vr-xxs);
   border-radius: 3px;
-  background: var(--colour-2);
-  font-size: pxtorem(10);
+  font-size: pxtorem(12);
   margin-bottom: var(--vr-xxs);
+}
 
-  & + & {
-    margin-left: var(--vr-xxs);
-  }
+.primary {
+  background: var(--colour-1);
+}
+
+.secondary {
+  background: var(--colour-3);
 }
