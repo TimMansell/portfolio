@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import debounce from 'lodash.debounce';
 
 import InViewport from 'components/InViewport';
+import Button from 'components/Button';
+import PortfolioIcons from './PortfolioIcons';
+import Picture from '../Picture';
+import Label from '../Label';
 
 import styles from './PortfolioItem.module.scss';
 
-import PortfolioIcons from './PortfolioIcons';
-import { IconDesktop } from 'components/Icon';
+export const PortfolioItem = ({
+  src,
+  title,
+  year,
+  description,
+  tech,
+  url,
+  source,
+}) => {
+  const [cubeStyles, setCubeStyles] = useState({});
+  const cubeElement = useRef(null);
 
-import Picture from '../Picture';
-
-export const PortfolioItem = ({ src, title, description, tech, url }) => {
   const { name, types, fallback } = src;
   const srcs = types.map((type) => ({
     type,
@@ -18,28 +29,61 @@ export const PortfolioItem = ({ src, title, description, tech, url }) => {
   }));
   const defaultImg = require(`./img/${name}.${fallback}`);
 
+  const getCubeHeight = debounce(() => {
+    const { clientHeight } = cubeElement.current;
+
+    setCubeStyles({
+      transformOrigin: `50% 50% -${clientHeight / 2}px`,
+    });
+  });
+
+  // Check height of image as intially it is lazy loaded.
+  useEffect(() => {
+    window.requestAnimationFrame(getCubeHeight);
+
+    return () => window.cancelAnimationFrame(getCubeHeight);
+  });
+
   return (
     <div className={styles.portfolioItem}>
-      <PortfolioIcons />
-      <InViewport>
-        <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
-      </InViewport>
-
-      <div className={styles.info}>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-        <p className={styles.tech}>{tech}</p>
-
-        <div className={styles.moreinfo}>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Visit website"
-          >
-            <IconDesktop size="xs" className={styles.icon} />
-          </a>
+      <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
+        <div className={styles.browser}>
+          <PortfolioIcons title={title} />
+          <InViewport>
+            <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
+          </InViewport>
         </div>
+
+        <div className={styles.info}>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.description}>{description}</p>
+          <div className={styles.buttons}>
+            <Button
+              href={url}
+              target="_blank"
+              title="Visit website"
+              data-test="portfolio-website-btn"
+            >
+              Visit website
+            </Button>
+            {source && (
+              <Button
+                href={source}
+                target="_blank"
+                title="View Souce"
+                data-test="portfolio-source-btn"
+              >
+                View source
+              </Button>
+            )}
+          </div>
+        </div>
+      </div>
+      <div className={styles.tech} data-test="portfolio-tech">
+        <Label label={year} type="secondary" />
+        {tech.map((item, index) => (
+          <Label key={index} label={item} type="primary" />
+        ))}
       </div>
     </div>
   );
@@ -50,7 +94,9 @@ export default PortfolioItem;
 PortfolioItem.propTypes = {
   src: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tech: PropTypes.string,
+  tech: PropTypes.array.isRequired,
   url: PropTypes.string.isRequired,
+  source: PropTypes.string,
 };

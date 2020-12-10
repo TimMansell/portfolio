@@ -1,9 +1,24 @@
 [
   {
-    "title": "Solitaire (2020)",
-    "description": "I built a Solitaire game.",
-    "tech": "Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack",
+    "title": "Solitaire",
+    "year": "2020",
+    "description": "During lockdown I built a card game",
+    "tech": [
+      "Vue CLI",
+      "VueJS",
+      "Vuex",
+      "SCSS",
+      "PostCSS",
+      "ES2015+",
+      "Babel",
+      "Webpack",
+      "GraphQL",
+      "Netlify",
+      "Jest",
+      "Cypress"
+    ],
     "url": "https://solitaire.timmansell.com",
+    "source": "https://github.com/TimMansell/vue-solitaire",
     "src": {
       "name": "solitaire-project",
       "types": ["avif", "webp"],
@@ -11,9 +26,21 @@
     }
   },
   {
-    "title": "Find a Course (2018 - 2020)",
-    "description": "University of Melbourne's study portal.",
-    "tech": "VueJS, NuxtJS, PostCSS, ES6/Babel, and Webpack",
+    "title": "Find a Course",
+    "year": "2018 - 2020",
+    "description": "University of Melbourne's study portal. I was part of a team that built the Front-end.",
+    "tech": [
+      "VueJS",
+      "NuxtJS",
+      "PostCSS",
+      "ES2015+",
+      "Babel",
+      "Webpack",
+      "Netlify",
+      "AWS",
+      "Jest",
+      "Cypress"
+    ],
     "url": "https://study.unimelb.edu.au/find",
     "src": {
       "name": "unimelb",
@@ -22,9 +49,18 @@
     }
   },
   {
-    "title": "myBupa (2016 - 2017)",
-    "description": "Responsive website rebuild.  Built on top of .NET stack.",
-    "tech": "AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.",
+    "title": "myBupa",
+    "year": "2016 - 2017",
+    "description": "Responsive website rebuild of Bupa's health insurance portal.  I was part of a team that built the Front-end. Built on top of .NET stack",
+    "tech": [
+      "AngularJS",
+      "Bootstrap 3",
+      "SASS",
+      "ES2015+",
+      "Babel",
+      "Webpack",
+      "Gulp"
+    ],
     "url": "https://my.bupa.com.au",
     "src": {
       "name": "my-bupa",
@@ -33,9 +69,18 @@
     }
   },
   {
-    "title": "Captain's Choice (2016)",
-    "description": "Responsive website rebuild. Built on top of .NET stack.",
-    "tech": "AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.",
+    "title": "Captain's Choice",
+    "year": "2016",
+    "description": "Responsive website rebuild of Captain's Choice website. I was part of a team that built the Front-end. Built on top of .NET stack",
+    "tech": [
+      "AngularJS",
+      "Bootstrap 3",
+      "SCSS",
+      "Compass",
+      "jQuery",
+      "Gulp",
+      "Bower"
+    ],
     "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/",
     "src": {
       "name": "captains-choice",
@@ -44,9 +89,12 @@
     }
   },
   {
-    "title": "Web components presentation (2015)",
-    "description": "A talk about Web Components",
+    "title": "Web Components",
+    "year": "2015",
+    "description": "A presentation about Web Components",
+    "tech": ["Web Components", "Reveal.js"],
     "url": "//web-components.timmansell.com",
+    "source": "https://github.com/TimMansell/web-components",
     "src": {
       "name": "web-components-presentation",
       "types": ["avif", "webp"],
@@ -54,8 +102,10 @@
     }
   },
   {
-    "title": "SASS Knowledgeshare (2014)",
-    "description": "A talk about SASS and Compass",
+    "title": "SASS Knowledgeshare",
+    "year": "2014",
+    "description": "A presentation about SASS and Compass",
+    "tech": ["SCSS", "Compass"],
     "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY",
     "src": {
       "name": "sass-compass-presentation",

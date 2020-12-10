@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.btn {
+  color: var(--colour-5);
+  padding: var(--vr-xxs);
+  border-radius: 7px;
+  border: 1px solid var(--bdr-secondary);
+  transition: all 0.3s;
+  font-size: pxtorem(14);
+
+  &:hover {
+    background: var(--colour-1-alt-1);
+  }
+
+  & + & {
+    margin-left: var(--vr);
+  }
+
+  @media (min-width: $bp-xxl) {
+    font-size: pxtorem(18);
+    padding: var(--vr-xs);
+  }
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(24);
+    padding: var(--vr-sm);
+  }
+}

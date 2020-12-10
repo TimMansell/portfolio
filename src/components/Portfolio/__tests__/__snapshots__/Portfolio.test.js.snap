@@ -17,7 +17,7 @@ Array [
     <p
       data-test="heading-description"
     >
-      Here's a sample of my work
+      Here's a sample of my work. Hover over image for more information
     </p>
   </div>,
   <div
@@ -27,68 +27,145 @@ Array [
       className="portfolioItem"
     >
       <div
-        className="portfolioIcons"
+        className="cube"
+        style={Object {}}
       >
         <div
-          className="icon"
-        />
+          className="browser"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="icons"
+            >
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+            </div>
+            <div
+              className="tab"
+            >
+              Solitaire
+            </div>
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+        </div>
         <div
-          className="icon"
-        />
-        <div
-          className="icon"
-        />
-      </div>
-      <div>
-        <span>
-           
-        </span>
+          className="info"
+        >
+          <h3
+            className="title"
+          >
+            Solitaire
+          </h3>
+          <p
+            className="description"
+          >
+            During lockdown I built a card game
+          </p>
+          <div
+            className="buttons"
+          >
+            <a
+              className="btn"
+              href="https://solitaire.timmansell.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+            <a
+              className="btn"
+              href="https://github.com/TimMansell/vue-solitaire"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="View Souce"
+            >
+              View source
+            </a>
+          </div>
+        </div>
       </div>
       <div
-        className="info"
+        className="tech"
+        data-test="portfolio-tech"
       >
-        <h3
-          className="title"
-        >
-          Solitaire (2020)
-        </h3>
-        <p
-          className="description"
-        >
-          I built a Solitaire game.
-        </p>
-        <p
-          className="tech"
-        >
-          Vue CLI, VueJS, Vuex, SCSS, PostCSS, ES6/Babel, and Webpack
-        </p>
         <div
-          className="moreinfo"
+          className="label secondary"
         >
-          <a
-            href="https://solitaire.timmansell.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Visit website"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
-              data-icon="desktop"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
+          2020
+        </div>
+        <div
+          className="label primary"
+        >
+          Vue CLI
+        </div>
+        <div
+          className="label primary"
+        >
+          VueJS
+        </div>
+        <div
+          className="label primary"
+        >
+          Vuex
+        </div>
+        <div
+          className="label primary"
+        >
+          SCSS
+        </div>
+        <div
+          className="label primary"
+        >
+          PostCSS
+        </div>
+        <div
+          className="label primary"
+        >
+          ES2015+
+        </div>
+        <div
+          className="label primary"
+        >
+          Babel
+        </div>
+        <div
+          className="label primary"
+        >
+          Webpack
+        </div>
+        <div
+          className="label primary"
+        >
+          GraphQL
+        </div>
+        <div
+          className="label primary"
+        >
+          Netlify
+        </div>
+        <div
+          className="label primary"
+        >
+          Jest
+        </div>
+        <div
+          className="label primary"
+        >
+          Cypress
         </div>
       </div>
     </div>
@@ -96,68 +173,126 @@ Array [
       className="portfolioItem"
     >
       <div
-        className="portfolioIcons"
+        className="cube"
+        style={Object {}}
       >
         <div
-          className="icon"
-        />
+          className="browser"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="icons"
+            >
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+            </div>
+            <div
+              className="tab"
+            >
+              Find a Course
+            </div>
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+        </div>
         <div
-          className="icon"
-        />
-        <div
-          className="icon"
-        />
-      </div>
-      <div>
-        <span>
-           
-        </span>
+          className="info"
+        >
+          <h3
+            className="title"
+          >
+            Find a Course
+          </h3>
+          <p
+            className="description"
+          >
+            University of Melbourne's study portal. I was part of a team that built the Front-end.
+          </p>
+          <div
+            className="buttons"
+          >
+            <a
+              className="btn"
+              href="https://study.unimelb.edu.au/find"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+          </div>
+        </div>
       </div>
       <div
-        className="info"
+        className="tech"
+        data-test="portfolio-tech"
       >
-        <h3
-          className="title"
-        >
-          Find a Course (2018 - 2020)
-        </h3>
-        <p
-          className="description"
-        >
-          University of Melbourne's study portal.
-        </p>
-        <p
-          className="tech"
-        >
-          VueJS, NuxtJS, PostCSS, ES6/Babel, and Webpack
-        </p>
         <div
-          className="moreinfo"
+          className="label secondary"
         >
-          <a
-            href="https://study.unimelb.edu.au/find"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Visit website"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
-              data-icon="desktop"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
+          2018 - 2020
+        </div>
+        <div
+          className="label primary"
+        >
+          VueJS
+        </div>
+        <div
+          className="label primary"
+        >
+          NuxtJS
+        </div>
+        <div
+          className="label primary"
+        >
+          PostCSS
+        </div>
+        <div
+          className="label primary"
+        >
+          ES2015+
+        </div>
+        <div
+          className="label primary"
+        >
+          Babel
+        </div>
+        <div
+          className="label primary"
+        >
+          Webpack
+        </div>
+        <div
+          className="label primary"
+        >
+          Netlify
+        </div>
+        <div
+          className="label primary"
+        >
+          AWS
+        </div>
+        <div
+          className="label primary"
+        >
+          Jest
+        </div>
+        <div
+          className="label primary"
+        >
+          Cypress
         </div>
       </div>
     </div>
@@ -165,68 +300,111 @@ Array [
       className="portfolioItem"
     >
       <div
-        className="portfolioIcons"
+        className="cube"
+        style={Object {}}
       >
         <div
-          className="icon"
-        />
+          className="browser"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="icons"
+            >
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+            </div>
+            <div
+              className="tab"
+            >
+              myBupa
+            </div>
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+        </div>
         <div
-          className="icon"
-        />
-        <div
-          className="icon"
-        />
-      </div>
-      <div>
-        <span>
-           
-        </span>
+          className="info"
+        >
+          <h3
+            className="title"
+          >
+            myBupa
+          </h3>
+          <p
+            className="description"
+          >
+            Responsive website rebuild of Bupa's health insurance portal.  I was part of a team that built the Front-end. Built on top of .NET stack
+          </p>
+          <div
+            className="buttons"
+          >
+            <a
+              className="btn"
+              href="https://my.bupa.com.au"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+          </div>
+        </div>
       </div>
       <div
-        className="info"
+        className="tech"
+        data-test="portfolio-tech"
       >
-        <h3
-          className="title"
-        >
-          myBupa (2016 - 2017)
-        </h3>
-        <p
-          className="description"
-        >
-          Responsive website rebuild.  Built on top of .NET stack.
-        </p>
-        <p
-          className="tech"
-        >
-          AngularJS, Bootstrap 3, SASS, ES6/Babel, and Webpack.
-        </p>
         <div
-          className="moreinfo"
+          className="label secondary"
         >
-          <a
-            href="https://my.bupa.com.au"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Visit website"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
-              data-icon="desktop"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
+          2016 - 2017
+        </div>
+        <div
+          className="label primary"
+        >
+          AngularJS
+        </div>
+        <div
+          className="label primary"
+        >
+          Bootstrap 3
+        </div>
+        <div
+          className="label primary"
+        >
+          SASS
+        </div>
+        <div
+          className="label primary"
+        >
+          ES2015+
+        </div>
+        <div
+          className="label primary"
+        >
+          Babel
+        </div>
+        <div
+          className="label primary"
+        >
+          Webpack
+        </div>
+        <div
+          className="label primary"
+        >
+          Gulp
         </div>
       </div>
     </div>
@@ -234,68 +412,111 @@ Array [
       className="portfolioItem"
     >
       <div
-        className="portfolioIcons"
+        className="cube"
+        style={Object {}}
       >
         <div
-          className="icon"
-        />
+          className="browser"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="icons"
+            >
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+            </div>
+            <div
+              className="tab"
+            >
+              Captain's Choice
+            </div>
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+        </div>
         <div
-          className="icon"
-        />
-        <div
-          className="icon"
-        />
-      </div>
-      <div>
-        <span>
-           
-        </span>
+          className="info"
+        >
+          <h3
+            className="title"
+          >
+            Captain's Choice
+          </h3>
+          <p
+            className="description"
+          >
+            Responsive website rebuild of Captain's Choice website. I was part of a team that built the Front-end. Built on top of .NET stack
+          </p>
+          <div
+            className="buttons"
+          >
+            <a
+              className="btn"
+              href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+          </div>
+        </div>
       </div>
       <div
-        className="info"
+        className="tech"
+        data-test="portfolio-tech"
       >
-        <h3
-          className="title"
-        >
-          Captain's Choice (2016)
-        </h3>
-        <p
-          className="description"
-        >
-          Responsive website rebuild. Built on top of .NET stack.
-        </p>
-        <p
-          className="tech"
-        >
-          AngularJS, Bootstrap 3, SCSS/Compass, jQuery, Gulp, and Bower.
-        </p>
         <div
-          className="moreinfo"
+          className="label secondary"
         >
-          <a
-            href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Visit website"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
-              data-icon="desktop"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
+          2016
+        </div>
+        <div
+          className="label primary"
+        >
+          AngularJS
+        </div>
+        <div
+          className="label primary"
+        >
+          Bootstrap 3
+        </div>
+        <div
+          className="label primary"
+        >
+          SCSS
+        </div>
+        <div
+          className="label primary"
+        >
+          Compass
+        </div>
+        <div
+          className="label primary"
+        >
+          jQuery
+        </div>
+        <div
+          className="label primary"
+        >
+          Gulp
+        </div>
+        <div
+          className="label primary"
+        >
+          Bower
         </div>
       </div>
     </div>
@@ -303,66 +524,95 @@ Array [
       className="portfolioItem"
     >
       <div
-        className="portfolioIcons"
+        className="cube"
+        style={Object {}}
       >
         <div
-          className="icon"
-        />
+          className="browser"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="icons"
+            >
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+            </div>
+            <div
+              className="tab"
+            >
+              Web Components
+            </div>
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+        </div>
         <div
-          className="icon"
-        />
-        <div
-          className="icon"
-        />
-      </div>
-      <div>
-        <span>
-           
-        </span>
+          className="info"
+        >
+          <h3
+            className="title"
+          >
+            Web Components
+          </h3>
+          <p
+            className="description"
+          >
+            A presentation about Web Components
+          </p>
+          <div
+            className="buttons"
+          >
+            <a
+              className="btn"
+              href="//web-components.timmansell.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+            <a
+              className="btn"
+              href="https://github.com/TimMansell/web-components"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="View Souce"
+            >
+              View source
+            </a>
+          </div>
+        </div>
       </div>
       <div
-        className="info"
+        className="tech"
+        data-test="portfolio-tech"
       >
-        <h3
-          className="title"
-        >
-          Web components presentation (2015)
-        </h3>
-        <p
-          className="description"
-        >
-          A talk about Web Components
-        </p>
-        <p
-          className="tech"
-        />
         <div
-          className="moreinfo"
+          className="label secondary"
         >
-          <a
-            href="//web-components.timmansell.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Visit website"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
-              data-icon="desktop"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
+          2015
+        </div>
+        <div
+          className="label primary"
+        >
+          Web Components
+        </div>
+        <div
+          className="label primary"
+        >
+          Reveal.js
         </div>
       </div>
     </div>
@@ -370,66 +620,86 @@ Array [
       className="portfolioItem"
     >
       <div
-        className="portfolioIcons"
+        className="cube"
+        style={Object {}}
       >
         <div
-          className="icon"
-        />
+          className="browser"
+        >
+          <div
+            className="bar"
+          >
+            <div
+              className="icons"
+            >
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+              <div
+                className="icon"
+              />
+            </div>
+            <div
+              className="tab"
+            >
+              SASS Knowledgeshare
+            </div>
+          </div>
+          <div>
+            <span>
+               
+            </span>
+          </div>
+        </div>
         <div
-          className="icon"
-        />
-        <div
-          className="icon"
-        />
-      </div>
-      <div>
-        <span>
-           
-        </span>
+          className="info"
+        >
+          <h3
+            className="title"
+          >
+            SASS Knowledgeshare
+          </h3>
+          <p
+            className="description"
+          >
+            A presentation about SASS and Compass
+          </p>
+          <div
+            className="buttons"
+          >
+            <a
+              className="btn"
+              href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+          </div>
+        </div>
       </div>
       <div
-        className="info"
+        className="tech"
+        data-test="portfolio-tech"
       >
-        <h3
-          className="title"
-        >
-          SASS Knowledgeshare (2014)
-        </h3>
-        <p
-          className="description"
-        >
-          A talk about SASS and Compass
-        </p>
-        <p
-          className="tech"
-        />
         <div
-          className="moreinfo"
+          className="label secondary"
         >
-          <a
-            href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Visit website"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-desktop fa-w-18 icon icon iconXs"
-              data-icon="desktop"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-          </a>
+          2014
+        </div>
+        <div
+          className="label primary"
+        >
+          SCSS
+        </div>
+        <div
+          className="label primary"
+        >
+          Compass
         </div>
       </div>
     </div>

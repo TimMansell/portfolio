@@ -13,7 +13,11 @@ export const Portfolio = () => {
 
   return (
     <>
-      <Header title="Portfolio" text="Here's a sample of my work" tertiary />
+      <Header
+        title="Portfolio"
+        text="Here's a sample of my work. Hover over image for more information"
+        tertiary
+      />
 
       <div className={styles.portfolio}>{listItems}</div>
     </>
