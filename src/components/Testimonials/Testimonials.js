@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Slider from 'react-slick';
 
 import TestimonialItem from './TestimonialItem';
 
@@ -7,28 +8,28 @@ import styles from './Testimonials.module.scss';
 
 import { IconQuoteLeft, IconQuoteRight } from '../Icon';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const settings = {
+  adaptiveHeight: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 500,
+};
+
 export const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState(testimonialsJson);
-  const [testimonial, setTestimonial] = useState(testimonialsJson[0]);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      const sortedTestimonials = [
-        ...testimonials.slice(1),
-        ...testimonials.slice(0, 1),
-      ];
-
-      setTestimonials(sortedTestimonials);
-      setTestimonial(sortedTestimonials[0]);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  });
-
   return (
-    <div className={styles.testimonials}>
+    <div id="test" className={styles.testimonials}>
       <IconQuoteLeft className={styles.quote} />
-      <TestimonialItem {...testimonial} />
+      <Slider {...settings} className={styles.slider}>
+        {testimonialsJson.map((testimonial, index) => (
+          <div key={index}>
+            <TestimonialItem {...testimonial} />
+          </div>
+        ))}
+      </Slider>
       <IconQuoteRight className={styles.quote} />
     </div>
   );
