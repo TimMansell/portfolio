@@ -37,16 +37,11 @@ export const PortfolioItem = ({
     });
   });
 
+  // Check height of image as intially it is lazy loaded.
   useEffect(() => {
-    window.addEventListener('scroll', getCubeHeight);
+    window.requestAnimationFrame(getCubeHeight);
 
-    return () => window.removeEventListener('scroll', getCubeHeight);
-  });
-
-  useEffect(() => {
-    window.addEventListener('resize', getCubeHeight);
-
-    return () => window.removeEventListener('resize', getCubeHeight);
+    return () => window.cancelAnimationFrame(getCubeHeight);
   });
 
   return (
