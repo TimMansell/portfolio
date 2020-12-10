@@ -55,7 +55,8 @@
     "tech": [
       "AngularJS",
       "Bootstrap 3",
-      "SASS",
+      "SCSS",
+      "PostCSS",
       "ES2015+",
       "Babel",
       "Webpack",
