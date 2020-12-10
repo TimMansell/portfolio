@@ -13,7 +13,6 @@ import {
   faTerminal,
   faClipboardList,
   faGamepad,
-  faDesktop,
   faChalkboardTeacher,
   faCode,
   faCodeBranch,
@@ -38,7 +37,6 @@ library.add(
   faTerminal,
   faClipboardList,
   faGamepad,
-  faDesktop,
   faChalkboardTeacher,
   faCode,
   faCodeBranch,
@@ -145,19 +143,6 @@ export const IconGamepad = ({ className, size, padded }) => {
 };
 
 IconGamepad.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconDesktop = ({ className, size, padded }) => {
-  return (
-    <Icon name={faDesktop} className={className} size={size} padded={padded} />
-  );
-};
-
-IconDesktop.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,

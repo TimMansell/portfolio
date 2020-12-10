@@ -19,15 +19,13 @@ h5,
 h6 {
   font-weight: 700;
   font-style: normal;
-  letter-spacing: pxtorem(1);
-  text-transform: uppercase;
   margin: 0;
+  line-height: 1.1;
 }
 
 p {
   font-family: var(--font-family-primary);
   font-size: pxtorem(20);
-  line-height: 1.2;
   margin-top: 0;
   margin-bottom: var(--vr-md);
 }

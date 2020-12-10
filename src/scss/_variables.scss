@@ -13,10 +13,13 @@ $tertiary-hue: 345;
 $tertiary-saturation: 100%;
 
 // Breakpoints.
+$bp-xs: 360px;
 $bp-sm: 576px;
 $bp-md: 768px;
 $bp-lg: 992px;
 $bp-xl: 1200px;
+$bp-xxl: 1600px;
+$bp-xxxl: 1921px;
 
 :root {
   --font-family-primary: 'Open Sans', sans-serif;
@@ -37,8 +40,16 @@ $bp-xl: 1200px;
   --colour-2-alt-1: hsl(#{$secondary-hue}, #{$secondary-saturation}, 10%);
 
   // Transparent colours.
-  --colour-1-transparent: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 95%);
-  --colour-1-transparent-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%, 50%);
+  --colour-1-transparent:
+    hsl(#{$primary-hue},
+    #{$primary-saturation},
+    36%,
+    95%);
+  --colour-1-transparent-1:
+    hsl(#{$primary-hue},
+    #{$primary-saturation},
+    36%,
+    50%);
 
   // Text colours.
   --primary-text-colour: var(--colour-4);

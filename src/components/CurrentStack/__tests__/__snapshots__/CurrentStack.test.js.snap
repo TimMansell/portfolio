@@ -45,7 +45,7 @@ Array [
             }
           }
           title="React"
-          width="72"
+          width="65"
         />
       </a>
     </div>
@@ -97,7 +97,7 @@ Array [
             }
           }
           title="VueJS"
-          width="66"
+          width="60"
         />
       </a>
     </div>
@@ -149,7 +149,7 @@ Array [
             }
           }
           title="Webpack"
-          width="80"
+          width="75"
         />
       </a>
     </div>
@@ -164,9 +164,18 @@ Array [
         <img
           alt="Yarn"
           className="img"
-          src="yarn.png"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "yarn.svg",
+            }
+          }
           title="Yarn"
-          width="132"
+          width="130"
         />
       </a>
     </div>
@@ -244,7 +253,7 @@ Array [
             }
           }
           title="Babel"
-          width="160"
+          width="140"
         />
       </a>
     </div>
@@ -270,7 +279,7 @@ Array [
             }
           }
           title="Cypress"
-          width="62"
+          width="60"
         />
       </a>
     </div>
@@ -296,7 +305,7 @@ Array [
             }
           }
           title="SCSS"
-          width="75"
+          width="70"
         />
       </a>
     </div>
@@ -322,7 +331,7 @@ Array [
             }
           }
           title="VSCode"
-          width="60"
+          width="55"
         />
       </a>
     </div>
@@ -348,7 +357,7 @@ Array [
             }
           }
           title="Git"
-          width="95"
+          width="105"
         />
       </a>
     </div>
@@ -375,6 +384,58 @@ Array [
           }
           title="PostCSS"
           width="60"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        href="https://www.netlify.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Netlify"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "netlify.svg",
+            }
+          }
+          title="Netlify"
+          width="140"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        href="https://graphql.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="GraphQL"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "graphql.svg",
+            }
+          }
+          title="GraphQL"
+          width="55"
         />
       </a>
     </div>
