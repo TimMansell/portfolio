@@ -63,20 +63,28 @@ export const PortfolioItem = ({
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.description}>{description}</p>
           <div className={styles.buttons}>
-            {url && (
-              <Button href={url} target="_blank" title="Visit website">
-                Visit website
-              </Button>
-            )}
+            <Button
+              href={url}
+              target="_blank"
+              title="Visit website"
+              data-test="portfolio-website-btn"
+            >
+              Visit website
+            </Button>
             {source && (
-              <Button href={source} target="_blank" title="View Souce">
+              <Button
+                href={source}
+                target="_blank"
+                title="View Souce"
+                data-test="portfolio-source-btn"
+              >
                 View source
               </Button>
             )}
           </div>
         </div>
       </div>
-      <div className={styles.tech}>
+      <div className={styles.tech} data-test="portfolio-tech">
         <Label label={year} type="secondary" />
         {tech.map((item, index) => (
           <Label key={index} label={item} type="primary" />
@@ -93,7 +101,7 @@ PortfolioItem.propTypes = {
   title: PropTypes.string.isRequired,
   year: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tech: PropTypes.array,
+  tech: PropTypes.array.isRequired,
   url: PropTypes.string.isRequired,
   source: PropTypes.string,
 };
