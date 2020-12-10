@@ -3,7 +3,7 @@
 exports[`Testimonials should match snapshot 1`] = `
 <div
   className="testimonials"
-  id="test"
+  data-e2e="testimonials"
 >
   <svg
     aria-hidden="true"
