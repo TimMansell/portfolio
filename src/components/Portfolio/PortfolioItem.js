@@ -60,16 +60,8 @@ export const PortfolioItem = ({
         </div>
 
         <div className={styles.info}>
-          <h3 className={styles.title}>
-            {title} ({year})
-          </h3>
+          <h3 className={styles.title}>{title}</h3>
           <p className={styles.description}>{description}</p>
-          <div className={styles.tech}>
-            {tech.map((item, index) => (
-              <Label key={index} label={item} />
-            ))}
-          </div>
-
           <div className={styles.buttons}>
             {url && (
               <Button href={url} target="_blank" title="Visit website">
@@ -84,6 +76,12 @@ export const PortfolioItem = ({
           </div>
         </div>
       </div>
+      <div className={styles.tech}>
+        <Label label={year} type="secondary" />
+        {tech.map((item, index) => (
+          <Label key={index} label={item} type="primary" />
+        ))}
+      </div>
     </div>
   );
 };
@@ -95,7 +93,7 @@ PortfolioItem.propTypes = {
   title: PropTypes.string.isRequired,
   year: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tech: PropTypes.string,
+  tech: PropTypes.array,
   url: PropTypes.string.isRequired,
   source: PropTypes.string,
 };
