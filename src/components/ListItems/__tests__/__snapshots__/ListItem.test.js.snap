@@ -23,13 +23,18 @@ exports[`ListItem should match snapshot 1`] = `
   </svg>
   <ul
     className="list"
+    data-test="list-item-list"
   >
     <li
       className="listitem"
-    />
+    >
+      list name 1
+    </li>
     <li
       className="listitem"
-    />
+    >
+      list name 2
+    </li>
   </ul>
 </div>
 `;
