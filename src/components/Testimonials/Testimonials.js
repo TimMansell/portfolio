@@ -23,7 +23,11 @@ export const Testimonials = () => {
       <IconQuoteLeft className={styles.quote} />
       <Slider {...sliderSettings} className={styles.slider}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} data-e2e={`testimonial-slide-${index}`}>
+          <div
+            key={index}
+            data-e2e={`testimonial-slide-${index}`}
+            data-test="testimonial-slide"
+          >
             <TestimonialItem {...testimonial} />
           </div>
         ))}
