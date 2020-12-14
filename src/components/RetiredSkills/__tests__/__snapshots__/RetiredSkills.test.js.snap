@@ -50,17 +50,12 @@ Array [
         <li
           className="listitem"
         >
-          PHP
+          skill 1
         </li>
         <li
           className="listitem"
         >
-          MySQL
-        </li>
-        <li
-          className="listitem"
-        >
-          Flash
+          skill 2
         </li>
       </ul>
     </div>
@@ -91,130 +86,12 @@ Array [
         <li
           className="listitem"
         >
-          LESS
+          skill 3
         </li>
         <li
           className="listitem"
         >
-          Compass
-        </li>
-      </ul>
-    </div>
-    <div
-      className="item"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-js fa-w-14 icon iconMd iconPadded"
-        data-icon="js"
-        data-prefix="fab"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 448 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <ul
-        className="list"
-        data-test="list-item-list"
-      >
-        <li
-          className="listitem"
-        >
-          AngularJS
-        </li>
-        <li
-          className="listitem"
-        >
-          Backbone.js
-        </li>
-        <li
-          className="listitem"
-        >
-          jQuery
-        </li>
-      </ul>
-    </div>
-    <div
-      className="item"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-terminal fa-w-20 icon iconMd iconPadded"
-        data-icon="terminal"
-        data-prefix="fa"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 640 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <ul
-        className="list"
-        data-test="list-item-list"
-      >
-        <li
-          className="listitem"
-        >
-          Gulp / Grunt
-        </li>
-        <li
-          className="listitem"
-        >
-          SVN
-        </li>
-        <li
-          className="listitem"
-        >
-          Bower
-        </li>
-      </ul>
-    </div>
-    <div
-      className="item"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-trello fa-w-14 icon iconMd iconPadded"
-        data-icon="trello"
-        data-prefix="fab"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 448 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M392.3 32H56.1C25.1 32 0 57.1 0 88c-.1 0 0-4 0 336 0 30.9 25.1 56 56 56h336.2c30.8-.2 55.7-25.2 55.7-56V88c.1-30.8-24.8-55.8-55.6-56zM197 371.3c-.2 14.7-12.1 26.6-26.9 26.6H87.4c-14.8.1-26.9-11.8-27-26.6V117.1c0-14.8 12-26.9 26.9-26.9h82.9c14.8 0 26.9 12 26.9 26.9v254.2zm193.1-112c0 14.8-12 26.9-26.9 26.9h-81c-14.8 0-26.9-12-26.9-26.9V117.2c0-14.8 12-26.9 26.8-26.9h81.1c14.8 0 26.9 12 26.9 26.9v142.1z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <ul
-        className="list"
-        data-test="list-item-list"
-      >
-        <li
-          className="listitem"
-        >
-          Waterfall
-        </li>
-        <li
-          className="listitem"
-        >
-          VSTS
+          skill 4
         </li>
       </ul>
     </div>

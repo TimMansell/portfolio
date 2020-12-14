@@ -4,6 +4,27 @@ import renderer from 'react-test-renderer';
 
 import RetiredSkills from '../RetiredSkills';
 
+jest.mock(
+  '../json/retiredSkills.json',
+  () => [
+    {
+      list: [{ name: 'skill 1' }, { name: 'skill 2' }],
+      icon: {
+        name: 'code',
+        family: 'fa',
+      },
+    },
+    {
+      list: [{ name: 'skill 3' }, { name: 'skill 4' }],
+      icon: {
+        name: 'css3-alt',
+        family: 'fab',
+      },
+    },
+  ],
+  { virtual: true }
+);
+
 describe('Retired Skills', () => {
   it('should render my component', () => {
     // eslint-disable-next-line
