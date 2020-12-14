@@ -5,12 +5,13 @@ exports[`StackItem should match snapshot 1`] = `
   className="item"
 >
   <a
-    href=""
+    data-test="stack-item-link"
+    href="test url"
     rel="noopener noreferrer"
     target="_blank"
   >
     <img
-      alt=""
+      alt="test name"
       className="img"
       src={
         Object {
@@ -22,8 +23,8 @@ exports[`StackItem should match snapshot 1`] = `
           "default": "babel.svg",
         }
       }
-      title=""
-      width=""
+      title="test name"
+      width="50"
     />
   </a>
 </div>

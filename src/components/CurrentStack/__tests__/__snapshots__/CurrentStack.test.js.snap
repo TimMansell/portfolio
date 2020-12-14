@@ -27,6 +27,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://reactjs.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -53,6 +54,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://nodejs.org/en/"
         rel="noopener noreferrer"
         target="_blank"
@@ -79,6 +81,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://vuejs.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -105,6 +108,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://www.npmjs.com/"
         rel="noopener noreferrer"
         target="_blank"
@@ -131,6 +135,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://webpack.js.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -157,6 +162,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://yarnpkg.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -183,6 +189,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://eslint.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -209,6 +216,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://jestjs.io/"
         rel="noopener noreferrer"
         target="_blank"
@@ -235,6 +243,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://babeljs.io/"
         rel="noopener noreferrer"
         target="_blank"
@@ -261,6 +270,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://www.cypress.io/"
         rel="noopener noreferrer"
         target="_blank"
@@ -287,6 +297,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://sass-lang.com/"
         rel="noopener noreferrer"
         target="_blank"
@@ -313,6 +324,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://code.visualstudio.com/"
         rel="noopener noreferrer"
         target="_blank"
@@ -339,6 +351,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://git-scm.com/"
         rel="noopener noreferrer"
         target="_blank"
@@ -365,6 +378,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://postcss.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -391,6 +405,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://www.netlify.com/"
         rel="noopener noreferrer"
         target="_blank"
@@ -417,6 +432,7 @@ Array [
       className="item"
     >
       <a
+        data-test="stack-item-link"
         href="https://graphql.org/"
         rel="noopener noreferrer"
         target="_blank"

@@ -10,7 +10,12 @@ export const StackItem = ({ url, img, name, width }) => {
 
   return (
     <div className={styles.item}>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-test="stack-item-link"
+      >
         <SvgImage src={src} name={name} width={width} />
       </a>
     </div>
