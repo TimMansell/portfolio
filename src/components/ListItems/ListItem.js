@@ -25,9 +25,9 @@ export const ListItem = ({ item }) => {
   return (
     <div className={styles.item}>
       <Icon name={[item.icon.family, item.icon.name]} size="md" padded />
-      <ul className={styles.list}>
-        {item.list.map((listItem, i) => (
-          <li className={styles.listitem} key={i}>
+      <ul className={styles.list} data-test="list-item-list">
+        {item.list.map((listItem, index) => (
+          <li className={styles.listitem} key={index}>
             {displayItem(listItem)}
           </li>
         ))}
