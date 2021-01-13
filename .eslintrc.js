@@ -11,6 +11,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:cypress/recommended',
+    'plugin:react-hooks/recommended',
   ],
   plugins: ['jest', 'react', 'prettier', 'cypress'],
   parserOptions: {
