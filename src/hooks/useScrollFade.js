@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
+// import PropTypes from 'prop-types';
 import throttle from 'lodash.throttle';
 
-export const ScrollFade = ({ fadeMultiplier, children }) => {
+export const ScrollFade = (fadeMultiplier) => {
   const [styles, setStyles] = useState({});
 
   useEffect(() => {
@@ -25,12 +25,13 @@ export const ScrollFade = ({ fadeMultiplier, children }) => {
     return () => window.removeEventListener('scroll', onScroll);
   });
 
-  return <div style={styles}>{children}</div>;
+  // return <div style={styles}>{children}</div>;
+  return styles;
 };
 
-ScrollFade.propTypes = {
-  fadeMultiplier: PropTypes.number.isRequired,
-  children: PropTypes.node.isRequired,
-};
+// ScrollFade.propTypes = {
+//   fadeMultiplier: PropTypes.number.isRequired,
+//   children: PropTypes.node.isRequired,
+// };
 
 export default ScrollFade;
