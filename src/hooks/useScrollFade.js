@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
 import throttle from 'lodash.throttle';
 
 export const ScrollFade = (fadeMultiplier) => {
@@ -25,13 +24,7 @@ export const ScrollFade = (fadeMultiplier) => {
     return () => window.removeEventListener('scroll', onScroll);
   });
 
-  // return <div style={styles}>{children}</div>;
   return styles;
 };
-
-// ScrollFade.propTypes = {
-//   fadeMultiplier: PropTypes.number.isRequired,
-//   children: PropTypes.node.isRequired,
-// };
 
 export default ScrollFade;
