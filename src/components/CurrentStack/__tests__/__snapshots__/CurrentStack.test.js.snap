@@ -5,15 +5,13 @@ Array [
   <div
     className="heading headingPrimary"
   >
-    <div>
-      <h2
-        aria-label="Current Stack"
-        className="title"
-        data-test="heading-title"
-      >
-        Current Stack
-      </h2>
-    </div>
+    <h2
+      aria-label="Current Stack"
+      className="title"
+      data-test="heading-title"
+    >
+      Current Stack
+    </h2>
     <p
       data-test="heading-description"
     >

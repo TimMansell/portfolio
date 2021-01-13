@@ -33,11 +33,6 @@ exports[`PortfolioItem should match snapshot 1`] = `
           Title
         </div>
       </div>
-      <div>
-        <span>
-           
-        </span>
-      </div>
     </div>
     <div
       className="info"

@@ -5,15 +5,13 @@ Array [
   <div
     className="heading headingTertiary"
   >
-    <div>
-      <h2
-        aria-label="Portfolio"
-        className="title"
-        data-test="heading-title"
-      >
-        Portfolio
-      </h2>
-    </div>
+    <h2
+      aria-label="Portfolio"
+      className="title"
+      data-test="heading-title"
+    >
+      Portfolio
+    </h2>
     <p
       data-test="heading-description"
     >
@@ -54,11 +52,6 @@ Array [
             >
               title
             </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
           </div>
         </div>
         <div
@@ -150,11 +143,6 @@ Array [
             >
               title
             </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
           </div>
         </div>
         <div

@@ -5,15 +5,13 @@ Array [
   <div
     className="heading headingSecondary"
   >
-    <div>
-      <h2
-        aria-label="Skills"
-        className="title"
-        data-test="heading-title"
-      >
-        Skills
-      </h2>
-    </div>
+    <h2
+      aria-label="Skills"
+      className="title"
+      data-test="heading-title"
+    >
+      Skills
+    </h2>
     <p
       data-test="heading-description"
     >
