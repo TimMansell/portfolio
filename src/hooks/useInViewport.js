@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import inViewport from 'in-viewport';
 
-export const InViewport = ({ current }) => {
+export const InViewport = (element) => {
   const [isInViewport, setIsInViewport] = useState(false);
 
   useEffect(() => {
     const isVisible = () => setIsInViewport(true);
 
-    inViewport(current, isVisible);
+    inViewport(element.current, isVisible);
   });
 
   return isInViewport;
