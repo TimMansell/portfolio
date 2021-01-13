@@ -20,7 +20,6 @@
     "react-scrolllock": "5.0.1",
     "react-slick": "^0.27.13",
     "sanitize.css": "^11.0.1",
-    "shuffle-letters": "https://github.com/TimMansell/shuffle-letters.git",
     "slick-carousel": "^1.8.1",
     "webfontloader": "^1.6.28"
   },
