@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import throttle from 'lodash.throttle';
 
-const formatBlur = (amount) => ({ filter: `blur(${parseInt(amount, 10)}px)` });
+const formatBlur = (value) => ({ filter: `blur(${parseInt(value, 10)}px)` });
 
 export const useScrollBlur = (blurFrom, blurTo) => {
   const intialBlur = formatBlur(blurFrom);
