@@ -21,4 +21,11 @@ describe('Stats', () => {
 
     expect(snapshot).toMatchSnapshot();
   });
+
+  it('should list correct amount of items', () => {
+    const wrapper = shallow(<Stats />);
+    const list = wrapper.find('[data-test="stats-items"]');
+
+    expect(list.children()).toHaveLength(4);
+  });
 });

@@ -20,6 +20,7 @@ Array [
   </div>,
   <div
     className="lighterNote"
+    data-test="stats-items"
   >
     <div
       className="item"
@@ -28,7 +29,7 @@ Array [
         aria-hidden="true"
         className="svg-inline--fa fa-code fa-w-20 icon iconPadded"
         data-icon="code"
-        data-prefix="fas"
+        data-prefix="fa"
         focusable="false"
         role="img"
         style={Object {}}
@@ -59,7 +60,7 @@ Array [
         aria-hidden="true"
         className="svg-inline--fa fa-code-branch fa-w-12 icon iconPadded"
         data-icon="code-branch"
-        data-prefix="fas"
+        data-prefix="fa"
         focusable="false"
         role="img"
         style={Object {}}
@@ -75,7 +76,7 @@ Array [
       <p
         className="amount"
       >
-        305
+        170
       </p>
       <p
         className="text"
@@ -90,7 +91,7 @@ Array [
         aria-hidden="true"
         className="svg-inline--fa fa-laptop-code fa-w-20 icon iconPadded"
         data-icon="laptop-code"
-        data-prefix="fas"
+        data-prefix="fa"
         focusable="false"
         role="img"
         style={Object {}}
@@ -106,7 +107,7 @@ Array [
       <p
         className="amount"
       >
-        66
+        7
       </p>
       <p
         className="text"
@@ -121,7 +122,7 @@ Array [
         aria-hidden="true"
         className="svg-inline--fa fa-mug-hot fa-w-16 icon iconPadded"
         data-icon="mug-hot"
-        data-prefix="fas"
+        data-prefix="fa"
         focusable="false"
         role="img"
         style={Object {}}
@@ -137,7 +138,7 @@ Array [
       <p
         className="amount"
       >
-        97
+        11
       </p>
       <p
         className="text"
