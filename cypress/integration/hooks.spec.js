@@ -21,7 +21,7 @@ describe('Reacts Hooks', () => {
     cy.get('[data-e2e="navigation-portfolio"]').click();
 
     cy.get('[data-e2e="portfolio-items"]').within(() => {
-      cy.get('[data-e2e="picture"]').should('have.length', 6);
+      cy.get('[data-e2e="picture"]').eq(0).should('be.visible');
     });
   });
 
