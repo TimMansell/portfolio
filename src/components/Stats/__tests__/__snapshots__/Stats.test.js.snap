@@ -5,15 +5,13 @@ Array [
   <div
     className="heading headingTertiary"
   >
-    <div>
-      <h2
-        aria-label="Stats"
-        className="title"
-        data-test="heading-title"
-      >
-        Stats
-      </h2>
-    </div>
+    <h2
+      aria-label="Stats"
+      className="title"
+      data-test="heading-title"
+    >
+      Stats
+    </h2>
     <p
       data-test="heading-description"
     >
@@ -43,11 +41,11 @@ Array [
           style={Object {}}
         />
       </svg>
-      <div>
-        <span>
-           
-        </span>
-      </div>
+      <p
+        className="amount"
+      >
+        2726
+      </p>
       <p
         className="text"
       >
@@ -74,11 +72,11 @@ Array [
           style={Object {}}
         />
       </svg>
-      <div>
-        <span>
-           
-        </span>
-      </div>
+      <p
+        className="amount"
+      >
+        305
+      </p>
       <p
         className="text"
       >
@@ -105,11 +103,11 @@ Array [
           style={Object {}}
         />
       </svg>
-      <div>
-        <span>
-           
-        </span>
-      </div>
+      <p
+        className="amount"
+      >
+        66
+      </p>
       <p
         className="text"
       >
@@ -136,11 +134,11 @@ Array [
           style={Object {}}
         />
       </svg>
-      <div>
-        <span>
-           
-        </span>
-      </div>
+      <p
+        className="amount"
+      >
+        97
+      </p>
       <p
         className="text"
       >

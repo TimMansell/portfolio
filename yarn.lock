@@ -2544,7 +2544,7 @@ babel-preset-react-app@^9.1.2:
     babel-plugin-macros "2.8.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
 
-babel-runtime@^6.26.0, babel-runtime@^6.9.2:
+babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -4595,6 +4595,10 @@ eslint-plugin-prettier@^3.1.4:
 eslint-plugin-react-hooks@^1.6.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
+
+eslint-plugin-react-hooks@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.0.tgz#8c229c268d468956334c943bb45fc860280f5556"
 
 eslint-plugin-react@7.19.0:
   version "7.19.0"
@@ -10845,12 +10849,6 @@ shell-quote@^1.6.1:
 shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
-
-"shuffle-letters@https://github.com/TimMansell/shuffle-letters.git":
-  version "0.0.1"
-  resolved "https://github.com/TimMansell/shuffle-letters.git#25f76059b86bb2ee308396ffbb6ad367e7914a6c"
-  dependencies:
-    babel-runtime "^6.9.2"
 
 side-channel@^1.0.2:
   version "1.0.2"

@@ -7,7 +7,7 @@ export const Picture = ({ srcs, name, defaultImg }) => {
   const fallbackImg = defaultImg || srcs[0].src;
 
   return (
-    <picture title={name}>
+    <picture title={name} data-e2e="picture">
       {srcs.map(({ src, type }, index) => (
         <source
           type={`image/${type}`}
