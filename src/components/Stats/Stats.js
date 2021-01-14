@@ -18,7 +18,7 @@ import {
 
 export const Stats = () => {
   const element = useRef(null);
-  const isInViewport = useInViewport(element);
+  const isInViewport = useInViewport(element, -300);
 
   return (
     <>

@@ -22,7 +22,7 @@ export const PortfolioItem = ({
 }) => {
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
-  const isInViewport = useInViewport(cubeElement);
+  const isInViewport = useInViewport(cubeElement, 300);
 
   const { name, types, fallback } = src;
   const srcs = types.map((type) => ({
