@@ -31,7 +31,7 @@ exports[`Intro should match snapshot 1`] = `
       data-e2e="fading-content"
       style={
         Object {
-          "opacity": 1,
+          "opacity": "1.00",
         }
       }
     >
