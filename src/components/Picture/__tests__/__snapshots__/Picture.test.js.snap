@@ -2,6 +2,7 @@
 
 exports[`Picture should match snapshot 1`] = `
 <picture
+  data-e2e="picture"
   title="test name"
 >
   <source

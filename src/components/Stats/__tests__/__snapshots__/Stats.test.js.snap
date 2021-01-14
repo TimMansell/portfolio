@@ -43,7 +43,9 @@ Array [
       </svg>
       <p
         className="amount"
-      />
+      >
+        2726
+      </p>
       <p
         className="text"
       >
@@ -72,7 +74,9 @@ Array [
       </svg>
       <p
         className="amount"
-      />
+      >
+        305
+      </p>
       <p
         className="text"
       >
@@ -101,7 +105,9 @@ Array [
       </svg>
       <p
         className="amount"
-      />
+      >
+        66
+      </p>
       <p
         className="text"
       >
@@ -130,7 +136,9 @@ Array [
       </svg>
       <p
         className="amount"
-      />
+      >
+        97
+      </p>
       <p
         className="text"
       >

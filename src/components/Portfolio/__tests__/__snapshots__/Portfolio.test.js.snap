@@ -20,6 +20,7 @@ Array [
   </div>,
   <div
     className="portfolio"
+    data-e2e="portfolio-items"
   >
     <div
       className="portfolioItem"
