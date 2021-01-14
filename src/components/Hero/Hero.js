@@ -1,36 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import throttle from 'lodash.throttle';
+import React from 'react';
+
+import useScrollBlur from 'hooks/useScrollBlur';
 
 import styles from './Hero.module.scss';
 
-export const Hero = ({ blurFrom, blurTo }) => {
-  const [blur, setBlur] = useState({});
-
-  useEffect(() => {
-    const onScroll = throttle(() => {
-      const blur =
-        blurFrom + (blurTo - blurFrom) * (window.scrollY / window.innerHeight);
-      const blurCss = blur <= blurTo ? { filter: `blur(${blur}px)` } : {};
-
-      setBlur(blurCss);
-    }, 30);
-
-    window.addEventListener('scroll', onScroll);
-
-    return () => window.removeEventListener('scroll', onScroll);
-  });
+export const Hero = () => {
+  const scrollStyles = useScrollBlur(1, 10);
 
   return (
     <div className={styles.hero}>
-      <div className={styles.img} style={blur}></div>
+      <div className={styles.img} style={scrollStyles}></div>
     </div>
   );
-};
-
-Hero.propTypes = {
-  blurFrom: PropTypes.number.isRequired,
-  blurTo: PropTypes.number.isRequired,
 };
 
 export default Hero;

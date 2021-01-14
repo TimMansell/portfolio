@@ -16,7 +16,7 @@ export const Intro = () => {
 
   return (
     <section id="intro" className={styles.background} role="banner">
-      <Hero blurFrom={3} blurTo={10} />
+      <Hero />
 
       <div className={styles.intro}>
         <Hi />
