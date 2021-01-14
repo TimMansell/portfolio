@@ -10,11 +10,7 @@ describe('Reacts Hooks', () => {
 
     cy.scrollTo(0, 200);
 
-    cy.get('[data-e2e="fading-content"]').should(
-      'have.css',
-      'opacity',
-      '0.651515'
-    );
+    cy.get('[data-e2e="fading-content"]').should('have.css', 'opacity', '0.65');
   });
 
   it('useInViewport', () => {

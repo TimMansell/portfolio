@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import throttle from 'lodash.throttle';
 
+const formatOpacity = (value) => ({ opacity: value.toFixed(2) });
+
 export const useScrollFade = (fadeMultiplier) => {
-  const [styles, setStyles] = useState({ opacity: 1 });
+  const intialOpacity = formatOpacity(1);
+  const [styles, setStyles] = useState(intialOpacity);
 
   useEffect(() => {
     const onScroll = throttle(() => {
@@ -10,12 +13,10 @@ export const useScrollFade = (fadeMultiplier) => {
 
       const opacity = 1 - (scrollY / innerHeight) * fadeMultiplier;
 
-      const styles = {
-        opacity: opacity,
-      };
+      const opacityCss = formatOpacity(opacity);
 
       if (opacity >= 0) {
-        setStyles(styles);
+        setStyles(opacityCss);
       }
     }, 30);
 
