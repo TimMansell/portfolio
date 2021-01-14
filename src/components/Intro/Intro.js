@@ -21,7 +21,7 @@ export const Intro = () => {
       <div className={styles.intro}>
         <Hi />
 
-        <div style={scrollFadeStyle}>
+        <div style={scrollFadeStyle} data-e2e="fading-content">
           <Location />
 
           <Name />

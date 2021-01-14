@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import throttle from 'lodash.throttle';
 
-export const ScrollFade = (fadeMultiplier) => {
-  const [styles, setStyles] = useState({});
+export const useScrollFade = (fadeMultiplier) => {
+  const [styles, setStyles] = useState({ opacity: 1 });
 
   useEffect(() => {
     const onScroll = throttle(() => {
@@ -27,4 +27,4 @@ export const ScrollFade = (fadeMultiplier) => {
   return styles;
 };
 
-export default ScrollFade;
+export default useScrollFade;
