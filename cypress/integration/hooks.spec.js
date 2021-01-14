@@ -17,7 +17,7 @@ describe('Reacts Hooks', () => {
     );
   });
 
-  it.only('useInViewport', () => {
+  it('useInViewport', () => {
     cy.get('[data-e2e="portfolio-items"]').within(() => {
       cy.get('[data-e2e="picture"]').should('have.length', 0);
     });
@@ -27,5 +27,13 @@ describe('Reacts Hooks', () => {
     cy.get('[data-e2e="portfolio-items"]').within(() => {
       cy.get('[data-e2e="picture"]').should('have.length', 6);
     });
+  });
+
+  it('useScrollBlur', () => {
+    cy.get('[data-e2e="hero-img"]').should('have.css', 'filter', 'blur(1px)');
+
+    cy.scrollTo(0, 200);
+
+    cy.get('[data-e2e="hero-img"]').should('have.css', 'filter', 'blur(3px)');
   });
 });

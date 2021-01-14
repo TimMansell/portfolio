@@ -9,7 +9,11 @@ export const Hero = () => {
 
   return (
     <div className={styles.hero}>
-      <div className={styles.img} style={scrollStyles}></div>
+      <div
+        className={styles.img}
+        style={scrollStyles}
+        data-e2e="hero-img"
+      ></div>
     </div>
   );
 };
