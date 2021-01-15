@@ -1,0 +1,26 @@
+[
+  {
+    "key": "loc",
+    "description": "lines of code",
+    "offset": 0.9,
+    "icon": "code"
+  },
+  {
+    "key": "commits",
+    "description": "git commits",
+    "offset": 0.5,
+    "icon": "code-branch"
+  },
+  {
+    "key": "pullRequests",
+    "description": "pull requests",
+    "offset": 0.1,
+    "icon": "laptop-code"
+  },
+  {
+    "key": "coffees",
+    "description": "coffees",
+    "offset": 0.1,
+    "icon": "mug-hot"
+  }
+]
