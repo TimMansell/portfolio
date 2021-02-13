@@ -20,15 +20,16 @@ import {
   faMugHot,
   faQuoteLeft,
   faQuoteRight,
+  faCogs,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
   faCss3Alt,
   faJs,
-  faTrello,
   faLinkedin,
   faTwitter,
   faGithub,
+  faAppStoreIos,
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
@@ -44,12 +45,13 @@ library.add(
   faMugHot,
   faQuoteLeft,
   faQuoteRight,
+  faCogs,
   faCss3Alt,
   faJs,
-  faTrello,
   faLinkedin,
   faTwitter,
-  faGithub
+  faGithub,
+  faAppStoreIos
 );
 
 // Default Icon.
@@ -265,6 +267,19 @@ IconQuoteRight.propTypes = {
   padded: PropTypes.bool,
 };
 
+export const IconCogs = ({ className, size, padded }) => {
+  return (
+    <Icon name={faCogs} className={className} size={size} padded={padded} />
+  );
+};
+
+IconCogs.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
 // Brand Icons.
 export const IconCss3Alt = ({ className, size, padded }) => {
   return (
@@ -290,13 +305,18 @@ IconJs.propTypes = {
   padded: PropTypes.bool,
 };
 
-export const IconTrello = ({ className, size, padded }) => {
+export const IconAppStoreIos = ({ className, size, padded }) => {
   return (
-    <Icon name={faTrello} className={className} size={size} padded={padded} />
+    <Icon
+      name={faAppStoreIos}
+      className={className}
+      size={size}
+      padded={padded}
+    />
   );
 };
 
-IconTrello.propTypes = {
+IconAppStoreIos.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
