@@ -1,55 +1,58 @@
 [
-    {
-        "list": [
-            {"name": "PHP"},
-            {"name": "MySQL"},
-            {"name": "Flash"}
-        ],
-        "icon": {
-            "name": "code",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "LESS"},
-            {"name": "Compass"}
-        ],
-        "icon": {
-            "name": "css3-alt",
-            "family": "fab"
-        }
-    },
-    {
-        "list": [
-            {"name": "AngularJS"},
-            {"name": "Backbone.js"},
-            {"name": "jQuery"}
-        ],
-        "icon": {
-            "name": "js",
-            "family": "fab"
-        }
-    },
-    {
-        "list": [
-            {"name": "Gulp / Grunt"},
-            {"name": "SVN"},
-            {"name": "Bower"}
-        ],
-        "icon": {
-            "name": "terminal",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "Waterfall"},
-            {"name": "VSTS"}
-        ],
-        "icon": {
-            "name": "trello",
-            "family": "fab"
-        }
+  {
+    "list": [{ "name": "PHP" }, { "name": "MySQL" }, { "name": "Flash" }],
+    "icon": {
+      "name": "code",
+      "family": "fa"
     }
+  },
+  {
+    "list": [
+      { "name": "LESS" },
+      { "name": "Compass" },
+      { "name": "OOCSS" },
+      { "name": "SMACSS" }
+    ],
+    "icon": {
+      "name": "css3-alt",
+      "family": "fab"
+    }
+  },
+  {
+    "list": [{ "name": "ES2015 Classes" }, { "name": "jQuery" }],
+    "icon": {
+      "name": "js",
+      "family": "fab"
+    }
+  },
+  {
+    "list": [
+      { "name": "Gulp" },
+      { "name": "Grunt" },
+      { "name": "SVN" },
+      { "name": "Bower" }
+    ],
+    "icon": {
+      "name": "terminal",
+      "family": "fa"
+    }
+  },
+  {
+    "list": [
+      { "name": "AngularJS" },
+      { "name": "Backbone.js" },
+      { "name": "EXT JS" }
+    ],
+    "icon": {
+      "name": "cogs",
+      "family": "fa"
+    }
+  },
+  {
+    "list": [{ "name": "VSTS" }, { "name": "Photoshop" }, { "name": "IE11" }],
+    "icon": {
+      "name": "app-store-ios",
+      "family": "fab"
+    }
+  }
 ]

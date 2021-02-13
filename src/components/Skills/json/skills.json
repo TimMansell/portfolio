@@ -1,98 +1,105 @@
 [
-    {
-        "list": [
-            {"name": "HTML5"},
-            {"name": "Semantic Markup"},
-            {"name": "Bootstrap"},
-            {"name": "SEO"},
-            {"name": "a11y"},
-            {"name": "Web Components"},
-            {"name": "Styleguides"},
-            {"name": "Storybook"}
-        ],
-        "icon": {
-            "name": "code",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "CSS3"},
-            {"name": "SCSS"},
-            {"name": "BEM"},
-            {"name": "OOCSS"},
-            {"name": "SMACSS"},
-            {"name": "PostCSS"},
-            {"name": "CSS Modules"},
-            {"name": "Flexbox / CSS Grid"}
-        ],
-        "icon": {
-            "name": "css3-alt",
-            "family": "fab"
-        }
-    },
-    {
-        "list": [
-            {"name": "Responsive Design"},
-            {"name": "Mobile First CSS"},
-            {"name": "Retina Images"},
-            {"name": "Web Performance"},
-            {"name": "Page Optimisation"},
-            {"name": "CI / CD"},
-            {"name": "Unit Testing"},
-            {"name": "e2e Testing"}
-        ],
-        "icon": {
-            "name": "clipboard-list",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "ES6+"},
-            {"name": "Node.js"},
-            {"name": "Babel"},
-            {"name": "Webpack"},
-            {"name": "React / Redux"},
-            {"name": "Vue / Vuex / Nuxt"},
-            {"name": "Jest / Cypress"},
-            {"name": "JSON"}
-        ],
-        "icon": {
-            "name": "js",
-            "family": "fab"
-        }
-    },
-    {
-        "list": [
-            {"name": "NPM"},
-            {"name": "Yarn"},
-            {"name": "Git"},
-            {"name": "ESLint"},
-            {"name": "Stylelint"},
-            {"name": "Prettier"},
-            {"name": "Create React App"},
-            {"name": "Vue CLI"}
-        ],
-        "icon": {
-            "name": "terminal",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "Agile"},
-            {"name": "Scrum"},
-            {"name": "Kanban"},
-            {"name": "GitHub"},
-            {"name": "JIRA"},
-            {"name": "Slack"},
-            {"name": "Trello"},
-            {"name": "Table Tennis"}
-        ],
-        "icon": {
-            "name": "trello",
-            "family": "fab"
-        }
+  {
+    "list": [
+      { "name": "CSS3" },
+      { "name": "SCSS" },
+      { "name": "BEM" },
+      { "name": "Flexbox" },
+      { "name": "CSS Grid" },
+      { "name": "PostCSS" },
+      { "name": "CSS Modules" },
+      { "name": "Mobile First CSS" },
+      { "name": "Responsive Design" },
+      { "name": "Bootstrap" },
+      { "name": "Styleguides" }
+    ],
+    "icon": {
+      "name": "css3-alt",
+      "family": "fab"
     }
+  },
+  {
+    "list": [
+      { "name": "ES2015+ (ES6)" },
+      { "name": "Node.js" },
+      { "name": "Babel" },
+      { "name": "Webpack" },
+      { "name": "Jest" },
+      { "name": "Cypress" },
+      { "name": "JSON" },
+      { "name": "Immutable" },
+      { "name": "Functional Programming" },
+      { "name": "Enzyme" }
+    ],
+    "icon": {
+      "name": "js",
+      "family": "fab"
+    }
+  },
+  {
+    "list": [
+      { "name": "NPM" },
+      { "name": "Yarn" },
+      { "name": "Git" },
+      { "name": "ESLint" },
+      { "name": "Stylelint" },
+      { "name": "Prettier" },
+      { "name": "Create React App" },
+      { "name": "Vue CLI" },
+      { "name": "lint-staged" }
+    ],
+    "icon": {
+      "name": "terminal",
+      "family": "fa"
+    }
+  },
+  {
+    "list": [
+      { "name": "React" },
+      { "name": "Redux" },
+      { "name": "Vue" },
+      { "name": "Vuex" },
+      { "name": "Nuxt" },
+      { "name": "JAMstack" },
+      { "name": "GraphQL" }
+    ],
+    "icon": {
+      "name": "cogs",
+      "family": "fa"
+    }
+  },
+  {
+    "list": [
+      { "name": "Web Performance" },
+      { "name": "Page Optimisation" },
+      { "name": "Continuous Integration" },
+      { "name": "Continuous Deployment" },
+      { "name": "Unit Testing" },
+      { "name": "e2e Testing" },
+      { "name": "SEO" },
+      { "name": "a11y" }
+    ],
+    "icon": {
+      "name": "clipboard-list",
+      "family": "fa"
+    }
+  },
+  {
+    "list": [
+      { "name": "GitHub" },
+      { "name": "JIRA" },
+      { "name": "Slack" },
+      { "name": "Trello" },
+      { "name": "Figma" },
+      { "name": "Netlify" },
+      { "name": "FaunaDB" },
+      { "name": "Windows" },
+      { "name": "MacOS" },
+      { "name": "Storybook" }
+    ],
+    "icon": {
+      "name": "app-store-ios",
+      "family": "fab"
+    }
+  }
 ]
