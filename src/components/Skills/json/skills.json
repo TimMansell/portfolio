@@ -10,7 +10,6 @@
       { "name": "CSS Modules" },
       { "name": "Mobile First CSS" },
       { "name": "Responsive Design" },
-      { "name": "Bootstrap" },
       { "name": "Styleguides" }
     ],
     "icon": {
@@ -28,7 +27,7 @@
       { "name": "Cypress" },
       { "name": "JSON" },
       { "name": "Immutable" },
-      { "name": "Functional Programming" },
+      { "name": "Functional Programming (FP)" },
       { "name": "Enzyme" }
     ],
     "icon": {
@@ -42,11 +41,12 @@
       { "name": "Yarn" },
       { "name": "Git" },
       { "name": "ESLint" },
-      { "name": "Stylelint" },
+      { "name": "stylelint" },
       { "name": "Prettier" },
       { "name": "Create React App" },
       { "name": "Vue CLI" },
-      { "name": "lint-staged" }
+      { "name": "lint-staged" },
+      { "name": "autoprefixer" }
     ],
     "icon": {
       "name": "terminal",
@@ -61,7 +61,8 @@
       { "name": "Vuex" },
       { "name": "Nuxt" },
       { "name": "JAMstack" },
-      { "name": "GraphQL" }
+      { "name": "GraphQL" },
+      { "name": "Bootstrap" }
     ],
     "icon": {
       "name": "cogs",
@@ -72,12 +73,13 @@
     "list": [
       { "name": "Web Performance" },
       { "name": "Page Optimisation" },
-      { "name": "Continuous Integration" },
-      { "name": "Continuous Deployment" },
+      { "name": "Continuous Integration (CI)" },
+      { "name": "Continuous Deployment (CD)" },
       { "name": "Unit Testing" },
       { "name": "e2e Testing" },
       { "name": "SEO" },
-      { "name": "a11y" }
+      { "name": "a11y" },
+      { "name": "Code Reviews" }
     ],
     "icon": {
       "name": "clipboard-list",
@@ -95,7 +97,8 @@
       { "name": "FaunaDB" },
       { "name": "Windows" },
       { "name": "MacOS" },
-      { "name": "Storybook" }
+      { "name": "Storybook" },
+      { "name": "VS Code" }
     ],
     "icon": {
       "name": "app-store-ios",

@@ -19,7 +19,12 @@
     }
   },
   {
-    "list": [{ "name": "ES2015 Classes" }, { "name": "jQuery" }],
+    "list": [
+      { "name": "ES2015 Classes" },
+      { "name": "jQuery" },
+      { "name": "jQuery UI" },
+      { "name": "Modernizr" }
+    ],
     "icon": {
       "name": "js",
       "family": "fab"
@@ -30,7 +35,8 @@
       { "name": "Gulp" },
       { "name": "Grunt" },
       { "name": "SVN" },
-      { "name": "Bower" }
+      { "name": "Bower" },
+      { "name": "JSHint" }
     ],
     "icon": {
       "name": "terminal",
@@ -41,7 +47,8 @@
     "list": [
       { "name": "AngularJS" },
       { "name": "Backbone.js" },
-      { "name": "EXT JS" }
+      { "name": "EXT JS" },
+      { "name": "Ionic" }
     ],
     "icon": {
       "name": "cogs",
@@ -49,7 +56,13 @@
     }
   },
   {
-    "list": [{ "name": "VSTS" }, { "name": "Photoshop" }, { "name": "IE11" }],
+    "list": [
+      { "name": "VSTS" },
+      { "name": "Photoshop" },
+      { "name": "IE11" },
+      { "name": "Sublime Text" },
+      { "name": "Notepad++" }
+    ],
     "icon": {
       "name": "app-store-ios",
       "family": "fab"
