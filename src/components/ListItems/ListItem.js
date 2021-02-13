@@ -22,11 +22,15 @@ export const ListItem = ({ item }) => {
     return name;
   };
 
+  const sortedList = item.list.sort(
+    (firstItem, secondItem) => secondItem.name.length - firstItem.name.length
+  );
+
   return (
     <div className={styles.item}>
       <Icon name={[item.icon.family, item.icon.name]} size="md" padded />
       <ul className={styles.list} data-test="list-item-list">
-        {item.list.map((listItem, index) => (
+        {sortedList.map((listItem, index) => (
           <li className={styles.listitem} key={index}>
             {displayItem(listItem)}
           </li>
