@@ -48,12 +48,11 @@
       "NPM",
       "Yarn",
       "Git",
+      "Create React App",
+      "Vue CLI",
       "ESLint",
       "stylelint",
       "Prettier",
-      "Create React App",
-      "Vue CLI",
-      "lint-staged",
       "autoprefixer"
     ],
     "icon": {
