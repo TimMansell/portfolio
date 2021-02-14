@@ -1,16 +1,17 @@
 [
   {
+    "title": "CSS",
     "list": [
-      { "name": "CSS3" },
-      { "name": "SCSS" },
-      { "name": "BEM" },
-      { "name": "Flexbox" },
-      { "name": "CSS Grid" },
-      { "name": "PostCSS" },
-      { "name": "CSS Modules" },
-      { "name": "Mobile First CSS" },
-      { "name": "Responsive Design" },
-      { "name": "Styleguides" }
+      "CSS3",
+      "SCSS",
+      "BEM",
+      "Flexbox",
+      "CSS Grid",
+      "PostCSS",
+      "CSS Modules",
+      "Mobile First CSS",
+      "Responsive Design",
+      "Styleguides"
     ],
     "icon": {
       "name": "css3-alt",
@@ -18,17 +19,19 @@
     }
   },
   {
+    "title": "JS",
     "list": [
-      { "name": "ES2015+ (ES6)" },
-      { "name": "Node.js" },
-      { "name": "Babel" },
-      { "name": "Webpack" },
-      { "name": "Jest" },
-      { "name": "Cypress" },
-      { "name": "JSON" },
-      { "name": "Immutable" },
-      { "name": "Functional Programming (FP)" },
-      { "name": "Enzyme" }
+      "ES2015+ (ES6)",
+      "Node.js",
+      "Babel",
+      "Webpack",
+      "Jest",
+      "Cypress",
+      "JSON",
+      "Immutable",
+      "Functional Programming (FP)",
+      "Enzyme",
+      "JSX"
     ],
     "icon": {
       "name": "js",
@@ -36,17 +39,18 @@
     }
   },
   {
+    "title": "CLI",
     "list": [
-      { "name": "NPM" },
-      { "name": "Yarn" },
-      { "name": "Git" },
-      { "name": "ESLint" },
-      { "name": "stylelint" },
-      { "name": "Prettier" },
-      { "name": "Create React App" },
-      { "name": "Vue CLI" },
-      { "name": "lint-staged" },
-      { "name": "autoprefixer" }
+      "NPM",
+      "Yarn",
+      "Git",
+      "ESLint",
+      "stylelint",
+      "Prettier",
+      "Create React App",
+      "Vue CLI",
+      "lint-staged",
+      "autoprefixer"
     ],
     "icon": {
       "name": "terminal",
@@ -54,15 +58,16 @@
     }
   },
   {
+    "title": "Frameworks",
     "list": [
-      { "name": "React" },
-      { "name": "Redux" },
-      { "name": "Vue" },
-      { "name": "Vuex" },
-      { "name": "Nuxt" },
-      { "name": "JAMstack" },
-      { "name": "GraphQL" },
-      { "name": "Bootstrap" }
+      "React",
+      "Redux",
+      "Vue",
+      "Vuex",
+      "Nuxt",
+      "JAMstack",
+      "GraphQL",
+      "Bootstrap"
     ],
     "icon": {
       "name": "cogs",
@@ -70,16 +75,17 @@
     }
   },
   {
+    "title": "Checklist",
     "list": [
-      { "name": "Web Performance" },
-      { "name": "Page Optimisation" },
-      { "name": "Continuous Integration (CI)" },
-      { "name": "Continuous Deployment (CD)" },
-      { "name": "Unit Testing" },
-      { "name": "e2e Testing" },
-      { "name": "SEO" },
-      { "name": "a11y" },
-      { "name": "Code Reviews" }
+      "Web Performance",
+      "Page Optimisation",
+      "Continuous Integration (CI)",
+      "Continuous Deployment (CD)",
+      "Unit Testing",
+      "e2e Testing",
+      "SEO",
+      "a11y",
+      "Code Reviews"
     ],
     "icon": {
       "name": "clipboard-list",
@@ -87,18 +93,19 @@
     }
   },
   {
+    "title": "Applications",
     "list": [
-      { "name": "GitHub" },
-      { "name": "JIRA" },
-      { "name": "Slack" },
-      { "name": "Trello" },
-      { "name": "Figma" },
-      { "name": "Netlify" },
-      { "name": "FaunaDB" },
-      { "name": "Windows" },
-      { "name": "MacOS" },
-      { "name": "Storybook" },
-      { "name": "VS Code" }
+      "GitHub",
+      "JIRA",
+      "Slack",
+      "Trello",
+      "Figma",
+      "Netlify",
+      "FaunaDB",
+      "Windows",
+      "MacOS",
+      "Storybook",
+      "VS Code"
     ],
     "icon": {
       "name": "app-store-ios",

@@ -1,55 +1,34 @@
 [
   {
-    "list": [{ "name": "PHP" }, { "name": "MySQL" }, { "name": "Flash" }],
+    "list": ["PHP", "MySQL", "Flash"],
     "icon": {
       "name": "code",
       "family": "fa"
     }
   },
   {
-    "list": [
-      { "name": "LESS" },
-      { "name": "Compass" },
-      { "name": "OOCSS" },
-      { "name": "SMACSS" }
-    ],
+    "list": ["LESS", "Compass", "OOCSS", "SMACSS"],
     "icon": {
       "name": "css3-alt",
       "family": "fab"
     }
   },
   {
-    "list": [
-      { "name": "ES2015 Classes" },
-      { "name": "jQuery" },
-      { "name": "jQuery UI" },
-      { "name": "Modernizr" }
-    ],
+    "list": ["ES2015 Classes", "jQuery", "jQuery UI", "Modernizr"],
     "icon": {
       "name": "js",
       "family": "fab"
     }
   },
   {
-    "list": [
-      { "name": "Gulp" },
-      { "name": "Grunt" },
-      { "name": "SVN" },
-      { "name": "Bower" },
-      { "name": "JSHint" }
-    ],
+    "list": ["Gulp", "Grunt", "SVN", "Bower", "JSHint"],
     "icon": {
       "name": "terminal",
       "family": "fa"
     }
   },
   {
-    "list": [
-      { "name": "AngularJS" },
-      { "name": "Backbone.js" },
-      { "name": "EXT JS" },
-      { "name": "Ionic" }
-    ],
+    "list": ["AngularJS", "Backbone.js", "EXT JS", "Ionic"],
     "icon": {
       "name": "cogs",
       "family": "fa"
@@ -57,11 +36,12 @@
   },
   {
     "list": [
-      { "name": "VSTS" },
-      { "name": "Photoshop" },
-      { "name": "IE11" },
-      { "name": "Sublime Text" },
-      { "name": "Notepad++" }
+      "VSTS",
+      "Photoshop",
+      "IE11",
+      "Sublime Text",
+      "Notepad++",
+      "Semaphore"
     ],
     "icon": {
       "name": "app-store-ios",
