@@ -20,11 +20,15 @@ const Main = () => {
         <Profile />
       </SectionWrap>
 
-      <SectionWrap id="skills" background="primary">
+      <SectionWrap id="skills" background="primary" container="medium">
         <Skills />
       </SectionWrap>
 
-      <SectionWrap id="retired-skills" background="secondary">
+      <SectionWrap
+        id="retired-skills"
+        background="secondary"
+        container="medium"
+      >
         <RetiredSkills />
       </SectionWrap>
 
