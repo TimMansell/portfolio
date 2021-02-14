@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: pxtorem(4);
+  font-size: pxtorem(12);
+  line-height: 1.2;
+
+  &Lg {
+    gap: pxtorem(8);
+  }
+}

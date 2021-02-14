@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.label {
+  color: var(--colour-5);
+  padding: var(--vr-xxs);
+  border-radius: 3px;
+  font-size: pxtorem(12);
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(16);
+  }
+}
+
+.primary {
+  background: var(--colour-1);
+}
+
+.secondary {
+  background: var(--colour-3);
+}
+
+.tertiary {
+  border: 1px solid;
+}
+
+.lg {
+  padding: var(--vr-xs);
+  font-size: pxtorem(14);
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(18);
+  }
+}
