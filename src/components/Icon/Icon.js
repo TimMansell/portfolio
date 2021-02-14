@@ -11,9 +11,7 @@ import {
   faChevronDown,
   faAngleUp,
   faTerminal,
-  faClipboardList,
-  faGamepad,
-  faChalkboardTeacher,
+  faTasks,
   faCode,
   faCodeBranch,
   faLaptopCode,
@@ -21,9 +19,12 @@ import {
   faQuoteLeft,
   faQuoteRight,
   faCogs,
+  faBug,
+  faTools,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
+  faHtml5,
   faCss3Alt,
   faJs,
   faLinkedin,
@@ -36,9 +37,7 @@ library.add(
   faChevronDown,
   faAngleUp,
   faTerminal,
-  faClipboardList,
-  faGamepad,
-  faChalkboardTeacher,
+  faTasks,
   faCode,
   faCodeBranch,
   faLaptopCode,
@@ -46,6 +45,9 @@ library.add(
   faQuoteLeft,
   faQuoteRight,
   faCogs,
+  faBug,
+  faTools,
+  faHtml5,
   faCss3Alt,
   faJs,
   faLinkedin,
@@ -114,55 +116,6 @@ export const IconTerminal = ({ className, size, padded }) => {
 };
 
 IconTerminal.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconClipboardList = ({ className, size, padded }) => {
-  return (
-    <Icon
-      name={faClipboardList}
-      className={className}
-      size={size}
-      padded={padded}
-    />
-  );
-};
-
-IconClipboardList.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconGamepad = ({ className, size, padded }) => {
-  return (
-    <Icon name={faGamepad} className={className} size={size} padded={padded} />
-  );
-};
-
-IconGamepad.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconChalkboardTeacher = ({ className, size, padded }) => {
-  return (
-    <Icon
-      name={faChalkboardTeacher}
-      className={className}
-      size={size}
-      padded={padded}
-    />
-  );
-};
-
-IconChalkboardTeacher.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
