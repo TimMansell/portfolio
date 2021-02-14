@@ -3,13 +3,15 @@
 
 .items {
   display: grid;
-  grid-gap: pxtorem(16);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--vr-lg);
   color: var(--secondary-text-colour);
-  text-align: center;
   margin-bottom: var(--vr-lg);
 
   @media (min-width: $bp-lg) {
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $bp-xl) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

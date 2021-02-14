@@ -2,40 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Icon from 'components/Icon';
+import Labels from '../Labels';
+
 import styles from './ListItem.module.scss';
 
+export const sortList = (list) =>
+  list.sort((firstItem, secondItem) => secondItem.length - firstItem.length);
+
 export const ListItem = ({ item }) => {
-  const displayItem = ({ name, url }) => {
-    if (url) {
-      return (
-        <a
-          className={styles.link}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {name}
-        </a>
-      );
-    }
-
-    return name;
-  };
-
-  const sortedList = item.list.sort(
-    (firstItem, secondItem) => secondItem.name.length - firstItem.name.length
-  );
+  const sortedList = sortList(item.list);
 
   return (
     <div className={styles.item}>
-      <Icon name={[item.icon.family, item.icon.name]} size="md" padded />
-      <ul className={styles.list} data-test="list-item-list">
-        {sortedList.map((listItem, index) => (
-          <li className={styles.listitem} key={index}>
-            {displayItem(listItem)}
-          </li>
-        ))}
-      </ul>
+      <div className={styles.icon}>
+        <Icon name={[item.icon.family, item.icon.name]} size="sm" />
+      </div>
+      <div className={styles.content}>
+        <h3 className={styles.title}>{item.title}</h3>
+        <Labels items={sortedList} type="tertiary" size="lg" />
+      </div>
     </div>
   );
 };

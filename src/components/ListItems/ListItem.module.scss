@@ -3,22 +3,22 @@
 
 .item {
   composes: divider from '~scss/helpers/divider.scss';
+  flex-direction: row;
+  gap: var(--vr);
+  align-items: end;
 }
 
-.list {
-  list-style-type: none;
-  font-size: pxtorem(20);
-  text-shadow: -1px -1px rgba(#000, 0.2);
-
-  @media (min-width: $bp-sm) {
-    font-size: pxtorem(18);
-  }
+.title {
+  margin-bottom: var(--vr-md);
+  font-size: pxtorem(26);
 }
 
-.listitem {
-  margin-bottom: var(--vr-xxs);
+.content {
+  flex: 1;
 }
 
-.link {
-  composes: alt from '~scss/helpers/link.scss';
+.icon {
+  display: flex;
+  justify-content: center;
+  width: 20%;
 }
