@@ -1,5 +1,13 @@
 [
   {
+    "title": "HTML",
+    "list": ["HTML5", "SEO", "Semantic", "a11y", "Styleguides", "Markdown"],
+    "icon": {
+      "name": "html5",
+      "family": "fab"
+    }
+  },
+  {
     "title": "CSS",
     "list": [
       "CSS3",
@@ -9,9 +17,8 @@
       "CSS Grid",
       "PostCSS",
       "CSS Modules",
-      "Mobile First CSS",
-      "Responsive Design",
-      "Styleguides"
+      "Mobile First",
+      "Responsive"
     ],
     "icon": {
       "name": "css3-alt",
@@ -25,13 +32,10 @@
       "Node.js",
       "Babel",
       "Webpack",
-      "Jest",
-      "Cypress",
+      "JSX",
       "JSON",
       "Immutable",
-      "Functional Programming (FP)",
-      "Enzyme",
-      "JSX"
+      "Functional Programming (FP)"
     ],
     "icon": {
       "name": "js",
@@ -67,28 +71,41 @@
       "Nuxt",
       "JAMstack",
       "GraphQL",
-      "Bootstrap"
+      "Bootstrap",
+      "Storybook"
     ],
     "icon": {
-      "name": "cogs",
+      "name": "tools",
       "family": "fa"
     }
   },
   {
-    "title": "Checklist",
+    "title": "Tasks",
     "list": [
       "Web Performance",
       "Page Optimisation",
-      "Continuous Integration (CI)",
-      "Continuous Deployment (CD)",
-      "Unit Testing",
-      "e2e Testing",
       "SEO",
       "a11y",
-      "Code Reviews"
+      "Code Reviews",
+      "Pull Requests"
     ],
     "icon": {
-      "name": "clipboard-list",
+      "name": "tasks",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Automation",
+    "list": [
+      "Cont. Integration (CI)",
+      "Cont. Deployment (CD)",
+      "Unit Testing",
+      "e2e Testing",
+      "Netlify",
+      "Github Actions"
+    ],
+    "icon": {
+      "name": "cogs",
       "family": "fa"
     }
   },
@@ -100,16 +117,31 @@
       "Slack",
       "Trello",
       "Figma",
-      "Netlify",
       "FaunaDB",
       "Windows",
       "MacOS",
-      "Storybook",
       "VS Code"
     ],
     "icon": {
       "name": "app-store-ios",
       "family": "fab"
+    }
+  },
+  {
+    "title": "Testing",
+    "list": [
+      "Browserstack",
+      "Jest",
+      "Cypress",
+      "Enzyme",
+      "Unit",
+      "e2e",
+      "snapshot",
+      "a11y"
+    ],
+    "icon": {
+      "name": "bug",
+      "family": "fa"
     }
   }
 ]
