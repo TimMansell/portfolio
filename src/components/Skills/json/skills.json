@@ -1,7 +1,15 @@
 [
   {
     "title": "HTML",
-    "list": ["HTML5", "SEO", "Semantic", "a11y", "Styleguides", "Markdown"],
+    "list": [
+      "HTML5",
+      "Semantic",
+      "SEO",
+      "a11y",
+      "Styleguides",
+      "Markdown",
+      "Web Components"
+    ],
     "icon": {
       "name": "html5",
       "family": "fab"
@@ -18,7 +26,8 @@
       "PostCSS",
       "CSS Modules",
       "Mobile First",
-      "Responsive"
+      "Responsive",
+      "Atomic"
     ],
     "icon": {
       "name": "css3-alt",
@@ -34,6 +43,7 @@
       "Webpack",
       "JSX",
       "JSON",
+      "Async / Await",
       "Immutable",
       "Functional Programming (FP)"
     ],
@@ -81,8 +91,9 @@
   {
     "title": "Tasks",
     "list": [
-      "Web Performance",
-      "Page Optimisation",
+      "Performance",
+      "Optimisation",
+      "Image Optimisation",
       "SEO",
       "a11y",
       "Security",
@@ -102,7 +113,8 @@
       "Unit Testing",
       "e2e Testing",
       "Netlify",
-      "Github Actions"
+      "Github Actions",
+      "Semaphore"
     ],
     "icon": {
       "name": "cogs",

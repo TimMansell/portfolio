@@ -41,14 +41,7 @@
   },
   {
     "title": "Applications",
-    "list": [
-      "VSTS",
-      "Photoshop",
-      "IE11",
-      "Sublime Text",
-      "Notepad++",
-      "Semaphore"
-    ],
+    "list": ["VSTS", "Photoshop", "IE11", "Sublime Text", "Notepad++"],
     "icon": {
       "name": "app-store-ios",
       "family": "fab"
