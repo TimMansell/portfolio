@@ -34,7 +34,7 @@ describe('Label', () => {
     };
     const wrapper = shallow(<Label {...props} />);
 
-    expect(wrapper.hasClass('primary')).toBeTruthy();
+    expect(wrapper.hasClass('isPrimary')).toBeTruthy();
   });
 
   it('should display a secondary background', () => {
@@ -44,6 +44,26 @@ describe('Label', () => {
     };
     const wrapper = shallow(<Label {...props} />);
 
-    expect(wrapper.hasClass('secondary')).toBeTruthy();
+    expect(wrapper.hasClass('isSecondary')).toBeTruthy();
+  });
+
+  it('should display a tertiary background', () => {
+    const props = {
+      ...defaultProps,
+      type: 'tertiary',
+    };
+    const wrapper = shallow(<Label {...props} />);
+
+    expect(wrapper.hasClass('isTertiary')).toBeTruthy();
+  });
+
+  it('should render as large label', () => {
+    const props = {
+      ...defaultProps,
+      size: 'lg',
+    };
+    const wrapper = shallow(<Label {...props} />);
+
+    expect(wrapper.hasClass('isLarge')).toBeTruthy();
   });
 });
