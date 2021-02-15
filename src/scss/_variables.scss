@@ -62,14 +62,13 @@ $bp-xxxl: 1921px;
 
   // Vertical rythm.
   --vr: #{pxtorem(16)};
-  --vr-xxs: calc(var(--vr) / 3);
+  --vr-xxs: calc(var(--vr) / 4);
   --vr-xs: calc(var(--vr) / 2);
   --vr-sm: var(--vr);
-  --vr-md: calc(var(--vr) * 1.5);
-  --vr-lg: calc(var(--vr) * 2);
-  --vr-xl: calc(var(--vr) * 3);
-  --vr-xxl: calc(var(--vr) * 4);
-  --vr-xxxl: calc(var(--vr) * 5);
+  --vr-md: calc(var(--vr) * 2);
+  --vr-lg: calc(var(--vr) * 3);
+  --vr-xl: calc(var(--vr) * 4);
+  --vr-xxl: calc(var(--vr) * 5);
 
   // Animations
   --animation-tagline-delay: 5s;

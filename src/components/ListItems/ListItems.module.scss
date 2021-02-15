@@ -3,7 +3,7 @@
 
 .items {
   display: grid;
-  grid-gap: var(--vr-lg);
+  grid-gap: var(--vr-md);
   color: var(--secondary-text-colour);
 
   @media (min-width: $bp-lg) {
