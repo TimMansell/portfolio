@@ -81,7 +81,7 @@ export const PortfolioItem = ({
           </div>
         </div>
       </div>
-      <div className={styles.tech} data-test="portfolio-tech">
+      <div className={styles.labels}>
         <Labels items={[year]} type="secondary" />
       </div>
       <Labels items={tech} type="primary" />
