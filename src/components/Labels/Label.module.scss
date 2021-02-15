@@ -6,25 +6,26 @@
   padding: var(--vr-xxs);
   border-radius: 3px;
   font-size: pxtorem(12);
+  line-height: 1.2;
 
   @media (min-width: $bp-xxxl) {
     font-size: pxtorem(16);
   }
 }
 
-.primary {
+.isPrimary {
   background: var(--colour-1);
 }
 
-.secondary {
+.isSecondary {
   background: var(--colour-3);
 }
 
-.tertiary {
+.isTertiary {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.lg {
+.isLarge {
   padding: var(--vr-xs);
   font-size: pxtorem(14);
 

@@ -5,15 +5,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--vr-xxs);
-  font-size: pxtorem(12);
-  line-height: 1.2;
-
-  &Lg {
-    gap: var(--vr-xs);
-  }
+  list-style-type: none;
 }
 
-.centered {
+.isLarge {
+  gap: var(--vr-xs);
+}
+
+.isCentered {
   justify-content: center;
 
   @media (min-width: $bp-sm) {

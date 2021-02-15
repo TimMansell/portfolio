@@ -7,16 +7,16 @@ import styles from './Labels.module.scss';
 
 export const Labels = ({ items, type, size, centered }) => {
   const labelClasses = classnames(styles.labels, {
-    [styles.labelsLg]: size === 'lg',
-    [styles.centered]: centered,
+    [styles.isLarge]: size === 'lg',
+    [styles.isCentered]: centered,
   });
 
   return (
-    <div className={labelClasses}>
+    <ul className={labelClasses} data-test="labels">
       {items.map((item, index) => (
         <Label key={index} label={item} type={type} size={size} />
       ))}
-    </div>
+    </ul>
   );
 };
 

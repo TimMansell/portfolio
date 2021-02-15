@@ -6,13 +6,13 @@ import styles from './Label.module.scss';
 
 export const Label = ({ label, type, size }) => {
   const labelClasses = classnames(styles.label, {
-    [styles.primary]: type === 'primary',
-    [styles.secondary]: type === 'secondary',
-    [styles.tertiary]: type === 'tertiary',
-    [styles.lg]: size === 'lg',
+    [styles.isPrimary]: type === 'primary',
+    [styles.isSecondary]: type === 'secondary',
+    [styles.isTertiary]: type === 'tertiary',
+    [styles.isLarge]: size === 'lg',
   });
 
-  return <div className={labelClasses}>{label}</div>;
+  return <li className={labelClasses}>{label}</li>;
 };
 
 Label.propTypes = {
