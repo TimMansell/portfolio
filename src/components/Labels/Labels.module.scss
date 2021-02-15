@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--vr-xxs);
+  list-style-type: none;
+}
+
+.isLarge {
+  gap: var(--vr-xs);
+}
+
+.isCentered {
+  justify-content: center;
+
+  @media (min-width: $bp-sm) {
+    justify-content: unset;
+  }
+}

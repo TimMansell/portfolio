@@ -1,55 +1,50 @@
 [
-    {
-        "list": [
-            {"name": "PHP"},
-            {"name": "MySQL"},
-            {"name": "Flash"}
-        ],
-        "icon": {
-            "name": "code",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "LESS"},
-            {"name": "Compass"}
-        ],
-        "icon": {
-            "name": "css3-alt",
-            "family": "fab"
-        }
-    },
-    {
-        "list": [
-            {"name": "AngularJS"},
-            {"name": "Backbone.js"},
-            {"name": "jQuery"}
-        ],
-        "icon": {
-            "name": "js",
-            "family": "fab"
-        }
-    },
-    {
-        "list": [
-            {"name": "Gulp / Grunt"},
-            {"name": "SVN"},
-            {"name": "Bower"}
-        ],
-        "icon": {
-            "name": "terminal",
-            "family": "fa"
-        }
-    },
-    {
-        "list": [
-            {"name": "Waterfall"},
-            {"name": "VSTS"}
-        ],
-        "icon": {
-            "name": "trello",
-            "family": "fab"
-        }
+  {
+    "title": "Code",
+    "list": ["PHP", "MySQL", "Flash"],
+    "icon": {
+      "name": "code",
+      "family": "fa"
     }
+  },
+  {
+    "title": "CSS",
+    "list": ["LESS", "Compass", "OOCSS", "SMACSS"],
+    "icon": {
+      "name": "css3-alt",
+      "family": "fab"
+    }
+  },
+  {
+    "title": "JS",
+    "list": ["Classes", "jQuery", "jQuery UI", "Modernizr"],
+    "icon": {
+      "name": "js",
+      "family": "fab"
+    }
+  },
+  {
+    "title": "CLI",
+    "list": ["Gulp", "Grunt", "SVN", "Bower", "JSHint"],
+    "icon": {
+      "name": "terminal",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Frameworks",
+    "list": ["AngularJS", "Backbone.js", "EXT JS", "Ionic"],
+    "icon": {
+      "name": "cogs",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Applications",
+    "list": ["VSTS", "Photoshop", "IE11", "Sublime Text", "Notepad++"],
+    "icon": {
+      "name": "app-store-ios",
+      "family": "fab"
+    }
+  }
 ]

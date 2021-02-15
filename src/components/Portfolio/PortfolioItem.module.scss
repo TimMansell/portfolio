@@ -52,7 +52,7 @@
   border-bottom-right-radius: 7px;
 
   @media (min-width: $bp-xl) {
-    padding: var(--vr-lg);
+    padding: var(--vr-md);
   }
 }
 
@@ -98,16 +98,12 @@
 
   @media (min-width: $bp-xxxl) {
     font-size: pxtorem(24);
-    margin-bottom: var(--vr-lg);
+    margin-bottom: var(--vr-md);
   }
 }
 
-.tech {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 4px;
-  font-size: pxtorem(12);
-  line-height: 1.2;
+.labels {
+  margin-bottom: var(--vr-xxs);
 }
 
 .buttons {

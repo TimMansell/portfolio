@@ -7,14 +7,16 @@ import ListItems from '../ListItems';
 const defaultProps = {
   items: [
     {
-      list: [{ name: 'list name' }],
+      title: 'title 1',
+      list: ['list name 1'],
       icon: {
         name: 'css3-alt',
         family: 'fab',
       },
     },
     {
-      list: [{ name: 'list name' }],
+      title: 'title 2',
+      list: ['list name 2'],
       icon: {
         name: 'css3-alt',
         family: 'fab',

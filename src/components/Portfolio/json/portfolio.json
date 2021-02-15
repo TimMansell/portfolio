@@ -31,6 +31,7 @@
     "description": "University of Melbourne's study portal. I was part of a team that built the Front-end.",
     "tech": [
       "VueJS",
+      "Vuex",
       "NuxtJS",
       "PostCSS",
       "ES2015+",

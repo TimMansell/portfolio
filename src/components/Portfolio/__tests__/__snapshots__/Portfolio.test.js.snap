@@ -93,25 +93,34 @@ Array [
         </div>
       </div>
       <div
-        className="tech"
-        data-test="portfolio-tech"
+        className="labels"
       >
-        <div
-          className="label secondary"
+        <ul
+          className="labels"
+          data-test="labels"
         >
-          2020
-        </div>
-        <div
-          className="label primary"
+          <li
+            className="label isSecondary"
+          >
+            2020
+          </li>
+        </ul>
+      </div>
+      <ul
+        className="labels"
+        data-test="labels"
+      >
+        <li
+          className="label isPrimary"
         >
           tech 1
-        </div>
-        <div
-          className="label primary"
+        </li>
+        <li
+          className="label isPrimary"
         >
           tech 2
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
     <div
       className="portfolioItem"
@@ -184,30 +193,39 @@ Array [
         </div>
       </div>
       <div
-        className="tech"
-        data-test="portfolio-tech"
+        className="labels"
       >
-        <div
-          className="label secondary"
+        <ul
+          className="labels"
+          data-test="labels"
         >
-          2020
-        </div>
-        <div
-          className="label primary"
+          <li
+            className="label isSecondary"
+          >
+            2020
+          </li>
+        </ul>
+      </div>
+      <ul
+        className="labels"
+        data-test="labels"
+      >
+        <li
+          className="label isPrimary"
         >
           tech 1
-        </div>
-        <div
-          className="label primary"
+        </li>
+        <li
+          className="label isPrimary"
         >
           tech 2
-        </div>
-        <div
-          className="label primary"
+        </li>
+        <li
+          className="label isPrimary"
         >
           tech 3
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>,
 ]

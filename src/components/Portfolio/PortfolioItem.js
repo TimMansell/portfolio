@@ -5,7 +5,7 @@ import debounce from 'lodash.debounce';
 import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
-import Label from '../Label';
+import Labels from '../Labels';
 
 import useInViewport from 'hooks/useInViewport';
 
@@ -81,12 +81,10 @@ export const PortfolioItem = ({
           </div>
         </div>
       </div>
-      <div className={styles.tech} data-test="portfolio-tech">
-        <Label label={year} type="secondary" />
-        {tech.map((item, index) => (
-          <Label key={index} label={item} type="primary" />
-        ))}
+      <div className={styles.labels}>
+        <Labels items={[year]} type="secondary" />
       </div>
+      <Labels items={tech} type="primary" />
     </div>
   );
 };

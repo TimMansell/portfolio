@@ -62,14 +62,4 @@ describe('PortfolioItem', () => {
 
     expect(btn.exists()).toBeFalsy();
   });
-
-  it('should render correct amount of tech labels', () => {
-    const props = {
-      ...defaultProps,
-    };
-    const wrapper = shallow(<PortfolioItem {...props} />);
-    const tech = wrapper.find('[data-test="portfolio-tech"]');
-
-    expect(tech.children()).toHaveLength(3);
-  });
 });

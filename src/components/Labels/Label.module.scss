@@ -6,17 +6,30 @@
   padding: var(--vr-xxs);
   border-radius: 3px;
   font-size: pxtorem(12);
-  margin-bottom: var(--vr-xxs);
+  line-height: 1.2;
 
   @media (min-width: $bp-xxxl) {
     font-size: pxtorem(16);
   }
 }
 
-.primary {
+.isPrimary {
   background: var(--colour-1);
 }
 
-.secondary {
+.isSecondary {
   background: var(--colour-3);
+}
+
+.isTertiary {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.isLarge {
+  padding: var(--vr-xs);
+  font-size: pxtorem(14);
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(18);
+  }
 }
