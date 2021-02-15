@@ -5,6 +5,10 @@
   margin-bottom: var(--vr-xl);
   text-align: center;
 
+  @media (min-width: $bp-xxxl) {
+    margin-bottom: var(--vr-xxl);
+  }
+
   &Primary {
     color: var(--primary-text-colour);
   }
