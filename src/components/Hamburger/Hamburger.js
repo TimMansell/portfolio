@@ -19,15 +19,22 @@ export const Hamburger = () => {
     [styles.menuActive]: isMobileMenu,
   });
 
+  const backgroundClasses = classnames({
+    [styles.background]: isMobileMenu,
+  });
+
   return (
-    <button
-      type="button"
-      data-e2e="hambuger"
-      className={buttonClasses}
-      onClick={() => toggleHamburger()}
-    >
-      <span className={hamburgerClasses}>toggle menu</span>
-    </button>
+    <div className={styles.container}>
+      <button
+        type="button"
+        data-e2e="hambuger"
+        className={buttonClasses}
+        onClick={() => toggleHamburger()}
+      >
+        <span className={hamburgerClasses}>toggle menu</span>
+      </button>
+      <div className={backgroundClasses}></div>
+    </div>
   );
 };
 

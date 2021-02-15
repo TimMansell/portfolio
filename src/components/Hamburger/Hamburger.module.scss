@@ -1,20 +1,22 @@
 @import 'variables';
 @import 'utilities/pxtorem';
 
-.hamburger {
+.container {
   position: fixed;
+  z-index: 999999;
+  bottom: 0;
+  transform: translate(calc(50vw - 50%), -35%);
+}
+
+.hamburger {
   text-indent: -9999px;
   border: 0;
   transition: background 0.3s;
-  z-index: 999999;
-  left: 50%;
-  transform: translate(-50%, -35%);
   width: pxtorem(60);
   height: pxtorem(60);
   border-radius: 50%;
   box-shadow: 0 0 10px var(--colour-2);
   background-color: var(--colour-1);
-  bottom: 0;
 
   @media (min-width: $bp-lg) {
     display: none;
@@ -26,6 +28,26 @@
 
   &Active {
     background-color: var(--colour-3);
+  }
+}
+
+.background {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: active 0.3s linear;
+  animation-fill-mode: forwards;
+  background-color: rgba(#000, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes active {
+  to {
+    transform: scale(40);
   }
 }
 

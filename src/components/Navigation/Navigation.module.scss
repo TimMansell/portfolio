@@ -18,7 +18,6 @@
     left: 0;
     right: 0;
     z-index: 999999;
-    background-color: rgba(#000, 0.8);
 
     @media (min-width: $bp-lg) {
       position: relative;
@@ -52,14 +51,23 @@
     position: fixed;
     width: 100%;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -100px);
+    transform: translateY(-100px);
     padding-left: var(--vr);
     padding-right: var(--vr);
+    z-index: 9999999;
+    opacity: 0;
+    animation: active 0.7s ease-in-out;
+    animation-fill-mode: forwards;
 
     @media (min-width: $bp-lg) {
       display: none;
     }
+  }
+}
+
+@keyframes active {
+  to {
+    opacity: 1;
   }
 }
 
@@ -94,7 +102,9 @@
   &:hover {
     @media (min-width: $bp-lg) {
       background-color: var(--colour-1-alt-2);
-      box-shadow: inset 1px 0 var(--colour-1-alt-2), inset -1px 0 var(--colour-1-alt-2);
+      box-shadow:
+        inset 1px 0 var(--colour-1-alt-2),
+        inset -1px 0 var(--colour-1-alt-2);
     }
   }
 
