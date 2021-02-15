@@ -3,7 +3,7 @@ import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 
-import styles from './Navigation.module.scss';
+import styles from './NavigationMenu.module.scss';
 import navigationJson from './json/navigation.json';
 
 export const combineWords = (words) => words.replaceAll(' ', '-');
@@ -23,7 +23,7 @@ export const NavigationMenu = () => {
   const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
 
   const menuClasses = classnames(styles.menu, {
-    [styles.menuActive]: isMobileMenu,
+    [styles.menuIsActive]: isMobileMenu,
   });
 
   const closeMenu = () => setIsMobileMenu(false);
@@ -35,7 +35,7 @@ export const NavigationMenu = () => {
           <Link
             data-e2e={`navigation-${combineWords(navigation)}`}
             className={styles.link}
-            activeClass={styles.linkActive}
+            activeClass={styles.linkIsActive}
             to={combineWords(navigation)}
             smooth={true}
             spy={true}

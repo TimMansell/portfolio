@@ -26,8 +26,8 @@ export const Navigation = () => {
   });
 
   const navClasses = classnames(styles.navigation, {
-    [styles.navigationSticky]: isFixedNav && !isMobileMenu,
-    [styles.navigationActive]: isMobileMenu,
+    [styles.navigationIsSticky]: isFixedNav && !isMobileMenu,
+    [styles.navigationIsActive]: isMobileMenu,
   });
 
   return (

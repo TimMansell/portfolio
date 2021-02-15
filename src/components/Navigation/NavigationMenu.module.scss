@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.menu {
+  display: none;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+
+  @media (min-width: $bp-lg) {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &IsActive {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(-100px);
+    padding-left: var(--vr);
+    padding-right: var(--vr);
+    z-index: 9999999;
+    opacity: 0;
+    animation: active 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+
+    @media (min-width: $bp-lg) {
+      display: none;
+    }
+  }
+}
+
+@keyframes active {
+  to {
+    opacity: 1;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $bp-md) {
+    text-transform: uppercase;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-colour);
+  padding: var(--vr-xxs);
+  font-size: pxtorem(30);
+  letter-spacing: pxtorem(2);
+
+  @media (min-width: $bp-lg) {
+    font-size: pxtorem(16);
+    padding: 0 var(--vr-xs);
+  }
+
+  @media (min-width: $bp-xl) {
+    font-size: pxtorem(18);
+    padding: 0 var(--vr);
+  }
+
+  &IsActive,
+  &:hover {
+    @media (min-width: $bp-lg) {
+      background-color: var(--colour-1-alt-2);
+      box-shadow:
+        inset 1px 0 var(--colour-1-alt-2),
+        inset -1px 0 var(--colour-1-alt-2);
+    }
+  }
+
+  &IsSticky {
+    @media (min-width: $bp-lg) {
+      text-shadow: -1px -1px var(--colour-1-alt-2);
+    }
+  }
+}
