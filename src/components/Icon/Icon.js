@@ -135,6 +135,24 @@ IconCode.propTypes = {
   padded: PropTypes.bool,
 };
 
+export const IconTasks = ({ className, size, padded }) => {
+  return (
+    <Icon
+      name={faCodeBranch}
+      className={className}
+      size={size}
+      padded={padded}
+    />
+  );
+};
+
+IconTasks.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
 export const IconCodeBranch = ({ className, size, padded }) => {
   return (
     <Icon
@@ -233,6 +251,32 @@ IconCogs.propTypes = {
   padded: PropTypes.bool,
 };
 
+export const IconBug = ({ className, size, padded }) => {
+  return (
+    <Icon name={faCogs} className={className} size={size} padded={padded} />
+  );
+};
+
+IconBug.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
+export const IconTools = ({ className, size, padded }) => {
+  return (
+    <Icon name={faCogs} className={className} size={size} padded={padded} />
+  );
+};
+
+IconTools.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
 // Brand Icons.
 export const IconCss3Alt = ({ className, size, padded }) => {
   return (
@@ -252,24 +296,6 @@ export const IconJs = ({ className, size, padded }) => {
 };
 
 IconJs.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconAppStoreIos = ({ className, size, padded }) => {
-  return (
-    <Icon
-      name={faAppStoreIos}
-      className={className}
-      size={size}
-      padded={padded}
-    />
-  );
-};
-
-IconAppStoreIos.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
@@ -309,6 +335,24 @@ export const IconGithub = ({ className, size, padded }) => {
 };
 
 IconGithub.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
+export const IconAppStoreIos = ({ className, size, padded }) => {
+  return (
+    <Icon
+      name={faAppStoreIos}
+      className={className}
+      size={size}
+      padded={padded}
+    />
+  );
+};
+
+IconAppStoreIos.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
