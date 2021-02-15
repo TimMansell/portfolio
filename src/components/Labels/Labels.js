@@ -5,9 +5,10 @@ import classnames from 'classnames';
 import Label from './Label';
 import styles from './Labels.module.scss';
 
-export const Labels = ({ items, type, size }) => {
+export const Labels = ({ items, type, size, centered }) => {
   const labelClasses = classnames(styles.labels, {
     [styles.labelsLg]: size === 'lg',
+    [styles.centered]: centered,
   });
 
   return (
@@ -23,6 +24,7 @@ Labels.propTypes = {
   items: PropTypes.array.isRequired,
   type: PropTypes.string.isRequired,
   size: PropTypes.string,
+  centered: PropTypes.bool,
 };
 
 export default Labels;

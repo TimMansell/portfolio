@@ -14,7 +14,7 @@ export const ListItem = ({ item }) => {
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{item.title}</h3>
-        <Labels items={item.list} type="tertiary" size="lg" />
+        <Labels items={item.list} type="tertiary" size="lg" centered />
       </div>
     </div>
   );

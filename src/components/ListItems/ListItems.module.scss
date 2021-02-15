@@ -5,7 +5,6 @@
   display: grid;
   grid-gap: var(--vr-lg);
   color: var(--secondary-text-colour);
-  margin-bottom: var(--vr-lg);
 
   @media (min-width: $bp-lg) {
     grid-template-columns: repeat(2, 1fr);

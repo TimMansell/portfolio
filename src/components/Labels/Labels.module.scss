@@ -12,3 +12,11 @@
     gap: pxtorem(8);
   }
 }
+
+.centered {
+  justify-content: center;
+
+  @media (min-width: $bp-sm) {
+    justify-content: unset;
+  }
+}
