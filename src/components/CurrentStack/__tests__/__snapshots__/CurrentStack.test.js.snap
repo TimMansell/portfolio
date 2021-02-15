@@ -27,12 +27,12 @@ Array [
     >
       <a
         data-test="stack-item-link"
-        href="url"
+        href="https://reactjs.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
-          alt="Item 1"
+          alt="React"
           className="img"
           src={
             Object {
@@ -44,7 +44,7 @@ Array [
               "default": "react.svg",
             }
           }
-          title="Item 1"
+          title="React"
           width="65"
         />
       </a>
@@ -54,12 +54,12 @@ Array [
     >
       <a
         data-test="stack-item-link"
-        href="url"
+        href="https://nodejs.org/en/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
-          alt="Item 2"
+          alt="NodeJS"
           className="img"
           src={
             Object {
@@ -71,8 +71,386 @@ Array [
               "default": "nodejs.svg",
             }
           }
-          title="Item 2"
+          title="NodeJS"
           width="90"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://vuejs.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="VueJS"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "vuejs.svg",
+            }
+          }
+          title="VueJS"
+          width="60"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://www.npmjs.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="NPM"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "npm.svg",
+            }
+          }
+          title="NPM"
+          width="90"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://webpack.js.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Webpack"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "webpack.svg",
+            }
+          }
+          title="Webpack"
+          width="75"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://yarnpkg.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Yarn"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "yarn.svg",
+            }
+          }
+          title="Yarn"
+          width="130"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://eslint.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="ESLint"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eslint.svg",
+            }
+          }
+          title="ESLint"
+          width="75"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://jestjs.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Jest"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "jest.svg",
+            }
+          }
+          title="Jest"
+          width="50"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://babeljs.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Babel"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "babel.svg",
+            }
+          }
+          title="Babel"
+          width="140"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://www.cypress.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Cypress"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "cypress.svg",
+            }
+          }
+          title="Cypress"
+          width="60"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://sass-lang.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="SCSS"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "sass.svg",
+            }
+          }
+          title="SCSS"
+          width="70"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://code.visualstudio.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="VSCode"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "vscode.svg",
+            }
+          }
+          title="VSCode"
+          width="55"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://git-scm.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Git"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "git.svg",
+            }
+          }
+          title="Git"
+          width="105"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://postcss.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="PostCSS"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "postcss.svg",
+            }
+          }
+          title="PostCSS"
+          width="60"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://www.netlify.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Netlify"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "netlify.svg",
+            }
+          }
+          title="Netlify"
+          width="140"
+        />
+      </a>
+    </div>
+    <div
+      className="item"
+    >
+      <a
+        data-test="stack-item-link"
+        href="https://graphql.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="GraphQL"
+          className="img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "graphql.svg",
+            }
+          }
+          title="GraphQL"
+          width="55"
         />
       </a>
     </div>
