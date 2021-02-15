@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 
-import InViewport from 'components/InViewport';
 import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
-import Label from '../Label';
+import Labels from '../Labels';
+
+import useInViewport from 'hooks/useInViewport';
 
 import styles from './PortfolioItem.module.scss';
 
@@ -21,6 +22,7 @@ export const PortfolioItem = ({
 }) => {
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
+  const isInViewport = useInViewport(cubeElement, 300);
 
   const { name, types, fallback } = src;
   const srcs = types.map((type) => ({
@@ -49,9 +51,9 @@ export const PortfolioItem = ({
       <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
         <div className={styles.browser}>
           <PortfolioIcons title={title} />
-          <InViewport>
+          {isInViewport && (
             <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
-          </InViewport>
+          )}
         </div>
 
         <div className={styles.info}>
@@ -79,12 +81,10 @@ export const PortfolioItem = ({
           </div>
         </div>
       </div>
-      <div className={styles.tech} data-test="portfolio-tech">
-        <Label label={year} type="secondary" />
-        {tech.map((item, index) => (
-          <Label key={index} label={item} type="primary" />
-        ))}
+      <div className={styles.labels}>
+        <Labels items={[year]} type="secondary" />
       </div>
+      <Labels items={tech} type="primary" />
     </div>
   );
 };

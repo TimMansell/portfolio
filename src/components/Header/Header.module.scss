@@ -2,8 +2,12 @@
 @import 'utilities/pxtorem';
 
 .heading {
-  margin-bottom: var(--vr-xl);
+  margin-bottom: var(--vr-lg);
   text-align: center;
+
+  @media (min-width: $bp-xxxl) {
+    margin-bottom: var(--vr-xl);
+  }
 
   &Primary {
     color: var(--primary-text-colour);

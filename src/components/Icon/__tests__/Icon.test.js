@@ -6,21 +6,22 @@ import Icon, {
   IconChevronDown,
   IconAngleUp,
   IconTerminal,
-  IconClipboardList,
-  IconGamepad,
-  IconChalkboardTeacher,
   IconCode,
+  IconTasks,
   IconCodeBranch,
   IconCodeLaptop,
   IconMugHot,
   IconQuoteLeft,
   IconQuoteRight,
+  IconCogs,
+  IconBug,
+  IconTools,
   IconCss3Alt,
   IconJs,
-  IconTrello,
   IconLinkedin,
   IconTwitter,
   IconGithub,
+  IconAppStoreIos,
 } from '../Icon';
 
 describe('Default Icon', () => {
@@ -125,24 +126,14 @@ describe('Icons', () => {
     const wrapper = shallow(<IconTerminal />);
   });
 
-  it('should render my IconClipboardList', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconClipboardList />);
-  });
-
-  it('should render my IconGamepad', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconGamepad />);
-  });
-
-  it('should render my IconChalkboardTeacher', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconChalkboardTeacher />);
-  });
-
   it('should render my IconCode', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<IconCode />);
+  });
+
+  it('should render my IconTasks', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<IconTasks />);
   });
 
   it('should render my IconCodeBranch', () => {
@@ -170,6 +161,21 @@ describe('Icons', () => {
     const wrapper = shallow(<IconQuoteRight />);
   });
 
+  it('should render my IconCogs', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<IconCogs />);
+  });
+
+  it('should render my IconBug', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<IconBug />);
+  });
+
+  it('should render my IconTools', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<IconTools />);
+  });
+
   it('should render my IconCss3Alt', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<IconCss3Alt />);
@@ -178,11 +184,6 @@ describe('Icons', () => {
   it('should render my IconJs', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<IconJs />);
-  });
-
-  it('should render my IconTrello', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconTrello />);
   });
 
   it('should render my IconLinkedin', () => {
@@ -198,5 +199,10 @@ describe('Icons', () => {
   it('should render my IconGithub', () => {
     // eslint-disable-next-line
     const wrapper = shallow(<IconGithub />);
+  });
+
+  it('should render my IconAppStoreIos', () => {
+    // eslint-disable-next-line
+    const wrapper = shallow(<IconAppStoreIos />);
   });
 });

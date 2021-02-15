@@ -4,30 +4,25 @@ import renderer from 'react-test-renderer';
 
 import ListItem from '../ListItem';
 
+const defaultProps = {
+  item: {
+    title: 'title',
+    list: ['list name 1', 'list name 2'],
+    icon: {
+      name: 'css3-alt',
+      family: 'fab',
+    },
+  },
+};
+
 describe('ListItem', () => {
   it('should render my component', () => {
-    const item = {
-      list: [],
-      icon: {
-        name: '',
-        family: '',
-      },
-    };
-
     // eslint-disable-next-line
-    const wrapper = shallow(<ListItem item={item} />);
+    const wrapper = shallow(<ListItem {...defaultProps} />);
   });
 
   it('should match snapshot', () => {
-    const item = {
-      list: ['Item 1', 'Item 2'],
-      icon: {
-        name: 'css3-alt',
-        family: 'fab',
-      },
-    };
-
-    const snapshot = renderer.create(<ListItem item={item} />).toJSON();
+    const snapshot = renderer.create(<ListItem {...defaultProps} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

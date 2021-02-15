@@ -19,7 +19,9 @@ export const Portfolio = () => {
         tertiary
       />
 
-      <div className={styles.portfolio}>{listItems}</div>
+      <div className={styles.portfolio} data-e2e="portfolio-items">
+        {listItems}
+      </div>
     </>
   );
 };

@@ -11,45 +11,49 @@ import {
   faChevronDown,
   faAngleUp,
   faTerminal,
-  faClipboardList,
-  faGamepad,
-  faChalkboardTeacher,
+  faTasks,
   faCode,
   faCodeBranch,
   faLaptopCode,
   faMugHot,
   faQuoteLeft,
   faQuoteRight,
+  faCogs,
+  faBug,
+  faTools,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
+  faHtml5,
   faCss3Alt,
   faJs,
-  faTrello,
   faLinkedin,
   faTwitter,
   faGithub,
+  faAppStoreIos,
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
   faChevronDown,
   faAngleUp,
   faTerminal,
-  faClipboardList,
-  faGamepad,
-  faChalkboardTeacher,
+  faTasks,
   faCode,
   faCodeBranch,
   faLaptopCode,
   faMugHot,
   faQuoteLeft,
   faQuoteRight,
+  faCogs,
+  faBug,
+  faTools,
+  faHtml5,
   faCss3Alt,
   faJs,
-  faTrello,
   faLinkedin,
   faTwitter,
-  faGithub
+  faGithub,
+  faAppStoreIos
 );
 
 // Default Icon.
@@ -118,55 +122,6 @@ IconTerminal.propTypes = {
   padded: PropTypes.bool,
 };
 
-export const IconClipboardList = ({ className, size, padded }) => {
-  return (
-    <Icon
-      name={faClipboardList}
-      className={className}
-      size={size}
-      padded={padded}
-    />
-  );
-};
-
-IconClipboardList.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconGamepad = ({ className, size, padded }) => {
-  return (
-    <Icon name={faGamepad} className={className} size={size} padded={padded} />
-  );
-};
-
-IconGamepad.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconChalkboardTeacher = ({ className, size, padded }) => {
-  return (
-    <Icon
-      name={faChalkboardTeacher}
-      className={className}
-      size={size}
-      padded={padded}
-    />
-  );
-};
-
-IconChalkboardTeacher.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
 export const IconCode = ({ className, size, padded }) => {
   return (
     <Icon name={faCode} className={className} size={size} padded={padded} />
@@ -174,6 +129,24 @@ export const IconCode = ({ className, size, padded }) => {
 };
 
 IconCode.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
+export const IconTasks = ({ className, size, padded }) => {
+  return (
+    <Icon
+      name={faCodeBranch}
+      className={className}
+      size={size}
+      padded={padded}
+    />
+  );
+};
+
+IconTasks.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
@@ -265,6 +238,45 @@ IconQuoteRight.propTypes = {
   padded: PropTypes.bool,
 };
 
+export const IconCogs = ({ className, size, padded }) => {
+  return (
+    <Icon name={faCogs} className={className} size={size} padded={padded} />
+  );
+};
+
+IconCogs.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
+export const IconBug = ({ className, size, padded }) => {
+  return (
+    <Icon name={faCogs} className={className} size={size} padded={padded} />
+  );
+};
+
+IconBug.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
+export const IconTools = ({ className, size, padded }) => {
+  return (
+    <Icon name={faCogs} className={className} size={size} padded={padded} />
+  );
+};
+
+IconTools.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
 // Brand Icons.
 export const IconCss3Alt = ({ className, size, padded }) => {
   return (
@@ -284,19 +296,6 @@ export const IconJs = ({ className, size, padded }) => {
 };
 
 IconJs.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
-
-export const IconTrello = ({ className, size, padded }) => {
-  return (
-    <Icon name={faTrello} className={className} size={size} padded={padded} />
-  );
-};
-
-IconTrello.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,
@@ -336,6 +335,24 @@ export const IconGithub = ({ className, size, padded }) => {
 };
 
 IconGithub.propTypes = {
+  name: PropTypes.object,
+  className: PropTypes.string,
+  size: PropTypes.string,
+  padded: PropTypes.bool,
+};
+
+export const IconAppStoreIos = ({ className, size, padded }) => {
+  return (
+    <Icon
+      name={faAppStoreIos}
+      className={className}
+      size={size}
+      padded={padded}
+    />
+  );
+};
+
+IconAppStoreIos.propTypes = {
   name: PropTypes.object,
   className: PropTypes.string,
   size: PropTypes.string,

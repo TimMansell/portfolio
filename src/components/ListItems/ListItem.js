@@ -2,36 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Icon from 'components/Icon';
+import Labels from '../Labels';
+
 import styles from './ListItem.module.scss';
 
 export const ListItem = ({ item }) => {
-  const displayItem = ({ name, url }) => {
-    if (url) {
-      return (
-        <a
-          className={styles.link}
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {name}
-        </a>
-      );
-    }
-
-    return name;
-  };
-
   return (
     <div className={styles.item}>
-      <Icon name={[item.icon.family, item.icon.name]} size="md" padded />
-      <ul className={styles.list}>
-        {item.list.map((listItem, i) => (
-          <li className={styles.listitem} key={i}>
-            {displayItem(listItem)}
-          </li>
-        ))}
-      </ul>
+      <div className={styles.icon}>
+        <Icon name={[item.icon.family, item.icon.name]} size="sm" />
+      </div>
+      <div className={styles.content}>
+        <h3 className={styles.title}>{item.title}</h3>
+        <Labels items={item.list} type="tertiary" size="lg" centered />
+      </div>
     </div>
   );
 };

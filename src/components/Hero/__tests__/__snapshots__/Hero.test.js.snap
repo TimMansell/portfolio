@@ -6,7 +6,12 @@ exports[`Hero should match snapshot 1`] = `
 >
   <div
     className="img"
-    style={Object {}}
+    data-e2e="hero-img"
+    style={
+      Object {
+        "filter": "blur(1px)",
+      }
+    }
   />
 </div>
 `;

@@ -1,6 +1,6 @@
 {
   "name": "tim",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
@@ -12,7 +12,7 @@
     "in-viewport": "^3.5.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -20,7 +20,6 @@
     "react-scrolllock": "5.0.1",
     "react-slick": "^0.27.13",
     "sanitize.css": "^11.0.1",
-    "shuffle-letters": "https://github.com/TimMansell/shuffle-letters.git",
     "slick-carousel": "^1.8.1",
     "webfontloader": "^1.6.28"
   },
@@ -81,6 +80,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "glob": "^7.1.6",
     "husky": "^3.1.0",
     "lint-staged": "^10.5.0",

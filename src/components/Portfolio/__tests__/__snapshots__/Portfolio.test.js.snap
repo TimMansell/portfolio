@@ -5,15 +5,13 @@ Array [
   <div
     className="heading headingTertiary"
   >
-    <div>
-      <h2
-        aria-label="Portfolio"
-        className="title"
-        data-test="heading-title"
-      >
-        Portfolio
-      </h2>
-    </div>
+    <h2
+      aria-label="Portfolio"
+      className="title"
+      data-test="heading-title"
+    >
+      Portfolio
+    </h2>
     <p
       data-test="heading-description"
     >
@@ -22,6 +20,7 @@ Array [
   </div>,
   <div
     className="portfolio"
+    data-e2e="portfolio-items"
   >
     <div
       className="portfolioItem"
@@ -52,13 +51,8 @@ Array [
             <div
               className="tab"
             >
-              Solitaire
+              title
             </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
           </div>
         </div>
         <div
@@ -67,19 +61,19 @@ Array [
           <h3
             className="title"
           >
-            Solitaire
+            title
           </h3>
           <p
             className="description"
           >
-            During lockdown I built a card game
+            description
           </p>
           <div
             className="buttons"
           >
             <a
               className="btn"
-              href="https://solitaire.timmansell.com"
+              href="url"
               rel="noopener noreferrer"
               target="_blank"
               title="Visit website"
@@ -88,7 +82,7 @@ Array [
             </a>
             <a
               className="btn"
-              href="https://github.com/TimMansell/vue-solitaire"
+              href="source"
               rel="noopener noreferrer"
               target="_blank"
               title="View Souce"
@@ -99,75 +93,34 @@ Array [
         </div>
       </div>
       <div
-        className="tech"
-        data-test="portfolio-tech"
+        className="labels"
       >
-        <div
-          className="label secondary"
+        <ul
+          className="labels"
+          data-test="labels"
         >
-          2020
-        </div>
-        <div
-          className="label primary"
-        >
-          Vue CLI
-        </div>
-        <div
-          className="label primary"
-        >
-          VueJS
-        </div>
-        <div
-          className="label primary"
-        >
-          Vuex
-        </div>
-        <div
-          className="label primary"
-        >
-          SCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          PostCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          ES2015+
-        </div>
-        <div
-          className="label primary"
-        >
-          Babel
-        </div>
-        <div
-          className="label primary"
-        >
-          Webpack
-        </div>
-        <div
-          className="label primary"
-        >
-          GraphQL
-        </div>
-        <div
-          className="label primary"
-        >
-          Netlify
-        </div>
-        <div
-          className="label primary"
-        >
-          Jest
-        </div>
-        <div
-          className="label primary"
-        >
-          Cypress
-        </div>
+          <li
+            className="label isSecondary"
+          >
+            2020
+          </li>
+        </ul>
       </div>
+      <ul
+        className="labels"
+        data-test="labels"
+      >
+        <li
+          className="label isPrimary"
+        >
+          tech 1
+        </li>
+        <li
+          className="label isPrimary"
+        >
+          tech 2
+        </li>
+      </ul>
     </div>
     <div
       className="portfolioItem"
@@ -198,13 +151,8 @@ Array [
             <div
               className="tab"
             >
-              Find a Course
+              title
             </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
           </div>
         </div>
         <div
@@ -213,375 +161,19 @@ Array [
           <h3
             className="title"
           >
-            Find a Course
+            title
           </h3>
           <p
             className="description"
           >
-            University of Melbourne's study portal. I was part of a team that built the Front-end.
+            description
           </p>
           <div
             className="buttons"
           >
             <a
               className="btn"
-              href="https://study.unimelb.edu.au/find"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Visit website"
-            >
-              Visit website
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tech"
-        data-test="portfolio-tech"
-      >
-        <div
-          className="label secondary"
-        >
-          2018 - 2020
-        </div>
-        <div
-          className="label primary"
-        >
-          VueJS
-        </div>
-        <div
-          className="label primary"
-        >
-          NuxtJS
-        </div>
-        <div
-          className="label primary"
-        >
-          PostCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          ES2015+
-        </div>
-        <div
-          className="label primary"
-        >
-          Babel
-        </div>
-        <div
-          className="label primary"
-        >
-          Webpack
-        </div>
-        <div
-          className="label primary"
-        >
-          Netlify
-        </div>
-        <div
-          className="label primary"
-        >
-          AWS
-        </div>
-        <div
-          className="label primary"
-        >
-          Jest
-        </div>
-        <div
-          className="label primary"
-        >
-          Cypress
-        </div>
-      </div>
-    </div>
-    <div
-      className="portfolioItem"
-    >
-      <div
-        className="cube"
-        style={Object {}}
-      >
-        <div
-          className="browser"
-        >
-          <div
-            className="bar"
-          >
-            <div
-              className="icons"
-            >
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-            </div>
-            <div
-              className="tab"
-            >
-              myBupa
-            </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
-          </div>
-        </div>
-        <div
-          className="info"
-        >
-          <h3
-            className="title"
-          >
-            myBupa
-          </h3>
-          <p
-            className="description"
-          >
-            Responsive website rebuild of Bupa's health insurance portal.  I was part of a team that built the Front-end. Built on top of .NET stack
-          </p>
-          <div
-            className="buttons"
-          >
-            <a
-              className="btn"
-              href="https://my.bupa.com.au"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Visit website"
-            >
-              Visit website
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tech"
-        data-test="portfolio-tech"
-      >
-        <div
-          className="label secondary"
-        >
-          2016 - 2017
-        </div>
-        <div
-          className="label primary"
-        >
-          AngularJS
-        </div>
-        <div
-          className="label primary"
-        >
-          Bootstrap 3
-        </div>
-        <div
-          className="label primary"
-        >
-          SCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          PostCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          ES2015+
-        </div>
-        <div
-          className="label primary"
-        >
-          Babel
-        </div>
-        <div
-          className="label primary"
-        >
-          Webpack
-        </div>
-        <div
-          className="label primary"
-        >
-          Gulp
-        </div>
-      </div>
-    </div>
-    <div
-      className="portfolioItem"
-    >
-      <div
-        className="cube"
-        style={Object {}}
-      >
-        <div
-          className="browser"
-        >
-          <div
-            className="bar"
-          >
-            <div
-              className="icons"
-            >
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-            </div>
-            <div
-              className="tab"
-            >
-              Captain's Choice
-            </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
-          </div>
-        </div>
-        <div
-          className="info"
-        >
-          <h3
-            className="title"
-          >
-            Captain's Choice
-          </h3>
-          <p
-            className="description"
-          >
-            Responsive website rebuild of Captain's Choice website. I was part of a team that built the Front-end. Built on top of .NET stack
-          </p>
-          <div
-            className="buttons"
-          >
-            <a
-              className="btn"
-              href="https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Visit website"
-            >
-              Visit website
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tech"
-        data-test="portfolio-tech"
-      >
-        <div
-          className="label secondary"
-        >
-          2016
-        </div>
-        <div
-          className="label primary"
-        >
-          AngularJS
-        </div>
-        <div
-          className="label primary"
-        >
-          Bootstrap 3
-        </div>
-        <div
-          className="label primary"
-        >
-          SCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          Compass
-        </div>
-        <div
-          className="label primary"
-        >
-          jQuery
-        </div>
-        <div
-          className="label primary"
-        >
-          Gulp
-        </div>
-        <div
-          className="label primary"
-        >
-          Bower
-        </div>
-      </div>
-    </div>
-    <div
-      className="portfolioItem"
-    >
-      <div
-        className="cube"
-        style={Object {}}
-      >
-        <div
-          className="browser"
-        >
-          <div
-            className="bar"
-          >
-            <div
-              className="icons"
-            >
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-            </div>
-            <div
-              className="tab"
-            >
-              Web Components
-            </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
-          </div>
-        </div>
-        <div
-          className="info"
-        >
-          <h3
-            className="title"
-          >
-            Web Components
-          </h3>
-          <p
-            className="description"
-          >
-            A presentation about Web Components
-          </p>
-          <div
-            className="buttons"
-          >
-            <a
-              className="btn"
-              href="//web-components.timmansell.com"
+              href="url"
               rel="noopener noreferrer"
               target="_blank"
               title="Visit website"
@@ -590,7 +182,7 @@ Array [
             </a>
             <a
               className="btn"
-              href="https://github.com/TimMansell/web-components"
+              href="source"
               rel="noopener noreferrer"
               target="_blank"
               title="View Souce"
@@ -601,112 +193,39 @@ Array [
         </div>
       </div>
       <div
-        className="tech"
-        data-test="portfolio-tech"
+        className="labels"
       >
-        <div
-          className="label secondary"
+        <ul
+          className="labels"
+          data-test="labels"
         >
-          2015
-        </div>
-        <div
-          className="label primary"
-        >
-          Web Components
-        </div>
-        <div
-          className="label primary"
-        >
-          Reveal.js
-        </div>
+          <li
+            className="label isSecondary"
+          >
+            2020
+          </li>
+        </ul>
       </div>
-    </div>
-    <div
-      className="portfolioItem"
-    >
-      <div
-        className="cube"
-        style={Object {}}
+      <ul
+        className="labels"
+        data-test="labels"
       >
-        <div
-          className="browser"
+        <li
+          className="label isPrimary"
         >
-          <div
-            className="bar"
-          >
-            <div
-              className="icons"
-            >
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-              <div
-                className="icon"
-              />
-            </div>
-            <div
-              className="tab"
-            >
-              SASS Knowledgeshare
-            </div>
-          </div>
-          <div>
-            <span>
-               
-            </span>
-          </div>
-        </div>
-        <div
-          className="info"
+          tech 1
+        </li>
+        <li
+          className="label isPrimary"
         >
-          <h3
-            className="title"
-          >
-            SASS Knowledgeshare
-          </h3>
-          <p
-            className="description"
-          >
-            A presentation about SASS and Compass
-          </p>
-          <div
-            className="buttons"
-          >
-            <a
-              className="btn"
-              href="//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Visit website"
-            >
-              Visit website
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        className="tech"
-        data-test="portfolio-tech"
-      >
-        <div
-          className="label secondary"
+          tech 2
+        </li>
+        <li
+          className="label isPrimary"
         >
-          2014
-        </div>
-        <div
-          className="label primary"
-        >
-          SCSS
-        </div>
-        <div
-          className="label primary"
-        >
-          Compass
-        </div>
-      </div>
+          tech 3
+        </li>
+      </ul>
     </div>
   </div>,
 ]

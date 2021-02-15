@@ -15,7 +15,7 @@ export const CurrentStack = () => {
         primary
       />
 
-      <div className={styles.stack}>
+      <div className={styles.stack} data-test="stack-items">
         {stackItems.map((stack, i) => (
           <StackItem {...stack} key={i} />
         ))}

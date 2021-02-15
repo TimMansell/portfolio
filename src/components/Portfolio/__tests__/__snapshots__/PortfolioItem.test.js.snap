@@ -33,11 +33,6 @@ exports[`PortfolioItem should match snapshot 1`] = `
           Title
         </div>
       </div>
-      <div>
-        <span>
-           
-        </span>
-      </div>
     </div>
     <div
       className="info"
@@ -77,24 +72,33 @@ exports[`PortfolioItem should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="tech"
-    data-test="portfolio-tech"
+    className="labels"
   >
-    <div
-      className="label secondary"
+    <ul
+      className="labels"
+      data-test="labels"
     >
-      2020
-    </div>
-    <div
-      className="label primary"
+      <li
+        className="label isSecondary"
+      >
+        2020
+      </li>
+    </ul>
+  </div>
+  <ul
+    className="labels"
+    data-test="labels"
+  >
+    <li
+      className="label isPrimary"
     >
       Tech
-    </div>
-    <div
-      className="label primary"
+    </li>
+    <li
+      className="label isPrimary"
     >
       Tech 2
-    </div>
-  </div>
+    </li>
+  </ul>
 </div>
 `;
