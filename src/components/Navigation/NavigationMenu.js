@@ -33,7 +33,7 @@ export const NavigationMenu = () => {
   return (
     <ul className={menuClasses}>
       {navigationJson.map((navigation, index) => (
-        <li className={styles.item} key={index}>
+        <li className={styles.menuItem} key={index}>
           <Link
             data-e2e={`navigation-${combineWords(navigation)}`}
             className={styles.link}
