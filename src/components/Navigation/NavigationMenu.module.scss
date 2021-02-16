@@ -3,9 +3,6 @@
 
 .menu {
   display: none;
-  text-align: center;
-  list-style: none;
-  margin: 0;
 
   @media (min-width: $bp-lg) {
     display: flex;
@@ -14,7 +11,8 @@
   }
 
   &IsActive {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -22,19 +20,10 @@
     padding-left: var(--vr);
     padding-right: var(--vr);
     z-index: 9999999;
-    opacity: 0;
-    animation: active 0.7s ease-in-out;
-    animation-fill-mode: forwards;
 
     @media (min-width: $bp-lg) {
       display: none;
     }
-  }
-}
-
-@keyframes active {
-  to {
-    opacity: 1;
   }
 }
 
