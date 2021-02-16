@@ -42,12 +42,12 @@
   z-index: -1;
 
   &IsOpen {
-    animation: open 0.3s linear;
+    animation: open 0.3s ease-out;
     animation-fill-mode: forwards;
   }
 
   &IsClosed {
-    animation: close 0.3s linear;
+    animation: close 0.2s ease;
     animation-fill-mode: forwards;
   }
 }
@@ -58,13 +58,13 @@
   }
 
   to {
-    transform: scale(40);
+    transform: scale(50);
   }
 }
 
 @keyframes close {
   from {
-    transform: scale(40);
+    transform: scale(50);
   }
 
   to {
