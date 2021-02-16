@@ -13,46 +13,50 @@ describe('Navigation', () => {
       cy.get('[data-e2e="navigation"').should('be.visible');
     });
 
-    it('clicking on profile item should scroll page to profile section', () => {
+    it('should scroll page to profile section', () => {
       cy.get('[data-e2e="navigation-profile"]').click();
 
       cy.get('#profile').should('be.visible');
     });
 
-    it('clicking on skills item should scroll page to skills section', () => {
+    it('should scroll page to skills section', () => {
       cy.get('[data-e2e="navigation-skills"]').click();
 
       cy.get('#skills').should('be.visible');
     });
 
-    it('clicking on retired skills item should scroll page to retired skills section', () => {
+    it('should scroll page to retired skills section', () => {
       cy.get('[data-e2e="navigation-retired-skills"]').click();
 
       cy.get('#retired-skills').should('be.visible');
     });
 
-    it('clicking on stack item should scroll page to stack section', () => {
+    it('should scroll page to stack section', () => {
       cy.get('[data-e2e="navigation-stack"]').click();
 
       cy.get('#stack').should('be.visible');
     });
 
-    it('clicking on portfolio item should scroll page to portfolio section', () => {
+    it('should scroll page to portfolio section', () => {
       cy.get('[data-e2e="navigation-portfolio"]').click();
 
       cy.get('#portfolio').should('be.visible');
     });
 
-    it('clicking on testimonials item should scroll page to testimonials section', () => {
+    it('should scroll page to testimonials section', () => {
       cy.get('[data-e2e="navigation-testimonials"]').click();
 
       cy.get('#testimonials').should('be.visible');
     });
 
-    it('clicking on contact item should scroll page to contact section', () => {
+    it('should scroll page to contact section', () => {
       cy.get('[data-e2e="navigation-contact"]').click();
 
       cy.get('#contact').should('be.visible');
+    });
+
+    it('hamburger menu should not be visible', () => {
+      cy.get('[data-e2e="hambuger"]').should('not.be.visible');
     });
   });
 
@@ -68,13 +72,23 @@ describe('Navigation', () => {
       cy.get('[data-e2e="hambuger"]').should('be.visible');
     });
 
-    it('hamburger menu should open when button is clicked', () => {
+    it('should open and close hamburger', () => {
       cy.get('[data-e2e="hambuger"]').click();
 
       cy.get('[data-e2e="navigation"]').should('be.visible');
+
+      cy.get('[data-e2e="hambuger"]').click();
+
+      cy.get('[data-e2e="navigation"]').should('not.be.visible');
     });
 
-    it('clicking on skills item in hamburger menu should scroll page to skills section and close menu', () => {
+    it('stop page being scrollable', () => {
+      cy.get('[data-e2e="hambuger"]').click();
+
+      cy.get('body').should('have.css', 'overflow', 'hidden');
+    });
+
+    it('should scroll page to skills section and close menu', () => {
       cy.get('[data-e2e="hambuger"]').click();
 
       cy.get('[data-e2e="navigation-skills"]').click();
@@ -85,6 +99,14 @@ describe('Navigation', () => {
         'not.have.class',
         'navigation--active'
       );
+    });
+
+    it('should hide hamburger menu if changing to desktop viewport', () => {
+      cy.get('[data-e2e="hambuger"]').click();
+
+      cy.viewport('macbook-13');
+
+      cy.get('[data-e2e="hambuger"]').should('not.be.visible');
     });
   });
 });
