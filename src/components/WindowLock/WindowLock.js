@@ -1,29 +1,14 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import { MenuContext } from '../../context/mobileMenu';
 import ScrollLock from 'react-scrolllock';
-import debounce from 'lodash.debounce';
+
+import useInMobileViewport from 'hooks/useInMobileViewport';
 
 export const WindowLock = () => {
-  const [isMobileView, setIsMobileView] = useState(true);
   const [isMobileMenu] = useContext(MenuContext);
+  const inViewport = useInMobileViewport();
 
-  const checkInsideMobileView = () => {
-    return window.matchMedia('(max-width: 768px)').matches;
-  };
-
-  useEffect(() => {
-    const onResize = debounce(() => {
-      const isInsideMobileView = checkInsideMobileView();
-
-      setIsMobileView(isInsideMobileView);
-    });
-
-    window.addEventListener('resize', onResize);
-
-    return () => window.removeEventListener('resize', onResize);
-  });
-
-  return <>{isMobileMenu && isMobileView && <ScrollLock />}</>;
+  return <>{isMobileMenu && inViewport && <ScrollLock />}</>;
 };
 
 export default WindowLock;

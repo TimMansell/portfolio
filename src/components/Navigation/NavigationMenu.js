@@ -3,6 +3,7 @@ import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';
 
+import useInMobileViewport from 'hooks/useInMobileViewport';
 import styles from './NavigationMenu.module.scss';
 import navigationJson from './json/navigation.json';
 
@@ -21,9 +22,10 @@ export const navigationName = (name) => {
 
 export const NavigationMenu = () => {
   const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
+  const inViewport = useInMobileViewport();
 
   const menuClasses = classnames(styles.menu, {
-    [styles.menuIsActive]: isMobileMenu,
+    [styles.menuIsActive]: isMobileMenu && inViewport,
   });
 
   const closeMenu = () => setIsMobileMenu(false);
