@@ -17,8 +17,6 @@ export const NavigationMenu = () => {
     [styles.menuIsActive]: isMobileMenu && inViewport,
   });
 
-  const closeMenu = () => setIsMobileMenu(false);
-
   return (
     <ul className={menuClasses}>
       {navigationJson.map((navigation, index) => (
@@ -31,7 +29,7 @@ export const NavigationMenu = () => {
             smooth={true}
             spy={true}
             duration={500}
-            onClick={() => closeMenu()}
+            onClick={() => setIsMobileMenu(false)}
           >
             {upperCaseWords(navigation)}
           </Link>
