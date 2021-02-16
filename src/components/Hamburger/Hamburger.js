@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
 
@@ -6,21 +6,24 @@ import styles from './Hamburger.module.scss';
 
 export const Hamburger = () => {
   const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
+  const [isClicked, setIsClicked] = useState(false);
 
   const toggleHamburger = () => {
     setIsMobileMenu(!isMobileMenu);
+    setIsClicked(true);
   };
 
   const buttonClasses = classnames(styles.hamburger, {
-    [styles.hamburgerActive]: isMobileMenu,
+    [styles.hamburgerIsActive]: isMobileMenu,
   });
 
   const hamburgerClasses = classnames(styles.menu, {
-    [styles.menuActive]: isMobileMenu,
+    [styles.menuIsActive]: isMobileMenu,
   });
 
-  const backgroundClasses = classnames({
-    [styles.background]: isMobileMenu,
+  const backgroundClasses = classnames(styles.background, {
+    [styles.backgroundIsOpen]: isMobileMenu,
+    [styles.backgroundIsClosed]: !isMobileMenu && isClicked,
   });
 
   return (

@@ -26,7 +26,7 @@
     outline: none;
   }
 
-  &Active {
+  &IsActive {
     background-color: var(--colour-3);
   }
 }
@@ -34,20 +34,41 @@
 .background {
   position: absolute;
   border-radius: 50%;
-  transform: scale(0);
-  animation: active 0.3s linear;
-  animation-fill-mode: forwards;
   background-color: rgba(#000, 0.8);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
+
+  &IsOpen {
+    animation: open 0.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  &IsClosed {
+    animation: close 0.3s linear;
+    animation-fill-mode: forwards;
+  }
 }
 
-@keyframes active {
+@keyframes open {
+  from {
+    transform: scale(0);
+  }
+
   to {
     transform: scale(40);
+  }
+}
+
+@keyframes close {
+  from {
+    transform: scale(40);
+  }
+
+  to {
+    transform: scale(0);
   }
 }
 
@@ -84,7 +105,7 @@
     transition-property: bottom, transform;
   }
 
-  &Active {
+  &IsActive {
     background: none;
     box-shadow: none;
 
