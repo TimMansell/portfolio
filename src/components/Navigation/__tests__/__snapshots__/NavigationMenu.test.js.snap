@@ -3,6 +3,7 @@
 exports[`NavigationMenu should match snapshot 1`] = `
 <ul
   className="menu"
+  data-e2e="navigation"
 >
   <li
     className="menuItem"

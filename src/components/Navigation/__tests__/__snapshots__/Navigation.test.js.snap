@@ -3,12 +3,12 @@
 exports[`Navigation should match snapshot 1`] = `
 <nav
   className="navigation"
-  data-e2e="navigation"
   id="nav"
   role="navigation"
 >
   <ul
     className="menu"
+    data-e2e="navigation"
   >
     <li
       className="menuItem"
