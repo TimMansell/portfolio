@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
-import { MenuContext } from '../../context/mobileMenu';
+import React, { useState, useEffect, useRef } from 'react';
 import classnames from 'classnames';
 
 import NavigationMenu from './NavigationMenu';
@@ -10,7 +9,6 @@ import styles from './Navigation.module.scss';
 export const Navigation = () => {
   const [isFixedNav, setIsFixedNav] = useState(false);
   const refNavigation = useRef(null);
-  const [isMobileMenu] = useContext(MenuContext);
 
   useEffect(() => {
     const onScroll = () => {
@@ -26,8 +24,7 @@ export const Navigation = () => {
   });
 
   const navClasses = classnames(styles.navigation, {
-    [styles.navigationIsSticky]: isFixedNav && !isMobileMenu,
-    [styles.navigationIsActive]: isMobileMenu,
+    [styles.navigationIsSticky]: isFixedNav,
   });
 
   return (
