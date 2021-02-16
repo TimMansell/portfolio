@@ -4,9 +4,10 @@ import debounce from 'lodash.debounce';
 export const useInMobileViewport = () => {
   const [isMobileView, setIsMobileView] = useState(true);
 
-  const checkInsideMobileView = () => {
-    return window.matchMedia('(max-width: 768px)').matches;
-  };
+  const checkInsideMobileView = () =>
+    window.matchMedia('(max-width: 768px)').matches ||
+    window.matchMedia('(max-width: 992px) and (orientation: landscape)')
+      .matches;
 
   useEffect(() => {
     const onResize = debounce(() => {
