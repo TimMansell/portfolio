@@ -28,13 +28,7 @@ export const Navigation = () => {
   });
 
   return (
-    <nav
-      id="nav"
-      data-e2e="navigation"
-      className={navClasses}
-      ref={refNavigation}
-      role="navigation"
-    >
+    <nav id="nav" className={navClasses} ref={refNavigation} role="navigation">
       <NavigationMenu />
 
       <Hamburger />

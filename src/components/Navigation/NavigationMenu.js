@@ -18,7 +18,7 @@ export const NavigationMenu = () => {
   });
 
   return (
-    <ul className={menuClasses}>
+    <ul className={menuClasses} data-e2e="navigation">
       {navigationJson.map((navigation, index) => (
         <li className={styles.menuItem} key={index}>
           <Link
