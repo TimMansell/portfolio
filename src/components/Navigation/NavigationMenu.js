@@ -7,18 +7,7 @@ import useInMobileViewport from 'hooks/useInMobileViewport';
 import styles from './NavigationMenu.module.scss';
 import navigationJson from './json/navigation.json';
 
-export const combineWords = (words) => words.replaceAll(' ', '-');
-
-export const splitWords = (words) => words.split(' ');
-
-export const upperCaseWord = ([initial, ...rest]) =>
-  [initial.toUpperCase(), ...rest].join('');
-
-export const navigationName = (name) => {
-  const words = splitWords(name);
-
-  return words.map((word) => upperCaseWord(word)).join(' ');
-};
+import { combineWords, upperCaseWords } from './helpers';
 
 export const NavigationMenu = () => {
   const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
@@ -44,7 +33,7 @@ export const NavigationMenu = () => {
             duration={500}
             onClick={() => closeMenu()}
           >
-            {navigationName(navigation)}
+            {upperCaseWords(navigation)}
           </Link>
         </li>
       ))}
