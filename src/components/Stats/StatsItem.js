@@ -15,15 +15,25 @@ export const StatsItem = ({ description, offset, value, icon }) => {
   const isInViewport = useInViewport(element, -300);
 
   return (
-    <div className={styles.item} ref={element}>
-      <Icon name={['fa', icon]} padded />
-      <p className={styles.amount}>
-        {isInViewport && (
-          <Counter begin={offsetStats(value, offset)} end={value} time={2000} />
-        )}
-        {!isInViewport && offsetStats(value, offset)}
-      </p>
-      <p className={styles.text}>{description}</p>
+    <div className={styles.container}>
+      <div className={styles.item} ref={element}>
+        <div className={styles.icon}>
+          <Icon name={['fa', icon]} size="sm" />
+        </div>
+        <div className={styles.content}>
+          <h3 className={styles.title}>
+            {isInViewport && (
+              <Counter
+                begin={offsetStats(value, offset)}
+                end={value}
+                time={2000}
+              />
+            )}
+            {!isInViewport && offsetStats(value, offset)}
+          </h3>
+          <p className={styles.description}>{description}</p>
+        </div>
+      </div>
     </div>
   );
 };
