@@ -74,4 +74,12 @@ $bp-xxxl: 1921px;
   --animation-tagline-delay: 5s;
   --animation-name-delay: 3.5s;
   --animation-location-delay: 5s;
+
+  // z-index.
+  --z-overlay: 900;
+  --z-header: 800;
+  --z-footer: 700;
+  --z-default: 1;
+  --z-below: -1;
+  --z-bottomless-pit: -9000;
 }

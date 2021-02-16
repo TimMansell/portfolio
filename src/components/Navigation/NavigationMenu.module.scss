@@ -19,7 +19,7 @@
     transform: translateY(-100px);
     padding-left: var(--vr);
     padding-right: var(--vr);
-    z-index: 9999999;
+    z-index: var(--z-overlay);
 
     @media (min-width: $bp-lg) {
       display: none;
