@@ -6,11 +6,12 @@
   color: var(--secondary-text-colour);
 
   @media (min-width: $bp-sm) {
-    grid-gap: var(--vr-md);
+    grid-gap: var(--vr-lg);
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $bp-lg) {
+    grid-gap: var(--vr-md);
     grid-template-columns: repeat(4, 1fr);
   }
 }
