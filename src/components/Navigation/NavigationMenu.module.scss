@@ -21,6 +21,15 @@
     padding-right: var(--vr);
     z-index: var(--z-overlay);
 
+    @media (orientation: landscape) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--vr);
+      padding-left: var(--vr-md);
+      padding-right: var(--vr-md);
+    }
+
     @media (min-width: $bp-lg) {
       display: none;
     }
@@ -44,9 +53,18 @@
   font-size: pxtorem(30);
   letter-spacing: pxtorem(2);
 
+  @media (orientation: landscape) {
+    font-size: pxtorem(22);
+    padding: var(--vr-xs);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+  }
+
   @media (min-width: $bp-lg) {
     font-size: pxtorem(16);
     padding: 0 var(--vr-xs);
+    border: 0;
+    border-radius: 0;
   }
 
   @media (min-width: $bp-xl) {
