@@ -3,15 +3,15 @@
 exports[`Navigation should match snapshot 1`] = `
 <nav
   className="navigation"
-  data-e2e="navigation"
   id="nav"
   role="navigation"
 >
   <ul
     className="menu"
+    data-e2e="navigation"
   >
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -22,7 +22,7 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -33,7 +33,7 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -44,7 +44,7 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -55,7 +55,7 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -66,7 +66,7 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -77,7 +77,7 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="item"
+      className="menuItem"
     >
       <a
         className="link"
@@ -88,17 +88,24 @@ exports[`Navigation should match snapshot 1`] = `
       </a>
     </li>
   </ul>
-  <button
-    className="hamburger"
-    data-e2e="hambuger"
-    onClick={[Function]}
-    type="button"
+  <div
+    className="container"
   >
-    <span
-      className="menu"
+    <button
+      className="hamburger"
+      data-e2e="hambuger"
+      onClick={[Function]}
+      type="button"
     >
-      toggle menu
-    </span>
-  </button>
+      <span
+        className="menu"
+      >
+        toggle menu
+      </span>
+    </button>
+    <div
+      className="background"
+    />
+  </div>
 </nav>
 `;

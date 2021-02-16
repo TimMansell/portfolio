@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'utilities/pxtorem';
+
+.menu {
+  display: none;
+
+  @media (min-width: $bp-lg) {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &IsActive {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(-100px);
+    padding-left: var(--vr);
+    padding-right: var(--vr);
+    z-index: var(--z-overlay);
+
+    @media (orientation: landscape) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--vr);
+      padding-left: var(--vr-md);
+      padding-right: var(--vr-md);
+    }
+
+    @media (min-width: $bp-lg) {
+      display: none;
+    }
+  }
+}
+
+.menuItem {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $bp-md) {
+    text-transform: uppercase;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-colour);
+  padding: var(--vr-xxs);
+  font-size: pxtorem(30);
+  letter-spacing: pxtorem(2);
+
+  @media (orientation: landscape) {
+    font-size: pxtorem(22);
+    padding: var(--vr-xs);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+  }
+
+  @media (min-width: $bp-lg) {
+    font-size: pxtorem(16);
+    padding: 0 var(--vr-xs);
+    border: 0;
+    border-radius: 0;
+  }
+
+  @media (min-width: $bp-xl) {
+    font-size: pxtorem(18);
+    padding: 0 var(--vr);
+  }
+
+  &IsActive,
+  &:hover {
+    @media (min-width: $bp-lg) {
+      background-color: var(--colour-1-alt-2);
+      box-shadow:
+        inset 1px 0 var(--colour-1-alt-2),
+        inset -1px 0 var(--colour-1-alt-2);
+    }
+  }
+
+  &IsSticky {
+    @media (min-width: $bp-lg) {
+      text-shadow: -1px -1px var(--colour-1-alt-2);
+    }
+  }
+}
