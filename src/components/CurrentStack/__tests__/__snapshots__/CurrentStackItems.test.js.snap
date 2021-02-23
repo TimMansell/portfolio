@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentStackItems should match snapshot 1`] = `
+<div
+  className="stack"
+  data-test="stack-items"
+>
+  <div
+    className="item"
+  >
+    <a
+      data-test="stack-item-link"
+      href="url"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Item 1"
+        className="img"
+        src={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "react.svg",
+          }
+        }
+        title="Item 1"
+        width="65"
+      />
+    </a>
+  </div>
+  <div
+    className="item"
+  >
+    <a
+      data-test="stack-item-link"
+      href="url"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Item 2"
+        className="img"
+        src={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "nodejs.svg",
+          }
+        }
+        title="Item 2"
+        width="90"
+      />
+    </a>
+  </div>
+</div>
+`;

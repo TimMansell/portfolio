@@ -1,16 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hamburger should match snapshot 1`] = `
-<button
-  className="hamburger"
-  data-e2e="hambuger"
-  onClick={[Function]}
-  type="button"
+<div
+  className="container"
 >
-  <span
-    className="menu"
+  <button
+    className="hamburger"
+    data-e2e="hambuger"
+    onClick={[Function]}
+    type="button"
   >
-    toggle menu
-  </span>
-</button>
+    <span
+      className="menu"
+    >
+      toggle menu
+    </span>
+  </button>
+  <div
+    className="background"
+  />
+</div>
 `;

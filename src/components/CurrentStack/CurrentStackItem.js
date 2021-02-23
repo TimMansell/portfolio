@@ -5,7 +5,7 @@ import SvgImage from '../SvgImage';
 
 import styles from './CurrentStack.module.scss';
 
-export const StackItem = ({ url, img, name, width }) => {
+export const CurrentStackItem = ({ url, img, name, width }) => {
   const src = require(`./img/${img}`);
 
   return (
@@ -22,11 +22,11 @@ export const StackItem = ({ url, img, name, width }) => {
   );
 };
 
-StackItem.propTypes = {
+CurrentStackItem.propTypes = {
   url: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
 };
 
-export default StackItem;
+export default CurrentStackItem;
