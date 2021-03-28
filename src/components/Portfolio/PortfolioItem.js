@@ -6,13 +6,14 @@ import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
 import Labels from '../Labels';
+import { formatImages } from './helpers/formatImages';
 
 import useInViewport from 'hooks/useInViewport';
 
 import styles from './PortfolioItem.module.scss';
 
 export const PortfolioItem = ({
-  src,
+  img,
   title,
   years,
   types,
@@ -25,12 +26,11 @@ export const PortfolioItem = ({
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
 
-  const { name, formats, fallback } = src;
-  const srcs = formats.map((format) => ({
+  const { srcs, defaultImg } = formatImages(img);
+  const pictureSources = srcs.map(({ format, src }) => ({
     format,
-    src: require(`./img/${name}.${format}`),
+    src: require(`./img/${src}`),
   }));
-  const defaultImg = require(`./img/${name}.${fallback}`);
 
   const getCubeHeight = debounce(() => {
     const { clientHeight } = cubeElement.current;
@@ -53,7 +53,11 @@ export const PortfolioItem = ({
         <div className={styles.browser}>
           <PortfolioIcons title={title} />
           {isInViewport && (
-            <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
+            <Picture
+              srcs={pictureSources}
+              name={title}
+              defaultImg={require(`./img/${defaultImg}`)}
+            />
           )}
         </div>
 
@@ -93,7 +97,7 @@ export const PortfolioItem = ({
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  src: PropTypes.object.isRequired,
+  img: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   years: PropTypes.array.isRequired,
   types: PropTypes.array.isRequired,
