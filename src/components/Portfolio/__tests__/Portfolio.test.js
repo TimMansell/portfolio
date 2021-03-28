@@ -9,27 +9,28 @@ jest.mock(
   () => [
     {
       title: 'title',
-      year: '2020',
+      years: ['2020'],
+      types: ['types'],
       description: 'description',
       tech: ['tech 1', 'tech 2'],
       url: 'url',
       source: 'source',
-      src: {
-        name: 'my-bupa',
-        types: ['avif', 'webp'],
+      img: {
+        name: 'test',
+        formats: ['avif', 'webp'],
         fallback: 'jpg',
       },
     },
     {
       title: 'title',
-      year: '2020',
+      years: ['2020', '2021'],
+      types: ['types'],
       description: 'description',
       tech: ['tech 1', 'tech 2', 'tech 3'],
       url: 'url',
-      source: 'source',
-      src: {
-        name: 'my-bupa',
-        types: ['avif', 'webp'],
+      img: {
+        name: 'test',
+        formats: ['avif'],
         fallback: 'jpg',
       },
     },
