@@ -11,8 +11,8 @@ import WindowLock from 'components/WindowLock';
 export const App = () => {
   return (
     <MenuContextProvider>
-      <Navigation />
       <Intro />
+      <Navigation />
       <Main />
       <GoToTop />
       <WindowLock />
