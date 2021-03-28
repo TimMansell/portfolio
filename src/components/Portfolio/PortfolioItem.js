@@ -47,8 +47,6 @@ export const PortfolioItem = ({
     return () => window.cancelAnimationFrame(getCubeHeight);
   });
 
-  const secondaryLabels = [...years, ...types];
-
   return (
     <div className={styles.portfolioItem}>
       <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
@@ -85,7 +83,7 @@ export const PortfolioItem = ({
         </div>
       </div>
       <div className={styles.labels}>
-        <Labels items={secondaryLabels} type="secondary" />
+        <Labels items={[...years, ...types]} type="secondary" />
       </div>
       <Labels items={tech} type="primary" />
     </div>
