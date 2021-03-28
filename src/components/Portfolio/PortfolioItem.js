@@ -14,7 +14,7 @@ import styles from './PortfolioItem.module.scss';
 export const PortfolioItem = ({
   src,
   title,
-  year,
+  years,
   description,
   tech,
   url,
@@ -82,7 +82,7 @@ export const PortfolioItem = ({
         </div>
       </div>
       <div className={styles.labels}>
-        <Labels items={[year]} type="secondary" />
+        <Labels items={years} type="secondary" />
       </div>
       <Labels items={tech} type="primary" />
     </div>
@@ -94,7 +94,7 @@ export default PortfolioItem;
 PortfolioItem.propTypes = {
   src: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
-  year: PropTypes.string.isRequired,
+  years: PropTypes.array.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.array.isRequired,
   url: PropTypes.string.isRequired,
