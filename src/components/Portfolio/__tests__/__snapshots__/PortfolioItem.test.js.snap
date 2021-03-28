@@ -83,6 +83,11 @@ exports[`PortfolioItem should match snapshot 1`] = `
       >
         2020
       </li>
+      <li
+        className="label isSecondary"
+      >
+        Personal
+      </li>
     </ul>
   </div>
   <ul

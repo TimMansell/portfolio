@@ -104,6 +104,11 @@ Array [
           >
             2020
           </li>
+          <li
+            className="label isSecondary"
+          >
+            types
+          </li>
         </ul>
       </div>
       <ul
@@ -180,15 +185,6 @@ Array [
             >
               Visit website
             </a>
-            <a
-              className="btn"
-              href="source"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="View Souce"
-            >
-              View source
-            </a>
           </div>
         </div>
       </div>
@@ -203,6 +199,16 @@ Array [
             className="label isSecondary"
           >
             2020
+          </li>
+          <li
+            className="label isSecondary"
+          >
+            2021
+          </li>
+          <li
+            className="label isSecondary"
+          >
+            types
           </li>
         </ul>
       </div>
