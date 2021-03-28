@@ -15,6 +15,7 @@ export const PortfolioItem = ({
   src,
   title,
   years,
+  types,
   description,
   tech,
   url,
@@ -24,10 +25,10 @@ export const PortfolioItem = ({
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
 
-  const { name, types, fallback } = src;
-  const srcs = types.map((type) => ({
-    type,
-    src: require(`./img/${name}.${type}`),
+  const { name, formats, fallback } = src;
+  const srcs = formats.map((format) => ({
+    format,
+    src: require(`./img/${name}.${format}`),
   }));
   const defaultImg = require(`./img/${name}.${fallback}`);
 
@@ -45,6 +46,8 @@ export const PortfolioItem = ({
 
     return () => window.cancelAnimationFrame(getCubeHeight);
   });
+
+  const secondaryLabels = [...years, ...types];
 
   return (
     <div className={styles.portfolioItem}>
@@ -82,7 +85,7 @@ export const PortfolioItem = ({
         </div>
       </div>
       <div className={styles.labels}>
-        <Labels items={years} type="secondary" />
+        <Labels items={secondaryLabels} type="secondary" />
       </div>
       <Labels items={tech} type="primary" />
     </div>
@@ -95,6 +98,7 @@ PortfolioItem.propTypes = {
   src: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   years: PropTypes.array.isRequired,
+  types: PropTypes.array.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.array.isRequired,
   url: PropTypes.string.isRequired,
