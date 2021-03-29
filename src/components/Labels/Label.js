@@ -17,8 +17,8 @@ export const Label = ({ label, type, size }) => {
 
 Label.propTypes = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  size: PropTypes.string,
+  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  size: PropTypes.oneOf(['lg']),
 };
 
 export default Label;
