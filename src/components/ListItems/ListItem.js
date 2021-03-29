@@ -25,7 +25,7 @@ ListItem.propTypes = {
     icon: PropTypes.object.isRequired,
     title: PropTypes.string.isRequired,
     list: PropTypes.array.isRequired,
-  }),
+  }).isRequired,
 };
 
 export default ListItem;

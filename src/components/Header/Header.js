@@ -24,7 +24,7 @@ export const Header = ({ text, title, type }) => {
 Header.propTypes = {
   text: PropTypes.string,
   title: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
 };
 
 export default Header;

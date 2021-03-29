@@ -101,7 +101,7 @@ PortfolioItem.propTypes = {
     name: PropTypes.string.isRequired,
     formats: PropTypes.array.isRequired,
     fallback: PropTypes.string.isRequired,
-  }),
+  }).isRequired,
   title: PropTypes.string.isRequired,
   years: PropTypes.array.isRequired,
   types: PropTypes.array.isRequired,

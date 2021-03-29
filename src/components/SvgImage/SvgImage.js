@@ -16,9 +16,9 @@ export const SvgImage = ({ src, name, width }) => {
 };
 
 SvgImage.propTypes = {
-  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   name: PropTypes.string.isRequired,
-  width: PropTypes.string,
+  width: PropTypes.string.isRequired,
 };
 
 export default SvgImage;

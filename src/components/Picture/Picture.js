@@ -33,7 +33,7 @@ Picture.propTypes = {
       src: PropTypes.string.isRequired,
       format: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
   name: PropTypes.string.isRequired,
   defaultImg: PropTypes.string,
 };

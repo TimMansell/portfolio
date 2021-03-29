@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import styles from './SectionWrap.module.scss';
 
-const SectionWrap = ({ container, type, id = '', children }) => {
+const SectionWrap = ({ container, type, id, children }) => {
   const sectionClasses = classnames(styles.section, {
     [styles.bgPrimary]: type === 'primary',
     [styles.bgSecondary]: type === 'secondary',
@@ -25,9 +25,9 @@ const SectionWrap = ({ container, type, id = '', children }) => {
 
 SectionWrap.propTypes = {
   container: PropTypes.oneOf(['medium', 'large']),
-  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
-  id: PropTypes.string,
-  children: PropTypes.element,
+  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
+  id: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 export default SectionWrap;
