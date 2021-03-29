@@ -34,19 +34,19 @@ describe('Section', () => {
   });
 
   it('should display a primary background', () => {
-    const wrapper = shallow(<SectionWrap background="primary" />);
+    const wrapper = shallow(<SectionWrap type="primary" />);
 
     expect(wrapper.hasClass('bgPrimary')).toBeTruthy();
   });
 
   it('should display a secondary background', () => {
-    const wrapper = shallow(<SectionWrap background="secondary" />);
+    const wrapper = shallow(<SectionWrap type="secondary" />);
 
     expect(wrapper.hasClass('bgSecondary')).toBeTruthy();
   });
 
   it('should display a tertiary background', () => {
-    const wrapper = shallow(<SectionWrap background="tertiary" />);
+    const wrapper = shallow(<SectionWrap type="tertiary" />);
 
     expect(wrapper.hasClass('bgTertiary')).toBeTruthy();
   });
