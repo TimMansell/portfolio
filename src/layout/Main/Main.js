@@ -16,35 +16,31 @@ import styles from './Main.module.scss';
 const Main = () => {
   return (
     <main className={styles.main}>
-      <SectionWrap id="profile" background="tertiary">
+      <SectionWrap id="profile" type="tertiary">
         <Profile />
       </SectionWrap>
 
-      <SectionWrap id="skills" background="primary" container="medium">
+      <SectionWrap id="skills" type="primary" container="medium">
         <Skills />
       </SectionWrap>
 
-      <SectionWrap
-        id="retired-skills"
-        background="secondary"
-        container="medium"
-      >
+      <SectionWrap id="retired-skills" type="secondary" container="medium">
         <RetiredSkills />
       </SectionWrap>
 
-      <SectionWrap id="stack" background="tertiary" container="medium">
+      <SectionWrap id="stack" type="tertiary" container="medium">
         <CurrentStack />
       </SectionWrap>
 
-      <SectionWrap id="portfolio" background="secondary" container="medium">
+      <SectionWrap id="portfolio" type="secondary" container="medium">
         <Portfolio />
       </SectionWrap>
 
-      <SectionWrap id="stats" background="primary">
+      <SectionWrap id="stats" type="primary">
         <Stats />
       </SectionWrap>
 
-      <SectionWrap id="testimonials" background="tertiary">
+      <SectionWrap id="testimonials" type="tertiary">
         <Testimonials />
       </SectionWrap>
 

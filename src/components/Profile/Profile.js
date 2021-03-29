@@ -9,7 +9,7 @@ import styles from './Profile.module.scss';
 export const Profile = () => {
   return (
     <>
-      <Header title="A little bit about myself" primary />
+      <Header title="A little bit about myself" type="primary" />
 
       <div className={styles.profile}>
         <p>

@@ -2,11 +2,15 @@
 
 exports[`Section should match snapshot 1`] = `
 <section
-  className="section"
-  id=""
+  className="section bgPrimary"
+  id="test"
 >
   <div
     className="container"
-  />
+  >
+    <p>
+      test
+    </p>
+  </div>
 </section>
 `;

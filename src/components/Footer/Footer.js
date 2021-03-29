@@ -6,7 +6,7 @@ import Copyright from 'components/Copyright';
 
 export const Footer = () => {
   return (
-    <SectionWrap id="contact" background="secondary">
+    <SectionWrap id="contact" type="secondary">
       <footer>
         <SocialIcons />
         <Copyright />

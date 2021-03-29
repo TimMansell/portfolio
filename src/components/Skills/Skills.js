@@ -11,7 +11,7 @@ export const Skills = () => {
       <Header
         title="Skills"
         text="I have acquired many skills during my professional career.  Most notable and relevant are"
-        secondary
+        type="secondary"
       />
 
       <ListItems items={skills} />

@@ -23,7 +23,7 @@ export const Labels = ({ items, type, size, centered }) => {
 Labels.propTypes = {
   items: PropTypes.array.isRequired,
   type: PropTypes.string.isRequired,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['lg']),
   centered: PropTypes.bool,
 };
 

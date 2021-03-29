@@ -16,7 +16,7 @@ export const Portfolio = () => {
       <Header
         title="Portfolio"
         text="Here's a sample of my work. Hover over image for more information"
-        tertiary
+        type="tertiary"
       />
 
       <div className={styles.portfolio} data-e2e="portfolio-items">

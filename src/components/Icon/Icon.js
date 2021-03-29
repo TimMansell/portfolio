@@ -56,6 +56,12 @@ library.add(
   faAppStoreIos
 );
 
+const defaultPropTypes = {
+  className: PropTypes.string,
+  size: PropTypes.oneOf(['xs', 'sm', 'md']),
+  padded: PropTypes.bool,
+};
+
 // Default Icon.
 const Icon = ({ name, className, size, padded }) => {
   const classes = classnames(styles.icon, className, {
@@ -69,10 +75,8 @@ const Icon = ({ name, className, size, padded }) => {
 };
 
 Icon.propTypes = {
-  name: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
+  name: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
+  ...defaultPropTypes,
 };
 
 export default Icon;
@@ -89,12 +93,7 @@ export const IconChevronDown = ({ className, size, padded }) => {
   );
 };
 
-IconChevronDown.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconChevronDown.propTypes = defaultPropTypes;
 
 export const IconAngleUp = ({ className, size, padded }) => {
   return (
@@ -102,12 +101,7 @@ export const IconAngleUp = ({ className, size, padded }) => {
   );
 };
 
-IconAngleUp.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconAngleUp.propTypes = defaultPropTypes;
 
 export const IconTerminal = ({ className, size, padded }) => {
   return (
@@ -115,12 +109,7 @@ export const IconTerminal = ({ className, size, padded }) => {
   );
 };
 
-IconTerminal.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconTerminal.propTypes = defaultPropTypes;
 
 export const IconCode = ({ className, size, padded }) => {
   return (
@@ -128,12 +117,7 @@ export const IconCode = ({ className, size, padded }) => {
   );
 };
 
-IconCode.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconCode.propTypes = defaultPropTypes;
 
 export const IconTasks = ({ className, size, padded }) => {
   return (
@@ -146,12 +130,7 @@ export const IconTasks = ({ className, size, padded }) => {
   );
 };
 
-IconTasks.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconTasks.propTypes = defaultPropTypes;
 
 export const IconCodeBranch = ({ className, size, padded }) => {
   return (
@@ -164,12 +143,7 @@ export const IconCodeBranch = ({ className, size, padded }) => {
   );
 };
 
-IconCodeBranch.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconCodeBranch.propTypes = defaultPropTypes;
 
 export const IconCodeLaptop = ({ className, size, padded }) => {
   return (
@@ -182,12 +156,7 @@ export const IconCodeLaptop = ({ className, size, padded }) => {
   );
 };
 
-IconCodeLaptop.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconCodeLaptop.propTypes = defaultPropTypes;
 
 export const IconMugHot = ({ className, size, padded }) => {
   return (
@@ -195,12 +164,7 @@ export const IconMugHot = ({ className, size, padded }) => {
   );
 };
 
-IconMugHot.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconMugHot.propTypes = defaultPropTypes;
 
 export const IconQuoteLeft = ({ className, size, padded }) => {
   return (
@@ -213,12 +177,7 @@ export const IconQuoteLeft = ({ className, size, padded }) => {
   );
 };
 
-IconQuoteLeft.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconQuoteLeft.propTypes = defaultPropTypes;
 
 export const IconQuoteRight = ({ className, size, padded }) => {
   return (
@@ -231,12 +190,7 @@ export const IconQuoteRight = ({ className, size, padded }) => {
   );
 };
 
-IconQuoteRight.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconQuoteRight.propTypes = defaultPropTypes;
 
 export const IconCogs = ({ className, size, padded }) => {
   return (
@@ -244,12 +198,7 @@ export const IconCogs = ({ className, size, padded }) => {
   );
 };
 
-IconCogs.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconCogs.propTypes = defaultPropTypes;
 
 export const IconBug = ({ className, size, padded }) => {
   return (
@@ -257,12 +206,7 @@ export const IconBug = ({ className, size, padded }) => {
   );
 };
 
-IconBug.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconBug.propTypes = defaultPropTypes;
 
 export const IconTools = ({ className, size, padded }) => {
   return (
@@ -270,12 +214,7 @@ export const IconTools = ({ className, size, padded }) => {
   );
 };
 
-IconTools.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconTools.propTypes = defaultPropTypes;
 
 // Brand Icons.
 export const IconCss3Alt = ({ className, size, padded }) => {
@@ -284,23 +223,13 @@ export const IconCss3Alt = ({ className, size, padded }) => {
   );
 };
 
-IconCss3Alt.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconCss3Alt.propTypes = defaultPropTypes;
 
 export const IconJs = ({ className, size, padded }) => {
   return <Icon name={faJs} className={className} size={size} padded={padded} />;
 };
 
-IconJs.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconJs.propTypes = defaultPropTypes;
 
 export const IconLinkedin = ({ className, size, padded }) => {
   return (
@@ -308,12 +237,7 @@ export const IconLinkedin = ({ className, size, padded }) => {
   );
 };
 
-IconLinkedin.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconLinkedin.propTypes = defaultPropTypes;
 
 export const IconTwitter = ({ className, size, padded }) => {
   return (
@@ -321,12 +245,7 @@ export const IconTwitter = ({ className, size, padded }) => {
   );
 };
 
-IconTwitter.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconTwitter.propTypes = defaultPropTypes;
 
 export const IconGithub = ({ className, size, padded }) => {
   return (
@@ -334,12 +253,7 @@ export const IconGithub = ({ className, size, padded }) => {
   );
 };
 
-IconGithub.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconGithub.propTypes = defaultPropTypes;
 
 export const IconAppStoreIos = ({ className, size, padded }) => {
   return (
@@ -352,9 +266,4 @@ export const IconAppStoreIos = ({ className, size, padded }) => {
   );
 };
 
-IconAppStoreIos.propTypes = {
-  name: PropTypes.object,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  padded: PropTypes.bool,
-};
+IconAppStoreIos.propTypes = defaultPropTypes;

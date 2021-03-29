@@ -4,11 +4,11 @@ import classnames from 'classnames';
 
 import styles from './Header.module.scss';
 
-export const Header = ({ primary, secondary, tertiary, text, title }) => {
+export const Header = ({ text, title, type }) => {
   const classes = classnames(styles.heading, {
-    [styles.headingPrimary]: primary,
-    [styles.headingSecondary]: secondary,
-    [styles.headingTertiary]: tertiary,
+    [styles.headingPrimary]: type === 'primary',
+    [styles.headingSecondary]: type === 'secondary',
+    [styles.headingTertiary]: type === 'tertiary',
   });
 
   return (
@@ -22,11 +22,9 @@ export const Header = ({ primary, secondary, tertiary, text, title }) => {
 };
 
 Header.propTypes = {
-  primary: PropTypes.bool,
-  secondary: PropTypes.bool,
-  tertiary: PropTypes.bool,
   text: PropTypes.string,
   title: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
 };
 
 export default Header;

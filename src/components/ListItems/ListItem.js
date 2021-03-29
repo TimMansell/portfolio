@@ -21,7 +21,11 @@ export const ListItem = ({ item }) => {
 };
 
 ListItem.propTypes = {
-  item: PropTypes.object.isRequired,
+  item: PropTypes.shape({
+    icon: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired,
+    list: PropTypes.array.isRequired,
+  }).isRequired,
 };
 
 export default ListItem;
