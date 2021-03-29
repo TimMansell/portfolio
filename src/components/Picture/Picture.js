@@ -8,9 +8,9 @@ export const Picture = ({ srcs, name, defaultImg }) => {
 
   return (
     <picture title={name} data-e2e="picture">
-      {srcs.map(({ src, type }, index) => (
+      {srcs.map(({ src, format }, index) => (
         <source
-          type={`image/${type}`}
+          type={`image/${format}`}
           srcSet={src}
           key={index}
           data-test={`picture-source-${index}`}
@@ -28,7 +28,12 @@ export const Picture = ({ srcs, name, defaultImg }) => {
 };
 
 Picture.propTypes = {
-  srcs: PropTypes.array.isRequired,
+  srcs: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      format: PropTypes.string.isRequired,
+    })
+  ),
   name: PropTypes.string.isRequired,
   defaultImg: PropTypes.string,
 };

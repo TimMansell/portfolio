@@ -8,7 +8,7 @@ const props = {
   srcs: [
     {
       src: 'test src',
-      type: 'jpg',
+      format: 'jpg',
     },
   ],
   name: 'test name',
@@ -31,7 +31,7 @@ describe('Picture', () => {
     const source = wrapper.find('[data-test="picture-source-0"]');
 
     expect(source.props().srcSet).toBe(props.srcs[0].src);
-    expect(source.props().type).toBe(`image/${props.srcs[0].type}`);
+    expect(source.props().type).toBe(`image/${props.srcs[0].format}`);
   });
 
   it('should render srcs[0] in <img>', () => {
