@@ -97,7 +97,11 @@ export const PortfolioItem = ({
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  img: PropTypes.object.isRequired,
+  img: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    formats: PropTypes.array.isRequired,
+    fallback: PropTypes.string.isRequired,
+  }),
   title: PropTypes.string.isRequired,
   years: PropTypes.array.isRequired,
   types: PropTypes.array.isRequired,
