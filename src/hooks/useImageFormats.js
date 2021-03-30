@@ -10,3 +10,7 @@ export const formatImages = ({ name, formats, fallback }) => {
     defaultImg,
   };
 };
+
+export const useImageFormats = (imgs) => formatImages(imgs);
+
+export default useImageFormats;
