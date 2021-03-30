@@ -11,6 +11,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Load web fonts.
 WebFont.load({
   google: {
-    families: ['Open Sans:700,400'],
+    families: ['Contrail One:400', 'Recursive:400'],
   },
 });
