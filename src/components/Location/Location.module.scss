@@ -3,11 +3,11 @@
 @import 'utilities/text-shadow';
 
 .location {
+  font-family: var(--font-family-secondary);
   font-size: pxtorem(24);
   opacity: 0;
   color: var(--secondary-text-colour);
   letter-spacing: pxtorem(1);
-  line-height: 1;
   text-transform: uppercase;
   text-shadow: text-shadow(1, 4, var(--colour-1-alt-2));
   animation: location 0.5s ease-in-out;

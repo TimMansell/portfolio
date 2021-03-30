@@ -3,10 +3,10 @@
 @import 'utilities/text-shadow';
 
 .hi {
+  font-family: var(--font-family-secondary);
   color: var(--secondary-text-colour);
   font-size: pxtorem(128);
   letter-spacing: pxtorem(5);
-  line-height: 1;
   height: 0;
   margin: 0;
   text-shadow: text-shadow(1, 4, var(--colour-1-alt-2));
