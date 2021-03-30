@@ -1,8 +1,8 @@
 @import 'variables';
 @import 'utilities/pxtorem';
+@import 'utilities/text-shadow';
 
 .tagline {
-  height: pxtorem(30);
   overflow: hidden;
   opacity: 0;
   animation: tagline 0.5s ease-in-out;
@@ -11,17 +11,15 @@
 }
 
 .item {
-  font-size: pxtorem(22);
+  font-size: pxtorem(32);
   color: var(--secondary-text-colour);
-  font-weight: 300;
   letter-spacing: pxtorem(1);
-  line-height: 1.2;
+  line-height: 1;
   text-transform: uppercase;
-  text-shadow: 1px 1px var(--colour-1-alt-2);
+  text-shadow: text-shadow(1, 4, var(--colour-1-alt-2));
 
   @media (min-width: $bp-md) {
-    font-size: pxtorem(26);
-    text-shadow: 2px 2px var(--tertiary-text-colour);
+    text-shadow: text-shadow(1, 2, var(--tertiary-text-colour));
   }
 }
 
