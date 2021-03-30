@@ -6,9 +6,9 @@ import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
 import Labels from '../Labels';
-import { formatImages } from './helpers/formatImages';
 
 import useInViewport from 'hooks/useInViewport';
+import useImageFormats from 'hooks/useImageFormats';
 
 import styles from './PortfolioItem.module.scss';
 
@@ -25,8 +25,8 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
+  const { srcs, defaultImg } = useImageFormats(img);
 
-  const { srcs, defaultImg } = formatImages(img);
   const pictureSources = srcs.map(({ format, src }) => ({
     format,
     src: require(`./img/${src}`),
