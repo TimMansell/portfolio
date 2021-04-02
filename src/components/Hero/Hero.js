@@ -6,15 +6,20 @@ import useImageFormats from 'hooks/useImageFormats';
 
 import styles from './Hero.module.scss';
 
-const img = {
-  name: 'maria-vojtovicova-SPvJPDXEmqA-unsplash',
+import images from './json/images.json';
+
+// const { category, imgs } = images[4];
+const fi = images.map((img) => ({
+  name: img,
   formats: ['jpg'],
   fallback: 'jpg',
-};
+}));
+
+const randomImg = fi[Math.floor(Math.random() * fi.length)];
 
 export const Hero = () => {
   const scrollStyles = useScrollBlur(0, 10);
-  const { srcs, defaultImg } = useImageFormats(img);
+  const { srcs, defaultImg } = useImageFormats(randomImg);
 
   const pictureSources = srcs.map(({ format, src }) => ({
     format,
@@ -26,7 +31,7 @@ export const Hero = () => {
       <div className={styles.img} style={scrollStyles} data-e2e="hero-img">
         <Picture
           srcs={pictureSources}
-          name={img.name}
+          name={randomImg.name}
           defaultImg={require(`./img/${defaultImg}`)}
         />
       </div>
