@@ -8,20 +8,19 @@ import styles from './Hero.module.scss';
 
 import images from './json/images.json';
 
-const imageSources = images.map((img) => ({
-  name: img,
-  formats: ['avif', 'webp'],
-  fallback: 'jpg',
-}));
-
-const randomImg = imageSources[Math.floor(Math.random() * imageSources.length)];
+const randomImg = images[Math.floor(Math.random() * images.length)];
 
 export const Hero = () => {
-  const scrollStyles = useScrollBlur(0, 10);
-  const { srcs, defaultImg } = useImageFormats(randomImg);
+  const { name, alt } = randomImg;
 
-  const pictureSources = srcs.map(({ format, src }) => ({
-    format,
+  const scrollStyles = useScrollBlur(0, 10);
+  const { srcs, defaultImg } = useImageFormats(name, {
+    types: ['avif', 'webp'],
+    fallback: 'jpg',
+  });
+
+  const pictureSources = srcs.map(({ type, src }) => ({
+    type,
     src: require(`./img/${src}`),
   }));
 
@@ -30,7 +29,7 @@ export const Hero = () => {
       <div className={styles.img} style={scrollStyles} data-e2e="hero-img">
         <Picture
           srcs={pictureSources}
-          name={randomImg.name}
+          title={alt}
           defaultImg={require(`./img/${defaultImg}`)}
         />
       </div>

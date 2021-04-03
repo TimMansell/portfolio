@@ -1,9 +1,9 @@
-export const formatImages = ({ name, formats, fallback }) => {
-  const srcs = formats.map((format) => ({
-    format,
-    src: `${name}.${format}`,
+export const formatImages = (img, { types, fallback }) => {
+  const srcs = types.map((type) => ({
+    type,
+    src: `${img}.${type}`,
   }));
-  const defaultImg = `${name}.${fallback}`;
+  const defaultImg = `${img}.${fallback}`;
 
   return {
     srcs,
@@ -11,6 +11,6 @@ export const formatImages = ({ name, formats, fallback }) => {
   };
 };
 
-export const useImageFormats = (imgs) => formatImages(imgs);
+export const useImageFormats = (img, formats) => formatImages(img, formats);
 
 export default useImageFormats;

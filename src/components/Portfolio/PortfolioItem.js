@@ -25,10 +25,13 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
-  const { srcs, defaultImg } = useImageFormats(img);
+  const { srcs, defaultImg } = useImageFormats(img, {
+    types: ['avif', 'webp'],
+    fallback: 'jpg',
+  });
 
-  const pictureSources = srcs.map(({ format, src }) => ({
-    format,
+  const pictureSources = srcs.map(({ type, src }) => ({
+    type,
     src: require(`./img/${src}`),
   }));
 
@@ -55,7 +58,7 @@ export const PortfolioItem = ({
           {isInViewport && (
             <Picture
               srcs={pictureSources}
-              name={title}
+              title={`${title} portfolio item`}
               defaultImg={require(`./img/${defaultImg}`)}
             />
           )}
@@ -97,11 +100,7 @@ export const PortfolioItem = ({
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  img: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    formats: PropTypes.array.isRequired,
-    fallback: PropTypes.string.isRequired,
-  }).isRequired,
+  img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   years: PropTypes.array.isRequired,
   types: PropTypes.array.isRequired,

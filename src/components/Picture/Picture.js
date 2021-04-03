@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import styles from './Picture.module.scss';
 
-export const Picture = ({ srcs, name, defaultImg }) => {
+export const Picture = ({ srcs, title, defaultImg }) => {
   const fallbackImg = defaultImg || srcs[0].src;
 
   return (
-    <picture title={name} data-e2e="picture">
-      {srcs.map(({ src, format }, index) => (
+    <picture title={title} data-e2e="picture">
+      {srcs.map(({ src, type }, index) => (
         <source
-          type={`image/${format}`}
+          type={`image/${type}`}
           srcSet={src}
           key={index}
           data-test={`picture-source-${index}`}
@@ -19,7 +19,7 @@ export const Picture = ({ srcs, name, defaultImg }) => {
 
       <img
         className={styles.img}
-        alt={name}
+        alt={title}
         src={fallbackImg}
         data-test="picture-img"
       />
@@ -31,10 +31,10 @@ Picture.propTypes = {
   srcs: PropTypes.arrayOf(
     PropTypes.shape({
       src: PropTypes.string.isRequired,
-      format: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
     })
   ).isRequired,
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   defaultImg: PropTypes.string,
 };
 

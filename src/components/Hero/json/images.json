@@ -1,11 +1,29 @@
 [
-  "jash-kothari-uAPqkx9-FQA-unsplash",
-  "artem-belinski-EhdMZpCuW98-unsplash",
-  "sepp-rutz-hZQOby6ZdIE-unsplash",
-  "annie-spratt-TjaSiNKzcK4-unsplash",
-  "lorenzo-herrera-p0j-mE6mGo4-unsplash",
-  "lukas-blazek-EWDvHNNfUmQ-unsplash",
-  "maria-vojtovicova-SPvJPDXEmqA-unsplash",
-  "luca-baggio-eKU3JGNCCMg-unsplash",
-  "martin-jernberg-UdURxHDhrgY-unsplash"
+  { "name": "jash-kothari-uAPqkx9-FQA-unsplash", "alt": "Ferrari logo on car" },
+  {
+    "name": "artem-belinski-EhdMZpCuW98-unsplash",
+    "alt": "Aerial view of waves on beach"
+  },
+  {
+    "name": "sepp-rutz-hZQOby6ZdIE-unsplash",
+    "alt": "Timelapse of car driving up road on mountain"
+  },
+  { "name": "annie-spratt-TjaSiNKzcK4-unsplash", "alt": "Puffin bird" },
+  {
+    "name": "lorenzo-herrera-p0j-mE6mGo4-unsplash",
+    "alt": "Various gaming consoles and peripherals"
+  },
+  { "name": "lukas-blazek-EWDvHNNfUmQ-unsplash", "alt": "Wooden board" },
+  {
+    "name": "maria-vojtovicova-SPvJPDXEmqA-unsplash",
+    "alt": "Snow caps trees with aurora borealis in background"
+  },
+  {
+    "name": "luca-baggio-eKU3JGNCCMg-unsplash",
+    "alt": "Rocks in water with Milky Way Galaxy in the background"
+  },
+  {
+    "name": "martin-jernberg-UdURxHDhrgY-unsplash",
+    "alt": "Snow-capped mountains"
+  }
 ]
