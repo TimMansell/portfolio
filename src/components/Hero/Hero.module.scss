@@ -19,3 +19,15 @@
     background: rgba(0, 0, 0, 0.05);
   }
 }
+
+.transition {
+  &::before {
+    animation: transition 2s ease;
+  }
+}
+
+@keyframes transition {
+  50% {
+    background: var(--colour-1);
+  }
+}

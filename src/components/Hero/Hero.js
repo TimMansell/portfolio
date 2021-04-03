@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import shuffle from 'lodash.shuffle';
+import classnames from 'classnames';
+import useInterval from 'use-interval';
 
 import Picture from '../Picture';
 import useScrollBlur from 'hooks/useScrollBlur';
@@ -14,6 +16,7 @@ const shuffledImages = shuffle(images);
 export const Hero = () => {
   const [images, setImages] = useState(shuffledImages);
   const [image, setImage] = useState(shuffledImages[0]);
+  const [transition, setTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
 
   const { name, title } = image;
@@ -27,21 +30,29 @@ export const Hero = () => {
     src: require(`./img/${src}`),
   }));
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      const imgs = [...images.slice(1), image];
-      const img = imgs[0];
+  useInterval(() => {
+    const imgs = [...images.slice(1), image];
+    const img = imgs[0];
 
+    setTransition(true);
+
+    setTimeout(() => {
       setImage(img);
       setImages(imgs);
-    }, 3000);
+    }, 1000);
 
-    return () => clearInterval(timer);
+    setTimeout(() => {
+      setTransition(false);
+    }, 2000);
+  }, 5000);
+
+  const imageClasses = classnames(styles.img, {
+    [styles.transition]: transition,
   });
 
   return (
     <div className={styles.hero}>
-      <div className={styles.img} style={scrollStyles} data-e2e="hero-img">
+      <div className={imageClasses} style={scrollStyles} data-e2e="hero-img">
         <Picture
           srcs={pictureSources}
           title={title}
