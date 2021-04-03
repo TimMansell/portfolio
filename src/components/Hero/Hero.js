@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import shuffle from 'lodash.shuffle';
 
 import Picture from '../Picture';
 import useScrollBlur from 'hooks/useScrollBlur';
@@ -8,12 +9,14 @@ import styles from './Hero.module.scss';
 
 import images from './json/images.json';
 
-const randomImg = images[Math.floor(Math.random() * images.length)];
+const shuffledImages = shuffle(images);
 
 export const Hero = () => {
-  const { name, title } = randomImg;
-
+  const [images, setImages] = useState(shuffledImages);
+  const [image, setImage] = useState(shuffledImages[0]);
   const scrollStyles = useScrollBlur(0, 10);
+
+  const { name, title } = image;
   const [imgSources, defaultImg] = useImageFormats(name, {
     types: ['avif', 'webp'],
     fallback: 'jpg',
@@ -23,6 +26,18 @@ export const Hero = () => {
     type,
     src: require(`./img/${src}`),
   }));
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const imgs = [...images.slice(1), image];
+      const img = imgs[0];
+
+      setImage(img);
+      setImages(imgs);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  });
 
   return (
     <div className={styles.hero}>
