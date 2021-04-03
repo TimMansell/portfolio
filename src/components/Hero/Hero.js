@@ -8,14 +8,13 @@ import styles from './Hero.module.scss';
 
 import images from './json/images.json';
 
-// const { category, imgs } = images[4];
-const fi = images.map((img) => ({
+const imageSources = images.map((img) => ({
   name: img,
-  formats: ['jpg'],
+  formats: ['avif', 'webp'],
   fallback: 'jpg',
 }));
 
-const randomImg = fi[Math.floor(Math.random() * fi.length)];
+const randomImg = imageSources[Math.floor(Math.random() * imageSources.length)];
 
 export const Hero = () => {
   const scrollStyles = useScrollBlur(0, 10);
