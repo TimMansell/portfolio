@@ -1,22 +1,13 @@
-@import 'variables';
 @import 'utilities/pxtorem';
-@import 'utilities/text-shadow';
 
 .location {
-  font-family: var(--font-family-secondary);
+  composes: hero shadow from '~scss/helpers/text.scss';
   font-size: pxtorem(24);
-  opacity: 0;
-  color: var(--secondary-text-colour);
   letter-spacing: pxtorem(1);
   text-transform: uppercase;
-  text-shadow: text-shadow(1, 4, var(--colour-1-alt-2));
   animation: location 0.5s ease-in-out;
   animation-delay: var(--animation-location-delay);
   animation-fill-mode: forwards;
-
-  @media (min-width: $bp-md) {
-    text-shadow: text-shadow(1, 2, var(--tertiary-text-colour));
-  }
 }
 
 @keyframes location {

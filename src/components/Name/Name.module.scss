@@ -1,22 +1,17 @@
 @import 'variables';
 @import 'utilities/pxtorem';
-@import 'utilities/text-shadow';
 
 .name {
-  font-family: var(--font-family-secondary);
-  color: var(--secondary-text-colour);
+  composes: hero shadowLg from '~scss/helpers/text.scss';
   padding: var(--vr-md);
   font-size: pxtorem(64);
   letter-spacing: pxtorem(5);
   text-transform: uppercase;
-  text-shadow: text-shadow(1, 4, var(--colour-1-alt-2));
-  opacity: 0;
   animation: title 1s ease-in-out;
   animation-delay: var(--animation-name-delay);
   animation-fill-mode: forwards;
 
   @media (min-width: $bp-md) {
-    text-shadow: text-shadow(1, 4, var(--tertiary-text-colour));
     font-size: pxtorem(96);
   }
 }

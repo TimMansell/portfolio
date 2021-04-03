@@ -1,26 +1,14 @@
-@import 'variables';
 @import 'utilities/pxtorem';
-@import 'utilities/text-shadow';
 
 .tagline {
+  composes: hero shadow from '~scss/helpers/text.scss';
+  font-size: pxtorem(32);
+  letter-spacing: pxtorem(1);
+  text-transform: uppercase;
   overflow: hidden;
-  opacity: 0;
   animation: tagline 0.5s ease-in-out;
   animation-delay: var(--animation-tagline-delay);
   animation-fill-mode: forwards;
-}
-
-.item {
-  font-family: var(--font-family-secondary);
-  font-size: pxtorem(32);
-  color: var(--secondary-text-colour);
-  letter-spacing: pxtorem(1);
-  text-transform: uppercase;
-  text-shadow: text-shadow(1, 4, var(--colour-1-alt-2));
-
-  @media (min-width: $bp-md) {
-    text-shadow: text-shadow(1, 2, var(--tertiary-text-colour));
-  }
 }
 
 @keyframes tagline {
