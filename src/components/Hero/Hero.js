@@ -11,15 +11,15 @@ import images from './json/images.json';
 const randomImg = images[Math.floor(Math.random() * images.length)];
 
 export const Hero = () => {
-  const { name, alt } = randomImg;
+  const { name, title } = randomImg;
 
   const scrollStyles = useScrollBlur(0, 10);
-  const { srcs, defaultImg } = useImageFormats(name, {
+  const [imgSources, defaultImg] = useImageFormats(name, {
     types: ['avif', 'webp'],
     fallback: 'jpg',
   });
 
-  const pictureSources = srcs.map(({ type, src }) => ({
+  const pictureSources = imgSources.map(({ type, src }) => ({
     type,
     src: require(`./img/${src}`),
   }));
@@ -29,7 +29,7 @@ export const Hero = () => {
       <div className={styles.img} style={scrollStyles} data-e2e="hero-img">
         <Picture
           srcs={pictureSources}
-          title={alt}
+          title={title}
           defaultImg={require(`./img/${defaultImg}`)}
         />
       </div>

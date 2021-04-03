@@ -25,12 +25,12 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
-  const { srcs, defaultImg } = useImageFormats(img, {
+  const [imgSources, defaultImg] = useImageFormats(img, {
     types: ['avif', 'webp'],
     fallback: 'jpg',
   });
 
-  const pictureSources = srcs.map(({ type, src }) => ({
+  const pictureSources = imgSources.map(({ type, src }) => ({
     type,
     src: require(`./img/${src}`),
   }));
