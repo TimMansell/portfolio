@@ -7,38 +7,38 @@ import Picture from '../Picture';
 import useScrollBlur from 'hooks/useScrollBlur';
 import styles from './Hero.module.scss';
 
-import imagesJson from './json/images.json';
+import images from './json/images.json';
 
-const images = shuffle(imagesJson);
+const shuffledImages = shuffle(images);
 
 export const Hero = () => {
-  const [heroImages, setHeroImages] = useState(images);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [transition, setTransition] = useState(false);
+  const [heroImages, setHeroImages] = useState(shuffledImages);
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const [hasTransition, setHasTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
 
-  const primaryImage = heroImages[0];
-  const preloadImage = heroImages[1];
+  const [primaryImage, preloadImage] = heroImages;
 
   useInterval(() => {
-    if (isLoaded) {
-      const imgs = [...heroImages.slice(1), heroImages[0]];
+    if (hasLoaded) {
+      const [firstImage, ...remainingImages] = heroImages;
+      const reorderedImages = [...remainingImages, firstImage];
 
-      setTransition(true);
+      setHasTransition(true);
 
       setTimeout(() => {
-        setHeroImages(imgs);
-        setIsLoaded(false);
+        setHeroImages(reorderedImages);
+        setHasLoaded(false);
       }, 1000);
 
       setTimeout(() => {
-        setTransition(false);
+        setHasTransition(false);
       }, 2000);
     }
   }, 7000);
 
   const imageClasses = classnames(styles.img, {
-    [styles.transition]: transition,
+    [styles.transition]: hasTransition,
   });
 
   return (
@@ -53,7 +53,7 @@ export const Hero = () => {
           image={preloadImage}
           types={['avif', 'webp', 'jpg']}
           src={require.resolve(__filename)}
-          onLoad={() => setIsLoaded(true)}
+          onLoad={() => setHasLoaded(true)}
           aria-hidden="true"
         />
       </div>
