@@ -54,6 +54,7 @@ export const Hero = () => {
           types={['avif', 'webp', 'jpg']}
           src={require.resolve(__filename)}
           onLoad={() => setIsLoaded(true)}
+          aria-hidden="true"
         />
       </div>
     </div>
