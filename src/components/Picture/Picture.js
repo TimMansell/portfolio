@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from './Picture.module.scss';
 
-export const Picture = ({ srcs, title, defaultImg }) => {
-  const fallbackImg = defaultImg || srcs[0].src;
+export const Picture = ({ srcs, title, onLoad }) => {
+  const [fallbackImg] = [...srcs].reverse();
 
   return (
     <picture title={title} data-e2e="picture">
@@ -20,8 +20,9 @@ export const Picture = ({ srcs, title, defaultImg }) => {
       <img
         className={styles.img}
         alt={title}
-        src={fallbackImg}
+        src={fallbackImg.src}
         data-test="picture-img"
+        onLoad={onLoad}
       />
     </picture>
   );
@@ -35,7 +36,6 @@ Picture.propTypes = {
     })
   ).isRequired,
   title: PropTypes.string.isRequired,
-  defaultImg: PropTypes.string,
 };
 
 export default Picture;

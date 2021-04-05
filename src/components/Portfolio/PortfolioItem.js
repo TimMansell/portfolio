@@ -8,7 +8,7 @@ import Picture from '../Picture';
 import Labels from '../Labels';
 
 import useInViewport from 'hooks/useInViewport';
-import useImageFormats from 'hooks/useImageFormats';
+import { importImages } from 'helpers/importImages';
 
 import styles from './PortfolioItem.module.scss';
 
@@ -25,15 +25,11 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
-  const [imgSources, defaultImg] = useImageFormats(img, {
-    types: ['avif', 'webp'],
-    fallback: 'jpg',
-  });
-
-  const pictureSources = imgSources.map(({ type, src }) => ({
-    type,
-    src: require(`./img/${src}`),
-  }));
+  const [imgs] = importImages(
+    [{ name: img, title }],
+    ['avif', 'webp', 'jpg'],
+    'components/Portfolio/img'
+  );
 
   const getCubeHeight = debounce(() => {
     const { clientHeight } = cubeElement.current;
@@ -56,11 +52,7 @@ export const PortfolioItem = ({
         <div className={styles.browser}>
           <PortfolioIcons title={title} />
           {isInViewport && (
-            <Picture
-              srcs={pictureSources}
-              title={`${title} portfolio item`}
-              defaultImg={require(`./img/${defaultImg}`)}
-            />
+            <Picture srcs={imgs.srcs} title={`${title} portfolio item`} />
           )}
         </div>
 

@@ -5,46 +5,44 @@ import useInterval from 'use-interval';
 
 import Picture from '../Picture';
 import useScrollBlur from 'hooks/useScrollBlur';
-import useImageFormats from 'hooks/useImageFormats';
-
+import { importImages } from 'helpers/importImages';
 import styles from './Hero.module.scss';
 
-import images from './json/images.json';
+import imagesJson from './json/images.json';
 
-const shuffledImages = shuffle(images);
+const imgs = importImages(
+  shuffle(imagesJson),
+  ['avif', 'webp', 'jpg'],
+  'components/Hero/img'
+);
+
+console.log({ imgs });
 
 export const Hero = () => {
-  const [images, setImages] = useState(shuffledImages);
-  const [image, setImage] = useState(shuffledImages[0]);
+  const [images, setImages] = useState(imgs);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [transition, setTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
 
-  const { name, title } = image;
-  const [imgSources, defaultImg] = useImageFormats(name, {
-    types: ['avif', 'webp'],
-    fallback: 'jpg',
-  });
-
-  const pictureSources = imgSources.map(({ type, src }) => ({
-    type,
-    src: require(`./img/${src}`),
-  }));
+  const primaryImage = images[0];
+  const preloadImage = images[1];
 
   useInterval(() => {
-    const imgs = [...images.slice(1), image];
-    const img = imgs[0];
+    if (isLoaded) {
+      const imgs = [...images.slice(1), images[0]];
 
-    setTransition(true);
+      setTransition(true);
 
-    setTimeout(() => {
-      setImage(img);
-      setImages(imgs);
-    }, 1000);
+      setTimeout(() => {
+        setImages(imgs);
+        setIsLoaded(false);
+      }, 1000);
 
-    setTimeout(() => {
-      setTransition(false);
-    }, 2000);
-  }, 5000);
+      setTimeout(() => {
+        setTransition(false);
+      }, 2000);
+    }
+  }, 7000);
 
   const imageClasses = classnames(styles.img, {
     [styles.transition]: transition,
@@ -53,10 +51,11 @@ export const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={imageClasses} style={scrollStyles} data-e2e="hero-img">
+        <Picture srcs={primaryImage.srcs} title={primaryImage.title} />
         <Picture
-          srcs={pictureSources}
-          title={title}
-          defaultImg={require(`./img/${defaultImg}`)}
+          srcs={preloadImage.srcs}
+          title={preloadImage.title}
+          onLoad={() => setIsLoaded(true)}
         />
       </div>
     </div>
