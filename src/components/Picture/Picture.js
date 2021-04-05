@@ -5,12 +5,11 @@ import styles from './Picture.module.scss';
 
 export const importImages = (image, types, src) => {
   const { name, title } = image;
-  const [file, folder] = src.split('/').reverse();
 
   const srcs = types.map((type) => {
     return {
       type,
-      src: require(`../${folder}/img/${name}.${type}`),
+      src: require(`../${src}/${name}.${type}`),
     };
   });
 

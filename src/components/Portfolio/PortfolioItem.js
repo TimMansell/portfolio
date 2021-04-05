@@ -52,7 +52,7 @@ export const PortfolioItem = ({
                 title: `${title} portfolio item`,
               }}
               types={['avif', 'webp', 'jpg']}
-              src={require.resolve(__filename)}
+              src="Portfolio/img"
             />
           )}
         </div>

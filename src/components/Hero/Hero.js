@@ -47,12 +47,12 @@ export const Hero = () => {
         <Picture
           image={primaryImage}
           types={['avif', 'webp', 'jpg']}
-          src={require.resolve(__filename)}
+          src="Hero/img"
         />
         <Picture
           image={preloadImage}
           types={['avif', 'webp', 'jpg']}
-          src={require.resolve(__filename)}
+          src="Hero/img"
           onLoad={() => setHasLoaded(true)}
           aria-hidden="true"
         />
