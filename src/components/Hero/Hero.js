@@ -45,14 +45,14 @@ export const Hero = () => {
     <div className={styles.hero}>
       <div className={imageClasses} style={scrollStyles} data-e2e="hero-img">
         <Picture
-          src={primaryImage}
+          image={primaryImage}
           types={['avif', 'webp', 'jpg']}
-          folder="Hero/img"
+          src={require.resolve(__filename)}
         />
         <Picture
-          src={preloadImage}
+          image={preloadImage}
           types={['avif', 'webp', 'jpg']}
-          folder="Hero/img"
+          src={require.resolve(__filename)}
           onLoad={() => setIsLoaded(true)}
         />
       </div>

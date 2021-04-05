@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 
 import styles from './Picture.module.scss';
 
-export const importImages = (src, types, path) => {
-  const { name, title } = src;
+export const importImages = (image, types, src) => {
+  const { name, title } = image;
+  const [file, folder] = src.split('/').reverse();
 
   const srcs = types.map((type) => {
     return {
       type,
-      src: require(`../${path}/${name}.${type}`),
+      src: require(`../${folder}/img/${name}.${type}`),
     };
   });
 
@@ -19,8 +20,8 @@ export const importImages = (src, types, path) => {
   };
 };
 
-export const Picture = ({ src, types, folder, onLoad }) => {
-  const { title, srcs } = importImages(src, types, folder);
+export const Picture = ({ image, types, src, onLoad }) => {
+  const { title, srcs } = importImages(image, types, src);
   const [fallbackImg] = [...srcs].reverse();
 
   return (
@@ -46,13 +47,13 @@ export const Picture = ({ src, types, folder, onLoad }) => {
 };
 
 Picture.propTypes = {
-  src: PropTypes.shape({
+  image: PropTypes.shape({
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
   types: PropTypes.arrayOf(PropTypes.oneOf(['avif', 'webp', 'jpg', 'png']))
     .isRequired,
-  folder: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
   onLoad: PropTypes.func,
 };
 

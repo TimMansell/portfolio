@@ -47,12 +47,12 @@ export const PortfolioItem = ({
           <PortfolioIcons title={title} />
           {isInViewport && (
             <Picture
-              src={{
+              image={{
                 name: img,
                 title: `${title} portfolio item`,
               }}
               types={['avif', 'webp', 'jpg']}
-              folder="Portfolio/img"
+              src={require.resolve(__filename)}
             />
           )}
         </div>
