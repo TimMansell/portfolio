@@ -8,7 +8,6 @@ import Picture from '../Picture';
 import Labels from '../Labels';
 
 import useInViewport from 'hooks/useInViewport';
-import { importImages } from 'helpers/importImages';
 
 import styles from './PortfolioItem.module.scss';
 
@@ -25,11 +24,6 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
-  const [imgs] = importImages(
-    [{ name: img, title }],
-    ['avif', 'webp', 'jpg'],
-    'components/Portfolio/img'
-  );
 
   const getCubeHeight = debounce(() => {
     const { clientHeight } = cubeElement.current;
@@ -52,7 +46,14 @@ export const PortfolioItem = ({
         <div className={styles.browser}>
           <PortfolioIcons title={title} />
           {isInViewport && (
-            <Picture srcs={imgs.srcs} title={`${title} portfolio item`} />
+            <Picture
+              src={{
+                name: img,
+                title: `${title} portfolio item`,
+              }}
+              types={['avif', 'webp', 'jpg']}
+              folder="Portfolio/img"
+            />
           )}
         </div>
 

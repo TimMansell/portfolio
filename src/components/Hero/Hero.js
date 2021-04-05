@@ -5,36 +5,29 @@ import useInterval from 'use-interval';
 
 import Picture from '../Picture';
 import useScrollBlur from 'hooks/useScrollBlur';
-import { importImages } from 'helpers/importImages';
 import styles from './Hero.module.scss';
 
 import imagesJson from './json/images.json';
 
-const imgs = importImages(
-  shuffle(imagesJson),
-  ['avif', 'webp', 'jpg'],
-  'components/Hero/img'
-);
-
-console.log({ imgs });
+const images = shuffle(imagesJson);
 
 export const Hero = () => {
-  const [images, setImages] = useState(imgs);
+  const [heroImages, setHeroImages] = useState(images);
   const [isLoaded, setIsLoaded] = useState(false);
   const [transition, setTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
 
-  const primaryImage = images[0];
-  const preloadImage = images[1];
+  const primaryImage = heroImages[0];
+  const preloadImage = heroImages[1];
 
   useInterval(() => {
     if (isLoaded) {
-      const imgs = [...images.slice(1), images[0]];
+      const imgs = [...heroImages.slice(1), heroImages[0]];
 
       setTransition(true);
 
       setTimeout(() => {
-        setImages(imgs);
+        setHeroImages(imgs);
         setIsLoaded(false);
       }, 1000);
 
@@ -51,10 +44,15 @@ export const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={imageClasses} style={scrollStyles} data-e2e="hero-img">
-        <Picture srcs={primaryImage.srcs} title={primaryImage.title} />
         <Picture
-          srcs={preloadImage.srcs}
-          title={preloadImage.title}
+          src={primaryImage}
+          types={['avif', 'webp', 'jpg']}
+          folder="Hero/img"
+        />
+        <Picture
+          src={preloadImage}
+          types={['avif', 'webp', 'jpg']}
+          folder="Hero/img"
           onLoad={() => setIsLoaded(true)}
         />
       </div>
