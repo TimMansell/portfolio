@@ -3,18 +3,23 @@
 exports[`Picture should match snapshot 1`] = `
 <picture
   data-e2e="picture"
-  title="test name"
+  title="test title"
 >
   <source
     data-test="picture-source-0"
-    srcSet="test src"
-    type="image/jpg"
+    srcSet="test.avif"
+    type="image/avif"
+  />
+  <source
+    data-test="picture-source-1"
+    srcSet="test.webp"
+    type="image/webp"
   />
   <img
-    alt="test name"
+    alt="test title"
     className="img"
     data-test="picture-img"
-    src="test src"
+    src="test.webp"
   />
 </picture>
 `;

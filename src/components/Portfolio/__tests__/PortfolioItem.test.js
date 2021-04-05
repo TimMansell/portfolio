@@ -11,11 +11,7 @@ const defaultProps = {
   description: 'Description',
   tech: ['Tech', 'Tech 2'],
   url: 'url.com',
-  img: {
-    name: 'test',
-    formats: ['avif', 'webp'],
-    fallback: 'jpg',
-  },
+  img: 'test',
   source: 'source',
 };
 

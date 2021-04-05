@@ -14,19 +14,73 @@ exports[`Intro should match snapshot 1`] = `
       data-e2e="hero-img"
       style={
         Object {
-          "filter": "blur(1px)",
+          "filter": "blur(0px)",
         }
       }
-    />
+    >
+      <picture
+        data-e2e="picture"
+        title="Aerial view of waves on beach"
+      >
+        <source
+          data-test="picture-source-0"
+          srcSet="artem-belinski-EhdMZpCuW98-unsplash.avif"
+          type="image/avif"
+        />
+        <source
+          data-test="picture-source-1"
+          srcSet="artem-belinski-EhdMZpCuW98-unsplash.webp"
+          type="image/webp"
+        />
+        <source
+          data-test="picture-source-2"
+          srcSet="artem-belinski-EhdMZpCuW98-unsplash.jpg"
+          type="image/jpg"
+        />
+        <img
+          alt="Aerial view of waves on beach"
+          className="img"
+          data-test="picture-img"
+          src="artem-belinski-EhdMZpCuW98-unsplash.jpg"
+        />
+      </picture>
+      <picture
+        data-e2e="picture"
+        title="Snow caps trees with aurora borealis in background"
+      >
+        <source
+          data-test="picture-source-0"
+          srcSet="maria-vojtovicova-SPvJPDXEmqA-unsplash.avif"
+          type="image/avif"
+        />
+        <source
+          data-test="picture-source-1"
+          srcSet="maria-vojtovicova-SPvJPDXEmqA-unsplash.webp"
+          type="image/webp"
+        />
+        <source
+          data-test="picture-source-2"
+          srcSet="maria-vojtovicova-SPvJPDXEmqA-unsplash.jpg"
+          type="image/jpg"
+        />
+        <img
+          alt="Snow caps trees with aurora borealis in background"
+          className="img"
+          data-test="picture-img"
+          onLoad={[Function]}
+          src="maria-vojtovicova-SPvJPDXEmqA-unsplash.jpg"
+        />
+      </picture>
+    </div>
   </div>
   <div
     className="intro"
   >
-    <p
+    <div
       className="hi"
     >
       Hi!
-    </p>
+    </div>
     <div
       data-e2e="fading-content"
       style={
@@ -48,25 +102,8 @@ exports[`Intro should match snapshot 1`] = `
       <div
         className="tagline"
       >
-        <div
-          className="item"
-        >
+        <div>
           Front-end Engineer
-        </div>
-        <div
-          className="item"
-        >
-          Javascript Engineer
-        </div>
-        <div
-          className="item"
-        >
-          React Engineer
-        </div>
-        <div
-          className="item"
-        >
-          VueJS Engineer
         </div>
       </div>
     </div>

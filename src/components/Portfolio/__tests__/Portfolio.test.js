@@ -15,11 +15,7 @@ jest.mock(
       tech: ['tech 1', 'tech 2'],
       url: 'url',
       source: 'source',
-      img: {
-        name: 'test',
-        formats: ['avif', 'webp'],
-        fallback: 'jpg',
-      },
+      img: 'test',
     },
     {
       title: 'title',
@@ -28,11 +24,7 @@ jest.mock(
       description: 'description',
       tech: ['tech 1', 'tech 2', 'tech 3'],
       url: 'url',
-      img: {
-        name: 'test',
-        formats: ['avif'],
-        fallback: 'jpg',
-      },
+      img: 'test',
     },
   ],
   { virtual: true }
