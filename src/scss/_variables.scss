@@ -22,9 +22,8 @@ $bp-xxl: 1600px;
 $bp-xxxl: 1921px;
 
 :root {
-  --font-family-primary: 'Open Sans', sans-serif;
-  --font-family-secondary: 'Open Sans', serif;
-  --font-family-heading: 'Open Sans', serif;
+  --font-family-primary: 'Recursive', sans-serif;
+  --font-family-secondary: 'Contrail One', sans-serif;
 
   // Colours.
   --colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);

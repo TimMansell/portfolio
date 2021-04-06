@@ -2,16 +2,15 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Picture from '../Picture';
+import Picture, { importImages } from '../Picture';
 
 const props = {
-  srcs: [
-    {
-      src: 'test src',
-      format: 'jpg',
-    },
-  ],
-  name: 'test name',
+  image: {
+    name: 'test',
+    title: 'test title',
+  },
+  types: ['avif', 'webp'],
+  src: 'Picture/__tests__/img',
 };
 
 describe('Picture', () => {
@@ -30,27 +29,27 @@ describe('Picture', () => {
     const wrapper = shallow(<Picture {...props} />);
     const source = wrapper.find('[data-test="picture-source-0"]');
 
-    expect(source.props().srcSet).toBe(props.srcs[0].src);
-    expect(source.props().type).toBe(`image/${props.srcs[0].format}`);
+    expect(source.props().srcSet).toBe(`${props.image.name}.${props.types[0]}`);
+    expect(source.props().type).toBe(`image/${props.types[0]}`);
   });
 
-  it('should render srcs[0] in <img>', () => {
+  it('should render fallback in <img>', () => {
     const wrapper = shallow(<Picture {...props} />);
     const source = wrapper.find('[data-test="picture-img"]');
 
-    expect(source.props().src).toBe(props.srcs[0].src);
-    expect(source.props().alt).toBe(props.name);
+    expect(source.props().src).toBe(`${props.image.name}.${props.types[1]}`);
+    expect(source.props().alt).toBe(props.image.title);
   });
 
-  it('should render defaultImg in <img>', () => {
-    const defaultImageProps = {
-      ...props,
-      defaultImg: 'default src',
-    };
-    const wrapper = shallow(<Picture {...defaultImageProps} />);
-    const source = wrapper.find('[data-test="picture-img"]');
+  it('importImages', () => {
+    const { image, types, src } = props;
 
-    expect(source.props().src).toBe(defaultImageProps.defaultImg);
-    expect(source.props().alt).toBe(props.name);
+    const { title, srcs } = importImages(image, types, src);
+
+    expect(title).toBe(image.title);
+    expect(srcs).toEqual([
+      { type: 'avif', src: 'test.avif' },
+      { type: 'webp', src: 'test.webp' },
+    ]);
   });
 });

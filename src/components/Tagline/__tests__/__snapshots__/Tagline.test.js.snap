@@ -4,25 +4,8 @@ exports[`Tagline should match snapshot 1`] = `
 <div
   className="tagline"
 >
-  <div
-    className="item"
-  >
+  <div>
     Front-end Engineer
-  </div>
-  <div
-    className="item"
-  >
-    Javascript Engineer
-  </div>
-  <div
-    className="item"
-  >
-    React Engineer
-  </div>
-  <div
-    className="item"
-  >
-    VueJS Engineer
   </div>
 </div>
 `;

@@ -2,23 +2,17 @@
 @import 'utilities/pxtorem';
 
 .name {
-  color: var(--secondary-text-colour);
-  margin: var(--vr) 0;
-  padding: 0 var(--vr-md);
-  font-size: pxtorem(45);
-  font-weight: 900;
+  composes: hero shadowLg from '~scss/helpers/text.scss';
+  padding: var(--vr-md);
+  font-size: pxtorem(64);
   letter-spacing: pxtorem(5);
-  line-height: 1;
   text-transform: uppercase;
-  text-shadow: 3px 3px var(--colour-1-alt-2);
-  opacity: 0;
   animation: title 1s ease-in-out;
   animation-delay: var(--animation-name-delay);
   animation-fill-mode: forwards;
 
   @media (min-width: $bp-md) {
-    text-shadow: 2px 2px var(--tertiary-text-colour);
-    font-size: pxtorem(70);
+    font-size: pxtorem(96);
   }
 }
 

@@ -6,7 +6,6 @@ import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
 import Labels from '../Labels';
-import { formatImages } from './helpers/formatImages';
 
 import useInViewport from 'hooks/useInViewport';
 
@@ -25,12 +24,6 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
   const isInViewport = useInViewport(cubeElement, 300);
-
-  const { srcs, defaultImg } = formatImages(img);
-  const pictureSources = srcs.map(({ format, src }) => ({
-    format,
-    src: require(`./img/${src}`),
-  }));
 
   const getCubeHeight = debounce(() => {
     const { clientHeight } = cubeElement.current;
@@ -54,9 +47,12 @@ export const PortfolioItem = ({
           <PortfolioIcons title={title} />
           {isInViewport && (
             <Picture
-              srcs={pictureSources}
-              name={title}
-              defaultImg={require(`./img/${defaultImg}`)}
+              image={{
+                name: img,
+                title: `${title} portfolio item`,
+              }}
+              types={['avif', 'webp', 'jpg']}
+              src="Portfolio/img"
             />
           )}
         </div>
@@ -97,11 +93,7 @@ export const PortfolioItem = ({
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  img: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    formats: PropTypes.array.isRequired,
-    fallback: PropTypes.string.isRequired,
-  }).isRequired,
+  img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   years: PropTypes.array.isRequired,
   types: PropTypes.array.isRequired,

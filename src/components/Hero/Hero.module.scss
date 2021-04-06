@@ -5,14 +5,29 @@
 }
 
 .img {
-  @media (min-width: $bp-md) {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  &::before {
+    content: '';
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('./img/hero.jpg');
-    background-position: center;
-    background-size: cover;
-    filter: blur(3px);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.transition {
+  &::before {
+    animation: transition 2s ease;
+  }
+}
+
+@keyframes transition {
+  50% {
+    background: var(--colour-1);
   }
 }

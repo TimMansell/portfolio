@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Hi.module.scss';
 
 export const Hi = () => {
-  return <p className={styles.hi}>Hi!</p>;
+  return <div className={styles.hi}>Hi!</div>;
 };
 
 export default Hi;

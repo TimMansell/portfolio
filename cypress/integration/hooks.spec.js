@@ -26,7 +26,7 @@ describe('Reacts Hooks', () => {
   });
 
   it('useScrollBlur', () => {
-    cy.get('[data-e2e="hero-img"]').should('have.css', 'filter', 'blur(1px)');
+    cy.get('[data-e2e="hero-img"]').should('have.css', 'filter', 'blur(0px)');
 
     cy.scrollTo(0, 200);
 

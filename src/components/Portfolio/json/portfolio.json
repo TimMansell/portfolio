@@ -20,11 +20,7 @@
     ],
     "url": "https://solitaire.timmansell.com",
     "source": "https://github.com/TimMansell/vue-solitaire",
-    "img": {
-      "name": "solitaire-project",
-      "formats": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "solitaire-project"
   },
   {
     "title": "Find a Course",
@@ -45,11 +41,7 @@
       "Cypress"
     ],
     "url": "https://study.unimelb.edu.au/find",
-    "img": {
-      "name": "unimelb",
-      "formats": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "unimelb"
   },
   {
     "title": "myBupa",
@@ -67,11 +59,7 @@
       "Gulp"
     ],
     "url": "https://my.bupa.com.au",
-    "img": {
-      "name": "my-bupa",
-      "formats": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "my-bupa"
   },
   {
     "title": "Captain's Choice",
@@ -88,11 +76,7 @@
       "Bower"
     ],
     "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/",
-    "img": {
-      "name": "captains-choice",
-      "formats": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "captains-choice"
   },
   {
     "title": "Web Components",
@@ -102,11 +86,7 @@
     "tech": ["Web Components", "Reveal.js"],
     "url": "//web-components.timmansell.com",
     "source": "https://github.com/TimMansell/web-components",
-    "img": {
-      "name": "web-components-presentation",
-      "formats": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "web-components-presentation"
   },
   {
     "title": "SASS Knowledgeshare",
@@ -115,10 +95,6 @@
     "description": "A presentation about SASS and Compass",
     "tech": ["SCSS", "Compass"],
     "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY",
-    "img": {
-      "name": "sass-compass-presentation",
-      "formats": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "sass-compass-presentation"
   }
 ]
