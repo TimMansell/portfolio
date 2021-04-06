@@ -10,7 +10,7 @@ import images from './json/images.json';
 
 export const Hero = () => {
   const [heroImages, setHeroImages] = useState(images);
-  const [hasLoaded, setHasLoaded] = useState(false);
+  const [hasPreLoadedImage, setHasPreLoadedImage] = useState(false);
   const [hasTransition, setHasTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
 
@@ -21,7 +21,7 @@ export const Hero = () => {
   const REMOVE_TRANSITION_TIMER = 2000;
 
   useInterval(() => {
-    if (hasLoaded) {
+    if (hasPreLoadedImage) {
       const [firstImage, ...remainingImages] = heroImages;
       const reorderedImages = [...remainingImages, firstImage];
 
@@ -29,7 +29,7 @@ export const Hero = () => {
 
       setTimeout(() => {
         setHeroImages(reorderedImages);
-        setHasLoaded(false);
+        setHasPreLoadedImage(false);
       }, DELAY_IMAGE_LOADING_TIMER);
 
       setTimeout(() => {
@@ -59,7 +59,7 @@ export const Hero = () => {
           image={preloadImage}
           types={['avif', 'webp', 'jpg']}
           src="Hero/img"
-          onLoad={() => setHasLoaded(true)}
+          onLoad={() => setHasPreLoadedImage(true)}
           aria-hidden="true"
         />
       </div>
