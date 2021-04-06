@@ -39,6 +39,7 @@ export const Picture = ({ image, types, src, onLoad }) => {
         alt={title}
         src={fallbackImg.src}
         data-test="picture-img"
+        data-e2e="picture-img"
         onLoad={onLoad}
       />
     </picture>
