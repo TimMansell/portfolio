@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import shuffle from 'lodash.shuffle';
 import classnames from 'classnames';
 import useInterval from 'use-interval';
 
@@ -9,10 +8,8 @@ import styles from './Hero.module.scss';
 
 import images from './json/images.json';
 
-const shuffledImages = shuffle(images);
-
 export const Hero = () => {
-  const [heroImages, setHeroImages] = useState(shuffledImages);
+  const [heroImages, setHeroImages] = useState(images);
   const [hasLoaded, setHasLoaded] = useState(false);
   const [hasTransition, setHasTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
