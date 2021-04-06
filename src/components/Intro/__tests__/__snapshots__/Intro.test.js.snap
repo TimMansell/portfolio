@@ -12,6 +12,7 @@ exports[`Intro should match snapshot 1`] = `
     <div
       className="img"
       data-e2e="hero-img"
+      data-timer={7000}
       style={
         Object {
           "filter": "blur(0px)",
@@ -20,33 +21,34 @@ exports[`Intro should match snapshot 1`] = `
     >
       <picture
         data-e2e="picture"
-        title="Aerial view of waves on beach"
+        title="Various gaming consoles and peripherals"
       >
         <source
           data-test="picture-source-0"
-          srcSet="artem-belinski-EhdMZpCuW98-unsplash.avif"
+          srcSet="lorenzo-herrera-p0j-mE6mGo4-unsplash.avif"
           type="image/avif"
         />
         <source
           data-test="picture-source-1"
-          srcSet="artem-belinski-EhdMZpCuW98-unsplash.webp"
+          srcSet="lorenzo-herrera-p0j-mE6mGo4-unsplash.webp"
           type="image/webp"
         />
         <source
           data-test="picture-source-2"
-          srcSet="artem-belinski-EhdMZpCuW98-unsplash.jpg"
+          srcSet="lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg"
           type="image/jpg"
         />
         <img
-          alt="Aerial view of waves on beach"
+          alt="Various gaming consoles and peripherals"
           className="img"
+          data-e2e="picture-img"
           data-test="picture-img"
-          src="artem-belinski-EhdMZpCuW98-unsplash.jpg"
+          src="lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg"
         />
       </picture>
       <picture
         data-e2e="picture"
-        title="Snow caps trees with aurora borealis in background"
+        title="Snow-capped trees with aurora borealis in background"
       >
         <source
           data-test="picture-source-0"
@@ -64,8 +66,9 @@ exports[`Intro should match snapshot 1`] = `
           type="image/jpg"
         />
         <img
-          alt="Snow caps trees with aurora borealis in background"
+          alt="Snow-capped trees with aurora borealis in background"
           className="img"
+          data-e2e="picture-img"
           data-test="picture-img"
           onLoad={[Function]}
           src="maria-vojtovicova-SPvJPDXEmqA-unsplash.jpg"

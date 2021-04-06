@@ -18,6 +18,7 @@ exports[`Picture should match snapshot 1`] = `
   <img
     alt="test title"
     className="img"
+    data-e2e="picture-img"
     data-test="picture-img"
     src="test.webp"
   />
