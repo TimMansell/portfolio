@@ -16,6 +16,10 @@ export const Hero = () => {
 
   const [primaryImage, preloadImage] = heroImages;
 
+  const TIMER = 7000;
+  const DELAY_IMAGE_LOADING_TIMER = 1000;
+  const REMOVE_TRANSITION_TIMER = 2000;
+
   useInterval(() => {
     if (hasLoaded) {
       const [firstImage, ...remainingImages] = heroImages;
@@ -26,13 +30,13 @@ export const Hero = () => {
       setTimeout(() => {
         setHeroImages(reorderedImages);
         setHasLoaded(false);
-      }, 1000);
+      }, DELAY_IMAGE_LOADING_TIMER);
 
       setTimeout(() => {
         setHasTransition(false);
-      }, 2000);
+      }, REMOVE_TRANSITION_TIMER);
     }
-  }, 7000);
+  }, TIMER);
 
   const imageClasses = classnames(styles.img, {
     [styles.transition]: hasTransition,
@@ -40,7 +44,12 @@ export const Hero = () => {
 
   return (
     <div className={styles.hero}>
-      <div className={imageClasses} style={scrollStyles} data-e2e="hero-img">
+      <div
+        className={imageClasses}
+        style={scrollStyles}
+        data-e2e="hero-img"
+        data-timer={TIMER}
+      >
         <Picture
           image={primaryImage}
           types={['avif', 'webp', 'jpg']}
