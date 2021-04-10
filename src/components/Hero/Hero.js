@@ -54,6 +54,7 @@ export const Hero = () => {
           image={primaryImage}
           types={['avif', 'webp', 'jpg']}
           src="Hero/img"
+          isFullscreen
         />
         <Picture
           image={preloadImage}
@@ -61,6 +62,7 @@ export const Hero = () => {
           src="Hero/img"
           onLoad={() => setHasPreLoadedImage(true)}
           aria-hidden="true"
+          isFullscreen
         />
       </div>
     </div>
