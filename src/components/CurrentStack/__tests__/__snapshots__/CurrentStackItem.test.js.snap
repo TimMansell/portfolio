@@ -13,6 +13,7 @@ exports[`CurrentStackItem should match snapshot 1`] = `
     <img
       alt="test name"
       className="img"
+      loading="lazy"
       src={
         Object {
           "ReactComponent": Object {

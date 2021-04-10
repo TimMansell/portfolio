@@ -17,6 +17,7 @@ exports[`CurrentStackItems should match snapshot 1`] = `
       <img
         alt="Item 1"
         className="img"
+        loading="lazy"
         src={
           Object {
             "ReactComponent": Object {
@@ -44,6 +45,7 @@ exports[`CurrentStackItems should match snapshot 1`] = `
       <img
         alt="Item 2"
         className="img"
+        loading="lazy"
         src={
           Object {
             "ReactComponent": Object {

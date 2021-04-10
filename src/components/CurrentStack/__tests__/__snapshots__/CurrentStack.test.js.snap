@@ -34,6 +34,7 @@ Array [
         <img
           alt="React"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -61,6 +62,7 @@ Array [
         <img
           alt="NodeJS"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -88,6 +90,7 @@ Array [
         <img
           alt="VueJS"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -115,6 +118,7 @@ Array [
         <img
           alt="NPM"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -142,6 +146,7 @@ Array [
         <img
           alt="Webpack"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -169,6 +174,7 @@ Array [
         <img
           alt="Yarn"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -196,6 +202,7 @@ Array [
         <img
           alt="ESLint"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -223,6 +230,7 @@ Array [
         <img
           alt="Jest"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -250,6 +258,7 @@ Array [
         <img
           alt="Babel"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -277,6 +286,7 @@ Array [
         <img
           alt="Cypress"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -304,6 +314,7 @@ Array [
         <img
           alt="SCSS"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -331,6 +342,7 @@ Array [
         <img
           alt="VSCode"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -358,6 +370,7 @@ Array [
         <img
           alt="Git"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -385,6 +398,7 @@ Array [
         <img
           alt="PostCSS"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -412,6 +426,7 @@ Array [
         <img
           alt="Netlify"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {
@@ -439,6 +454,7 @@ Array [
         <img
           alt="GraphQL"
           className="img"
+          loading="lazy"
           src={
             Object {
               "ReactComponent": Object {

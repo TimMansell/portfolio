@@ -4,6 +4,7 @@ exports[`SvgImage should match snapshot 1`] = `
 <img
   alt="test name"
   className="img"
+  loading="lazy"
   src="test src"
   title="test name"
   width="20"

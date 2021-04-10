@@ -11,6 +11,7 @@ export const SvgImage = ({ src, name, width }) => {
       className={styles.img}
       width={width}
       title={name}
+      loading="lazy"
     />
   );
 };

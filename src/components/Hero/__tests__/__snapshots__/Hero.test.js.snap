@@ -38,6 +38,7 @@ exports[`Hero should match snapshot 1`] = `
         className="img"
         data-e2e="picture-img"
         data-test="picture-img"
+        loading="lazy"
         src="lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg"
       />
     </picture>
@@ -65,6 +66,7 @@ exports[`Hero should match snapshot 1`] = `
         className="img"
         data-e2e="picture-img"
         data-test="picture-img"
+        loading="lazy"
         onLoad={[Function]}
         src="maria-vojtovicova-SPvJPDXEmqA-unsplash.jpg"
       />

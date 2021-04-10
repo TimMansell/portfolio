@@ -41,6 +41,7 @@ export const Picture = ({ image, types, src, onLoad }) => {
         data-test="picture-img"
         data-e2e="picture-img"
         onLoad={onLoad}
+        loading="lazy"
       />
     </picture>
   );
