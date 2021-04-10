@@ -6,7 +6,7 @@ import CurrentStackItem from '../CurrentStackItem';
 
 const props = {
   url: 'test url',
-  img: 'babel.svg',
+  img: 'babel',
   name: 'test name',
   width: '50',
 };
@@ -28,14 +28,5 @@ describe('CurrentStackItem', () => {
     const link = wrapper.find('[data-test="stack-item-link"]');
 
     expect(link.props().href).toEqual(props.url);
-  });
-
-  it('should be pass correct props to image', () => {
-    const wrapper = shallow(<CurrentStackItem {...props} />);
-    const image = wrapper.find('SvgImage');
-
-    expect(image.props().src.default).toEqual(props.img);
-    expect(image.props().name).toEqual(props.name);
-    expect(image.props().width).toEqual(props.width);
   });
 });

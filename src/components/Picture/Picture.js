@@ -66,8 +66,9 @@ Picture.propTypes = {
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
-  types: PropTypes.arrayOf(PropTypes.oneOf(['avif', 'webp', 'jpg', 'png']))
-    .isRequired,
+  types: PropTypes.arrayOf(
+    PropTypes.oneOf(['avif', 'webp', 'jpg', 'png', 'svg'])
+  ).isRequired,
   src: PropTypes.string.isRequired,
   onLoad: PropTypes.func,
   width: PropTypes.string,
