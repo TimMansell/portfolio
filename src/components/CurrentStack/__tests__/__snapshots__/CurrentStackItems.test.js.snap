@@ -14,22 +14,43 @@ exports[`CurrentStackItems should match snapshot 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      <img
-        alt="Item 1"
-        className="img"
-        src={
-          Object {
-            "ReactComponent": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "render": [Function],
-            },
-            "__esModule": true,
-            "default": "react.svg",
-          }
-        }
+      <picture
+        data-e2e="picture"
         title="Item 1"
-        width="65"
-      />
+      >
+        <source
+          data-test="picture-source-0"
+          srcSet={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "react.svg",
+            }
+          }
+          type="image/svg"
+        />
+        <img
+          alt="Item 1"
+          className="img"
+          data-e2e="picture-img"
+          data-test="picture-img"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "react.svg",
+            }
+          }
+          width="65"
+        />
+      </picture>
     </a>
   </div>
   <div
@@ -41,22 +62,43 @@ exports[`CurrentStackItems should match snapshot 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      <img
-        alt="Item 2"
-        className="img"
-        src={
-          Object {
-            "ReactComponent": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "render": [Function],
-            },
-            "__esModule": true,
-            "default": "nodejs.svg",
-          }
-        }
+      <picture
+        data-e2e="picture"
         title="Item 2"
-        width="90"
-      />
+      >
+        <source
+          data-test="picture-source-0"
+          srcSet={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "nodejs.svg",
+            }
+          }
+          type="image/svg"
+        />
+        <img
+          alt="Item 2"
+          className="img"
+          data-e2e="picture-img"
+          data-test="picture-img"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "nodejs.svg",
+            }
+          }
+          width="90"
+        />
+      </picture>
     </a>
   </div>
 </div>

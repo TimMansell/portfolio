@@ -20,7 +20,9 @@ exports[`Picture should match snapshot 1`] = `
     className="img"
     data-e2e="picture-img"
     data-test="picture-img"
+    loading="auto"
     src="test.webp"
+    width="50"
   />
 </picture>
 `;

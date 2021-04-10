@@ -11,6 +11,7 @@ const props = {
   },
   types: ['avif', 'webp'],
   src: 'Picture/__tests__/img',
+  width: '50',
 };
 
 describe('Picture', () => {
@@ -23,6 +24,33 @@ describe('Picture', () => {
     const snapshot = renderer.create(<Picture {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should render fullscreen image', () => {
+    const wrapper = shallow(<Picture {...props} isFullscreen />);
+    const image = wrapper.find('[data-test="picture-img"]');
+
+    expect(image.hasClass('fullscreen')).toBeTruthy();
+  });
+
+  it('should render lazy loaded image', () => {
+    const wrapper = shallow(<Picture {...props} isLazy />);
+    const image = wrapper.find('[data-test="picture-img"]');
+
+    expect(image.props().loading).toBe('lazy');
+  });
+
+  it('should have correct title', () => {
+    const wrapper = shallow(<Picture {...props} />);
+
+    expect(wrapper.props().title).toBe(props.image.title);
+  });
+
+  it('should have correct width', () => {
+    const wrapper = shallow(<Picture {...props} />);
+    const image = wrapper.find('[data-test="picture-img"]');
+
+    expect(image.props().width).toBe(props.width);
   });
 
   it('should have correct <source> properties', () => {

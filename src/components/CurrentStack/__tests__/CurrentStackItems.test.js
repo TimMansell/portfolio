@@ -10,13 +10,13 @@ jest.mock(
     {
       name: 'Item 1',
       url: 'url',
-      img: 'react.svg',
+      img: 'react',
       width: '65',
     },
     {
       name: 'Item 2',
       url: 'url',
-      img: 'nodejs.svg',
+      img: 'nodejs',
       width: '90',
     },
   ],

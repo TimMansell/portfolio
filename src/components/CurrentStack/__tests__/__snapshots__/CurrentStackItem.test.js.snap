@@ -10,22 +10,43 @@ exports[`CurrentStackItem should match snapshot 1`] = `
     rel="noopener noreferrer"
     target="_blank"
   >
-    <img
-      alt="test name"
-      className="img"
-      src={
-        Object {
-          "ReactComponent": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "render": [Function],
-          },
-          "__esModule": true,
-          "default": "babel.svg",
-        }
-      }
+    <picture
+      data-e2e="picture"
       title="test name"
-      width="50"
-    />
+    >
+      <source
+        data-test="picture-source-0"
+        srcSet={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "babel.svg",
+          }
+        }
+        type="image/svg"
+      />
+      <img
+        alt="test name"
+        className="img"
+        data-e2e="picture-img"
+        data-test="picture-img"
+        loading="lazy"
+        src={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "babel.svg",
+          }
+        }
+        width="50"
+      />
+    </picture>
   </a>
 </div>
 `;

@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgImage from '../SvgImage';
+import Picture from '../Picture';
 
 import styles from './CurrentStack.module.scss';
 
 export const CurrentStackItem = ({ url, img, name, width }) => {
-  const src = require(`./img/${img}`);
-
   return (
     <div className={styles.item}>
       <a
@@ -16,7 +14,16 @@ export const CurrentStackItem = ({ url, img, name, width }) => {
         rel="noopener noreferrer"
         data-test="stack-item-link"
       >
-        <SvgImage src={src} name={name} width={width} />
+        <Picture
+          image={{
+            name: img,
+            title: name,
+          }}
+          types={['svg']}
+          src="CurrentStack/img"
+          width={width}
+          isLazy
+        />
       </a>
     </div>
   );
