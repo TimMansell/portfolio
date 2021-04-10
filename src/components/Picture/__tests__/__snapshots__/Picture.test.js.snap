@@ -22,6 +22,7 @@ exports[`Picture should match snapshot 1`] = `
     data-test="picture-img"
     loading="auto"
     src="test.webp"
+    width="50"
   />
 </picture>
 `;
