@@ -29,7 +29,6 @@ $bp-xxxl: 1921px;
   --colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
   --colour-2: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
   --colour-3: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
-  --colour-4: hsl(0, 0%, 20%);
   --colour-5: hsl(0, 0%, 100%);
   --colour-6: hsl(0, 0%, 0%);
 
@@ -49,9 +48,14 @@ $bp-xxxl: 1921px;
     #{$primary-saturation},
     36%,
     50%);
+  --colour-1-transparent-2:
+    hsl(#{$primary-hue},
+    #{$primary-saturation},
+    36%,
+    25%);
 
   // Text colours.
-  --primary-text-colour: var(--colour-4);
+  --primary-text-colour: var(--colour-2);
   --secondary-text-colour: var(--colour-5);
   --tertiary-text-colour: var(--colour-6);
 
