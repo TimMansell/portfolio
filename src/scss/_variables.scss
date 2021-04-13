@@ -31,8 +31,8 @@ $bp-xxxl: 1921px;
   --colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
   --colour-2: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
   --colour-3: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
-  --colour-5: hsl(0, 0%, 100%);
-  --colour-6: hsl(0, 0%, 0%);
+  --colour-4: hsl(0, 0%, 100%);
+  --colour-5: hsl(0, 0%, 0%);
 
   // Colour variations.
   --colour-1-alt-1: hsl(#{$primary-hue}, #{$primary-saturation}, 31%);
@@ -58,12 +58,12 @@ $bp-xxxl: 1921px;
 
   // Text colours.
   --primary-text-colour: var(--colour-2);
-  --secondary-text-colour: var(--colour-5);
-  --tertiary-text-colour: var(--colour-6);
+  --secondary-text-colour: var(--colour-4);
+  --tertiary-text-colour: var(--colour-5);
 
   // Borders
   --bdr-primary: var(--colour-2);
-  --bdr-secondary: var(--colour-5);
+  --bdr-secondary: var(--colour-4);
 
   // Vertical rythm.
   --vr: #{pxtorem(16)};
