@@ -42,10 +42,10 @@
       "Babel",
       "Webpack",
       "JSX",
-      "JSON",
       "Async / Await",
       "Immutable",
-      "Functional Programming (FP)"
+      "Functional Programming (FP)",
+      "JSON"
     ],
     "icon": {
       "name": "js",

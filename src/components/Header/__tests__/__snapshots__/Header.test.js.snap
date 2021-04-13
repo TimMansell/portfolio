@@ -12,6 +12,7 @@ exports[`Header should match snapshot 1`] = `
     Test Title
   </h2>
   <p
+    className="description"
     data-test="heading-description"
   >
     text

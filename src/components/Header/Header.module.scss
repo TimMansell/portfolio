@@ -2,12 +2,7 @@
 @import 'utilities/pxtorem';
 
 .heading {
-  margin-bottom: var(--vr-lg);
   text-align: center;
-
-  @media (min-width: $bp-xxxl) {
-    margin-bottom: var(--vr-xl);
-  }
 
   &Primary {
     color: var(--primary-text-colour);
@@ -15,17 +10,30 @@
 
   &Secondary {
     color: var(--secondary-text-colour);
-    text-shadow: -1px -1px var(--colour-1-alt-2);
   }
 
   &Tertiary {
     color: var(--secondary-text-colour);
-    text-shadow: -1px -1px var(--colour-2-alt-1);
   }
 }
 
 .title {
-  font-size: pxtorem(32);
-  line-height: 1.125;
-  margin-bottom: var(--vr);
+  font-family: var(--font-family-secondary);
+  font-size: pxtorem(40);
+  line-height: 1.2;
+  letter-spacing: pxtorem(2);
+  margin-bottom: var(--vr-md);
+
+  @media (min-width: $bp-sm) {
+    font-size: pxtorem(52);
+    line-height: 1.33;
+  }
+}
+
+.description {
+  margin-bottom: var(--vr-lg);
+
+  @media (min-width: $bp-sm) {
+    margin-bottom: var(--vr-xxl);
+  }
 }

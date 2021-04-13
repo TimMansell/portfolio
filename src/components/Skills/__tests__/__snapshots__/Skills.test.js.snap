@@ -13,6 +13,7 @@ Array [
       Skills
     </h2>
     <p
+      className="description"
       data-test="heading-description"
     >
       I have acquired many skills during my professional career.  Most notable and relevant are

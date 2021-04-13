@@ -13,6 +13,7 @@ Array [
       Portfolio
     </h2>
     <p
+      className="description"
       data-test="heading-description"
     >
       Here's a sample of my work. Hover over image for more information

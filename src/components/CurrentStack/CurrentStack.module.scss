@@ -5,21 +5,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: var(--vr-sm);
 }
 
 .item {
   display: flex;
   justify-content: center;
   align-self: center;
-  padding: var(--vr-sm);
   width: 100%;
+
+  @supports not (gap: 1em) {
+    padding: var(--vr-sm);
+    padding-top: 0;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
   }
 
   @media (min-width: $bp-sm) {
-    margin-bottom: 0;
     width: auto;
   }
 }

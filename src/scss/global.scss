@@ -1,14 +1,9 @@
 @import 'variables';
 @import 'utilities/pxtorem';
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: var(--font-family-primary);
-  font-size: pxtorem(16);
-  height: 100%;
+  color: var(--primary-text-colour);
 }
 
 h1,
@@ -17,17 +12,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  font-style: normal;
   margin: 0;
   line-height: 1.1;
 }
 
 p {
-  font-family: var(--font-family-primary);
   font-size: pxtorem(20);
   margin-top: 0;
   margin-bottom: var(--vr-md);
+
+  @media (min-width: $bp-sm) {
+    font-size: pxtorem(22);
+  }
 }
 
 a {
