@@ -2,7 +2,6 @@
 @import 'utilities/pxtorem';
 
 .heading {
-  font-family: var(--font-family-secondary);
   text-align: center;
 
   &Primary {
@@ -19,8 +18,9 @@
 }
 
 .title {
-  font-size: pxtorem(48);
-  line-height: 1.1;
+  font-family: var(--font-family-secondary);
+  font-size: pxtorem(40);
+  line-height: 1.2;
   letter-spacing: pxtorem(2);
   margin-bottom: var(--vr-md);
 
