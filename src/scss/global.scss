@@ -3,6 +3,7 @@
 
 body {
   font-family: var(--font-family-primary);
+  color: var(--primary-text-colour);
 }
 
 h1,
@@ -12,11 +13,17 @@ h4,
 h5,
 h6 {
   margin: 0;
+  line-height: 1.1;
 }
 
 p {
-  font-size: pxtorem(22);
+  font-size: pxtorem(20);
+  margin-top: 0;
   margin-bottom: var(--vr-md);
+
+  @media (min-width: $bp-sm) {
+    font-size: pxtorem(22);
+  }
 }
 
 a {
