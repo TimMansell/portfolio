@@ -13,6 +13,7 @@ Array [
       Current Stack
     </h2>
     <p
+      className="description"
       data-test="heading-description"
     >
       I spend most of my time with these technologies / tools / methodologies

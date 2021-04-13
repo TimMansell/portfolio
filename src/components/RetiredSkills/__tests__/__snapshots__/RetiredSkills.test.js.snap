@@ -13,6 +13,7 @@ Array [
       Retired Skills
     </h2>
     <p
+      className="description"
       data-test="heading-description"
     >
       I am still highly skilled in this area, but I have since moved onto newer tech

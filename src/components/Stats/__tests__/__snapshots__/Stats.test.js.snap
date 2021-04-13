@@ -13,6 +13,7 @@ Array [
       Stats
     </h2>
     <p
+      className="description"
       data-test="heading-description"
     >
       This website was built using
