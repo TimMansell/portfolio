@@ -49,6 +49,7 @@ export const PortfolioItem = ({
             }}
             types={['avif', 'webp', 'jpg']}
             src="Portfolio/img"
+            srcSizes={['1366', '1600', '1920', '2560']}
             isLazy
           />
         </div>

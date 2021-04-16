@@ -54,12 +54,14 @@ export const Hero = () => {
           image={primaryImage}
           types={['avif', 'webp', 'jpg']}
           src="Hero/img"
+          srcSizes={['1366', '1600', '1920', '2560']}
           isFullscreen
         />
         <Picture
           image={preloadImage}
           types={['avif', 'webp', 'jpg']}
           src="Hero/img"
+          srcSizes={['1366', '1600', '1920', '2560']}
           onLoad={() => setHasPreLoadedImage(true)}
           aria-hidden="true"
           isFullscreen

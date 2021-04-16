@@ -21,6 +21,7 @@ export const CurrentStackItem = ({ url, img, name, width }) => {
           }}
           types={['svg']}
           src="CurrentStack/img"
+          srcSizes={['1366', '1600', '1920', '2560']}
           width={width}
           isLazy
         />
