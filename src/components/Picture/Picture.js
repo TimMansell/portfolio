@@ -5,21 +5,23 @@ import classnames from 'classnames';
 import styles from './Picture.module.scss';
 
 export const importImages = (image, types, src, srcSizes) => {
-  const { title } = image;
+  const { name, title } = image;
 
   const srcsMap = (type) => {
     return {
       type,
-      srcSet: srcSizes.reduce(srcSizesReducer, ''),
+      srcSet: srcSizes.reduce(
+        (accumulator, currentValue) =>
+          `${accumulator} ${require(`../${src}/${name}-${currentValue}.${type}`)} ${currentValue}w, `,
+        ''
+      ),
     };
   };
 
-  const srcSizesReducer = (accumulator, currentValue) =>
-    `${accumulator} https://via.placeholder.com/${currentValue} ${currentValue}w, `;
-
   const sources = types.map(srcsMap);
-  const [fallbackType] = srcSizes;
-  const fallbackImg = `https://via.placeholder.com/${fallbackType}`;
+  const [fallbackSize] = srcSizes;
+  const [fallbackType] = [...types].reverse();
+  const fallbackImg = require(`../${src}/${name}-${fallbackSize}.${fallbackType}`);
 
   return {
     title,
