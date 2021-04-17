@@ -2,33 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import { importImages } from './helpers/importImages';
+
 import styles from './Picture.module.scss';
-
-export const importImages = (image, types, src, srcSizes) => {
-  const { name, title } = image;
-
-  const srcsMap = (type) => {
-    return {
-      type,
-      srcSet: srcSizes.reduce(
-        (accumulator, currentValue) =>
-          `${accumulator} ${require(`../${src}/${name}-${currentValue}.${type}`)} ${currentValue}w, `,
-        ''
-      ),
-    };
-  };
-
-  const sources = types.map(srcsMap);
-  const [fallbackSize] = srcSizes;
-  const [fallbackType] = [...types].reverse();
-  const fallbackImg = require(`../${src}/${name}-${fallbackSize}.${fallbackType}`);
-
-  return {
-    title,
-    sources,
-    fallbackImg,
-  };
-};
 
 export const Picture = ({
   image,
@@ -36,7 +12,6 @@ export const Picture = ({
   src,
   sizes,
   srcSizes,
-  media,
   width,
   onLoad,
   isLazy,
@@ -56,7 +31,7 @@ export const Picture = ({
 
   return (
     <picture title={title} data-e2e="picture">
-      {sources.map(({ srcSet, type }, index) => (
+      {sources.map(({ type, media, srcSet }, index) => (
         <source
           media={media}
           sizes={sizes}
@@ -88,10 +63,9 @@ Picture.propTypes = {
   types: PropTypes.arrayOf(
     PropTypes.oneOf(['avif', 'webp', 'jpg', 'png', 'svg'])
   ).isRequired,
-  media: PropTypes.string,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.string,
-  srcSizes: PropTypes.array.isRequired,
+  srcSizes: PropTypes.object.isRequired,
   onLoad: PropTypes.func,
   width: PropTypes.string,
   isLazy: PropTypes.bool,
