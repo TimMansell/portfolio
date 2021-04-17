@@ -14,7 +14,7 @@ export const Hero = () => {
   const [hasTransition, setHasTransition] = useState(false);
   const scrollStyles = useScrollBlur(0, 10);
 
-  const [primaryImage] = heroImages;
+  const [primaryImage, preloadImage] = heroImages;
 
   const TIMER = 7000;
   const DELAY_IMAGE_LOADING_TIMER = 1000;
@@ -43,9 +43,13 @@ export const Hero = () => {
   });
 
   const pictureSizes = {
-    portrait: ['640', '768', '1024'],
+    portrait: ['640', '768', '1280', '1536', '2048'],
     landscape: ['1366', '1600', '1920', '2560'],
   };
+
+  const pictureTypes = ['jpg'];
+
+  const pictureSrc = 'Hero/img';
 
   return (
     <div className={styles.hero}>
@@ -57,20 +61,20 @@ export const Hero = () => {
       >
         <Picture
           image={primaryImage}
-          types={['avif', 'webp', 'jpg']}
-          src="Hero/img"
+          types={pictureTypes}
+          src={pictureSrc}
           srcSizes={pictureSizes}
           isFullscreen
         />
-        {/* <Picture
+        <Picture
           image={preloadImage}
-          types={['avif', 'webp', 'jpg']}
-          src="Hero/img"
+          types={pictureTypes}
+          src={pictureSrc}
           srcSizes={pictureSizes}
           onLoad={() => setHasPreLoadedImage(true)}
           aria-hidden="true"
           isFullscreen
-        /> */}
+        />
       </div>
     </div>
   );
