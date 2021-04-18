@@ -65,7 +65,7 @@ Picture.propTypes = {
   ).isRequired,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.string,
-  srcSizes: PropTypes.object.isRequired,
+  srcSizes: PropTypes.array.isRequired,
   onLoad: PropTypes.func,
   width: PropTypes.string,
   isLazy: PropTypes.bool,

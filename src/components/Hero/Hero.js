@@ -42,10 +42,16 @@ export const Hero = () => {
     [styles.transition]: hasTransition,
   });
 
-  const pictureSizes = {
-    portrait: ['640', '768', '1280', '1536', '2048'],
-    landscape: ['1366', '1600', '1920', '2560'],
-  };
+  const pictureSizes = [
+    {
+      media: 'portrait',
+      sizes: ['640', '768', '1280', '1536', '2048'],
+    },
+    {
+      media: 'landscape',
+      sizes: ['1366', '1600', '1920', '2560'],
+    },
+  ];
 
   const pictureTypes = ['jpg'];
 
