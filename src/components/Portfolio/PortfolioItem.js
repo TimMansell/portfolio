@@ -39,7 +39,7 @@ export const PortfolioItem = ({
 
   const pictureSizes = [
     {
-      sizes: ['360', '640', '768', '1024', '1536'],
+      sizes: ['480', '640', '768', '1024', '1280'],
     },
   ];
 
@@ -56,9 +56,7 @@ export const PortfolioItem = ({
             types={['jpg']}
             src="Portfolio/img"
             srcSizes={pictureSizes}
-            sizes="(min-width: 62rem) 50vw,
-            (min-width: 75rem) 33vw,
-            100vw"
+            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
             isLazy
           />
         </div>
