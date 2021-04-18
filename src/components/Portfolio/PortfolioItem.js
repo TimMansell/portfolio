@@ -37,6 +37,12 @@ export const PortfolioItem = ({
     return () => window.cancelAnimationFrame(getCubeHeight);
   });
 
+  const pictureSizes = [
+    {
+      sizes: ['360', '640', '768', '1024', '1536'],
+    },
+  ];
+
   return (
     <div className={styles.portfolioItem}>
       <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
@@ -47,9 +53,12 @@ export const PortfolioItem = ({
               name: img,
               title: `${title} portfolio item`,
             }}
-            types={['avif', 'webp', 'jpg']}
+            types={['jpg']}
             src="Portfolio/img"
-            srcSizes={['1366', '1600', '1920', '2560']}
+            srcSizes={pictureSizes}
+            sizes="(min-width: 62rem) 50vw,
+            (min-width: 75rem) 33vw,
+            100vw"
             isLazy
           />
         </div>
