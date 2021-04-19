@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import { importImages } from './helpers';
+import { importImages } from './importImages';
 
 import styles from './Picture.module.scss';
 
