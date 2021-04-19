@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Picture from '../Picture';
+import Image from '../Image';
 
 import styles from './CurrentStack.module.scss';
 
-export const CurrentStackItem = ({ url, img, name, width }) => {
+export const CurrentStackItem = ({ url, name, imgWidth }) => {
+  const img = name.toLowerCase();
+
   return (
     <div className={styles.item}>
       <a
@@ -14,16 +16,10 @@ export const CurrentStackItem = ({ url, img, name, width }) => {
         rel="noopener noreferrer"
         data-test="stack-item-link"
       >
-        <Picture
-          image={{
-            name: img,
-            title: name,
-          }}
-          types={['svg']}
-          src="CurrentStack/img"
-          srcSizes={['1366', '1600', '1920', '2560']}
-          width={width}
-          isLazy
+        <Image
+          src={`CurrentStack/img/${img}.svg`}
+          alt={name}
+          width={imgWidth}
         />
       </a>
     </div>
@@ -32,9 +28,8 @@ export const CurrentStackItem = ({ url, img, name, width }) => {
 
 CurrentStackItem.propTypes = {
   url: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  imgWidth: PropTypes.string.isRequired,
 };
 
 export default CurrentStackItem;
