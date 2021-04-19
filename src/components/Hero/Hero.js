@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import useInterval from 'use-interval';
 
 import Picture from '../Picture';
-import { formatPicture } from './helpers';
+import { formatPicture } from './formatPicture';
 import useScrollBlur from 'hooks/useScrollBlur';
 import styles from './Hero.module.scss';
 
