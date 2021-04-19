@@ -6,9 +6,8 @@ import CurrentStackItem from '../CurrentStackItem';
 
 const props = {
   url: 'test url',
-  img: 'babel',
-  name: 'test name',
-  width: '50',
+  name: 'babel',
+  imgWidth: '50',
 };
 
 describe('CurrentStackItem', () => {

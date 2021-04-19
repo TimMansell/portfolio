@@ -8,16 +8,14 @@ jest.mock(
   '../json/stack.json',
   () => [
     {
-      name: 'Item 1',
+      name: 'react',
       url: 'url',
-      img: 'react',
-      width: '65',
+      imgWidth: '65',
     },
     {
-      name: 'Item 2',
+      name: 'nodejs',
       url: 'url',
-      img: 'nodejs',
-      width: '90',
+      imgWidth: '90',
     },
   ],
   { virtual: true }
