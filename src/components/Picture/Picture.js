@@ -17,7 +17,7 @@ export const Picture = ({
   isLazy,
   isFullscreen,
 }) => {
-  const { sources, fallbackImg } = importImages(src, types, srcSizes);
+  const { sources, fallbackImg } = importImages(src, srcSizes, types);
   const loadingType = isLazy ? 'lazy' : 'auto';
 
   const imgClasses = classnames(styles.img, {

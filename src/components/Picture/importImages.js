@@ -1,13 +1,11 @@
 import { getSources, getFallbackImage } from './helpers';
 
-export const importImages = (src, types, srcSizes) => {
+export const importImages = (src, srcSizes, types) => {
   const sources = types.map(getSources(src, srcSizes));
   const fallbackImg = getFallbackImage(src, srcSizes, types);
 
-  // console.log(JSON.stringify(sources));
-
   return {
-    sources: sources[0],
+    sources,
     fallbackImg,
   };
 };
