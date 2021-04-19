@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import useInterval from 'use-interval';
 
 import Picture from '../Picture';
+import { formatPicture } from './helpers';
 import useScrollBlur from 'hooks/useScrollBlur';
 import styles from './Hero.module.scss';
 
@@ -11,23 +12,6 @@ import images from './json/images.json';
 const TIMER = 7000;
 const DELAY_IMAGE_LOADING_TIMER = 1000;
 const REMOVE_TRANSITION_TIMER = 2000;
-
-export const formatPicture = ({ name, title }) => ({
-  title,
-  src: `Hero/img/${name}`,
-  types: ['jpg'],
-  srcSizes: [
-    {
-      media: 'portrait',
-      sizes: ['640', '768', '1280', '1536', '2048'],
-    },
-    {
-      media: 'landscape',
-      sizes: ['1366', '1600', '1920', '2560'],
-    },
-  ],
-  isFullscreen: true,
-});
 
 export const Hero = () => {
   const [heroImages, setHeroImages] = useState(images);
