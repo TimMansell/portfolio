@@ -57,7 +57,12 @@ Picture.propTypes = {
     PropTypes.oneOf(['avif', 'webp', 'jpg', 'png', 'svg'])
   ).isRequired,
   sizes: PropTypes.string,
-  srcSizes: PropTypes.array.isRequired,
+  srcSizes: PropTypes.arrayOf(
+    PropTypes.exact({
+      media: PropTypes.string,
+      sizes: PropTypes.array.isRequired,
+    })
+  ).isRequired,
   onLoad: PropTypes.func,
   width: PropTypes.string,
   isLazy: PropTypes.bool,
