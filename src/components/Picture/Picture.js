@@ -7,9 +7,9 @@ import { importImages } from './helpers/importImages';
 import styles from './Picture.module.scss';
 
 export const Picture = ({
-  image,
-  types,
   src,
+  title,
+  types,
   sizes,
   srcSizes,
   width,
@@ -17,12 +17,7 @@ export const Picture = ({
   isLazy,
   isFullscreen,
 }) => {
-  const { title, sources, fallbackImg } = importImages(
-    image,
-    types,
-    src,
-    srcSizes
-  );
+  const { sources, fallbackImg } = importImages(src, types, srcSizes);
   const loadingType = isLazy ? 'lazy' : 'auto';
 
   const imgClasses = classnames(styles.img, {
@@ -56,14 +51,11 @@ export const Picture = ({
 };
 
 Picture.propTypes = {
-  image: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
+  src: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   types: PropTypes.arrayOf(
     PropTypes.oneOf(['avif', 'webp', 'jpg', 'png', 'svg'])
   ).isRequired,
-  src: PropTypes.string.isRequired,
   sizes: PropTypes.string,
   srcSizes: PropTypes.array.isRequired,
   onLoad: PropTypes.func,

@@ -8,6 +8,27 @@ import styles from './Hero.module.scss';
 
 import images from './json/images.json';
 
+const TIMER = 7000;
+const DELAY_IMAGE_LOADING_TIMER = 1000;
+const REMOVE_TRANSITION_TIMER = 2000;
+
+export const formatPicture = ({ name, title }) => ({
+  title,
+  src: `Hero/img/${name}`,
+  types: ['jpg'],
+  srcSizes: [
+    {
+      media: 'portrait',
+      sizes: ['640', '768', '1280', '1536', '2048'],
+    },
+    {
+      media: 'landscape',
+      sizes: ['1366', '1600', '1920', '2560'],
+    },
+  ],
+  isFullscreen: true,
+});
+
 export const Hero = () => {
   const [heroImages, setHeroImages] = useState(images);
   const [hasPreLoadedImage, setHasPreLoadedImage] = useState(false);
@@ -16,9 +37,8 @@ export const Hero = () => {
 
   const [primaryImage, preloadImage] = heroImages;
 
-  const TIMER = 7000;
-  const DELAY_IMAGE_LOADING_TIMER = 1000;
-  const REMOVE_TRANSITION_TIMER = 2000;
+  const primaryPicture = formatPicture(primaryImage);
+  const preloadPicture = formatPicture(preloadImage);
 
   useInterval(() => {
     if (hasPreLoadedImage) {
@@ -42,21 +62,6 @@ export const Hero = () => {
     [styles.transition]: hasTransition,
   });
 
-  const pictureSizes = [
-    {
-      media: 'portrait',
-      sizes: ['640', '768', '1280', '1536', '2048'],
-    },
-    {
-      media: 'landscape',
-      sizes: ['1366', '1600', '1920', '2560'],
-    },
-  ];
-
-  const pictureTypes = ['jpg'];
-
-  const pictureSrc = 'Hero/img';
-
   return (
     <div className={styles.hero}>
       <div
@@ -65,21 +70,11 @@ export const Hero = () => {
         data-e2e="hero-img"
         data-timer={TIMER}
       >
+        <Picture {...primaryPicture} />
         <Picture
-          image={primaryImage}
-          types={pictureTypes}
-          src={pictureSrc}
-          srcSizes={pictureSizes}
-          isFullscreen
-        />
-        <Picture
-          image={preloadImage}
-          types={pictureTypes}
-          src={pictureSrc}
-          srcSizes={pictureSizes}
+          {...preloadPicture}
           onLoad={() => setHasPreLoadedImage(true)}
           aria-hidden="true"
-          isFullscreen
         />
       </div>
     </div>
