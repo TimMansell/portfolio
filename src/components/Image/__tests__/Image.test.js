@@ -7,7 +7,7 @@ import Image from '../Image';
 const props = {
   src: 'Image/__tests__/img/test.jpg',
   alt: 'alt text',
-  width: '50,',
+  width: '50',
 };
 
 describe('Image', () => {
