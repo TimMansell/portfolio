@@ -45,7 +45,7 @@ export const PortfolioItem = ({
           <Picture
             src={`Portfolio/img/${img}`}
             title={`${title} portfolio item`}
-            types={['jpg']}
+            types={['avif', 'webp', 'jpg']}
             srcSizes={[
               {
                 sizes: ['480', '640', '768', '1024', '1280'],
