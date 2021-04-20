@@ -6,6 +6,6 @@ exports[`Image should match snapshot 1`] = `
   loading="lazy"
   src="test.jpg"
   title="alt text"
-  width="50,"
+  width="50"
 />
 `;
