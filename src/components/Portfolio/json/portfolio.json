@@ -41,7 +41,7 @@
       "Cypress"
     ],
     "url": "https://study.unimelb.edu.au/find",
-    "img": "unimelb"
+    "img": "find-a-course-unimelb-project"
   },
   {
     "title": "myBupa",
@@ -59,7 +59,7 @@
       "Gulp"
     ],
     "url": "https://my.bupa.com.au",
-    "img": "my-bupa"
+    "img": "my-bupa-portal-project"
   },
   {
     "title": "Captain's Choice",
@@ -76,7 +76,7 @@
       "Bower"
     ],
     "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/",
-    "img": "captains-choice"
+    "img": "captains-choice-project"
   },
   {
     "title": "Web Components",
