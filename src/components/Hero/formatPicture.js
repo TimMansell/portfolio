@@ -3,11 +3,11 @@ export const formatPicture = ({ name, title }) => {
 
   const srcSizes = [
     {
-      media: 'portrait',
+      media: '(orientation: portrait)',
       sizes: ['640', '768', '1280', '1536', '2048'],
     },
     {
-      media: 'landscape',
+      media: '(orientation: landscape)',
       sizes: ['1366', '1600', '1920', '2560'],
     },
   ];

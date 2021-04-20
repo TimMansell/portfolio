@@ -31,19 +31,19 @@ describe('Picture Helpers', () => {
 
     const { media } = getSizes(src, type)(srcSizes);
 
-    expect(media).toEqual('');
+    expect(media).toEqual(undefined);
   });
 
-  it('should return media: portrait', () => {
+  it('should return custom media', () => {
     const { src, srcSizes, type } = picture;
 
     const srcSizesWithMedia = {
       ...srcSizes,
-      media: 'portrait',
+      media: '(min-width: 1200px)',
     };
 
     const { media } = getSizes(src, type)(srcSizesWithMedia);
 
-    expect(media).toEqual('(orientation: portrait)');
+    expect(media).toEqual('(min-width: 1200px)');
   });
 });

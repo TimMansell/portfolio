@@ -61,7 +61,6 @@ Array [
           >
             <source
               data-test="picture-source-0"
-              media=""
               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
               srcSet="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
               type="image/jpg"
@@ -186,7 +185,6 @@ Array [
           >
             <source
               data-test="picture-source-0"
-              media=""
               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
               srcSet="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
               type="image/jpg"

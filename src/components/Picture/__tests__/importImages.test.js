@@ -20,7 +20,7 @@ describe('Picture', () => {
       expect(fallbackImg).toEqual('test-640.jpg');
       expect(sources).toEqual([
         {
-          media: '',
+          media: undefined,
           srcSet: 'test-480.jpg 480w, test-640.jpg 640w',
           type: 'jpg',
         },
@@ -36,12 +36,12 @@ describe('Picture', () => {
 
       expect(sources).toEqual([
         {
-          media: '',
+          media: undefined,
           srcSet: 'test-480.webp 480w, test-640.webp 640w',
           type: 'webp',
         },
         {
-          media: '',
+          media: undefined,
           srcSet: 'test-480.jpg 480w, test-640.jpg 640w',
           type: 'jpg',
         },

@@ -18,7 +18,7 @@ describe('Picture Helpers', () => {
 
     expect(result).toEqual([
       {
-        media: '',
+        media: undefined,
         srcSet: 'test-480.webp 480w, test-640.webp 640w',
         type: 'webp',
       },

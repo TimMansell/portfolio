@@ -3,6 +3,6 @@ export const getSrcSet = (src, type) => (accumulator, currentValue) =>
 
 export const getSizes = (src, type) => ({ media, sizes }) => ({
   type,
-  media: media ? `(orientation: ${media})` : '',
+  media,
   srcSet: sizes.reduce(getSrcSet(src, type), '').replace(/,\s*$/, ''),
 });
