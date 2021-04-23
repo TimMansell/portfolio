@@ -20,6 +20,6 @@ describe('Hero', () => {
       },
     ]);
     expect(title).toEqual('title');
-    expect(types).toEqual(['jpg']);
+    expect(types).toEqual(['avif', 'webp', 'jpg']);
   });
 });
