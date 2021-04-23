@@ -5,7 +5,7 @@ import Image from '../Image';
 
 import styles from './CurrentStack.module.scss';
 
-export const CurrentStackItem = ({ url, name, imgWidth }) => {
+export const CurrentStackItem = ({ url, name, width }) => {
   const img = name.toLowerCase();
 
   return (
@@ -16,11 +16,7 @@ export const CurrentStackItem = ({ url, name, imgWidth }) => {
         rel="noopener noreferrer"
         data-test="stack-item-link"
       >
-        <Image
-          src={`CurrentStack/img/${img}.svg`}
-          alt={name}
-          width={imgWidth}
-        />
+        <Image src={`CurrentStack/img/${img}.svg`} alt={name} width={width} />
       </a>
     </div>
   );
@@ -29,7 +25,7 @@ export const CurrentStackItem = ({ url, name, imgWidth }) => {
 CurrentStackItem.propTypes = {
   url: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  imgWidth: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
 };
 
 export default CurrentStackItem;

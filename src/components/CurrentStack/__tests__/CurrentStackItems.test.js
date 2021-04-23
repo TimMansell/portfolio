@@ -10,12 +10,12 @@ jest.mock(
     {
       name: 'react',
       url: 'url',
-      imgWidth: '65',
+      width: '65',
     },
     {
       name: 'nodejs',
       url: 'url',
-      imgWidth: '90',
+      width: '90',
     },
   ],
   { virtual: true }
