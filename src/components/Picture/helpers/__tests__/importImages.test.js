@@ -1,4 +1,4 @@
-import { getSrcSet, getSizes } from '../importImages';
+import { getSrcSet, getSizes, getFilePath } from '../importImages';
 
 const picture = {
   src: `Picture/__tests__/img/test`,
@@ -45,5 +45,17 @@ describe('Picture Helpers', () => {
     const { media } = getSizes(src, type)(srcSizesWithMedia);
 
     expect(media).toEqual('(min-width: 1200px)');
+  });
+
+  it('should format file path correctly', () => {
+    const {
+      src,
+      type,
+      srcSizes: { sizes },
+    } = picture;
+
+    const filePath = getFilePath(src, type, sizes[0]);
+
+    expect(filePath).toEqual('Picture/__tests__/img/jpg/test-480.jpg');
   });
 });
