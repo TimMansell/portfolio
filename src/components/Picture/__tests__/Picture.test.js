@@ -2,15 +2,13 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Picture, { importImages } from '../Picture';
+import Picture from '../Picture';
 
 const props = {
-  image: {
-    name: 'test',
-    title: 'test title',
-  },
-  types: ['avif', 'webp'],
-  src: 'Picture/__tests__/img',
+  title: 'test title',
+  types: ['avif', 'webp', 'jpg'],
+  src: 'Picture/__tests__/img/test',
+  srcSizes: [{ sizes: ['480', '640'] }],
   width: '50',
 };
 
@@ -33,6 +31,13 @@ describe('Picture', () => {
     expect(image.hasClass('fullscreen')).toBeTruthy();
   });
 
+  it('should render non-fullscreen image', () => {
+    const wrapper = shallow(<Picture {...props} />);
+    const image = wrapper.find('[data-test="picture-img"]');
+
+    expect(image.hasClass('fullscreen')).toBeFalsy();
+  });
+
   it('should render lazy loaded image', () => {
     const wrapper = shallow(<Picture {...props} isLazy />);
     const image = wrapper.find('[data-test="picture-img"]');
@@ -40,10 +45,11 @@ describe('Picture', () => {
     expect(image.props().loading).toBe('lazy');
   });
 
-  it('should have correct title', () => {
+  it('should render non lazy loaded image', () => {
     const wrapper = shallow(<Picture {...props} />);
+    const image = wrapper.find('[data-test="picture-img"]');
 
-    expect(wrapper.props().title).toBe(props.image.title);
+    expect(image.props().loading).toBe('auto');
   });
 
   it('should have correct width', () => {
@@ -57,27 +63,24 @@ describe('Picture', () => {
     const wrapper = shallow(<Picture {...props} />);
     const source = wrapper.find('[data-test="picture-source-0"]');
 
-    expect(source.props().srcSet).toBe(`${props.image.name}.${props.types[0]}`);
+    expect(source.props().srcSet).toBe(
+      'test-480.avif 480w, test-640.avif 640w'
+    );
     expect(source.props().type).toBe(`image/${props.types[0]}`);
+  });
+
+  it('should have correct number of <source>', () => {
+    const wrapper = shallow(<Picture {...props} />);
+    const sources = wrapper.find('[data-test*="picture-source"]');
+
+    expect(sources).toHaveLength(3);
   });
 
   it('should render fallback in <img>', () => {
     const wrapper = shallow(<Picture {...props} />);
     const source = wrapper.find('[data-test="picture-img"]');
 
-    expect(source.props().src).toBe(`${props.image.name}.${props.types[1]}`);
-    expect(source.props().alt).toBe(props.image.title);
-  });
-
-  it('importImages', () => {
-    const { image, types, src } = props;
-
-    const { title, srcs } = importImages(image, types, src);
-
-    expect(title).toBe(image.title);
-    expect(srcs).toEqual([
-      { type: 'avif', src: 'test.avif' },
-      { type: 'webp', src: 'test.webp' },
-    ]);
+    expect(source.props().src).toBe('test-640.jpg');
+    expect(source.props().alt).toBe(props.title);
   });
 });

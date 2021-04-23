@@ -3,10 +3,15 @@ import classnames from 'classnames';
 import useInterval from 'use-interval';
 
 import Picture from '../Picture';
+import { formatPicture } from './formatPicture';
 import useScrollBlur from 'hooks/useScrollBlur';
 import styles from './Hero.module.scss';
 
 import images from './json/images.json';
+
+const TIMER = 7000;
+const DELAY_IMAGE_LOADING_TIMER = 1000;
+const REMOVE_TRANSITION_TIMER = 2000;
 
 export const Hero = () => {
   const [heroImages, setHeroImages] = useState(images);
@@ -16,9 +21,8 @@ export const Hero = () => {
 
   const [primaryImage, preloadImage] = heroImages;
 
-  const TIMER = 7000;
-  const DELAY_IMAGE_LOADING_TIMER = 1000;
-  const REMOVE_TRANSITION_TIMER = 2000;
+  const primaryPicture = formatPicture(primaryImage);
+  const preloadPicture = formatPicture(preloadImage);
 
   useInterval(() => {
     if (hasPreLoadedImage) {
@@ -50,19 +54,11 @@ export const Hero = () => {
         data-e2e="hero-img"
         data-timer={TIMER}
       >
+        <Picture {...primaryPicture} />
         <Picture
-          image={primaryImage}
-          types={['avif', 'webp', 'jpg']}
-          src="Hero/img"
-          isFullscreen
-        />
-        <Picture
-          image={preloadImage}
-          types={['avif', 'webp', 'jpg']}
-          src="Hero/img"
+          {...preloadPicture}
           onLoad={() => setHasPreLoadedImage(true)}
           aria-hidden="true"
-          isFullscreen
         />
       </div>
     </div>

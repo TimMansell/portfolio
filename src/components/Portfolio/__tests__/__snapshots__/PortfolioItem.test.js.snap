@@ -39,17 +39,20 @@ exports[`PortfolioItem should match snapshot 1`] = `
       >
         <source
           data-test="picture-source-0"
-          srcSet="test.avif"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="test-480.avif 480w, test-640.avif 640w, test-768.avif 768w, test-1024.avif 1024w, test-1280.avif 1280w"
           type="image/avif"
         />
         <source
           data-test="picture-source-1"
-          srcSet="test.webp"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
           type="image/webp"
         />
         <source
           data-test="picture-source-2"
-          srcSet="test.jpg"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
           type="image/jpg"
         />
         <img
@@ -58,7 +61,7 @@ exports[`PortfolioItem should match snapshot 1`] = `
           data-e2e="picture-img"
           data-test="picture-img"
           loading="lazy"
-          src="test.jpg"
+          src="test-1280.jpg"
         />
       </picture>
     </div>

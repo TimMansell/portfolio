@@ -2,97 +2,81 @@
   {
     "name": "React",
     "url": "https://reactjs.org/",
-    "img": "react",
     "width": "65"
   },
   {
     "name": "NodeJS",
     "url": "https://nodejs.org/en/",
-    "img": "nodejs",
     "width": "90"
   },
   {
     "name": "VueJS",
     "url": "https://vuejs.org/",
-    "img": "vuejs",
     "width": "60"
   },
   {
     "name": "NPM",
     "url": "https://www.npmjs.com/",
-    "img": "npm",
     "width": "90"
   },
   {
     "name": "Webpack",
     "url": "https://webpack.js.org/",
-    "img": "webpack",
     "width": "75"
   },
   {
     "name": "Yarn",
     "url": "https://yarnpkg.com",
-    "img": "yarn",
     "width": "130"
   },
   {
     "name": "ESLint",
     "url": "https://eslint.org/",
-    "img": "eslint",
     "width": "75"
   },
   {
     "name": "Jest",
     "url": "https://jestjs.io/",
-    "img": "jest",
     "width": "50"
   },
   {
     "name": "Babel",
     "url": "https://babeljs.io/",
-    "img": "babel",
     "width": "140"
   },
   {
     "name": "Cypress",
     "url": "https://www.cypress.io/",
-    "img": "cypress",
     "width": "60"
   },
   {
-    "name": "SCSS",
+    "name": "SASS",
     "url": "https://sass-lang.com/",
-    "img": "sass",
     "width": "70"
   },
   {
     "name": "VSCode",
     "url": "https://code.visualstudio.com/",
-    "img": "vscode",
     "width": "55"
   },
   {
     "name": "Git",
     "url": "https://git-scm.com/",
-    "img": "git",
     "width": "105"
   },
   {
     "name": "PostCSS",
     "url": "https://postcss.org/",
-    "img": "postcss",
     "width": "60"
   },
   {
     "name": "Netlify",
     "url": "https://www.netlify.com/",
-    "img": "netlify",
     "width": "140"
   },
   {
     "name": "GraphQL",
     "url": "https://graphql.org/",
-    "img": "graphql",
     "width": "55"
   }
 ]

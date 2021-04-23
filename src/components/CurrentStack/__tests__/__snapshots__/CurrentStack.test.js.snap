@@ -32,43 +32,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="React"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "react.svg",
+            }
+          }
           title="React"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "react.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="React"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "react.svg",
-              }
-            }
-            width="65"
-          />
-        </picture>
+          width="65"
+        />
       </a>
     </div>
     <div
@@ -80,43 +59,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="NodeJS"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "nodejs.svg",
+            }
+          }
           title="NodeJS"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "nodejs.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="NodeJS"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "nodejs.svg",
-              }
-            }
-            width="90"
-          />
-        </picture>
+          width="90"
+        />
       </a>
     </div>
     <div
@@ -128,43 +86,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="VueJS"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "vuejs.svg",
+            }
+          }
           title="VueJS"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "vuejs.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="VueJS"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "vuejs.svg",
-              }
-            }
-            width="60"
-          />
-        </picture>
+          width="60"
+        />
       </a>
     </div>
     <div
@@ -176,43 +113,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="NPM"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "npm.svg",
+            }
+          }
           title="NPM"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "npm.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="NPM"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "npm.svg",
-              }
-            }
-            width="90"
-          />
-        </picture>
+          width="90"
+        />
       </a>
     </div>
     <div
@@ -224,43 +140,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Webpack"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "webpack.svg",
+            }
+          }
           title="Webpack"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "webpack.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Webpack"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "webpack.svg",
-              }
-            }
-            width="75"
-          />
-        </picture>
+          width="75"
+        />
       </a>
     </div>
     <div
@@ -272,43 +167,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Yarn"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "yarn.svg",
+            }
+          }
           title="Yarn"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "yarn.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Yarn"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "yarn.svg",
-              }
-            }
-            width="130"
-          />
-        </picture>
+          width="130"
+        />
       </a>
     </div>
     <div
@@ -320,43 +194,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="ESLint"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "eslint.svg",
+            }
+          }
           title="ESLint"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "eslint.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="ESLint"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "eslint.svg",
-              }
-            }
-            width="75"
-          />
-        </picture>
+          width="75"
+        />
       </a>
     </div>
     <div
@@ -368,43 +221,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Jest"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "jest.svg",
+            }
+          }
           title="Jest"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "jest.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Jest"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "jest.svg",
-              }
-            }
-            width="50"
-          />
-        </picture>
+          width="50"
+        />
       </a>
     </div>
     <div
@@ -416,43 +248,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Babel"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "babel.svg",
+            }
+          }
           title="Babel"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "babel.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Babel"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "babel.svg",
-              }
-            }
-            width="140"
-          />
-        </picture>
+          width="140"
+        />
       </a>
     </div>
     <div
@@ -464,43 +275,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Cypress"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "cypress.svg",
+            }
+          }
           title="Cypress"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "cypress.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Cypress"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "cypress.svg",
-              }
-            }
-            width="60"
-          />
-        </picture>
+          width="60"
+        />
       </a>
     </div>
     <div
@@ -512,43 +302,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
-          title="SCSS"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "sass.svg",
-              }
+        <img
+          alt="SASS"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "sass.svg",
             }
-            type="image/svg"
-          />
-          <img
-            alt="SCSS"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "sass.svg",
-              }
-            }
-            width="70"
-          />
-        </picture>
+          }
+          title="SASS"
+          width="70"
+        />
       </a>
     </div>
     <div
@@ -560,43 +329,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="VSCode"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "vscode.svg",
+            }
+          }
           title="VSCode"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "vscode.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="VSCode"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "vscode.svg",
-              }
-            }
-            width="55"
-          />
-        </picture>
+          width="55"
+        />
       </a>
     </div>
     <div
@@ -608,43 +356,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Git"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "git.svg",
+            }
+          }
           title="Git"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "git.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Git"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "git.svg",
-              }
-            }
-            width="105"
-          />
-        </picture>
+          width="105"
+        />
       </a>
     </div>
     <div
@@ -656,43 +383,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="PostCSS"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "postcss.svg",
+            }
+          }
           title="PostCSS"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "postcss.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="PostCSS"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "postcss.svg",
-              }
-            }
-            width="60"
-          />
-        </picture>
+          width="60"
+        />
       </a>
     </div>
     <div
@@ -704,43 +410,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="Netlify"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "netlify.svg",
+            }
+          }
           title="Netlify"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "netlify.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="Netlify"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "netlify.svg",
-              }
-            }
-            width="140"
-          />
-        </picture>
+          width="140"
+        />
       </a>
     </div>
     <div
@@ -752,43 +437,22 @@ Array [
         rel="noopener noreferrer"
         target="_blank"
       >
-        <picture
-          data-e2e="picture"
+        <img
+          alt="GraphQL"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "graphql.svg",
+            }
+          }
           title="GraphQL"
-        >
-          <source
-            data-test="picture-source-0"
-            srcSet={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "graphql.svg",
-              }
-            }
-            type="image/svg"
-          />
-          <img
-            alt="GraphQL"
-            className="img"
-            data-e2e="picture-img"
-            data-test="picture-img"
-            loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "graphql.svg",
-              }
-            }
-            width="55"
-          />
-        </picture>
+          width="55"
+        />
       </a>
     </div>
   </div>,
