@@ -9,7 +9,7 @@ export const getFallbackImage = (src, srcSizes, types) => {
   const [size] = [...sizes].reverse();
   const [type] = [...types].reverse();
 
-  const filePath = getFilePath(src, type, size);
+  const filePath = getFilePath(src, size, type);
 
   const fallbackImg = require(`../../${filePath}`);
 

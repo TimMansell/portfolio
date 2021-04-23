@@ -14,7 +14,7 @@ describe('Picture Helpers', () => {
 
     const result = getSrcSet(src, type)('', '640');
 
-    expect(result).toEqual('test-640.jpg 640w, ');
+    expect(result).toEqual('test-640.jpg 640w,');
   });
 
   it('should return correct srcSet and type', () => {
@@ -54,7 +54,7 @@ describe('Picture Helpers', () => {
       srcSizes: { sizes },
     } = picture;
 
-    const filePath = getFilePath(src, type, sizes[0]);
+    const filePath = getFilePath(src, sizes[0], type);
 
     expect(filePath).toEqual('Picture/__tests__/img/jpg/test-480.jpg');
   });

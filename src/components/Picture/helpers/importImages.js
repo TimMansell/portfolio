@@ -1,10 +1,14 @@
-export const getSizes = (src, type) => ({ media, sizes }) => ({
-  type,
-  media,
-  srcSet: sizes.reduce(getSrcSet(src, type), '').replace(/,\s*$/, ''),
-});
+export const getSizes = (src, type) => ({ media, sizes }) => {
+  const srcSet = sizes.reduce(getSrcSet(src, type), '').replace(/,\s*$/, '');
 
-export const getFilePath = (src, type, size) => {
+  return {
+    type,
+    media,
+    srcSet,
+  };
+};
+
+export const getFilePath = (src, size, type) => {
   const path = src.split('/');
   const [img, ...paths] = [...path].reverse();
   const newPath = [...paths].reverse().join('/');
@@ -15,7 +19,8 @@ export const getFilePath = (src, type, size) => {
 };
 
 export const getSrcSet = (src, type) => (srcSet, size) => {
-  const filePath = getFilePath(src, type, size);
+  const filePath = getFilePath(src, size, type);
+  const srcSetPath = `${srcSet} ${require(`../../${filePath}`)} ${size}w,`.trim();
 
-  return `${srcSet}${require(`../../${filePath}`)} ${size}w, `;
+  return srcSetPath;
 };
