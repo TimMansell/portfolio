@@ -141,23 +141,18 @@ Array [
           >
             types
           </li>
+          <li
+            className="label isPrimary"
+          >
+            tech 1
+          </li>
+          <li
+            className="label isPrimary"
+          >
+            tech 2
+          </li>
         </ul>
       </div>
-      <ul
-        className="labels"
-        data-test="labels"
-      >
-        <li
-          className="label isPrimary"
-        >
-          tech 1
-        </li>
-        <li
-          className="label isPrimary"
-        >
-          tech 2
-        </li>
-      </ul>
     </div>
     <div
       className="portfolioItem"
@@ -273,28 +268,23 @@ Array [
           >
             types
           </li>
+          <li
+            className="label isPrimary"
+          >
+            tech 1
+          </li>
+          <li
+            className="label isPrimary"
+          >
+            tech 2
+          </li>
+          <li
+            className="label isPrimary"
+          >
+            tech 3
+          </li>
         </ul>
       </div>
-      <ul
-        className="labels"
-        data-test="labels"
-      >
-        <li
-          className="label isPrimary"
-        >
-          tech 1
-        </li>
-        <li
-          className="label isPrimary"
-        >
-          tech 2
-        </li>
-        <li
-          className="label isPrimary"
-        >
-          tech 3
-        </li>
-      </ul>
     </div>
   </div>,
 ]

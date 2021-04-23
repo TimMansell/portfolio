@@ -30,6 +30,17 @@ export const PortfolioItem = ({
     });
   });
 
+  const labels = [
+    {
+      type: 'secondary',
+      items: [...years, ...types],
+    },
+    {
+      type: 'primary',
+      items: tech,
+    },
+  ];
+
   // Check height of image as intially it is lazy loaded.
   useEffect(() => {
     window.requestAnimationFrame(getCubeHeight);
@@ -82,9 +93,8 @@ export const PortfolioItem = ({
         </div>
       </div>
       <div className={styles.labels}>
-        <Labels items={[...years, ...types]} type="secondary" />
+        <Labels labels={labels} />
       </div>
-      <Labels items={tech} type="primary" />
     </div>
   );
 };

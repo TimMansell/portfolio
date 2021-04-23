@@ -7,6 +7,13 @@ import Labels from '../Labels';
 import styles from './ListItem.module.scss';
 
 export const ListItem = ({ item }) => {
+  const labels = [
+    {
+      type: 'tertiary',
+      items: item.list,
+    },
+  ];
+
   return (
     <div className={styles.item}>
       <div className={styles.icon}>
@@ -14,7 +21,7 @@ export const ListItem = ({ item }) => {
       </div>
       <div className={styles.content}>
         <h3 className={styles.title}>{item.title}</h3>
-        <Labels items={item.list} type="tertiary" size="lg" centered />
+        <Labels labels={labels} type="tertiary" size="lg" centered />
       </div>
     </div>
   );

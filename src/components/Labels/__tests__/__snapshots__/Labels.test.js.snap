@@ -20,5 +20,15 @@ exports[`Label should match snapshot 1`] = `
   >
     label 3
   </li>
+  <li
+    className="label isSecondary"
+  >
+    label 4
+  </li>
+  <li
+    className="label isSecondary"
+  >
+    label 5
+  </li>
 </ul>
 `;

@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import Label from './Label';
 import styles from './Labels.module.scss';
 
-export const Labels = ({ items, type, size, centered }) => {
+export const Labels = ({ labels, size, centered }) => {
   const labelClasses = classnames(styles.labels, {
     [styles.isLarge]: size === 'lg',
     [styles.isCentered]: centered,
@@ -13,16 +13,22 @@ export const Labels = ({ items, type, size, centered }) => {
 
   return (
     <ul className={labelClasses} data-test="labels">
-      {items.map((item, index) => (
-        <Label key={index} label={item} type={type} size={size} />
-      ))}
+      {labels.map(({ items, type }) =>
+        items.map((item, index) => (
+          <Label key={index} label={item} type={type} size={size} />
+        ))
+      )}
     </ul>
   );
 };
 
 Labels.propTypes = {
-  items: PropTypes.array.isRequired,
-  type: PropTypes.string.isRequired,
+  labels: PropTypes.arrayOf(
+    PropTypes.exact({
+      type: PropTypes.string.isRequired,
+      items: PropTypes.array.isRequired,
+    })
+  ).isRequired,
   size: PropTypes.oneOf(['lg']),
   centered: PropTypes.bool,
 };
