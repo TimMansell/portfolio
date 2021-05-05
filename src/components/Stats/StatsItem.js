@@ -12,7 +12,7 @@ export const offsetStats = (value, offset) => Math.round(value * offset);
 
 export const StatsItem = ({ description, offset, value, icon }) => {
   const element = useRef(null);
-  const isInViewport = useInViewport(element, -300);
+  const isInViewport = useInViewport(element, -250);
   const statsBeginValue = offsetStats(value, offset);
 
   return (
