@@ -34,7 +34,12 @@ exports[`StatsItem should match snapshot 1`] = `
       <h3
         className="title"
       >
-        3
+        <span
+          data-e2e="stats-starting-count"
+        >
+           
+          3
+        </span>
       </h3>
       <p
         className="description"

@@ -56,7 +56,12 @@ Array [
           <h3
             className="title"
           >
-            2423
+            <span
+              data-e2e="stats-starting-count"
+            >
+               
+              2423
+            </span>
           </h3>
           <p
             className="description"
@@ -99,7 +104,12 @@ Array [
           <h3
             className="title"
           >
-            102
+            <span
+              data-e2e="stats-starting-count"
+            >
+               
+              102
+            </span>
           </h3>
           <p
             className="description"
@@ -142,7 +152,12 @@ Array [
           <h3
             className="title"
           >
-            7
+            <span
+              data-e2e="stats-starting-count"
+            >
+               
+              7
+            </span>
           </h3>
           <p
             className="description"
@@ -185,7 +200,12 @@ Array [
           <h3
             className="title"
           >
-            11
+            <span
+              data-e2e="stats-starting-count"
+            >
+               
+              11
+            </span>
           </h3>
           <p
             className="description"
