@@ -9,12 +9,16 @@ import navigationJson from './json/navigation.json';
 
 import { combineWords, upperCaseWords } from './helpers';
 
+import { useIsFlexGapSupported } from 'hooks/useFlexGap';
+
 export const NavigationMenu = () => {
+  const hasFlexGap = useIsFlexGapSupported();
   const [isMobileMenu, setIsMobileMenu] = useContext(MenuContext);
   const inViewport = useInMobileViewport();
 
   const menuClasses = classnames(styles.menu, {
     [styles.menuIsActive]: isMobileMenu && inViewport,
+    [styles.flexGap]: hasFlexGap,
   });
 
   return (

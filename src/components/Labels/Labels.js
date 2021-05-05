@@ -5,10 +5,15 @@ import classnames from 'classnames';
 import Label from './Label';
 import styles from './Labels.module.scss';
 
+import { useIsFlexGapSupported } from 'hooks/useFlexGap';
+
 export const Labels = ({ labels, size, centered }) => {
+  const hasFlexGap = useIsFlexGapSupported();
+
   const labelClasses = classnames(styles.labels, {
     [styles.isLarge]: size === 'lg',
     [styles.isCentered]: centered,
+    [styles.flexGap]: hasFlexGap,
   });
 
   return (
