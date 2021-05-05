@@ -9,7 +9,7 @@
   line-height: 1.2;
 
   @media (min-width: $bp-xxxl) {
-    font-size: pxtorem(16);
+    font-size: pxtorem(14);
   }
 }
 
@@ -22,7 +22,7 @@
 }
 
 .isTertiary {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--colour-4-transparent-1);
 }
 
 .isLarge {

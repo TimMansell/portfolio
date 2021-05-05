@@ -1,11 +1,13 @@
 @import 'variables';
 @import 'utilities/pxtorem';
+@import 'utilities/flex-gap';
 
 .stack {
+  @include flex-gap(--vr-sm);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--vr-sm);
 }
 
 .item {
@@ -13,11 +15,6 @@
   justify-content: center;
   align-self: center;
   width: 100%;
-
-  @supports not (gap: 1em) {
-    padding: var(--vr-sm);
-    padding-top: 0;
-  }
 
   &:last-of-type {
     margin-bottom: 0;

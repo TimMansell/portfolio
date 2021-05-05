@@ -119,22 +119,17 @@ exports[`PortfolioItem should match snapshot 1`] = `
       >
         Personal
       </li>
+      <li
+        className="label isPrimary"
+      >
+        Tech
+      </li>
+      <li
+        className="label isPrimary"
+      >
+        Tech 2
+      </li>
     </ul>
   </div>
-  <ul
-    className="labels"
-    data-test="labels"
-  >
-    <li
-      className="label isPrimary"
-    >
-      Tech
-    </li>
-    <li
-      className="label isPrimary"
-    >
-      Tech 2
-    </li>
-  </ul>
 </div>
 `;

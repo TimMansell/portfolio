@@ -5,8 +5,16 @@ import renderer from 'react-test-renderer';
 import Labels from '../Labels';
 
 const defaultProps = {
-  items: ['label 1', 'label 2', 'label 3'],
-  type: 'primary',
+  labels: [
+    {
+      items: ['label 1', 'label 2', 'label 3'],
+      type: 'primary',
+    },
+    {
+      items: ['label 4', 'label 5'],
+      type: 'secondary',
+    },
+  ],
 };
 
 describe('Label', () => {
@@ -52,6 +60,6 @@ describe('Label', () => {
     const wrapper = shallow(<Labels {...defaultProps} />);
     const list = wrapper.find('[data-test="labels"]');
 
-    expect(list.children()).toHaveLength(3);
+    expect(list.children()).toHaveLength(5);
   });
 });
