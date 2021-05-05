@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Icon from 'components/Icon';
 import Counter from 'components/Counter';
 
-import useInViewport from 'hooks/useInViewport';
+import useIntersectionObserver from 'hooks/useIntersectionObserver';
 
 import styles from './Stats.module.scss';
 
@@ -12,7 +12,8 @@ export const offsetStats = (value, offset) => Math.round(value * offset);
 
 export const StatsItem = ({ description, offset, value, icon }) => {
   const element = useRef(null);
-  const isInViewport = useInViewport(element, -300);
+  const isInViewport = useIntersectionObserver(element, { offset: -250 });
+  const statsBeginValue = offsetStats(value, offset);
 
   return (
     <div className={styles.container}>
@@ -23,13 +24,11 @@ export const StatsItem = ({ description, offset, value, icon }) => {
         <div className={styles.content}>
           <h3 className={styles.title}>
             {isInViewport && (
-              <Counter
-                begin={offsetStats(value, offset)}
-                end={value}
-                time={2000}
-              />
+              <Counter begin={statsBeginValue} end={value} time={2000} />
             )}
-            {!isInViewport && offsetStats(value, offset)}
+            {!isInViewport && (
+              <span data-e2e="stats-starting-count"> {statsBeginValue}</span>
+            )}
           </h3>
           <p className={styles.description}>{description}</p>
         </div>
