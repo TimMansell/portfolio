@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Icon from 'components/Icon';
 import Counter from 'components/Counter';
 
-import useInViewport from 'hooks/useInViewport';
+import useIntersectionObserver from 'hooks/useIntersectionObserver';
 
 import styles from './Stats.module.scss';
 
@@ -12,7 +12,7 @@ export const offsetStats = (value, offset) => Math.round(value * offset);
 
 export const StatsItem = ({ description, offset, value, icon }) => {
   const element = useRef(null);
-  const isInViewport = useInViewport(element, -250);
+  const isInViewport = useIntersectionObserver(element, { offset: -250 });
   const statsBeginValue = offsetStats(value, offset);
 
   return (

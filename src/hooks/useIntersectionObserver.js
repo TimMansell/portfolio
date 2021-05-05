@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useInViewport = (element, offset = 0) => {
+export const useIntersectionObserver = (element, { offset = 0 }) => {
   const [isInViewport, setIsInViewport] = useState(false);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ export const useInViewport = (element, offset = 0) => {
   return isInViewport;
 };
 
-export default useInViewport;
+export default useIntersectionObserver;
