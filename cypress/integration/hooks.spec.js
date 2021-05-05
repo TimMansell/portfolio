@@ -20,4 +20,12 @@ describe('Reacts Hooks', () => {
 
     cy.get('[data-e2e="hero-img"]').should('have.css', 'filter', 'blur(3px)');
   });
+
+  it('useIntersectionObserver', () => {
+    cy.get('[data-e2e="stats-starting-count"]').should('exist');
+
+    cy.get('#stats').scrollIntoView();
+
+    cy.get('[data-e2e="stats-starting-count"]').should('not.exist');
+  });
 });

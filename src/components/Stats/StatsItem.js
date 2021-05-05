@@ -26,7 +26,9 @@ export const StatsItem = ({ description, offset, value, icon }) => {
             {isInViewport && (
               <Counter begin={statsBeginValue} end={value} time={2000} />
             )}
-            {!isInViewport && statsBeginValue}
+            {!isInViewport && (
+              <span data-e2e="stats-starting-count"> {statsBeginValue}</span>
+            )}
           </h3>
           <p className={styles.description}>{description}</p>
         </div>
