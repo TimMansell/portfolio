@@ -11,12 +11,14 @@
       "SCSS",
       "PostCSS",
       "ES2015+",
+      "Yarn",
       "Babel",
       "Webpack",
       "GraphQL",
       "Netlify",
       "Jest",
-      "Cypress"
+      "Cypress",
+      "MongoDB"
     ],
     "url": "https://solitaire.timmansell.com",
     "source": "https://github.com/TimMansell/vue-solitaire",
@@ -33,9 +35,11 @@
       "NuxtJS",
       "PostCSS",
       "ES2015+",
+      "Yarn",
       "Babel",
       "Webpack",
       "Netlify",
+      "Semaphore",
       "AWS",
       "Jest",
       "Cypress"
@@ -54,6 +58,7 @@
       "SCSS",
       "PostCSS",
       "ES2015+",
+      "Yarn",
       "Babel",
       "Webpack",
       "Gulp"
@@ -68,6 +73,7 @@
     "description": "Responsive website rebuild of Captain's Choice website",
     "tech": [
       "AngularJS",
+      "npm",
       "Bootstrap 3",
       "SCSS",
       "Compass",
