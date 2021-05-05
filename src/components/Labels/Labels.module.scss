@@ -1,15 +1,17 @@
 @import 'variables';
 @import 'utilities/pxtorem';
+@import 'utilities/flex-gap';
 
 .labels {
+  @include flex-gap(--vr-xxs);
+
   display: flex;
   flex-wrap: wrap;
-  gap: var(--vr-xxs);
   list-style-type: none;
 }
 
 .isLarge {
-  gap: var(--vr-xs);
+  @include flex-gap(--vr-xs);
 }
 
 .isCentered {
