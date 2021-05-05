@@ -13,6 +13,7 @@ export const offsetStats = (value, offset) => Math.round(value * offset);
 export const StatsItem = ({ description, offset, value, icon }) => {
   const element = useRef(null);
   const isInViewport = useInViewport(element, -300);
+  const statsBeginValue = offsetStats(value, offset);
 
   return (
     <div className={styles.container}>
@@ -23,13 +24,9 @@ export const StatsItem = ({ description, offset, value, icon }) => {
         <div className={styles.content}>
           <h3 className={styles.title}>
             {isInViewport && (
-              <Counter
-                begin={offsetStats(value, offset)}
-                end={value}
-                time={2000}
-              />
+              <Counter begin={statsBeginValue} end={value} time={2000} />
             )}
-            {!isInViewport && offsetStats(value, offset)}
+            {!isInViewport && statsBeginValue}
           </h3>
           <p className={styles.description}>{description}</p>
         </div>
