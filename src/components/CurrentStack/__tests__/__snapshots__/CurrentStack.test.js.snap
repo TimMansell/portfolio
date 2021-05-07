@@ -34,6 +34,7 @@ Array [
       >
         <img
           alt="React"
+          height="58"
           loading="lazy"
           src={
             Object {
@@ -61,6 +62,7 @@ Array [
       >
         <img
           alt="NodeJS"
+          height="55"
           loading="lazy"
           src={
             Object {
@@ -88,6 +90,7 @@ Array [
       >
         <img
           alt="VueJS"
+          height="62"
           loading="lazy"
           src={
             Object {
@@ -115,6 +118,7 @@ Array [
       >
         <img
           alt="NPM"
+          height="35"
           loading="lazy"
           src={
             Object {
@@ -142,6 +146,7 @@ Array [
       >
         <img
           alt="Webpack"
+          height="75"
           loading="lazy"
           src={
             Object {
@@ -169,6 +174,7 @@ Array [
       >
         <img
           alt="Yarn"
+          height="58"
           loading="lazy"
           src={
             Object {
@@ -196,6 +202,7 @@ Array [
       >
         <img
           alt="ESLint"
+          height="66"
           loading="lazy"
           src={
             Object {
@@ -223,6 +230,7 @@ Array [
       >
         <img
           alt="Jest"
+          height="55"
           loading="lazy"
           src={
             Object {
@@ -250,6 +258,7 @@ Array [
       >
         <img
           alt="Babel"
+          height="64"
           loading="lazy"
           src={
             Object {
@@ -277,6 +286,7 @@ Array [
       >
         <img
           alt="Cypress"
+          height="60"
           loading="lazy"
           src={
             Object {
@@ -304,6 +314,7 @@ Array [
       >
         <img
           alt="SASS"
+          height="53"
           loading="lazy"
           src={
             Object {
@@ -331,6 +342,7 @@ Array [
       >
         <img
           alt="VSCode"
+          height="55"
           loading="lazy"
           src={
             Object {
@@ -358,6 +370,7 @@ Array [
       >
         <img
           alt="Git"
+          height="44"
           loading="lazy"
           src={
             Object {
@@ -385,6 +398,7 @@ Array [
       >
         <img
           alt="PostCSS"
+          height="60"
           loading="lazy"
           src={
             Object {
@@ -412,6 +426,7 @@ Array [
       >
         <img
           alt="Netlify"
+          height="38"
           loading="lazy"
           src={
             Object {
@@ -439,6 +454,7 @@ Array [
       >
         <img
           alt="GraphQL"
+          height="55"
           loading="lazy"
           src={
             Object {
