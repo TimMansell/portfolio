@@ -7,14 +7,13 @@ import PortfolioIcons from './PortfolioIcons';
 import Picture from '../Picture';
 import Labels from '../Labels';
 
-import useInViewport from 'hooks/useInViewport';
-
 import styles from './PortfolioItem.module.scss';
 
 export const PortfolioItem = ({
-  src,
+  img,
   title,
-  year,
+  years,
+  types,
   description,
   tech,
   url,
@@ -22,14 +21,6 @@ export const PortfolioItem = ({
 }) => {
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
-  const isInViewport = useInViewport(cubeElement, 300);
-
-  const { name, types, fallback } = src;
-  const srcs = types.map((type) => ({
-    type,
-    src: require(`./img/${name}.${type}`),
-  }));
-  const defaultImg = require(`./img/${name}.${fallback}`);
 
   const getCubeHeight = debounce(() => {
     const { clientHeight } = cubeElement.current;
@@ -38,6 +29,17 @@ export const PortfolioItem = ({
       transformOrigin: `50% 50% -${clientHeight / 2}px`,
     });
   });
+
+  const labels = [
+    {
+      type: 'secondary',
+      items: [...years, ...types],
+    },
+    {
+      type: 'primary',
+      items: tech,
+    },
+  ];
 
   // Check height of image as intially it is lazy loaded.
   useEffect(() => {
@@ -51,9 +53,18 @@ export const PortfolioItem = ({
       <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
         <div className={styles.browser}>
           <PortfolioIcons title={title} />
-          {isInViewport && (
-            <Picture srcs={srcs} name={title} defaultImg={defaultImg} />
-          )}
+          <Picture
+            src={`Portfolio/img/${img}`}
+            title={`${title} portfolio item`}
+            types={['avif', 'webp', 'jpg']}
+            srcSizes={[
+              {
+                sizes: ['480', '640', '768', '1024', '1280'],
+              },
+            ]}
+            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+            isLazy
+          />
         </div>
 
         <div className={styles.info}>
@@ -82,9 +93,8 @@ export const PortfolioItem = ({
         </div>
       </div>
       <div className={styles.labels}>
-        <Labels items={[year]} type="secondary" />
+        <Labels labels={labels} />
       </div>
-      <Labels items={tech} type="primary" />
     </div>
   );
 };
@@ -92,9 +102,10 @@ export const PortfolioItem = ({
 export default PortfolioItem;
 
 PortfolioItem.propTypes = {
-  src: PropTypes.object.isRequired,
+  img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  year: PropTypes.string.isRequired,
+  years: PropTypes.array.isRequired,
+  types: PropTypes.array.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.array.isRequired,
   url: PropTypes.string.isRequired,

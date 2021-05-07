@@ -6,6 +6,8 @@ import Header from '../Header';
 
 const props = {
   title: 'Test Title',
+  text: 'text',
+  type: 'primary',
 };
 
 describe('Header', () => {
@@ -23,7 +25,7 @@ describe('Header', () => {
   });
 
   it('Should display a sub-title', () => {
-    const wrapper = shallow(<Header {...props} text="text" />);
+    const wrapper = shallow(<Header {...props} />);
 
     expect(wrapper.find('[data-test="heading-description"]').text()).toEqual(
       'text'
@@ -31,27 +33,25 @@ describe('Header', () => {
   });
 
   it('Should display a primary class', () => {
-    const wrapper = shallow(<Header {...props} primary />);
+    const wrapper = shallow(<Header {...props} />);
 
     expect(wrapper.hasClass('headingPrimary')).toBeTruthy();
   });
 
   it('Should display a secondary class', () => {
-    const wrapper = shallow(<Header {...props} secondary />);
+    const wrapper = shallow(<Header {...props} type="secondary" />);
 
     expect(wrapper.hasClass('headingSecondary')).toBeTruthy();
   });
 
   it('Should display a teritiary class', () => {
-    const wrapper = shallow(<Header {...props} tertiary />);
+    const wrapper = shallow(<Header {...props} type="tertiary" />);
 
     expect(wrapper.hasClass('headingTertiary')).toBeTruthy();
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer
-      .create(<Header {...props} text="text" />)
-      .toJSON();
+    const snapshot = renderer.create(<Header {...props} />).toJSON();
 
     expect(snapshot).toMatchSnapshot();
   });

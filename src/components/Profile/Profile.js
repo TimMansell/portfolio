@@ -3,20 +3,34 @@ import { Link } from 'react-scroll';
 
 import SocialIcons from 'components/SocialIcons';
 import Header from 'components/Header';
+import Image from '../Image';
 
 import styles from './Profile.module.scss';
 
 export const Profile = () => {
   return (
     <>
-      <Header title="A little bit about myself" primary />
+      <Header
+        title="Profile"
+        text="I am an experienced and ambitious Front-end Engineer with over 8 years
+          commercial experience in a digital agency environment. The last four
+          years I have worked client-side. "
+        type="primary"
+      />
+
+      <div className={styles.image}>
+        <Image
+          src={`Profile/img/undraw_feeling_proud_qne1.svg`}
+          alt="alt"
+          width="350"
+          isPadded
+        />
+      </div>
 
       <div className={styles.profile}>
         <p>
-          I am an experienced and ambitious Front-end Engineer with over 8 years
-          commercial experience in a digital agency environment. The last four
-          years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS
-          (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.
+          I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS,
+          NPM/Yarn, and Webpack.
         </p>
 
         <p>

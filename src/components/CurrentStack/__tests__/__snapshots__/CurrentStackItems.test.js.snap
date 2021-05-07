@@ -14,22 +14,27 @@ exports[`CurrentStackItems should match snapshot 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      <img
-        alt="Item 1"
-        className="img"
-        src={
-          Object {
-            "ReactComponent": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "render": [Function],
-            },
-            "__esModule": true,
-            "default": "react.svg",
+      <div
+        className="container"
+      >
+        <img
+          alt="react"
+          className="image"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "react.svg",
+            }
           }
-        }
-        title="Item 1"
-        width="65"
-      />
+          title="react"
+          width="65"
+        />
+      </div>
     </a>
   </div>
   <div
@@ -41,22 +46,27 @@ exports[`CurrentStackItems should match snapshot 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      <img
-        alt="Item 2"
-        className="img"
-        src={
-          Object {
-            "ReactComponent": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "render": [Function],
-            },
-            "__esModule": true,
-            "default": "nodejs.svg",
+      <div
+        className="container"
+      >
+        <img
+          alt="nodejs"
+          className="image"
+          loading="lazy"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "nodejs.svg",
+            }
           }
-        }
-        title="Item 2"
-        width="90"
-      />
+          title="nodejs"
+          width="90"
+        />
+      </div>
     </a>
   </div>
 </div>

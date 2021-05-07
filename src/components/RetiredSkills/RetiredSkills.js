@@ -9,9 +9,9 @@ export const RetiredSkills = () => {
   return (
     <>
       <Header
-        title="Retired Skills"
-        text="I am still highly skilled in this area, but I have since moved onto newer tech"
-        tertiary
+        title="Older Skills"
+        text="I am still highly skilled in this area, but have since moved onto newer tech"
+        type="tertiary"
       />
 
       <ListItems items={skills} />

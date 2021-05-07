@@ -9,7 +9,7 @@ export const CurrentStack = () => {
       <Header
         title="Current Stack"
         text="I spend most of my time with these technologies / tools / methodologies"
-        primary
+        type="primary"
       />
 
       <CurrentStackItems />

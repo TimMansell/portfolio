@@ -2,14 +2,14 @@
 @import 'utilities/pxtorem';
 
 .label {
-  color: var(--colour-5);
+  color: var(--colour-4);
   padding: var(--vr-xxs);
   border-radius: 3px;
   font-size: pxtorem(12);
   line-height: 1.2;
 
   @media (min-width: $bp-xxxl) {
-    font-size: pxtorem(16);
+    font-size: pxtorem(14);
   }
 }
 
@@ -22,7 +22,7 @@
 }
 
 .isTertiary {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--colour-4-transparent-1);
 }
 
 .isLarge {

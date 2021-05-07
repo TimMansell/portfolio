@@ -1,7 +1,8 @@
 [
   {
     "title": "Solitaire",
-    "year": "2020",
+    "years": ["2020", "2021"],
+    "types": ["Personal", "Solo"],
     "description": "During lockdown I built a card game",
     "tech": [
       "Vue CLI",
@@ -10,72 +11,69 @@
       "SCSS",
       "PostCSS",
       "ES2015+",
+      "Yarn",
       "Babel",
       "Webpack",
       "GraphQL",
       "Netlify",
       "Jest",
-      "Cypress"
+      "Cypress",
+      "MongoDB"
     ],
     "url": "https://solitaire.timmansell.com",
     "source": "https://github.com/TimMansell/vue-solitaire",
-    "src": {
-      "name": "solitaire-project",
-      "types": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "solitaire-project"
   },
   {
     "title": "Find a Course",
-    "year": "2018 - 2020",
-    "description": "University of Melbourne's study portal. I was part of a team that built the Front-end.",
+    "years": ["2018", "2019", "2020"],
+    "types": ["Professional", "Team"],
+    "description": "University of Melbourne's study portal",
     "tech": [
       "VueJS",
       "Vuex",
       "NuxtJS",
       "PostCSS",
       "ES2015+",
+      "Yarn",
       "Babel",
       "Webpack",
       "Netlify",
+      "Semaphore",
       "AWS",
       "Jest",
       "Cypress"
     ],
     "url": "https://study.unimelb.edu.au/find",
-    "src": {
-      "name": "unimelb",
-      "types": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "find-a-course-unimelb-project"
   },
   {
     "title": "myBupa",
-    "year": "2016 - 2017",
-    "description": "Responsive website rebuild of Bupa's health insurance portal.  I was part of a team that built the Front-end. Built on top of .NET stack",
+    "years": ["2016", "2017"],
+    "types": ["Professional", "Team", "Password Protected"],
+    "description": "Responsive website rebuild of Bupa's health insurance portal",
     "tech": [
       "AngularJS",
       "Bootstrap 3",
       "SCSS",
       "PostCSS",
       "ES2015+",
+      "Yarn",
       "Babel",
       "Webpack",
       "Gulp"
     ],
     "url": "https://my.bupa.com.au",
-    "src": {
-      "name": "my-bupa",
-      "types": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "my-bupa-portal-project"
   },
   {
     "title": "Captain's Choice",
-    "year": "2016",
-    "description": "Responsive website rebuild of Captain's Choice website. I was part of a team that built the Front-end. Built on top of .NET stack",
+    "years": ["2015"],
+    "types": ["Professional", "Team", "Deprecated"],
+    "description": "Responsive website rebuild of Captain's Choice website",
     "tech": [
       "AngularJS",
+      "npm",
       "Bootstrap 3",
       "SCSS",
       "Compass",
@@ -83,36 +81,26 @@
       "Gulp",
       "Bower"
     ],
-    "url": "https://web.archive.org/web/20160228234736/http://www.captainschoice.com.au/",
-    "src": {
-      "name": "captains-choice",
-      "types": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "url": "https://web.archive.org/web/20150227160933/http://www.captainschoice.com.au/",
+    "img": "captains-choice-project"
   },
   {
     "title": "Web Components",
-    "year": "2015",
+    "years": ["2015"],
+    "types": ["Presentation", "Solo"],
     "description": "A presentation about Web Components",
     "tech": ["Web Components", "Reveal.js"],
     "url": "//web-components.timmansell.com",
     "source": "https://github.com/TimMansell/web-components",
-    "src": {
-      "name": "web-components-presentation",
-      "types": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "web-components-presentation"
   },
   {
-    "title": "SASS Knowledgeshare",
-    "year": "2014",
+    "title": "SASS / Compass",
+    "years": ["2014"],
+    "types": ["Presentation", "Solo"],
     "description": "A presentation about SASS and Compass",
-    "tech": ["SCSS", "Compass"],
+    "tech": ["SCSS", "Compass", "CSS"],
     "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY",
-    "src": {
-      "name": "sass-compass-presentation",
-      "types": ["avif", "webp"],
-      "fallback": "jpg"
-    }
+    "img": "sass-compass-presentation"
   }
 ]

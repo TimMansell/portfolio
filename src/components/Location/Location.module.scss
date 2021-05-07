@@ -1,23 +1,13 @@
-@import 'variables';
 @import 'utilities/pxtorem';
 
 .location {
-  font-size: pxtorem(16);
-  opacity: 0;
-  color: var(--secondary-text-colour);
-  font-weight: 300;
+  composes: hero shadow from '~scss/helpers/text.scss';
+  font-size: pxtorem(24);
   letter-spacing: pxtorem(1);
-  line-height: 1.5;
   text-transform: uppercase;
-  text-shadow: 1px 1px var(--colour-1-alt-2);
   animation: location 0.5s ease-in-out;
   animation-delay: var(--animation-location-delay);
   animation-fill-mode: forwards;
-
-  @media (min-width: $bp-md) {
-    font-size: pxtorem(18);
-    text-shadow: 2px 2px var(--tertiary-text-colour);
-  }
 }
 
 @keyframes location {

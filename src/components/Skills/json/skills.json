@@ -42,10 +42,10 @@
       "Babel",
       "Webpack",
       "JSX",
-      "JSON",
+      "Functional Programming (FP)",
       "Async / Await",
       "Immutable",
-      "Functional Programming (FP)"
+      "JSON"
     ],
     "icon": {
       "name": "js",
@@ -145,6 +145,7 @@
       "Browserstack",
       "Jest",
       "Cypress",
+      "Vue Test Utils",
       "Enzyme",
       "Unit",
       "e2e",

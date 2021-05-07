@@ -6,15 +6,12 @@ import PortfolioItem from '../PortfolioItem';
 
 const defaultProps = {
   title: 'Title',
-  year: '2020',
+  years: ['2020'],
+  types: ['Personal'],
   description: 'Description',
   tech: ['Tech', 'Tech 2'],
   url: 'url.com',
-  src: {
-    name: 'solitaire-project',
-    types: ['avif', 'webp'],
-    fallback: 'jpg',
-  },
+  img: 'test',
   source: 'source',
 };
 
@@ -47,15 +44,16 @@ describe('PortfolioItem', () => {
   });
 
   it('should not render source button', () => {
-    const { title, year, description, tech, url, src } = defaultProps;
+    const { title, years, description, tech, url, img, types } = defaultProps;
 
     const props = {
       title,
-      year,
+      years,
+      types,
       description,
       tech,
       url,
-      src,
+      img,
     };
     const wrapper = shallow(<PortfolioItem {...props} />);
     const btn = wrapper.find('[data-test="portfolio-source-btn"]');

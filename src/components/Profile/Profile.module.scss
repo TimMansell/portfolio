@@ -1,8 +1,16 @@
-@import 'utilities/pxtorem';
+@import 'variables';
 
 .profile {
   margin-bottom: var(--vr-xl);
   text-align: center;
+}
+
+.image {
+  margin-bottom: var(--vr-lg);
+
+  @media (min-width: $bp-sm) {
+    margin-bottom: var(--vr-xxl);
+  }
 }
 
 .link {

@@ -6,18 +6,49 @@ Array [
     className="heading headingPrimary"
   >
     <h2
-      aria-label="A little bit about myself"
+      aria-label="Profile"
       className="title"
       data-test="heading-title"
     >
-      A little bit about myself
+      Profile
     </h2>
+    <p
+      className="description"
+      data-test="heading-description"
+    >
+      I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. 
+    </p>
+  </div>,
+  <div
+    className="image"
+  >
+    <div
+      className="container isPadded"
+    >
+      <img
+        alt="alt"
+        className="image"
+        loading="lazy"
+        src={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "undraw_feeling_proud_qne1.svg",
+          }
+        }
+        title="alt"
+        width="350"
+      />
+    </div>
   </div>,
   <div
     className="profile"
   >
     <p>
-      I am an experienced and ambitious Front-end Engineer with over 8 years commercial experience in a digital agency environment. The last four years I have worked client-side. I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.
+      I specialise in HTML5, CSS3, SCSS, JS (ES6+), React, VueJS, NodeJS, NPM/Yarn, and Webpack.
     </p>
     <p>
       I develop with best practices in mind and adhere to W3C standards. Unfortunately not all browsers are created equal, so I utilise Progressive Enhancement (where possible), and use CSS/JS transpilers (PostCSS & Babel), to ensure my code works across all popluar evergreen browsers.

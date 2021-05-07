@@ -1,13 +1,36 @@
+@import 'variables';
+@import 'utilities/text-shadow';
+
 .primary {
   color: var(--primary-text-colour);
 }
 
 .secondary {
   color: var(--secondary-text-colour);
-  text-shadow: -1px -1px var(--colour-1-alt-2);
 }
 
 .tertiary {
   color: var(--secondary-text-colour);
-  text-shadow: -1px -1px var(--colour-2-alt-1);
+}
+
+.hero {
+  font-family: var(--font-family-secondary);
+  color: var(--secondary-text-colour);
+  opacity: 0;
+}
+
+.shadow {
+  text-shadow: text-shadow(1, 3, var(--primary-text-colour));
+
+  @media (min-width: $bp-md) {
+    text-shadow: text-shadow(1, 2, var(--tertiary-text-colour));
+  }
+}
+
+.shadowlg {
+  text-shadow: text-shadow(1, 4, var(--primary-text-colour));
+
+  @media (min-width: $bp-md) {
+    text-shadow: text-shadow(1, 4, var(--tertiary-text-colour));
+  }
 }

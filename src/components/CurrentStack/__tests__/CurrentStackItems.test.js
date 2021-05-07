@@ -8,15 +8,13 @@ jest.mock(
   '../json/stack.json',
   () => [
     {
-      name: 'Item 1',
+      name: 'react',
       url: 'url',
-      img: 'react.svg',
       width: '65',
     },
     {
-      name: 'Item 2',
+      name: 'nodejs',
       url: 'url',
-      img: 'nodejs.svg',
       width: '90',
     },
   ],

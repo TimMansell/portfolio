@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SvgImage from '../SvgImage';
+import Image from '../Image';
 
 import styles from './CurrentStack.module.scss';
 
-export const CurrentStackItem = ({ url, img, name, width }) => {
-  const src = require(`./img/${img}`);
+export const CurrentStackItem = ({ url, name, width, height }) => {
+  const img = name.toLowerCase();
 
   return (
     <div className={styles.item}>
@@ -16,7 +16,12 @@ export const CurrentStackItem = ({ url, img, name, width }) => {
         rel="noopener noreferrer"
         data-test="stack-item-link"
       >
-        <SvgImage src={src} name={name} width={width} />
+        <Image
+          src={`CurrentStack/img/${img}.svg`}
+          alt={name}
+          width={width}
+          height={height}
+        />
       </a>
     </div>
   );
@@ -24,9 +29,9 @@ export const CurrentStackItem = ({ url, img, name, width }) => {
 
 CurrentStackItem.propTypes = {
   url: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
 };
 
 export default CurrentStackItem;

@@ -33,6 +33,37 @@ exports[`PortfolioItem should match snapshot 1`] = `
           Title
         </div>
       </div>
+      <picture
+        data-e2e="picture"
+        title="Title portfolio item"
+      >
+        <source
+          data-test="picture-source-0"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="test-480.avif 480w, test-640.avif 640w, test-768.avif 768w, test-1024.avif 1024w, test-1280.avif 1280w"
+          type="image/avif"
+        />
+        <source
+          data-test="picture-source-1"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
+          type="image/webp"
+        />
+        <source
+          data-test="picture-source-2"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
+          type="image/jpg"
+        />
+        <img
+          alt="Title portfolio item"
+          className="img"
+          data-e2e="picture-img"
+          data-test="picture-img"
+          loading="lazy"
+          src="test-1280.jpg"
+        />
+      </picture>
     </div>
     <div
       className="info"
@@ -83,22 +114,22 @@ exports[`PortfolioItem should match snapshot 1`] = `
       >
         2020
       </li>
+      <li
+        className="label isSecondary"
+      >
+        Personal
+      </li>
+      <li
+        className="label isPrimary"
+      >
+        Tech
+      </li>
+      <li
+        className="label isPrimary"
+      >
+        Tech 2
+      </li>
     </ul>
   </div>
-  <ul
-    className="labels"
-    data-test="labels"
-  >
-    <li
-      className="label isPrimary"
-    >
-      Tech
-    </li>
-    <li
-      className="label isPrimary"
-    >
-      Tech 2
-    </li>
-  </ul>
 </div>
 `;

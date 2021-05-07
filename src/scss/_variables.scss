@@ -11,6 +11,8 @@ $secondary-hue: 227;
 $secondary-saturation: 9%;
 $tertiary-hue: 345;
 $tertiary-saturation: 100%;
+$quadiary-hue: 0;
+$quadiary-saturation: 0%;
 
 // Breakpoints.
 $bp-xs: 360px;
@@ -22,17 +24,17 @@ $bp-xxl: 1600px;
 $bp-xxxl: 1921px;
 
 :root {
-  --font-family-primary: 'Open Sans', sans-serif;
-  --font-family-secondary: 'Open Sans', serif;
-  --font-family-heading: 'Open Sans', serif;
+  --font-family-primary: 'Noto Sans', sans-serif;
+  --font-family-secondary: 'Contrail One', sans-serif;
+  --font-weight-strong: 700;
+  --font-weight-normal: 400;
 
   // Colours.
   --colour-1: hsl(#{$primary-hue}, #{$primary-saturation}, 36%);
   --colour-2: hsl(#{$secondary-hue}, #{$secondary-saturation}, 20%);
   --colour-3: hsl(#{$tertiary-hue}, #{$tertiary-saturation}, 39%);
-  --colour-4: hsl(0, 0%, 20%);
-  --colour-5: hsl(0, 0%, 100%);
-  --colour-6: hsl(0, 0%, 0%);
+  --colour-4: hsl(#{$quadiary-hue}, #{$quadiary-saturation}, 100%);
+  --colour-5: hsl(#{$quadiary-hue}, #{$quadiary-saturation}, 0%);
 
   // Colour variations.
   --colour-1-alt-1: hsl(#{$primary-hue}, #{$primary-saturation}, 31%);
@@ -50,15 +52,25 @@ $bp-xxxl: 1921px;
     #{$primary-saturation},
     36%,
     50%);
+  --colour-1-transparent-2:
+    hsl(#{$primary-hue},
+    #{$primary-saturation},
+    36%,
+    25%);
+  --colour-4-transparent-1:
+    hsl(#{$primary-hue},
+    #{$primary-saturation},
+    100%,
+    20%);
 
   // Text colours.
-  --primary-text-colour: var(--colour-4);
-  --secondary-text-colour: var(--colour-5);
-  --tertiary-text-colour: var(--colour-6);
+  --primary-text-colour: var(--colour-2);
+  --secondary-text-colour: var(--colour-4);
+  --tertiary-text-colour: var(--colour-5);
 
   // Borders
   --bdr-primary: var(--colour-2);
-  --bdr-secondary: var(--colour-5);
+  --bdr-secondary: var(--colour-4);
 
   // Vertical rythm.
   --vr: #{pxtorem(16)};
@@ -69,6 +81,7 @@ $bp-xxxl: 1921px;
   --vr-lg: calc(var(--vr) * 3);
   --vr-xl: calc(var(--vr) * 4);
   --vr-xxl: calc(var(--vr) * 5);
+  --vr-sl: calc(var(--vr) * 6);
 
   // Animations
   --animation-tagline-delay: 5s;

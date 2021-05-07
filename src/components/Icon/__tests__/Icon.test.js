@@ -24,10 +24,14 @@ import Icon, {
   IconAppStoreIos,
 } from '../Icon';
 
+const defaultprops = {
+  name: ['fab', 'css3-alt'],
+};
+
 describe('Default Icon', () => {
   it('should match snapshot', () => {
     const props = {
-      name: ['fab', 'css3-alt'],
+      ...defaultprops,
       className: 'test-class',
       size: 'md',
       padded: true,
@@ -40,7 +44,7 @@ describe('Default Icon', () => {
 
   it('should render my default Icon', () => {
     const props = {
-      name: ['fa', 'code'],
+      ...defaultprops,
     };
 
     const wrapper = mount(<Icon {...props} />);
@@ -50,6 +54,7 @@ describe('Default Icon', () => {
 
   it('should render a custom class', () => {
     const props = {
+      ...defaultprops,
       className: 'test-class',
     };
 
@@ -60,6 +65,7 @@ describe('Default Icon', () => {
 
   it('should add a size class', () => {
     const props = {
+      ...defaultprops,
       size: 'md',
     };
 
@@ -70,6 +76,7 @@ describe('Default Icon', () => {
 
   it('should add a margin', () => {
     const props = {
+      ...defaultprops,
       padded: true,
     };
 
@@ -83,6 +90,7 @@ describe('Default Icon', () => {
 describe('Icons', () => {
   it('should render a custom class', () => {
     const props = {
+      ...defaultprops,
       className: 'test-class',
     };
 
@@ -93,6 +101,7 @@ describe('Icons', () => {
 
   it('should have a padded prop', () => {
     const props = {
+      ...defaultprops,
       padded: true,
     };
 
@@ -103,6 +112,7 @@ describe('Icons', () => {
 
   it('should have a size prop', () => {
     const props = {
+      ...defaultprops,
       size: 'md',
     };
 

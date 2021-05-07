@@ -5,25 +5,36 @@ import classnames from 'classnames';
 import Label from './Label';
 import styles from './Labels.module.scss';
 
-export const Labels = ({ items, type, size, centered }) => {
+import { useIsFlexGapSupported } from 'hooks/useFlexGap';
+
+export const Labels = ({ labels, size, centered }) => {
+  const hasFlexGap = useIsFlexGapSupported();
+
   const labelClasses = classnames(styles.labels, {
     [styles.isLarge]: size === 'lg',
     [styles.isCentered]: centered,
+    [styles.flexGap]: hasFlexGap,
   });
 
   return (
     <ul className={labelClasses} data-test="labels">
-      {items.map((item, index) => (
-        <Label key={index} label={item} type={type} size={size} />
-      ))}
+      {labels.map(({ items, type }) =>
+        items.map((item, index) => (
+          <Label key={index} label={item} type={type} size={size} />
+        ))
+      )}
     </ul>
   );
 };
 
 Labels.propTypes = {
-  items: PropTypes.array.isRequired,
-  type: PropTypes.string.isRequired,
-  size: PropTypes.string,
+  labels: PropTypes.arrayOf(
+    PropTypes.exact({
+      type: PropTypes.string.isRequired,
+      items: PropTypes.array.isRequired,
+    })
+  ).isRequired,
+  size: PropTypes.oneOf(['lg']),
   centered: PropTypes.bool,
 };
 

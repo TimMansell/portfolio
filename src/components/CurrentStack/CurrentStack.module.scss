@@ -1,7 +1,10 @@
 @import 'variables';
 @import 'utilities/pxtorem';
+@import 'utilities/flex-gap';
 
 .stack {
+  @include flex-gap(--vr-md);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,7 +14,6 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  padding: var(--vr-sm);
   width: 100%;
 
   &:last-of-type {
@@ -19,7 +21,6 @@
   }
 
   @media (min-width: $bp-sm) {
-    margin-bottom: 0;
     width: auto;
   }
 }

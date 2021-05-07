@@ -1,3 +1,5 @@
+import 'sanitize.css';
+
 import React from 'react';
 import { MenuContextProvider } from 'context/mobileMenu';
 
@@ -11,8 +13,8 @@ import WindowLock from 'components/WindowLock';
 export const App = () => {
   return (
     <MenuContextProvider>
-      <Navigation />
       <Intro />
+      <Navigation />
       <Main />
       <GoToTop />
       <WindowLock />
