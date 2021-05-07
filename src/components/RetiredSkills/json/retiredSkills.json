@@ -1,7 +1,15 @@
 [
   {
     "title": "Code",
-    "list": ["PHP", "MySQL", "Flash"],
+    "list": [
+      "HTML4",
+      "XHTML",
+      "XML",
+      "PHP",
+      "MySQL",
+      "Flash",
+      "HTML5 Boilerplate"
+    ],
     "icon": {
       "name": "code",
       "family": "fa"
@@ -9,7 +17,14 @@
   },
   {
     "title": "CSS",
-    "list": ["LESS", "Compass", "OOCSS", "SMACSS"],
+    "list": [
+      "LESS",
+      "Compass",
+      "OOCSS",
+      "SMACSS",
+      "Normalize.css",
+      "CSS Reset"
+    ],
     "icon": {
       "name": "css3-alt",
       "family": "fab"
@@ -17,7 +32,7 @@
   },
   {
     "title": "JS",
-    "list": ["Classes", "jQuery", "jQuery UI", "Modernizr"],
+    "list": ["ES5", "Classes", "jQuery", "jQuery UI", "Modernizr"],
     "icon": {
       "name": "js",
       "family": "fab"
@@ -33,7 +48,7 @@
   },
   {
     "title": "Frameworks",
-    "list": ["AngularJS", "Backbone.js", "EXT JS", "Ionic"],
+    "list": ["AngularJS", "Backbone.js", "EXT JS", "Ionic", "jQuery Mobile"],
     "icon": {
       "name": "cogs",
       "family": "fa"
