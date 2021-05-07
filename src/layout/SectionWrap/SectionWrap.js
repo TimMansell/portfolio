@@ -14,6 +14,7 @@ const SectionWrap = ({ container, type, id, children }) => {
   const containerClasses = classnames(styles.container, {
     [styles.containerMedium]: container === 'medium',
     [styles.containerLarge]: container === 'large',
+    [styles.containerSmall]: container === 'small',
   });
 
   return (
@@ -24,7 +25,7 @@ const SectionWrap = ({ container, type, id, children }) => {
 };
 
 SectionWrap.propTypes = {
-  container: PropTypes.oneOf(['medium', 'large']),
+  container: PropTypes.oneOf(['medium', 'large', 'small']),
   type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
   id: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired,
