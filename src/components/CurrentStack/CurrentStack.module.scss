@@ -3,7 +3,7 @@
 @import 'utilities/flex-gap';
 
 .stack {
-  @include flex-gap(--vr-sm);
+  @include flex-gap(--vr-md);
 
   display: flex;
   flex-wrap: wrap;

@@ -2,12 +2,12 @@
 @import 'utilities/pxtorem';
 
 .section {
-  padding-top: var(--vr-xl);
-  padding-bottom: var(--vr-xl);
+  padding-top: var(--vr-xxl);
+  padding-bottom: var(--vr-xxl);
 
   @media (min-width: $bp-sm) {
-    padding-top: var(--vr-xxl);
-    padding-bottom: var(--vr-xxl);
+    padding-top: var(--vr-sl);
+    padding-bottom: var(--vr-sl);
   }
 }
 
@@ -32,6 +32,13 @@
 
   @media (min-width: $bp-xl) {
     max-width: 1140px;
+  }
+
+  &Small {
+    @media (min-width: $bp-xl) {
+      width: 60%;
+      max-width: 60%;
+    }
   }
 
   &Medium {

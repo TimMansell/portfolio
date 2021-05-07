@@ -2,81 +2,97 @@
   {
     "name": "React",
     "url": "https://reactjs.org/",
-    "width": "65"
+    "width": "65",
+    "height": "58"
   },
   {
     "name": "NodeJS",
     "url": "https://nodejs.org/en/",
-    "width": "90"
+    "width": "90",
+    "height": "55"
   },
   {
     "name": "VueJS",
     "url": "https://vuejs.org/",
-    "width": "60"
+    "width": "60",
+    "height": "62"
   },
   {
     "name": "NPM",
     "url": "https://www.npmjs.com/",
-    "width": "90"
+    "width": "90",
+    "height": "35"
   },
   {
     "name": "Webpack",
     "url": "https://webpack.js.org/",
-    "width": "75"
+    "width": "75",
+    "height": "75"
   },
   {
     "name": "Yarn",
     "url": "https://yarnpkg.com",
-    "width": "130"
+    "width": "130",
+    "height": "58"
   },
   {
     "name": "ESLint",
     "url": "https://eslint.org/",
-    "width": "75"
+    "width": "75",
+    "height": "66"
   },
   {
     "name": "Jest",
     "url": "https://jestjs.io/",
-    "width": "50"
+    "width": "50",
+    "height": "55"
   },
   {
     "name": "Babel",
     "url": "https://babeljs.io/",
-    "width": "140"
+    "width": "140",
+    "height": "64"
   },
   {
     "name": "Cypress",
     "url": "https://www.cypress.io/",
-    "width": "60"
+    "width": "60",
+    "height": "60"
   },
   {
     "name": "SASS",
     "url": "https://sass-lang.com/",
-    "width": "70"
+    "width": "70",
+    "height": "53"
   },
   {
     "name": "VSCode",
     "url": "https://code.visualstudio.com/",
-    "width": "55"
+    "width": "55",
+    "height": "55"
   },
   {
     "name": "Git",
     "url": "https://git-scm.com/",
-    "width": "105"
+    "width": "105",
+    "height": "44"
   },
   {
     "name": "PostCSS",
     "url": "https://postcss.org/",
-    "width": "60"
+    "width": "60",
+    "height": "60"
   },
   {
     "name": "Netlify",
     "url": "https://www.netlify.com/",
-    "width": "140"
+    "width": "140",
+    "height": "38"
   },
   {
     "name": "GraphQL",
     "url": "https://graphql.org/",
-    "width": "55"
+    "width": "55",
+    "height": "55"
   }
 ]
