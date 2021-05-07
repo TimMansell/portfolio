@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.isPadded {
+  padding: 0 var(--vr);
+}

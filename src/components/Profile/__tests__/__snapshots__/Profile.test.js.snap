@@ -20,6 +20,31 @@ Array [
     </p>
   </div>,
   <div
+    className="image"
+  >
+    <div
+      className="container isPadded"
+    >
+      <img
+        alt="alt"
+        className="image"
+        loading="lazy"
+        src={
+          Object {
+            "ReactComponent": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+            "__esModule": true,
+            "default": "undraw_feeling_proud_qne1.svg",
+          }
+        }
+        title="alt"
+        width="350"
+      />
+    </div>
+  </div>,
+  <div
     className="profile"
   >
     <p>

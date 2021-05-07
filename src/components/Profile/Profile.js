@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 
 import SocialIcons from 'components/SocialIcons';
 import Header from 'components/Header';
+import Image from '../Image';
 
 import styles from './Profile.module.scss';
 
@@ -16,6 +17,15 @@ export const Profile = () => {
           years I have worked client-side. "
         type="primary"
       />
+
+      <div className={styles.image}>
+        <Image
+          src={`Profile/img/undraw_feeling_proud_qne1.svg`}
+          alt="alt"
+          width="350"
+          isPadded
+        />
+      </div>
 
       <div className={styles.profile}>
         <p>
