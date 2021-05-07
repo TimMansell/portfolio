@@ -25,10 +25,10 @@ describe('Navigation', () => {
       cy.get('#skills').should('be.visible');
     });
 
-    it('should scroll page to retired skills section', () => {
-      cy.get('[data-e2e="navigation-retired-skills"]').click();
+    it('should scroll page to older skills section', () => {
+      cy.get('[data-e2e="navigation-older-skills"]').click();
 
-      cy.get('#retired-skills').should('be.visible');
+      cy.get('#older-skills').should('be.visible');
     });
 
     it('should scroll page to stack section', () => {

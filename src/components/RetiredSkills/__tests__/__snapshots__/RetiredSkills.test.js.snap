@@ -6,17 +6,17 @@ Array [
     className="heading headingTertiary"
   >
     <h2
-      aria-label="Retired Skills"
+      aria-label="Older Skills"
       className="title"
       data-test="heading-title"
     >
-      Retired Skills
+      Older Skills
     </h2>
     <p
       className="description"
       data-test="heading-description"
     >
-      I am still highly skilled in this area, but I have since moved onto newer tech
+      I am still highly skilled in this area, but have since moved onto newer tech
     </p>
   </div>,
   <div
