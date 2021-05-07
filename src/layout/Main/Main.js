@@ -24,7 +24,7 @@ const Main = () => {
         <Skills />
       </SectionWrap>
 
-      <SectionWrap id="retired-skills" type="secondary" container="medium">
+      <SectionWrap id="older-skills" type="secondary" container="medium">
         <RetiredSkills />
       </SectionWrap>
 
