@@ -12,7 +12,7 @@ export const formatPicture = ({ name, title }) => {
     },
   ];
 
-  const types = ['avif', 'webp', 'jpg'];
+  const types = ['webp', 'jpg'];
 
   return {
     title,
