@@ -1,0 +1,46 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.learnMore {
+  display: none;
+  position: fixed;
+  bottom: pxtorem(90);
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  // Animate.
+  animation-duration: 1.5s;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+
+  @media (min-width: $bp-lg) {
+    display: block;
+  }
+}
+
+.scroll {
+  opacity: 0.7;
+}
+
+.link {
+  color: var(--secondary-text-colour);
+
+  &:hover {
+    color: var(--secondary-text-colour);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(8%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

@@ -1,0 +1,43 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: var(--vr-sm);
+
+  @media (min-width: $bp-sm) {
+    flex-direction: row;
+  }
+}
+
+.title {
+  font-family: var(--font-family-secondary);
+  font-size: pxtorem(36);
+  letter-spacing: pxtorem(1);
+  text-align: center;
+  margin-bottom: var(--vr-sm);
+
+  @media (min-width: $bp-sm) {
+    text-align: unset;
+    font-size: pxtorem(32);
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 20%;
+  margin-bottom: var(--vr-sm);
+
+  @media (min-width: $bp-sm) {
+    align-self: unset;
+    margin-right: var(--vr-sm);
+  }
+}

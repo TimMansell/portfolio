@@ -1,0 +1,128 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.container {
+  position: fixed;
+  z-index: calc(var(--z-overlay) - 1);
+  bottom: 0;
+  transform: translate(calc(50vw - 50%), -35%);
+}
+
+.hamburger {
+  text-indent: -9999px;
+  border: 0;
+  transition: background 0.3s;
+  width: pxtorem(60);
+  height: pxtorem(60);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--colour-2);
+  background-color: var(--colour-1);
+
+  @media (min-width: $bp-lg) {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &IsActive {
+    background-color: var(--colour-3);
+  }
+}
+
+.background {
+  position: absolute;
+  z-index: var(--z-below);
+  border-radius: 50%;
+  background-color: rgba(#000, 0.95);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  &IsOpen {
+    animation: open 0.3s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &IsClosed {
+    animation: close 0.2s ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes open {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(50);
+  }
+}
+
+@keyframes close {
+  from {
+    transform: scale(50);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  left: pxtorem(18);
+  right: pxtorem(18);
+  height: pxtorem(3);
+  background-color: var(--secondary-text-colour);
+  transition: background 0 0.3s;
+  box-shadow: -1px -1px var(--colour-1-alt);
+
+  &::after,
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: pxtorem(3);
+    background-color: var(--secondary-text-colour);
+    content: "";
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0;
+    box-shadow: -1px -1px var(--colour-1-alt);
+  }
+
+  &::before {
+    top: pxtorem(-10);
+    transition-property: top, transform;
+  }
+
+  &::after {
+    bottom: pxtorem(-10);
+    transition-property: bottom, transform;
+  }
+
+  &IsActive {
+    background: none;
+    box-shadow: none;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    &::before,
+    &::after {
+      transition-delay: 0, 0.3s;
+      box-shadow: none;
+    }
+  }
+}

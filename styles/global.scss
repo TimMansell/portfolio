@@ -1,0 +1,45 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+body {
+  font-family: var(--font-family-primary);
+  color: var(--primary-text-colour);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+p {
+  font-size: pxtorem(20);
+  margin-top: 0;
+  margin-bottom: var(--vr-md);
+
+  @media (min-width: $bp-sm) {
+    font-size: pxtorem(22);
+  }
+}
+
+a {
+  transition: color 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--secondary-text-colour);
+    outline: none;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}

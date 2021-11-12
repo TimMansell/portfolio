@@ -1,0 +1,29 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.hi {
+  composes: hero shadowlg from "../../styles/helpers/text.scss";
+  font-size: pxtorem(128);
+  letter-spacing: pxtorem(5);
+  height: 0;
+  margin: 0;
+  animation: hi 3s ease-in-out;
+  animation-fill-mode: forwards;
+
+  @media (min-width: $bp-md) {
+    font-size: pxtorem(160);
+  }
+}
+
+@keyframes hi {
+  35%,
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

@@ -1,0 +1,8 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.copyright {
+  color: var(--secondary-text-colour);
+  text-align: center;
+  font-size: pxtorem(14);
+}

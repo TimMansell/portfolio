@@ -1,0 +1,18 @@
+@import "styles/scssvars";
+
+.profile {
+  margin-bottom: var(--vr-xl);
+  text-align: center;
+}
+
+.image {
+  margin-bottom: var(--vr-lg);
+
+  @media (min-width: $bp-sm) {
+    margin-bottom: var(--vr-xxl);
+  }
+}
+
+.link {
+  composes: link from "styles/helpers/link.scss";
+}

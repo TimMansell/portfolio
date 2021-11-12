@@ -1,0 +1,26 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+@import "styles/utilities/flex-gap";
+
+.stack {
+  @include flex-gap(--vr-md);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $bp-sm) {
+    width: auto;
+  }
+}

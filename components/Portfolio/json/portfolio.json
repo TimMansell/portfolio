@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Solitaire",
+    "years": ["2020", "2021"],
+    "types": ["Personal", "Solo"],
+    "description": "During lockdown I built a card game",
+    "tech": [
+      "Vue CLI",
+      "VueJS",
+      "Vuex",
+      "SCSS",
+      "PostCSS",
+      "ES2015+",
+      "Yarn",
+      "Babel",
+      "Webpack",
+      "GraphQL",
+      "Netlify",
+      "Jest",
+      "Cypress",
+      "MongoDB"
+    ],
+    "url": "https://solitaire.timmansell.com",
+    "source": "https://github.com/TimMansell/vue-solitaire",
+    "img": "solitaire-project"
+  },
+  {
+    "title": "Find a Course",
+    "years": ["2018", "2019", "2020"],
+    "types": ["Professional", "Team"],
+    "description": "University of Melbourne's study portal",
+    "tech": [
+      "VueJS",
+      "Vuex",
+      "NuxtJS",
+      "PostCSS",
+      "ES2015+",
+      "Yarn",
+      "Babel",
+      "Webpack",
+      "Netlify",
+      "Semaphore",
+      "AWS",
+      "Jest",
+      "Cypress"
+    ],
+    "url": "https://study.unimelb.edu.au/find",
+    "img": "find-a-course-unimelb-project"
+  },
+  {
+    "title": "myBupa",
+    "years": ["2016", "2017"],
+    "types": ["Professional", "Team", "Password Protected"],
+    "description": "Responsive website rebuild of Bupa's health insurance portal",
+    "tech": [
+      "AngularJS",
+      "Bootstrap 3",
+      "SCSS",
+      "PostCSS",
+      "ES2015+",
+      "Yarn",
+      "Babel",
+      "Webpack",
+      "Gulp"
+    ],
+    "url": "https://my.bupa.com.au",
+    "img": "my-bupa-portal-project"
+  },
+  {
+    "title": "Captain's Choice",
+    "years": ["2015"],
+    "types": ["Professional", "Team", "Deprecated"],
+    "description": "Responsive website rebuild of Captain's Choice website",
+    "tech": [
+      "AngularJS",
+      "npm",
+      "Bootstrap 3",
+      "SCSS",
+      "Compass",
+      "jQuery",
+      "Gulp",
+      "Bower"
+    ],
+    "url": "https://web.archive.org/web/20150227160933/http://www.captainschoice.com.au/",
+    "img": "captains-choice-project"
+  },
+  {
+    "title": "Web Components",
+    "years": ["2015"],
+    "types": ["Presentation", "Solo"],
+    "description": "A presentation about Web Components",
+    "tech": ["Web Components", "Reveal.js"],
+    "url": "//web-components.timmansell.com",
+    "source": "https://github.com/TimMansell/web-components",
+    "img": "web-components-presentation"
+  },
+  {
+    "title": "SASS / Compass",
+    "years": ["2014"],
+    "types": ["Presentation", "Solo"],
+    "description": "A presentation about SASS and Compass",
+    "tech": ["SCSS", "Compass", "CSS"],
+    "url": "//docs.google.com/presentation/d/1ZE8mvgP5G_Th9zgRMEsbNZwAoKpsuWpacVbC1Y1C0GY",
+    "img": "sass-compass-presentation"
+  }
+]

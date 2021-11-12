@@ -1,0 +1,15 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.portfolio {
+  display: grid;
+  grid-gap: pxtorem(24);
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $bp-xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

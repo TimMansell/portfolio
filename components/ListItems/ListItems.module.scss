@@ -1,0 +1,16 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.items {
+  display: grid;
+  grid-gap: var(--vr-md);
+  color: var(--secondary-text-colour);
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $bp-xl) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,29 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.name {
+  composes: hero shadowlg from "styles/helpers/text.scss";
+  padding: var(--vr-md);
+  font-size: pxtorem(64);
+  letter-spacing: pxtorem(5);
+  text-transform: uppercase;
+  animation: title 1s ease-in-out;
+  animation-delay: var(--animation-name-delay);
+  animation-fill-mode: forwards;
+
+  @media (min-width: $bp-md) {
+    font-size: pxtorem(96);
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

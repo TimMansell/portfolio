@@ -1,0 +1,160 @@
+[
+  {
+    "title": "HTML",
+    "list": [
+      "HTML5",
+      "Semantic",
+      "SEO",
+      "a11y",
+      "Styleguides",
+      "Markdown",
+      "Web Components"
+    ],
+    "icon": {
+      "name": "html5",
+      "family": "fab"
+    }
+  },
+  {
+    "title": "CSS",
+    "list": [
+      "CSS3",
+      "SCSS",
+      "BEM",
+      "Flexbox",
+      "CSS Grid",
+      "PostCSS",
+      "CSS Modules",
+      "Mobile First",
+      "Responsive",
+      "Atomic"
+    ],
+    "icon": {
+      "name": "css3-alt",
+      "family": "fab"
+    }
+  },
+  {
+    "title": "JS",
+    "list": [
+      "ES2015+ (ES6)",
+      "Node.js",
+      "Babel",
+      "Webpack",
+      "JSX",
+      "Functional Programming (FP)",
+      "Async / Await",
+      "Immutable",
+      "JSON"
+    ],
+    "icon": {
+      "name": "js",
+      "family": "fab"
+    }
+  },
+  {
+    "title": "CLI",
+    "list": [
+      "NPM",
+      "Yarn",
+      "Git",
+      "Create React App",
+      "Vue CLI",
+      "ESLint",
+      "stylelint",
+      "Prettier",
+      "autoprefixer"
+    ],
+    "icon": {
+      "name": "terminal",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Frameworks",
+    "list": [
+      "React",
+      "Redux",
+      "Vue",
+      "Vuex",
+      "Nuxt",
+      "JAMstack",
+      "GraphQL",
+      "Bootstrap",
+      "Storybook"
+    ],
+    "icon": {
+      "name": "tools",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Tasks",
+    "list": [
+      "Performance",
+      "Optimisation",
+      "Image Optimisation",
+      "SEO",
+      "a11y",
+      "Security",
+      "Code Reviews",
+      "Pull Requests"
+    ],
+    "icon": {
+      "name": "tasks",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Automation",
+    "list": [
+      "Cont. Integration (CI)",
+      "Cont. Deployment (CD)",
+      "Unit Testing",
+      "e2e Testing",
+      "Netlify",
+      "Github Actions",
+      "Semaphore"
+    ],
+    "icon": {
+      "name": "cogs",
+      "family": "fa"
+    }
+  },
+  {
+    "title": "Applications",
+    "list": [
+      "GitHub",
+      "JIRA",
+      "Slack",
+      "Trello",
+      "Figma",
+      "FaunaDB",
+      "Windows",
+      "MacOS",
+      "VS Code"
+    ],
+    "icon": {
+      "name": "app-store-ios",
+      "family": "fab"
+    }
+  },
+  {
+    "title": "Testing",
+    "list": [
+      "Browserstack",
+      "Jest",
+      "Cypress",
+      "Vue Test Utils",
+      "Enzyme",
+      "Unit",
+      "e2e",
+      "snapshot",
+      "a11y"
+    ],
+    "icon": {
+      "name": "bug",
+      "family": "fa"
+    }
+  }
+]

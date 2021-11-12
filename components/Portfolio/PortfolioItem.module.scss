@@ -1,0 +1,130 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.portfolioItem {
+  perspective: 2000px;
+}
+
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.4, 1);
+  margin-bottom: var(--vr);
+
+  &:hover {
+    transform: rotateX(90deg);
+  }
+}
+
+.icon {
+  padding-left: var(--vr-xs);
+  padding-right: var(--vr-xs);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.browser {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  overflow: hidden;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  backface-visibility: hidden;
+  background: var(--colour-1);
+  padding: var(--vr-xs);
+  color: var(--secondary-text-colour);
+  text-align: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  @media (min-width: $bp-sm) {
+    padding: var(--vr-lg);
+  }
+
+  @media (min-width: $bp-xl) {
+    padding: var(--vr-xs);
+  }
+
+  @media (min-width: $bp-xxl) {
+    padding: var(--vr-lg);
+  }
+}
+
+.title {
+  font-family: var(--font-family-secondary);
+  font-size: pxtorem(32);
+  letter-spacing: pxtorem(1);
+  margin-bottom: var(--vr-xs);
+
+  @media (min-width: $bp-xs) {
+    font-size: pxtorem(36);
+    margin-bottom: var(--vr-sm);
+  }
+
+  @media (min-width: $bp-sm) {
+    font-size: pxtorem(42);
+  }
+
+  @media (min-width: $bp-xl) {
+    font-size: pxtorem(32);
+  }
+
+  @media (min-width: $bp-xxl) {
+    font-size: pxtorem(42);
+  }
+
+  @media (min-width: $bp-xxxl) {
+    font-size: pxtorem(48);
+    margin-bottom: var(--vr-md);
+  }
+}
+
+.description {
+  font-size: pxtorem(16);
+  line-height: 1.25;
+  margin-bottom: var(--vr-sm);
+
+  @media (min-width: $bp-xs) {
+    font-size: pxtorem(20);
+    margin-bottom: var(--vr-md);
+  }
+
+  @media (min-width: $bp-sm) {
+    font-size: pxtorem(24);
+  }
+
+  @media (min-width: $bp-xl) {
+    font-size: pxtorem(20);
+  }
+
+  @media (min-width: $bp-xxl) {
+    font-size: pxtorem(24);
+  }
+
+  @media (min-width: $bp-xxxl) {
+    margin-bottom: var(--vr-lg);
+  }
+}
+
+.labels {
+  margin-bottom: var(--vr-xxs);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}

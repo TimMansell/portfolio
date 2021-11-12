@@ -1,0 +1,25 @@
+@import "styles/utilities/pxtorem";
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--vr-md);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  background: var(--colour-1);
+  padding: var(--vr);
+  border-radius: 50%;
+  text-shadow: -1px -1px var(--colour-1-alt-2);
+  margin: 0 var(--vr);
+  transition: box-shadow 0.3s, background 0.3s;
+  width: pxtorem(60);
+  height: pxtorem(60);
+
+  &:hover {
+    background: var(--colour-1-alt-2);
+    box-shadow: 0 0 0 5px var(--colour-1-transparent);
+  }
+}

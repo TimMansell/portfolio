@@ -1,0 +1,15 @@
+@import "styles/scssvars";
+@import "styles/utilities/pxtorem";
+
+.testimonials {
+  text-align: center;
+
+  @media (min-width: $bp-lg) {
+    padding: 0 15%;
+  }
+}
+
+.quote {
+  font-size: pxtorem(30);
+  color: var(--primary-text-colour);
+}

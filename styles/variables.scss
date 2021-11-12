@@ -1,0 +1,96 @@
+:root {
+  --font-family-primary: "Noto Sans", sans-serif;
+  --font-family-secondary: "Contrail One", sans-serif;
+  --font-weight-strong: 700;
+  --font-weight-normal: 400;
+
+  // Colours.
+  --primary-hue: 143;
+  --primary-saturation: 42%;
+  --secondary-hue: 227;
+  --secondary-saturation: 9%;
+  --tertiary-hue: 345;
+  --tertiary-saturation: 100%;
+  --quadiary-hue: 0;
+  --quadiary-saturation: 0%;
+
+  --colour-1: hsl(var(--primary-hue), var(--primary-saturation), 36%);
+  --colour-2: hsl(var(--secondary-hue), var(--secondary-saturation), 20%);
+  --colour-3: hsl(var(--tertiary-hue), var(--tertiary-saturation), 39%);
+  --colour-4: hsl(var(--quadiary-hue), var(--quadiary-saturation), 100%);
+  --colour-5: hsl(var(--quadiary-hue), var(--quadiary-saturation), 0%);
+
+  // Colour variations.
+  --colour-1-alt-1: hsl(var(--primary-hue), var(--primary-saturation), 31%);
+  --colour-1-alt-2: hsl(var(--primary-hue), var(--primary-saturation), 26%);
+  --colour-2-alt-1: hsl(var(--secondary-hue), var(--secondary-saturation), 10%);
+
+  // Transparent colours.
+  --colour-1-transparent: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    36%,
+    95%
+  );
+  --colour-1-transparent-1: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    36%,
+    50%
+  );
+  --colour-1-transparent-2: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    36%,
+    25%
+  );
+  --colour-4-transparent-1: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    100%,
+    20%
+  );
+
+  // Text colours.
+  --primary-text-colour: var(--colour-2);
+  --secondary-text-colour: var(--colour-4);
+  --tertiary-text-colour: var(--colour-5);
+
+  --icon-background: hsl(240, 3%, 89%);
+  --icon-tab: hsl(240, 3%, 80%);
+  --icon-colour-primary: hsl(3, 100%, 67%);
+  --icon-colour-primary-shadow: hsl(3, 100%, 42%);
+  --icon-colour-secondary: hsl(41, 100%, 59%);
+  --icon-colour-secondary-shadow: hsl(41, 100%, 34%);
+  --icon-colour-tertiary: hsl(130, 67%, 47%);
+  --icon-colour-tertiary-shadow: hsl(130, 67%, 22%);
+  --tab-colour: hsl(0, 0%, 35%);
+
+  // Borders
+  --bdr-primary: var(--colour-2);
+  --bdr-secondary: var(--colour-4);
+
+  // Vertical rythm.
+  --vr: 1rem;
+  --vr-xxs: calc(var(--vr) / 4);
+  --vr-xs: calc(var(--vr) / 2);
+  --vr-sm: var(--vr);
+  --vr-md: calc(var(--vr) * 2);
+  --vr-lg: calc(var(--vr) * 3);
+  --vr-xl: calc(var(--vr) * 4);
+  --vr-xxl: calc(var(--vr) * 5);
+  --vr-sl: calc(var(--vr) * 6);
+
+  // Animations
+  --animation-tagline-delay: 5s;
+  --animation-name-delay: 3.5s;
+  --animation-location-delay: 5s;
+
+  // z-index.
+  --z-overlay: 900;
+  --z-header: 800;
+  --z-footer: 700;
+  --z-default: 1;
+  --z-below: -1;
+  --z-bottomless-pit: -9000;
+}
