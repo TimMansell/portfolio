@@ -1,25 +1,15 @@
-This is the source code for my personal portfolio site.
+# Portfolio - v2
 
-My website uses npm, gulp, and bower.  Ensure you have those packages installed first.
+This is the source code for my website.
 
 ## Instructions:
 
-*npm install*
+`npm install` or `yarn`
 
-To load my site in development mode, run: 
+To load my site in development mode:
 
-*gulp serve:dev*
+`npm run dev` or `yarn dev`
 
-To load my site in production mode, run: 
+To load my site in production mode:
 
-*gulp serve*
-
-**Note**: if repo has just been cloned, 'gulp build' needs to be run before this step.
-
-To load my site in production mode using a clean repackaging of assets, run: 
-
-*gulp serve:build*
-
-### Old website
-Source code for my old 2012 website can be found here. 
-https://github.com/TimMansell/portfolio/tree/2012
+`npm run serve` or `yarn serve`
