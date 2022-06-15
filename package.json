@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "This is the source code for my personal portfolio site.",
   "repository": {
     "type": "git",
@@ -12,6 +12,14 @@
     "url": "https://github.com/TimMansell/portfolio/issues"
   },
   "homepage": "http://timmansell.com",
+  "engines": {
+    "node": "= 6.x.x"
+  },
+  "scripts": {
+    "dev": "gulp serve:dev",
+    "serve": "gulp serve:build --prod",
+    "build": "gulp build --prod"
+  },
   "dependencies": {
     "angular": "^1.6.1",
     "angular-scroll": "^1.0.0",
@@ -20,7 +28,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
     "normalize-scss": "^6.0.0",
-    "shuffle-letters": "yuheiy/shuffle-letters",
+    "shuffle-letters": "https://github.com/TimMansell/shuffle-letters.git",
     "webfontloader": "~1.5.18"
   },
   "devDependencies": {
