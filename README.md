@@ -91,5 +91,6 @@ yarn test:e2e:updatesnapshots
 ```
 
 ## Old website source code:
-- 2012 website can be found here. https://github.com/TimMansell/portfolio/tree/2012
-- 2015 website can be found here. https://github.com/TimMansell/portfolio/tree/2015
+
+- v1 website can be found here. https://github.com/TimMansell/portfolio/tree/v1
+- v2 website can be found here. https://github.com/TimMansell/portfolio/tree/v2
