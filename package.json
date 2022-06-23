@@ -14,7 +14,7 @@
     "date-fns": "^2.14.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
