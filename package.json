@@ -30,13 +30,14 @@
     "build": "npm-run-all build:tasks build:app",
     "build:app": "vite build",
     "build:tasks": "node ./tasks/index.js",
+    "preview": "vite preview",
     "lint": "npm-run-all --parallel lint:js lint:css",
     "lint:js": "eslint src cypress tasks --fix",
     "lint:css": "stylelint src/**/*.{css,scss} --fix",
     "test": "npm-run-all --parallel test:unit:all test:e2e",
-    "test:unit": "react-scripts test --env=jsdom --verbose=false",
-    "test:unit:watch": "react-scripts test --env=jsdom --verbose=false --watchAll",
-    "test:unit:coverage": "react-scripts test --env=jsdom --coverage",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest watch",
+    "test:unit:coverage": "vitest run --coverage",
     "test:unit:all": "cross-env CI=true yarn test:unit",
     "test:e2e": "npm-run-all build test:commands:run",
     "test:e2e:snapshots": "npm-run-all build test:commands:snapshots",
@@ -86,6 +87,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "glob": "^7.1.6",
     "husky": "^3.1.0",
+    "jsdom": "^22.0.0",
     "lint-staged": "^10.5.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
@@ -99,7 +101,8 @@
     "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0",
-    "vite": "^4.3.8"
+    "vite": "^4.3.8",
+    "vitest": "^0.31.1"
   },
   "husky": {
     "hooks": {

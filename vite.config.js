@@ -12,6 +12,7 @@ export default defineConfig({
       hooks: `${path.resolve(__dirname, './src/hooks/')}`,
       layout: `${path.resolve(__dirname, './src/layout/')}`,
       context: `${path.resolve(__dirname, './src/context/')}`,
+      helpers: `${path.resolve(__dirname, './src/helpers/')}`,
       scss: `${path.resolve(__dirname, './src/scss/')}`,
       utilities: `${path.resolve(__dirname, './src/scss/utilities/')}`,
       public: `${path.resolve(__dirname, './public/')}`,
@@ -24,5 +25,9 @@ export default defineConfig({
     preprocessorOptions: {
       scss: { additionalData: `@import "./src/scss/variables";` },
     },
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/setupTests.js'],
   },
 });
