@@ -20,7 +20,8 @@ export const getFilePath = (src, size, type) => {
 
 export const getSrcSet = (src, type) => (srcSet, size) => {
   const filePath = getFilePath(src, size, type);
-  const srcSetPath = `${srcSet} ${require(`../../${filePath}`)} ${size}w,`.trim();
+  const file = new URL(`../../${filePath}`, import.meta.url).href;
+  const srcSetPath = `${srcSet} ${file} ${size}w,`.trim();
 
   return srcSetPath;
 };

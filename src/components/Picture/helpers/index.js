@@ -11,7 +11,7 @@ export const getFallbackImage = (src, srcSizes, types) => {
 
   const filePath = getFilePath(src, size, type);
 
-  const fallbackImg = require(`../../${filePath}`);
+  const fallbackImg = new URL(`../../${filePath}`, import.meta.url).href;
 
   return fallbackImg;
 };

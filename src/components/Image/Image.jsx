@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import styles from './Image.module.scss';
 
 export const Image = ({ src, alt, width, height, isPadded }) => {
-  const img = require(`../${src}`);
+  const img = new URL(`../${src}`, import.meta.url).href;
 
   const containerClasses = classnames(styles.container, {
     [styles.isPadded]: isPadded,
