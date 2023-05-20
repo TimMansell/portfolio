@@ -1,8 +1,7 @@
-@import 'variables';
 @import 'utilities/pxtorem';
 
 .name {
-  composes: hero shadowlg from '~scss/helpers/text.scss';
+  composes: hero shadowlg from 'scss/helpers/text.scss';
   padding: var(--vr-md);
   font-size: pxtorem(64);
   letter-spacing: pxtorem(5);

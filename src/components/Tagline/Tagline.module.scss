@@ -1,7 +1,7 @@
 @import 'utilities/pxtorem';
 
 .tagline {
-  composes: hero shadow from '~scss/helpers/text.scss';
+  composes: hero shadow from 'scss/helpers/text.scss';
   font-size: pxtorem(32);
   letter-spacing: pxtorem(1);
   text-transform: uppercase;

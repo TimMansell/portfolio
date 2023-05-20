@@ -1,4 +1,3 @@
-@import 'variables';
 @import 'utilities/pxtorem';
 @import 'utilities/flex-gap';
 
@@ -18,7 +17,7 @@
 }
 
 .container {
-  composes: divider from '~scss/helpers/divider.scss';
+  composes: divider from 'scss/helpers/divider.scss';
 }
 
 .item {
