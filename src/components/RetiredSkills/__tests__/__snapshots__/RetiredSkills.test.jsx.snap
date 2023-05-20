@@ -3,34 +3,34 @@
 exports[`Retired Skills > should match snapshot 1`] = `
 [
   <div
-    className="_heading_f4f7a7 _headingTertiary_f4f7a7"
+    className="heading headingTertiary"
   >
     <h2
       aria-label="Older Skills"
-      className="_title_f4f7a7"
+      className="title"
       data-test="heading-title"
     >
       Older Skills
     </h2>
     <p
-      className="_description_f4f7a7"
+      className="description"
       data-test="heading-description"
     >
       I am still highly skilled in this area, but have since moved onto newer tech
     </p>
   </div>,
   <div
-    className="_items_52c0e0"
+    className="items"
   >
     <div
-      className="_item_21adc7"
+      className="item"
     >
       <div
-        className="_icon_21adc7"
+        className="icon"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-code fa-w-20 _icon_585b29 _iconSm_585b29"
+          className="svg-inline--fa fa-code fa-w-20 icon iconSm"
           data-icon="code"
           data-prefix="fa"
           focusable="false"
@@ -47,24 +47,24 @@ exports[`Retired Skills > should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        className="_content_21adc7"
+        className="content"
       >
         <h3
-          className="_title_21adc7"
+          className="title"
         >
           title 1
         </h3>
         <ul
-          className="_labels_591528 _isLarge_591528 _isCentered_591528"
+          className="labels isLarge isCentered"
           data-test="labels"
         >
           <li
-            className="_label_103219 _isTertiary_103219 _isLarge_103219"
+            className="label isTertiary isLarge"
           >
             skill 1
           </li>
           <li
-            className="_label_103219 _isTertiary_103219 _isLarge_103219"
+            className="label isTertiary isLarge"
           >
             skill 2
           </li>
@@ -72,14 +72,14 @@ exports[`Retired Skills > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="_item_21adc7"
+      className="item"
     >
       <div
-        className="_icon_21adc7"
+        className="icon"
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-css3-alt fa-w-12 _icon_585b29 _iconSm_585b29"
+          className="svg-inline--fa fa-css3-alt fa-w-12 icon iconSm"
           data-icon="css3-alt"
           data-prefix="fab"
           focusable="false"
@@ -96,24 +96,24 @@ exports[`Retired Skills > should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        className="_content_21adc7"
+        className="content"
       >
         <h3
-          className="_title_21adc7"
+          className="title"
         >
           title 2
         </h3>
         <ul
-          className="_labels_591528 _isLarge_591528 _isCentered_591528"
+          className="labels isLarge isCentered"
           data-test="labels"
         >
           <li
-            className="_label_103219 _isTertiary_103219 _isLarge_103219"
+            className="label isTertiary isLarge"
           >
             skill 3
           </li>
           <li
-            className="_label_103219 _isTertiary_103219 _isLarge_103219"
+            className="label isTertiary isLarge"
           >
             skill 4
           </li>

@@ -22,7 +22,7 @@ exports[`Picture > should match snapshot 1`] = `
   />
   <img
     alt="test title"
-    className="_img_ec3fd8"
+    className="img"
     data-e2e="picture-img"
     data-test="picture-img"
     loading="auto"

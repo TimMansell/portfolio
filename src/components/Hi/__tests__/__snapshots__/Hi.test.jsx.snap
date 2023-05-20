@@ -2,7 +2,7 @@
 
 exports[`Hi > should match snapshot 1`] = `
 <div
-  className="_hi_fb2db6"
+  className="hi"
 >
   Hi!
 </div>

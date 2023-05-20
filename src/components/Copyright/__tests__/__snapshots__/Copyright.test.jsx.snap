@@ -2,7 +2,7 @@
 
 exports[`Copyright > should match snapshot 1`] = `
 <p
-  className="_copyright_06d817"
+  className="copyright"
 >
   © 
   2023

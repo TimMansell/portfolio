@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Name should match snapshot 1`] = `
-<h1
-  className="name"
->
-  I'm Tim Mansell
-</h1>
-`;

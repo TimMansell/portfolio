@@ -2,7 +2,7 @@
 
 exports[`Location > should match snapshot 1`] = `
 <div
-  className="_location_fbab8e"
+  className="location"
 >
   Melbourne, Australia
 </div>

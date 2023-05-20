@@ -3,54 +3,54 @@
 exports[`Portfolio > should match snapshot 1`] = `
 [
   <div
-    className="_heading_f4f7a7 _headingTertiary_f4f7a7"
+    className="heading headingTertiary"
   >
     <h2
       aria-label="Portfolio"
-      className="_title_f4f7a7"
+      className="title"
       data-test="heading-title"
     >
       Portfolio
     </h2>
     <p
-      className="_description_f4f7a7"
+      className="description"
       data-test="heading-description"
     >
       Here's a sample of my work. Hover over image for more information
     </p>
   </div>,
   <div
-    className="_portfolio_720503"
+    className="portfolio"
     data-e2e="portfolio-items"
   >
     <div
-      className="_portfolioItem_3f4fa4"
+      className="portfolioItem"
     >
       <div
-        className="_cube_3f4fa4"
+        className="cube"
         style={{}}
       >
         <div
-          className="_browser_3f4fa4"
+          className="browser"
         >
           <div
-            className="_bar_a41ad0"
+            className="bar"
           >
             <div
-              className="_icons_a41ad0"
+              className="icons"
             >
               <div
-                className="_icon_a41ad0"
+                className="icon"
               />
               <div
-                className="_icon_a41ad0"
+                className="icon"
               />
               <div
-                className="_icon_a41ad0"
+                className="icon"
               />
             </div>
             <div
-              className="_tab_a41ad0"
+              className="tab"
             >
               title
             </div>
@@ -73,7 +73,7 @@ exports[`Portfolio > should match snapshot 1`] = `
             />
             <img
               alt="title portfolio item"
-              className="_img_ec3fd8"
+              className="img"
               data-e2e="picture-img"
               data-test="picture-img"
               loading="lazy"
@@ -82,23 +82,23 @@ exports[`Portfolio > should match snapshot 1`] = `
           </picture>
         </div>
         <div
-          className="_info_3f4fa4"
+          className="info"
         >
           <h3
-            className="_title_3f4fa4"
+            className="title"
           >
             title
           </h3>
           <p
-            className="_description_3f4fa4"
+            className="description"
           >
             description
           </p>
           <div
-            className="_buttons_3f4fa4"
+            className="buttons"
           >
             <a
-              className="_btn_f8f296"
+              className="btn"
               href="url"
               rel="noopener noreferrer"
               target="_blank"
@@ -107,7 +107,7 @@ exports[`Portfolio > should match snapshot 1`] = `
               Visit website
             </a>
             <a
-              className="_btn_f8f296"
+              className="btn"
               href="source"
               rel="noopener noreferrer"
               target="_blank"
@@ -119,29 +119,29 @@ exports[`Portfolio > should match snapshot 1`] = `
         </div>
       </div>
       <div
-        className="_labels_3f4fa4"
+        className="labels"
       >
         <ul
-          className="_labels_591528"
+          className="labels"
           data-test="labels"
         >
           <li
-            className="_label_103219 _isSecondary_103219"
+            className="label isSecondary"
           >
             2020
           </li>
           <li
-            className="_label_103219 _isSecondary_103219"
+            className="label isSecondary"
           >
             types
           </li>
           <li
-            className="_label_103219 _isPrimary_103219"
+            className="label isPrimary"
           >
             tech 1
           </li>
           <li
-            className="_label_103219 _isPrimary_103219"
+            className="label isPrimary"
           >
             tech 2
           </li>
@@ -149,33 +149,33 @@ exports[`Portfolio > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="_portfolioItem_3f4fa4"
+      className="portfolioItem"
     >
       <div
-        className="_cube_3f4fa4"
+        className="cube"
         style={{}}
       >
         <div
-          className="_browser_3f4fa4"
+          className="browser"
         >
           <div
-            className="_bar_a41ad0"
+            className="bar"
           >
             <div
-              className="_icons_a41ad0"
+              className="icons"
             >
               <div
-                className="_icon_a41ad0"
+                className="icon"
               />
               <div
-                className="_icon_a41ad0"
+                className="icon"
               />
               <div
-                className="_icon_a41ad0"
+                className="icon"
               />
             </div>
             <div
-              className="_tab_a41ad0"
+              className="tab"
             >
               title
             </div>
@@ -198,7 +198,7 @@ exports[`Portfolio > should match snapshot 1`] = `
             />
             <img
               alt="title portfolio item"
-              className="_img_ec3fd8"
+              className="img"
               data-e2e="picture-img"
               data-test="picture-img"
               loading="lazy"
@@ -207,23 +207,23 @@ exports[`Portfolio > should match snapshot 1`] = `
           </picture>
         </div>
         <div
-          className="_info_3f4fa4"
+          className="info"
         >
           <h3
-            className="_title_3f4fa4"
+            className="title"
           >
             title
           </h3>
           <p
-            className="_description_3f4fa4"
+            className="description"
           >
             description
           </p>
           <div
-            className="_buttons_3f4fa4"
+            className="buttons"
           >
             <a
-              className="_btn_f8f296"
+              className="btn"
               href="url"
               rel="noopener noreferrer"
               target="_blank"
@@ -235,39 +235,39 @@ exports[`Portfolio > should match snapshot 1`] = `
         </div>
       </div>
       <div
-        className="_labels_3f4fa4"
+        className="labels"
       >
         <ul
-          className="_labels_591528"
+          className="labels"
           data-test="labels"
         >
           <li
-            className="_label_103219 _isSecondary_103219"
+            className="label isSecondary"
           >
             2020
           </li>
           <li
-            className="_label_103219 _isSecondary_103219"
+            className="label isSecondary"
           >
             2021
           </li>
           <li
-            className="_label_103219 _isSecondary_103219"
+            className="label isSecondary"
           >
             types
           </li>
           <li
-            className="_label_103219 _isPrimary_103219"
+            className="label isPrimary"
           >
             tech 1
           </li>
           <li
-            className="_label_103219 _isPrimary_103219"
+            className="label isPrimary"
           >
             tech 2
           </li>
           <li
-            className="_label_103219 _isPrimary_103219"
+            className="label isPrimary"
           >
             tech 3
           </li>

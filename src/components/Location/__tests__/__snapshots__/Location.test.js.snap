@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Location should match snapshot 1`] = `
-<div
-  className="location"
->
-  Melbourne, Australia
-</div>
-`;

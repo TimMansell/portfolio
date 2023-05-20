@@ -2,11 +2,11 @@
 
 exports[`Image > should match snapshot 1`] = `
 <div
-  className="_container_4c41c3"
+  className="container"
 >
   <img
     alt="alt text"
-    className="_image_4c41c3"
+    className="image"
     loading="lazy"
     src="file:///H:/projects/portfolio/src/components/Image/__tests__/img/test.jpg"
     title="alt text"

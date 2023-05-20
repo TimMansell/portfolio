@@ -2,12 +2,12 @@
 
 exports[`Testimonials > should match snapshot 1`] = `
 <div
-  className="_testimonials_5c3ba6"
+  className="testimonials"
   data-e2e="testimonials"
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-quote-left fa-w-16 _icon_585b29 _quote_5c3ba6"
+    className="svg-inline--fa fa-quote-left fa-w-16 icon quote"
     data-icon="quote-left"
     data-prefix="fas"
     focusable="false"
@@ -24,7 +24,7 @@ exports[`Testimonials > should match snapshot 1`] = `
   </svg>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-quote-right fa-w-16 _icon_585b29 _quote_5c3ba6"
+    className="svg-inline--fa fa-quote-right fa-w-16 icon quote"
     data-icon="quote-right"
     data-prefix="fas"
     focusable="false"

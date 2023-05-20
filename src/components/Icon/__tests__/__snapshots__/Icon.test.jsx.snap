@@ -3,7 +3,7 @@
 exports[`Default Icon > should match snapshot 1`] = `
 <svg
   aria-hidden="true"
-  className="svg-inline--fa fa-css3-alt fa-w-12 _icon_585b29 test-class _iconMd_585b29 _iconPadded_585b29"
+  className="svg-inline--fa fa-css3-alt fa-w-12 icon test-class iconMd iconPadded"
   data-icon="css3-alt"
   data-prefix="fab"
   focusable="false"

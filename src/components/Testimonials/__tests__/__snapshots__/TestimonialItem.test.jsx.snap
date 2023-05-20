@@ -3,12 +3,12 @@
 exports[`TestimonialsItem > should match snapshot 1`] = `
 [
   <p
-    className="_text_a006b6"
+    className="text"
   >
     Description
   </p>,
   <p
-    className="_name_a006b6"
+    className="name"
   >
     Author
      (
@@ -16,7 +16,7 @@ exports[`TestimonialsItem > should match snapshot 1`] = `
     )
   </p>,
   <p
-    className="_company_a006b6"
+    className="company"
   >
     Company
   </p>,

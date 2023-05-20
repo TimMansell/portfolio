@@ -2,17 +2,17 @@
 
 exports[`StatsItem > should match snapshot 1`] = `
 <div
-  className="_container_3c3cbc"
+  className="container"
 >
   <div
-    className="_item_3c3cbc"
+    className="item"
   >
     <div
-      className="_icon_3c3cbc"
+      className="icon"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-code fa-w-20 _icon_585b29 _iconSm_585b29"
+        className="svg-inline--fa fa-code fa-w-20 icon iconSm"
         data-icon="code"
         data-prefix="fa"
         focusable="false"
@@ -29,10 +29,10 @@ exports[`StatsItem > should match snapshot 1`] = `
       </svg>
     </div>
     <div
-      className="_content_3c3cbc"
+      className="content"
     >
       <h3
-        className="_title_3c3cbc"
+        className="title"
       >
         <span
           data-e2e="stats-starting-count"
@@ -42,7 +42,7 @@ exports[`StatsItem > should match snapshot 1`] = `
         </span>
       </h3>
       <p
-        className="_description_3c3cbc"
+        className="description"
       >
         lines of code
       </p>

@@ -2,11 +2,11 @@
 
 exports[`CurrentStackItems > should match snapshot 1`] = `
 <div
-  className="_stack_2bf000"
+  className="stack"
   data-test="stack-items"
 >
   <div
-    className="_item_2bf000"
+    className="item"
   >
     <a
       data-test="stack-item-link"
@@ -15,11 +15,11 @@ exports[`CurrentStackItems > should match snapshot 1`] = `
       target="_blank"
     >
       <div
-        className="_container_4c41c3"
+        className="container"
       >
         <img
           alt="react"
-          className="_image_4c41c3"
+          className="image"
           loading="lazy"
           src="file:///H:/projects/portfolio/src/components/CurrentStack/img/react.svg"
           title="react"
@@ -29,7 +29,7 @@ exports[`CurrentStackItems > should match snapshot 1`] = `
     </a>
   </div>
   <div
-    className="_item_2bf000"
+    className="item"
   >
     <a
       data-test="stack-item-link"
@@ -38,11 +38,11 @@ exports[`CurrentStackItems > should match snapshot 1`] = `
       target="_blank"
     >
       <div
-        className="_container_4c41c3"
+        className="container"
       >
         <img
           alt="nodejs"
-          className="_image_4c41c3"
+          className="image"
           loading="lazy"
           src="file:///H:/projects/portfolio/src/components/CurrentStack/img/nodejs.svg"
           title="nodejs"

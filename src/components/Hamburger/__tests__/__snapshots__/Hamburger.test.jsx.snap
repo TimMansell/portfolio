@@ -2,22 +2,22 @@
 
 exports[`Hamburger > should match snapshot 1`] = `
 <div
-  className="_container_2eafce"
+  className="container"
 >
   <button
-    className="_hamburger_2eafce"
+    className="hamburger"
     data-e2e="hambuger"
     onClick={[Function]}
     type="button"
   >
     <span
-      className="_menu_2eafce"
+      className="menu"
     >
       toggle menu
     </span>
   </button>
   <div
-    className="_background_2eafce"
+    className="background"
   />
 </div>
 `;

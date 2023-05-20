@@ -2,7 +2,7 @@
 
 exports[`Button > should match snapshot 1`] = `
 <a
-  className="_btn_f8f296"
+  className="btn"
   href="test href"
   rel="noopener noreferrer"
   target="test target"

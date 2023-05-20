@@ -2,7 +2,7 @@
 
 exports[`Label > should match snapshot 1`] = `
 <li
-  className="_label_103219 _isPrimary_103219"
+  className="label isPrimary"
 >
   test label
 </li>

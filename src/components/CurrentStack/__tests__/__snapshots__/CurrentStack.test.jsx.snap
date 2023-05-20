@@ -3,28 +3,28 @@
 exports[`CurrentStack > should match snapshot 1`] = `
 [
   <div
-    className="_heading_f4f7a7 _headingPrimary_f4f7a7"
+    className="heading headingPrimary"
   >
     <h2
       aria-label="Current Stack"
-      className="_title_f4f7a7"
+      className="title"
       data-test="heading-title"
     >
       Current Stack
     </h2>
     <p
-      className="_description_f4f7a7"
+      className="description"
       data-test="heading-description"
     >
       I spend most of my time with these technologies / tools / methodologies
     </p>
   </div>,
   <div
-    className="_stack_2bf000"
+    className="stack"
     data-test="stack-items"
   >
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -33,11 +33,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="React"
-            className="_image_4c41c3"
+            className="image"
             height="58"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/react.svg"
@@ -48,7 +48,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -57,11 +57,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="NodeJS"
-            className="_image_4c41c3"
+            className="image"
             height="55"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/nodejs.svg"
@@ -72,7 +72,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -81,11 +81,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="VueJS"
-            className="_image_4c41c3"
+            className="image"
             height="62"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/vuejs.svg"
@@ -96,7 +96,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -105,11 +105,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="NPM"
-            className="_image_4c41c3"
+            className="image"
             height="35"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/npm.svg"
@@ -120,7 +120,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -129,11 +129,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Webpack"
-            className="_image_4c41c3"
+            className="image"
             height="75"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/webpack.svg"
@@ -144,7 +144,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -153,11 +153,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Yarn"
-            className="_image_4c41c3"
+            className="image"
             height="58"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/yarn.svg"
@@ -168,7 +168,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -177,11 +177,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="ESLint"
-            className="_image_4c41c3"
+            className="image"
             height="66"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/eslint.svg"
@@ -192,7 +192,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -201,11 +201,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Jest"
-            className="_image_4c41c3"
+            className="image"
             height="55"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/jest.svg"
@@ -216,7 +216,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -225,11 +225,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Babel"
-            className="_image_4c41c3"
+            className="image"
             height="64"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/babel.svg"
@@ -240,7 +240,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -249,11 +249,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Cypress"
-            className="_image_4c41c3"
+            className="image"
             height="60"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/cypress.svg"
@@ -264,7 +264,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -273,11 +273,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="SASS"
-            className="_image_4c41c3"
+            className="image"
             height="53"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/sass.svg"
@@ -288,7 +288,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -297,11 +297,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="VSCode"
-            className="_image_4c41c3"
+            className="image"
             height="55"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/vscode.svg"
@@ -312,7 +312,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -321,11 +321,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Git"
-            className="_image_4c41c3"
+            className="image"
             height="44"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/git.svg"
@@ -336,7 +336,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -345,11 +345,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="PostCSS"
-            className="_image_4c41c3"
+            className="image"
             height="60"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/postcss.svg"
@@ -360,7 +360,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -369,11 +369,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="Netlify"
-            className="_image_4c41c3"
+            className="image"
             height="38"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/netlify.svg"
@@ -384,7 +384,7 @@ exports[`CurrentStack > should match snapshot 1`] = `
       </a>
     </div>
     <div
-      className="_item_2bf000"
+      className="item"
     >
       <a
         data-test="stack-item-link"
@@ -393,11 +393,11 @@ exports[`CurrentStack > should match snapshot 1`] = `
         target="_blank"
       >
         <div
-          className="_container_4c41c3"
+          className="container"
         >
           <img
             alt="GraphQL"
-            className="_image_4c41c3"
+            className="image"
             height="55"
             loading="lazy"
             src="file:///H:/projects/portfolio/src/components/CurrentStack/img/graphql.svg"

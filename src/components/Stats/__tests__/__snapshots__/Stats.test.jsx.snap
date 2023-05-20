@@ -3,38 +3,38 @@
 exports[`Stats > should match snapshot 1`] = `
 [
   <div
-    className="_heading_f4f7a7 _headingTertiary_f4f7a7"
+    className="heading headingTertiary"
   >
     <h2
       aria-label="Stats"
-      className="_title_f4f7a7"
+      className="title"
       data-test="heading-title"
     >
       Stats
     </h2>
     <p
-      className="_description_f4f7a7"
+      className="description"
       data-test="heading-description"
     >
       This website was built using
     </p>
   </div>,
   <div
-    className="_lighterNote_3c3cbc"
+    className="lighterNote"
     data-test="stats-items"
   >
     <div
-      className="_container_3c3cbc"
+      className="container"
     >
       <div
-        className="_item_3c3cbc"
+        className="item"
       >
         <div
-          className="_icon_3c3cbc"
+          className="icon"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code fa-w-20 _icon_585b29 _iconSm_585b29"
+            className="svg-inline--fa fa-code fa-w-20 icon iconSm"
             data-icon="code"
             data-prefix="fa"
             focusable="false"
@@ -51,10 +51,10 @@ exports[`Stats > should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          className="_content_3c3cbc"
+          className="content"
         >
           <h3
-            className="_title_3c3cbc"
+            className="title"
           >
             <span
               data-e2e="stats-starting-count"
@@ -64,7 +64,7 @@ exports[`Stats > should match snapshot 1`] = `
             </span>
           </h3>
           <p
-            className="_description_3c3cbc"
+            className="description"
           >
             lines of code
           </p>
@@ -72,17 +72,17 @@ exports[`Stats > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="_container_3c3cbc"
+      className="container"
     >
       <div
-        className="_item_3c3cbc"
+        className="item"
       >
         <div
-          className="_icon_3c3cbc"
+          className="icon"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-code-branch fa-w-12 _icon_585b29 _iconSm_585b29"
+            className="svg-inline--fa fa-code-branch fa-w-12 icon iconSm"
             data-icon="code-branch"
             data-prefix="fa"
             focusable="false"
@@ -99,10 +99,10 @@ exports[`Stats > should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          className="_content_3c3cbc"
+          className="content"
         >
           <h3
-            className="_title_3c3cbc"
+            className="title"
           >
             <span
               data-e2e="stats-starting-count"
@@ -112,7 +112,7 @@ exports[`Stats > should match snapshot 1`] = `
             </span>
           </h3>
           <p
-            className="_description_3c3cbc"
+            className="description"
           >
             git commits
           </p>
@@ -120,17 +120,17 @@ exports[`Stats > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="_container_3c3cbc"
+      className="container"
     >
       <div
-        className="_item_3c3cbc"
+        className="item"
       >
         <div
-          className="_icon_3c3cbc"
+          className="icon"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-laptop-code fa-w-20 _icon_585b29 _iconSm_585b29"
+            className="svg-inline--fa fa-laptop-code fa-w-20 icon iconSm"
             data-icon="laptop-code"
             data-prefix="fa"
             focusable="false"
@@ -147,10 +147,10 @@ exports[`Stats > should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          className="_content_3c3cbc"
+          className="content"
         >
           <h3
-            className="_title_3c3cbc"
+            className="title"
           >
             <span
               data-e2e="stats-starting-count"
@@ -160,7 +160,7 @@ exports[`Stats > should match snapshot 1`] = `
             </span>
           </h3>
           <p
-            className="_description_3c3cbc"
+            className="description"
           >
             pull requests
           </p>
@@ -168,17 +168,17 @@ exports[`Stats > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      className="_container_3c3cbc"
+      className="container"
     >
       <div
-        className="_item_3c3cbc"
+        className="item"
       >
         <div
-          className="_icon_3c3cbc"
+          className="icon"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-mug-hot fa-w-16 _icon_585b29 _iconSm_585b29"
+            className="svg-inline--fa fa-mug-hot fa-w-16 icon iconSm"
             data-icon="mug-hot"
             data-prefix="fa"
             focusable="false"
@@ -195,10 +195,10 @@ exports[`Stats > should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          className="_content_3c3cbc"
+          className="content"
         >
           <h3
-            className="_title_3c3cbc"
+            className="title"
           >
             <span
               data-e2e="stats-starting-count"
@@ -208,7 +208,7 @@ exports[`Stats > should match snapshot 1`] = `
             </span>
           </h3>
           <p
-            className="_description_3c3cbc"
+            className="description"
           >
             cups of coffee
           </p>

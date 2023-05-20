@@ -2,26 +2,26 @@
 
 exports[`Footer > should match snapshot 1`] = `
 <section
-  className="_section_734492 _bgSecondary_734492"
+  className="section bgSecondary"
   id="contact"
 >
   <div
-    className="_container_734492"
+    className="container"
   >
     <footer>
       <div
-        className="_social_0919a0"
+        className="social"
       >
         <a
           aria-label="Visit my linked profile"
-          className="_icon_0919a0"
+          className="icon"
           href="https://au.linkedin.com/in/timmansell"
           rel="noopener noreferrer"
           target="_blank"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-linkedin fa-w-14 _icon_585b29 _iconXs_585b29"
+            className="svg-inline--fa fa-linkedin fa-w-14 icon iconXs"
             data-icon="linkedin"
             data-prefix="fab"
             focusable="false"
@@ -39,14 +39,14 @@ exports[`Footer > should match snapshot 1`] = `
         </a>
         <a
           aria-label="Visit my twitter page"
-          className="_icon_0919a0"
+          className="icon"
           href="https://twitter.com/TimMansell"
           rel="noopener noreferrer"
           target="_blank"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-twitter fa-w-16 _icon_585b29 _iconXs_585b29"
+            className="svg-inline--fa fa-twitter fa-w-16 icon iconXs"
             data-icon="twitter"
             data-prefix="fab"
             focusable="false"
@@ -64,14 +64,14 @@ exports[`Footer > should match snapshot 1`] = `
         </a>
         <a
           aria-label="Visit my github profile"
-          className="_icon_0919a0"
+          className="icon"
           href="https://github.com/TimMansell"
           rel="noopener noreferrer"
           target="_blank"
         >
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-github fa-w-16 _icon_585b29 _iconXs_585b29"
+            className="svg-inline--fa fa-github fa-w-16 icon iconXs"
             data-icon="github"
             data-prefix="fab"
             focusable="false"
@@ -89,7 +89,7 @@ exports[`Footer > should match snapshot 1`] = `
         </a>
       </div>
       <p
-        className="_copyright_06d817"
+        className="copyright"
       >
         © 
         2023

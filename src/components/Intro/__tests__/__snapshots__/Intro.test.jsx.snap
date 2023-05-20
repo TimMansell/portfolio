@@ -2,15 +2,15 @@
 
 exports[`Intro > should match snapshot 1`] = `
 <section
-  className="_background_bd15aa"
+  className="background"
   id="intro"
   role="banner"
 >
   <div
-    className="_hero_77f2c2"
+    className="hero"
   >
     <div
-      className="_img_77f2c2"
+      className="img"
       data-e2e="hero-img"
       data-timer={7000}
       style={
@@ -49,7 +49,7 @@ exports[`Intro > should match snapshot 1`] = `
         />
         <img
           alt="Various gaming consoles and peripherals"
-          className="_img_ec3fd8 _fullscreen_ec3fd8"
+          className="img fullscreen"
           data-e2e="picture-img"
           data-test="picture-img"
           loading="auto"
@@ -86,7 +86,7 @@ exports[`Intro > should match snapshot 1`] = `
         />
         <img
           alt="Snow-capped trees with aurora borealis in background"
-          className="_img_ec3fd8 _fullscreen_ec3fd8"
+          className="img fullscreen"
           data-e2e="picture-img"
           data-test="picture-img"
           loading="auto"
@@ -97,10 +97,10 @@ exports[`Intro > should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="_intro_bd15aa"
+    className="intro"
   >
     <div
-      className="_hi_fb2db6"
+      className="hi"
     >
       Hi!
     </div>
@@ -113,17 +113,17 @@ exports[`Intro > should match snapshot 1`] = `
       }
     >
       <div
-        className="_location_fbab8e"
+        className="location"
       >
         Melbourne, Australia
       </div>
       <h1
-        className="_name_7d8da4"
+        className="name"
       >
         I'm Tim Mansell
       </h1>
       <div
-        className="_tagline_4ec205"
+        className="tagline"
       >
         <div>
           Front-end Engineer
@@ -132,16 +132,16 @@ exports[`Intro > should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="_learnMore_3102dc"
+    className="learnMore"
   >
     <a
-      className="_link_3102dc"
+      className="link"
       data-e2e="learn-more-btn"
       onClick={[Function]}
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-chevron-down fa-w-14 _icon_585b29 _scroll_3102dc _iconSm_585b29"
+        className="svg-inline--fa fa-chevron-down fa-w-14 icon scroll iconSm"
         data-icon="chevron-down"
         data-prefix="fas"
         focusable="false"

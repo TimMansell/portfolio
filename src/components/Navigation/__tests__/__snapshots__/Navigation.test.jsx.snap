@@ -2,19 +2,19 @@
 
 exports[`Navigation > should match snapshot 1`] = `
 <nav
-  className="_navigation_35559a"
+  className="navigation"
   id="nav"
   role="navigation"
 >
   <ul
-    className="_menu_2b860d"
+    className="menu"
     data-e2e="navigation"
   >
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-profile"
         onClick={[Function]}
       >
@@ -22,10 +22,10 @@ exports[`Navigation > should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-skills"
         onClick={[Function]}
       >
@@ -33,10 +33,10 @@ exports[`Navigation > should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-older-skills"
         onClick={[Function]}
       >
@@ -44,10 +44,10 @@ exports[`Navigation > should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-stack"
         onClick={[Function]}
       >
@@ -55,10 +55,10 @@ exports[`Navigation > should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-portfolio"
         onClick={[Function]}
       >
@@ -66,10 +66,10 @@ exports[`Navigation > should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-testimonials"
         onClick={[Function]}
       >
@@ -77,10 +77,10 @@ exports[`Navigation > should match snapshot 1`] = `
       </a>
     </li>
     <li
-      className="_menuItem_2b860d"
+      className="menuItem"
     >
       <a
-        className="_link_2b860d"
+        className="link"
         data-e2e="navigation-contact"
         onClick={[Function]}
       >
@@ -89,22 +89,22 @@ exports[`Navigation > should match snapshot 1`] = `
     </li>
   </ul>
   <div
-    className="_container_2eafce"
+    className="container"
   >
     <button
-      className="_hamburger_2eafce"
+      className="hamburger"
       data-e2e="hambuger"
       onClick={[Function]}
       type="button"
     >
       <span
-        className="_menu_2eafce"
+        className="menu"
       >
         toggle menu
       </span>
     </button>
     <div
-      className="_background_2eafce"
+      className="background"
     />
   </div>
 </nav>

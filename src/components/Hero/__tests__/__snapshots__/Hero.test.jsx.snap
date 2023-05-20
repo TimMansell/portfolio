@@ -2,10 +2,10 @@
 
 exports[`Hero > should match snapshot 1`] = `
 <div
-  className="_hero_77f2c2"
+  className="hero"
 >
   <div
-    className="_img_77f2c2"
+    className="img"
     data-e2e="hero-img"
     data-timer={7000}
     style={
@@ -44,7 +44,7 @@ exports[`Hero > should match snapshot 1`] = `
       />
       <img
         alt="Various gaming consoles and peripherals"
-        className="_img_ec3fd8 _fullscreen_ec3fd8"
+        className="img fullscreen"
         data-e2e="picture-img"
         data-test="picture-img"
         loading="auto"
@@ -81,7 +81,7 @@ exports[`Hero > should match snapshot 1`] = `
       />
       <img
         alt="Snow-capped trees with aurora borealis in background"
-        className="_img_ec3fd8 _fullscreen_ec3fd8"
+        className="img fullscreen"
         data-e2e="picture-img"
         data-test="picture-img"
         loading="auto"

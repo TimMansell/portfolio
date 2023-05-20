@@ -2,17 +2,17 @@
 
 exports[`ListItems > should match snapshot 1`] = `
 <div
-  className="_items_52c0e0"
+  className="items"
 >
   <div
-    className="_item_21adc7"
+    className="item"
   >
     <div
-      className="_icon_21adc7"
+      className="icon"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-css3-alt fa-w-12 _icon_585b29 _iconSm_585b29"
+        className="svg-inline--fa fa-css3-alt fa-w-12 icon iconSm"
         data-icon="css3-alt"
         data-prefix="fab"
         focusable="false"
@@ -29,19 +29,19 @@ exports[`ListItems > should match snapshot 1`] = `
       </svg>
     </div>
     <div
-      className="_content_21adc7"
+      className="content"
     >
       <h3
-        className="_title_21adc7"
+        className="title"
       >
         title 1
       </h3>
       <ul
-        className="_labels_591528 _isLarge_591528 _isCentered_591528"
+        className="labels isLarge isCentered"
         data-test="labels"
       >
         <li
-          className="_label_103219 _isTertiary_103219 _isLarge_103219"
+          className="label isTertiary isLarge"
         >
           list name 1
         </li>
@@ -49,14 +49,14 @@ exports[`ListItems > should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="_item_21adc7"
+    className="item"
   >
     <div
-      className="_icon_21adc7"
+      className="icon"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-css3-alt fa-w-12 _icon_585b29 _iconSm_585b29"
+        className="svg-inline--fa fa-css3-alt fa-w-12 icon iconSm"
         data-icon="css3-alt"
         data-prefix="fab"
         focusable="false"
@@ -73,19 +73,19 @@ exports[`ListItems > should match snapshot 1`] = `
       </svg>
     </div>
     <div
-      className="_content_21adc7"
+      className="content"
     >
       <h3
-        className="_title_21adc7"
+        className="title"
       >
         title 2
       </h3>
       <ul
-        className="_labels_591528 _isLarge_591528 _isCentered_591528"
+        className="labels isLarge isCentered"
         data-test="labels"
       >
         <li
-          className="_label_103219 _isTertiary_103219 _isLarge_103219"
+          className="label isTertiary isLarge"
         >
           list name 2
         </li>

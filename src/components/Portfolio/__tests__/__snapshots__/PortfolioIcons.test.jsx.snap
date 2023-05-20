@@ -2,23 +2,23 @@
 
 exports[`PortfolioIcons > should match snapshot 1`] = `
 <div
-  className="_bar_a41ad0"
+  className="bar"
 >
   <div
-    className="_icons_a41ad0"
+    className="icons"
   >
     <div
-      className="_icon_a41ad0"
+      className="icon"
     />
     <div
-      className="_icon_a41ad0"
+      className="icon"
     />
     <div
-      className="_icon_a41ad0"
+      className="icon"
     />
   </div>
   <div
-    className="_tab_a41ad0"
+    className="tab"
   >
     test title
   </div>
