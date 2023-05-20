@@ -1,4 +1,13 @@
+import { it, describe, expect } from 'vitest';
 import { getSrcSet, getSizes, getFilePath } from '../importImages';
+
+vi.mock('helpers/getMeta.js', async () => {
+  const actual = await vi.importActual('helpers/getMeta.js');
+  return {
+    ...actual,
+    getMeta2: () => '',
+  };
+});
 
 const picture = {
   src: `Picture/__tests__/img/test`,

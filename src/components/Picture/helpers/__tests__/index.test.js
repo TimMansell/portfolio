@@ -1,3 +1,4 @@
+import { it, describe, expect } from 'vitest';
 import { getSources, getFallbackImage } from '../index';
 
 const picture = {
