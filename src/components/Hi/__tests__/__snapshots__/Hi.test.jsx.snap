@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hi > should match snapshot 1`] = `
+<div
+  className="_hi_fb2db6"
+>
+  Hi!
+</div>
+`;

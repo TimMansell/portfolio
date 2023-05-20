@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Image > should match snapshot 1`] = `
+<div
+  className="_container_4c41c3"
+>
+  <img
+    alt="alt text"
+    className="_image_4c41c3"
+    loading="lazy"
+    src="file:///H:/projects/portfolio/src/components/Image/__tests__/img/test.jpg"
+    title="alt text"
+    width="50"
+  />
+</div>
+`;

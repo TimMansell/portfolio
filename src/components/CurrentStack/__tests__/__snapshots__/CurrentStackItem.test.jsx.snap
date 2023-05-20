@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CurrentStackItem > should match snapshot 1`] = `
+<div
+  className="_item_2bf000"
+>
+  <a
+    data-test="stack-item-link"
+    href="test url"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      className="_container_4c41c3"
+    >
+      <img
+        alt="babel"
+        className="_image_4c41c3"
+        loading="lazy"
+        src="file:///H:/projects/portfolio/src/components/CurrentStack/img/babel.svg"
+        title="babel"
+        width="50"
+      />
+    </div>
+  </a>
+</div>
+`;

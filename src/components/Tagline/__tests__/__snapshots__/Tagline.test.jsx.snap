@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tagline > should match snapshot 1`] = `
+<div
+  className="_tagline_4ec205"
+>
+  <div>
+    Front-end Engineer
+  </div>
+</div>
+`;

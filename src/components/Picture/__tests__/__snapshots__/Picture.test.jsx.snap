@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Picture > should match snapshot 1`] = `
+<picture
+  data-e2e="picture"
+  title="test title"
+>
+  <source
+    data-test="picture-source-0"
+    srcSet="file:///H:/projects/portfolio/src/components/Picture/__tests__/img/avif/test-480.avif 480w, file:///H:/projects/portfolio/src/components/Picture/__tests__/img/avif/test-640.avif 640w"
+    type="image/avif"
+  />
+  <source
+    data-test="picture-source-1"
+    srcSet="file:///H:/projects/portfolio/src/components/Picture/__tests__/img/webp/test-480.webp 480w, file:///H:/projects/portfolio/src/components/Picture/__tests__/img/webp/test-640.webp 640w"
+    type="image/webp"
+  />
+  <source
+    data-test="picture-source-2"
+    srcSet="file:///H:/projects/portfolio/src/components/Picture/__tests__/img/jpg/test-480.jpg 480w, file:///H:/projects/portfolio/src/components/Picture/__tests__/img/jpg/test-640.jpg 640w"
+    type="image/jpg"
+  />
+  <img
+    alt="test title"
+    className="_img_ec3fd8"
+    data-e2e="picture-img"
+    data-test="picture-img"
+    loading="auto"
+    src="file:///H:/projects/portfolio/src/components/Picture/__tests__/img/jpg/test-640.jpg"
+    width="50"
+  />
+</picture>
+`;

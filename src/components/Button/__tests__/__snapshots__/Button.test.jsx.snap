@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > should match snapshot 1`] = `
+<a
+  className="_btn_f8f296"
+  href="test href"
+  rel="noopener noreferrer"
+  target="test target"
+  title="test title"
+>
+  text
+</a>
+`;

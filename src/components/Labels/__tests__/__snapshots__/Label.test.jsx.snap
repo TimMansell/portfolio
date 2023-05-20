@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Label > should match snapshot 1`] = `
+<li
+  className="_label_103219 _isPrimary_103219"
+>
+  test label
+</li>
+`;

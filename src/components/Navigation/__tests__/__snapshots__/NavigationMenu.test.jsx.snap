@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavigationMenu > should match snapshot 1`] = `
+<ul
+  className="_menu_2b860d"
+  data-e2e="navigation"
+>
+  <li
+    className="_menuItem_2b860d"
+  >
+    <a
+      className="_link_2b860d"
+      data-e2e="navigation-item-1"
+      onClick={[Function]}
+    >
+      Item 1
+    </a>
+  </li>
+  <li
+    className="_menuItem_2b860d"
+  >
+    <a
+      className="_link_2b860d"
+      data-e2e="navigation-item-2"
+      onClick={[Function]}
+    >
+      Item 2
+    </a>
+  </li>
+  <li
+    className="_menuItem_2b860d"
+  >
+    <a
+      className="_link_2b860d"
+      data-e2e="navigation-item-3"
+      onClick={[Function]}
+    >
+      Item 3
+    </a>
+  </li>
+</ul>
+`;

@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hero > should match snapshot 1`] = `
+<div
+  className="_hero_77f2c2"
+>
+  <div
+    className="_img_77f2c2"
+    data-e2e="hero-img"
+    data-timer={7000}
+    style={
+      {
+        "filter": "blur(0px)",
+      }
+    }
+  >
+    <picture
+      data-e2e="picture"
+      title="Various gaming consoles and peripherals"
+    >
+      <source
+        data-test="picture-source-0"
+        media="(orientation: portrait)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-640.webp 640w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-768.webp 768w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-1280.webp 1280w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-1536.webp 1536w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-2048.webp 2048w"
+        type="image/webp"
+      />
+      <source
+        data-test="picture-source-1"
+        media="(orientation: landscape)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-1366.webp 1366w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-1600.webp 1600w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-1920.webp 1920w, file:///H:/projects/portfolio/src/components/Hero/img/webp/lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.webp 2560w"
+        type="image/webp"
+      />
+      <source
+        data-test="picture-source-2"
+        media="(orientation: portrait)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-640.jpg 640w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-768.jpg 768w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-1280.jpg 1280w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-1536.jpg 1536w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-2048.jpg 2048w"
+        type="image/jpg"
+      />
+      <source
+        data-test="picture-source-3"
+        media="(orientation: landscape)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-1366.jpg 1366w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-1600.jpg 1600w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-1920.jpg 1920w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.jpg 2560w"
+        type="image/jpg"
+      />
+      <img
+        alt="Various gaming consoles and peripherals"
+        className="_img_ec3fd8 _fullscreen_ec3fd8"
+        data-e2e="picture-img"
+        data-test="picture-img"
+        loading="auto"
+        src="file:///H:/projects/portfolio/src/components/Hero/img/jpg/lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.jpg"
+      />
+    </picture>
+    <picture
+      data-e2e="picture"
+      title="Snow-capped trees with aurora borealis in background"
+    >
+      <source
+        data-test="picture-source-0"
+        media="(orientation: portrait)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-640.webp 640w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-768.webp 768w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-1280.webp 1280w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-1536.webp 1536w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-2048.webp 2048w"
+        type="image/webp"
+      />
+      <source
+        data-test="picture-source-1"
+        media="(orientation: landscape)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-1366.webp 1366w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-1600.webp 1600w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-1920.webp 1920w, file:///H:/projects/portfolio/src/components/Hero/img/webp/maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.webp 2560w"
+        type="image/webp"
+      />
+      <source
+        data-test="picture-source-2"
+        media="(orientation: portrait)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-640.jpg 640w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-768.jpg 768w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-1280.jpg 1280w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-1536.jpg 1536w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-2048.jpg 2048w"
+        type="image/jpg"
+      />
+      <source
+        data-test="picture-source-3"
+        media="(orientation: landscape)"
+        srcSet="file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-1366.jpg 1366w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-1600.jpg 1600w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-1920.jpg 1920w, file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.jpg 2560w"
+        type="image/jpg"
+      />
+      <img
+        alt="Snow-capped trees with aurora borealis in background"
+        className="_img_ec3fd8 _fullscreen_ec3fd8"
+        data-e2e="picture-img"
+        data-test="picture-img"
+        loading="auto"
+        onLoad={[Function]}
+        src="file:///H:/projects/portfolio/src/components/Hero/img/jpg/maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.jpg"
+      />
+    </picture>
+  </div>
+</div>
+`;

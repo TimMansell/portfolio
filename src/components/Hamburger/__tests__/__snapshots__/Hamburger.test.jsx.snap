@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hamburger > should match snapshot 1`] = `
+<div
+  className="_container_2eafce"
+>
+  <button
+    className="_hamburger_2eafce"
+    data-e2e="hambuger"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="_menu_2eafce"
+    >
+      toggle menu
+    </span>
+  </button>
+  <div
+    className="_background_2eafce"
+  />
+</div>
+`;

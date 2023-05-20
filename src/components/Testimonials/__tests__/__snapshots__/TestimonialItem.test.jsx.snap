@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TestimonialsItem > should match snapshot 1`] = `
+[
+  <p
+    className="_text_a006b6"
+  >
+    Description
+  </p>,
+  <p
+    className="_name_a006b6"
+  >
+    Author
+     (
+    Position
+    )
+  </p>,
+  <p
+    className="_company_a006b6"
+  >
+    Company
+  </p>,
+]
+`;

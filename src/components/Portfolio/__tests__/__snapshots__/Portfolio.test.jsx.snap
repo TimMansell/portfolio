@@ -1,0 +1,279 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Portfolio > should match snapshot 1`] = `
+[
+  <div
+    className="_heading_f4f7a7 _headingTertiary_f4f7a7"
+  >
+    <h2
+      aria-label="Portfolio"
+      className="_title_f4f7a7"
+      data-test="heading-title"
+    >
+      Portfolio
+    </h2>
+    <p
+      className="_description_f4f7a7"
+      data-test="heading-description"
+    >
+      Here's a sample of my work. Hover over image for more information
+    </p>
+  </div>,
+  <div
+    className="_portfolio_720503"
+    data-e2e="portfolio-items"
+  >
+    <div
+      className="_portfolioItem_3f4fa4"
+    >
+      <div
+        className="_cube_3f4fa4"
+        style={{}}
+      >
+        <div
+          className="_browser_3f4fa4"
+        >
+          <div
+            className="_bar_a41ad0"
+          >
+            <div
+              className="_icons_a41ad0"
+            >
+              <div
+                className="_icon_a41ad0"
+              />
+              <div
+                className="_icon_a41ad0"
+              />
+              <div
+                className="_icon_a41ad0"
+              />
+            </div>
+            <div
+              className="_tab_a41ad0"
+            >
+              title
+            </div>
+          </div>
+          <picture
+            data-e2e="picture"
+            title="title portfolio item"
+          >
+            <source
+              data-test="picture-source-0"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              srcSet="file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-480.webp 480w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-640.webp 640w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-768.webp 768w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-1024.webp 1024w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-1280.webp 1280w"
+              type="image/webp"
+            />
+            <source
+              data-test="picture-source-1"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              srcSet="file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-480.jpg 480w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-640.jpg 640w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-768.jpg 768w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1024.jpg 1024w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1280.jpg 1280w"
+              type="image/jpg"
+            />
+            <img
+              alt="title portfolio item"
+              className="_img_ec3fd8"
+              data-e2e="picture-img"
+              data-test="picture-img"
+              loading="lazy"
+              src="file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1280.jpg"
+            />
+          </picture>
+        </div>
+        <div
+          className="_info_3f4fa4"
+        >
+          <h3
+            className="_title_3f4fa4"
+          >
+            title
+          </h3>
+          <p
+            className="_description_3f4fa4"
+          >
+            description
+          </p>
+          <div
+            className="_buttons_3f4fa4"
+          >
+            <a
+              className="_btn_f8f296"
+              href="url"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+            <a
+              className="_btn_f8f296"
+              href="source"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="View Souce"
+            >
+              View source
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="_labels_3f4fa4"
+      >
+        <ul
+          className="_labels_591528"
+          data-test="labels"
+        >
+          <li
+            className="_label_103219 _isSecondary_103219"
+          >
+            2020
+          </li>
+          <li
+            className="_label_103219 _isSecondary_103219"
+          >
+            types
+          </li>
+          <li
+            className="_label_103219 _isPrimary_103219"
+          >
+            tech 1
+          </li>
+          <li
+            className="_label_103219 _isPrimary_103219"
+          >
+            tech 2
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="_portfolioItem_3f4fa4"
+    >
+      <div
+        className="_cube_3f4fa4"
+        style={{}}
+      >
+        <div
+          className="_browser_3f4fa4"
+        >
+          <div
+            className="_bar_a41ad0"
+          >
+            <div
+              className="_icons_a41ad0"
+            >
+              <div
+                className="_icon_a41ad0"
+              />
+              <div
+                className="_icon_a41ad0"
+              />
+              <div
+                className="_icon_a41ad0"
+              />
+            </div>
+            <div
+              className="_tab_a41ad0"
+            >
+              title
+            </div>
+          </div>
+          <picture
+            data-e2e="picture"
+            title="title portfolio item"
+          >
+            <source
+              data-test="picture-source-0"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              srcSet="file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-480.webp 480w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-640.webp 640w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-768.webp 768w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-1024.webp 1024w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-1280.webp 1280w"
+              type="image/webp"
+            />
+            <source
+              data-test="picture-source-1"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              srcSet="file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-480.jpg 480w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-640.jpg 640w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-768.jpg 768w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1024.jpg 1024w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1280.jpg 1280w"
+              type="image/jpg"
+            />
+            <img
+              alt="title portfolio item"
+              className="_img_ec3fd8"
+              data-e2e="picture-img"
+              data-test="picture-img"
+              loading="lazy"
+              src="file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1280.jpg"
+            />
+          </picture>
+        </div>
+        <div
+          className="_info_3f4fa4"
+        >
+          <h3
+            className="_title_3f4fa4"
+          >
+            title
+          </h3>
+          <p
+            className="_description_3f4fa4"
+          >
+            description
+          </p>
+          <div
+            className="_buttons_3f4fa4"
+          >
+            <a
+              className="_btn_f8f296"
+              href="url"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Visit website"
+            >
+              Visit website
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="_labels_3f4fa4"
+      >
+        <ul
+          className="_labels_591528"
+          data-test="labels"
+        >
+          <li
+            className="_label_103219 _isSecondary_103219"
+          >
+            2020
+          </li>
+          <li
+            className="_label_103219 _isSecondary_103219"
+          >
+            2021
+          </li>
+          <li
+            className="_label_103219 _isSecondary_103219"
+          >
+            types
+          </li>
+          <li
+            className="_label_103219 _isPrimary_103219"
+          >
+            tech 1
+          </li>
+          <li
+            className="_label_103219 _isPrimary_103219"
+          >
+            tech 2
+          </li>
+          <li
+            className="_label_103219 _isPrimary_103219"
+          >
+            tech 3
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>,
+]
+`;

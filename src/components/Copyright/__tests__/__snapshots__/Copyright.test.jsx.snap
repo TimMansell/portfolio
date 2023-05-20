@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Copyright > should match snapshot 1`] = `
+<p
+  className="_copyright_06d817"
+>
+  © 
+  2023
+  <br />
+  Tim Mansell
+</p>
+`;
