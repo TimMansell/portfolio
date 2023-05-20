@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { MenuContext } from '../../context/mobileMenu';
 import classnames from 'classnames';
 import { Link } from 'react-scroll';

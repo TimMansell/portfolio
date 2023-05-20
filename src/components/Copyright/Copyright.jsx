@@ -1,4 +1,3 @@
-import React from 'react';
 import format from 'date-fns/format';
 
 import styles from './Copyright.module.scss';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import useScrollFade from 'hooks/useScrollFade';
 
 import Hero from 'components/Hero';

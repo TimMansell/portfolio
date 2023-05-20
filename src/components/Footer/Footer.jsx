@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SectionWrap from 'layout/SectionWrap';
 import SocialIcons from 'components/SocialIcons';
 import Copyright from 'components/Copyright';

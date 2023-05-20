@@ -1,6 +1,5 @@
 import 'sanitize.css';
 
-import React from 'react';
 import { MenuContextProvider } from 'context/mobileMenu';
 
 import Main from 'layout/Main';

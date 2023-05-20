@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './SocialIcons.module.scss';
 
 import { IconLinkedin, IconTwitter, IconGithub } from 'components/Icon';

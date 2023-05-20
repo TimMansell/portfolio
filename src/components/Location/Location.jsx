@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Location.module.scss';
 
 export const Location = () => {

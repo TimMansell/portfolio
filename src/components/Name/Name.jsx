@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Name.module.scss';
 
 export const Name = () => {

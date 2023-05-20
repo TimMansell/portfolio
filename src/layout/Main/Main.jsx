@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SectionWrap from 'layout/SectionWrap';
 
 import Profile from 'components/Profile';
