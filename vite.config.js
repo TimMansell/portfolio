@@ -11,6 +11,7 @@ export default defineConfig({
       components: `${path.resolve(__dirname, './src/components/')}`,
       hooks: `${path.resolve(__dirname, './src/hooks/')}`,
       layout: `${path.resolve(__dirname, './src/layout/')}`,
+      context: `${path.resolve(__dirname, './src/context/')}`,
       scss: `${path.resolve(__dirname, './src/scss/')}`,
       utilities: `${path.resolve(__dirname, './src/scss/utilities/')}`,
       public: `${path.resolve(__dirname, './public/')}`,
