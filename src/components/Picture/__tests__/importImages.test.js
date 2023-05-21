@@ -1,7 +1,9 @@
 import { importImages } from '../importImages';
 
+const url = import.meta.url.split('/').slice(0, -3).join('/');
+
 const picture = {
-  src: `Picture/__tests__/img/test`,
+  src: `img/test`,
   srcSizes: [
     {
       sizes: ['480', '640'],
@@ -17,11 +19,11 @@ describe('Picture', () => {
 
       const { fallbackImg, sources } = importImages(src, srcSizes, types);
 
-      expect(fallbackImg).toEqual('test-640.jpg');
+      expect(fallbackImg).toEqual(`${url}/img/jpg/test-640.jpg`);
       expect(sources).toEqual([
         {
           media: undefined,
-          srcSet: 'test-480.jpg 480w, test-640.jpg 640w',
+          srcSet: `${url}/img/jpg/test-480.jpg 480w, ${url}/img/jpg/test-640.jpg 640w`,
           type: 'jpg',
         },
       ]);
@@ -37,12 +39,12 @@ describe('Picture', () => {
       expect(sources).toEqual([
         {
           media: undefined,
-          srcSet: 'test-480.webp 480w, test-640.webp 640w',
+          srcSet: `${url}/img/webp/test-480.webp 480w, ${url}/img/webp/test-640.webp 640w`,
           type: 'webp',
         },
         {
           media: undefined,
-          srcSet: 'test-480.jpg 480w, test-640.jpg 640w',
+          srcSet: `${url}/img/jpg/test-480.jpg 480w, ${url}/img/jpg/test-640.jpg 640w`,
           type: 'jpg',
         },
       ]);

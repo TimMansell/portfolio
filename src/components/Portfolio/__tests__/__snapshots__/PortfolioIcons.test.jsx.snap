@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PortfolioIcons > should match snapshot 1`] = `
+<div
+  className="bar"
+>
+  <div
+    className="icons"
+  >
+    <div
+      className="icon"
+    />
+    <div
+      className="icon"
+    />
+    <div
+      className="icon"
+    />
+  </div>
+  <div
+    className="tab"
+  >
+    test title
+  </div>
+</div>
+`;

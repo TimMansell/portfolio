@@ -1,5 +1,3 @@
-@import 'variables';
-
 .profile {
   margin-bottom: var(--vr-xl);
   text-align: center;
@@ -14,5 +12,5 @@
 }
 
 .link {
-  composes: link from '~scss/helpers/link.scss';
+  composes: link from 'scss/helpers/link.scss';
 }

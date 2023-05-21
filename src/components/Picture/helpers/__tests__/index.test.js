@@ -1,7 +1,10 @@
+import { it, describe, expect } from 'vitest';
 import { getSources, getFallbackImage } from '../index';
 
+const url = import.meta.url.split('/').slice(0, -4).join('/');
+
 const picture = {
-  src: `Picture/__tests__/img/test`,
+  src: `img/test`,
   srcSizes: [
     {
       sizes: ['480', '640'],
@@ -19,7 +22,7 @@ describe('Picture Helpers', () => {
     expect(result).toEqual([
       {
         media: undefined,
-        srcSet: 'test-480.webp 480w, test-640.webp 640w',
+        srcSet: `${url}/img/webp/test-480.webp 480w, ${url}/img/webp/test-640.webp 640w`,
         type: 'webp',
       },
     ]);
@@ -30,6 +33,6 @@ describe('Picture Helpers', () => {
 
     const result = getFallbackImage(src, srcSizes, types);
 
-    expect(result).toEqual('test-640.jpg');
+    expect(result).toEqual(`${url}/img/jpg/test-640.jpg`);
   });
 });

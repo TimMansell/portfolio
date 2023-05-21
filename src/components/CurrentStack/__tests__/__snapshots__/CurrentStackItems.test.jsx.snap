@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CurrentStackItems > should match snapshot 1`] = `
+<div
+  className="stack"
+  data-test="stack-items"
+>
+  <div
+    className="item"
+  >
+    <a
+      data-test="stack-item-link"
+      href="url"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="container"
+      >
+        <img
+          alt="react"
+          className="image"
+          loading="lazy"
+          src="file:///H:/projects/portfolio/src/components/CurrentStack/img/react.svg"
+          title="react"
+          width="65"
+        />
+      </div>
+    </a>
+  </div>
+  <div
+    className="item"
+  >
+    <a
+      data-test="stack-item-link"
+      href="url"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="container"
+      >
+        <img
+          alt="nodejs"
+          className="image"
+          loading="lazy"
+          src="file:///H:/projects/portfolio/src/components/CurrentStack/img/nodejs.svg"
+          title="nodejs"
+          width="90"
+        />
+      </div>
+    </a>
+  </div>
+</div>
+`;

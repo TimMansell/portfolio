@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Section > should match snapshot 1`] = `
+<section
+  className="section bgPrimary"
+  id="test"
+>
+  <div
+    className="container"
+  >
+    <p>
+      test
+    </p>
+  </div>
+</section>
+`;

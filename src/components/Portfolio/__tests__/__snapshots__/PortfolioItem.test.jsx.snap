@@ -1,0 +1,129 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PortfolioItem > should match snapshot 1`] = `
+<div
+  className="portfolioItem"
+>
+  <div
+    className="cube"
+    style={{}}
+  >
+    <div
+      className="browser"
+    >
+      <div
+        className="bar"
+      >
+        <div
+          className="icons"
+        >
+          <div
+            className="icon"
+          />
+          <div
+            className="icon"
+          />
+          <div
+            className="icon"
+          />
+        </div>
+        <div
+          className="tab"
+        >
+          Title
+        </div>
+      </div>
+      <picture
+        data-e2e="picture"
+        title="Title portfolio item"
+      >
+        <source
+          data-test="picture-source-0"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-480.webp 480w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-640.webp 640w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-768.webp 768w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-1024.webp 1024w, file:///H:/projects/portfolio/src/components/Portfolio/img/webp/test-1280.webp 1280w"
+          type="image/webp"
+        />
+        <source
+          data-test="picture-source-1"
+          sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+          srcSet="file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-480.jpg 480w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-640.jpg 640w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-768.jpg 768w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1024.jpg 1024w, file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1280.jpg 1280w"
+          type="image/jpg"
+        />
+        <img
+          alt="Title portfolio item"
+          className="img"
+          data-e2e="picture-img"
+          data-test="picture-img"
+          loading="lazy"
+          src="file:///H:/projects/portfolio/src/components/Portfolio/img/jpg/test-1280.jpg"
+        />
+      </picture>
+    </div>
+    <div
+      className="info"
+    >
+      <h3
+        className="title"
+      >
+        Title
+      </h3>
+      <p
+        className="description"
+      >
+        Description
+      </p>
+      <div
+        className="buttons"
+      >
+        <a
+          className="btn"
+          href="url.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Visit website"
+        >
+          Visit website
+        </a>
+        <a
+          className="btn"
+          href="source"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="View Souce"
+        >
+          View source
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="labels"
+  >
+    <ul
+      className="labels"
+      data-test="labels"
+    >
+      <li
+        className="label isSecondary"
+      >
+        2020
+      </li>
+      <li
+        className="label isSecondary"
+      >
+        Personal
+      </li>
+      <li
+        className="label isPrimary"
+      >
+        Tech
+      </li>
+      <li
+        className="label isPrimary"
+      >
+        Tech 2
+      </li>
+    </ul>
+  </div>
+</div>
+`;
