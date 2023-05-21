@@ -1,16 +1,9 @@
 import { it, describe, expect } from 'vitest';
 import { getSrcSet, getSizes, getFilePath } from '../importImages';
-
-vi.mock('helpers/getMeta.js', async () => {
-  const actual = await vi.importActual('helpers/getMeta.js');
-  return {
-    ...actual,
-    getMeta2: () => '',
-  };
-});
+const url = import.meta.url.split('/').slice(0, -4).join('/');
 
 const picture = {
-  src: `Picture/__tests__/img/test`,
+  src: `img/test`,
   srcSizes: {
     sizes: ['480', '640'],
   },
@@ -23,7 +16,7 @@ describe('Picture Helpers', () => {
 
     const result = getSrcSet(src, type)('', '640');
 
-    expect(result).toEqual('test-640.jpg 640w,');
+    expect(result).toEqual(`${url}/img/jpg/test-640.jpg 640w,`);
   });
 
   it('should return correct srcSet and type', () => {
@@ -31,7 +24,9 @@ describe('Picture Helpers', () => {
 
     const { srcSet, type: srcType } = getSizes(src, type)(srcSizes);
 
-    expect(srcSet).toEqual('test-480.jpg 480w, test-640.jpg 640w');
+    expect(srcSet).toEqual(
+      `${url}/img/jpg/test-480.jpg 480w, ${url}/img/jpg/test-640.jpg 640w`
+    );
     expect(srcType).toEqual('jpg');
   });
 
@@ -65,6 +60,6 @@ describe('Picture Helpers', () => {
 
     const filePath = getFilePath(src, sizes[0], type);
 
-    expect(filePath).toEqual('Picture/__tests__/img/jpg/test-480.jpg');
+    expect(filePath).toEqual('img/jpg/test-480.jpg');
   });
 });

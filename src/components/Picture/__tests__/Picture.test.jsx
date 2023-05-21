@@ -4,10 +4,12 @@ import renderer from 'react-test-renderer';
 
 import Picture from '../Picture';
 
+const url = import.meta.url.split('/').slice(0, -3).join('/');
+
 const props = {
   title: 'test title',
   types: ['avif', 'webp', 'jpg'],
-  src: 'Picture/__tests__/img/test',
+  src: 'img/test',
   srcSizes: [{ sizes: ['480', '640'] }],
   width: '50',
 };
@@ -20,6 +22,8 @@ describe('Picture', () => {
 
   it('should match snapshot', () => {
     const snapshot = renderer.create(<Picture {...props} />).toJSON();
+
+    console.log({ snapshot });
 
     expect(snapshot).toMatchSnapshot();
   });
@@ -64,7 +68,7 @@ describe('Picture', () => {
     const source = wrapper.find('[data-test="picture-source-0"]');
 
     expect(source.props().srcSet).toBe(
-      'test-480.avif 480w, test-640.avif 640w'
+      `${url}/img/avif/test-480.avif 480w, ${url}/img/avif/test-640.avif 640w`
     );
     expect(source.props().type).toBe(`image/${props.types[0]}`);
   });
@@ -80,7 +84,7 @@ describe('Picture', () => {
     const wrapper = shallow(<Picture {...props} />);
     const source = wrapper.find('[data-test="picture-img"]');
 
-    expect(source.props().src).toBe('test-640.jpg');
+    expect(source.props().src).toBe(`${url}/img/jpg/test-640.jpg`);
     expect(source.props().alt).toBe(props.title);
   });
 });
