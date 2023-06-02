@@ -23,7 +23,7 @@ export const useScrollFade = (fadeMultiplier) => {
     window.addEventListener('scroll', onScroll);
 
     return () => window.removeEventListener('scroll', onScroll);
-  });
+  }, [fadeMultiplier]);
 
   return styles;
 };

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import useScrollFade from 'hooks/useScrollFade';
-
 import Hero from 'components/Hero';
 import LearnMore from 'components/LearnMore';
 import Hi from 'components/Hi';
@@ -12,22 +10,15 @@ import Tagline from 'components/Tagline';
 import styles from './Intro.module.scss';
 
 export const Intro = () => {
-  const scrollFadeStyle = useScrollFade(1.15);
-
   return (
     <section id="intro" className={styles.background} role="banner">
       <Hero />
 
       <div className={styles.intro}>
         <Hi />
-
-        <div style={scrollFadeStyle} data-e2e="fading-content">
-          <Location />
-
-          <Name />
-
-          <Tagline />
-        </div>
+        <Location />
+        <Name />
+        <Tagline />
       </div>
 
       <LearnMore />
