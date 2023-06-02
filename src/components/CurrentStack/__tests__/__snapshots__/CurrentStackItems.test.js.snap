@@ -20,6 +20,7 @@ exports[`CurrentStackItems should match snapshot 1`] = `
         <img
           alt="react"
           className="image"
+          height="50"
           loading="lazy"
           src={
             Object {
@@ -52,6 +53,7 @@ exports[`CurrentStackItems should match snapshot 1`] = `
         <img
           alt="nodejs"
           className="image"
+          height="50"
           loading="lazy"
           src={
             Object {
