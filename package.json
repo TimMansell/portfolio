@@ -43,11 +43,16 @@
     "test:e2e:open": "cross-env npm-run-all build test:commands:open",
     "test:e2e:updatesnapshots": "npm-run-all build test:commands:updatesnapshots",
     "eject": "react-scripts eject",
-    "serve": "serve -s build",
+    "serve": "serve -s build -l 1337",
     "test:commands:run": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:open": "server-test serve 5000 \"cypress open --config ignoreTestFiles=**/*snapshot*\"",
     "test:commands:snapshots": "server-test serve 5000 \"cypress run --config ignoreTestFiles=**/*spec*\"",
-    "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\""
+    "test:commands:updatesnapshots": "server-test serve 5000 \"cypress run --env updateSnapshots=true --config ignoreTestFiles=**/*spec*\"",
+    "test:snapshots": "cross-env TYPE=snapshot run-s test:e2e:pw",
+    "test:snapshots:update": "cross-env TYPE=snapshot UPDATE_SNAPSHOTS=true run-s test:e2e:pw",
+    "test:e2e:pw": "npm-run-all build docker",
+    "test:report": "playwright show-report",
+    "docker": "docker compose run --rm e2e"
   },
   "eslintConfig": {
     "extends": "react-app"
