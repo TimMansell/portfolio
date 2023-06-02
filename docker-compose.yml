@@ -1,0 +1,14 @@
+services:
+  e2e:
+    image: 'mcr.microsoft.com/playwright:v1.34.3'
+    user: pwuser
+    environment:
+      - CI=$CI
+      - TEST_PORT=$TEST_PORT
+      - TEST_WORKERS=$TEST_WORKERS
+      - UPDATE_SNAPSHOTS=$UPDATE_SNAPSHOTS
+      - GREP=$TYPE
+    entrypoint: npx playwright test --project ${BROWSER:-chromium}
+    volumes:
+      - ./:/app
+    working_dir: /app
