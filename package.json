@@ -67,6 +67,7 @@
     ]
   },
   "devDependencies": {
+    "@sinonjs/fake-timers": "^10.2.0",
     "axe-core": "^3.5.5",
     "cross-env": "^7.0.2",
     "cypress": "^4.9.0",

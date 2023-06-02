@@ -92,7 +92,7 @@ exports[`Footer should match snapshot 1`] = `
         className="copyright"
       >
         © 
-        2021
+        1970
         <br />
         Tim Mansell
       </p>

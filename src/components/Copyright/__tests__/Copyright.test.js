@@ -1,8 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
+import FakeTimers from '@sinonjs/fake-timers';
 
 import Copyright from '../Copyright';
+
+FakeTimers.install();
 
 describe('Copyright', () => {
   it('should render my component', () => {
