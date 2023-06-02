@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@axe-core/playwright@^4.7.2":
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/@axe-core/playwright/-/playwright-4.7.2.tgz#5622918cb3f7d0f4572406a6b1f22c15dad359df"
+  integrity sha512-k5f6KGVkPsZ7wR56XnRZYS4b1Wd8wkVTpjqeScFYZMTJxKVv3FGKoBqQVBoCphWtP0oMWQc41zQgHO6gaYTcQw==
+  dependencies:
+    axe-core "^4.7.0"
+
 "@babel/code-frame@7.8.3", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -1464,6 +1471,16 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@playwright/test@^1.34.3":
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.34.3.tgz#d9f1ac3f1a09633b5ca5351c50c308bf802bde53"
+  integrity sha512-zPLef6w9P6T/iT6XDYG3mvGOqOyb6eHaV9XtkunYs0+OzxBtrPAAaHotc0X+PJ00WPPnLfFBTl7mf45Mn8DBmw==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.34.3"
+  optionalDependencies:
+    fsevents "2.3.2"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -2425,6 +2442,11 @@ aws4@^1.8.0:
 axe-core@^3.5.5:
   version "3.5.5"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.5.tgz#84315073b53fa3c0c51676c588d59da09a192227"
+
+axe-core@^4.7.0:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.7.2.tgz#040a7342b20765cb18bb50b628394c21bccc17a0"
+  integrity sha512-zIURGIS1E1Q4pcrMjp+nnEh+16G56eG/MUllJH8yEvw7asDo7Ac9uhC9KIH5jzpITueEZolfYglnCGIuSBz39g==
 
 axobject-query@^2.0.2:
   version "2.0.2"
@@ -5337,6 +5359,11 @@ fsevents@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.2.tgz#4c0a1fb34bc68e543b4b82a9ec392bfbda840805"
 
+fsevents@2.3.2, fsevents@~2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
+  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
+
 fsevents@^1.2.7:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.9.tgz#3f5ed66583ccd6f400b5a00db6f7e861363e388f"
@@ -5347,11 +5374,6 @@ fsevents@^1.2.7:
 fsevents@~2.1.2:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.3.tgz#fb738703ae8d2f9fe900c33836ddebee8b97f23e"
-
-fsevents@~2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
-  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -8724,6 +8746,11 @@ pkg-up@^2.0.0:
   resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
   dependencies:
     find-up "^2.1.0"
+
+playwright-core@1.34.3:
+  version "1.34.3"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.34.3.tgz#bc906ea1b26bb66116ce329436ee59ba2e78fe9f"
+  integrity sha512-2pWd6G7OHKemc5x1r1rp8aQcpvDh7goMBZlJv6Co5vCNLVcQJdhxRL09SGaY6HcyHH9aT4tiynZabMofVasBYw==
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
