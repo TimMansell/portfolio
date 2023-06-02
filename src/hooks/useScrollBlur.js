@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import throttle from 'lodash.throttle';
 
-const formatBlur = (value) => ({ filter: `blur(${parseInt(value, 10)}px)` });
+const formatBlur = (value) => ({
+  backdropFilter: `blur(${parseInt(value, 10)}px)`,
+});
 
 export const useScrollBlur = (blurFrom, blurTo) => {
   const intialBlur = formatBlur(blurFrom);
@@ -13,17 +15,17 @@ export const useScrollBlur = (blurFrom, blurTo) => {
 
       const blur = blurFrom + (blurTo - blurFrom) * (scrollY / innerHeight);
 
-      const finalBlur = formatBlur(blur);
+      const blurCss = formatBlur(blur);
 
-      const blurCss = blur <= blurTo ? finalBlur : intialBlur;
-
-      setStyles(blurCss);
+      if (blur < blurTo) {
+        setStyles(blurCss);
+      }
     }, 30);
 
     window.addEventListener('scroll', onScroll);
 
     return () => window.removeEventListener('scroll', onScroll);
-  });
+  }, [blurFrom, blurTo, intialBlur]);
 
   return styles;
 };
