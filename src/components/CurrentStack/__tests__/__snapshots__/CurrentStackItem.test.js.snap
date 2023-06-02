@@ -16,6 +16,7 @@ exports[`CurrentStackItem should match snapshot 1`] = `
       <img
         alt="babel"
         className="image"
+        height="50"
         loading="lazy"
         src={
           Object {
