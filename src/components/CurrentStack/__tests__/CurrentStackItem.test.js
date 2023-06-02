@@ -8,6 +8,7 @@ const props = {
   url: 'test url',
   name: 'babel',
   width: '50',
+  height: '50',
 };
 
 describe('CurrentStackItem', () => {
