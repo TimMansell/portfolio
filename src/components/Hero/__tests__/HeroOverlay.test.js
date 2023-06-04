@@ -1,18 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import HeroOverlay from '../HeroOverlay';
 
 describe('HeroOverlay', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<HeroOverlay />);
+    render(<HeroOverlay />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<HeroOverlay />).toJSON();
+    const { asFragment } = render(<HeroOverlay />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

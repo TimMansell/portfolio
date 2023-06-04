@@ -1,18 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import HeroImage from '../HeroImage';
 
 describe('HeroImage', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<HeroImage />);
+    render(<HeroImage />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<HeroImage />).toJSON();
+    const { asFragment } = render(<HeroImage />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
