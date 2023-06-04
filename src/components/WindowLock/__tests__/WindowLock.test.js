@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 
 import WindowLock from '../WindowLock';
 import { MenuContext } from '../../../context/mobileMenu';
@@ -13,6 +13,6 @@ describe('WindowLock', () => {
     );
 
     // eslint-disable-next-line
-    const wrapper = shallow(<MockComponent />);
+    render(<MockComponent />);
   });
 });

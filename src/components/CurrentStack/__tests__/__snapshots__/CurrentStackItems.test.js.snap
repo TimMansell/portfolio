@@ -1,75 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CurrentStackItems should match snapshot 1`] = `
-<div
-  className="stack"
-  data-test="stack-items"
->
+<DocumentFragment>
   <div
-    className="item"
+    class="stack"
   >
-    <a
-      data-test="stack-item-link"
-      href="url"
-      rel="noopener noreferrer"
-      target="_blank"
+    <div
+      class="item"
+      data-testid="stack-item"
     >
-      <div
-        className="container"
+      <a
+        data-testid="stack-item-link"
+        href="url"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <img
-          alt="react"
-          className="image"
-          height="50"
-          loading="lazy"
-          src={
-            Object {
-              "ReactComponent": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "render": [Function],
-              },
-              "__esModule": true,
-              "default": "react.svg",
-            }
-          }
-          title="react"
-          width="65"
-        />
-      </div>
-    </a>
-  </div>
-  <div
-    className="item"
-  >
-    <a
-      data-test="stack-item-link"
-      href="url"
-      rel="noopener noreferrer"
-      target="_blank"
+        <div
+          class="container"
+        >
+          <img
+            alt="react"
+            class="image"
+            height="50"
+            loading="lazy"
+            src="[object Object]"
+            title="react"
+            width="65"
+          />
+        </div>
+      </a>
+    </div>
+    <div
+      class="item"
+      data-testid="stack-item"
     >
-      <div
-        className="container"
+      <a
+        data-testid="stack-item-link"
+        href="url"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <img
-          alt="nodejs"
-          className="image"
-          height="50"
-          loading="lazy"
-          src={
-            Object {
-              "ReactComponent": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "render": [Function],
-              },
-              "__esModule": true,
-              "default": "nodejs.svg",
-            }
-          }
-          title="nodejs"
-          width="90"
-        />
-      </div>
-    </a>
+        <div
+          class="container"
+        >
+          <img
+            alt="nodejs"
+            class="image"
+            height="50"
+            loading="lazy"
+            src="[object Object]"
+            title="nodejs"
+            width="90"
+          />
+        </div>
+      </a>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;

@@ -15,6 +15,7 @@ const text = 'text';
 describe('Button', () => {
   it('should render my component', () => {
     const { getByText } = render(<Button {...props}>{text}</Button>);
+
     expect(getByText(text)).toBeInTheDocument();
   });
 

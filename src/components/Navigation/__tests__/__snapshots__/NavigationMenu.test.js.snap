@@ -1,42 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavigationMenu should match snapshot 1`] = `
-<ul
-  className="menu"
-  data-e2e="navigation"
->
-  <li
-    className="menuItem"
+<DocumentFragment>
+  <ul
+    class="menu"
+    data-e2e="navigation"
   >
-    <a
-      className="link"
-      data-e2e="navigation-item-1"
-      onClick={[Function]}
+    <li
+      class="menuItem"
     >
-      Item 1
-    </a>
-  </li>
-  <li
-    className="menuItem"
-  >
-    <a
-      className="link"
-      data-e2e="navigation-item-2"
-      onClick={[Function]}
+      <a
+        class="link"
+        data-e2e="navigation-item-1"
+      >
+        Item 1
+      </a>
+    </li>
+    <li
+      class="menuItem"
     >
-      Item 2
-    </a>
-  </li>
-  <li
-    className="menuItem"
-  >
-    <a
-      className="link"
-      data-e2e="navigation-item-3"
-      onClick={[Function]}
+      <a
+        class="link"
+        data-e2e="navigation-item-2"
+      >
+        Item 2
+      </a>
+    </li>
+    <li
+      class="menuItem"
     >
-      Item 3
-    </a>
-  </li>
-</ul>
+      <a
+        class="link"
+        data-e2e="navigation-item-3"
+      >
+        Item 3
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
 `;

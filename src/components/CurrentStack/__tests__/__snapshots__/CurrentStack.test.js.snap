@@ -1,55 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CurrentStack should match snapshot 1`] = `
-Array [
+<DocumentFragment>
   <div
-    className="heading headingPrimary"
+    class="heading headingPrimary"
+    data-testid="header"
   >
     <h2
       aria-label="Current Stack"
-      className="title"
-      data-test="heading-title"
+      class="title"
     >
       Current Stack
     </h2>
     <p
-      className="description"
-      data-test="heading-description"
+      class="description"
     >
       I spend most of my time with these technologies / tools / methodologies
     </p>
-  </div>,
+  </div>
   <div
-    className="stack"
-    data-test="stack-items"
+    class="stack"
   >
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://reactjs.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="React"
-            className="image"
+            class="image"
             height="58"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "react.svg",
-              }
-            }
+            src="[object Object]"
             title="React"
             width="65"
           />
@@ -57,32 +47,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://nodejs.org/en/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="NodeJS"
-            className="image"
+            class="image"
             height="55"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "nodejs.svg",
-              }
-            }
+            src="[object Object]"
             title="NodeJS"
             width="90"
           />
@@ -90,32 +72,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://vuejs.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="VueJS"
-            className="image"
+            class="image"
             height="62"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "vuejs.svg",
-              }
-            }
+            src="[object Object]"
             title="VueJS"
             width="60"
           />
@@ -123,32 +97,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://www.npmjs.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="NPM"
-            className="image"
+            class="image"
             height="35"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "npm.svg",
-              }
-            }
+            src="[object Object]"
             title="NPM"
             width="90"
           />
@@ -156,32 +122,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://webpack.js.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Webpack"
-            className="image"
+            class="image"
             height="75"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "webpack.svg",
-              }
-            }
+            src="[object Object]"
             title="Webpack"
             width="75"
           />
@@ -189,32 +147,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://yarnpkg.com"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Yarn"
-            className="image"
+            class="image"
             height="58"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "yarn.svg",
-              }
-            }
+            src="[object Object]"
             title="Yarn"
             width="130"
           />
@@ -222,32 +172,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://eslint.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="ESLint"
-            className="image"
+            class="image"
             height="66"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "eslint.svg",
-              }
-            }
+            src="[object Object]"
             title="ESLint"
             width="75"
           />
@@ -255,32 +197,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://jestjs.io/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Jest"
-            className="image"
+            class="image"
             height="55"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "jest.svg",
-              }
-            }
+            src="[object Object]"
             title="Jest"
             width="50"
           />
@@ -288,32 +222,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://babeljs.io/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Babel"
-            className="image"
+            class="image"
             height="64"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "babel.svg",
-              }
-            }
+            src="[object Object]"
             title="Babel"
             width="140"
           />
@@ -321,32 +247,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://www.cypress.io/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Cypress"
-            className="image"
+            class="image"
             height="60"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "cypress.svg",
-              }
-            }
+            src="[object Object]"
             title="Cypress"
             width="60"
           />
@@ -354,32 +272,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://sass-lang.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="SASS"
-            className="image"
+            class="image"
             height="53"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "sass.svg",
-              }
-            }
+            src="[object Object]"
             title="SASS"
             width="70"
           />
@@ -387,32 +297,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://code.visualstudio.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="VSCode"
-            className="image"
+            class="image"
             height="55"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "vscode.svg",
-              }
-            }
+            src="[object Object]"
             title="VSCode"
             width="55"
           />
@@ -420,32 +322,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://git-scm.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Git"
-            className="image"
+            class="image"
             height="44"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "git.svg",
-              }
-            }
+            src="[object Object]"
             title="Git"
             width="105"
           />
@@ -453,32 +347,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://postcss.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="PostCSS"
-            className="image"
+            class="image"
             height="60"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "postcss.svg",
-              }
-            }
+            src="[object Object]"
             title="PostCSS"
             width="60"
           />
@@ -486,32 +372,24 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://www.netlify.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="Netlify"
-            className="image"
+            class="image"
             height="38"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "netlify.svg",
-              }
-            }
+            src="[object Object]"
             title="Netlify"
             width="140"
           />
@@ -519,38 +397,30 @@ Array [
       </a>
     </div>
     <div
-      className="item"
+      class="item"
+      data-testid="stack-item"
     >
       <a
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
         href="https://graphql.org/"
         rel="noopener noreferrer"
         target="_blank"
       >
         <div
-          className="container"
+          class="container"
         >
           <img
             alt="GraphQL"
-            className="image"
+            class="image"
             height="55"
             loading="lazy"
-            src={
-              Object {
-                "ReactComponent": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
-                "__esModule": true,
-                "default": "graphql.svg",
-              }
-            }
+            src="[object Object]"
             title="GraphQL"
             width="55"
           />
         </div>
       </a>
     </div>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;

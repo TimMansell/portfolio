@@ -1,24 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TestimonialsItem should match snapshot 1`] = `
-Array [
+<DocumentFragment>
   <p
-    className="text"
+    class="text"
   >
     Description
-  </p>,
+  </p>
   <p
-    className="name"
+    class="name"
   >
-    Author
-     (
-    Position
-    )
-  </p>,
+    Author (Position)
+  </p>
   <p
-    className="company"
+    class="company"
   >
     Company
-  </p>,
-]
+  </p>
+</DocumentFragment>
 `;

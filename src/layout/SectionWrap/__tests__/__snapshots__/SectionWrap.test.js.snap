@@ -1,16 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Section should match snapshot 1`] = `
-<section
-  className="section bgPrimary"
-  id="test"
->
-  <div
-    className="container"
+<DocumentFragment>
+  <section
+    class="section bgPrimary"
+    data-testid="section"
+    id="test"
   >
-    <p>
-      test
-    </p>
-  </div>
-</section>
+    <div
+      class="container"
+      data-testid="section-container"
+    >
+      <p>
+        test
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
 `;
