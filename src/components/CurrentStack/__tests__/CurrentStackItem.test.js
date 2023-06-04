@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import CurrentStackItem from '../CurrentStackItem';
 
@@ -13,20 +13,18 @@ const props = {
 
 describe('CurrentStackItem', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<CurrentStackItem {...props} />);
+    render(<CurrentStackItem {...props} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<CurrentStackItem {...props} />).toJSON();
+    const { asFragment } = render(<CurrentStackItem {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should be correct link href', () => {
-    const wrapper = shallow(<CurrentStackItem {...props} />);
-    const link = wrapper.find('[data-test="stack-item-link"]');
+    const { getByTestId } = render(<CurrentStackItem {...props} />);
 
-    expect(link.props().href).toEqual(props.url);
+    expect(getByTestId('stack-item-link')).toHaveAttribute('href', props.url);
   });
 });

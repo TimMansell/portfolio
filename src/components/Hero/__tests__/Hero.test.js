@@ -1,23 +1,38 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render, act } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Hero from '../Hero';
-
-const props = {
-  blurFrom: 0,
-  blurTo: 1,
-};
+import images from '../json/images.json';
 
 describe('Hero', () => {
+  beforeAll(() => {
+    jest.useFakeTimers();
+  });
+
+  afterAll(() => {
+    jest.useRealTimers();
+  });
+
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Hero {...props}/>);
+    render(<Hero />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Hero {...props} />).toJSON();
+    const { asFragment } = render(<Hero />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('should change images', () => {
+    const { getAllByTestId } = render(<Hero />);
+
+    const element = getAllByTestId('picture')[0];
+
+    expect(element).toHaveAttribute('title', images[0].title);
+
+    act(() => jest.advanceTimersByTime(9000));
+
+    expect(element).toHaveAttribute('title', images[1].title);
   });
 });

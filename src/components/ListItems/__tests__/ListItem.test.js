@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import ListItem from '../ListItem';
 
@@ -17,13 +17,12 @@ const defaultProps = {
 
 describe('ListItem', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<ListItem {...defaultProps} />);
+    render(<ListItem {...defaultProps} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<ListItem {...defaultProps} />).toJSON();
+    const { asFragment } = render(<ListItem {...defaultProps} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

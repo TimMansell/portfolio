@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Label from '../Label';
 
@@ -15,26 +15,25 @@ describe('Label', () => {
       ...defaultProps,
     };
 
-    // eslint-disable-next-line
-    const wrapper = shallow(<Label {...props} />);
+    render(<Label {...props} />);
   });
 
   it('should match snapshot', () => {
     const props = {
       ...defaultProps,
     };
-    const snapshot = renderer.create(<Label {...props} />).toJSON();
+    const { asFragment } = render(<Label {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should display a primary background', () => {
     const props = {
       ...defaultProps,
     };
-    const wrapper = shallow(<Label {...props} />);
+    const { getByText } = render(<Label {...props} />);
 
-    expect(wrapper.hasClass('isPrimary')).toBeTruthy();
+    expect(getByText(defaultProps.label)).toHaveClass('isPrimary');
   });
 
   it('should display a secondary background', () => {
@@ -42,9 +41,9 @@ describe('Label', () => {
       ...defaultProps,
       type: 'secondary',
     };
-    const wrapper = shallow(<Label {...props} />);
+    const { getByText } = render(<Label {...props} />);
 
-    expect(wrapper.hasClass('isSecondary')).toBeTruthy();
+    expect(getByText(defaultProps.label)).toHaveClass('isSecondary');
   });
 
   it('should display a tertiary background', () => {
@@ -52,9 +51,9 @@ describe('Label', () => {
       ...defaultProps,
       type: 'tertiary',
     };
-    const wrapper = shallow(<Label {...props} />);
+    const { getByText } = render(<Label {...props} />);
 
-    expect(wrapper.hasClass('isTertiary')).toBeTruthy();
+    expect(getByText(defaultProps.label)).toHaveClass('isTertiary');
   });
 
   it('should render as large label', () => {
@@ -62,8 +61,8 @@ describe('Label', () => {
       ...defaultProps,
       size: 'lg',
     };
-    const wrapper = shallow(<Label {...props} />);
+    const { getByText } = render(<Label {...props} />);
 
-    expect(wrapper.hasClass('isLarge')).toBeTruthy();
+    expect(getByText(defaultProps.label)).toHaveClass('isLarge');
   });
 });

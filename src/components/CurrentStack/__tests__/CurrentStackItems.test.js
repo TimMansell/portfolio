@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import CurrentStackItems from '../CurrentStackItems';
 
@@ -25,20 +25,19 @@ jest.mock(
 
 describe('CurrentStackItems', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<CurrentStackItems />);
+    render(<CurrentStackItems />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<CurrentStackItems />).toJSON();
+    const { asFragment } = render(<CurrentStackItems />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render correct amount of items', () => {
-    const wrapper = shallow(<CurrentStackItems />);
-    const list = wrapper.find('[data-test="stack-items"]');
+    const { queryAllByTestId } = render(<CurrentStackItems />);
+    const list = queryAllByTestId('stack-item');
 
-    expect(list.children()).toHaveLength(2);
+    expect(list).toHaveLength(2);
   });
 });

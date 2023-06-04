@@ -71,7 +71,7 @@ const Icon = ({ name, className, size, padded }) => {
     [styles.iconPadded]: padded,
   });
 
-  return <FontAwesomeIcon icon={name} className={classes} />;
+  return <FontAwesomeIcon icon={name} className={classes} data-testid="icon" />;
 };
 
 Icon.propTypes = {

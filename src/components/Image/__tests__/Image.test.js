@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Image from '../Image';
 
@@ -12,13 +12,12 @@ const props = {
 
 describe('Image', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Image {...props} />);
+    render(<Image {...props} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Image {...props} />).toJSON();
+    const { asFragment } = render(<Image {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

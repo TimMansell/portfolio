@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Icon, {
   IconChevronDown,
@@ -29,6 +29,14 @@ const defaultprops = {
 };
 
 describe('Default Icon', () => {
+  it('should render my default Icon', () => {
+    const props = {
+      ...defaultprops,
+    };
+
+    render(<Icon {...props} />);
+  });
+
   it('should match snapshot', () => {
     const props = {
       ...defaultprops,
@@ -37,19 +45,9 @@ describe('Default Icon', () => {
       padded: true,
     };
 
-    const snapshot = renderer.create(<Icon {...props} />).toJSON();
+    const { asFragment } = render(<Icon {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
-  });
-
-  it('should render my default Icon', () => {
-    const props = {
-      ...defaultprops,
-    };
-
-    const wrapper = mount(<Icon {...props} />);
-
-    expect(wrapper.props().name).toEqual(props.name);
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render a custom class', () => {
@@ -58,9 +56,9 @@ describe('Default Icon', () => {
       className: 'test-class',
     };
 
-    const wrapper = shallow(<Icon {...props} />);
+    const { getByTestId } = render(<Icon {...props} />);
 
-    expect(wrapper.hasClass('test-class')).toEqual(true);
+    expect(getByTestId('icon')).toHaveClass('test-class');
   });
 
   it('should add a size class', () => {
@@ -69,9 +67,9 @@ describe('Default Icon', () => {
       size: 'md',
     };
 
-    const wrapper = shallow(<Icon {...props} />);
+    const { getByTestId } = render(<Icon {...props} />);
 
-    expect(wrapper.hasClass('iconMd')).toEqual(true);
+    expect(getByTestId('icon')).toHaveClass('iconMd');
   });
 
   it('should add a margin', () => {
@@ -80,9 +78,9 @@ describe('Default Icon', () => {
       padded: true,
     };
 
-    const wrapper = shallow(<Icon {...props} />);
+    const { getByTestId } = render(<Icon {...props} />);
 
-    expect(wrapper.hasClass('iconPadded')).toEqual(true);
+    expect(getByTestId('icon')).toHaveClass('iconPadded');
   });
 });
 
@@ -94,9 +92,9 @@ describe('Icons', () => {
       className: 'test-class',
     };
 
-    const wrapper = shallow(<IconChevronDown {...props} />);
+    const { getByTestId } = render(<IconChevronDown {...props} />);
 
-    expect(wrapper.hasClass('test-class')).toEqual(true);
+    expect(getByTestId('icon')).toHaveClass('test-class');
   });
 
   it('should have a padded prop', () => {
@@ -105,9 +103,9 @@ describe('Icons', () => {
       padded: true,
     };
 
-    const wrapper = shallow(<IconChevronDown {...props} />);
+    const { getByTestId } = render(<IconChevronDown {...props} />);
 
-    expect(wrapper.props().padded).toEqual(props.padded);
+    expect(getByTestId('icon')).toHaveClass('iconPadded');
   });
 
   it('should have a size prop', () => {
@@ -116,103 +114,84 @@ describe('Icons', () => {
       size: 'md',
     };
 
-    const wrapper = shallow(<IconChevronDown {...props} />);
+    const { getByTestId } = render(<IconChevronDown {...props} />);
 
-    expect(wrapper.props().size).toEqual(props.size);
+    expect(getByTestId('icon')).toHaveClass('iconMd');
   });
 
   it('should render my IconChevronDown', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconChevronDown />);
+    render(<IconChevronDown />);
   });
 
   it('should render my IconAngleUp', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconAngleUp />);
+    render(<IconAngleUp />);
   });
 
   it('should render my IconTerminal', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconTerminal />);
+    render(<IconTerminal />);
   });
 
   it('should render my IconCode', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconCode />);
+    render(<IconCode />);
   });
 
   it('should render my IconTasks', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconTasks />);
+    render(<IconTasks />);
   });
 
   it('should render my IconCodeBranch', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconCodeBranch />);
+    render(<IconCodeBranch />);
   });
 
   it('should render my IconCodeLaptop', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconCodeLaptop />);
+    render(<IconCodeLaptop />);
   });
 
   it('should render my IconMugHot', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconMugHot />);
+    render(<IconMugHot />);
   });
 
   it('should render my IconQuoteLeft', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconQuoteLeft />);
+    render(<IconQuoteLeft />);
   });
 
   it('should render my IconQuoteRight', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconQuoteRight />);
+    render(<IconQuoteRight />);
   });
 
   it('should render my IconCogs', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconCogs />);
+    render(<IconCogs />);
   });
 
   it('should render my IconBug', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconBug />);
+    render(<IconBug />);
   });
 
   it('should render my IconTools', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconTools />);
+    render(<IconTools />);
   });
 
   it('should render my IconCss3Alt', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconCss3Alt />);
+    render(<IconCss3Alt />);
   });
 
   it('should render my IconJs', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconJs />);
+    render(<IconJs />);
   });
 
   it('should render my IconLinkedin', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconLinkedin />);
+    render(<IconLinkedin />);
   });
 
   it('should render my IconTwitter', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconTwitter />);
+    render(<IconTwitter />);
   });
 
   it('should render my IconGithub', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconGithub />);
+    render(<IconGithub />);
   });
 
   it('should render my IconAppStoreIos', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<IconAppStoreIos />);
+    render(<IconAppStoreIos />);
   });
 });

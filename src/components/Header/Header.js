@@ -12,15 +12,11 @@ export const Header = ({ text, title, type }) => {
   });
 
   return (
-    <div className={headerClasses}>
-      <h2 className={styles.title} data-test="heading-title" aria-label={title}>
+    <div className={headerClasses} data-testid="header">
+      <h2 className={styles.title} aria-label={title}>
         {title}
       </h2>
-      {text && (
-        <p className={styles.description} data-test="heading-description">
-          {text}
-        </p>
-      )}
+      {text && <p className={styles.description}>{text}</p>}
     </div>
   );
 };

@@ -1,18 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import GoToTop from '../GoToTop';
 
 describe('GoToTop', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<GoToTop />);
+    render(<GoToTop />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<GoToTop />).toJSON();
+    const { asFragment } = render(<GoToTop />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
