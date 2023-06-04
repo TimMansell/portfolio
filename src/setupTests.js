@@ -12,3 +12,10 @@ window.matchMedia =
       removeListener: function () {},
     };
   };
+
+window.IntersectionObserver = function () {
+  return {
+    observe: jest.fn(),
+    disconnect: jest.fn(),
+  };
+};
