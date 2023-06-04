@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Portfolio from '../Portfolio';
 
@@ -32,13 +32,12 @@ jest.mock(
 
 describe('Portfolio', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Portfolio />);
+    render(<Portfolio />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Portfolio />).toJSON();
+    const { asFragment } = render(<Portfolio />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

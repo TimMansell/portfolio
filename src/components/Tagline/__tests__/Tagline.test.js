@@ -1,18 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Tagline from '../Tagline';
 
 describe('Tagline', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Tagline />);
+    render(<Tagline />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Tagline />).toJSON();
+    const { asFragment } = render(<Tagline />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

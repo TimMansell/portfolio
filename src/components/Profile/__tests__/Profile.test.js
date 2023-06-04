@@ -1,18 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Profile from '../Profile';
 
 describe('Profile', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Profile />);
+    render(<Profile />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Profile />).toJSON();
+    const { asFragment } = render(<Profile />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import RetiredSkills from '../RetiredSkills';
 
@@ -29,13 +29,12 @@ jest.mock(
 
 describe('Retired Skills', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<RetiredSkills />);
+    render(<RetiredSkills />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<RetiredSkills />).toJSON();
+    const { asFragment } = render(<RetiredSkills />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

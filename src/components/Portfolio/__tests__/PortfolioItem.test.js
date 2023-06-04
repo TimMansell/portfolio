@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import PortfolioItem from '../PortfolioItem';
 
@@ -17,30 +17,19 @@ const defaultProps = {
 
 describe('PortfolioItem', () => {
   it('should render my component', () => {
-    const props = {
-      ...defaultProps,
-    };
-    // eslint-disable-next-line
-    const wrapper = shallow(<PortfolioItem {...props} />);
+    render(<PortfolioItem {...defaultProps} />);
   });
 
   it('should match snapshot', () => {
-    const props = {
-      ...defaultProps,
-    };
-    const snapshot = renderer.create(<PortfolioItem {...props} />).toJSON();
+    const { asFragment } = render(<PortfolioItem {...defaultProps} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render source button', () => {
-    const props = {
-      ...defaultProps,
-    };
-    const wrapper = shallow(<PortfolioItem {...props} />);
-    const btn = wrapper.find('[data-test="portfolio-website-btn"]');
+    const { getByText } = render(<PortfolioItem {...defaultProps} />);
 
-    expect(btn.exists()).toBeTruthy();
+    expect(getByText('View source')).toBeInTheDocument();
   });
 
   it('should not render source button', () => {
@@ -55,9 +44,9 @@ describe('PortfolioItem', () => {
       url,
       img,
     };
-    const wrapper = shallow(<PortfolioItem {...props} />);
-    const btn = wrapper.find('[data-test="portfolio-source-btn"]');
 
-    expect(btn.exists()).toBeFalsy();
+    const { queryByText } = render(<PortfolioItem {...props} />);
+
+    expect(queryByText('View source')).not.toBeInTheDocument();
   });
 });

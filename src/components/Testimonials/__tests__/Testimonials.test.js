@@ -1,10 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Testimonials from '../Testimonials';
 
-jest.mock('react-slick');
+jest.mock('react-slick', () => (props) => <mock-slider {...props} />);
 
 jest.mock(
   '../json/testimonials.json',
@@ -27,20 +27,18 @@ jest.mock(
 
 describe('Testimonials', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Testimonials />);
+    render(<Testimonials />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Testimonials />).toJSON();
+    const { asFragment } = render(<Testimonials />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render correct amount of testimonials', () => {
-    const wrapper = shallow(<Testimonials />);
-    const list = wrapper.find('[data-test="testimonial-slide"]');
+    const { getAllByTestId } = render(<Testimonials />);
 
-    expect(list).toHaveLength(2);
+    expect(getAllByTestId('testimonial-slide')).toHaveLength(2);
   });
 });

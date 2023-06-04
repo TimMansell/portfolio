@@ -2,19 +2,15 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import PortfolioIcons from '../PortfolioIcons';
+import Name from '../Name';
 
-const props = {
-  title: 'test title',
-};
-
-describe('PortfolioIcons', () => {
+describe('Name', () => {
   it('should render my component', () => {
-    render(<PortfolioIcons {...props} />);
+    render(<Name />);
   });
 
   it('should match snapshot', () => {
-    const { asFragment } = render(<PortfolioIcons {...props} />);
+    const { asFragment } = render(<Name />);
 
     expect(asFragment()).toMatchSnapshot();
   });
