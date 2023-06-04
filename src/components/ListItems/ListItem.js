@@ -1,17 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 
 import Icon from 'components/Icon';
 import Labels from '../Labels';
 
-import { useIsFlexGapSupported } from 'hooks/useFlexGap';
-
 import styles from './ListItem.module.scss';
 
 export const ListItem = ({ item }) => {
-  const hasFlexGap = useIsFlexGapSupported();
-
   const labels = [
     {
       type: 'tertiary',
@@ -19,12 +14,8 @@ export const ListItem = ({ item }) => {
     },
   ];
 
-  const itemClasses = classnames(styles.item, {
-    [styles.flexGap]: hasFlexGap,
-  });
-
   return (
-    <div className={itemClasses} data-testid="list-item">
+    <div className={styles.item} data-testid="list-item">
       <div className={styles.icon}>
         <Icon name={[item.icon.family, item.icon.name]} size="sm" />
       </div>

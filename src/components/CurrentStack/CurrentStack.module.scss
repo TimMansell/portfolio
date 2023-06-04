@@ -1,13 +1,11 @@
 @import 'variables';
 @import 'utilities/pxtorem';
-@import 'utilities/flex-gap';
 
 .stack {
-  @include flex-gap(--vr-md);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: var(--vr-md);
 }
 
 .item {

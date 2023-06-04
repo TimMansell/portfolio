@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'utilities/pxtorem';
-@import 'utilities/flex-gap';
 
 .menu {
   display: none;
@@ -17,11 +16,10 @@
     z-index: var(--z-overlay);
 
     @media (orientation: landscape) {
-      @include flex-gap(--vr);
-
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      gap: var(--vr);
     }
 
     @media (min-width: $bp-lg) {

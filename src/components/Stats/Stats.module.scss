@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'utilities/pxtorem';
-@import 'utilities/flex-gap';
 
 .lighterNote {
   display: grid;
@@ -22,12 +21,11 @@
 }
 
 .item {
-  @include flex-gap(--vr);
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-self: center;
+  gap: var(--vr);
 }
 
 .title {
