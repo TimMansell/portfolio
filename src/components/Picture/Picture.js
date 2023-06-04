@@ -25,7 +25,7 @@ export const Picture = ({
   });
 
   return (
-    <picture title={title} data-e2e="picture">
+    <picture title={title} data-e2e="picture" data-testid="picture">
       {sources.map(({ type, media, srcSet }, index) => (
         <source
           media={media}
@@ -33,7 +33,7 @@ export const Picture = ({
           srcSet={srcSet}
           type={`image/${type}`}
           key={index}
-          data-test={`picture-source-${index}`}
+          data-testid={`picture-source-${index}`}
         />
       ))}
       <img
@@ -43,7 +43,7 @@ export const Picture = ({
         width={width}
         onLoad={onLoad}
         loading={loadingType}
-        data-test="picture-img"
+        data-testid="picture-img"
         data-e2e="picture-img"
       />
     </picture>

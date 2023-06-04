@@ -21,7 +21,7 @@ export const Stats = () => {
         text="This website was built using"
         type="tertiary"
       />
-      <div className={styles.lighterNote} data-test="stats-items">
+      <div className={styles.lighterNote}>
         {combinedStatsItems.map((stat, i) => (
           <StatsItem {...stat} key={i} />
         ))}

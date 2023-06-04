@@ -18,8 +18,10 @@ const SectionWrap = ({ container, type, id, children }) => {
   });
 
   return (
-    <section id={id} className={sectionClasses}>
-      <div className={containerClasses}>{children}</div>
+    <section id={id} className={sectionClasses} data-testid="section">
+      <div className={containerClasses} data-testid="section-container">
+        {children}
+      </div>
     </section>
   );
 };
