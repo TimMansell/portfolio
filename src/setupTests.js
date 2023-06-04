@@ -1,8 +1,3 @@
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
-
 window.matchMedia =
   window.matchMedia ||
   function () {
@@ -12,3 +7,10 @@ window.matchMedia =
       removeListener: function () {},
     };
   };
+
+window.IntersectionObserver = function () {
+  return {
+    observe: jest.fn(),
+    disconnect: jest.fn(),
+  };
+};

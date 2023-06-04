@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Header from '../Header';
 
@@ -12,47 +12,42 @@ const props = {
 
 describe('Header', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Header {...props} />);
-  });
-
-  it('Should display a title', () => {
-    const wrapper = shallow(<Header {...props} />);
-
-    expect(wrapper.find('[data-test="heading-title"]').text()).toEqual(
-      props.title
-    );
-  });
-
-  it('Should display a sub-title', () => {
-    const wrapper = shallow(<Header {...props} />);
-
-    expect(wrapper.find('[data-test="heading-description"]').text()).toEqual(
-      'text'
-    );
-  });
-
-  it('Should display a primary class', () => {
-    const wrapper = shallow(<Header {...props} />);
-
-    expect(wrapper.hasClass('headingPrimary')).toBeTruthy();
-  });
-
-  it('Should display a secondary class', () => {
-    const wrapper = shallow(<Header {...props} type="secondary" />);
-
-    expect(wrapper.hasClass('headingSecondary')).toBeTruthy();
-  });
-
-  it('Should display a teritiary class', () => {
-    const wrapper = shallow(<Header {...props} type="tertiary" />);
-
-    expect(wrapper.hasClass('headingTertiary')).toBeTruthy();
+    render(<Header {...props} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Header {...props} />).toJSON();
+    const { asFragment } = render(<Header {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('Should display a title', () => {
+    const { getByText } = render(<Header {...props} />);
+
+    expect(getByText(props.title)).toBeInTheDocument();
+  });
+
+  it('Should display a sub-title', () => {
+    const { getByText } = render(<Header {...props} />);
+
+    expect(getByText(props.text)).toBeInTheDocument();
+  });
+
+  it('Should display a primary class', () => {
+    const { getByTestId } = render(<Header {...props} />);
+
+    expect(getByTestId('header')).toHaveClass('headingPrimary');
+  });
+
+  it('Should display a secondary class', () => {
+    const { getByTestId } = render(<Header {...props} type="secondary" />);
+
+    expect(getByTestId('header')).toHaveClass('headingSecondary');
+  });
+
+  it('Should display a teritiary class', () => {
+    const { getByTestId } = render(<Header {...props} type="tertiary" />);
+
+    expect(getByTestId('header')).toHaveClass('headingTertiary');
   });
 });

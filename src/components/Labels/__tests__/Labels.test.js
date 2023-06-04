@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Labels from '../Labels';
 
@@ -23,17 +23,16 @@ describe('Label', () => {
       ...defaultProps,
     };
 
-    // eslint-disable-next-line
-    const wrapper = shallow(<Labels {...props} />);
+    render(<Labels {...props} />);
   });
 
   it('should match snapshot', () => {
     const props = {
       ...defaultProps,
     };
-    const snapshot = renderer.create(<Labels {...props} />).toJSON();
+    const { asFragment } = render(<Labels {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render as large label', () => {
@@ -41,9 +40,10 @@ describe('Label', () => {
       ...defaultProps,
       size: 'lg',
     };
-    const wrapper = shallow(<Labels {...props} />);
 
-    expect(wrapper.hasClass('isLarge')).toBeTruthy();
+    const { getByTestId } = render(<Labels {...props} />);
+
+    expect(getByTestId('labels')).toHaveClass('isLarge');
   });
 
   it('should render as centered', () => {
@@ -51,15 +51,15 @@ describe('Label', () => {
       ...defaultProps,
       centered: true,
     };
-    const wrapper = shallow(<Labels {...props} />);
 
-    expect(wrapper.hasClass('isCentered')).toBeTruthy();
+    const { getByTestId } = render(<Labels {...props} />);
+
+    expect(getByTestId('labels')).toHaveClass('isCentered');
   });
 
   it('should list correct amount of labels', () => {
-    const wrapper = shallow(<Labels {...defaultProps} />);
-    const list = wrapper.find('[data-test="labels"]');
+    const { getAllByTestId } = render(<Labels {...defaultProps} />);
 
-    expect(list.children()).toHaveLength(5);
+    expect(getAllByTestId('label')).toHaveLength(5);
   });
 });

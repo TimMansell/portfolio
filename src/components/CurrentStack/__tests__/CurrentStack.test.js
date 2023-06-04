@@ -1,18 +1,16 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import CurrentStack from '../CurrentStack';
 
 describe('CurrentStack', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<CurrentStack />);
+    render(<CurrentStack />);
   });
-
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<CurrentStack />).toJSON();
+    const { asFragment } = render(<CurrentStack />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

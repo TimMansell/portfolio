@@ -16,7 +16,7 @@ export const StatsItem = ({ description, offset, value, icon }) => {
   const statsBeginValue = offsetStats(value, offset);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="stats-item">
       <div className={styles.item} ref={element}>
         <div className={styles.icon}>
           <Icon name={['fa', icon]} size="sm" />

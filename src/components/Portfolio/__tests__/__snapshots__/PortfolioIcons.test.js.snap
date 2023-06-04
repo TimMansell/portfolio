@@ -1,26 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PortfolioIcons should match snapshot 1`] = `
-<div
-  className="bar"
->
+<DocumentFragment>
   <div
-    className="icons"
+    class="bar"
   >
     <div
-      className="icon"
-    />
+      class="icons"
+    >
+      <div
+        class="icon"
+      />
+      <div
+        class="icon"
+      />
+      <div
+        class="icon"
+      />
+    </div>
     <div
-      className="icon"
-    />
-    <div
-      className="icon"
-    />
+      class="tab"
+    >
+      test title
+    </div>
   </div>
-  <div
-    className="tab"
-  >
-    test title
-  </div>
-</div>
+</DocumentFragment>
 `;

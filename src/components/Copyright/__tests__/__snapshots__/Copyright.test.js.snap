@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Copyright should match snapshot 1`] = `
-<p
-  className="copyright"
->
-  © 
-  1970
-  <br />
-  Tim Mansell
-</p>
+<DocumentFragment>
+  <p
+    class="copyright"
+  >
+    © 1970
+    <br />
+    Tim Mansell
+  </p>
+</DocumentFragment>
 `;

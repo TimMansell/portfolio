@@ -71,21 +71,11 @@ export const PortfolioItem = ({
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.description}>{description}</p>
           <div className={styles.buttons}>
-            <Button
-              href={url}
-              target="_blank"
-              title="Visit website"
-              data-test="portfolio-website-btn"
-            >
+            <Button href={url} target="_blank" title="Visit website">
               Visit website
             </Button>
             {source && (
-              <Button
-                href={source}
-                target="_blank"
-                title="View Souce"
-                data-test="portfolio-source-btn"
-              >
+              <Button href={source} target="_blank" title="View Souce">
                 View source
               </Button>
             )}

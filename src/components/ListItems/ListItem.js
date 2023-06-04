@@ -24,7 +24,7 @@ export const ListItem = ({ item }) => {
   });
 
   return (
-    <div className={itemClasses}>
+    <div className={itemClasses} data-testid="list-item">
       <div className={styles.icon}>
         <Icon name={[item.icon.family, item.icon.name]} size="sm" />
       </div>

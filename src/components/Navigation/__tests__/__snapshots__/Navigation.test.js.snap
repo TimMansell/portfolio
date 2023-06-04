@@ -1,111 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should match snapshot 1`] = `
-<nav
-  className="navigation"
-  id="nav"
-  role="navigation"
->
-  <ul
-    className="menu"
-    data-e2e="navigation"
+<DocumentFragment>
+  <nav
+    class="navigation"
+    id="nav"
+    role="navigation"
   >
-    <li
-      className="menuItem"
+    <ul
+      class="menu"
+      data-e2e="navigation"
     >
-      <a
-        className="link"
-        data-e2e="navigation-profile"
-        onClick={[Function]}
+      <li
+        class="menuItem"
       >
-        Profile
-      </a>
-    </li>
-    <li
-      className="menuItem"
-    >
-      <a
-        className="link"
-        data-e2e="navigation-skills"
-        onClick={[Function]}
+        <a
+          class="link"
+          data-e2e="navigation-profile"
+        >
+          Profile
+        </a>
+      </li>
+      <li
+        class="menuItem"
       >
-        Skills
-      </a>
-    </li>
-    <li
-      className="menuItem"
-    >
-      <a
-        className="link"
-        data-e2e="navigation-older-skills"
-        onClick={[Function]}
+        <a
+          class="link"
+          data-e2e="navigation-skills"
+        >
+          Skills
+        </a>
+      </li>
+      <li
+        class="menuItem"
       >
-        Older Skills
-      </a>
-    </li>
-    <li
-      className="menuItem"
-    >
-      <a
-        className="link"
-        data-e2e="navigation-stack"
-        onClick={[Function]}
+        <a
+          class="link"
+          data-e2e="navigation-older-skills"
+        >
+          Older Skills
+        </a>
+      </li>
+      <li
+        class="menuItem"
       >
-        Stack
-      </a>
-    </li>
-    <li
-      className="menuItem"
-    >
-      <a
-        className="link"
-        data-e2e="navigation-portfolio"
-        onClick={[Function]}
+        <a
+          class="link"
+          data-e2e="navigation-stack"
+        >
+          Stack
+        </a>
+      </li>
+      <li
+        class="menuItem"
       >
-        Portfolio
-      </a>
-    </li>
-    <li
-      className="menuItem"
-    >
-      <a
-        className="link"
-        data-e2e="navigation-testimonials"
-        onClick={[Function]}
+        <a
+          class="link"
+          data-e2e="navigation-portfolio"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li
+        class="menuItem"
       >
-        Testimonials
-      </a>
-    </li>
-    <li
-      className="menuItem"
-    >
-      <a
-        className="link"
-        data-e2e="navigation-contact"
-        onClick={[Function]}
+        <a
+          class="link"
+          data-e2e="navigation-testimonials"
+        >
+          Testimonials
+        </a>
+      </li>
+      <li
+        class="menuItem"
       >
-        Contact
-      </a>
-    </li>
-  </ul>
-  <div
-    className="container"
-  >
-    <button
-      className="hamburger"
-      data-e2e="hambuger"
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="menu"
-      >
-        toggle menu
-      </span>
-    </button>
+        <a
+          class="link"
+          data-e2e="navigation-contact"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
     <div
-      className="background"
-    />
-  </div>
-</nav>
+      class="container"
+    >
+      <button
+        class="hamburger"
+        data-e2e="hambuger"
+        type="button"
+      >
+        <span
+          class="menu"
+        >
+          toggle menu
+        </span>
+      </button>
+      <div
+        class="background"
+      />
+    </div>
+  </nav>
+</DocumentFragment>
 `;

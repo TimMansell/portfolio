@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import StatsItem, { offsetStats } from '../StatsItem';
 
@@ -13,14 +13,13 @@ const defaultProps = {
 
 describe('StatsItem', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<StatsItem {...defaultProps} />);
+    render(<StatsItem {...defaultProps} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<StatsItem {...defaultProps} />).toJSON();
+    const { asFragment } = render(<StatsItem {...defaultProps} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should correctly calculate offset', () => {

@@ -1,21 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header should match snapshot 1`] = `
-<div
-  className="heading headingPrimary"
->
-  <h2
-    aria-label="Test Title"
-    className="title"
-    data-test="heading-title"
+<DocumentFragment>
+  <div
+    class="heading headingPrimary"
+    data-testid="header"
   >
-    Test Title
-  </h2>
-  <p
-    className="description"
-    data-test="heading-description"
-  >
-    text
-  </p>
-</div>
+    <h2
+      aria-label="Test Title"
+      class="title"
+    >
+      Test Title
+    </h2>
+    <p
+      class="description"
+    >
+      text
+    </p>
+  </div>
+</DocumentFragment>
 `;

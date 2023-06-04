@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import TestimonialsItem from '../TestimonialItem';
 
@@ -13,13 +13,12 @@ const props = {
 
 describe('TestimonialsItem', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<TestimonialsItem {...props} />);
+    render(<TestimonialsItem {...props} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<TestimonialsItem {...props} />).toJSON();
+    const { asFragment } = render(<TestimonialsItem {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

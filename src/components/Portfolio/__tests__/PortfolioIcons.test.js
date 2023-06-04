@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import PortfolioIcons from '../PortfolioIcons';
 
@@ -10,13 +10,12 @@ const props = {
 
 describe('PortfolioIcons', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<PortfolioIcons {...props} />);
+    render(<PortfolioIcons {...props} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<PortfolioIcons {...props} />).toJSON();
+    const { asFragment } = render(<PortfolioIcons {...props} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

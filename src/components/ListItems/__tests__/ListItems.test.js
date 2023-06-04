@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import ListItems from '../ListItems';
 
@@ -27,19 +27,18 @@ const defaultProps = {
 
 describe('ListItems', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<ListItems {...defaultProps} />);
+    render(<ListItems {...defaultProps} />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<ListItems {...defaultProps} />).toJSON();
+    const { asFragment } = render(<ListItems {...defaultProps} />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should list correct amount of items', () => {
-    const wrapper = shallow(<ListItems {...defaultProps} />);
+    const { getAllByTestId } = render(<ListItems {...defaultProps} />);
 
-    expect(wrapper.children()).toHaveLength(2);
+    expect(getAllByTestId('list-item')).toHaveLength(2);
   });
 });

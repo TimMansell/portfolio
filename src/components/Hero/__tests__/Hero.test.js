@@ -1,23 +1,25 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Hero from '../Hero';
 
-const props = {
-  blurFrom: 0,
-  blurTo: 1,
-};
-
 describe('Hero', () => {
+  beforeAll(() => {
+    jest.useFakeTimers();
+  });
+
+  afterAll(() => {
+    jest.useRealTimers();
+  });
+
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Hero {...props}/>);
+    render(<Hero />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Hero {...props} />).toJSON();
+    const { asFragment } = render(<Hero />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

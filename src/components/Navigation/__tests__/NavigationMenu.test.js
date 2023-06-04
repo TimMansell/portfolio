@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import NavigationMenu from '../NavigationMenu';
 import { MenuContext } from '../../../context/mobileMenu';
@@ -17,13 +17,12 @@ const MockComponent = () => (
 
 describe('NavigationMenu', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<MockComponent />);
+    render(<MockComponent />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<MockComponent />).toJSON();
+    const { asFragment } = render(<MockComponent />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

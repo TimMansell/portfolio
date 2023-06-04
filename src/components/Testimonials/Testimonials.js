@@ -26,7 +26,7 @@ export const Testimonials = () => {
           <div
             key={index}
             data-e2e={`testimonial-slide-${index}`}
-            data-test="testimonial-slide"
+            data-testid="testimonial-slide"
           >
             <TestimonialItem {...testimonial} />
           </div>

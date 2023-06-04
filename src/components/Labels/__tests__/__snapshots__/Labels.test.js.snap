@@ -1,34 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Label should match snapshot 1`] = `
-<ul
-  className="labels"
-  data-test="labels"
->
-  <li
-    className="label isPrimary"
+<DocumentFragment>
+  <ul
+    class="labels"
+    data-testid="labels"
   >
-    label 1
-  </li>
-  <li
-    className="label isPrimary"
-  >
-    label 2
-  </li>
-  <li
-    className="label isPrimary"
-  >
-    label 3
-  </li>
-  <li
-    className="label isSecondary"
-  >
-    label 4
-  </li>
-  <li
-    className="label isSecondary"
-  >
-    label 5
-  </li>
-</ul>
+    <li
+      class="label isPrimary"
+      data-testid="label"
+    >
+      label 1
+    </li>
+    <li
+      class="label isPrimary"
+      data-testid="label"
+    >
+      label 2
+    </li>
+    <li
+      class="label isPrimary"
+      data-testid="label"
+    >
+      label 3
+    </li>
+    <li
+      class="label isSecondary"
+      data-testid="label"
+    >
+      label 4
+    </li>
+    <li
+      class="label isSecondary"
+      data-testid="label"
+    >
+      label 5
+    </li>
+  </ul>
+</DocumentFragment>
 `;

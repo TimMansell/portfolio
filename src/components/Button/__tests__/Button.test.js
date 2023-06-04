@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Button from '../Button';
 
@@ -10,23 +10,28 @@ const props = {
   title: 'test title',
 };
 
+const text = 'text';
+
 describe('Button', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Button {...props}>text</Button>);
+    const { getByText } = render(<Button {...props}>{text}</Button>);
+
+    expect(getByText(text)).toBeInTheDocument();
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Button {...props}>text</Button>).toJSON();
+    const { asFragment } = render(<Button {...props}>{text}</Button>);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should have correct properties', () => {
-    const wrapper = shallow(<Button {...props}>text</Button>);
+    const { getByText } = render(<Button {...props}>{text}</Button>);
 
-    expect(wrapper.props().href).toBe(props.href);
-    expect(wrapper.props().target).toBe(props.target);
-    expect(wrapper.props().title).toBe(props.title);
+    const element = getByText(text);
+
+    expect(element).toHaveAttribute('href', props.href);
+    expect(element).toHaveAttribute('target', props.target);
+    expect(element).toHaveAttribute('title', props.title);
   });
 });

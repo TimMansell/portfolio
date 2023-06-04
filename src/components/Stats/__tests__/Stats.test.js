@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import Stats from '../Stats';
 
@@ -12,20 +12,18 @@ jest.mock(
 
 describe('Stats', () => {
   it('should render my component', () => {
-    // eslint-disable-next-line
-    const wrapper = shallow(<Stats />);
+    render(<Stats />);
   });
 
   it('should match snapshot', () => {
-    const snapshot = renderer.create(<Stats />).toJSON();
+    const { asFragment } = render(<Stats />);
 
-    expect(snapshot).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should list correct amount of items', () => {
-    const wrapper = shallow(<Stats />);
-    const list = wrapper.find('[data-test="stats-items"]');
+    const { getAllByTestId } = render(<Stats />);
 
-    expect(list.children()).toHaveLength(4);
+    expect(getAllByTestId('stats-item')).toHaveLength(4);
   });
 });

@@ -1,104 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Portfolio should match snapshot 1`] = `
-Array [
+<DocumentFragment>
   <div
-    className="heading headingTertiary"
+    class="heading headingTertiary"
+    data-testid="header"
   >
     <h2
       aria-label="Portfolio"
-      className="title"
-      data-test="heading-title"
+      class="title"
     >
       Portfolio
     </h2>
     <p
-      className="description"
-      data-test="heading-description"
+      class="description"
     >
       Here's a sample of my work. Hover over image for more information
     </p>
-  </div>,
+  </div>
   <div
-    className="portfolio"
+    class="portfolio"
     data-e2e="portfolio-items"
   >
     <div
-      className="portfolioItem"
+      class="portfolioItem"
     >
       <div
-        className="cube"
-        style={Object {}}
+        class="cube"
       >
         <div
-          className="browser"
+          class="browser"
         >
           <div
-            className="bar"
+            class="bar"
           >
             <div
-              className="icons"
+              class="icons"
             >
               <div
-                className="icon"
+                class="icon"
               />
               <div
-                className="icon"
+                class="icon"
               />
               <div
-                className="icon"
+                class="icon"
               />
             </div>
             <div
-              className="tab"
+              class="tab"
             >
               title
             </div>
           </div>
           <picture
             data-e2e="picture"
+            data-testid="picture"
             title="title portfolio item"
           >
             <source
-              data-test="picture-source-0"
+              data-testid="picture-source-0"
               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              srcSet="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
+              srcset="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
               type="image/webp"
             />
             <source
-              data-test="picture-source-1"
+              data-testid="picture-source-1"
               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              srcSet="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
+              srcset="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
               type="image/jpg"
             />
             <img
               alt="title portfolio item"
-              className="img"
+              class="img"
               data-e2e="picture-img"
-              data-test="picture-img"
+              data-testid="picture-img"
               loading="lazy"
               src="test-1280.jpg"
             />
           </picture>
         </div>
         <div
-          className="info"
+          class="info"
         >
           <h3
-            className="title"
+            class="title"
           >
             title
           </h3>
           <p
-            className="description"
+            class="description"
           >
             description
           </p>
           <div
-            className="buttons"
+            class="buttons"
           >
             <a
-              className="btn"
+              class="btn"
               href="url"
               rel="noopener noreferrer"
               target="_blank"
@@ -107,7 +106,7 @@ Array [
               Visit website
             </a>
             <a
-              className="btn"
+              class="btn"
               href="source"
               rel="noopener noreferrer"
               target="_blank"
@@ -119,29 +118,33 @@ Array [
         </div>
       </div>
       <div
-        className="labels"
+        class="labels"
       >
         <ul
-          className="labels"
-          data-test="labels"
+          class="labels"
+          data-testid="labels"
         >
           <li
-            className="label isSecondary"
+            class="label isSecondary"
+            data-testid="label"
           >
             2020
           </li>
           <li
-            className="label isSecondary"
+            class="label isSecondary"
+            data-testid="label"
           >
             types
           </li>
           <li
-            className="label isPrimary"
+            class="label isPrimary"
+            data-testid="label"
           >
             tech 1
           </li>
           <li
-            className="label isPrimary"
+            class="label isPrimary"
+            data-testid="label"
           >
             tech 2
           </li>
@@ -149,81 +152,81 @@ Array [
       </div>
     </div>
     <div
-      className="portfolioItem"
+      class="portfolioItem"
     >
       <div
-        className="cube"
-        style={Object {}}
+        class="cube"
       >
         <div
-          className="browser"
+          class="browser"
         >
           <div
-            className="bar"
+            class="bar"
           >
             <div
-              className="icons"
+              class="icons"
             >
               <div
-                className="icon"
+                class="icon"
               />
               <div
-                className="icon"
+                class="icon"
               />
               <div
-                className="icon"
+                class="icon"
               />
             </div>
             <div
-              className="tab"
+              class="tab"
             >
               title
             </div>
           </div>
           <picture
             data-e2e="picture"
+            data-testid="picture"
             title="title portfolio item"
           >
             <source
-              data-test="picture-source-0"
+              data-testid="picture-source-0"
               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              srcSet="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
+              srcset="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
               type="image/webp"
             />
             <source
-              data-test="picture-source-1"
+              data-testid="picture-source-1"
               sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              srcSet="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
+              srcset="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
               type="image/jpg"
             />
             <img
               alt="title portfolio item"
-              className="img"
+              class="img"
               data-e2e="picture-img"
-              data-test="picture-img"
+              data-testid="picture-img"
               loading="lazy"
               src="test-1280.jpg"
             />
           </picture>
         </div>
         <div
-          className="info"
+          class="info"
         >
           <h3
-            className="title"
+            class="title"
           >
             title
           </h3>
           <p
-            className="description"
+            class="description"
           >
             description
           </p>
           <div
-            className="buttons"
+            class="buttons"
           >
             <a
-              className="btn"
+              class="btn"
               href="url"
               rel="noopener noreferrer"
               target="_blank"
@@ -235,45 +238,51 @@ Array [
         </div>
       </div>
       <div
-        className="labels"
+        class="labels"
       >
         <ul
-          className="labels"
-          data-test="labels"
+          class="labels"
+          data-testid="labels"
         >
           <li
-            className="label isSecondary"
+            class="label isSecondary"
+            data-testid="label"
           >
             2020
           </li>
           <li
-            className="label isSecondary"
+            class="label isSecondary"
+            data-testid="label"
           >
             2021
           </li>
           <li
-            className="label isSecondary"
+            class="label isSecondary"
+            data-testid="label"
           >
             types
           </li>
           <li
-            className="label isPrimary"
+            class="label isPrimary"
+            data-testid="label"
           >
             tech 1
           </li>
           <li
-            className="label isPrimary"
+            class="label isPrimary"
+            data-testid="label"
           >
             tech 2
           </li>
           <li
-            className="label isPrimary"
+            class="label isPrimary"
+            data-testid="label"
           >
             tech 3
           </li>
         </ul>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;

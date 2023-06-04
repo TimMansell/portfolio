@@ -40,7 +40,7 @@
   },
   {
     "title": "CLI",
-    "list": ["Gulp", "Grunt", "SVN", "Bower", "JSHint"],
+    "list": ["Gulp", "Grunt", "SVN", "Bower", "JSHint", "Enzyme"],
     "icon": {
       "name": "terminal",
       "family": "fa"

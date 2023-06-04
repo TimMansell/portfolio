@@ -9,12 +9,12 @@ export const CurrentStackItem = ({ url, name, width, height }) => {
   const img = name.toLowerCase();
 
   return (
-    <div className={styles.item}>
+    <div className={styles.item} data-testid="stack-item">
       <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        data-test="stack-item-link"
+        data-testid="stack-item-link"
       >
         <Image
           src={`CurrentStack/img/${img}.svg`}

@@ -12,7 +12,11 @@ export const Label = ({ label, type, size }) => {
     [styles.isLarge]: size === 'lg',
   });
 
-  return <li className={labelClasses}>{label}</li>;
+  return (
+    <li className={labelClasses} data-testid="label">
+      {label}
+    </li>
+  );
 };
 
 Label.propTypes = {

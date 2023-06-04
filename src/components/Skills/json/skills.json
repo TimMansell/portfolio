@@ -146,7 +146,7 @@
       "Jest",
       "Cypress",
       "Vue Test Utils",
-      "Enzyme",
+      "Testing Library",
       "Unit",
       "e2e",
       "snapshot",

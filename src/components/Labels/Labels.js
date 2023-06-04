@@ -17,10 +17,16 @@ export const Labels = ({ labels, size, centered }) => {
   });
 
   return (
-    <ul className={labelClasses} data-test="labels">
+    <ul className={labelClasses} data-testid="labels">
       {labels.map(({ items, type }) =>
         items.map((item, index) => (
-          <Label key={index} label={item} type={type} size={size} />
+          <Label
+            key={index}
+            label={item}
+            type={type}
+            size={size}
+            data-testid="labels-item"
+          />
         ))
       )}
     </ul>
