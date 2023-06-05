@@ -6,11 +6,11 @@ export const Counter = ({ begin, end }) => {
 
   useEffect(() => {
     if (counter < end) {
-      const timer = setInterval(() => {
-        setCounter(counter + 1);
-      }, 1);
+      const timer = setTimeout(() => {
+        setCounter((prevCounter) => prevCounter + 1);
+      }, 40);
 
-      return () => clearInterval(timer);
+      return () => clearTimeout(timer);
     }
   });
 
