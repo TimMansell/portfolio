@@ -28,7 +28,7 @@ export const Hero = () => {
 
   return (
     <div className={styles.hero}>
-      <div className={styles.img} data-e2e="hero-img" data-timer={TIMER}>
+      <div className={styles.img} data-timer={TIMER}>
         <Picture {...primaryPicture} />
         <Picture {...preloadPicture} aria-hidden="true" />
       </div>
