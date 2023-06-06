@@ -19,6 +19,7 @@ exports[`Intro should match snapshot 1`] = `
       >
         <div
           class="img"
+          data-e2e="hero-img"
           data-timer="7000"
         >
           <picture
