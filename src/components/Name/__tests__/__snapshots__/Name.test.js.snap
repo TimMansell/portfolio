@@ -2,10 +2,15 @@
 
 exports[`Name should match snapshot 1`] = `
 <DocumentFragment>
-  <h1
-    class="name"
+  <div
+    data-e2e="fading-content"
+    style="opacity: 1;"
   >
-    I'm Tim Mansell
-  </h1>
+    <h1
+      class="name"
+    >
+      I'm Tim Mansell
+    </h1>
+  </div>
 </DocumentFragment>
 `;

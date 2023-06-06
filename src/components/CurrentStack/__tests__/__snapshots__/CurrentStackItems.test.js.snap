@@ -4,6 +4,7 @@ exports[`CurrentStackItems should match snapshot 1`] = `
 <DocumentFragment>
   <div
     class="stack"
+    data-test="stack-items"
   >
     <div
       class="item"

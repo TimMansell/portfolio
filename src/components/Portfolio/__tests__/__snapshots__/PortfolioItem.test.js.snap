@@ -7,6 +7,7 @@ exports[`PortfolioItem should match snapshot 1`] = `
   >
     <div
       class="cube"
+      style="transform-origin: 50% 50% -0px;"
     >
       <div
         class="browser"
@@ -33,32 +34,36 @@ exports[`PortfolioItem should match snapshot 1`] = `
             Title
           </div>
         </div>
-        <picture
-          data-e2e="picture"
-          data-testid="picture"
-          title="Title portfolio item"
+        <div
+          class="picture"
         >
-          <source
-            data-testid="picture-source-0"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            srcset="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
-            type="image/webp"
-          />
-          <source
-            data-testid="picture-source-1"
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            srcset="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
-            type="image/jpg"
-          />
-          <img
-            alt="Title portfolio item"
-            class="img"
-            data-e2e="picture-img"
-            data-testid="picture-img"
-            loading="lazy"
-            src="test-1280.jpg"
-          />
-        </picture>
+          <picture
+            data-e2e="picture"
+            data-testid="picture"
+            title="Title portfolio item"
+          >
+            <source
+              data-testid="picture-source-0"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              srcset="test-480.webp 480w, test-640.webp 640w, test-768.webp 768w, test-1024.webp 1024w, test-1280.webp 1280w"
+              type="image/webp"
+            />
+            <source
+              data-testid="picture-source-1"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              srcset="test-480.jpg 480w, test-640.jpg 640w, test-768.jpg 768w, test-1024.jpg 1024w, test-1280.jpg 1280w"
+              type="image/jpg"
+            />
+            <img
+              alt="Title portfolio item"
+              class="img"
+              data-e2e="picture-img"
+              data-testid="picture-img"
+              loading="lazy"
+              src="test-1280.jpg"
+            />
+          </picture>
+        </div>
       </div>
       <div
         class="info"
