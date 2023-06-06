@@ -16,7 +16,7 @@ describe('Reacts Hooks', () => {
   it('useScrollBlur', () => {
     cy.get('[data-e2e="hero-overlay"]').should(
       'have.css',
-      'filter',
+      'backdrop-filter',
       'blur(0px)'
     );
 
@@ -24,7 +24,7 @@ describe('Reacts Hooks', () => {
 
     cy.get('[data-e2e="hero-overlay"]').should(
       'have.css',
-      'filter',
+      'backdrop-filter',
       'blur(3px)'
     );
   });
