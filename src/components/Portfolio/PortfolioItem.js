@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import debounce from 'lodash.debounce';
 
 import Button from 'components/Button';
 import PortfolioIcons from './PortfolioIcons';
@@ -22,14 +21,6 @@ export const PortfolioItem = ({
   const [cubeStyles, setCubeStyles] = useState({});
   const cubeElement = useRef(null);
 
-  const getCubeHeight = debounce(() => {
-    const { clientHeight } = cubeElement.current;
-
-    setCubeStyles({
-      transformOrigin: `50% 50% -${clientHeight / 2}px`,
-    });
-  });
-
   const labels = [
     {
       type: 'secondary',
@@ -43,28 +34,32 @@ export const PortfolioItem = ({
 
   // Check height of image as intially it is lazy loaded.
   useEffect(() => {
-    window.requestAnimationFrame(getCubeHeight);
+    const { clientHeight } = cubeElement.current;
 
-    return () => window.cancelAnimationFrame(getCubeHeight);
-  });
+    setCubeStyles({
+      transformOrigin: `50% 50% -${clientHeight / 2}px`,
+    });
+  }, []);
 
   return (
     <div className={styles.portfolioItem}>
       <div className={styles.cube} style={cubeStyles} ref={cubeElement}>
         <div className={styles.browser}>
           <PortfolioIcons title={title} />
-          <Picture
-            src={`Portfolio/img/${img}`}
-            title={`${title} portfolio item`}
-            types={['webp', 'jpg']}
-            srcSizes={[
-              {
-                sizes: ['480', '640', '768', '1024', '1280'],
-              },
-            ]}
-            sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-            isLazy
-          />
+          <div className={styles.picture}>
+            <Picture
+              src={`Portfolio/img/${img}`}
+              title={`${title} portfolio item`}
+              types={['webp', 'jpg']}
+              srcSizes={[
+                {
+                  sizes: ['480', '640', '768', '1024', '1280'],
+                },
+              ]}
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              isLazy
+            />
+          </div>
         </div>
 
         <div className={styles.info}>
