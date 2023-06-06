@@ -4,6 +4,7 @@ exports[`HeroOverlay should match snapshot 1`] = `
 <DocumentFragment>
   <div
     class="overlay"
+    data-e2e="hero-overlay"
   />
 </DocumentFragment>
 `;
