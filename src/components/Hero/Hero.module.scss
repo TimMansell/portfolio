@@ -1,7 +1,14 @@
 @import 'variables';
 
 .hero {
+  position: relative;
   height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-default);
 }
 
 .img {

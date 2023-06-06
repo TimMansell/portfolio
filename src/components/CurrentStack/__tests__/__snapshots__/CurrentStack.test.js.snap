@@ -20,6 +20,7 @@ exports[`CurrentStack should match snapshot 1`] = `
   </div>
   <div
     class="stack"
+    data-test="stack-items"
   >
     <div
       class="item"

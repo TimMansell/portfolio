@@ -8,6 +8,7 @@
 .cube {
   position: relative;
   transform-style: preserve-3d;
+  transform-origin: 50% 0;
   transition: transform 0.35s cubic-bezier(0.2, 0.65, 0.4, 1);
   margin-bottom: var(--vr);
 
@@ -32,6 +33,10 @@
   overflow: hidden;
   height: 100%;
   backface-visibility: hidden;
+}
+
+.picture {
+  aspect-ratio: 16/9;
 }
 
 .info {

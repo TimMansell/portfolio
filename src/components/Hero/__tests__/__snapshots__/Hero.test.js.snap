@@ -6,87 +6,94 @@ exports[`Hero should match snapshot 1`] = `
     class="hero"
   >
     <div
-      class="img"
-      data-e2e="hero-img"
-      data-timer="7000"
-      style="filter: blur(0px);"
+      class="overlay"
+      data-e2e="hero-overlay"
+    />
+    <div
+      class="hero"
     >
-      <picture
-        data-e2e="picture"
-        data-testid="picture"
-        title="Various gaming consoles and peripherals"
+      <div
+        class="img"
+        data-e2e="hero-img"
+        data-timer="7000"
       >
-        <source
-          data-testid="picture-source-0"
-          media="(orientation: portrait)"
-          srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-640.webp 640w, lorenzo-herrera-p0j-mE6mGo4-unsplash-768.webp 768w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1280.webp 1280w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1536.webp 1536w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2048.webp 2048w"
-          type="image/webp"
-        />
-        <source
-          data-testid="picture-source-1"
-          media="(orientation: landscape)"
-          srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-1366.webp 1366w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1600.webp 1600w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1920.webp 1920w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.webp 2560w"
-          type="image/webp"
-        />
-        <source
-          data-testid="picture-source-2"
-          media="(orientation: portrait)"
-          srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-640.jpg 640w, lorenzo-herrera-p0j-mE6mGo4-unsplash-768.jpg 768w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1280.jpg 1280w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1536.jpg 1536w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2048.jpg 2048w"
-          type="image/jpg"
-        />
-        <source
-          data-testid="picture-source-3"
-          media="(orientation: landscape)"
-          srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-1366.jpg 1366w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1600.jpg 1600w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1920.jpg 1920w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.jpg 2560w"
-          type="image/jpg"
-        />
-        <img
-          alt="Various gaming consoles and peripherals"
-          class="img fullscreen"
-          data-e2e="picture-img"
-          data-testid="picture-img"
-          loading="auto"
-          src="lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.jpg"
-        />
-      </picture>
-      <picture
-        data-e2e="picture"
-        data-testid="picture"
-        title="Snow-capped trees with aurora borealis in background"
-      >
-        <source
-          data-testid="picture-source-0"
-          media="(orientation: portrait)"
-          srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-640.webp 640w, maria-vojtovicova-SPvJPDXEmqA-unsplash-768.webp 768w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1280.webp 1280w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1536.webp 1536w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2048.webp 2048w"
-          type="image/webp"
-        />
-        <source
-          data-testid="picture-source-1"
-          media="(orientation: landscape)"
-          srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-1366.webp 1366w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1600.webp 1600w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1920.webp 1920w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.webp 2560w"
-          type="image/webp"
-        />
-        <source
-          data-testid="picture-source-2"
-          media="(orientation: portrait)"
-          srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-640.jpg 640w, maria-vojtovicova-SPvJPDXEmqA-unsplash-768.jpg 768w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1280.jpg 1280w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1536.jpg 1536w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2048.jpg 2048w"
-          type="image/jpg"
-        />
-        <source
-          data-testid="picture-source-3"
-          media="(orientation: landscape)"
-          srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-1366.jpg 1366w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1600.jpg 1600w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1920.jpg 1920w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.jpg 2560w"
-          type="image/jpg"
-        />
-        <img
-          alt="Snow-capped trees with aurora borealis in background"
-          class="img fullscreen"
-          data-e2e="picture-img"
-          data-testid="picture-img"
-          loading="auto"
-          src="maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.jpg"
-        />
-      </picture>
+        <picture
+          data-e2e="picture"
+          data-testid="picture"
+          title="Various gaming consoles and peripherals"
+        >
+          <source
+            data-testid="picture-source-0"
+            media="(orientation: portrait)"
+            srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-640.webp 640w, lorenzo-herrera-p0j-mE6mGo4-unsplash-768.webp 768w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1280.webp 1280w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1536.webp 1536w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2048.webp 2048w"
+            type="image/webp"
+          />
+          <source
+            data-testid="picture-source-1"
+            media="(orientation: landscape)"
+            srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-1366.webp 1366w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1600.webp 1600w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1920.webp 1920w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.webp 2560w"
+            type="image/webp"
+          />
+          <source
+            data-testid="picture-source-2"
+            media="(orientation: portrait)"
+            srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-640.jpg 640w, lorenzo-herrera-p0j-mE6mGo4-unsplash-768.jpg 768w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1280.jpg 1280w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1536.jpg 1536w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2048.jpg 2048w"
+            type="image/jpg"
+          />
+          <source
+            data-testid="picture-source-3"
+            media="(orientation: landscape)"
+            srcset="lorenzo-herrera-p0j-mE6mGo4-unsplash-1366.jpg 1366w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1600.jpg 1600w, lorenzo-herrera-p0j-mE6mGo4-unsplash-1920.jpg 1920w, lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.jpg 2560w"
+            type="image/jpg"
+          />
+          <img
+            alt="Various gaming consoles and peripherals"
+            class="img fullscreen"
+            data-e2e="picture-img"
+            data-testid="picture-img"
+            loading="auto"
+            src="lorenzo-herrera-p0j-mE6mGo4-unsplash-2560.jpg"
+          />
+        </picture>
+        <picture
+          data-e2e="picture"
+          data-testid="picture"
+          title="Snow-capped trees with aurora borealis in background"
+        >
+          <source
+            data-testid="picture-source-0"
+            media="(orientation: portrait)"
+            srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-640.webp 640w, maria-vojtovicova-SPvJPDXEmqA-unsplash-768.webp 768w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1280.webp 1280w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1536.webp 1536w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2048.webp 2048w"
+            type="image/webp"
+          />
+          <source
+            data-testid="picture-source-1"
+            media="(orientation: landscape)"
+            srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-1366.webp 1366w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1600.webp 1600w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1920.webp 1920w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.webp 2560w"
+            type="image/webp"
+          />
+          <source
+            data-testid="picture-source-2"
+            media="(orientation: portrait)"
+            srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-640.jpg 640w, maria-vojtovicova-SPvJPDXEmqA-unsplash-768.jpg 768w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1280.jpg 1280w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1536.jpg 1536w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2048.jpg 2048w"
+            type="image/jpg"
+          />
+          <source
+            data-testid="picture-source-3"
+            media="(orientation: landscape)"
+            srcset="maria-vojtovicova-SPvJPDXEmqA-unsplash-1366.jpg 1366w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1600.jpg 1600w, maria-vojtovicova-SPvJPDXEmqA-unsplash-1920.jpg 1920w, maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.jpg 2560w"
+            type="image/jpg"
+          />
+          <img
+            alt="Snow-capped trees with aurora borealis in background"
+            class="img fullscreen"
+            data-e2e="picture-img"
+            data-testid="picture-img"
+            loading="auto"
+            src="maria-vojtovicova-SPvJPDXEmqA-unsplash-2560.jpg"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </DocumentFragment>

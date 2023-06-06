@@ -3,9 +3,14 @@
 exports[`Location should match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="location"
+    data-e2e="fading-content"
+    style="opacity: 1;"
   >
-    Melbourne, Australia
+    <div
+      class="location"
+    >
+      Melbourne, Australia
+    </div>
   </div>
 </DocumentFragment>
 `;

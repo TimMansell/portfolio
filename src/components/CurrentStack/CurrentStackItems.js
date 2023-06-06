@@ -8,7 +8,7 @@ import stackItems from './json/stack.json';
 
 export const CurrentStackItems = () => {
   return (
-    <div className={styles.stack}>
+    <div className={styles.stack} data-test="stack-items">
       {stackItems.map((stack, i) => (
         <CurrentStackItem {...stack} key={i} />
       ))}
