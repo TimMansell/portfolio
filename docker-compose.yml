@@ -8,7 +8,7 @@ services:
       - TEST_WORKERS=$TEST_WORKERS
       - UPDATE_SNAPSHOTS=$UPDATE_SNAPSHOTS
       - GREP=$TYPE
-    entrypoint: npx playwright test --project ${BROWSER:-chromium}
+    entrypoint: npx playwright test
     volumes:
       - ./:/app
     working_dir: /app
