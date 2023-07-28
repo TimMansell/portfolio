@@ -11,7 +11,7 @@ test.describe('Navigation', () => {
     test('should be fixed to bottom of viewport ', async ({ page }) => {
       await page.locator('footer').scrollIntoViewIfNeeded();
 
-      await expect(page.locator('[data-e2e="navigation"')).toBeInViewport();
+      await expect(page.locator('[data-e2e="navigation"]')).toBeInViewport();
     });
 
     test('should scroll page to profile section', async ({ page }) => {
