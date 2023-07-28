@@ -34,24 +34,31 @@ const config = defineConfig({
   },
   projects: [
     {
-      name: 'chromium',
+      name: 'desktop-chromium',
       use: {
         ...devices['Desktop Chrome'],
         viewport: { width: 1920, height: 1080 },
       },
     },
     {
-      name: 'firefox',
+      name: 'desktop-firefox',
       use: {
         ...devices['Desktop Firefox'],
         viewport: { width: 1920, height: 1080 },
       },
     },
     {
-      name: 'webkit',
+      name: 'desktop-webkit',
       use: {
         ...devices['Desktop Safari'],
         viewport: { width: 1920, height: 1080 },
+      },
+    },
+    {
+      name: 'desktop-qhq',
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: { width: 2560, height: 1440 },
       },
     },
     {
@@ -62,17 +69,28 @@ const config = defineConfig({
       },
     },
     {
-      name: 'tablet',
+      name: 'tablet-landscape',
       use: {
-        ...devices['iPad Mini landscape'],
-        browserName: 'chromium',
+        ...devices['iPad (gen 6) landscape'],
+        isMobile: false,
       },
     },
     {
-      name: 'mobile',
+      name: 'tablet',
       use: {
-        ...devices['iPhone 8'],
-        browserName: 'chromium',
+        ...devices['iPad (gen 6)'],
+      },
+    },
+    {
+      name: 'iphone',
+      use: {
+        ...devices['iPhone 13'],
+      },
+    },
+    {
+      name: 'android',
+      use: {
+        ...devices['Galaxy S8'],
       },
     },
   ],
