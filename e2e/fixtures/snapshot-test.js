@@ -24,6 +24,7 @@ export const checkPageSnapshot = async ({ page }, use) => {
     const cPage = new SnapshotPage(page, options);
 
     await cPage.injectCSS();
+    await cPage.loadImages();
     await cPage.blurContent();
 
     await testSnapshot(cPage);

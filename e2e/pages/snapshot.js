@@ -39,4 +39,12 @@ export const SnapshotPage = class SnapshotPage {
       .locator(selector)
       .evaluate((element) => element.setAttribute('data-blur-page', true));
   }
+
+  async loadImages() {
+    const { page } = this;
+
+    for (const img of await page.locator('img').all()) {
+      await img.evaluate((element) => element.setAttribute('loading', 'eager'));
+    }
+  }
 };
