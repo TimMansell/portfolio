@@ -13,13 +13,17 @@ test.describe('App', () => {
     await checkPageSnapshot();
   });
 
-  test('clicking on learn more button should scroll page to profile section', async ({
-    page,
-  }) => {
-    await expect(page.locator('#profile')).not.toBeInViewport();
+  test.describe('Desktop only', () => {
+    test.skip(({ isMobile }) => isMobile, 'desktop only!');
 
-    await page.locator('[data-e2e="learn-more-btn"]').click();
+    test('clicking on learn more button should scroll page to profile section', async ({
+      page,
+    }) => {
+      await expect(page.locator('#profile')).not.toBeInViewport();
 
-    await expect(page.locator('#profile')).toBeInViewport();
+      await page.locator('[data-e2e="learn-more-btn"]').click();
+
+      await expect(page.locator('#profile')).toBeInViewport();
+    });
   });
 });
